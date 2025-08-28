@@ -1,0 +1,104 @@
+name: Rust
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - "mdi/*"
+      - "octicons/*"
+      - "fontawesome/*"
+      - "simple-icons/*"
+    paths:
+      - crates/*
+      - .github/workflows/rust.yml
+      - "!crates/*/deno.json"
+      - "!crates/*/main.ts"
+  pull_request:
+    branches: [main]
+    paths:
+      - crates/*
+      - .github/workflows/rust.yml
+      - "!crates/*/deno.json"
+      - "!crates/*/main.ts"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Cache cargo artifacts
+        uses: actions/cache@v4
+        with:
+          path: '~/.cargo'
+          key: cargo-doc-${{ hashFiles('Cargo.lock') }}
+      - run: cargo clippy
+      - run: cargo fmt --check
+
+  doc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup update --no-self-update
+      - name: Cache cargo artifacts
+        uses: actions/cache@v4
+        with:
+          path: '~/.cargo'
+          key: cargo-doc-${{ hashFiles('Cargo.lock') }}
+      - run: cargo doc --no-deps --lib
+      - name: Upload docs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          path: target/doc
+          name: rust-docs
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup update --no-self-update
+      - name: Cache cargo artifacts
+        uses: actions/cache@v4
+        with:
+          path: '~/.cargo'
+          key: cargo-test-${{ hashFiles('Cargo.lock') }}
+      - run: cargo test
+
+  release:
+    needs: [lint, doc, test]
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup update --no-self-update
+      - name: Translate package name
+        id: translate
+        shell: bash
+        run: |-
+          case "${{ matrix.pkg }}" in
+            "mdi")
+              echo "pkg=material-design-icons-pack" >> "$GITHUB_OUTPUT"
+              ;;
+            "octicons")
+              echo "pkg=octicons-pack" >> "$GITHUB_OUTPUT"
+              ;;
+            "fontawesome")
+              echo "pkg=fontawesome-free-pack" >> "$GITHUB_OUTPUT"
+              ;;
+            "simple-icons")
+              echo "pkg=simple-icons-pack" >> "$GITHUB_OUTPUT"
+              ;;
+            *)
+              echo "::error::Unsupported `matrix.pkg` value: ${{ matrix.pkg }}"
+              exit 1
+              ;;
+          esac
+      - name: Package crate ${{ steps.translate.outputs.pkg }} (dry run)
+        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
+        run: cargo package -p ${{ steps.translate.outputs.pkg }}
+      - name: Publish crate for ${{ steps.translate.outputs.pkg }}
+        if: startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)
+        run: cargo publish -p ${{ steps.translate.outputs.pkg }}
+        env:
+          CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}

@@ -1,0 +1,349 @@
+// This file was generated. DO NOT EDIT.
+use crate::icons;
+use pyo3::prelude::*;
+
+pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("APPLICATION_ARRAY", icons::APPLICATION_ARRAY)?;
+    m.add(
+        "APPLICATION_BRACES_OUTLINE",
+        icons::APPLICATION_BRACES_OUTLINE,
+    )?;
+    m.add("APPLICATION_BRACES", icons::APPLICATION_BRACES)?;
+    m.add(
+        "APPLICATION_BRACKETS_OUTLINE",
+        icons::APPLICATION_BRACKETS_OUTLINE,
+    )?;
+    m.add("APPLICATION_BRACKETS", icons::APPLICATION_BRACKETS)?;
+    m.add("APPLICATION_COG_OUTLINE", icons::APPLICATION_COG_OUTLINE)?;
+    m.add("APPLICATION_COG", icons::APPLICATION_COG)?;
+    m.add("APPLICATION_EDIT_OUTLINE", icons::APPLICATION_EDIT_OUTLINE)?;
+    m.add("APPLICATION_EDIT", icons::APPLICATION_EDIT)?;
+    m.add("APPLICATION_EXPORT", icons::APPLICATION_EXPORT)?;
+    m.add("APPLICATION_IMPORT", icons::APPLICATION_IMPORT)?;
+    m.add("APPLICATION_OUTLINE", icons::APPLICATION_OUTLINE)?;
+    m.add(
+        "APPLICATION_PARENTHESES_OUTLINE",
+        icons::APPLICATION_PARENTHESES_OUTLINE,
+    )?;
+    m.add("APPLICATION_PARENTHESES", icons::APPLICATION_PARENTHESES)?;
+    m.add(
+        "APPLICATION_SETTINGS_OUTLINE",
+        icons::APPLICATION_SETTINGS_OUTLINE,
+    )?;
+    m.add("APPLICATION_SETTINGS", icons::APPLICATION_SETTINGS)?;
+    m.add(
+        "APPLICATION_VARIABLE_OUTLINE",
+        icons::APPLICATION_VARIABLE_OUTLINE,
+    )?;
+    m.add("APPLICATION_VARIABLE", icons::APPLICATION_VARIABLE)?;
+    m.add("APPLICATION", icons::APPLICATION)?;
+    m.add("APPROXIMATELY_EQUAL_BOX", icons::APPROXIMATELY_EQUAL_BOX)?;
+    m.add("APPROXIMATELY_EQUAL", icons::APPROXIMATELY_EQUAL)?;
+    m.add("APPS_BOX", icons::APPS_BOX)?;
+    m.add("APPS", icons::APPS)?;
+    #[allow(deprecated)]
+    m.add("ARCH", icons::ARCH)?;
+    m.add("ARCHIVE_ALERT_OUTLINE", icons::ARCHIVE_ALERT_OUTLINE)?;
+    m.add("ARCHIVE_ALERT", icons::ARCHIVE_ALERT)?;
+    m.add(
+        "ARCHIVE_ARROW_DOWN_OUTLINE",
+        icons::ARCHIVE_ARROW_DOWN_OUTLINE,
+    )?;
+    m.add("ARCHIVE_ARROW_DOWN", icons::ARCHIVE_ARROW_DOWN)?;
+    m.add("ARCHIVE_ARROW_UP_OUTLINE", icons::ARCHIVE_ARROW_UP_OUTLINE)?;
+    m.add("ARCHIVE_ARROW_UP", icons::ARCHIVE_ARROW_UP)?;
+    m.add("ARCHIVE_CANCEL_OUTLINE", icons::ARCHIVE_CANCEL_OUTLINE)?;
+    m.add("ARCHIVE_CANCEL", icons::ARCHIVE_CANCEL)?;
+    m.add("ARCHIVE_CHECK_OUTLINE", icons::ARCHIVE_CHECK_OUTLINE)?;
+    m.add("ARCHIVE_CHECK", icons::ARCHIVE_CHECK)?;
+    m.add("ARCHIVE_CLOCK_OUTLINE", icons::ARCHIVE_CLOCK_OUTLINE)?;
+    m.add("ARCHIVE_CLOCK", icons::ARCHIVE_CLOCK)?;
+    m.add("ARCHIVE_COG_OUTLINE", icons::ARCHIVE_COG_OUTLINE)?;
+    m.add("ARCHIVE_COG", icons::ARCHIVE_COG)?;
+    m.add("ARCHIVE_EDIT_OUTLINE", icons::ARCHIVE_EDIT_OUTLINE)?;
+    m.add("ARCHIVE_EDIT", icons::ARCHIVE_EDIT)?;
+    m.add("ARCHIVE_EYE_OUTLINE", icons::ARCHIVE_EYE_OUTLINE)?;
+    m.add("ARCHIVE_EYE", icons::ARCHIVE_EYE)?;
+    m.add(
+        "ARCHIVE_LOCK_OPEN_OUTLINE",
+        icons::ARCHIVE_LOCK_OPEN_OUTLINE,
+    )?;
+    m.add("ARCHIVE_LOCK_OPEN", icons::ARCHIVE_LOCK_OPEN)?;
+    m.add("ARCHIVE_LOCK_OUTLINE", icons::ARCHIVE_LOCK_OUTLINE)?;
+    m.add("ARCHIVE_LOCK", icons::ARCHIVE_LOCK)?;
+    m.add("ARCHIVE_MARKER_OUTLINE", icons::ARCHIVE_MARKER_OUTLINE)?;
+    m.add("ARCHIVE_MARKER", icons::ARCHIVE_MARKER)?;
+    m.add("ARCHIVE_MINUS_OUTLINE", icons::ARCHIVE_MINUS_OUTLINE)?;
+    m.add("ARCHIVE_MINUS", icons::ARCHIVE_MINUS)?;
+    m.add("ARCHIVE_MUSIC_OUTLINE", icons::ARCHIVE_MUSIC_OUTLINE)?;
+    m.add("ARCHIVE_MUSIC", icons::ARCHIVE_MUSIC)?;
+    m.add("ARCHIVE_OFF_OUTLINE", icons::ARCHIVE_OFF_OUTLINE)?;
+    m.add("ARCHIVE_OFF", icons::ARCHIVE_OFF)?;
+    m.add("ARCHIVE_OUTLINE", icons::ARCHIVE_OUTLINE)?;
+    m.add("ARCHIVE_PLUS_OUTLINE", icons::ARCHIVE_PLUS_OUTLINE)?;
+    m.add("ARCHIVE_PLUS", icons::ARCHIVE_PLUS)?;
+    m.add("ARCHIVE_REFRESH_OUTLINE", icons::ARCHIVE_REFRESH_OUTLINE)?;
+    m.add("ARCHIVE_REFRESH", icons::ARCHIVE_REFRESH)?;
+    m.add("ARCHIVE_REMOVE_OUTLINE", icons::ARCHIVE_REMOVE_OUTLINE)?;
+    m.add("ARCHIVE_REMOVE", icons::ARCHIVE_REMOVE)?;
+    m.add("ARCHIVE_SEARCH_OUTLINE", icons::ARCHIVE_SEARCH_OUTLINE)?;
+    m.add("ARCHIVE_SEARCH", icons::ARCHIVE_SEARCH)?;
+    m.add("ARCHIVE_SETTINGS_OUTLINE", icons::ARCHIVE_SETTINGS_OUTLINE)?;
+    m.add("ARCHIVE_SETTINGS", icons::ARCHIVE_SETTINGS)?;
+    m.add("ARCHIVE_STAR_OUTLINE", icons::ARCHIVE_STAR_OUTLINE)?;
+    m.add("ARCHIVE_STAR", icons::ARCHIVE_STAR)?;
+    m.add("ARCHIVE_SYNC_OUTLINE", icons::ARCHIVE_SYNC_OUTLINE)?;
+    m.add("ARCHIVE_SYNC", icons::ARCHIVE_SYNC)?;
+    m.add("ARCHIVE", icons::ARCHIVE)?;
+    m.add("ARM_FLEX_OUTLINE", icons::ARM_FLEX_OUTLINE)?;
+    m.add("ARM_FLEX", icons::ARM_FLEX)?;
+    m.add("ARRANGE_BRING_FORWARD", icons::ARRANGE_BRING_FORWARD)?;
+    m.add("ARRANGE_BRING_TO_FRONT", icons::ARRANGE_BRING_TO_FRONT)?;
+    m.add("ARRANGE_SEND_BACKWARD", icons::ARRANGE_SEND_BACKWARD)?;
+    m.add("ARRANGE_SEND_TO_BACK", icons::ARRANGE_SEND_TO_BACK)?;
+    m.add("ARROW_ALL", icons::ARROW_ALL)?;
+    m.add(
+        "ARROW_BOTTOM_LEFT_BOLD_BOX_OUTLINE",
+        icons::ARROW_BOTTOM_LEFT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add(
+        "ARROW_BOTTOM_LEFT_BOLD_BOX",
+        icons::ARROW_BOTTOM_LEFT_BOLD_BOX,
+    )?;
+    m.add(
+        "ARROW_BOTTOM_LEFT_BOLD_OUTLINE",
+        icons::ARROW_BOTTOM_LEFT_BOLD_OUTLINE,
+    )?;
+    m.add("ARROW_BOTTOM_LEFT_THICK", icons::ARROW_BOTTOM_LEFT_THICK)?;
+    m.add(
+        "ARROW_BOTTOM_LEFT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_BOTTOM_LEFT_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_BOTTOM_LEFT_THIN", icons::ARROW_BOTTOM_LEFT_THIN)?;
+    m.add("ARROW_BOTTOM_LEFT", icons::ARROW_BOTTOM_LEFT)?;
+    m.add(
+        "ARROW_BOTTOM_RIGHT_BOLD_BOX_OUTLINE",
+        icons::ARROW_BOTTOM_RIGHT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add(
+        "ARROW_BOTTOM_RIGHT_BOLD_BOX",
+        icons::ARROW_BOTTOM_RIGHT_BOLD_BOX,
+    )?;
+    m.add(
+        "ARROW_BOTTOM_RIGHT_BOLD_OUTLINE",
+        icons::ARROW_BOTTOM_RIGHT_BOLD_OUTLINE,
+    )?;
+    m.add("ARROW_BOTTOM_RIGHT_THICK", icons::ARROW_BOTTOM_RIGHT_THICK)?;
+    m.add(
+        "ARROW_BOTTOM_RIGHT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_BOTTOM_RIGHT_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_BOTTOM_RIGHT_THIN", icons::ARROW_BOTTOM_RIGHT_THIN)?;
+    m.add("ARROW_BOTTOM_RIGHT", icons::ARROW_BOTTOM_RIGHT)?;
+    m.add("ARROW_COLLAPSE_ALL", icons::ARROW_COLLAPSE_ALL)?;
+    m.add("ARROW_COLLAPSE_DOWN", icons::ARROW_COLLAPSE_DOWN)?;
+    m.add(
+        "ARROW_COLLAPSE_HORIZONTAL",
+        icons::ARROW_COLLAPSE_HORIZONTAL,
+    )?;
+    m.add("ARROW_COLLAPSE_LEFT", icons::ARROW_COLLAPSE_LEFT)?;
+    m.add("ARROW_COLLAPSE_RIGHT", icons::ARROW_COLLAPSE_RIGHT)?;
+    m.add("ARROW_COLLAPSE_UP", icons::ARROW_COLLAPSE_UP)?;
+    m.add("ARROW_COLLAPSE_VERTICAL", icons::ARROW_COLLAPSE_VERTICAL)?;
+    m.add("ARROW_COLLAPSE", icons::ARROW_COLLAPSE)?;
+    m.add(
+        "ARROW_DECISION_AUTO_OUTLINE",
+        icons::ARROW_DECISION_AUTO_OUTLINE,
+    )?;
+    m.add("ARROW_DECISION_AUTO", icons::ARROW_DECISION_AUTO)?;
+    m.add("ARROW_DECISION_OUTLINE", icons::ARROW_DECISION_OUTLINE)?;
+    m.add("ARROW_DECISION", icons::ARROW_DECISION)?;
+    m.add(
+        "ARROW_DOWN_BOLD_BOX_OUTLINE",
+        icons::ARROW_DOWN_BOLD_BOX_OUTLINE,
+    )?;
+    m.add("ARROW_DOWN_BOLD_BOX", icons::ARROW_DOWN_BOLD_BOX)?;
+    m.add(
+        "ARROW_DOWN_BOLD_CIRCLE_OUTLINE",
+        icons::ARROW_DOWN_BOLD_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_DOWN_BOLD_CIRCLE", icons::ARROW_DOWN_BOLD_CIRCLE)?;
+    m.add(
+        "ARROW_DOWN_BOLD_HEXAGON_OUTLINE",
+        icons::ARROW_DOWN_BOLD_HEXAGON_OUTLINE,
+    )?;
+    m.add("ARROW_DOWN_BOLD_OUTLINE", icons::ARROW_DOWN_BOLD_OUTLINE)?;
+    m.add("ARROW_DOWN_BOLD", icons::ARROW_DOWN_BOLD)?;
+    m.add("ARROW_DOWN_BOX", icons::ARROW_DOWN_BOX)?;
+    m.add(
+        "ARROW_DOWN_CIRCLE_OUTLINE",
+        icons::ARROW_DOWN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_DOWN_CIRCLE", icons::ARROW_DOWN_CIRCLE)?;
+    m.add(
+        "ARROW_DOWN_DROP_CIRCLE_OUTLINE",
+        icons::ARROW_DOWN_DROP_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_DOWN_DROP_CIRCLE", icons::ARROW_DOWN_DROP_CIRCLE)?;
+    m.add("ARROW_DOWN_LEFT_BOLD", icons::ARROW_DOWN_LEFT_BOLD)?;
+    m.add("ARROW_DOWN_LEFT", icons::ARROW_DOWN_LEFT)?;
+    m.add("ARROW_DOWN_RIGHT_BOLD", icons::ARROW_DOWN_RIGHT_BOLD)?;
+    m.add("ARROW_DOWN_RIGHT", icons::ARROW_DOWN_RIGHT)?;
+    m.add("ARROW_DOWN_THICK", icons::ARROW_DOWN_THICK)?;
+    m.add(
+        "ARROW_DOWN_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_DOWN_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_DOWN_THIN", icons::ARROW_DOWN_THIN)?;
+    m.add("ARROW_DOWN", icons::ARROW_DOWN)?;
+    m.add("ARROW_EXPAND_ALL", icons::ARROW_EXPAND_ALL)?;
+    m.add("ARROW_EXPAND_DOWN", icons::ARROW_EXPAND_DOWN)?;
+    m.add("ARROW_EXPAND_HORIZONTAL", icons::ARROW_EXPAND_HORIZONTAL)?;
+    m.add("ARROW_EXPAND_LEFT", icons::ARROW_EXPAND_LEFT)?;
+    m.add("ARROW_EXPAND_RIGHT", icons::ARROW_EXPAND_RIGHT)?;
+    m.add("ARROW_EXPAND_UP", icons::ARROW_EXPAND_UP)?;
+    m.add("ARROW_EXPAND_VERTICAL", icons::ARROW_EXPAND_VERTICAL)?;
+    m.add("ARROW_EXPAND", icons::ARROW_EXPAND)?;
+    m.add("ARROW_HORIZONTAL_LOCK", icons::ARROW_HORIZONTAL_LOCK)?;
+    m.add(
+        "ARROW_LEFT_BOLD_BOX_OUTLINE",
+        icons::ARROW_LEFT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_BOLD_BOX", icons::ARROW_LEFT_BOLD_BOX)?;
+    m.add(
+        "ARROW_LEFT_BOLD_CIRCLE_OUTLINE",
+        icons::ARROW_LEFT_BOLD_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_BOLD_CIRCLE", icons::ARROW_LEFT_BOLD_CIRCLE)?;
+    m.add(
+        "ARROW_LEFT_BOLD_HEXAGON_OUTLINE",
+        icons::ARROW_LEFT_BOLD_HEXAGON_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_BOLD_OUTLINE", icons::ARROW_LEFT_BOLD_OUTLINE)?;
+    m.add("ARROW_LEFT_BOLD", icons::ARROW_LEFT_BOLD)?;
+    m.add("ARROW_LEFT_BOTTOM_BOLD", icons::ARROW_LEFT_BOTTOM_BOLD)?;
+    m.add("ARROW_LEFT_BOTTOM", icons::ARROW_LEFT_BOTTOM)?;
+    m.add("ARROW_LEFT_BOX", icons::ARROW_LEFT_BOX)?;
+    m.add(
+        "ARROW_LEFT_CIRCLE_OUTLINE",
+        icons::ARROW_LEFT_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_CIRCLE", icons::ARROW_LEFT_CIRCLE)?;
+    m.add(
+        "ARROW_LEFT_DROP_CIRCLE_OUTLINE",
+        icons::ARROW_LEFT_DROP_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_DROP_CIRCLE", icons::ARROW_LEFT_DROP_CIRCLE)?;
+    m.add(
+        "ARROW_LEFT_RIGHT_BOLD_OUTLINE",
+        icons::ARROW_LEFT_RIGHT_BOLD_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_RIGHT_BOLD", icons::ARROW_LEFT_RIGHT_BOLD)?;
+    m.add("ARROW_LEFT_RIGHT", icons::ARROW_LEFT_RIGHT)?;
+    m.add("ARROW_LEFT_THICK", icons::ARROW_LEFT_THICK)?;
+    m.add(
+        "ARROW_LEFT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_LEFT_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_LEFT_THIN", icons::ARROW_LEFT_THIN)?;
+    m.add("ARROW_LEFT_TOP_BOLD", icons::ARROW_LEFT_TOP_BOLD)?;
+    m.add("ARROW_LEFT_TOP", icons::ARROW_LEFT_TOP)?;
+    m.add("ARROW_LEFT", icons::ARROW_LEFT)?;
+    m.add("ARROW_OSCILLATING_OFF", icons::ARROW_OSCILLATING_OFF)?;
+    m.add("ARROW_OSCILLATING", icons::ARROW_OSCILLATING)?;
+    m.add(
+        "ARROW_PROJECTILE_MULTIPLE",
+        icons::ARROW_PROJECTILE_MULTIPLE,
+    )?;
+    m.add("ARROW_PROJECTILE", icons::ARROW_PROJECTILE)?;
+    m.add(
+        "ARROW_RIGHT_BOLD_BOX_OUTLINE",
+        icons::ARROW_RIGHT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add("ARROW_RIGHT_BOLD_BOX", icons::ARROW_RIGHT_BOLD_BOX)?;
+    m.add(
+        "ARROW_RIGHT_BOLD_CIRCLE_OUTLINE",
+        icons::ARROW_RIGHT_BOLD_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_RIGHT_BOLD_CIRCLE", icons::ARROW_RIGHT_BOLD_CIRCLE)?;
+    m.add(
+        "ARROW_RIGHT_BOLD_HEXAGON_OUTLINE",
+        icons::ARROW_RIGHT_BOLD_HEXAGON_OUTLINE,
+    )?;
+    m.add("ARROW_RIGHT_BOLD_OUTLINE", icons::ARROW_RIGHT_BOLD_OUTLINE)?;
+    m.add("ARROW_RIGHT_BOLD", icons::ARROW_RIGHT_BOLD)?;
+    m.add("ARROW_RIGHT_BOTTOM_BOLD", icons::ARROW_RIGHT_BOTTOM_BOLD)?;
+    m.add("ARROW_RIGHT_BOTTOM", icons::ARROW_RIGHT_BOTTOM)?;
+    m.add("ARROW_RIGHT_BOX", icons::ARROW_RIGHT_BOX)?;
+    m.add(
+        "ARROW_RIGHT_CIRCLE_OUTLINE",
+        icons::ARROW_RIGHT_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_RIGHT_CIRCLE", icons::ARROW_RIGHT_CIRCLE)?;
+    m.add(
+        "ARROW_RIGHT_DROP_CIRCLE_OUTLINE",
+        icons::ARROW_RIGHT_DROP_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_RIGHT_DROP_CIRCLE", icons::ARROW_RIGHT_DROP_CIRCLE)?;
+    m.add("ARROW_RIGHT_THICK", icons::ARROW_RIGHT_THICK)?;
+    m.add(
+        "ARROW_RIGHT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_RIGHT_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_RIGHT_THIN", icons::ARROW_RIGHT_THIN)?;
+    m.add("ARROW_RIGHT_TOP_BOLD", icons::ARROW_RIGHT_TOP_BOLD)?;
+    m.add("ARROW_RIGHT_TOP", icons::ARROW_RIGHT_TOP)?;
+    m.add("ARROW_RIGHT", icons::ARROW_RIGHT)?;
+    m.add("ARROW_SPLIT_HORIZONTAL", icons::ARROW_SPLIT_HORIZONTAL)?;
+    m.add("ARROW_SPLIT_VERTICAL", icons::ARROW_SPLIT_VERTICAL)?;
+    m.add(
+        "ARROW_TOP_LEFT_BOLD_BOX_OUTLINE",
+        icons::ARROW_TOP_LEFT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add("ARROW_TOP_LEFT_BOLD_BOX", icons::ARROW_TOP_LEFT_BOLD_BOX)?;
+    m.add(
+        "ARROW_TOP_LEFT_BOLD_OUTLINE",
+        icons::ARROW_TOP_LEFT_BOLD_OUTLINE,
+    )?;
+    m.add(
+        "ARROW_TOP_LEFT_BOTTOM_RIGHT_BOLD",
+        icons::ARROW_TOP_LEFT_BOTTOM_RIGHT_BOLD,
+    )?;
+    m.add(
+        "ARROW_TOP_LEFT_BOTTOM_RIGHT",
+        icons::ARROW_TOP_LEFT_BOTTOM_RIGHT,
+    )?;
+    m.add("ARROW_TOP_LEFT_THICK", icons::ARROW_TOP_LEFT_THICK)?;
+    m.add(
+        "ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_TOP_LEFT_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_TOP_LEFT_THIN", icons::ARROW_TOP_LEFT_THIN)?;
+    m.add("ARROW_TOP_LEFT", icons::ARROW_TOP_LEFT)?;
+    m.add(
+        "ARROW_TOP_RIGHT_BOLD_BOX_OUTLINE",
+        icons::ARROW_TOP_RIGHT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add("ARROW_TOP_RIGHT_BOLD_BOX", icons::ARROW_TOP_RIGHT_BOLD_BOX)?;
+    m.add(
+        "ARROW_TOP_RIGHT_BOLD_OUTLINE",
+        icons::ARROW_TOP_RIGHT_BOLD_OUTLINE,
+    )?;
+    m.add(
+        "ARROW_TOP_RIGHT_BOTTOM_LEFT_BOLD",
+        icons::ARROW_TOP_RIGHT_BOTTOM_LEFT_BOLD,
+    )?;
+    m.add(
+        "ARROW_TOP_RIGHT_BOTTOM_LEFT",
+        icons::ARROW_TOP_RIGHT_BOTTOM_LEFT,
+    )?;
+    m.add("ARROW_TOP_RIGHT_THICK", icons::ARROW_TOP_RIGHT_THICK)?;
+    m.add(
+        "ARROW_TOP_RIGHT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_TOP_RIGHT_THIN_CIRCLE_OUTLINE,
+    )?;
+    m.add("ARROW_TOP_RIGHT_THIN", icons::ARROW_TOP_RIGHT_THIN)?;
+    m.add("ARROW_TOP_RIGHT", icons::ARROW_TOP_RIGHT)?;
+    m.add("ARROW_U_DOWN_LEFT_BOLD", icons::ARROW_U_DOWN_LEFT_BOLD)?;
+    Ok(())
+}

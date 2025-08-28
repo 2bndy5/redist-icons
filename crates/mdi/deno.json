@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "gen": "deno run --allow-read --allow-write --allow-run --allow-env --allow-sys main.ts"
+  },
+  "imports": {
+    "@mdi/svg": "npm:@mdi/svg@^7.4.47"
+  }
+}

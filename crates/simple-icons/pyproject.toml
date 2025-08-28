@@ -1,0 +1,24 @@
+[build-system]
+requires = ["maturin>=1.9,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "simple-icons-pack"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+readme = "README.md"
+dynamic = ["version", "description", "license"]
+
+[project.urls]
+source = "https://github.com/2bndy5/redist-icons"
+
+[tool.maturin]
+features = ["pyo3"]
+exclude = [
+  { path = "deno.json", format = "sdist" },
+  { path = "main.ts", format = "sdist" },
+]

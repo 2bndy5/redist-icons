@@ -1,0 +1,10 @@
+[workspace]
+members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+repository = "https://github.com/2bndy5/redist-icons"
+
+[workspace.dependencies]
+pyo3 = { version = "0.26.0", features = ["extension-module"] }
