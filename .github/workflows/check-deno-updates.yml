@@ -1,0 +1,42 @@
+name: Check deno updates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 0 * * 0,2,4"
+
+jobs:
+  check-updates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - run: rustup update --no-self-update
+
+      - name: Setup nushell
+        uses: hustcer/setup-nu@985d59ec83ae3e3418f9d36471cda38b9d8b9879 # v3.20
+        with:
+          version: ${{ vars.NU_SHELL_VERSION || '*' }}
+
+      - uses: denoland/setup-deno@e95548e56dfa95d4e1a28d6f422fafe75c4c26fb # v2.0.3
+        with:
+          cache: true
+      - name: Install Deno deps
+        run: deno install
+
+      - uses: astral-sh/setup-uv@4959332f0f014c5280e7eac8b70c90cb574c9f9b # v6.6.0
+        with:
+          version: "latest"
+          enable-cache: true
+      - name: Install Python deps
+        run: uv sync
+
+      - run: nu .github/workflows/check-deno-updates.nu
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

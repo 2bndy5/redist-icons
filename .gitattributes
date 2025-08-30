@@ -18,6 +18,7 @@
 *.yml text eol=lf
 *.yaml text eol=lf
 *.sh text eol=lf
+*.nu text eol=lf
 .gitattributes text eol=lf
 .gitignore text eol=lf
 *.txt text eol=lf

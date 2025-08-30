@@ -1,0 +1,52 @@
+name: Pre-commit hooks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  pre-commit:
+    name: pre-commit hooks and mypy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: astral-sh/setup-uv@4959332f0f014c5280e7eac8b70c90cb574c9f9b # v6.6.0
+        with:
+          version: "latest"
+          enable-cache: true
+      - run: uv sync
+      - name: Cache pre-commit environments
+        uses: actions/cache@v4
+        with:
+          path: "~/.cache/pre-commit"
+          key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
+      - run: uv run --no-sync pre-commit run --all-files
+      - run: uv run --no-sync mypy
+
+  deno-fmt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: denoland/setup-deno@e95548e56dfa95d4e1a28d6f422fafe75c4c26fb # v2.0.3
+        with:
+          cache: true
+      - run: deno fmt --check
+
+  conventional-commit:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: rustup update --no-self-update
+      - name: Install cargo-binstall
+        uses: cargo-bins/cargo-binstall@8364ff4727d0565d5f869496afb55f1ed31e7036 # v1.15.3
+      - name: Install committed
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: cargo binstall -y committed
+      - name: Check PR title
+        run: >-
+          echo "${{ github.event.pull_request.title }}"
+          | committed --config .config/committed.toml --commit-file -

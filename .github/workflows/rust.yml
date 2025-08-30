@@ -29,7 +29,7 @@ jobs:
       - name: Cache cargo artifacts
         uses: actions/cache@v4
         with:
-          path: '~/.cargo'
+          path: "~/.cargo"
           key: cargo-doc-${{ hashFiles('Cargo.lock') }}
       - run: cargo clippy
       - run: cargo fmt --check
@@ -42,7 +42,7 @@ jobs:
       - name: Cache cargo artifacts
         uses: actions/cache@v4
         with:
-          path: '~/.cargo'
+          path: "~/.cargo"
           key: cargo-doc-${{ hashFiles('Cargo.lock') }}
       - run: cargo doc --no-deps --lib
       - name: Upload docs as artifact
@@ -59,7 +59,7 @@ jobs:
       - name: Cache cargo artifacts
         uses: actions/cache@v4
         with:
-          path: '~/.cargo'
+          path: "~/.cargo"
           key: cargo-test-${{ hashFiles('Cargo.lock') }}
       - run: cargo test
 
@@ -72,28 +72,20 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: rustup update --no-self-update
-      - name: Translate package name
+      - name: Setup nushell
+        uses: hustcer/setup-nu@985d59ec83ae3e3418f9d36471cda38b9d8b9879 # v3.20
+        with:
+          version: ${{ vars.NU_SHELL_VERSION || '*' }}
+      - name: Get package name
         id: translate
-        shell: bash
+        shell: nu {0}
         run: |-
-          case "${{ matrix.pkg }}" in
-            "mdi")
-              echo "pkg=material-design-icons-pack" >> "$GITHUB_OUTPUT"
-              ;;
-            "octicons")
-              echo "pkg=octicons-pack" >> "$GITHUB_OUTPUT"
-              ;;
-            "fontawesome")
-              echo "pkg=fontawesome-free-pack" >> "$GITHUB_OUTPUT"
-              ;;
-            "simple-icons")
-              echo "pkg=simple-icons-pack" >> "$GITHUB_OUTPUT"
-              ;;
-            *)
-              echo "::error::Unsupported `matrix.pkg` value: ${{ matrix.pkg }}"
-              exit 1
-              ;;
-          esac
+          let name = (
+            open "${{ github.workspace }}/crates/${{ matrix.pkg }}/Cargo.toml"
+            | get package
+            | get name
+          )
+          $"pkg=($name)\n" | save --append $env.GITHUB_OUTPUT
       - name: Package crate ${{ steps.translate.outputs.pkg }} (dry run)
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         run: cargo package -p ${{ steps.translate.outputs.pkg }}

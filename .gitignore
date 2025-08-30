@@ -331,3 +331,6 @@ debug/
 *.pdb
 
 # End of https://www.toptal.com/developers/gitignore/api/deno,node,rust,python
+
+# generated files in CI workflow
+.github/workflows/PR-notes.md
