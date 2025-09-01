@@ -1,5 +1,10 @@
 # simple-icons-pack
 
+[![Crates.io Version][si-cargo-badge]][si-cargo-link]
+![MSRV][msrv-badge]
+[![PyPI - Version][si-pip-badge]][si-pip-link]
+![Min Py][min-py]
+
 A redistribution of SVG assets and some metadata from the
 [`simple-icons` npm package](https://www.npmjs.com/package/simple-icons).
 
@@ -32,3 +37,11 @@ use simple_icons_pack::{get_icon, SI_GITHUB};
 
 assert_eq!(SI_GITHUB.svg, get_icon("github").unwrap().svg);
 ```
+
+[si-cargo-badge]: https://img.shields.io/crates/v/simple-icons-pack
+[si-cargo-link]: https://crates.io/crates/simple-icons-pack
+[si-pip-badge]: https://img.shields.io/pypi/v/simple-icons-pack
+[si-pip-link]: https://pypi.org/project/simple-icons-pack/
+
+[msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
+[min-py]: https://img.shields.io/badge/Python-v3.9+-blue
