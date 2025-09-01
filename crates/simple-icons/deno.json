@@ -3,7 +3,7 @@
     "gen": "deno run --allow-read --allow-write --allow-run --allow-env --allow-sys main.ts"
   },
   "imports": {
-    "simple-icons": "npm:simple-icons@15.11.0",
+    "simple-icons": "npm:simple-icons@15.13.0",
     "si-data": "../../node_modules/simple-icons/data/simple-icons.json",
     "si-pkg-meta": "../../node_modules/simple-icons/package.json",
     "si-pkg-types": "../../node_modules/simple-icons/data/simple-icons.d.ts"
