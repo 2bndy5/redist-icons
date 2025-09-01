@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v5
       - run: rustup update --no-self-update
       - name: Install cargo-binstall
-        uses: cargo-bins/cargo-binstall@8364ff4727d0565d5f869496afb55f1ed31e7036 # v1.15.3
+        uses: cargo-bins/cargo-binstall@2bb61346d075e720d4c3da92f23b6d612d5a7543 # v1.15.3
       - name: Install committed
         env:
           GITHUB_TOKEN: ${{ github.token }}
