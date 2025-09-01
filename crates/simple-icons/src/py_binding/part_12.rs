@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_REACTOS", icons::SI_REACTOS)?;
+    m.add("SI_REACTQUERY", icons::SI_REACTQUERY)?;
+    m.add("SI_REACTROUTER", icons::SI_REACTROUTER)?;
+    m.add("SI_REACTTABLE", icons::SI_REACTTABLE)?;
     m.add("SI_READDOTCV", icons::SI_READDOTCV)?;
     m.add("SI_README", icons::SI_README)?;
     m.add("SI_READTHEDOCS", icons::SI_READTHEDOCS)?;
@@ -205,9 +209,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SEQUELIZE", icons::SI_SEQUELIZE)?;
     m.add("SI_SERVBAY", icons::SI_SERVBAY)?;
     m.add("SI_SERVERFAULT", icons::SI_SERVERFAULT)?;
-    m.add("SI_SERVERLESS", icons::SI_SERVERLESS)?;
-    m.add("SI_SESSION", icons::SI_SESSION)?;
-    m.add("SI_SESSIONIZE", icons::SI_SESSIONIZE)?;
-    m.add("SI_SETAPP", icons::SI_SETAPP)?;
     Ok(())
 }

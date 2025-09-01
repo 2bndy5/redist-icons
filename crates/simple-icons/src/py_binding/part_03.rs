@@ -120,6 +120,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DEEPGRAM", icons::SI_DEEPGRAM)?;
     m.add("SI_DEEPIN", icons::SI_DEEPIN)?;
     m.add("SI_DEEPL", icons::SI_DEEPL)?;
+    m.add("SI_DEEPMIND", icons::SI_DEEPMIND)?;
     m.add("SI_DEEPNOTE", icons::SI_DEEPNOTE)?;
     m.add("SI_DELIVEROO", icons::SI_DELIVEROO)?;
     m.add("SI_DELL", icons::SI_DELL)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DROPBOX", icons::SI_DROPBOX)?;
     m.add("SI_DRUPAL", icons::SI_DRUPAL)?;
     m.add("SI_DSAUTOMOBILES", icons::SI_DSAUTOMOBILES)?;
-    m.add("SI_DTS", icons::SI_DTS)?;
     Ok(())
 }

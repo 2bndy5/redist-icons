@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TRULIA", icons::SI_TRULIA)?;
+    m.add("SI_TRUSTEDSHOPS", icons::SI_TRUSTEDSHOPS)?;
+    m.add("SI_TRUSTPILOT", icons::SI_TRUSTPILOT)?;
+    m.add("SI_TRYHACKME", icons::SI_TRYHACKME)?;
+    m.add("SI_TRYITONLINE", icons::SI_TRYITONLINE)?;
     m.add("SI_TSNODE", icons::SI_TSNODE)?;
     m.add("SI_TUBI", icons::SI_TUBI)?;
     m.add("SI_TUI", icons::SI_TUI)?;
@@ -198,10 +203,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WEBGL", icons::SI_WEBGL)?;
     m.add("SI_WEBGPU", icons::SI_WEBGPU)?;
     m.add("SI_WEBLATE", icons::SI_WEBLATE)?;
-    m.add("SI_WEBMIN", icons::SI_WEBMIN)?;
-    m.add("SI_WEBMONEY", icons::SI_WEBMONEY)?;
-    m.add("SI_WEBPACK", icons::SI_WEBPACK)?;
-    m.add("SI_WEBRTC", icons::SI_WEBRTC)?;
-    m.add("SI_WEBSTORM", icons::SI_WEBSTORM)?;
     Ok(())
 }

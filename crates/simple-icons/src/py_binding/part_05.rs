@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_FOOBAR2000", icons::SI_FOOBAR2000)?;
     m.add("SI_FOODPANDA", icons::SI_FOODPANDA)?;
     m.add("SI_FORD", icons::SI_FORD)?;
     m.add("SI_FORGEJO", icons::SI_FORGEJO)?;
@@ -43,6 +44,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FREEPIK", icons::SI_FREEPIK)?;
     m.add("SI_FREETUBE", icons::SI_FREETUBE)?;
     m.add("SI_FRESH", icons::SI_FRESH)?;
+    m.add("SI_FRESHRSS", icons::SI_FRESHRSS)?;
     m.add("SI_FRIGATE", icons::SI_FRIGATE)?;
     m.add("SI_FRITZ", icons::SI_FRITZ)?;
     m.add("SI_FRONTENDMENTOR", icons::SI_FRONTENDMENTOR)?;
@@ -219,7 +221,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GRAPHITE", icons::SI_GRAPHITE)?;
     m.add("SI_GRAPHQL", icons::SI_GRAPHQL)?;
     m.add("SI_GRAV", icons::SI_GRAV)?;
-    m.add("SI_GRAVATAR", icons::SI_GRAVATAR)?;
-    m.add("SI_GRAYLOG", icons::SI_GRAYLOG)?;
     Ok(())
 }

@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SUBVERSION", icons::SI_SUBVERSION)?;
+    m.add("SI_SUCKLESS", icons::SI_SUCKLESS)?;
+    m.add("SI_SUI", icons::SI_SUI)?;
+    m.add("SI_SUITEST", icons::SI_SUITEST)?;
+    m.add("SI_SUMOLOGIC", icons::SI_SUMOLOGIC)?;
     m.add("SI_SUNO", icons::SI_SUNO)?;
     m.add("SI_SUNRISE", icons::SI_SUNRISE)?;
     m.add("SI_SUPABASE", icons::SI_SUPABASE)?;
@@ -201,10 +206,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TRPC", icons::SI_TRPC)?;
     m.add("SI_TRUENAS", icons::SI_TRUENAS)?;
     m.add("SI_TRUEUP", icons::SI_TRUEUP)?;
-    m.add("SI_TRULIA", icons::SI_TRULIA)?;
-    m.add("SI_TRUSTEDSHOPS", icons::SI_TRUSTEDSHOPS)?;
-    m.add("SI_TRUSTPILOT", icons::SI_TRUSTPILOT)?;
-    m.add("SI_TRYHACKME", icons::SI_TRYHACKME)?;
-    m.add("SI_TRYITONLINE", icons::SI_TRYITONLINE)?;
     Ok(())
 }

@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SERVERLESS", icons::SI_SERVERLESS)?;
+    m.add("SI_SESSION", icons::SI_SESSION)?;
+    m.add("SI_SESSIONIZE", icons::SI_SESSIONIZE)?;
+    m.add("SI_SETAPP", icons::SI_SETAPP)?;
     m.add("SI_SFML", icons::SI_SFML)?;
     m.add("SI_SHADCNUI", icons::SI_SHADCNUI)?;
     m.add("SI_SHADOW", icons::SI_SHADOW)?;
@@ -199,9 +203,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SUBLIMETEXT", icons::SI_SUBLIMETEXT)?;
     m.add("SI_SUBSTACK", icons::SI_SUBSTACK)?;
     m.add("SI_SUBTITLEEDIT", icons::SI_SUBTITLEEDIT)?;
-    m.add("SI_SUBVERSION", icons::SI_SUBVERSION)?;
-    m.add("SI_SUCKLESS", icons::SI_SUCKLESS)?;
-    m.add("SI_SUI", icons::SI_SUI)?;
-    m.add("SI_SUMOLOGIC", icons::SI_SUMOLOGIC)?;
     Ok(())
 }

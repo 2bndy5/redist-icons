@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PIXLR", icons::SI_PIXLR)?;
+    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
+    m.add("SI_PLANET", icons::SI_PLANET)?;
     m.add("SI_PLANETSCALE", icons::SI_PLANETSCALE)?;
     m.add("SI_PLANGRID", icons::SI_PLANGRID)?;
     m.add("SI_PLATFORMDOTSH", icons::SI_PLATFORMDOTSH)?;
@@ -178,6 +181,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RADSTUDIO", icons::SI_RADSTUDIO)?;
     m.add("SI_RAILWAY", icons::SI_RAILWAY)?;
     m.add("SI_RAINMETER", icons::SI_RAINMETER)?;
+    m.add("SI_RAINYUN", icons::SI_RAINYUN)?;
     m.add("SI_RAKUTEN", icons::SI_RAKUTEN)?;
     m.add("SI_RAKUTENKOBO", icons::SI_RAKUTENKOBO)?;
     m.add("SI_RAM", icons::SI_RAM)?;
@@ -199,9 +203,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REACTHOOKFORM", icons::SI_REACTHOOKFORM)?;
     m.add("SI_REACTIVERESUME", icons::SI_REACTIVERESUME)?;
     m.add("SI_REACTIVEX", icons::SI_REACTIVEX)?;
-    m.add("SI_REACTOS", icons::SI_REACTOS)?;
-    m.add("SI_REACTQUERY", icons::SI_REACTQUERY)?;
-    m.add("SI_REACTROUTER", icons::SI_REACTROUTER)?;
-    m.add("SI_REACTTABLE", icons::SI_REACTTABLE)?;
     Ok(())
 }
