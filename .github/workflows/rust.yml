@@ -14,6 +14,7 @@ on:
       - "!crates/*/deno.json"
       - "!crates/*/main.ts"
       - "!crates/*/pyproject.toml"
+      - Cargo.toml
   pull_request:
     branches: [main]
     paths:
@@ -22,6 +23,7 @@ on:
       - "!crates/*/deno.json"
       - "!crates/*/main.ts"
       - "!crates/*/pyproject.toml"
+      - Cargo.toml
 
 jobs:
   lint:

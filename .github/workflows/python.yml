@@ -22,6 +22,7 @@ on:
       - .github/workflows/python.yml
       - "!crates/*/deno.json"
       - "!crates/*/main.ts"
+      - Cargo.toml
   pull_request:
     branches: [main]
     paths:
@@ -29,6 +30,7 @@ on:
       - .github/workflows/python.yml
       - "!crates/*/deno.json"
       - "!crates/*/main.ts"
+      - Cargo.toml
 
 permissions:
   contents: read
