@@ -1,0 +1,25 @@
+[package]
+name = "material-design-icons-pack"
+description = "A redistribution of @mdi/svg npm package's SVG and metadata."
+version = "7.4.47"
+license = "Apache-2.0"
+exclude = ["deno.json", "main.ts", "pyproject.toml"]
+
+[package.repository]
+workspace = true
+
+[package.edition]
+workspace = true
+
+[lib]
+name = "material_design_icons_pack"
+crate-type = ["cdylib","lib"]
+
+[dependencies.pyo3]
+workspace = true
+optional = true
+
+[features]
+pyo3 = ["dep:pyo3"]
+deprecated-icons = []
+default = ["deprecated-icons"]

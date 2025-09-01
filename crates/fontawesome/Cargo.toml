@@ -1,0 +1,27 @@
+[package]
+name = "fontawesome-free-pack"
+description = "A redistribution of @fortawesome/fontawesome-free npm package's SVG and metadata."
+version = "7.0.0"
+license = "(CC-BY-4.0 AND OFL-1.1 AND MIT)"
+exclude = ["deno.json", "main.ts", "pyproject.toml"]
+
+[package.repository]
+workspace = true
+
+[package.edition]
+workspace = true
+
+[lib]
+name = "fontawesome_free_pack"
+crate-type = ["cdylib","lib"]
+
+[dependencies.pyo3]
+workspace = true
+optional = true
+
+[features]
+pyo3 = ["dep:pyo3"]
+brands = []
+regular = []
+solid = []
+default = ["brands","regular","solid"]

@@ -1,0 +1,42 @@
+name: Bump version and release
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: >-
+          The package to deploy.
+          Choices are named after their subpath in crates/* for simplicity.
+          The actual deployed package name are extracted from the Cargo.toml.
+        type: choice
+        required: true
+        options:
+          - mdi
+          - octicons
+          - fontawesome
+          - simple-icons
+
+run-name: Deploying ${{ inputs.package }}
+
+jobs:
+  release-version-bump:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Setup nushell
+        uses: hustcer/setup-nu@985d59ec83ae3e3418f9d36471cda38b9d8b9879 # v3.20
+        with:
+          version: ${{ vars.NU_SHELL_VERSION || '*' }}
+
+      - name: Bump ${{ inputs.package }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          nu .github/workflows/tag-release.nu
+          ${{ inputs.package }}

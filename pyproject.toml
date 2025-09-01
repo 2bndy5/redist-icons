@@ -1,0 +1,35 @@
+[project]
+name = "redist-icons"
+version = "0.1.0"
+description = "A project to contain redistributed icon sets from various npm packages"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.uv.sources]
+material-design-icons-pack = { workspace = true }
+octicons-pack = { workspace = true }
+fontawesome-free-pack = { workspace = true }
+simple-icons-pack = { workspace = true }
+
+[tool.uv.workspace]
+members = ["crates/*"]
+
+[dependency-groups]
+mdi = ["material-design-icons-pack"]
+oct = ["octicons-pack"]
+fa = ["fontawesome-free-pack"]
+si = ["simple-icons-pack"]
+dev = [
+    "mypy>=1.17.1",
+    "pre-commit>=4.3.0",
+    "ruff>=0.12.11",
+]
+test = [
+    "pytest>=8.4.1",
+]
+
+[tool.mypy]
+files = [
+    "crates/*/*.pyi",
+]

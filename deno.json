@@ -1,0 +1,20 @@
+{
+  "workspace": ["./crates/*", "common"],
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "gen:mdi": "cd crates/mdi && deno task gen",
+    "gen:oct": "cd crates/octicons && deno task gen",
+    "gen:fa": "cd crates/fontawesome && deno task gen",
+    "gen:si": "cd crates/simple-icons && deno task gen",
+    "gen": "deno task gen:mdi && deno task gen:oct && deno task gen:fa && deno task gen:si"
+  },
+  "imports": {
+    "@std/fs": "jsr:@std/fs@^1.0.19",
+    "@std/path": "jsr:@std/path@^1.1.2",
+    "svgo": "npm:svgo@^4.0.0",
+    "common": "./common/mod.ts"
+  },
+  "fmt": {
+    "exclude": ["**/*.md"]
+  }
+}

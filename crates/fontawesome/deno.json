@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "gen": "deno run --allow-read --allow-write --allow-run --allow-env --allow-sys main.ts"
+  },
+  "imports": {
+    "@fortawesome/fontawesome-free": "npm:@fortawesome/fontawesome-free@^7.0.0"
+  }
+}

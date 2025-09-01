@@ -1,0 +1,12 @@
+{
+  "name": "common",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "license": "MIT",
+  "imports": {
+    "@std/fmt": "jsr:@std/fmt@^1.0.8",
+    "@std/toml": "jsr:@std/toml@^1.0.9",
+    "@types/which": "npm:@types/which@^3.0.4",
+    "which": "npm:which@^5.0.0"
+  }
+}
