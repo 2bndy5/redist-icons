@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
     match slug {
+        "reactos" => Some(icons::SI_REACTOS),
+        "reactquery" => Some(icons::SI_REACTQUERY),
+        "reactrouter" => Some(icons::SI_REACTROUTER),
+        "reacttable" => Some(icons::SI_REACTTABLE),
         "readdotcv" => Some(icons::SI_READDOTCV),
         "readme" => Some(icons::SI_README),
         "readthedocs" => Some(icons::SI_READTHEDOCS),
@@ -199,10 +203,6 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "sequelize" => Some(icons::SI_SEQUELIZE),
         "servbay" => Some(icons::SI_SERVBAY),
         "serverfault" => Some(icons::SI_SERVERFAULT),
-        "serverless" => Some(icons::SI_SERVERLESS),
-        "session" => Some(icons::SI_SESSION),
-        "sessionize" => Some(icons::SI_SESSIONIZE),
-        "setapp" => Some(icons::SI_SETAPP),
         _ => None,
     }
 }

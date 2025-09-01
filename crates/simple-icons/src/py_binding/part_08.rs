@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_LEAGUEOFLEGENDS", icons::SI_LEAGUEOFLEGENDS)?;
+    m.add("SI_LEANPUB", icons::SI_LEANPUB)?;
     m.add("SI_LEETCODE", icons::SI_LEETCODE)?;
     m.add("SI_LEFTHOOK", icons::SI_LEFTHOOK)?;
     m.add("SI_LEGACYGAMES", icons::SI_LEGACYGAMES)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MEWE", icons::SI_MEWE)?;
     m.add("SI_MEZMO", icons::SI_MEZMO)?;
     m.add("SI_MG", icons::SI_MG)?;
-    m.add("SI_MICROBIT", icons::SI_MICROBIT)?;
-    m.add("SI_MICRODOTBLOG", icons::SI_MICRODOTBLOG)?;
     Ok(())
 }

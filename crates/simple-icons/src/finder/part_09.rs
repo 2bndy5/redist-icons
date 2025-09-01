@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
     match slug {
+        "microbit" => Some(icons::SI_MICROBIT),
+        "microdotblog" => Some(icons::SI_MICRODOTBLOG),
         "microeditor" => Some(icons::SI_MICROEDITOR),
         "micropython" => Some(icons::SI_MICROPYTHON),
         "microstation" => Some(icons::SI_MICROSTATION),
@@ -173,6 +175,7 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "normalizedotcss" => Some(icons::SI_NORMALIZEDOTCSS),
         "norton" => Some(icons::SI_NORTON),
         "norwegian" => Some(icons::SI_NORWEGIAN),
+        "note" => Some(icons::SI_NOTE),
         "notebooklm" => Some(icons::SI_NOTEBOOKLM),
         "notepadplusplus" => Some(icons::SI_NOTEPADPLUSPLUS),
         "notion" => Some(icons::SI_NOTION),
@@ -200,9 +203,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "nxp" => Some(icons::SI_NXP),
         "nzxt" => Some(icons::SI_NZXT),
         "o2" => Some(icons::SI_O2),
-        "obb" => Some(icons::SI_OBB),
-        "observable" => Some(icons::SI_OBSERVABLE),
-        "obsidian" => Some(icons::SI_OBSIDIAN),
         _ => None,
     }
 }

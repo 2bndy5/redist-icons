@@ -120,6 +120,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "deepgram" => Some(icons::SI_DEEPGRAM),
         "deepin" => Some(icons::SI_DEEPIN),
         "deepl" => Some(icons::SI_DEEPL),
+        "deepmind" => Some(icons::SI_DEEPMIND),
         "deepnote" => Some(icons::SI_DEEPNOTE),
         "deliveroo" => Some(icons::SI_DELIVEROO),
         "dell" => Some(icons::SI_DELL),
@@ -202,7 +203,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "dropbox" => Some(icons::SI_DROPBOX),
         "drupal" => Some(icons::SI_DRUPAL),
         "dsautomobiles" => Some(icons::SI_DSAUTOMOBILES),
-        "dts" => Some(icons::SI_DTS),
         _ => None,
     }
 }

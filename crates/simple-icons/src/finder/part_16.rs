@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_16(slug: &str) -> Option<Icon> {
     match slug {
+        "webmin" => Some(icons::SI_WEBMIN),
+        "webmoney" => Some(icons::SI_WEBMONEY),
+        "webpack" => Some(icons::SI_WEBPACK),
+        "webrtc" => Some(icons::SI_WEBRTC),
+        "webstorm" => Some(icons::SI_WEBSTORM),
         "webtoon" => Some(icons::SI_WEBTOON),
         "webtrees" => Some(icons::SI_WEBTREES),
         "wechat" => Some(icons::SI_WECHAT),
@@ -12,6 +17,7 @@ pub(super) fn find_part_16(slug: &str) -> Option<Icon> {
         "wellfound" => Some(icons::SI_WELLFOUND),
         "wellsfargo" => Some(icons::SI_WELLSFARGO),
         "wemo" => Some(icons::SI_WEMO),
+        "weread" => Some(icons::SI_WEREAD),
         "westerndigital" => Some(icons::SI_WESTERNDIGITAL),
         "westernunion" => Some(icons::SI_WESTERNUNION),
         "wetransfer" => Some(icons::SI_WETRANSFER),

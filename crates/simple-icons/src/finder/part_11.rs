@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
     match slug {
+        "pixlr" => Some(icons::SI_PIXLR),
+        "pkgsrc" => Some(icons::SI_PKGSRC),
+        "planet" => Some(icons::SI_PLANET),
         "planetscale" => Some(icons::SI_PLANETSCALE),
         "plangrid" => Some(icons::SI_PLANGRID),
         "platformdotsh" => Some(icons::SI_PLATFORMDOTSH),
@@ -178,6 +181,7 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "radstudio" => Some(icons::SI_RADSTUDIO),
         "railway" => Some(icons::SI_RAILWAY),
         "rainmeter" => Some(icons::SI_RAINMETER),
+        "rainyun" => Some(icons::SI_RAINYUN),
         "rakuten" => Some(icons::SI_RAKUTEN),
         "rakutenkobo" => Some(icons::SI_RAKUTENKOBO),
         "ram" => Some(icons::SI_RAM),
@@ -199,10 +203,6 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "reacthookform" => Some(icons::SI_REACTHOOKFORM),
         "reactiveresume" => Some(icons::SI_REACTIVERESUME),
         "reactivex" => Some(icons::SI_REACTIVEX),
-        "reactos" => Some(icons::SI_REACTOS),
-        "reactquery" => Some(icons::SI_REACTQUERY),
-        "reactrouter" => Some(icons::SI_REACTROUTER),
-        "reacttable" => Some(icons::SI_REACTTABLE),
         _ => None,
     }
 }

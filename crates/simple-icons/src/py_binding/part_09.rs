@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MICROBIT", icons::SI_MICROBIT)?;
+    m.add("SI_MICRODOTBLOG", icons::SI_MICRODOTBLOG)?;
     m.add("SI_MICROEDITOR", icons::SI_MICROEDITOR)?;
     m.add("SI_MICROPYTHON", icons::SI_MICROPYTHON)?;
     m.add("SI_MICROSTATION", icons::SI_MICROSTATION)?;
@@ -173,6 +175,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NORMALIZEDOTCSS", icons::SI_NORMALIZEDOTCSS)?;
     m.add("SI_NORTON", icons::SI_NORTON)?;
     m.add("SI_NORWEGIAN", icons::SI_NORWEGIAN)?;
+    m.add("SI_NOTE", icons::SI_NOTE)?;
     m.add("SI_NOTEBOOKLM", icons::SI_NOTEBOOKLM)?;
     m.add("SI_NOTEPADPLUSPLUS", icons::SI_NOTEPADPLUSPLUS)?;
     m.add("SI_NOTION", icons::SI_NOTION)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NXP", icons::SI_NXP)?;
     m.add("SI_NZXT", icons::SI_NZXT)?;
     m.add("SI_O2", icons::SI_O2)?;
-    m.add("SI_OBB", icons::SI_OBB)?;
-    m.add("SI_OBSERVABLE", icons::SI_OBSERVABLE)?;
-    m.add("SI_OBSIDIAN", icons::SI_OBSIDIAN)?;
     Ok(())
 }

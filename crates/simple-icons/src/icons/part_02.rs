@@ -1916,8 +1916,8 @@ pub const SI_CODER: Icon = Icon {
     slug: "coder",
     title: "Coder",
     hex: "090B0B",
-    source: "https://coder.together.agency/#3-logos",
-    guidelines: Some("https://coder.together.agency"),
+    source: "https://coder.com/brand#3-logos",
+    guidelines: Some("https://coder.com/brand"),
     license: None,
 };
 

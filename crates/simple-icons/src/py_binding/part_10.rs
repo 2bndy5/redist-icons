@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OBB", icons::SI_OBB)?;
+    m.add("SI_OBSERVABLE", icons::SI_OBSERVABLE)?;
+    m.add("SI_OBSIDIAN", icons::SI_OBSIDIAN)?;
     m.add("SI_OBSSTUDIO", icons::SI_OBSSTUDIO)?;
     m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
     m.add("SI_OCAML", icons::SI_OCAML)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PIXABAY", icons::SI_PIXABAY)?;
     m.add("SI_PIXELFED", icons::SI_PIXELFED)?;
     m.add("SI_PIXIV", icons::SI_PIXIV)?;
-    m.add("SI_PIXLR", icons::SI_PIXLR)?;
-    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
-    m.add("SI_PLANET", icons::SI_PLANET)?;
     Ok(())
 }

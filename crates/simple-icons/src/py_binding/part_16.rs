@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WEBMIN", icons::SI_WEBMIN)?;
+    m.add("SI_WEBMONEY", icons::SI_WEBMONEY)?;
+    m.add("SI_WEBPACK", icons::SI_WEBPACK)?;
+    m.add("SI_WEBRTC", icons::SI_WEBRTC)?;
+    m.add("SI_WEBSTORM", icons::SI_WEBSTORM)?;
     m.add("SI_WEBTOON", icons::SI_WEBTOON)?;
     m.add("SI_WEBTREES", icons::SI_WEBTREES)?;
     m.add("SI_WECHAT", icons::SI_WECHAT)?;
@@ -12,6 +17,7 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WELLFOUND", icons::SI_WELLFOUND)?;
     m.add("SI_WELLSFARGO", icons::SI_WELLSFARGO)?;
     m.add("SI_WEMO", icons::SI_WEMO)?;
+    m.add("SI_WEREAD", icons::SI_WEREAD)?;
     m.add("SI_WESTERNDIGITAL", icons::SI_WESTERNDIGITAL)?;
     m.add("SI_WESTERNUNION", icons::SI_WESTERNUNION)?;
     m.add("SI_WETRANSFER", icons::SI_WETRANSFER)?;
