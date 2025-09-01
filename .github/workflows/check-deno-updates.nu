@@ -12,6 +12,8 @@
 # - git
 # - deno
 # - gh-cli (https://cli.github.com)
+# - uv (https://docs.astral.sh/uv)
+# - cargo (https://rustup.rs/)
 use ./common.nu *
 
 export def has-updates [] {
@@ -133,6 +135,8 @@ def create-pr [
         $desc_table = $desc_table | append (apply-update $bump)
     }
 
+    run-cmd cargo update --workspace
+
     run-cmd uv run pre-commit run --all-files
 
     $desc_table | to md | save $PR_NOTES
@@ -148,7 +152,7 @@ def create-pr [
             (
                 $desc_table
                 | to md
-                | $'\n## Found updates!\n\n($in)\n'
+                | $"\n## Found updates!\n\n($in)\n"
                 | save --append $env.GITHUB_STEP_SUMMARY
             )
         }
