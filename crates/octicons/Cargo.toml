@@ -1,9 +1,9 @@
 [package]
 name = "octicons-pack"
 description = "A redistribution of @primer/octicons npm package's SVG and metadata."
-version = "19.15.5"
+version = "19.16.0"
 license = "MIT"
-exclude = ["deno.json", "main.ts", "pyproject.toml"]
+exclude = ["deno.json","main.ts","pyproject.toml"]
 
 [package.repository]
 workspace = true

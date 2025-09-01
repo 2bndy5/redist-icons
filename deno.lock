@@ -11,10 +11,10 @@
     "jsr:@std/toml@^1.0.9": "1.0.9",
     "npm:@fortawesome/fontawesome-free@7": "7.0.0",
     "npm:@mdi/svg@^7.4.47": "7.4.47",
-    "npm:@primer/octicons@^19.15.5": "19.15.5",
+    "npm:@primer/octicons@19.16.0": "19.16.0",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
-    "npm:simple-icons@^15.11.0": "15.11.0",
+    "npm:simple-icons@15.13.0": "15.13.0",
     "npm:svgo@*": "4.0.0",
     "npm:svgo@4": "4.0.0",
     "npm:which@5": "5.0.0"
@@ -56,8 +56,8 @@
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
     },
-    "@primer/octicons@19.15.5": {
-      "integrity": "sha512-FCXPTlXlHvAS3rRBd1C/xVBYSYzPPwS8tNcUxnvUYK6L4/d+zUy2KExLtzW+L9xKo2z8J9uY+c1VCsNRf+b4MQ==",
+    "@primer/octicons@19.16.0": {
+      "integrity": "sha512-oqXYMl6Vxnd8oEP6Xw6XsVutILnnoAo2MAV28mQYJbkHzBxlnubJK13/7J1AVV/ZABVkm/Fdmv1TkjM6oVYoPw==",
       "dependencies": [
         "object-assign"
       ]
@@ -162,8 +162,8 @@
     "sax@1.4.1": {
       "integrity": "sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg=="
     },
-    "simple-icons@15.11.0": {
-      "integrity": "sha512-hHgDvNcbIdE5e6thY19Ao1VEI4CectXDNB0+nXOLCBf3ApuzeMm4tAhWzeR9qZdt/GoeQs1nm9JTVzCVBuX1nA=="
+    "simple-icons@15.13.0": {
+      "integrity": "sha512-Tk3p1Lgmji+8kdUOIvvU3f0loYtWVo/bvO1T82Whpb6BhQ+wM2JR8BaVLQT+TiqqF25DVGrVYXeXrsPo6YDOvg=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -219,12 +219,12 @@
       },
       "crates/octicons": {
         "dependencies": [
-          "npm:@primer/octicons@^19.15.5"
+          "npm:@primer/octicons@19.16.0"
         ]
       },
       "crates/simple-icons": {
         "dependencies": [
-          "npm:simple-icons@^15.11.0"
+          "npm:simple-icons@15.13.0"
         ]
       }
     }
