@@ -74,10 +74,13 @@ jobs:
     name: linux ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
       - uses: actions/checkout@v4
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
       - uses: actions/setup-python@v5
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
       - name: Build wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@v1
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -86,6 +89,7 @@ jobs:
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }}
           manylinux: auto
       - name: Upload wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v4
         with:
           name: wheels-${{ matrix.pkg }}-linux-${{ matrix.platform.target }}
@@ -108,10 +112,13 @@ jobs:
     name: musllinux ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
       - uses: actions/checkout@v4
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
       - uses: actions/setup-python@v5
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
       - name: Build wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@v1
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -120,6 +127,7 @@ jobs:
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }}
           manylinux: musllinux_1_2
       - name: Upload wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v4
         with:
           name: wheels-${{ matrix.pkg }}-musllinux-${{ matrix.platform.target }}
@@ -138,11 +146,14 @@ jobs:
     name: windows ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
       - uses: actions/checkout@v4
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
       - uses: actions/setup-python@v5
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
           architecture: ${{ matrix.platform.target }}
       - name: Build wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@v1
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -150,6 +161,7 @@ jobs:
           args: --release --out dist --find-interpreter
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }}
       - name: Upload wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v4
         with:
           name: wheels-${{ matrix.pkg }}-windows-${{ matrix.platform.target }}
@@ -168,10 +180,13 @@ jobs:
     name: macOS ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
       - uses: actions/checkout@v4
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
       - uses: actions/setup-python@v5
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
       - name: Build wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@v1
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -179,6 +194,7 @@ jobs:
           args: --release --out dist --find-interpreter
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }}
       - name: Upload wheels
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v4
         with:
           name: wheels-${{ matrix.pkg }}-macos-${{ matrix.platform.target }}
@@ -191,13 +207,16 @@ jobs:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
     steps:
       - uses: actions/checkout@v4
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
       - name: Build sdist
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@v1
         with:
           working-directory: crates/${{ matrix.pkg }}
           command: sdist
           args: --out dist
       - name: Upload sdist
+        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v4
         with:
           name: wheels-${{ matrix.pkg }}-sdist
