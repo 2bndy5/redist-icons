@@ -16,20 +16,6 @@
 #   for publishing a GitHub release.
 use ./common.nu *
 
-# Run an external command and output it's elapsed time.
-#
-# Not useful if you need to capture the command's output.
-export def --wrapped run-cmd [...cmd: string] {
-    let app = if (($cmd | first) == 'gh') {
-        ($cmd | first 2) | str join ' '
-    } else {
-        ($cmd | first)
-    }
-    print $"(ansi blue)\nRunning(ansi reset) ($cmd | str join ' ')"
-    let elapsed = timeit {|| ^($cmd | first) ...($cmd | skip 1)}
-    print $"(ansi magenta)($app) took ($elapsed)(ansi reset)"
-}
-
 # The main function of this script.
 #
 # The `pkg` parameter is a required CLI option:
@@ -43,11 +29,9 @@ export def --wrapped run-cmd [...cmd: string] {
 def main [
     pkg: string, # The crate's path name to the Cargo.toml manifests
 ] {
-    let ver = (
-        open $"crates/($pkg)/Cargo.toml"
-        | get package
-        | get version
-    )
+    let pkg_meta = open $"crates/($pkg)/Cargo.toml" | get package
+    let ver = $pkg_meta | get version
+    let pkg_name = $pkg_meta | get name
     let tag = $"($pkg)/v($ver)"
     if not (is-on-main) {
         print $"(ansi yellow)Not checked out on default branch!(ansi reset)"
@@ -58,5 +42,14 @@ def main [
         exit 1
     }
     print $"Deploying ($tag)"
-    run-cmd gh release create $tag '--title' $"($pkg) v($ver)" --generate-notes
+    run-cmd ...[
+        gh
+        release
+        create
+        $tag
+        --title
+        $"($pkg) v($ver)"
+        --notes
+        $"Deploy package ($pkg_name) v($ver)"
+    ]
 }

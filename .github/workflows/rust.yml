@@ -4,10 +4,10 @@ on:
   push:
     branches: [main]
     tags:
-      - "mdi/*"
-      - "octicons/*"
-      - "fontawesome/*"
-      - "simple-icons/*"
+      - "mdi/v*"
+      - "octicons/v*"
+      - "fontawesome/v*"
+      - "simple-icons/v*"
     paths:
       - crates/**
       - .github/workflows/rust.yml
@@ -89,7 +89,7 @@ jobs:
       - name: Package crate ${{ steps.translate.outputs.pkg }} (dry run)
         if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         run: cargo package -p ${{ steps.translate.outputs.pkg }}
-      - name: Publish crate for ${{ steps.translate.outputs.pkg }}
+      - name: Publish crate ${{ steps.translate.outputs.pkg }}
         if: startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)
         run: cargo publish -p ${{ steps.translate.outputs.pkg }}
         env:

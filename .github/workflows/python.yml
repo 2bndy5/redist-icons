@@ -13,10 +13,10 @@ on:
   push:
     branches: [main]
     tags:
-      - "mdi/*"
-      - "octicons/*"
-      - "fontawesome/*"
-      - "simple-icons/*"
+      - "mdi/v*"
+      - "octicons/v*"
+      - "fontawesome/v*"
+      - "simple-icons/v*"
     paths:
       - crates/**
       - .github/workflows/python.yml

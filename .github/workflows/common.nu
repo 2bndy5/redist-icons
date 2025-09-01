@@ -21,3 +21,21 @@ export def is-on-main [] {
 export def is-in-ci [] {
     $env | get --optional CI | default 'false' | (($in == 'true') or ($in == true))
 }
+
+# Run an external command and output it's elapsed time.
+#
+# Not useful if you need to capture the command's output.
+export def --wrapped run-cmd [...cmd: string] {
+    let app = if (
+        ($cmd | first) == 'git'
+        or ($cmd | first) == 'gh'
+        or ($cmd | first) == 'uv'
+    ) {
+        ($cmd | first 2) | str join ' '
+    } else {
+        ($cmd | first)
+    }
+    print $"(ansi blue)\nRunning(ansi reset) ($cmd | str join ' ')"
+    let elapsed = timeit {|| ^($cmd | first) ...($cmd | skip 1)}
+    print $"(ansi magenta)($app) took ($elapsed)(ansi reset)"
+}
