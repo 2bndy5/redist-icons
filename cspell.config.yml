@@ -1,0 +1,39 @@
+version: "0.2"
+language: en
+words:
+  - armv
+  - binstall
+  - bndy
+  - cdylib
+  - clippy
+  - denoland
+  - esac
+  - fontawesome
+  - fortawesome
+  - hustcer
+  - manylinux
+  - maturin
+  - musllinux
+  - mypy
+  - nushell
+  - pyclass
+  - pyfunction
+  - pymethods
+  - pymodule
+  - pypa
+  - pypi
+  - pyproject
+  - pytest
+  - redist
+  - repr
+  - rustup
+  - sccache
+  - sdist
+  - svgs
+  - timeit
+ignorePaths:
+  - crates/*/src/{icons,finder,py_binding}
+  - crates/*/*.pyi
+  - crates/*/LICENSE
+  - .gitignore
+  - .vscode/

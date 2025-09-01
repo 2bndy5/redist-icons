@@ -1,0 +1,270 @@
+// This file was generated. DO NOT EDIT.
+use crate::icons;
+use pyo3::prelude::*;
+
+pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("AB_TESTING", icons::AB_TESTING)?;
+    m.add("ABACUS", icons::ABACUS)?;
+    m.add("ABJAD_ARABIC", icons::ABJAD_ARABIC)?;
+    m.add("ABJAD_HEBREW", icons::ABJAD_HEBREW)?;
+    m.add("ABUGIDA_DEVANAGARI", icons::ABUGIDA_DEVANAGARI)?;
+    m.add("ABUGIDA_THAI", icons::ABUGIDA_THAI)?;
+    m.add("ACCESS_POINT_CHECK", icons::ACCESS_POINT_CHECK)?;
+    m.add("ACCESS_POINT_MINUS", icons::ACCESS_POINT_MINUS)?;
+    m.add("ACCESS_POINT_NETWORK_OFF", icons::ACCESS_POINT_NETWORK_OFF)?;
+    m.add("ACCESS_POINT_NETWORK", icons::ACCESS_POINT_NETWORK)?;
+    m.add("ACCESS_POINT_OFF", icons::ACCESS_POINT_OFF)?;
+    m.add("ACCESS_POINT_PLUS", icons::ACCESS_POINT_PLUS)?;
+    m.add("ACCESS_POINT_REMOVE", icons::ACCESS_POINT_REMOVE)?;
+    m.add("ACCESS_POINT", icons::ACCESS_POINT)?;
+    m.add("ACCOUNT_ALERT_OUTLINE", icons::ACCOUNT_ALERT_OUTLINE)?;
+    m.add("ACCOUNT_ALERT", icons::ACCOUNT_ALERT)?;
+    m.add(
+        "ACCOUNT_ARROW_DOWN_OUTLINE",
+        icons::ACCOUNT_ARROW_DOWN_OUTLINE,
+    )?;
+    m.add("ACCOUNT_ARROW_DOWN", icons::ACCOUNT_ARROW_DOWN)?;
+    m.add(
+        "ACCOUNT_ARROW_LEFT_OUTLINE",
+        icons::ACCOUNT_ARROW_LEFT_OUTLINE,
+    )?;
+    m.add("ACCOUNT_ARROW_LEFT", icons::ACCOUNT_ARROW_LEFT)?;
+    m.add(
+        "ACCOUNT_ARROW_RIGHT_OUTLINE",
+        icons::ACCOUNT_ARROW_RIGHT_OUTLINE,
+    )?;
+    m.add("ACCOUNT_ARROW_RIGHT", icons::ACCOUNT_ARROW_RIGHT)?;
+    m.add("ACCOUNT_ARROW_UP_OUTLINE", icons::ACCOUNT_ARROW_UP_OUTLINE)?;
+    m.add("ACCOUNT_ARROW_UP", icons::ACCOUNT_ARROW_UP)?;
+    m.add("ACCOUNT_BADGE_OUTLINE", icons::ACCOUNT_BADGE_OUTLINE)?;
+    m.add("ACCOUNT_BADGE", icons::ACCOUNT_BADGE)?;
+    m.add("ACCOUNT_BOX_EDIT_OUTLINE", icons::ACCOUNT_BOX_EDIT_OUTLINE)?;
+    m.add(
+        "ACCOUNT_BOX_MINUS_OUTLINE",
+        icons::ACCOUNT_BOX_MINUS_OUTLINE,
+    )?;
+    m.add(
+        "ACCOUNT_BOX_MULTIPLE_OUTLINE",
+        icons::ACCOUNT_BOX_MULTIPLE_OUTLINE,
+    )?;
+    m.add("ACCOUNT_BOX_MULTIPLE", icons::ACCOUNT_BOX_MULTIPLE)?;
+    m.add("ACCOUNT_BOX_OUTLINE", icons::ACCOUNT_BOX_OUTLINE)?;
+    m.add("ACCOUNT_BOX_PLUS_OUTLINE", icons::ACCOUNT_BOX_PLUS_OUTLINE)?;
+    m.add("ACCOUNT_BOX", icons::ACCOUNT_BOX)?;
+    m.add("ACCOUNT_CANCEL_OUTLINE", icons::ACCOUNT_CANCEL_OUTLINE)?;
+    m.add("ACCOUNT_CANCEL", icons::ACCOUNT_CANCEL)?;
+    m.add("ACCOUNT_CARD_OUTLINE", icons::ACCOUNT_CARD_OUTLINE)?;
+    m.add("ACCOUNT_CARD", icons::ACCOUNT_CARD)?;
+    m.add("ACCOUNT_CASH_OUTLINE", icons::ACCOUNT_CASH_OUTLINE)?;
+    m.add("ACCOUNT_CASH", icons::ACCOUNT_CASH)?;
+    m.add("ACCOUNT_CHECK_OUTLINE", icons::ACCOUNT_CHECK_OUTLINE)?;
+    m.add("ACCOUNT_CHECK", icons::ACCOUNT_CHECK)?;
+    m.add("ACCOUNT_CHILD_CIRCLE", icons::ACCOUNT_CHILD_CIRCLE)?;
+    m.add("ACCOUNT_CHILD_OUTLINE", icons::ACCOUNT_CHILD_OUTLINE)?;
+    m.add("ACCOUNT_CHILD", icons::ACCOUNT_CHILD)?;
+    m.add("ACCOUNT_CIRCLE_OUTLINE", icons::ACCOUNT_CIRCLE_OUTLINE)?;
+    m.add("ACCOUNT_CIRCLE", icons::ACCOUNT_CIRCLE)?;
+    m.add("ACCOUNT_CLOCK_OUTLINE", icons::ACCOUNT_CLOCK_OUTLINE)?;
+    m.add("ACCOUNT_CLOCK", icons::ACCOUNT_CLOCK)?;
+    m.add("ACCOUNT_COG_OUTLINE", icons::ACCOUNT_COG_OUTLINE)?;
+    m.add("ACCOUNT_COG", icons::ACCOUNT_COG)?;
+    m.add("ACCOUNT_CONVERT_OUTLINE", icons::ACCOUNT_CONVERT_OUTLINE)?;
+    m.add("ACCOUNT_CONVERT", icons::ACCOUNT_CONVERT)?;
+    m.add(
+        "ACCOUNT_COWBOY_HAT_OUTLINE",
+        icons::ACCOUNT_COWBOY_HAT_OUTLINE,
+    )?;
+    m.add("ACCOUNT_COWBOY_HAT", icons::ACCOUNT_COWBOY_HAT)?;
+    m.add(
+        "ACCOUNT_CREDIT_CARD_OUTLINE",
+        icons::ACCOUNT_CREDIT_CARD_OUTLINE,
+    )?;
+    m.add("ACCOUNT_CREDIT_CARD", icons::ACCOUNT_CREDIT_CARD)?;
+    m.add("ACCOUNT_DETAILS_OUTLINE", icons::ACCOUNT_DETAILS_OUTLINE)?;
+    m.add("ACCOUNT_DETAILS", icons::ACCOUNT_DETAILS)?;
+    m.add("ACCOUNT_EDIT_OUTLINE", icons::ACCOUNT_EDIT_OUTLINE)?;
+    m.add("ACCOUNT_EDIT", icons::ACCOUNT_EDIT)?;
+    m.add("ACCOUNT_EYE_OUTLINE", icons::ACCOUNT_EYE_OUTLINE)?;
+    m.add("ACCOUNT_EYE", icons::ACCOUNT_EYE)?;
+    m.add("ACCOUNT_FILE_OUTLINE", icons::ACCOUNT_FILE_OUTLINE)?;
+    m.add(
+        "ACCOUNT_FILE_TEXT_OUTLINE",
+        icons::ACCOUNT_FILE_TEXT_OUTLINE,
+    )?;
+    m.add("ACCOUNT_FILE_TEXT", icons::ACCOUNT_FILE_TEXT)?;
+    m.add("ACCOUNT_FILE", icons::ACCOUNT_FILE)?;
+    m.add("ACCOUNT_FILTER_OUTLINE", icons::ACCOUNT_FILTER_OUTLINE)?;
+    m.add("ACCOUNT_FILTER", icons::ACCOUNT_FILTER)?;
+    m.add("ACCOUNT_GROUP_OUTLINE", icons::ACCOUNT_GROUP_OUTLINE)?;
+    m.add("ACCOUNT_GROUP", icons::ACCOUNT_GROUP)?;
+    m.add("ACCOUNT_HARD_HAT_OUTLINE", icons::ACCOUNT_HARD_HAT_OUTLINE)?;
+    m.add("ACCOUNT_HARD_HAT", icons::ACCOUNT_HARD_HAT)?;
+    m.add("ACCOUNT_HEART_OUTLINE", icons::ACCOUNT_HEART_OUTLINE)?;
+    m.add("ACCOUNT_HEART", icons::ACCOUNT_HEART)?;
+    m.add("ACCOUNT_INJURY_OUTLINE", icons::ACCOUNT_INJURY_OUTLINE)?;
+    m.add("ACCOUNT_INJURY", icons::ACCOUNT_INJURY)?;
+    m.add("ACCOUNT_KEY_OUTLINE", icons::ACCOUNT_KEY_OUTLINE)?;
+    m.add("ACCOUNT_KEY", icons::ACCOUNT_KEY)?;
+    m.add(
+        "ACCOUNT_LOCK_OPEN_OUTLINE",
+        icons::ACCOUNT_LOCK_OPEN_OUTLINE,
+    )?;
+    m.add("ACCOUNT_LOCK_OPEN", icons::ACCOUNT_LOCK_OPEN)?;
+    m.add("ACCOUNT_LOCK_OUTLINE", icons::ACCOUNT_LOCK_OUTLINE)?;
+    m.add("ACCOUNT_LOCK", icons::ACCOUNT_LOCK)?;
+    m.add("ACCOUNT_MINUS_OUTLINE", icons::ACCOUNT_MINUS_OUTLINE)?;
+    m.add("ACCOUNT_MINUS", icons::ACCOUNT_MINUS)?;
+    m.add(
+        "ACCOUNT_MULTIPLE_CHECK_OUTLINE",
+        icons::ACCOUNT_MULTIPLE_CHECK_OUTLINE,
+    )?;
+    m.add("ACCOUNT_MULTIPLE_CHECK", icons::ACCOUNT_MULTIPLE_CHECK)?;
+    m.add(
+        "ACCOUNT_MULTIPLE_MINUS_OUTLINE",
+        icons::ACCOUNT_MULTIPLE_MINUS_OUTLINE,
+    )?;
+    m.add("ACCOUNT_MULTIPLE_MINUS", icons::ACCOUNT_MULTIPLE_MINUS)?;
+    m.add("ACCOUNT_MULTIPLE_OUTLINE", icons::ACCOUNT_MULTIPLE_OUTLINE)?;
+    m.add(
+        "ACCOUNT_MULTIPLE_PLUS_OUTLINE",
+        icons::ACCOUNT_MULTIPLE_PLUS_OUTLINE,
+    )?;
+    m.add("ACCOUNT_MULTIPLE_PLUS", icons::ACCOUNT_MULTIPLE_PLUS)?;
+    m.add(
+        "ACCOUNT_MULTIPLE_REMOVE_OUTLINE",
+        icons::ACCOUNT_MULTIPLE_REMOVE_OUTLINE,
+    )?;
+    m.add("ACCOUNT_MULTIPLE_REMOVE", icons::ACCOUNT_MULTIPLE_REMOVE)?;
+    m.add("ACCOUNT_MULTIPLE", icons::ACCOUNT_MULTIPLE)?;
+    m.add("ACCOUNT_MUSIC_OUTLINE", icons::ACCOUNT_MUSIC_OUTLINE)?;
+    m.add("ACCOUNT_MUSIC", icons::ACCOUNT_MUSIC)?;
+    m.add(
+        "ACCOUNT_NETWORK_OFF_OUTLINE",
+        icons::ACCOUNT_NETWORK_OFF_OUTLINE,
+    )?;
+    m.add("ACCOUNT_NETWORK_OFF", icons::ACCOUNT_NETWORK_OFF)?;
+    m.add("ACCOUNT_NETWORK_OUTLINE", icons::ACCOUNT_NETWORK_OUTLINE)?;
+    m.add("ACCOUNT_NETWORK", icons::ACCOUNT_NETWORK)?;
+    m.add("ACCOUNT_OFF_OUTLINE", icons::ACCOUNT_OFF_OUTLINE)?;
+    m.add("ACCOUNT_OFF", icons::ACCOUNT_OFF)?;
+    m.add("ACCOUNT_OUTLINE", icons::ACCOUNT_OUTLINE)?;
+    m.add("ACCOUNT_PLUS_OUTLINE", icons::ACCOUNT_PLUS_OUTLINE)?;
+    m.add("ACCOUNT_PLUS", icons::ACCOUNT_PLUS)?;
+    m.add("ACCOUNT_QUESTION_OUTLINE", icons::ACCOUNT_QUESTION_OUTLINE)?;
+    m.add("ACCOUNT_QUESTION", icons::ACCOUNT_QUESTION)?;
+    m.add(
+        "ACCOUNT_REACTIVATE_OUTLINE",
+        icons::ACCOUNT_REACTIVATE_OUTLINE,
+    )?;
+    m.add("ACCOUNT_REACTIVATE", icons::ACCOUNT_REACTIVATE)?;
+    m.add("ACCOUNT_REMOVE_OUTLINE", icons::ACCOUNT_REMOVE_OUTLINE)?;
+    m.add("ACCOUNT_REMOVE", icons::ACCOUNT_REMOVE)?;
+    m.add("ACCOUNT_SCHOOL_OUTLINE", icons::ACCOUNT_SCHOOL_OUTLINE)?;
+    m.add("ACCOUNT_SCHOOL", icons::ACCOUNT_SCHOOL)?;
+    m.add("ACCOUNT_SEARCH_OUTLINE", icons::ACCOUNT_SEARCH_OUTLINE)?;
+    m.add("ACCOUNT_SEARCH", icons::ACCOUNT_SEARCH)?;
+    m.add("ACCOUNT_SETTINGS_OUTLINE", icons::ACCOUNT_SETTINGS_OUTLINE)?;
+    m.add("ACCOUNT_SETTINGS", icons::ACCOUNT_SETTINGS)?;
+    m.add("ACCOUNT_STAR_OUTLINE", icons::ACCOUNT_STAR_OUTLINE)?;
+    m.add("ACCOUNT_STAR", icons::ACCOUNT_STAR)?;
+    m.add(
+        "ACCOUNT_SUPERVISOR_CIRCLE_OUTLINE",
+        icons::ACCOUNT_SUPERVISOR_CIRCLE_OUTLINE,
+    )?;
+    m.add(
+        "ACCOUNT_SUPERVISOR_CIRCLE",
+        icons::ACCOUNT_SUPERVISOR_CIRCLE,
+    )?;
+    m.add(
+        "ACCOUNT_SUPERVISOR_OUTLINE",
+        icons::ACCOUNT_SUPERVISOR_OUTLINE,
+    )?;
+    m.add("ACCOUNT_SUPERVISOR", icons::ACCOUNT_SUPERVISOR)?;
+    m.add("ACCOUNT_SWITCH_OUTLINE", icons::ACCOUNT_SWITCH_OUTLINE)?;
+    m.add("ACCOUNT_SWITCH", icons::ACCOUNT_SWITCH)?;
+    m.add("ACCOUNT_SYNC_OUTLINE", icons::ACCOUNT_SYNC_OUTLINE)?;
+    m.add("ACCOUNT_SYNC", icons::ACCOUNT_SYNC)?;
+    m.add("ACCOUNT_TAG_OUTLINE", icons::ACCOUNT_TAG_OUTLINE)?;
+    m.add("ACCOUNT_TAG", icons::ACCOUNT_TAG)?;
+    m.add("ACCOUNT_TIE_HAT_OUTLINE", icons::ACCOUNT_TIE_HAT_OUTLINE)?;
+    m.add("ACCOUNT_TIE_HAT", icons::ACCOUNT_TIE_HAT)?;
+    m.add("ACCOUNT_TIE_OUTLINE", icons::ACCOUNT_TIE_OUTLINE)?;
+    m.add(
+        "ACCOUNT_TIE_VOICE_OFF_OUTLINE",
+        icons::ACCOUNT_TIE_VOICE_OFF_OUTLINE,
+    )?;
+    m.add("ACCOUNT_TIE_VOICE_OFF", icons::ACCOUNT_TIE_VOICE_OFF)?;
+    m.add(
+        "ACCOUNT_TIE_VOICE_OUTLINE",
+        icons::ACCOUNT_TIE_VOICE_OUTLINE,
+    )?;
+    m.add("ACCOUNT_TIE_VOICE", icons::ACCOUNT_TIE_VOICE)?;
+    m.add("ACCOUNT_TIE_WOMAN", icons::ACCOUNT_TIE_WOMAN)?;
+    m.add("ACCOUNT_TIE", icons::ACCOUNT_TIE)?;
+    m.add("ACCOUNT_VOICE_OFF", icons::ACCOUNT_VOICE_OFF)?;
+    m.add("ACCOUNT_VOICE", icons::ACCOUNT_VOICE)?;
+    m.add("ACCOUNT_WRENCH_OUTLINE", icons::ACCOUNT_WRENCH_OUTLINE)?;
+    m.add("ACCOUNT_WRENCH", icons::ACCOUNT_WRENCH)?;
+    m.add("ACCOUNT", icons::ACCOUNT)?;
+    m.add("ADJUST", icons::ADJUST)?;
+    m.add("ADVERTISEMENTS_OFF", icons::ADVERTISEMENTS_OFF)?;
+    m.add("ADVERTISEMENTS", icons::ADVERTISEMENTS)?;
+    m.add("AIR_CONDITIONER", icons::AIR_CONDITIONER)?;
+    m.add("AIR_FILTER", icons::AIR_FILTER)?;
+    m.add("AIR_HORN", icons::AIR_HORN)?;
+    m.add("AIR_HUMIDIFIER_OFF", icons::AIR_HUMIDIFIER_OFF)?;
+    m.add("AIR_HUMIDIFIER", icons::AIR_HUMIDIFIER)?;
+    m.add("AIR_PURIFIER_OFF", icons::AIR_PURIFIER_OFF)?;
+    m.add("AIR_PURIFIER", icons::AIR_PURIFIER)?;
+    m.add("AIRBAG", icons::AIRBAG)?;
+    m.add("AIRBALLOON_OUTLINE", icons::AIRBALLOON_OUTLINE)?;
+    m.add("AIRBALLOON", icons::AIRBALLOON)?;
+    m.add("AIRPLANE_ALERT", icons::AIRPLANE_ALERT)?;
+    m.add("AIRPLANE_CHECK", icons::AIRPLANE_CHECK)?;
+    m.add("AIRPLANE_CLOCK", icons::AIRPLANE_CLOCK)?;
+    m.add("AIRPLANE_COG", icons::AIRPLANE_COG)?;
+    m.add("AIRPLANE_EDIT", icons::AIRPLANE_EDIT)?;
+    m.add("AIRPLANE_LANDING", icons::AIRPLANE_LANDING)?;
+    m.add("AIRPLANE_MARKER", icons::AIRPLANE_MARKER)?;
+    m.add("AIRPLANE_MINUS", icons::AIRPLANE_MINUS)?;
+    m.add("AIRPLANE_OFF", icons::AIRPLANE_OFF)?;
+    m.add("AIRPLANE_PLUS", icons::AIRPLANE_PLUS)?;
+    m.add("AIRPLANE_REMOVE", icons::AIRPLANE_REMOVE)?;
+    m.add("AIRPLANE_SEARCH", icons::AIRPLANE_SEARCH)?;
+    m.add("AIRPLANE_SETTINGS", icons::AIRPLANE_SETTINGS)?;
+    m.add("AIRPLANE_TAKEOFF", icons::AIRPLANE_TAKEOFF)?;
+    m.add("AIRPLANE", icons::AIRPLANE)?;
+    m.add("AIRPORT", icons::AIRPORT)?;
+    m.add("ALARM_BELL", icons::ALARM_BELL)?;
+    m.add("ALARM_CHECK", icons::ALARM_CHECK)?;
+    m.add("ALARM_LIGHT_OFF_OUTLINE", icons::ALARM_LIGHT_OFF_OUTLINE)?;
+    m.add("ALARM_LIGHT_OFF", icons::ALARM_LIGHT_OFF)?;
+    m.add("ALARM_LIGHT_OUTLINE", icons::ALARM_LIGHT_OUTLINE)?;
+    m.add("ALARM_LIGHT", icons::ALARM_LIGHT)?;
+    m.add("ALARM_MULTIPLE", icons::ALARM_MULTIPLE)?;
+    m.add("ALARM_NOTE_OFF", icons::ALARM_NOTE_OFF)?;
+    m.add("ALARM_NOTE", icons::ALARM_NOTE)?;
+    m.add("ALARM_OFF", icons::ALARM_OFF)?;
+    m.add("ALARM_PANEL_OUTLINE", icons::ALARM_PANEL_OUTLINE)?;
+    m.add("ALARM_PANEL", icons::ALARM_PANEL)?;
+    m.add("ALARM_PLUS", icons::ALARM_PLUS)?;
+    m.add("ALARM_SNOOZE", icons::ALARM_SNOOZE)?;
+    m.add("ALARM", icons::ALARM)?;
+    m.add("ALBUM", icons::ALBUM)?;
+    m.add("ALERT_BOX_OUTLINE", icons::ALERT_BOX_OUTLINE)?;
+    m.add("ALERT_BOX", icons::ALERT_BOX)?;
+    m.add(
+        "ALERT_CIRCLE_CHECK_OUTLINE",
+        icons::ALERT_CIRCLE_CHECK_OUTLINE,
+    )?;
+    m.add("ALERT_CIRCLE_CHECK", icons::ALERT_CIRCLE_CHECK)?;
+    m.add("ALERT_CIRCLE_OUTLINE", icons::ALERT_CIRCLE_OUTLINE)?;
+    m.add("ALERT_CIRCLE", icons::ALERT_CIRCLE)?;
+    m.add("ALERT_DECAGRAM_OUTLINE", icons::ALERT_DECAGRAM_OUTLINE)?;
+    m.add("ALERT_DECAGRAM", icons::ALERT_DECAGRAM)?;
+    m.add("ALERT_MINUS_OUTLINE", icons::ALERT_MINUS_OUTLINE)?;
+    m.add("ALERT_MINUS", icons::ALERT_MINUS)?;
+    m.add("ALERT_OCTAGON_OUTLINE", icons::ALERT_OCTAGON_OUTLINE)?;
+    m.add("ALERT_OCTAGON", icons::ALERT_OCTAGON)?;
+    Ok(())
+}

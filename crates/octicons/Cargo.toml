@@ -1,0 +1,23 @@
+[package]
+name = "octicons-pack"
+description = "A redistribution of @primer/octicons npm package's SVG and metadata."
+version = "19.15.5"
+license = "MIT"
+exclude = ["deno.json", "main.ts", "pyproject.toml"]
+
+[package.repository]
+workspace = true
+
+[package.edition]
+workspace = true
+
+[lib]
+name = "octicons_pack"
+crate-type = ["cdylib","lib"]
+
+[dependencies.pyo3]
+workspace = true
+optional = true
+
+[features]
+pyo3 = ["dep:pyo3"]

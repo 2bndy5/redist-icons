@@ -1,0 +1,223 @@
+// This file was generated. DO NOT EDIT.
+use crate::icons;
+use pyo3::prelude::*;
+
+pub(super) fn bind_part_18(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("HAMBURGER_MINUS", icons::HAMBURGER_MINUS)?;
+    m.add("HAMBURGER_OFF", icons::HAMBURGER_OFF)?;
+    m.add("HAMBURGER_PLUS", icons::HAMBURGER_PLUS)?;
+    m.add("HAMBURGER_REMOVE", icons::HAMBURGER_REMOVE)?;
+    m.add("HAMBURGER", icons::HAMBURGER)?;
+    m.add("HAMMER_SCREWDRIVER", icons::HAMMER_SCREWDRIVER)?;
+    m.add("HAMMER_SICKLE", icons::HAMMER_SICKLE)?;
+    m.add("HAMMER_WRENCH", icons::HAMMER_WRENCH)?;
+    m.add("HAMMER", icons::HAMMER)?;
+    m.add(
+        "HAND_BACK_LEFT_OFF_OUTLINE",
+        icons::HAND_BACK_LEFT_OFF_OUTLINE,
+    )?;
+    m.add("HAND_BACK_LEFT_OFF", icons::HAND_BACK_LEFT_OFF)?;
+    m.add("HAND_BACK_LEFT_OUTLINE", icons::HAND_BACK_LEFT_OUTLINE)?;
+    m.add("HAND_BACK_LEFT", icons::HAND_BACK_LEFT)?;
+    m.add(
+        "HAND_BACK_RIGHT_OFF_OUTLINE",
+        icons::HAND_BACK_RIGHT_OFF_OUTLINE,
+    )?;
+    m.add("HAND_BACK_RIGHT_OFF", icons::HAND_BACK_RIGHT_OFF)?;
+    m.add("HAND_BACK_RIGHT_OUTLINE", icons::HAND_BACK_RIGHT_OUTLINE)?;
+    m.add("HAND_BACK_RIGHT", icons::HAND_BACK_RIGHT)?;
+    m.add("HAND_CLAP_OFF", icons::HAND_CLAP_OFF)?;
+    m.add("HAND_CLAP", icons::HAND_CLAP)?;
+    m.add("HAND_COIN_OUTLINE", icons::HAND_COIN_OUTLINE)?;
+    m.add("HAND_COIN", icons::HAND_COIN)?;
+    m.add("HAND_CYCLE", icons::HAND_CYCLE)?;
+    m.add("HAND_EXTENDED_OUTLINE", icons::HAND_EXTENDED_OUTLINE)?;
+    m.add("HAND_EXTENDED", icons::HAND_EXTENDED)?;
+    m.add("HAND_FRONT_LEFT_OUTLINE", icons::HAND_FRONT_LEFT_OUTLINE)?;
+    m.add("HAND_FRONT_LEFT", icons::HAND_FRONT_LEFT)?;
+    m.add("HAND_FRONT_RIGHT_OUTLINE", icons::HAND_FRONT_RIGHT_OUTLINE)?;
+    m.add("HAND_FRONT_RIGHT", icons::HAND_FRONT_RIGHT)?;
+    m.add("HAND_HEART_OUTLINE", icons::HAND_HEART_OUTLINE)?;
+    m.add("HAND_HEART", icons::HAND_HEART)?;
+    m.add("HAND_OKAY", icons::HAND_OKAY)?;
+    m.add("HAND_PEACE_VARIANT", icons::HAND_PEACE_VARIANT)?;
+    m.add("HAND_PEACE", icons::HAND_PEACE)?;
+    m.add("HAND_POINTING_DOWN", icons::HAND_POINTING_DOWN)?;
+    m.add("HAND_POINTING_LEFT", icons::HAND_POINTING_LEFT)?;
+    m.add("HAND_POINTING_RIGHT", icons::HAND_POINTING_RIGHT)?;
+    m.add("HAND_POINTING_UP", icons::HAND_POINTING_UP)?;
+    m.add("HAND_SAW", icons::HAND_SAW)?;
+    m.add("HAND_WASH_OUTLINE", icons::HAND_WASH_OUTLINE)?;
+    m.add("HAND_WASH", icons::HAND_WASH)?;
+    m.add("HAND_WATER", icons::HAND_WATER)?;
+    m.add("HAND_WAVE_OUTLINE", icons::HAND_WAVE_OUTLINE)?;
+    m.add("HAND_WAVE", icons::HAND_WAVE)?;
+    m.add("HANDBALL", icons::HANDBALL)?;
+    m.add("HANDCUFFS", icons::HANDCUFFS)?;
+    m.add("HANDS_PRAY", icons::HANDS_PRAY)?;
+    m.add("HANDSHAKE_OUTLINE", icons::HANDSHAKE_OUTLINE)?;
+    m.add("HANDSHAKE", icons::HANDSHAKE)?;
+    m.add("HANGER", icons::HANGER)?;
+    m.add("HARD_HAT", icons::HARD_HAT)?;
+    m.add("HARDDISK_PLUS", icons::HARDDISK_PLUS)?;
+    m.add("HARDDISK_REMOVE", icons::HARDDISK_REMOVE)?;
+    m.add("HARDDISK", icons::HARDDISK)?;
+    m.add("HAT_FEDORA", icons::HAT_FEDORA)?;
+    m.add("HAZARD_LIGHTS", icons::HAZARD_LIGHTS)?;
+    m.add("HDMI_PORT", icons::HDMI_PORT)?;
+    m.add("HDR_OFF", icons::HDR_OFF)?;
+    m.add("HDR", icons::HDR)?;
+    m.add("HEAD_ALERT_OUTLINE", icons::HEAD_ALERT_OUTLINE)?;
+    m.add("HEAD_ALERT", icons::HEAD_ALERT)?;
+    m.add("HEAD_CHECK_OUTLINE", icons::HEAD_CHECK_OUTLINE)?;
+    m.add("HEAD_CHECK", icons::HEAD_CHECK)?;
+    m.add("HEAD_COG_OUTLINE", icons::HEAD_COG_OUTLINE)?;
+    m.add("HEAD_COG", icons::HEAD_COG)?;
+    m.add(
+        "HEAD_DOTS_HORIZONTAL_OUTLINE",
+        icons::HEAD_DOTS_HORIZONTAL_OUTLINE,
+    )?;
+    m.add("HEAD_DOTS_HORIZONTAL", icons::HEAD_DOTS_HORIZONTAL)?;
+    m.add("HEAD_FLASH_OUTLINE", icons::HEAD_FLASH_OUTLINE)?;
+    m.add("HEAD_FLASH", icons::HEAD_FLASH)?;
+    m.add("HEAD_HEART_OUTLINE", icons::HEAD_HEART_OUTLINE)?;
+    m.add("HEAD_HEART", icons::HEAD_HEART)?;
+    m.add("HEAD_LIGHTBULB_OUTLINE", icons::HEAD_LIGHTBULB_OUTLINE)?;
+    m.add("HEAD_LIGHTBULB", icons::HEAD_LIGHTBULB)?;
+    m.add("HEAD_MINUS_OUTLINE", icons::HEAD_MINUS_OUTLINE)?;
+    m.add("HEAD_MINUS", icons::HEAD_MINUS)?;
+    m.add("HEAD_OUTLINE", icons::HEAD_OUTLINE)?;
+    m.add("HEAD_PLUS_OUTLINE", icons::HEAD_PLUS_OUTLINE)?;
+    m.add("HEAD_PLUS", icons::HEAD_PLUS)?;
+    m.add("HEAD_QUESTION_OUTLINE", icons::HEAD_QUESTION_OUTLINE)?;
+    m.add("HEAD_QUESTION", icons::HEAD_QUESTION)?;
+    m.add("HEAD_REMOVE_OUTLINE", icons::HEAD_REMOVE_OUTLINE)?;
+    m.add("HEAD_REMOVE", icons::HEAD_REMOVE)?;
+    m.add("HEAD_SNOWFLAKE_OUTLINE", icons::HEAD_SNOWFLAKE_OUTLINE)?;
+    m.add("HEAD_SNOWFLAKE", icons::HEAD_SNOWFLAKE)?;
+    m.add("HEAD_SYNC_OUTLINE", icons::HEAD_SYNC_OUTLINE)?;
+    m.add("HEAD_SYNC", icons::HEAD_SYNC)?;
+    m.add("HEAD", icons::HEAD)?;
+    m.add("HEADPHONES_BLUETOOTH", icons::HEADPHONES_BLUETOOTH)?;
+    m.add("HEADPHONES_BOX", icons::HEADPHONES_BOX)?;
+    m.add("HEADPHONES_OFF", icons::HEADPHONES_OFF)?;
+    m.add("HEADPHONES_SETTINGS", icons::HEADPHONES_SETTINGS)?;
+    m.add("HEADPHONES", icons::HEADPHONES)?;
+    m.add("HEADSET_DOCK", icons::HEADSET_DOCK)?;
+    m.add("HEADSET_OFF", icons::HEADSET_OFF)?;
+    m.add("HEADSET", icons::HEADSET)?;
+    m.add("HEART_BOX_OUTLINE", icons::HEART_BOX_OUTLINE)?;
+    m.add("HEART_BOX", icons::HEART_BOX)?;
+    m.add("HEART_BROKEN_OUTLINE", icons::HEART_BROKEN_OUTLINE)?;
+    m.add("HEART_BROKEN", icons::HEART_BROKEN)?;
+    m.add("HEART_CIRCLE_OUTLINE", icons::HEART_CIRCLE_OUTLINE)?;
+    m.add("HEART_CIRCLE", icons::HEART_CIRCLE)?;
+    m.add("HEART_COG_OUTLINE", icons::HEART_COG_OUTLINE)?;
+    m.add("HEART_COG", icons::HEART_COG)?;
+    m.add("HEART_FLASH", icons::HEART_FLASH)?;
+    m.add("HEART_HALF_FULL", icons::HEART_HALF_FULL)?;
+    m.add("HEART_HALF_OUTLINE", icons::HEART_HALF_OUTLINE)?;
+    m.add("HEART_HALF", icons::HEART_HALF)?;
+    m.add("HEART_MINUS_OUTLINE", icons::HEART_MINUS_OUTLINE)?;
+    m.add("HEART_MINUS", icons::HEART_MINUS)?;
+    m.add("HEART_MULTIPLE_OUTLINE", icons::HEART_MULTIPLE_OUTLINE)?;
+    m.add("HEART_MULTIPLE", icons::HEART_MULTIPLE)?;
+    m.add("HEART_OFF_OUTLINE", icons::HEART_OFF_OUTLINE)?;
+    m.add("HEART_OFF", icons::HEART_OFF)?;
+    m.add("HEART_OUTLINE", icons::HEART_OUTLINE)?;
+    m.add("HEART_PLUS_OUTLINE", icons::HEART_PLUS_OUTLINE)?;
+    m.add("HEART_PLUS", icons::HEART_PLUS)?;
+    m.add("HEART_PULSE", icons::HEART_PULSE)?;
+    m.add("HEART_REMOVE_OUTLINE", icons::HEART_REMOVE_OUTLINE)?;
+    m.add("HEART_REMOVE", icons::HEART_REMOVE)?;
+    m.add("HEART_SEARCH", icons::HEART_SEARCH)?;
+    m.add("HEART_SETTINGS_OUTLINE", icons::HEART_SETTINGS_OUTLINE)?;
+    m.add("HEART_SETTINGS", icons::HEART_SETTINGS)?;
+    m.add("HEART", icons::HEART)?;
+    m.add("HEAT_PUMP_OUTLINE", icons::HEAT_PUMP_OUTLINE)?;
+    m.add("HEAT_PUMP", icons::HEAT_PUMP)?;
+    m.add("HEAT_WAVE", icons::HEAT_WAVE)?;
+    m.add("HEATING_COIL", icons::HEATING_COIL)?;
+    m.add("HELICOPTER", icons::HELICOPTER)?;
+    m.add(
+        "HELP_BOX_MULTIPLE_OUTLINE",
+        icons::HELP_BOX_MULTIPLE_OUTLINE,
+    )?;
+    m.add("HELP_BOX_MULTIPLE", icons::HELP_BOX_MULTIPLE)?;
+    m.add("HELP_BOX_OUTLINE", icons::HELP_BOX_OUTLINE)?;
+    m.add("HELP_BOX", icons::HELP_BOX)?;
+    m.add("HELP_CIRCLE_OUTLINE", icons::HELP_CIRCLE_OUTLINE)?;
+    m.add("HELP_CIRCLE", icons::HELP_CIRCLE)?;
+    m.add("HELP_NETWORK_OUTLINE", icons::HELP_NETWORK_OUTLINE)?;
+    m.add("HELP_NETWORK", icons::HELP_NETWORK)?;
+    m.add("HELP_RHOMBUS_OUTLINE", icons::HELP_RHOMBUS_OUTLINE)?;
+    m.add("HELP_RHOMBUS", icons::HELP_RHOMBUS)?;
+    m.add("HELP", icons::HELP)?;
+    m.add("HEXADECIMAL", icons::HEXADECIMAL)?;
+    m.add("HEXAGON_MULTIPLE_OUTLINE", icons::HEXAGON_MULTIPLE_OUTLINE)?;
+    m.add("HEXAGON_MULTIPLE", icons::HEXAGON_MULTIPLE)?;
+    m.add("HEXAGON_OUTLINE", icons::HEXAGON_OUTLINE)?;
+    m.add("HEXAGON_SLICE_1", icons::HEXAGON_SLICE_1)?;
+    m.add("HEXAGON_SLICE_2", icons::HEXAGON_SLICE_2)?;
+    m.add("HEXAGON_SLICE_3", icons::HEXAGON_SLICE_3)?;
+    m.add("HEXAGON_SLICE_4", icons::HEXAGON_SLICE_4)?;
+    m.add("HEXAGON_SLICE_5", icons::HEXAGON_SLICE_5)?;
+    m.add("HEXAGON_SLICE_6", icons::HEXAGON_SLICE_6)?;
+    m.add("HEXAGON", icons::HEXAGON)?;
+    m.add("HEXAGRAM_OUTLINE", icons::HEXAGRAM_OUTLINE)?;
+    m.add("HEXAGRAM", icons::HEXAGRAM)?;
+    m.add("HIGH_DEFINITION_BOX", icons::HIGH_DEFINITION_BOX)?;
+    m.add("HIGH_DEFINITION", icons::HIGH_DEFINITION)?;
+    m.add("HIGHWAY", icons::HIGHWAY)?;
+    m.add("HIKING", icons::HIKING)?;
+    m.add("HISTORY", icons::HISTORY)?;
+    m.add("HOCKEY_PUCK", icons::HOCKEY_PUCK)?;
+    m.add("HOCKEY_STICKS", icons::HOCKEY_STICKS)?;
+    m.add("HOLOLENS", icons::HOLOLENS)?;
+    m.add("HOME_ACCOUNT", icons::HOME_ACCOUNT)?;
+    m.add("HOME_ALERT_OUTLINE", icons::HOME_ALERT_OUTLINE)?;
+    m.add("HOME_ALERT", icons::HOME_ALERT)?;
+    m.add("HOME_ANALYTICS", icons::HOME_ANALYTICS)?;
+    #[allow(deprecated)]
+    m.add("HOME_ASSISTANT", icons::HOME_ASSISTANT)?;
+    m.add("HOME_AUTOMATION", icons::HOME_AUTOMATION)?;
+    m.add("HOME_BATTERY_OUTLINE", icons::HOME_BATTERY_OUTLINE)?;
+    m.add("HOME_BATTERY", icons::HOME_BATTERY)?;
+    m.add("HOME_CIRCLE_OUTLINE", icons::HOME_CIRCLE_OUTLINE)?;
+    m.add("HOME_CIRCLE", icons::HOME_CIRCLE)?;
+    m.add("HOME_CITY_OUTLINE", icons::HOME_CITY_OUTLINE)?;
+    m.add("HOME_CITY", icons::HOME_CITY)?;
+    m.add("HOME_CLOCK_OUTLINE", icons::HOME_CLOCK_OUTLINE)?;
+    m.add("HOME_CLOCK", icons::HOME_CLOCK)?;
+    m.add("HOME_EDIT_OUTLINE", icons::HOME_EDIT_OUTLINE)?;
+    m.add("HOME_EDIT", icons::HOME_EDIT)?;
+    m.add("HOME_EXPORT_OUTLINE", icons::HOME_EXPORT_OUTLINE)?;
+    m.add("HOME_FLOOD", icons::HOME_FLOOD)?;
+    m.add("HOME_FLOOR_0", icons::HOME_FLOOR_0)?;
+    m.add("HOME_FLOOR_1", icons::HOME_FLOOR_1)?;
+    m.add("HOME_FLOOR_2", icons::HOME_FLOOR_2)?;
+    m.add("HOME_FLOOR_3", icons::HOME_FLOOR_3)?;
+    m.add("HOME_FLOOR_A", icons::HOME_FLOOR_A)?;
+    m.add("HOME_FLOOR_B", icons::HOME_FLOOR_B)?;
+    m.add("HOME_FLOOR_G", icons::HOME_FLOOR_G)?;
+    m.add("HOME_FLOOR_L", icons::HOME_FLOOR_L)?;
+    m.add("HOME_FLOOR_NEGATIVE_1", icons::HOME_FLOOR_NEGATIVE_1)?;
+    m.add("HOME_GROUP_MINUS", icons::HOME_GROUP_MINUS)?;
+    m.add("HOME_GROUP_PLUS", icons::HOME_GROUP_PLUS)?;
+    m.add("HOME_GROUP_REMOVE", icons::HOME_GROUP_REMOVE)?;
+    m.add("HOME_GROUP", icons::HOME_GROUP)?;
+    m.add("HOME_HEART", icons::HOME_HEART)?;
+    m.add("HOME_IMPORT_OUTLINE", icons::HOME_IMPORT_OUTLINE)?;
+    m.add("HOME_LIGHTBULB_OUTLINE", icons::HOME_LIGHTBULB_OUTLINE)?;
+    m.add("HOME_LIGHTBULB", icons::HOME_LIGHTBULB)?;
+    m.add(
+        "HOME_LIGHTNING_BOLT_OUTLINE",
+        icons::HOME_LIGHTNING_BOLT_OUTLINE,
+    )?;
+    m.add("HOME_LIGHTNING_BOLT", icons::HOME_LIGHTNING_BOLT)?;
+    m.add("HOME_LOCK_OPEN", icons::HOME_LOCK_OPEN)?;
+    m.add("HOME_LOCK", icons::HOME_LOCK)?;
+    m.add("HOME_MAP_MARKER", icons::HOME_MAP_MARKER)?;
+    m.add("HOME_MINUS_OUTLINE", icons::HOME_MINUS_OUTLINE)?;
+    Ok(())
+}

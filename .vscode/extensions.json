@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "rust-lang.rust-analyzer",
+    "denoland.vscode-deno",
+    "streetsidesoftware.code-spell-checker",
+    "thenuprojectcontributors.vscode-nushell-lang"
+  ]
+}

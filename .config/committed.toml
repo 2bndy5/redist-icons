@@ -1,0 +1,20 @@
+# https://github.com/crate-ci/committed/blob/master/docs/reference.md
+style = "conventional"
+subject_capitalized = false
+allowed_types = [
+    "fix",
+    "feat",
+    "build",
+    "chore",
+    "docs",
+    "style",
+    "refactor",
+    "remove",
+    "deprecate",
+    "security",
+    "add",
+    "perf",
+    "test",
+]
+subject_length = 0 # unlimited
+line_length = 0 # unlimited
