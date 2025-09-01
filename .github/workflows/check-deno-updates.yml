@@ -15,6 +15,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           token: ${{ secrets.REDIST_ICONS_UPDATE }}
+          fetch-depth: 0
 
       - run: rustup update --no-self-update
 
@@ -42,6 +43,7 @@ jobs:
           path: "~/.cache/pre-commit"
           key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
 
-      - run: nu .github/workflows/check-deno-updates.nu
+      - name: Check for updates
+        run: nu .github/workflows/check-deno-updates.nu
         env:
           GITHUB_TOKEN: ${{ secrets.REDIST_ICONS_UPDATE }}

@@ -51,8 +51,6 @@ export def has-updates [] {
     $updates
 }
 
-const PR_NOTES = ".github/workflows/PR-notes.md"
-
 # Translate a given `pkg` name into a deno task
 def translate-pkg-to-task [
     pkg: string, # The npm package name to translate
@@ -66,83 +64,129 @@ def translate-pkg-to-task [
     }
 }
 
+# Apply the given `update`.
+#
+# Returns a record summarizing the applied changes.
+def apply-update [
+    update: record<package: string, current: string, update: string, latest: string>, # the dependency update info to apply.
+] {
+    # normalize pkg name
+    let package = $update | get 'package'
+    let pkg = (
+        if (
+            ($package | str starts-with 'npm:')
+            or ($package | str starts-with 'jsr:')
+        ) {
+            $package | str substring 4..
+        } else {
+            $package
+        }
+    ) | str trim
+
+    run-cmd deno update -r $"($pkg)@($update | get latest)"
+
+    let deno_task = translate-pkg-to-task $pkg
+    if ($deno_task | is-empty) {
+        print $"($pkg) is not source of generation"
+    } else {
+        run-cmd deno task $"gen:($deno_task)"
+    }
+
+    # now get repo of updated pkg
+    let repo = (
+        if ($update | get package | str starts-with 'npm:') {
+            let repo = open $"node_modules/($pkg)/package.json" | get "repository"
+            if (($repo | describe) == 'string') {
+                $repo | url parse | $"https://($in.host)($in.path)"
+            } else {
+                $repo | get 'url' | url parse | $"https://($in.host)($in.path)"
+            }
+        } else if ($update | get package | str starts-with 'jsr:') {
+            $"https://jsr.io/($pkg)@($update | get latest | str trim)"
+        } else {
+            null
+        }
+    )
+
+    # return descriptive info for summary changes
+    {
+        package: (
+            if ($repo | is-not-empty) {
+                $"[`($pkg)`]\(($repo))"
+            } else {
+                $pkg
+            }
+        ),
+        from: $update.current,
+        to: $update.latest
+    }
+}
+
+const PR_NOTES = ".github/workflows/PR-notes.md"
+
 # Create a new branch, applies updates, and opens a Pull Request.
 def create-pr [
     updates: table<package: string, current: string, update: string, latest: string>, # The possible updates
 ] {
+    let is_ci = (is-in-ci)
     # create branch
     let sha_hash = $updates | str join | hash sha256 | str substring ..6
     let branch_name = $"deno/updates-($sha_hash)"
+    let branch_exists = (^git branch -r) | lines | where {$in | str ends-with $branch_name} | is-not-empty
     run-cmd git checkout -b $branch_name
+    if ($is_ci) {
+        run-cmd git config --global user.name $"($env.GITHUB_ACTOR)"
+        run-cmd git config --global user.email $"($env.GITHUB_ACTOR_ID)+($env.GITHUB_ACTOR)@users.noreply.github.com"
+    }
+    if ($branch_exists) {
+        print $"Branch ($branch_name) already exists"
+        run-cmd git pull --rebase origin $branch_name
+    }
 
     # apply updates and aggregate table for PR description
+    print "Applying the following updates:"
+    print $updates
     mut desc_table = []
     for bump in $updates {
-        # normalize pkg name
-        let package = $bump | get 'package'
-        let pkg = (
-            if (
-                ($package | str starts-with 'npm:')
-                or ($package | str starts-with 'jsr:')
-            ) {
-                $package | str substring 4..
-            } else {
-                $package
-            }
-        ) | str trim
-
-        run-cmd deno update -r $"($pkg)@($bump | get latest)"
-
-        let deno_task = translate-pkg-to-task $pkg
-        if ($deno_task | is-empty) {
-            print $"($pkg) is not source of generation"
-        } else {
-            run-cmd deno task $"gen:($deno_task)"
-        }
-
-        # now get repo of updated pkg
-        let repo = (
-            if ($bump | get package | str starts-with 'npm:') {
-                let repo = open $"node_modules/($pkg)/package.json" | get "repository"
-                if (($repo | describe) == 'string') {
-                    $repo | url parse | $"https://($in.host)($in.path)"
-                } else {
-                    $repo | get 'url' | url parse | $"https://($in.host)($in.path)"
-                }
-            } else if ($bump | get package | str starts-with 'jsr:') {
-                $"https://jsr.io/($pkg)@($bump | get latest | str trim)"
-            } else {
-                null
-            }
-        )
-        $desc_table = $desc_table | append {
-            package: (
-                if ($repo | is-not-empty) {
-                    $"[`($pkg)`]\(($repo))"
-                } else {
-                    $pkg
-                }
-            ),
-            from: $bump.current,
-            to: $bump.latest
-        }
+        $desc_table = $desc_table | append (apply-update $bump)
     }
 
     run-cmd uv run pre-commit run --all-files
 
+    $desc_table | to md | save $PR_NOTES
+
     # commit changes
-    if (is-in-ci) {
-        run-cmd git config --global user.name $"($env.GITHUB_ACTOR)"
-        run-cmd git config --global user.email $"($env.GITHUB_ACTOR_ID)+($env.GITHUB_ACTOR)@users.noreply.github.com"
-    }
     let title = $"build: bump ($updates | length) packages in deno group"
     run-cmd git add --all
-    run-cmd git commit -m $title
-    run-cmd git push --set-upstream origin $branch_name
+    let git_status = (^git status -s) | lines
+    if ($git_status | is-not-empty) {
+        run-cmd git commit -m $title
+        run-cmd git push --set-upstream origin $branch_name --force
+        if ($is_ci) {
+            (
+                $desc_table
+                | to md
+                | $'\n## Found updates!\n\n($in)\n'
+                | save --append $env.GITHUB_STEP_SUMMARY
+            )
+        }
 
-    # create PR
-    $desc_table | to md | save $PR_NOTES
-    run-cmd gh pr create --title $title --body-file $PR_NOTES
+        # create PR
+        let pr_args = [--title $title --body-file $PR_NOTES]
+        if $branch_exists {
+            let pr_list = (^gh pr list -H $branch_name --json "number") | from json
+            if ($pr_list | is-not-empty) {
+                let pr_number = $pr_list | first | get number
+                run-cmd gh pr edit $pr_number ...$pr_args
+            } else {
+                run-cmd gh pr create ...$pr_args
+            }
+        } else {
+            run-cmd gh pr create ...$pr_args
+        }
+    } else {
+        print $"::notice::No changes pushed to ($branch_name)"
+    }
 }
 
 def main [] {
