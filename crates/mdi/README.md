@@ -1,5 +1,10 @@
 # material-design-icons-pack
 
+[![Crates.io Version][mdi-cargo-badge]][mdi-cargo-link]
+![MSRV][msrv-badge]
+[![PyPI - Version][mdi-pip-badge]][mdi-pip-link]
+![Min Py][min-py]
+
 A redistribution of SVG assets and some metadata from the
 [`@mdi/svg` npm package](https://www.npmjs.com/package/@mdi/svg).
 
@@ -43,3 +48,11 @@ This crate has the following features:
 The python binding does not support conditionally compiling certain icon
 families. Note, in the python binding, a deprecation warning is emitted from
 `get_icon()` when fetching a deprecated icon.
+
+[mdi-cargo-badge]: https://img.shields.io/crates/v/material-design-icons-pack
+[mdi-cargo-link]: https://crates.io/crates/material-design-icons-pack
+[mdi-pip-badge]: https://img.shields.io/pypi/v/material-design-icons-pack
+[mdi-pip-link]: https://pypi.org/project/material-design-icons-pack/
+
+[msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
+[min-py]: https://img.shields.io/badge/Python-v3.9+-blue

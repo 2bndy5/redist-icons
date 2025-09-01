@@ -1,5 +1,10 @@
 # fontawesome-free-pack
 
+[![Crates.io Version][fa-cargo-badge]][fa-cargo-link]
+![MSRV][msrv-badge]
+[![PyPI - Version][fa-pip-badge]][fa-pip-link]
+![Min Py][min-py]
+
 A redistribution of SVG assets and some metadata from the
 [`@fortawesome/fontawesome-free` npm package](https://www.npmjs.com/package/@fortawesome/fontawesome-free).
 
@@ -48,3 +53,11 @@ All the above features are enabled by default.
 
 The python binding does not support conditionally compiling certain icon
 families.
+
+[fa-cargo-badge]: https://img.shields.io/crates/v/fontawesome-free-pack
+[fa-cargo-link]: https://crates.io/crates/fontawesome-free-pack
+[fa-pip-badge]: https://img.shields.io/pypi/v/fontawesome-free-pack
+[fa-pip-link]: https://pypi.org/project/fontawesome-free-pack/
+
+[msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
+[min-py]: https://img.shields.io/badge/Python-v3.9+-blue

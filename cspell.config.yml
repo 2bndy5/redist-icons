@@ -13,6 +13,7 @@ words:
   - hustcer
   - manylinux
   - maturin
+  - msrv
   - musllinux
   - mypy
   - nushell
