@@ -3,7 +3,7 @@ name = "material-design-icons-pack"
 description = "A redistribution of @mdi/svg npm package's SVG and metadata."
 version = "7.4.47"
 license = "Apache-2.0"
-exclude = ["deno.json", "main.ts", "pyproject.toml"]
+exclude = ["deno.json", "main.ts", "pyproject.toml", "tests/*"]
 
 [package.repository]
 workspace = true
