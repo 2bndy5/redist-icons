@@ -9,7 +9,7 @@
     "jsr:@std/path@1.1.2": "1.1.2",
     "jsr:@std/path@^1.1.1": "1.1.2",
     "jsr:@std/toml@^1.0.9": "1.0.9",
-    "npm:@fortawesome/fontawesome-free@7.0.0": "7.0.0",
+    "npm:@fortawesome/fontawesome-free@7.0.1": "7.0.1",
     "npm:@mdi/svg@7.4.47": "7.4.47",
     "npm:@primer/octicons@19.16.0": "19.16.0",
     "npm:@types/node@*": "24.2.0",
@@ -50,8 +50,8 @@
     }
   },
   "npm": {
-    "@fortawesome/fontawesome-free@7.0.0": {
-      "integrity": "sha512-X48nISrSOa89zu2VMljC4XaRf8NmgTwQBVHfS2Nu5G00ZwM31oOVrAtGxZF3b6wDYf9lJsf/Eq4cCSFKIkOWPQ=="
+    "@fortawesome/fontawesome-free@7.0.1": {
+      "integrity": "sha512-RLmb9U6H2rJDnGxEqXxzy7ANPrQz7WK2/eTjdZqyU9uRU5W+FkAec9uU5gTYzFBH7aoXIw2WTJSCJR4KPlReQw=="
     },
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
@@ -209,7 +209,7 @@
       },
       "crates/fontawesome": {
         "dependencies": [
-          "npm:@fortawesome/fontawesome-free@7.0.0"
+          "npm:@fortawesome/fontawesome-free@7.0.1"
         ]
       },
       "crates/mdi": {
