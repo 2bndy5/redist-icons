@@ -8,7 +8,7 @@
     "jsr:@std/internal@^1.0.9": "1.0.10",
     "jsr:@std/path@1.1.2": "1.1.2",
     "jsr:@std/path@^1.1.1": "1.1.2",
-    "jsr:@std/toml@^1.0.9": "1.0.9",
+    "jsr:@std/toml@1.0.10": "1.0.10",
     "npm:@fortawesome/fontawesome-free@7.0.1": "7.0.1",
     "npm:@mdi/svg@7.4.47": "7.4.47",
     "npm:@primer/octicons@19.16.0": "19.16.0",
@@ -42,8 +42,8 @@
         "jsr:@std/internal@^1.0.10"
       ]
     },
-    "@std/toml@1.0.9": {
-      "integrity": "1629147c2edbffd71be6ab66cf90d3b27e59ca314067e58649e0626979383b83",
+    "@std/toml@1.0.10": {
+      "integrity": "87b2b7ff95afe7209a868732eb013a2707be29a15229f5b57bb13eededff4655",
       "dependencies": [
         "jsr:@std/collections"
       ]
@@ -202,7 +202,7 @@
       "common": {
         "dependencies": [
           "jsr:@std/fmt@^1.0.8",
-          "jsr:@std/toml@^1.0.9",
+          "jsr:@std/toml@1.0.10",
           "npm:@types/which@^3.0.4",
           "npm:which@5"
         ]
