@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
     match slug {
+        "beaker-16" => Some(icons::BEAKER_16),
         "bookmark-slash-24" => Some(icons::BOOKMARK_SLASH_24),
         "diff-removed-16" => Some(icons::DIFF_REMOVED_16),
         "heart-fill-24" => Some(icons::HEART_FILL_24),
@@ -55,6 +56,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "hash-24" => Some(icons::HASH_24),
         "search-24" => Some(icons::SEARCH_24),
         "mention-16" => Some(icons::MENTION_16),
+        "mcp-16" => Some(icons::MCP_16),
         "minimize-16" => Some(icons::MINIMIZE_16),
         "diff-added-16" => Some(icons::DIFF_ADDED_16),
         "sign-in-24" => Some(icons::SIGN_IN_24),
@@ -201,8 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "move-to-bottom-16" => Some(icons::MOVE_TO_BOTTOM_16),
         "zoom-in-24" => Some(icons::ZOOM_IN_24),
         "pivot-column-24" => Some(icons::PIVOT_COLUMN_24),
-        "share-android-24" => Some(icons::SHARE_ANDROID_24),
-        "goal-24" => Some(icons::GOAL_24),
         _ => None,
     }
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SHARE_ANDROID_24", icons::SHARE_ANDROID_24)?;
+    m.add("GOAL_24", icons::GOAL_24)?;
     m.add("NOTE_24", icons::NOTE_24)?;
     m.add("CHEVRON_LEFT_12", icons::CHEVRON_LEFT_12)?;
     m.add("FILE_16", icons::FILE_16)?;
@@ -213,7 +215,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("GEAR_24", icons::GEAR_24)?;
     m.add("DOT_16", icons::DOT_16)?;
     m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
-    m.add("ORGANIZATION_16", icons::ORGANIZATION_16)?;
-    m.add("DIAMOND_16", icons::DIAMOND_16)?;
     Ok(())
 }
