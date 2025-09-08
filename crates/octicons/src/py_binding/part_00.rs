@@ -43,6 +43,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DEVICES_24", icons::DEVICES_24)?;
     m.add("REPO_24", icons::REPO_24)?;
     m.add("UNDO_24", icons::UNDO_24)?;
+    m.add("MCP_24", icons::MCP_24)?;
     m.add("DISCUSSION_DUPLICATE_24", icons::DISCUSSION_DUPLICATE_24)?;
     m.add("MOVE_TO_TOP_16", icons::MOVE_TO_TOP_16)?;
     m.add("TASKLIST_16", icons::TASKLIST_16)?;
@@ -220,6 +221,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("MOON_16", icons::MOON_16)?;
     m.add("FEED_TROPHY_16", icons::FEED_TROPHY_16)?;
     m.add("LOCATION_24", icons::LOCATION_24)?;
-    m.add("BEAKER_16", icons::BEAKER_16)?;
     Ok(())
 }
