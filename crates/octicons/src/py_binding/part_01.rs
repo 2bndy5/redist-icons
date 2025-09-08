@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("BEAKER_16", icons::BEAKER_16)?;
     m.add("BOOKMARK_SLASH_24", icons::BOOKMARK_SLASH_24)?;
     m.add("DIFF_REMOVED_16", icons::DIFF_REMOVED_16)?;
     m.add("HEART_FILL_24", icons::HEART_FILL_24)?;
@@ -55,6 +56,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("HASH_24", icons::HASH_24)?;
     m.add("SEARCH_24", icons::SEARCH_24)?;
     m.add("MENTION_16", icons::MENTION_16)?;
+    m.add("MCP_16", icons::MCP_16)?;
     m.add("MINIMIZE_16", icons::MINIMIZE_16)?;
     m.add("DIFF_ADDED_16", icons::DIFF_ADDED_16)?;
     m.add("SIGN_IN_24", icons::SIGN_IN_24)?;
@@ -213,7 +215,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("MOVE_TO_BOTTOM_16", icons::MOVE_TO_BOTTOM_16)?;
     m.add("ZOOM_IN_24", icons::ZOOM_IN_24)?;
     m.add("PIVOT_COLUMN_24", icons::PIVOT_COLUMN_24)?;
-    m.add("SHARE_ANDROID_24", icons::SHARE_ANDROID_24)?;
-    m.add("GOAL_24", icons::GOAL_24)?;
     Ok(())
 }

@@ -37,6 +37,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "devices-24" => Some(icons::DEVICES_24),
         "repo-24" => Some(icons::REPO_24),
         "undo-24" => Some(icons::UNDO_24),
+        "mcp-24" => Some(icons::MCP_24),
         "discussion-duplicate-24" => Some(icons::DISCUSSION_DUPLICATE_24),
         "move-to-top-16" => Some(icons::MOVE_TO_TOP_16),
         "tasklist-16" => Some(icons::TASKLIST_16),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "moon-16" => Some(icons::MOON_16),
         "feed-trophy-16" => Some(icons::FEED_TROPHY_16),
         "location-24" => Some(icons::LOCATION_24),
-        "beaker-16" => Some(icons::BEAKER_16),
         _ => None,
     }
 }

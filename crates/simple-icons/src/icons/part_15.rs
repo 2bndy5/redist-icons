@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// litecoin
+pub const SI_LITECOIN: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Litecoin</title><path d="M12 0a12 12 0 1012 12A12 12 0 0012 0zm-.2617 3.6777h2.584a.3425.3425 0 01.33.4356l-2.0312 6.918 1.9062-.582-.4082 1.3847-1.9238.5605-1.248 4.213h6.6757a.3425.3425 0 01.3282.4374l-.582 2a.4586.4586 0 01-.4395.3301H6.7324l1.7227-5.8223-1.9063.5801.42-1.3613 1.9101-.58 2.4219-8.1798a.4557.4557 0 01.4375-.334Z"/></svg>"#,
+    slug: "litecoin",
+    title: "Litecoin",
+    hex: "A6A9AA",
+    source: "https://litecoin-foundation.org/litecoin-branding-guidelines/",
+    guidelines: Some("https://litecoin-foundation.org/litecoin-branding-guidelines/"),
+    license: None,
+};
+
 /// vyond
 pub const SI_VYOND: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Vyond</title><path d="M1.55 16.382 0 7.616h1.328l.928 6.18.932-6.18h1.328l-1.55 8.766H1.55zm5.486-7.61H6.022l1.166 3.776v2.68h.924v-2.68L9.28 8.772H8.262L7.65 11.35l-.614-2.58v.002zm5.12 1.92c0-.324-.128-.482-.372-.482s-.37.16-.37.482v2.616c0 .324.126.492.37.492s.372-.166.372-.492v-2.616zm-.344-1.256c.69 0 1.144.468 1.144 1.262v2.52c0 .872-.432 1.346-1.172 1.346s-1.162-.468-1.162-1.376v-2.52c0-.766.44-1.24 1.19-1.24m5.032-.656v4.2l-1.344-4.2h-.896v6.456h.924v-3.944l1.316 3.944h.936V8.772h-.936zm5.07 6.32c.508 0 .706-.322.706-.92v-4.22c0-.72-.336-1.044-1.08-1.044h-.31v6.184h.684zM19.89 7.616h1.924c1.504 0 2.186.784 2.186 2.408v3.912c0 1.678-.62 2.448-2.122 2.448H19.89V7.616z"/></svg>"#,
@@ -2188,17 +2199,6 @@ pub const SI_HEVY: Icon = Icon {
     title: "Hevy",
     hex: "000000",
     source: "https://www.hevyapp.com",
-    guidelines: None,
-    license: None,
-};
-
-/// hotjar
-pub const SI_HOTJAR: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Hotjar</title><path d="M10.119 9.814C12.899 8.27 16.704 6.155 16.704 0h-4.609c0 3.444-1.676 4.375-4.214 5.786C5.1 7.33 1.295 9.444 1.295 15.6h4.61c0-3.444 1.676-4.376 4.214-5.786zM18.096 8.4c0 3.444-1.677 4.376-4.215 5.785-2.778 1.544-6.585 3.66-6.585 9.815h4.609c0-3.444 1.676-4.376 4.214-5.786 2.78-1.544 6.586-3.658 6.586-9.814h-4.609z"/></svg>"#,
-    slug: "hotjar",
-    title: "Hotjar",
-    hex: "FF3C00",
-    source: "https://www.hotjar.com",
     guidelines: None,
     license: None,
 };

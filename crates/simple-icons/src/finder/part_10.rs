@@ -128,6 +128,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "rocketdotchat" => Some(icons::SI_ROCKETDOTCHAT),
         "commerzbank" => Some(icons::SI_COMMERZBANK),
         "sailsdotjs" => Some(icons::SI_SAILSDOTJS),
+        "vueuse" => Some(icons::SI_VUEUSE),
         "startrek" => Some(icons::SI_STARTREK),
         "aliexpress" => Some(icons::SI_ALIEXPRESS),
         "androidauto" => Some(icons::SI_ANDROIDAUTO),
@@ -202,7 +203,6 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "react" => Some(icons::SI_REACT),
         "cssmodules" => Some(icons::SI_CSSMODULES),
         "untappd" => Some(icons::SI_UNTAPPD),
-        "contentful" => Some(icons::SI_CONTENTFUL),
         _ => None,
     }
 }
