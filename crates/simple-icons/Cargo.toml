@@ -1,9 +1,9 @@
 [package]
 name = "simple-icons-pack"
 description = "A redistribution of simple-icons npm package's SVG and metadata."
-version = "15.13.0"
+version = "15.14.0"
 license = "CC0-1.0"
-exclude = ["deno.json", "main.ts", "pyproject.toml", "tests/*"]
+exclude = ["deno.json","main.ts","pyproject.toml","tests/*"]
 
 [package.repository]
 workspace = true

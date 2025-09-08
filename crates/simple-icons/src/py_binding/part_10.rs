@@ -128,6 +128,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ROCKETDOTCHAT", icons::SI_ROCKETDOTCHAT)?;
     m.add("SI_COMMERZBANK", icons::SI_COMMERZBANK)?;
     m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
+    m.add("SI_VUEUSE", icons::SI_VUEUSE)?;
     m.add("SI_STARTREK", icons::SI_STARTREK)?;
     m.add("SI_ALIEXPRESS", icons::SI_ALIEXPRESS)?;
     m.add("SI_ANDROIDAUTO", icons::SI_ANDROIDAUTO)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REACT", icons::SI_REACT)?;
     m.add("SI_CSSMODULES", icons::SI_CSSMODULES)?;
     m.add("SI_UNTAPPD", icons::SI_UNTAPPD)?;
-    m.add("SI_CONTENTFUL", icons::SI_CONTENTFUL)?;
     Ok(())
 }
