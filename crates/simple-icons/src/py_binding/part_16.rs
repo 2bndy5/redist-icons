@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_HOTJAR", icons::SI_HOTJAR)?;
     m.add("SI_WOLFRAMMATHEMATICA", icons::SI_WOLFRAMMATHEMATICA)?;
     m.add("SI_CORONARENDERER", icons::SI_CORONARENDERER)?;
     m.add("SI_SENDGRID", icons::SI_SENDGRID)?;

@@ -14,7 +14,7 @@
     "npm:@primer/octicons@19.17.0": "19.17.0",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
-    "npm:simple-icons@15.13.0": "15.13.0",
+    "npm:simple-icons@15.14.0": "15.14.0",
     "npm:svgo@*": "4.0.0",
     "npm:svgo@4.0.0": "4.0.0",
     "npm:which@5": "5.0.0"
@@ -162,8 +162,8 @@
     "sax@1.4.1": {
       "integrity": "sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg=="
     },
-    "simple-icons@15.13.0": {
-      "integrity": "sha512-Tk3p1Lgmji+8kdUOIvvU3f0loYtWVo/bvO1T82Whpb6BhQ+wM2JR8BaVLQT+TiqqF25DVGrVYXeXrsPo6YDOvg=="
+    "simple-icons@15.14.0": {
+      "integrity": "sha512-eTBZiiwDFN8RPkcmHKoUz1+sckeqNQXv5ujQcgQddDzp3xuDIFWeZh/i0oEv1StOPsf9NPMC0gTBxUzhPqHzag=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -224,7 +224,7 @@
       },
       "crates/simple-icons": {
         "dependencies": [
-          "npm:simple-icons@15.13.0"
+          "npm:simple-icons@15.14.0"
         ]
       }
     }
