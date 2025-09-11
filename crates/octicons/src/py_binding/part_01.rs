@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("FEED_TROPHY_16", icons::FEED_TROPHY_16)?;
+    m.add("LOCATION_24", icons::LOCATION_24)?;
     m.add("BEAKER_16", icons::BEAKER_16)?;
     m.add("BOOKMARK_SLASH_24", icons::BOOKMARK_SLASH_24)?;
     m.add("DIFF_REMOVED_16", icons::DIFF_REMOVED_16)?;
@@ -213,7 +215,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SKIP_FILL_24", icons::SKIP_FILL_24)?;
     m.add("CREDIT_CARD_24", icons::CREDIT_CARD_24)?;
     m.add("MOVE_TO_BOTTOM_16", icons::MOVE_TO_BOTTOM_16)?;
-    m.add("ZOOM_IN_24", icons::ZOOM_IN_24)?;
-    m.add("PIVOT_COLUMN_24", icons::PIVOT_COLUMN_24)?;
     Ok(())
 }

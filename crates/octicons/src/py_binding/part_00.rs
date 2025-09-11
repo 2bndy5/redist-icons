@@ -109,6 +109,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_UP_RIGHT_16", icons::ARROW_UP_RIGHT_16)?;
     m.add("ARROW_UP_24", icons::ARROW_UP_24)?;
     m.add("SPARKLE_16", icons::SPARKLE_16)?;
+    m.add("CHECKBOX_FILL_16", icons::CHECKBOX_FILL_16)?;
     m.add("ARROW_DOWN_LEFT_16", icons::ARROW_DOWN_LEFT_16)?;
     m.add("FEED_ISSUE_CLOSED_16", icons::FEED_ISSUE_CLOSED_16)?;
     m.add("BELL_16", icons::BELL_16)?;
@@ -117,6 +118,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ISSUE_REOPENED_24", icons::ISSUE_REOPENED_24)?;
     m.add("THREE_BARS_24", icons::THREE_BARS_24)?;
     m.add("PLUS_CIRCLE_24", icons::PLUS_CIRCLE_24)?;
+    m.add("CHECKBOX_FILL_24", icons::CHECKBOX_FILL_24)?;
     m.add("REPO_CLONE_16", icons::REPO_CLONE_16)?;
     m.add("LOGO_GIST_24", icons::LOGO_GIST_24)?;
     m.add("LOOP_24", icons::LOOP_24)?;
@@ -219,7 +221,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FILE_24", icons::FILE_24)?;
     m.add("SHARE_16", icons::SHARE_16)?;
     m.add("MOON_16", icons::MOON_16)?;
-    m.add("FEED_TROPHY_16", icons::FEED_TROPHY_16)?;
-    m.add("LOCATION_24", icons::LOCATION_24)?;
     Ok(())
 }
