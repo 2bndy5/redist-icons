@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        "zoom-in-24" => Some(icons::ZOOM_IN_24),
+        "pivot-column-24" => Some(icons::PIVOT_COLUMN_24),
         "share-android-24" => Some(icons::SHARE_ANDROID_24),
         "goal-24" => Some(icons::GOAL_24),
         "note-24" => Some(icons::NOTE_24),
@@ -201,8 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "tasklist-24" => Some(icons::TASKLIST_24),
         "git-merge-queue-16" => Some(icons::GIT_MERGE_QUEUE_16),
         "gear-24" => Some(icons::GEAR_24),
-        "dot-16" => Some(icons::DOT_16),
-        "chevron-right-16" => Some(icons::CHEVRON_RIGHT_16),
         _ => None,
     }
 }
