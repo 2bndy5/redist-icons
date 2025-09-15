@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ULTRALYTICS", icons::SI_ULTRALYTICS)?;
     m.add("SI_CODEBERG", icons::SI_CODEBERG)?;
     m.add("SI_JITPACK", icons::SI_JITPACK)?;
     m.add("SI_DAZN", icons::SI_DAZN)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BIOME", icons::SI_BIOME)?;
     m.add("SI_THREADLESS", icons::SI_THREADLESS)?;
     m.add("SI_DASSAULTSYSTEMES", icons::SI_DASSAULTSYSTEMES)?;
-    m.add("SI_PAYCHEX", icons::SI_PAYCHEX)?;
     Ok(())
 }

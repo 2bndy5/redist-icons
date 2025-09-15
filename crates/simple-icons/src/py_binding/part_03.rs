@@ -147,6 +147,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TYPESCRIPT", icons::SI_TYPESCRIPT)?;
     m.add("SI_GITKRAKEN", icons::SI_GITKRAKEN)?;
     m.add("SI_ROOTSSAGE", icons::SI_ROOTSSAGE)?;
+    m.add("SI_GREPTIMEDB", icons::SI_GREPTIMEDB)?;
     m.add("SI_FISHSHELL", icons::SI_FISHSHELL)?;
     m.add("SI_CREHANA", icons::SI_CREHANA)?;
     m.add("SI_KAIOS", icons::SI_KAIOS)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MIXCLOUD", icons::SI_MIXCLOUD)?;
     m.add("SI_YOUHODLER", icons::SI_YOUHODLER)?;
     m.add("SI_WIKIMEDIAFOUNDATION", icons::SI_WIKIMEDIAFOUNDATION)?;
-    m.add("SI_INSTA360", icons::SI_INSTA360)?;
     Ok(())
 }

@@ -147,6 +147,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "typescript" => Some(icons::SI_TYPESCRIPT),
         "gitkraken" => Some(icons::SI_GITKRAKEN),
         "rootssage" => Some(icons::SI_ROOTSSAGE),
+        "greptimedb" => Some(icons::SI_GREPTIMEDB),
         "fishshell" => Some(icons::SI_FISHSHELL),
         "crehana" => Some(icons::SI_CREHANA),
         "kaios" => Some(icons::SI_KAIOS),
@@ -202,7 +203,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "mixcloud" => Some(icons::SI_MIXCLOUD),
         "youhodler" => Some(icons::SI_YOUHODLER),
         "wikimediafoundation" => Some(icons::SI_WIKIMEDIAFOUNDATION),
-        "insta360" => Some(icons::SI_INSTA360),
         _ => None,
     }
 }
