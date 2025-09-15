@@ -94,6 +94,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "arrow-up-right-16" => Some(icons::ARROW_UP_RIGHT_16),
         "arrow-up-24" => Some(icons::ARROW_UP_24),
         "sparkle-16" => Some(icons::SPARKLE_16),
+        "checkbox-fill-16" => Some(icons::CHECKBOX_FILL_16),
         "arrow-down-left-16" => Some(icons::ARROW_DOWN_LEFT_16),
         "feed-issue-closed-16" => Some(icons::FEED_ISSUE_CLOSED_16),
         "bell-16" => Some(icons::BELL_16),
@@ -102,6 +103,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "issue-reopened-24" => Some(icons::ISSUE_REOPENED_24),
         "three-bars-24" => Some(icons::THREE_BARS_24),
         "plus-circle-24" => Some(icons::PLUS_CIRCLE_24),
+        "checkbox-fill-24" => Some(icons::CHECKBOX_FILL_24),
         "repo-clone-16" => Some(icons::REPO_CLONE_16),
         "logo-gist-24" => Some(icons::LOGO_GIST_24),
         "loop-24" => Some(icons::LOOP_24),
@@ -201,8 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "file-24" => Some(icons::FILE_24),
         "share-16" => Some(icons::SHARE_16),
         "moon-16" => Some(icons::MOON_16),
-        "feed-trophy-16" => Some(icons::FEED_TROPHY_16),
-        "location-24" => Some(icons::LOCATION_24),
         _ => None,
     }
 }
