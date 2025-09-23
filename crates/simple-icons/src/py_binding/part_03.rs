@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NUTANIX", icons::SI_NUTANIX)?;
+    m.add("SI_LAUNCHPAD", icons::SI_LAUNCHPAD)?;
     m.add("SI_LIBRARYTHING", icons::SI_LIBRARYTHING)?;
     m.add("SI_LUTRIS", icons::SI_LUTRIS)?;
     m.add("SI_GUTENBERG", icons::SI_GUTENBERG)?;
@@ -181,6 +183,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
     m.add("SI_MACYS", icons::SI_MACYS)?;
     m.add("SI_INSTAGRAM", icons::SI_INSTAGRAM)?;
+    m.add("SI_ANIMEDOTJS", icons::SI_ANIMEDOTJS)?;
     m.add("SI_QUARKUS", icons::SI_QUARKUS)?;
     m.add("SI_JFROGPIPELINES", icons::SI_JFROGPIPELINES)?;
     m.add("SI_BRAVE", icons::SI_BRAVE)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HANDM", icons::SI_HANDM)?;
     m.add("SI_GRADLEPLAYPUBLISHER", icons::SI_GRADLEPLAYPUBLISHER)?;
     m.add("SI_CRITICALROLE", icons::SI_CRITICALROLE)?;
-    m.add("SI_MIXCLOUD", icons::SI_MIXCLOUD)?;
-    m.add("SI_YOUHODLER", icons::SI_YOUHODLER)?;
-    m.add("SI_WIKIMEDIAFOUNDATION", icons::SI_WIKIMEDIAFOUNDATION)?;
     Ok(())
 }

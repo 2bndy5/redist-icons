@@ -3,6 +3,12 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
     match slug {
+        "linuxfoundation" => Some(icons::SI_LINUXFOUNDATION),
+        "1panel" => Some(icons::SI_1PANEL),
+        "vanillaextract" => Some(icons::SI_VANILLAEXTRACT),
+        "majorleaguehacking" => Some(icons::SI_MAJORLEAGUEHACKING),
+        "gamedeveloper" => Some(icons::SI_GAMEDEVELOPER),
+        "s7airlines" => Some(icons::SI_S7AIRLINES),
         "nextdotjs" => Some(icons::SI_NEXTDOTJS),
         "mediafire" => Some(icons::SI_MEDIAFIRE),
         "youtubestudio" => Some(icons::SI_YOUTUBESTUDIO),
@@ -144,6 +150,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "anthropic" => Some(icons::SI_ANTHROPIC),
         "cucumber" => Some(icons::SI_CUCUMBER),
         "vaultwarden" => Some(icons::SI_VAULTWARDEN),
+        "optuna" => Some(icons::SI_OPTUNA),
         "svgo" => Some(icons::SI_SVGO),
         "codeigniter" => Some(icons::SI_CODEIGNITER),
         "paperswithcode" => Some(icons::SI_PAPERSWITHCODE),
@@ -196,13 +203,6 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "momenteo" => Some(icons::SI_MOMENTEO),
         "dtube" => Some(icons::SI_DTUBE),
         "scratch" => Some(icons::SI_SCRATCH),
-        "ubisoft" => Some(icons::SI_UBISOFT),
-        "sitecore" => Some(icons::SI_SITECORE),
-        "socketdotio" => Some(icons::SI_SOCKETDOTIO),
-        "multisim" => Some(icons::SI_MULTISIM),
-        "dribbble" => Some(icons::SI_DRIBBBLE),
-        "glide" => Some(icons::SI_GLIDE),
-        "webtoon" => Some(icons::SI_WEBTOON),
         _ => None,
     }
 }

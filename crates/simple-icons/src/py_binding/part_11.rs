@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CIVO", icons::SI_CIVO)?;
+    m.add("SI_PRESTASHOP", icons::SI_PRESTASHOP)?;
+    m.add("SI_STREMIO", icons::SI_STREMIO)?;
+    m.add("SI_REACT", icons::SI_REACT)?;
+    m.add("SI_CSSMODULES", icons::SI_CSSMODULES)?;
     m.add("SI_UNTAPPD", icons::SI_UNTAPPD)?;
     m.add("SI_CONTENTFUL", icons::SI_CONTENTFUL)?;
     m.add("SI_AIRCHINA", icons::SI_AIRCHINA)?;
@@ -97,6 +102,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_STEEM", icons::SI_STEEM)?;
     m.add("SI_BEATSTARS", icons::SI_BEATSTARS)?;
     m.add("SI_ALIBABADOTCOM", icons::SI_ALIBABADOTCOM)?;
+    m.add("SI_LIVEKIT", icons::SI_LIVEKIT)?;
     m.add("SI_KEYCDN", icons::SI_KEYCDN)?;
     m.add("SI_HEARTHISDOTAT", icons::SI_HEARTHISDOTAT)?;
     m.add("SI_MOCKSERVICEWORKER", icons::SI_MOCKSERVICEWORKER)?;
@@ -203,11 +209,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MOCHA", icons::SI_MOCHA)?;
     m.add("SI_NZXT", icons::SI_NZXT)?;
     m.add("SI_ZENSAR", icons::SI_ZENSAR)?;
-    m.add("SI_LINUXFOUNDATION", icons::SI_LINUXFOUNDATION)?;
-    m.add("SI_1PANEL", icons::SI_1PANEL)?;
-    m.add("SI_VANILLAEXTRACT", icons::SI_VANILLAEXTRACT)?;
-    m.add("SI_MAJORLEAGUEHACKING", icons::SI_MAJORLEAGUEHACKING)?;
-    m.add("SI_GAMEDEVELOPER", icons::SI_GAMEDEVELOPER)?;
-    m.add("SI_S7AIRLINES", icons::SI_S7AIRLINES)?;
     Ok(())
 }

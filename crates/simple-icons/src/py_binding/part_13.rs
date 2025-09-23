@@ -3,6 +3,13 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_UBISOFT", icons::SI_UBISOFT)?;
+    m.add("SI_SITECORE", icons::SI_SITECORE)?;
+    m.add("SI_SOCKETDOTIO", icons::SI_SOCKETDOTIO)?;
+    m.add("SI_MULTISIM", icons::SI_MULTISIM)?;
+    m.add("SI_DRIBBBLE", icons::SI_DRIBBBLE)?;
+    m.add("SI_GLIDE", icons::SI_GLIDE)?;
+    m.add("SI_WEBTOON", icons::SI_WEBTOON)?;
     m.add("SI_NEXTBILLIONDOTAI", icons::SI_NEXTBILLIONDOTAI)?;
     m.add("SI_SENCHA", icons::SI_SENCHA)?;
     m.add("SI_PREACT", icons::SI_PREACT)?;
@@ -199,12 +206,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BOXYSVG", icons::SI_BOXYSVG)?;
     m.add("SI_LOOKER", icons::SI_LOOKER)?;
     m.add("SI_JUSTEAT", icons::SI_JUSTEAT)?;
-    m.add("SI_PAYLOADCMS", icons::SI_PAYLOADCMS)?;
-    m.add("SI_AEROSPIKE", icons::SI_AEROSPIKE)?;
-    m.add("SI_ELEMENTOR", icons::SI_ELEMENTOR)?;
-    m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
-    m.add("SI_CODENEWBIE", icons::SI_CODENEWBIE)?;
-    m.add("SI_TRACCAR", icons::SI_TRACCAR)?;
-    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     Ok(())
 }

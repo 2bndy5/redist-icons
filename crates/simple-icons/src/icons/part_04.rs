@@ -1,6 +1,39 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// mixcloud
+pub const SI_MIXCLOUD: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mixcloud</title><path d="M2.462 8.596l1.372 6.49h.319l1.372-6.49h2.462v6.808H6.742v-5.68l.232-.81h-.402l-1.43 6.49H2.854l-1.44-6.49h-.391l.222.81v5.68H0V8.596zM24 8.63v1.429L21.257 12 24 13.941v1.43l-3.235-2.329h-.348l-3.226 2.329v-1.43l2.734-1.94-2.733-1.942V8.63l3.225 2.338h.348zm-7.869 2.75v1.24H9.304v-1.24z"/></svg>"#,
+    slug: "mixcloud",
+    title: "Mixcloud",
+    hex: "5000FF",
+    source: "https://www.mixcloud.com/about",
+    guidelines: Some("https://www.mixcloud.com/about"),
+    license: None,
+};
+
+/// youhodler
+pub const SI_YOUHODLER: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouHodler</title><path d="M4.727,15.273L1.091,13.091L1.091,4.364L8.364,0L12,2.182L15.636,0L22.909,4.364L22.909,13.091L19.273,15.273L19.273,19.636L12,24L4.727,19.636L4.727,15.273ZM12,19.636L14.422,18.182L14.422,12.364L19.273,9.455L19.273,6.545L16.85,5.092L12,8L7.15,5.092L4.727,6.545L4.727,9.455L9.578,12.364L9.578,18.182L12,19.636Z"/></svg>"#,
+    slug: "youhodler",
+    title: "YouHodler",
+    hex: "546DF9",
+    source: "https://www.youhodler.com/company",
+    guidelines: None,
+    license: None,
+};
+
+/// wikimediafoundation
+pub const SI_WIKIMEDIAFOUNDATION: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Wikimedia Foundation</title><path d="M20.074 3.126C22.486 5.321 24 8.485 24 12c0 6.623-5.377 12-12 12S0 18.623 0 12c0-3.515 1.514-6.679 3.926-8.874l2.265 2.265C4.358 7.005 3.2 9.368 3.2 12c0 4.857 3.943 8.8 8.8 8.8s8.8-3.943 8.8-8.8c0-2.632-1.158-4.995-2.991-6.609zm-3.399 3.399C18.22 7.846 19.2 9.81 19.2 12c0 3.703-2.802 6.757-6.4 7.156V10.4zM11.2 19.156C7.602 18.757 4.8 15.703 4.8 12c0-2.19.98-4.154 2.525-5.475L11.2 10.4zM12 0c2.208 0 4 1.792 4 4s-1.792 4-4 4-4-1.792-4-4 1.792-4 4-4"/></svg>"#,
+    slug: "wikimediafoundation",
+    title: "Wikimedia Foundation",
+    hex: "000000",
+    source: "https://foundation.wikimedia.org/wiki/File:Wikimedia-logo_black.svg",
+    guidelines: Some("https://foundation.wikimedia.org/wiki/Wikimedia_visual_identity_guidelines"),
+    license: None,
+};
+
 /// insta360
 pub const SI_INSTA360: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Insta360</title><path d="M15.402 11.19c-.701.7-1.838.7-2.54 0a1.796 1.796 0 1 1 2.539 0m.998-3.614a6.17 6.17 0 0 0-4.39-1.818 6.17 6.17 0 0 0-4.392 1.818 6.217 6.217 0 0 0 0 8.782 6.169 6.169 0 0 0 4.39 1.819 6.169 6.169 0 0 0 4.392-1.82 6.217 6.217 0 0 0 0-8.78m1.554 10.33a8.353 8.353 0 0 1-5.945 2.462 8.353 8.353 0 0 1-5.944-2.46c-3.277-3.277-3.277-8.607 0-11.883a8.353 8.353 0 0 1 5.944-2.46 8.35 8.35 0 0 1 5.944 2.46c3.278 3.276 3.278 8.606 0 11.882m4.51-11.293a20.81 20.81 0 0 1-.137-.292 2.779 2.779 0 0 1 .485-3.007c.018-.014.08-.08.117-.118a.412.412 0 0 0 .053-.069.66.66 0 0 0-.097-.81.296.296 0 0 0-.026-.02 1.113 1.113 0 0 0-.18-.11l-.068-.034A19.08 19.08 0 0 0 9.71.443l-.016.022a11.708 11.708 0 0 0-6.012 3.218c-3.75 3.75-4.44 9.403-2.065 13.852.023.043.107.195.123.233a2.778 2.778 0 0 1-.556 2.919 4.39 4.39 0 0 0-.072.08.66.66 0 0 0 0 .934c.06.056.127.105.198.146l.01.006a19.08 19.08 0 0 0 13 1.677v.002a11.708 11.708 0 0 0 5.997-3.216c3.709-3.708 4.423-9.277 2.144-13.702"/></svg>"#,
@@ -2168,39 +2201,6 @@ pub const SI_APMTERMINALS: Icon = Icon {
     title: "APM Terminals",
     hex: "FF6441",
     source: "https://www.apmterminals.com",
-    guidelines: None,
-    license: None,
-};
-
-/// e
-pub const SI_E: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>/e/</title><path d="M.004 12.004A12.012 12.012 0 0 0 12 24a2.27 2.27 0 0 0 2.266-2.266A2.27 2.27 0 0 0 12 19.467c-4.116 0-7.463-3.347-7.463-7.463S7.884 4.541 12 4.541c3.323 0 6.15 2.186 7.111 5.197H12a2.27 2.27 0 0 0-2.266 2.266A2.27 2.27 0 0 0 12 14.27h9.73a2.27 2.27 0 0 0 2.266-2.266A12.02 12.02 0 0 0 12 0C5.385.008.004 5.39.004 12.004"/></svg>"#,
-    slug: "e",
-    title: "/e/",
-    hex: "000000",
-    source: "https://doc.e.foundation",
-    guidelines: None,
-    license: None,
-};
-
-/// flutter
-pub const SI_FLUTTER: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Flutter</title><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/></svg>"#,
-    slug: "flutter",
-    title: "Flutter",
-    hex: "02569B",
-    source: "https://flutter.dev/brand",
-    guidelines: Some("https://flutter.dev/brand"),
-    license: None,
-};
-
-/// brenntag
-pub const SI_BRENNTAG: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Brenntag</title><path d="M19.7305 12.01c-.768.959-1.899 1.8775-3.2745 2.421.828 1.02 1.246 2.156.9445 3.337-.2875 1.1275-1.3655 2.228-2.9 2.228H6.5v-5.999h7c3.86 0 7-3.1395 7-6.9985S17.36 0 13.5 0h-11v8.998h4V3.999h7c1.655 0 3 1.3445 3 2.9995s-1.345 2.9995-3 2.9995h-11V24h12c3.86 0 7-3.1395 7-6.9985 0-1.712-.4815-3.634-1.7695-4.9915"/></svg>"#,
-    slug: "brenntag",
-    title: "Brenntag",
-    hex: "1A0033",
-    source: "https://www.brenntag.com",
     guidelines: None,
     license: None,
 };

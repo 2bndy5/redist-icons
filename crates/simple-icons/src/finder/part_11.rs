@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
     match slug {
+        "civo" => Some(icons::SI_CIVO),
+        "prestashop" => Some(icons::SI_PRESTASHOP),
+        "stremio" => Some(icons::SI_STREMIO),
+        "react" => Some(icons::SI_REACT),
+        "cssmodules" => Some(icons::SI_CSSMODULES),
         "untappd" => Some(icons::SI_UNTAPPD),
         "contentful" => Some(icons::SI_CONTENTFUL),
         "airchina" => Some(icons::SI_AIRCHINA),
@@ -94,6 +99,7 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "steem" => Some(icons::SI_STEEM),
         "beatstars" => Some(icons::SI_BEATSTARS),
         "alibabadotcom" => Some(icons::SI_ALIBABADOTCOM),
+        "livekit" => Some(icons::SI_LIVEKIT),
         "keycdn" => Some(icons::SI_KEYCDN),
         "hearthisdotat" => Some(icons::SI_HEARTHISDOTAT),
         "mockserviceworker" => Some(icons::SI_MOCKSERVICEWORKER),
@@ -197,12 +203,6 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "mocha" => Some(icons::SI_MOCHA),
         "nzxt" => Some(icons::SI_NZXT),
         "zensar" => Some(icons::SI_ZENSAR),
-        "linuxfoundation" => Some(icons::SI_LINUXFOUNDATION),
-        "1panel" => Some(icons::SI_1PANEL),
-        "vanillaextract" => Some(icons::SI_VANILLAEXTRACT),
-        "majorleaguehacking" => Some(icons::SI_MAJORLEAGUEHACKING),
-        "gamedeveloper" => Some(icons::SI_GAMEDEVELOPER),
-        "s7airlines" => Some(icons::SI_S7AIRLINES),
         _ => None,
     }
 }

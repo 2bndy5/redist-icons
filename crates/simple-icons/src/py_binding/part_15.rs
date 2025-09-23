@@ -3,6 +3,13 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ZENN", icons::SI_ZENN)?;
+    m.add("SI_INOREADER", icons::SI_INOREADER)?;
+    m.add("SI_CIRCUITVERSE", icons::SI_CIRCUITVERSE)?;
+    m.add("SI_OPENACCESS", icons::SI_OPENACCESS)?;
+    m.add("SI_OCLIF", icons::SI_OCLIF)?;
+    m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
+    m.add("SI_VIBER", icons::SI_VIBER)?;
     m.add("SI_APACHEDORIS", icons::SI_APACHEDORIS)?;
     m.add("SI_LITECOIN", icons::SI_LITECOIN)?;
     m.add("SI_VYOND", icons::SI_VYOND)?;
@@ -150,6 +157,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DART", icons::SI_DART)?;
     m.add("SI_JQUERY", icons::SI_JQUERY)?;
     m.add("SI_IMAGEDOTSC", icons::SI_IMAGEDOTSC)?;
+    m.add("SI_SKELETON", icons::SI_SKELETON)?;
     m.add("SI_SCILAB", icons::SI_SCILAB)?;
     m.add("SI_CHEERIO", icons::SI_CHEERIO)?;
     m.add("SI_VULKAN", icons::SI_VULKAN)?;
@@ -195,13 +203,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_W3SCHOOLS", icons::SI_W3SCHOOLS)?;
     m.add("SI_GOOGLEMAPS", icons::SI_GOOGLEMAPS)?;
     m.add("SI_CLOUD66", icons::SI_CLOUD66)?;
-    m.add("SI_HELPSCOUT", icons::SI_HELPSCOUT)?;
-    m.add("SI_APOSTROPHE", icons::SI_APOSTROPHE)?;
-    m.add("SI_TESTCAFE", icons::SI_TESTCAFE)?;
-    m.add("SI_POLKADOT", icons::SI_POLKADOT)?;
-    m.add("SI_GNUEMACS", icons::SI_GNUEMACS)?;
-    m.add("SI_SHOPWARE", icons::SI_SHOPWARE)?;
-    m.add("SI_BSD", icons::SI_BSD)?;
-    m.add("SI_BENTLEY", icons::SI_BENTLEY)?;
     Ok(())
 }

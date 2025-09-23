@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
     match slug {
+        "centos" => Some(icons::SI_CENTOS),
+        "apacheguacamole" => Some(icons::SI_APACHEGUACAMOLE),
+        "fujitsu" => Some(icons::SI_FUJITSU),
         "ultralytics" => Some(icons::SI_ULTRALYTICS),
         "codeberg" => Some(icons::SI_CODEBERG),
         "jitpack" => Some(icons::SI_JITPACK),
@@ -200,9 +203,6 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "emberdotjs" => Some(icons::SI_EMBERDOTJS),
         "tcs" => Some(icons::SI_TCS),
         "imgur" => Some(icons::SI_IMGUR),
-        "biome" => Some(icons::SI_BIOME),
-        "threadless" => Some(icons::SI_THREADLESS),
-        "dassaultsystemes" => Some(icons::SI_DASSAULTSYSTEMES),
         _ => None,
     }
 }

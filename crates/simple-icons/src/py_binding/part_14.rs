@@ -3,6 +3,13 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PAYLOADCMS", icons::SI_PAYLOADCMS)?;
+    m.add("SI_AEROSPIKE", icons::SI_AEROSPIKE)?;
+    m.add("SI_ELEMENTOR", icons::SI_ELEMENTOR)?;
+    m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
+    m.add("SI_CODENEWBIE", icons::SI_CODENEWBIE)?;
+    m.add("SI_TRACCAR", icons::SI_TRACCAR)?;
+    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     m.add("SI_FRAMEWORK", icons::SI_FRAMEWORK)?;
     m.add("SI_MLB", icons::SI_MLB)?;
     m.add("SI_SLACKWARE", icons::SI_SLACKWARE)?;
@@ -202,12 +209,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PROTONDB", icons::SI_PROTONDB)?;
     m.add("SI_FITBIT", icons::SI_FITBIT)?;
     m.add("SI_JOUAV", icons::SI_JOUAV)?;
-    m.add("SI_ZENN", icons::SI_ZENN)?;
-    m.add("SI_INOREADER", icons::SI_INOREADER)?;
-    m.add("SI_CIRCUITVERSE", icons::SI_CIRCUITVERSE)?;
-    m.add("SI_OPENACCESS", icons::SI_OPENACCESS)?;
-    m.add("SI_OCLIF", icons::SI_OCLIF)?;
-    m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
-    m.add("SI_VIBER", icons::SI_VIBER)?;
     Ok(())
 }

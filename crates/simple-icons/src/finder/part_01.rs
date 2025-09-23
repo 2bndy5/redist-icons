@@ -52,8 +52,10 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "scpfoundation" => Some(icons::SI_SCPFOUNDATION),
         "vitepress" => Some(icons::SI_VITEPRESS),
         "sololearn" => Some(icons::SI_SOLOLEARN),
+        "pinia" => Some(icons::SI_PINIA),
         "spine" => Some(icons::SI_SPINE),
         "shadow" => Some(icons::SI_SHADOW),
+        "unstop" => Some(icons::SI_UNSTOP),
         "bigbluebutton" => Some(icons::SI_BIGBLUEBUTTON),
         "solidity" => Some(icons::SI_SOLIDITY),
         "teamviewer" => Some(icons::SI_TEAMVIEWER),
@@ -201,8 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "issuu" => Some(icons::SI_ISSUU),
         "godaddy" => Some(icons::SI_GODADDY),
         "fossilscm" => Some(icons::SI_FOSSILSCM),
-        "pypy" => Some(icons::SI_PYPY),
-        "hetzner" => Some(icons::SI_HETZNER),
         _ => None,
     }
 }

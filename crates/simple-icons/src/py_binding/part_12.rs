@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_LINUXFOUNDATION", icons::SI_LINUXFOUNDATION)?;
+    m.add("SI_1PANEL", icons::SI_1PANEL)?;
+    m.add("SI_VANILLAEXTRACT", icons::SI_VANILLAEXTRACT)?;
+    m.add("SI_MAJORLEAGUEHACKING", icons::SI_MAJORLEAGUEHACKING)?;
+    m.add("SI_GAMEDEVELOPER", icons::SI_GAMEDEVELOPER)?;
+    m.add("SI_S7AIRLINES", icons::SI_S7AIRLINES)?;
     m.add("SI_NEXTDOTJS", icons::SI_NEXTDOTJS)?;
     m.add("SI_MEDIAFIRE", icons::SI_MEDIAFIRE)?;
     m.add("SI_YOUTUBESTUDIO", icons::SI_YOUTUBESTUDIO)?;
@@ -150,6 +156,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ANTHROPIC", icons::SI_ANTHROPIC)?;
     m.add("SI_CUCUMBER", icons::SI_CUCUMBER)?;
     m.add("SI_VAULTWARDEN", icons::SI_VAULTWARDEN)?;
+    m.add("SI_OPTUNA", icons::SI_OPTUNA)?;
     m.add("SI_SVGO", icons::SI_SVGO)?;
     m.add("SI_CODEIGNITER", icons::SI_CODEIGNITER)?;
     m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
@@ -202,12 +209,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MOMENTEO", icons::SI_MOMENTEO)?;
     m.add("SI_DTUBE", icons::SI_DTUBE)?;
     m.add("SI_SCRATCH", icons::SI_SCRATCH)?;
-    m.add("SI_UBISOFT", icons::SI_UBISOFT)?;
-    m.add("SI_SITECORE", icons::SI_SITECORE)?;
-    m.add("SI_SOCKETDOTIO", icons::SI_SOCKETDOTIO)?;
-    m.add("SI_MULTISIM", icons::SI_MULTISIM)?;
-    m.add("SI_DRIBBBLE", icons::SI_DRIBBBLE)?;
-    m.add("SI_GLIDE", icons::SI_GLIDE)?;
-    m.add("SI_WEBTOON", icons::SI_WEBTOON)?;
     Ok(())
 }

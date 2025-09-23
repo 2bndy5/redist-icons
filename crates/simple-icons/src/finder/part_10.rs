@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
     match slug {
+        "paddle" => Some(icons::SI_PADDLE),
+        "skillshare" => Some(icons::SI_SKILLSHARE),
+        "topcoder" => Some(icons::SI_TOPCODER),
+        "bower" => Some(icons::SI_BOWER),
         "solid" => Some(icons::SI_SOLID),
         "wondershare" => Some(icons::SI_WONDERSHARE),
         "netapp" => Some(icons::SI_NETAPP),
@@ -182,6 +186,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "lemonsqueezy" => Some(icons::SI_LEMONSQUEEZY),
         "searxng" => Some(icons::SI_SEARXNG),
         "removedotbg" => Some(icons::SI_REMOVEDOTBG),
+        "smoothcomp" => Some(icons::SI_SMOOTHCOMP),
         "fineco" => Some(icons::SI_FINECO),
         "notepadplusplus" => Some(icons::SI_NOTEPADPLUSPLUS),
         "pihole" => Some(icons::SI_PIHOLE),
@@ -198,11 +203,6 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "meteor" => Some(icons::SI_METEOR),
         "meta" => Some(icons::SI_META),
         "sat1" => Some(icons::SI_SAT1),
-        "civo" => Some(icons::SI_CIVO),
-        "prestashop" => Some(icons::SI_PRESTASHOP),
-        "stremio" => Some(icons::SI_STREMIO),
-        "react" => Some(icons::SI_REACT),
-        "cssmodules" => Some(icons::SI_CSSMODULES),
         _ => None,
     }
 }

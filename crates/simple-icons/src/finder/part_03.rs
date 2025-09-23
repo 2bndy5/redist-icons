@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "nutanix" => Some(icons::SI_NUTANIX),
+        "launchpad" => Some(icons::SI_LAUNCHPAD),
         "librarything" => Some(icons::SI_LIBRARYTHING),
         "lutris" => Some(icons::SI_LUTRIS),
         "gutenberg" => Some(icons::SI_GUTENBERG),
@@ -181,6 +183,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "magasinsu" => Some(icons::SI_MAGASINSU),
         "macys" => Some(icons::SI_MACYS),
         "instagram" => Some(icons::SI_INSTAGRAM),
+        "animedotjs" => Some(icons::SI_ANIMEDOTJS),
         "quarkus" => Some(icons::SI_QUARKUS),
         "jfrogpipelines" => Some(icons::SI_JFROGPIPELINES),
         "brave" => Some(icons::SI_BRAVE),
@@ -200,9 +203,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "handm" => Some(icons::SI_HANDM),
         "gradleplaypublisher" => Some(icons::SI_GRADLEPLAYPUBLISHER),
         "criticalrole" => Some(icons::SI_CRITICALROLE),
-        "mixcloud" => Some(icons::SI_MIXCLOUD),
-        "youhodler" => Some(icons::SI_YOUHODLER),
-        "wikimediafoundation" => Some(icons::SI_WIKIMEDIAFOUNDATION),
         _ => None,
     }
 }

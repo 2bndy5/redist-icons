@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PADDLE", icons::SI_PADDLE)?;
+    m.add("SI_SKILLSHARE", icons::SI_SKILLSHARE)?;
+    m.add("SI_TOPCODER", icons::SI_TOPCODER)?;
+    m.add("SI_BOWER", icons::SI_BOWER)?;
     m.add("SI_SOLID", icons::SI_SOLID)?;
     m.add("SI_WONDERSHARE", icons::SI_WONDERSHARE)?;
     m.add("SI_NETAPP", icons::SI_NETAPP)?;
@@ -182,6 +186,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LEMONSQUEEZY", icons::SI_LEMONSQUEEZY)?;
     m.add("SI_SEARXNG", icons::SI_SEARXNG)?;
     m.add("SI_REMOVEDOTBG", icons::SI_REMOVEDOTBG)?;
+    m.add("SI_SMOOTHCOMP", icons::SI_SMOOTHCOMP)?;
     m.add("SI_FINECO", icons::SI_FINECO)?;
     m.add("SI_NOTEPADPLUSPLUS", icons::SI_NOTEPADPLUSPLUS)?;
     m.add("SI_PIHOLE", icons::SI_PIHOLE)?;
@@ -198,10 +203,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_METEOR", icons::SI_METEOR)?;
     m.add("SI_META", icons::SI_META)?;
     m.add("SI_SAT1", icons::SI_SAT1)?;
-    m.add("SI_CIVO", icons::SI_CIVO)?;
-    m.add("SI_PRESTASHOP", icons::SI_PRESTASHOP)?;
-    m.add("SI_STREMIO", icons::SI_STREMIO)?;
-    m.add("SI_REACT", icons::SI_REACT)?;
-    m.add("SI_CSSMODULES", icons::SI_CSSMODULES)?;
     Ok(())
 }

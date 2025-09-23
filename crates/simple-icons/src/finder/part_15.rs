@@ -3,6 +3,13 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
     match slug {
+        "zenn" => Some(icons::SI_ZENN),
+        "inoreader" => Some(icons::SI_INOREADER),
+        "circuitverse" => Some(icons::SI_CIRCUITVERSE),
+        "openaccess" => Some(icons::SI_OPENACCESS),
+        "oclif" => Some(icons::SI_OCLIF),
+        "armkeil" => Some(icons::SI_ARMKEIL),
+        "viber" => Some(icons::SI_VIBER),
         "apachedoris" => Some(icons::SI_APACHEDORIS),
         "litecoin" => Some(icons::SI_LITECOIN),
         "vyond" => Some(icons::SI_VYOND),
@@ -150,6 +157,7 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "dart" => Some(icons::SI_DART),
         "jquery" => Some(icons::SI_JQUERY),
         "imagedotsc" => Some(icons::SI_IMAGEDOTSC),
+        "skeleton" => Some(icons::SI_SKELETON),
         "scilab" => Some(icons::SI_SCILAB),
         "cheerio" => Some(icons::SI_CHEERIO),
         "vulkan" => Some(icons::SI_VULKAN),
@@ -195,14 +203,6 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "w3schools" => Some(icons::SI_W3SCHOOLS),
         "googlemaps" => Some(icons::SI_GOOGLEMAPS),
         "cloud66" => Some(icons::SI_CLOUD66),
-        "helpscout" => Some(icons::SI_HELPSCOUT),
-        "apostrophe" => Some(icons::SI_APOSTROPHE),
-        "testcafe" => Some(icons::SI_TESTCAFE),
-        "polkadot" => Some(icons::SI_POLKADOT),
-        "gnuemacs" => Some(icons::SI_GNUEMACS),
-        "shopware" => Some(icons::SI_SHOPWARE),
-        "bsd" => Some(icons::SI_BSD),
-        "bentley" => Some(icons::SI_BENTLEY),
         _ => None,
     }
 }

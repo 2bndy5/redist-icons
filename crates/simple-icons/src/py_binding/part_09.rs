@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_IMPROVMX", icons::SI_IMPROVMX)?;
+    m.add("SI_AXIOS", icons::SI_AXIOS)?;
+    m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
     m.add("SI_STATAMIC", icons::SI_STATAMIC)?;
     m.add("SI_XAMPP", icons::SI_XAMPP)?;
     m.add("SI_ERICSSON", icons::SI_ERICSSON)?;
@@ -29,6 +32,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOTOMEETING", icons::SI_GOTOMEETING)?;
     m.add("SI_KRITA", icons::SI_KRITA)?;
     m.add("SI_GRAPHENEOS", icons::SI_GRAPHENEOS)?;
+    m.add("SI_GARUDALINUX", icons::SI_GARUDALINUX)?;
     m.add("SI_CITROEN", icons::SI_CITROEN)?;
     m.add("SI_DEUTSCHETELEKOM", icons::SI_DEUTSCHETELEKOM)?;
     m.add("SI_D3", icons::SI_D3)?;
@@ -202,9 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOGDOTCOM", icons::SI_GOGDOTCOM)?;
     m.add("SI_SPINNAKER", icons::SI_SPINNAKER)?;
     m.add("SI_PHILIPSHUE", icons::SI_PHILIPSHUE)?;
-    m.add("SI_PADDLE", icons::SI_PADDLE)?;
-    m.add("SI_SKILLSHARE", icons::SI_SKILLSHARE)?;
-    m.add("SI_TOPCODER", icons::SI_TOPCODER)?;
-    m.add("SI_BOWER", icons::SI_BOWER)?;
     Ok(())
 }

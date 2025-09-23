@@ -52,8 +52,10 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SCPFOUNDATION", icons::SI_SCPFOUNDATION)?;
     m.add("SI_VITEPRESS", icons::SI_VITEPRESS)?;
     m.add("SI_SOLOLEARN", icons::SI_SOLOLEARN)?;
+    m.add("SI_PINIA", icons::SI_PINIA)?;
     m.add("SI_SPINE", icons::SI_SPINE)?;
     m.add("SI_SHADOW", icons::SI_SHADOW)?;
+    m.add("SI_UNSTOP", icons::SI_UNSTOP)?;
     m.add("SI_BIGBLUEBUTTON", icons::SI_BIGBLUEBUTTON)?;
     m.add("SI_SOLIDITY", icons::SI_SOLIDITY)?;
     m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
@@ -201,7 +203,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ISSUU", icons::SI_ISSUU)?;
     m.add("SI_GODADDY", icons::SI_GODADDY)?;
     m.add("SI_FOSSILSCM", icons::SI_FOSSILSCM)?;
-    m.add("SI_PYPY", icons::SI_PYPY)?;
-    m.add("SI_HETZNER", icons::SI_HETZNER)?;
     Ok(())
 }
