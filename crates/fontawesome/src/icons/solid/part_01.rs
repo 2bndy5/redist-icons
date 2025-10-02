@@ -410,20 +410,20 @@ pub const SOLID_CARAVAN: Icon = Icon {
 
 /// solid/caret-down
 pub const SOLID_CARET_DOWN: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M352 160c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-9.2-9.2-11.9-22.9-6.9-34.9S19.1 160 32 160l320 0z"/></svg>"#,
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M140.3 376.8c12.6 10.2 31.1 9.5 42.8-2.2l128-128c9.2-9.2 11.9-22.9 6.9-34.9S301.4 192 288.5 192l-256 0c-12.9 0-24.6 7.8-29.6 19.8S.7 237.5 9.9 246.6l128 128 2.4 2.2z"/></svg>"#,
     slug: "caret-down",
-    last_modified: 1739374523,
+    last_modified: 1756924653,
     family: "solid",
-    width: 384,
+    width: 320,
     height: 512,
     label: "Caret Down",
 };
 
 /// solid/caret-left
 pub const SOLID_CARET_LEFT: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224 96c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c9.2 9.2 22.9 11.9 34.9 6.9S224 428.9 224 416l0-320z"/></svg>"#,
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M7.7 235.8c-10.3 12.6-9.5 31.1 2.2 42.8l128 128c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-256c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9l-128 128-2.2 2.4z"/></svg>"#,
     slug: "caret-left",
-    last_modified: 1739374526,
+    last_modified: 1756924654,
     family: "solid",
     width: 256,
     height: 512,
@@ -432,9 +432,9 @@ pub const SOLID_CARET_LEFT: Icon = Icon {
 
 /// solid/caret-right
 pub const SOLID_CARET_RIGHT: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M32.5 96c0-12.9 7.8-24.6 19.8-29.6S78 64.2 87.1 73.4l160 160c12.5 12.5 12.5 32.8 0 45.3l-160 160c-9.2 9.2-22.9 11.9-34.9 6.9S32.5 428.9 32.5 416l0-320z"/></svg>"#,
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M249.3 235.8c10.2 12.6 9.5 31.1-2.2 42.8l-128 128c-9.2 9.2-22.9 11.9-34.9 6.9S64.5 396.9 64.5 384l0-256c0-12.9 7.8-24.6 19.8-29.6s25.7-2.2 34.9 6.9l128 128 2.2 2.4z"/></svg>"#,
     slug: "caret-right",
-    last_modified: 1739374526,
+    last_modified: 1756924654,
     family: "solid",
     width: 256,
     height: 512,
@@ -443,11 +443,11 @@ pub const SOLID_CARET_RIGHT: Icon = Icon {
 
 /// solid/caret-up
 pub const SOLID_CARET_UP: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M32 352c-12.9 0-24.6-7.8-29.6-19.8S.2 306.5 9.4 297.4l160-160c12.5-12.5 32.8-12.5 45.3 0l160 160c9.2 9.2 11.9 22.9 6.9 34.9S364.9 352 352 352L32 352z"/></svg>"#,
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M140.3 135.2c12.6-10.3 31.1-9.5 42.8 2.2l128 128c9.2 9.2 11.9 22.9 6.9 34.9S301.4 320 288.5 320l-256 0c-12.9 0-24.6-7.8-29.6-19.8S.7 274.5 9.9 265.4l128-128 2.4-2.2z"/></svg>"#,
     slug: "caret-up",
-    last_modified: 1739374525,
+    last_modified: 1756924654,
     family: "solid",
-    width: 384,
+    width: 320,
     height: 512,
     label: "Caret Up",
 };
