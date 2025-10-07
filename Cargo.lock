@@ -51,7 +51,7 @@ dependencies = [
 
 [[package]]
 name = "octicons-pack"
-version = "19.18.0"
+version = "19.18.1"
 dependencies = [
  "pyo3",
 ]
