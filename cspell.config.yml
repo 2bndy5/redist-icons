@@ -32,6 +32,7 @@ words:
   - sdist
   - svgs
   - timeit
+  - zizmor
 ignorePaths:
   - crates/*/src/{icons,finder,py_binding}
   - crates/*/*.pyi
