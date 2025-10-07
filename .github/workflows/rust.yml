@@ -145,4 +145,4 @@ jobs:
       - name: Package crate ${{ steps.translate.outputs.pkg }} (dry run)
         env:
           PKG_NAME: ${{ steps.translate.outputs.pkg }}
-        run: cargo publish -p $PKG_NAME --dry-run
+        run: cargo publish -p $PKG_NAME --dry-run # zizmor: ignore[use-trusted-publishing]
