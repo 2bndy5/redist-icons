@@ -7,6 +7,8 @@ on:
   schedule:
     - cron: "0 0 * * 0,2,4"
 
+permissions: {}
+
 jobs:
   check-updates:
     runs-on: ubuntu-latest
@@ -16,6 +18,7 @@ jobs:
         with:
           token: ${{ secrets.REDIST_ICONS_UPDATE }}
           fetch-depth: 0
+          persist-credentials: true # needed for git push
 
       - run: rustup update --no-self-update
 
@@ -31,9 +34,6 @@ jobs:
         run: deno install
 
       - uses: astral-sh/setup-uv@b75a909f75acd358c2196fb9a5f1299a9a8868a4 # v6.7.0
-        with:
-          version: "latest"
-          enable-cache: true
       - name: Install Python deps
         run: uv sync
 
