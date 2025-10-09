@@ -70,6 +70,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BELL_16", icons::BELL_16)?;
     m.add("FEED_ROCKET_16", icons::FEED_ROCKET_16)?;
     m.add("UNREAD_24", icons::UNREAD_24)?;
+    m.add("COMMENT_AI_24", icons::COMMENT_AI_24)?;
     m.add("DIFF_MODIFIED_16", icons::DIFF_MODIFIED_16)?;
     m.add("TROPHY_16", icons::TROPHY_16)?;
     m.add("COPILOT_48", icons::COPILOT_48)?;
@@ -214,6 +215,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("PAUSE_24", icons::PAUSE_24)?;
     m.add("SHARE_ANDROID_24", icons::SHARE_ANDROID_24)?;
     m.add("REPO_PULL_24", icons::REPO_PULL_24)?;
-    m.add("LIGHT_BULB_24", icons::LIGHT_BULB_24)?;
     Ok(())
 }

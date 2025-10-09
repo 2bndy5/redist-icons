@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("LIGHT_BULB_24", icons::LIGHT_BULB_24)?;
     m.add("BRIEFCASE_24", icons::BRIEFCASE_24)?;
     m.add(
         "FILE_DIRECTORY_OPEN_FILL_24",
@@ -151,6 +152,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     m.add("PAINTBRUSH_24", icons::PAINTBRUSH_24)?;
     m.add("GIT_BRANCH_24", icons::GIT_BRANCH_24)?;
+    m.add("COMMENT_AI_16", icons::COMMENT_AI_16)?;
     m.add("INBOX_24", icons::INBOX_24)?;
     m.add("FILE_SUBMODULE_24", icons::FILE_SUBMODULE_24)?;
     m.add("DATABASE_16", icons::DATABASE_16)?;
@@ -216,7 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FILE_BINARY_24", icons::FILE_BINARY_24)?;
     m.add("WEBHOOK_16", icons::WEBHOOK_16)?;
     m.add("SQUARE_FILL_24", icons::SQUARE_FILL_24)?;
-    m.add("PULSE_16", icons::PULSE_16)?;
-    m.add("MENTION_16", icons::MENTION_16)?;
     Ok(())
 }

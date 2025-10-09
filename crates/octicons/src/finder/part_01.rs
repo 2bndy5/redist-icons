@@ -64,6 +64,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "bell-16" => Some(icons::BELL_16),
         "feed-rocket-16" => Some(icons::FEED_ROCKET_16),
         "unread-24" => Some(icons::UNREAD_24),
+        "comment-ai-24" => Some(icons::COMMENT_AI_24),
         "diff-modified-16" => Some(icons::DIFF_MODIFIED_16),
         "trophy-16" => Some(icons::TROPHY_16),
         "copilot-48" => Some(icons::COPILOT_48),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "pause-24" => Some(icons::PAUSE_24),
         "share-android-24" => Some(icons::SHARE_ANDROID_24),
         "repo-pull-24" => Some(icons::REPO_PULL_24),
-        "light-bulb-24" => Some(icons::LIGHT_BULB_24),
         _ => None,
     }
 }
