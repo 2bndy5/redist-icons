@@ -11,7 +11,7 @@
     "jsr:@std/toml@1.0.11": "1.0.11",
     "npm:@fortawesome/fontawesome-free@7.1.0": "7.1.0",
     "npm:@mdi/svg@7.4.47": "7.4.47",
-    "npm:@primer/octicons@19.18.1": "19.18.1",
+    "npm:@primer/octicons@19.19.0": "19.19.0",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
     "npm:simple-icons@15.16.1": "15.16.1",
@@ -56,8 +56,8 @@
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
     },
-    "@primer/octicons@19.18.1": {
-      "integrity": "sha512-bNKD789kLkj3JDcruxKqoRwy3nU7tZIVrTuS5UMENf3B8sp99Ms+GPyJWZYbKpwX2HwKauaBBrTFw96zM1lEXQ==",
+    "@primer/octicons@19.19.0": {
+      "integrity": "sha512-LBbL8nOl6FWMDy7riKB5ppHLtffY7loRq+CDGj0D5G1Xdo2mKlSOQy3rWy2RVE8SxxPFL+mj46C1nG+smKBEZA==",
       "dependencies": [
         "object-assign"
       ]
@@ -219,7 +219,7 @@
       },
       "crates/octicons": {
         "dependencies": [
-          "npm:@primer/octicons@19.18.1"
+          "npm:@primer/octicons@19.19.0"
         ]
       },
       "crates/simple-icons": {

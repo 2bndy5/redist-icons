@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("PULSE_16", icons::PULSE_16)?;
+    m.add("MENTION_16", icons::MENTION_16)?;
     m.add("HUBOT_24", icons::HUBOT_24)?;
     m.add("PERSON_FILL_16", icons::PERSON_FILL_16)?;
     m.add(
