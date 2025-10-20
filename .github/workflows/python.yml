@@ -270,9 +270,8 @@ jobs:
           pattern: wheels-${{ matrix.pkg }}-*
           merge-multiple: true
           path: dist
-      - name: Setup uv
-        uses: astral-sh/setup-uv@2ddd2b9cb38ad8efd50337e8ab201519a34c9f24 # v7.1.1
+      - uses: actions/setup-python@v6
         with:
-          enable-cache: true # zizmor: ignore[cache-poisoning]
+          python-version: 3.x
       - name: Twine check
-        run: uvx twine check dist/*
+        run: pipx run twine check dist/*
