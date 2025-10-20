@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NETIM", icons::SI_NETIM)?;
     m.add("SI_LAZARUS", icons::SI_LAZARUS)?;
     m.add("SI_HEADSPACE", icons::SI_HEADSPACE)?;
     m.add("SI_SANIC", icons::SI_SANIC)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
         icons::SI_OPENCONTAINERSINITIATIVE,
     )?;
     m.add("SI_SINAWEIBO", icons::SI_SINAWEIBO)?;
-    m.add("SI_DASSAULTSYSTEMES", icons::SI_DASSAULTSYSTEMES)?;
     Ok(())
 }

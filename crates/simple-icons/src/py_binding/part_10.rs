@@ -166,6 +166,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
         icons::SI_HOMEASSISTANTCOMMUNITYSTORE,
     )?;
     m.add("SI_OBSERVABLE", icons::SI_OBSERVABLE)?;
+    m.add("SI_LUOGU", icons::SI_LUOGU)?;
     m.add("SI_IBERIA", icons::SI_IBERIA)?;
     m.add("SI_SPRING", icons::SI_SPRING)?;
     m.add("SI_DEVRANT", icons::SI_DEVRANT)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APOSTROPHE", icons::SI_APOSTROPHE)?;
     m.add("SI_MIX", icons::SI_MIX)?;
     m.add("SI_TERATAIL", icons::SI_TERATAIL)?;
-    m.add("SI_NETIM", icons::SI_NETIM)?;
     Ok(())
 }
