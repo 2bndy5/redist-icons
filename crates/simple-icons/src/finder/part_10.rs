@@ -160,6 +160,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "minds" => Some(icons::SI_MINDS),
         "homeassistantcommunitystore" => Some(icons::SI_HOMEASSISTANTCOMMUNITYSTORE),
         "observable" => Some(icons::SI_OBSERVABLE),
+        "luogu" => Some(icons::SI_LUOGU),
         "iberia" => Some(icons::SI_IBERIA),
         "spring" => Some(icons::SI_SPRING),
         "devrant" => Some(icons::SI_DEVRANT),
@@ -202,7 +203,6 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "apostrophe" => Some(icons::SI_APOSTROPHE),
         "mix" => Some(icons::SI_MIX),
         "teratail" => Some(icons::SI_TERATAIL),
-        "netim" => Some(icons::SI_NETIM),
         _ => None,
     }
 }
