@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add(
+        "SI_OPENCONTAINERSINITIATIVE",
+        icons::SI_OPENCONTAINERSINITIATIVE,
+    )?;
+    m.add("SI_SINAWEIBO", icons::SI_SINAWEIBO)?;
     m.add("SI_DASSAULTSYSTEMES", icons::SI_DASSAULTSYSTEMES)?;
     m.add("SI_MERCURIAL", icons::SI_MERCURIAL)?;
     m.add("SI_QWIKLABS", icons::SI_QWIKLABS)?;
@@ -129,6 +134,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SVELTE", icons::SI_SVELTE)?;
     m.add("SI_EXPRESSDOTCOM", icons::SI_EXPRESSDOTCOM)?;
     m.add("SI_MALWAREBYTES", icons::SI_MALWAREBYTES)?;
+    m.add("SI_APACHEAVRO", icons::SI_APACHEAVRO)?;
     m.add("SI_STRAPI", icons::SI_STRAPI)?;
     m.add("SI_PHABRICATOR", icons::SI_PHABRICATOR)?;
     m.add("SI_RUMBLE", icons::SI_RUMBLE)?;
@@ -200,8 +206,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TINDIE", icons::SI_TINDIE)?;
     m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
     m.add("SI_ABB", icons::SI_ABB)?;
-    m.add("SI_ZOIPER", icons::SI_ZOIPER)?;
-    m.add("SI_PRIVATEDIVISION", icons::SI_PRIVATEDIVISION)?;
-    m.add("SI_POCKET", icons::SI_POCKET)?;
     Ok(())
 }

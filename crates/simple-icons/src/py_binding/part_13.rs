@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ZOIPER", icons::SI_ZOIPER)?;
+    m.add("SI_PRIVATEDIVISION", icons::SI_PRIVATEDIVISION)?;
+    m.add("SI_POCKET", icons::SI_POCKET)?;
     m.add("SI_ACADEMIA", icons::SI_ACADEMIA)?;
     m.add("SI_SANITY", icons::SI_SANITY)?;
     m.add("SI_THUNDERSTORE", icons::SI_THUNDERSTORE)?;
@@ -23,6 +26,7 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CIRRUSCI", icons::SI_CIRRUSCI)?;
     m.add("SI_KUMA", icons::SI_KUMA)?;
     m.add("SI_SIMPLELOGIN", icons::SI_SIMPLELOGIN)?;
+    m.add("SI_LISTENHUB", icons::SI_LISTENHUB)?;
     m.add("SI_MARIADBFOUNDATION", icons::SI_MARIADBFOUNDATION)?;
     m.add("SI_CCC", icons::SI_CCC)?;
     m.add("SI_LUBUNTU", icons::SI_LUBUNTU)?;
@@ -205,9 +209,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LMMS", icons::SI_LMMS)?;
     m.add("SI_UNJS", icons::SI_UNJS)?;
     m.add("SI_MATILLION", icons::SI_MATILLION)?;
-    m.add("SI_ADVENTOFCODE", icons::SI_ADVENTOFCODE)?;
-    m.add("SI_VIRGINMEDIA", icons::SI_VIRGINMEDIA)?;
-    m.add("SI_LITIENGINE", icons::SI_LITIENGINE)?;
-    m.add("SI_NEWBALANCE", icons::SI_NEWBALANCE)?;
     Ok(())
 }
