@@ -23,7 +23,7 @@ jobs:
       - run: rustup update --no-self-update
 
       - name: Setup nushell
-        uses: hustcer/setup-nu@985d59ec83ae3e3418f9d36471cda38b9d8b9879 # v3.20
+        uses: hustcer/setup-nu@3a97c8160c2bb5af321a03336e7addc28f94444e # v3.21
         with:
           version: ${{ vars.NU_SHELL_VERSION || '*' }}
 
@@ -33,7 +33,7 @@ jobs:
       - name: Install Deno deps
         run: deno install
 
-      - uses: astral-sh/setup-uv@2ddd2b9cb38ad8efd50337e8ab201519a34c9f24 # v7.1.1
+      - uses: astral-sh/setup-uv@85856786d1ce8acfbcc2f13a5f3fbd6b938f9f41 # v7.1.2
       - name: Install Python deps
         run: uv sync
 
