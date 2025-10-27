@@ -56,7 +56,7 @@ jobs:
           key: cargo-doc-${{ hashFiles('Cargo.lock') }}
       - run: cargo doc --no-deps --lib
       - name: Upload docs as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           path: target/doc
           name: rust-docs
@@ -91,7 +91,7 @@ jobs:
           persist-credentials: false
       - run: rustup update --no-self-update
       - name: Setup nushell
-        uses: hustcer/setup-nu@985d59ec83ae3e3418f9d36471cda38b9d8b9879 # v3.20
+        uses: hustcer/setup-nu@3a97c8160c2bb5af321a03336e7addc28f94444e # v3.21
         with:
           version: ${{ vars.NU_SHELL_VERSION || '*' }}
       - name: Get package name
@@ -129,7 +129,7 @@ jobs:
           persist-credentials: false
       - run: rustup update --no-self-update
       - name: Setup nushell
-        uses: hustcer/setup-nu@985d59ec83ae3e3418f9d36471cda38b9d8b9879 # v3.20
+        uses: hustcer/setup-nu@3a97c8160c2bb5af321a03336e7addc28f94444e # v3.21
         with:
           version: ${{ vars.NU_SHELL_VERSION || '*' }}
       - name: Get package name
