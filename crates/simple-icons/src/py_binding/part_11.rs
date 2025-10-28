@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MIX", icons::SI_MIX)?;
+    m.add("SI_TERATAIL", icons::SI_TERATAIL)?;
     m.add("SI_NETIM", icons::SI_NETIM)?;
     m.add("SI_LAZARUS", icons::SI_LAZARUS)?;
     m.add("SI_HEADSPACE", icons::SI_HEADSPACE)?;
@@ -204,10 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PORSCHE", icons::SI_PORSCHE)?;
     m.add("SI_REDIS", icons::SI_REDIS)?;
     m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
-    m.add(
-        "SI_OPENCONTAINERSINITIATIVE",
-        icons::SI_OPENCONTAINERSINITIATIVE,
-    )?;
-    m.add("SI_SINAWEIBO", icons::SI_SINAWEIBO)?;
     Ok(())
 }

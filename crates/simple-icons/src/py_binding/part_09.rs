@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
     m.add("SI_LINUXCONTAINERS", icons::SI_LINUXCONTAINERS)?;
     m.add("SI_EVERNOTE", icons::SI_EVERNOTE)?;
     m.add("SI_HOMEADVISOR", icons::SI_HOMEADVISOR)?;
@@ -189,6 +190,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JETBRAINS", icons::SI_JETBRAINS)?;
     m.add("SI_PYCHARM", icons::SI_PYCHARM)?;
     m.add("SI_LUNACY", icons::SI_LUNACY)?;
+    m.add("SI_FISHAUDIO", icons::SI_FISHAUDIO)?;
     m.add("SI_MUMBLE", icons::SI_MUMBLE)?;
     m.add("SI_KLM", icons::SI_KLM)?;
     m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
     m.add("SI_COURSERA", icons::SI_COURSERA)?;
     m.add("SI_CLARIFAI", icons::SI_CLARIFAI)?;
-    m.add("SI_G2A", icons::SI_G2A)?;
-    m.add("SI_RESHARPER", icons::SI_RESHARPER)?;
     Ok(())
 }

@@ -130,6 +130,7 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "grab" => Some(icons::SI_GRAB),
         "actix" => Some(icons::SI_ACTIX),
         "paddle" => Some(icons::SI_PADDLE),
+        "coolify" => Some(icons::SI_COOLIFY),
         "roboflow" => Some(icons::SI_ROBOFLOW),
         "viblo" => Some(icons::SI_VIBLO),
         "fanfou" => Some(icons::SI_FANFOU),
@@ -202,7 +203,6 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "backbonedotjs" => Some(icons::SI_BACKBONEDOTJS),
         "ccleaner" => Some(icons::SI_CCLEANER),
         "ingress" => Some(icons::SI_INGRESS),
-        "r3" => Some(icons::SI_R3),
         _ => None,
     }
 }

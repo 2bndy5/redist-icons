@@ -130,6 +130,7 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GRAB", icons::SI_GRAB)?;
     m.add("SI_ACTIX", icons::SI_ACTIX)?;
     m.add("SI_PADDLE", icons::SI_PADDLE)?;
+    m.add("SI_COOLIFY", icons::SI_COOLIFY)?;
     m.add("SI_ROBOFLOW", icons::SI_ROBOFLOW)?;
     m.add("SI_VIBLO", icons::SI_VIBLO)?;
     m.add("SI_FANFOU", icons::SI_FANFOU)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BACKBONEDOTJS", icons::SI_BACKBONEDOTJS)?;
     m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
     m.add("SI_INGRESS", icons::SI_INGRESS)?;
-    m.add("SI_R3", icons::SI_R3)?;
     Ok(())
 }

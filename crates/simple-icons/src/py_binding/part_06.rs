@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NEAR", icons::SI_NEAR)?;
     m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
     m.add("SI_ANALOGUE", icons::SI_ANALOGUE)?;
     m.add("SI_GETX", icons::SI_GETX)?;
@@ -211,6 +212,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DWAVESYSTEMS", icons::SI_DWAVESYSTEMS)?;
     m.add("SI_PRIMENG", icons::SI_PRIMENG)?;
     m.add("SI_MAAS", icons::SI_MAAS)?;
-    m.add("SI_OCTANERENDER", icons::SI_OCTANERENDER)?;
     Ok(())
 }
