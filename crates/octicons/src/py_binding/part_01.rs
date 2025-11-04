@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("ARROW_UP_LEFT_24", icons::ARROW_UP_LEFT_24)?;
     m.add("SHIELD_LOCK_16", icons::SHIELD_LOCK_16)?;
     m.add("HEART_16", icons::HEART_16)?;
     m.add("AI_MODEL_24", icons::AI_MODEL_24)?;
@@ -153,6 +154,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REDO_16", icons::REDO_16)?;
     m.add("ISSUE_TRACKS_16", icons::ISSUE_TRACKS_16)?;
     m.add("DIFF_REMOVED_24", icons::DIFF_REMOVED_24)?;
+    m.add("INBOX_FILL_16", icons::INBOX_FILL_16)?;
     m.add("SCREEN_NORMAL_24", icons::SCREEN_NORMAL_24)?;
     m.add("ELLIPSIS_24", icons::ELLIPSIS_24)?;
     m.add("X_12", icons::X_12)?;
@@ -213,7 +215,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SINGLE_SELECT_24", icons::SINGLE_SELECT_24)?;
     m.add("ZAP_24", icons::ZAP_24)?;
     m.add("PAUSE_24", icons::PAUSE_24)?;
-    m.add("SHARE_ANDROID_24", icons::SHARE_ANDROID_24)?;
-    m.add("REPO_PULL_24", icons::REPO_PULL_24)?;
     Ok(())
 }

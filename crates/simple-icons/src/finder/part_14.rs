@@ -73,6 +73,7 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "tile" => Some(icons::SI_TILE),
         "picnic" => Some(icons::SI_PICNIC),
         "polkadot" => Some(icons::SI_POLKADOT),
+        "labex" => Some(icons::SI_LABEX),
         "chemex" => Some(icons::SI_CHEMEX),
         "authentik" => Some(icons::SI_AUTHENTIK),
         "fauna" => Some(icons::SI_FAUNA),
@@ -202,7 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "nginxproxymanager" => Some(icons::SI_NGINXPROXYMANAGER),
         "trendmicro" => Some(icons::SI_TRENDMICRO),
         "blender" => Some(icons::SI_BLENDER),
-        "processon" => Some(icons::SI_PROCESSON),
         _ => None,
     }
 }
