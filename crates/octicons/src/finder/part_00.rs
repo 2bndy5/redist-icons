@@ -170,6 +170,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "dot-fill-16" => Some(icons::DOT_FILL_16),
         "desktop-download-16" => Some(icons::DESKTOP_DOWNLOAD_16),
         "location-24" => Some(icons::LOCATION_24),
+        "inbox-fill-24" => Some(icons::INBOX_FILL_24),
         "passkey-fill-24" => Some(icons::PASSKEY_FILL_24),
         "fiscal-host-16" => Some(icons::FISCAL_HOST_16),
         "shield-check-16" => Some(icons::SHIELD_CHECK_16),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "unmute-16" => Some(icons::UNMUTE_16),
         "file-directory-24" => Some(icons::FILE_DIRECTORY_24),
         "read-16" => Some(icons::READ_16),
-        "arrow-up-left-24" => Some(icons::ARROW_UP_LEFT_24),
         _ => None,
     }
 }

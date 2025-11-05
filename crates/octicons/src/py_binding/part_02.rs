@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SHARE_ANDROID_24", icons::SHARE_ANDROID_24)?;
+    m.add("REPO_PULL_24", icons::REPO_PULL_24)?;
     m.add("LIGHT_BULB_24", icons::LIGHT_BULB_24)?;
     m.add("BRIEFCASE_24", icons::BRIEFCASE_24)?;
     m.add(
@@ -216,7 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SPACE_24", icons::SPACE_24)?;
     m.add("FILE_REMOVED_16", icons::FILE_REMOVED_16)?;
     m.add("FILE_BINARY_24", icons::FILE_BINARY_24)?;
-    m.add("WEBHOOK_16", icons::WEBHOOK_16)?;
-    m.add("SQUARE_FILL_24", icons::SQUARE_FILL_24)?;
     Ok(())
 }

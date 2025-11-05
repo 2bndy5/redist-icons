@@ -73,6 +73,7 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TILE", icons::SI_TILE)?;
     m.add("SI_PICNIC", icons::SI_PICNIC)?;
     m.add("SI_POLKADOT", icons::SI_POLKADOT)?;
+    m.add("SI_LABEX", icons::SI_LABEX)?;
     m.add("SI_CHEMEX", icons::SI_CHEMEX)?;
     m.add("SI_AUTHENTIK", icons::SI_AUTHENTIK)?;
     m.add("SI_FAUNA", icons::SI_FAUNA)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NGINXPROXYMANAGER", icons::SI_NGINXPROXYMANAGER)?;
     m.add("SI_TRENDMICRO", icons::SI_TRENDMICRO)?;
     m.add("SI_BLENDER", icons::SI_BLENDER)?;
-    m.add("SI_PROCESSON", icons::SI_PROCESSON)?;
     Ok(())
 }

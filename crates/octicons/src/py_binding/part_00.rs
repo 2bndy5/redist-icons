@@ -173,6 +173,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DOT_FILL_16", icons::DOT_FILL_16)?;
     m.add("DESKTOP_DOWNLOAD_16", icons::DESKTOP_DOWNLOAD_16)?;
     m.add("LOCATION_24", icons::LOCATION_24)?;
+    m.add("INBOX_FILL_24", icons::INBOX_FILL_24)?;
     m.add("PASSKEY_FILL_24", icons::PASSKEY_FILL_24)?;
     m.add("FISCAL_HOST_16", icons::FISCAL_HOST_16)?;
     m.add("SHIELD_CHECK_16", icons::SHIELD_CHECK_16)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("UNMUTE_16", icons::UNMUTE_16)?;
     m.add("FILE_DIRECTORY_24", icons::FILE_DIRECTORY_24)?;
     m.add("READ_16", icons::READ_16)?;
-    m.add("ARROW_UP_LEFT_24", icons::ARROW_UP_LEFT_24)?;
     Ok(())
 }

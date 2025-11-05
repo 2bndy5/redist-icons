@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// processon
+pub const SI_PROCESSON: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>ProcessOn</title><path d="M3.91 12.058c0-2.504 1.175-4.546 3.37-4.546 2.216 0 3.352 2.167 3.352 4.46 0 2.542-1.203 4.526-3.351 4.526-2.129 0-3.37-1.965-3.37-4.44m9.072-.183c0-3.458-2.09-6.145-5.653-6.154-3.419 0-5.769 2.629-5.769 6.366 0 3.573 2.167 6.192 5.596 6.192 3.351 0 5.826-2.33 5.826-6.404m1.503.038.01 6.183h2.234v-5.162c0-.25.02-.52.087-.722.24-.665.847-1.3 1.733-1.3 1.204 0 1.676.953 1.676 2.215v4.96h2.215v-5.21c0-2.784-1.589-3.776-3.12-3.776-1.454 0-2.418.828-2.793 1.512h-.058l-.106-1.32h-1.946c.048.762.068 1.61.068 2.62M20.013 24H3.987A3.983 3.983 0 0 1 0 20.013V3.987A3.983 3.983 0 0 1 3.987 0h16.026A3.983 3.983 0 0 1 24 3.987v16.026A3.983 3.983 0 0 1 20.013 24"/></svg>"#,
+    slug: "processon",
+    title: "ProcessOn",
+    hex: "067BEF",
+    source: "https://www.processon.com/assets/imgs/logo_small.svg",
+    guidelines: None,
+    license: None,
+};
+
 /// docsdotrs
 pub const SI_DOCSDOTRS: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Docs.rs</title><path d="m22.903 11.728-4.528-1.697V4.945a1.69 1.69 0 0 0-1.097-1.58l-4.687-1.757a1.668 1.668 0 0 0-1.186 0L6.717 3.366a1.687 1.687 0 0 0-1.097 1.58v5.085l-4.528 1.697A1.69 1.69 0 0 0 0 13.308v5.16c0 .638.36 1.224.933 1.51l4.687 2.344a1.68 1.68 0 0 0 1.51 0L12 19.884l4.87 2.438a1.68 1.68 0 0 0 1.51 0l4.687-2.344a1.69 1.69 0 0 0 .933-1.51v-5.16c0-.703-.436-1.331-1.097-1.58zm-6.122-1.66-3.984 1.496V8.367l3.984-1.734zM7.22 4.88 12 3.09l4.781 1.79v.028L12 6.848l-4.781-1.94Zm3.937 13.645-3.984 1.992V16.81l3.984-1.818zm0-5.25-4.781 1.94-4.781-1.94v-.028l4.781-1.79 4.781 1.79zm11.25 5.25-3.984 1.992V16.81l3.984-1.818zm0-5.25-4.781 1.94-4.781-1.94v-.028l4.781-1.79 4.781 1.79z"/></svg>"#,
@@ -2188,17 +2199,6 @@ pub const SI_BLAZEMETER: Icon = Icon {
     title: "Blazemeter",
     hex: "CA2133",
     source: "https://www.blazemeter.com",
-    guidelines: None,
-    license: None,
-};
-
-/// playstation2
-pub const SI_PLAYSTATION2: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PlayStation 2</title><path d="M7.46 13.779v.292h4.142v-3.85h3.796V9.93h-4.115v3.85zm16.248-3.558v1.62h-7.195v2.23H24v-.292h-7.168v-1.646H24V9.929h-7.487v.292zm-16.513 0v1.62H0v2.23h.292v-1.938H7.46V9.929H0v.292Z"/></svg>"#,
-    slug: "playstation2",
-    title: "PlayStation 2",
-    hex: "003791",
-    source: "https://commons.wikimedia.org/wiki/File:PlayStation_2_logo.svg",
     guidelines: None,
     license: None,
 };
