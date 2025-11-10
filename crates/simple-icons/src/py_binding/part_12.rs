@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
     m.add(
         "SI_OPENCONTAINERSINITIATIVE",
         icons::SI_OPENCONTAINERSINITIATIVE,
@@ -205,6 +206,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DELPHI", icons::SI_DELPHI)?;
     m.add("SI_TINDIE", icons::SI_TINDIE)?;
     m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
-    m.add("SI_ABB", icons::SI_ABB)?;
     Ok(())
 }

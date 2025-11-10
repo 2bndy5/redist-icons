@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CLARIFAI", icons::SI_CLARIFAI)?;
     m.add("SI_G2A", icons::SI_G2A)?;
     m.add("SI_RESHARPER", icons::SI_RESHARPER)?;
     m.add("SI_WOLFRAMLANGUAGE", icons::SI_WOLFRAMLANGUAGE)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NZXT", icons::SI_NZXT)?;
     m.add("SI_APPSTORE", icons::SI_APPSTORE)?;
     m.add("SI_THEREGISTER", icons::SI_THEREGISTER)?;
-    m.add("SI_APOSTROPHE", icons::SI_APOSTROPHE)?;
     Ok(())
 }
