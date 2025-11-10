@@ -171,6 +171,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_POLYWORK", icons::SI_POLYWORK)?;
     m.add("SI_FLOOD", icons::SI_FLOOD)?;
     m.add("SI_COVERALLS", icons::SI_COVERALLS)?;
+    m.add("SI_CURSOR", icons::SI_CURSOR)?;
     m.add("SI_UNICODE", icons::SI_UNICODE)?;
     m.add("SI_PUSHER", icons::SI_PUSHER)?;
     m.add("SI_BASECAMP", icons::SI_BASECAMP)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
     m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
     m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
-    m.add("SI_RENREN", icons::SI_RENREN)?;
     Ok(())
 }

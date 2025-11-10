@@ -162,6 +162,7 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "polywork" => Some(icons::SI_POLYWORK),
         "flood" => Some(icons::SI_FLOOD),
         "coveralls" => Some(icons::SI_COVERALLS),
+        "cursor" => Some(icons::SI_CURSOR),
         "unicode" => Some(icons::SI_UNICODE),
         "pusher" => Some(icons::SI_PUSHER),
         "basecamp" => Some(icons::SI_BASECAMP),
@@ -202,7 +203,6 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "eventstore" => Some(icons::SI_EVENTSTORE),
         "singlestore" => Some(icons::SI_SINGLESTORE),
         "buysellads" => Some(icons::SI_BUYSELLADS),
-        "renren" => Some(icons::SI_RENREN),
         _ => None,
     }
 }
