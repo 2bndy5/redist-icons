@@ -3,6 +3,31 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("WRAP_24", icons::WRAP_24)?;
+    m.add("SIGN_OUT_16", icons::SIGN_OUT_16)?;
+    m.add("DIFF_RENAMED_24", icons::DIFF_RENAMED_24)?;
+    m.add("LIST_ORDERED_16", icons::LIST_ORDERED_16)?;
+    m.add("REPORT_16", icons::REPORT_16)?;
+    m.add("TRASH_24", icons::TRASH_24)?;
+    m.add("SMILEY_GRIN_16", icons::SMILEY_GRIN_16)?;
+    m.add("STRIKETHROUGH_16", icons::STRIKETHROUGH_16)?;
+    m.add("DISCUSSION_DUPLICATE_16", icons::DISCUSSION_DUPLICATE_16)?;
+    m.add("FILE_SYMLINK_FILE_16", icons::FILE_SYMLINK_FILE_16)?;
+    m.add("UNFOLD_24", icons::UNFOLD_24)?;
+    m.add("PACKAGE_DEPENDENTS_24", icons::PACKAGE_DEPENDENTS_24)?;
+    m.add("TRIANGLE_DOWN_24", icons::TRIANGLE_DOWN_24)?;
+    m.add("SHIELD_SLASH_24", icons::SHIELD_SLASH_24)?;
+    m.add("BOOLEAN_ON_16", icons::BOOLEAN_ON_16)?;
+    m.add("ITERATIONS_16", icons::ITERATIONS_16)?;
+    m.add("DUPLICATE_16", icons::DUPLICATE_16)?;
+    m.add("DEVICE_CAMERA_16", icons::DEVICE_CAMERA_16)?;
+    m.add("CREDIT_CARD_24", icons::CREDIT_CARD_24)?;
+    m.add("PLUS_CIRCLE_24", icons::PLUS_CIRCLE_24)?;
+    m.add("GIT_COMMIT_16", icons::GIT_COMMIT_16)?;
+    m.add("SHIELD_X_24", icons::SHIELD_X_24)?;
+    m.add("SINGLE_SELECT_24", icons::SINGLE_SELECT_24)?;
+    m.add("ZAP_24", icons::ZAP_24)?;
+    m.add("PAUSE_24", icons::PAUSE_24)?;
     m.add("SHARE_ANDROID_24", icons::SHARE_ANDROID_24)?;
     m.add("REPO_PULL_24", icons::REPO_PULL_24)?;
     m.add("LIGHT_BULB_24", icons::LIGHT_BULB_24)?;
@@ -13,6 +38,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     m.add("TELESCOPE_16", icons::TELESCOPE_16)?;
     m.add("CLOUD_OFFLINE_16", icons::CLOUD_OFFLINE_16)?;
+    m.add("FOCUS_CENTER_24", icons::FOCUS_CENTER_24)?;
     m.add("SIDEBAR_EXPAND_16", icons::SIDEBAR_EXPAND_16)?;
     m.add("MARKDOWN_16", icons::MARKDOWN_16)?;
     m.add("CODE_SQUARE_16", icons::CODE_SQUARE_16)?;
@@ -37,6 +63,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ITERATIONS_24", icons::ITERATIONS_24)?;
     m.add("THREE_BARS_16", icons::THREE_BARS_16)?;
     m.add("ISSUE_DRAFT_16", icons::ISSUE_DRAFT_16)?;
+    m.add("SPACING_MEDIUM_24", icons::SPACING_MEDIUM_24)?;
     m.add(
         "TRACKED_BY_CLOSED_NOT_PLANNED_24",
         icons::TRACKED_BY_CLOSED_NOT_PLANNED_24,
@@ -64,6 +91,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_RIGHT_24", icons::ARROW_RIGHT_24)?;
     m.add("PLUS_CIRCLE_16", icons::PLUS_CIRCLE_16)?;
     m.add("FILE_DIRECTORY_FILL_16", icons::FILE_DIRECTORY_FILL_16)?;
+    m.add("SMILEY_FRUSTRATED_16", icons::SMILEY_FRUSTRATED_16)?;
     m.add("SERVER_24", icons::SERVER_24)?;
     m.add("CLOUD_24", icons::CLOUD_24)?;
     m.add("TAG_16", icons::TAG_16)?;
@@ -72,10 +100,13 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("TELESCOPE_FILL_16", icons::TELESCOPE_FILL_16)?;
     m.add("SIGN_OUT_24", icons::SIGN_OUT_24)?;
     m.add("TELESCOPE_24", icons::TELESCOPE_24)?;
+    m.add("PENCIL_AI_24", icons::PENCIL_AI_24)?;
     m.add("PACKAGE_DEPENDENTS_16", icons::PACKAGE_DEPENDENTS_16)?;
+    m.add("NODE_24", icons::NODE_24)?;
     m.add("TYPOGRAPHY_16", icons::TYPOGRAPHY_16)?;
     m.add("SQUARE_FILL_16", icons::SQUARE_FILL_16)?;
     m.add("COPILOT_16", icons::COPILOT_16)?;
+    m.add("GRAPH_BAR_VERTICAL_24", icons::GRAPH_BAR_VERTICAL_24)?;
     m.add("REPO_FORKED_16", icons::REPO_FORKED_16)?;
     m.add("MOVE_TO_TOP_24", icons::MOVE_TO_TOP_24)?;
     m.add("DIFF_IGNORED_16", icons::DIFF_IGNORED_16)?;
@@ -102,6 +133,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ACCESSIBILITY_24", icons::ACCESSIBILITY_24)?;
     m.add("ARROW_UP_RIGHT_16", icons::ARROW_UP_RIGHT_16)?;
     m.add("CALENDAR_16", icons::CALENDAR_16)?;
+    m.add("FOCUS_CENTER_16", icons::FOCUS_CENTER_16)?;
     m.add("CHECK_CIRCLE_FILL_16", icons::CHECK_CIRCLE_FILL_16)?;
     m.add("LOCK_24", icons::LOCK_24)?;
     m.add("HUBOT_16", icons::HUBOT_16)?;
@@ -133,6 +165,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHECK_CIRCLE_16", icons::CHECK_CIRCLE_16)?;
     m.add("LINK_EXTERNAL_24", icons::LINK_EXTERNAL_24)?;
     m.add("TYPOGRAPHY_24", icons::TYPOGRAPHY_24)?;
+    m.add("WRAP_16", icons::WRAP_16)?;
     m.add("HOURGLASS_24", icons::HOURGLASS_24)?;
     m.add("DEVICE_CAMERA_VIDEO_16", icons::DEVICE_CAMERA_VIDEO_16)?;
     m.add("GIT_MERGE_QUEUE_16", icons::GIT_MERGE_QUEUE_16)?;
@@ -147,6 +180,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SHIELD_24", icons::SHIELD_24)?;
     m.add("UNMUTE_24", icons::UNMUTE_24)?;
     m.add("STOP_24", icons::STOP_24)?;
+    m.add("SMILEY_FRUSTRATED_24", icons::SMILEY_FRUSTRATED_24)?;
     m.add("UNREAD_16", icons::UNREAD_16)?;
     m.add(
         "GIT_PULL_REQUEST_DRAFT_16",
@@ -156,14 +190,17 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("GIT_BRANCH_24", icons::GIT_BRANCH_24)?;
     m.add("COMMENT_AI_16", icons::COMMENT_AI_16)?;
     m.add("INBOX_24", icons::INBOX_24)?;
+    m.add("GRAPH_BAR_HORIZONTAL_16", icons::GRAPH_BAR_HORIZONTAL_16)?;
     m.add("FILE_SUBMODULE_24", icons::FILE_SUBMODULE_24)?;
     m.add("DATABASE_16", icons::DATABASE_16)?;
     m.add("CODE_REVIEW_24", icons::CODE_REVIEW_24)?;
     m.add("SHIELD_X_16", icons::SHIELD_X_16)?;
     m.add("FEED_ISSUE_REOPEN_16", icons::FEED_ISSUE_REOPEN_16)?;
+    m.add("CROSSHAIRS_16", icons::CROSSHAIRS_16)?;
     m.add("COPILOT_ERROR_16", icons::COPILOT_ERROR_16)?;
     m.add("ITALIC_24", icons::ITALIC_24)?;
     m.add("LINK_16", icons::LINK_16)?;
+    m.add("SPACING_LARGE_24", icons::SPACING_LARGE_24)?;
     m.add("KEBAB_HORIZONTAL_16", icons::KEBAB_HORIZONTAL_16)?;
     m.add("BOOKMARK_SLASH_24", icons::BOOKMARK_SLASH_24)?;
     m.add("TELESCOPE_FILL_24", icons::TELESCOPE_FILL_24)?;
@@ -181,42 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REPO_LOCKED_24", icons::REPO_LOCKED_24)?;
     m.add("MOVE_TO_END_24", icons::MOVE_TO_END_24)?;
     m.add("REPO_LOCKED_16", icons::REPO_LOCKED_16)?;
-    m.add("SPARKLE_FILL_24", icons::SPARKLE_FILL_24)?;
-    m.add("FILTER_24", icons::FILTER_24)?;
-    m.add("SPARKLES_FILL_24", icons::SPARKLES_FILL_24)?;
-    m.add("BUG_24", icons::BUG_24)?;
-    m.add("X_CIRCLE_16", icons::X_CIRCLE_16)?;
-    m.add("CLOCK_FILL_16", icons::CLOCK_FILL_16)?;
-    m.add("PASTE_16", icons::PASTE_16)?;
-    m.add("MORTAR_BOARD_16", icons::MORTAR_BOARD_16)?;
-    m.add("REPLY_16", icons::REPLY_16)?;
-    m.add("COMMENT_DISCUSSION_16", icons::COMMENT_DISCUSSION_16)?;
-    m.add("RSS_16", icons::RSS_16)?;
-    m.add("LOGO_GIST_16", icons::LOGO_GIST_16)?;
-    m.add("PEOPLE_24", icons::PEOPLE_24)?;
-    m.add("CACHE_16", icons::CACHE_16)?;
-    m.add("ARCHIVE_24", icons::ARCHIVE_24)?;
-    m.add("FILE_DIFF_16", icons::FILE_DIFF_16)?;
-    m.add("CIRCLE_24", icons::CIRCLE_24)?;
-    m.add("LOCK_16", icons::LOCK_16)?;
-    m.add("TABLE_24", icons::TABLE_24)?;
-    m.add("ISSUE_TRACKS_24", icons::ISSUE_TRACKS_24)?;
-    m.add("DISCUSSION_OUTDATED_16", icons::DISCUSSION_OUTDATED_16)?;
-    m.add("GIFT_24", icons::GIFT_24)?;
-    m.add("BOOK_24", icons::BOOK_24)?;
-    m.add("MEGAPHONE_16", icons::MEGAPHONE_16)?;
-    m.add("CHECK_CIRCLE_FILL_24", icons::CHECK_CIRCLE_FILL_24)?;
-    m.add("LOG_24", icons::LOG_24)?;
-    m.add("MAXIMIZE_24", icons::MAXIMIZE_24)?;
-    m.add("CHEVRON_LEFT_12", icons::CHEVRON_LEFT_12)?;
-    m.add("SORT_ASC_24", icons::SORT_ASC_24)?;
-    m.add("LIST_ORDERED_24", icons::LIST_ORDERED_24)?;
-    m.add("FLAME_16", icons::FLAME_16)?;
-    m.add("KEY_16", icons::KEY_16)?;
-    m.add("CHECK_CIRCLE_FILL_12", icons::CHECK_CIRCLE_FILL_12)?;
-    m.add("SIGN_IN_16", icons::SIGN_IN_16)?;
-    m.add("SPACE_24", icons::SPACE_24)?;
-    m.add("FILE_REMOVED_16", icons::FILE_REMOVED_16)?;
-    m.add("FILE_BINARY_24", icons::FILE_BINARY_24)?;
     Ok(())
 }
