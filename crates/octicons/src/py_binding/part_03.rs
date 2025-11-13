@@ -3,6 +3,49 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SPARKLE_FILL_24", icons::SPARKLE_FILL_24)?;
+    m.add("EXCLAMATION_16", icons::EXCLAMATION_16)?;
+    m.add("FILTER_24", icons::FILTER_24)?;
+    m.add("SPARKLES_FILL_24", icons::SPARKLES_FILL_24)?;
+    m.add("BUG_24", icons::BUG_24)?;
+    m.add("X_CIRCLE_16", icons::X_CIRCLE_16)?;
+    m.add("CLOCK_FILL_16", icons::CLOCK_FILL_16)?;
+    m.add("PASTE_16", icons::PASTE_16)?;
+    m.add("MORTAR_BOARD_16", icons::MORTAR_BOARD_16)?;
+    m.add("REPLY_16", icons::REPLY_16)?;
+    m.add("COMMENT_DISCUSSION_16", icons::COMMENT_DISCUSSION_16)?;
+    m.add("FLOWCHART_16", icons::FLOWCHART_16)?;
+    m.add("RSS_16", icons::RSS_16)?;
+    m.add("LOGO_GIST_16", icons::LOGO_GIST_16)?;
+    m.add("PEOPLE_24", icons::PEOPLE_24)?;
+    m.add("CACHE_16", icons::CACHE_16)?;
+    m.add("ARCHIVE_24", icons::ARCHIVE_24)?;
+    m.add("SPLIT_VIEW_16", icons::SPLIT_VIEW_16)?;
+    m.add("FILE_DIFF_16", icons::FILE_DIFF_16)?;
+    m.add("CIRCLE_24", icons::CIRCLE_24)?;
+    m.add("LOCK_16", icons::LOCK_16)?;
+    m.add("TABLE_24", icons::TABLE_24)?;
+    m.add("ISSUE_TRACKS_24", icons::ISSUE_TRACKS_24)?;
+    m.add("DISCUSSION_OUTDATED_16", icons::DISCUSSION_OUTDATED_16)?;
+    m.add("GIFT_24", icons::GIFT_24)?;
+    m.add("BOOK_24", icons::BOOK_24)?;
+    m.add("MEGAPHONE_16", icons::MEGAPHONE_16)?;
+    m.add("CHECK_CIRCLE_FILL_24", icons::CHECK_CIRCLE_FILL_24)?;
+    m.add("LOG_24", icons::LOG_24)?;
+    m.add("MAXIMIZE_24", icons::MAXIMIZE_24)?;
+    m.add("CHEVRON_LEFT_12", icons::CHEVRON_LEFT_12)?;
+    m.add("PENCIL_AI_16", icons::PENCIL_AI_16)?;
+    m.add("SORT_ASC_24", icons::SORT_ASC_24)?;
+    m.add("LIST_ORDERED_24", icons::LIST_ORDERED_24)?;
+    m.add("FILE_CHECK_24", icons::FILE_CHECK_24)?;
+    m.add("FLAME_16", icons::FLAME_16)?;
+    m.add("KEY_16", icons::KEY_16)?;
+    m.add("UNWRAP_16", icons::UNWRAP_16)?;
+    m.add("CHECK_CIRCLE_FILL_12", icons::CHECK_CIRCLE_FILL_12)?;
+    m.add("SIGN_IN_16", icons::SIGN_IN_16)?;
+    m.add("SPACE_24", icons::SPACE_24)?;
+    m.add("FILE_REMOVED_16", icons::FILE_REMOVED_16)?;
+    m.add("FILE_BINARY_24", icons::FILE_BINARY_24)?;
     m.add("WEBHOOK_16", icons::WEBHOOK_16)?;
     m.add("SQUARE_FILL_24", icons::SQUARE_FILL_24)?;
     m.add("PULSE_16", icons::PULSE_16)?;
@@ -17,6 +60,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("MUTE_24", icons::MUTE_24)?;
     m.add("DISCUSSION_DUPLICATE_24", icons::DISCUSSION_DUPLICATE_24)?;
     m.add("FEED_ISSUE_CLOSED_16", icons::FEED_ISSUE_CLOSED_16)?;
+    m.add("FILE_CHECK_16", icons::FILE_CHECK_16)?;
     m.add("SORT_DESC_16", icons::SORT_DESC_16)?;
     m.add("LIST_UNORDERED_16", icons::LIST_UNORDERED_16)?;
     m.add("INFINITY_24", icons::INFINITY_24)?;
@@ -31,12 +75,14 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DEVICE_CAMERA_24", icons::DEVICE_CAMERA_24)?;
     m.add("SHARE_24", icons::SHARE_24)?;
     m.add("PEOPLE_16", icons::PEOPLE_16)?;
+    m.add("DICE_24", icons::DICE_24)?;
     m.add("SORT_DESC_24", icons::SORT_DESC_24)?;
     m.add("DEVICES_24", icons::DEVICES_24)?;
     m.add("LOCATION_16", icons::LOCATION_16)?;
     m.add("COPILOT_96", icons::COPILOT_96)?;
     m.add("LIGHT_BULB_16", icons::LIGHT_BULB_16)?;
     m.add("DIFF_ADDED_16", icons::DIFF_ADDED_16)?;
+    m.add("CROSSHAIRS_24", icons::CROSSHAIRS_24)?;
     m.add("DEPENDABOT_24", icons::DEPENDABOT_24)?;
     m.add("UNDO_16", icons::UNDO_16)?;
     m.add("GOAL_16", icons::GOAL_16)?;
@@ -67,12 +113,14 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_UP_16", icons::ARROW_UP_16)?;
     m.add("SPARKLES_FILL_16", icons::SPARKLES_FILL_16)?;
     m.add("ISSUE_DRAFT_24", icons::ISSUE_DRAFT_24)?;
+    m.add("BOOLEAN_ON_24", icons::BOOLEAN_ON_24)?;
     m.add("PLAY_16", icons::PLAY_16)?;
     m.add("FILE_REMOVED_24", icons::FILE_REMOVED_24)?;
     m.add("PASTE_24", icons::PASTE_24)?;
     m.add("ZOOM_OUT_24", icons::ZOOM_OUT_24)?;
     m.add("TAB_24", icons::TAB_24)?;
     m.add("HISTORY_16", icons::HISTORY_16)?;
+    m.add("DICE_16", icons::DICE_16)?;
     m.add(
         "FEED_PULL_REQUEST_DRAFT_16",
         icons::FEED_PULL_REQUEST_DRAFT_16,

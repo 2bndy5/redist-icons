@@ -3,6 +3,15 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("UNVERIFIED_24", icons::UNVERIFIED_24)?;
+    m.add("ID_BADGE_24", icons::ID_BADGE_24)?;
+    m.add("CHECKBOX_FILL_16", icons::CHECKBOX_FILL_16)?;
+    m.add("PROJECT_24", icons::PROJECT_24)?;
+    m.add("FEED_PERSON_16", icons::FEED_PERSON_16)?;
+    m.add("UNMUTE_16", icons::UNMUTE_16)?;
+    m.add("FILE_DIRECTORY_24", icons::FILE_DIRECTORY_24)?;
+    m.add("SMILEY_NEUTRAL_24", icons::SMILEY_NEUTRAL_24)?;
+    m.add("READ_16", icons::READ_16)?;
     m.add("ARROW_UP_LEFT_24", icons::ARROW_UP_LEFT_24)?;
     m.add("SHIELD_LOCK_16", icons::SHIELD_LOCK_16)?;
     m.add("HEART_16", icons::HEART_16)?;
@@ -11,9 +20,11 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SQUIRREL_24", icons::SQUIRREL_24)?;
     m.add("SEARCH_16", icons::SEARCH_16)?;
     m.add("HEART_FILL_16", icons::HEART_FILL_16)?;
+    m.add("BOOLEAN_OFF_24", icons::BOOLEAN_OFF_24)?;
     m.add("BUG_16", icons::BUG_16)?;
     m.add("CODE_16", icons::CODE_16)?;
     m.add("DISCUSSION_CLOSED_16", icons::DISCUSSION_CLOSED_16)?;
+    m.add("COMPOSE_24", icons::COMPOSE_24)?;
     m.add("SHIELD_16", icons::SHIELD_16)?;
     m.add("DUPLICATE_24", icons::DUPLICATE_24)?;
     m.add("TAG_24", icons::TAG_24)?;
@@ -37,6 +48,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("VIDEO_24", icons::VIDEO_24)?;
     m.add("SPONSOR_TIERS_16", icons::SPONSOR_TIERS_16)?;
     m.add("NORTH_STAR_24", icons::NORTH_STAR_24)?;
+    m.add("BOOLEAN_OFF_16", icons::BOOLEAN_OFF_16)?;
     m.add("FILE_MOVED_24", icons::FILE_MOVED_24)?;
     m.add("MOVE_TO_START_16", icons::MOVE_TO_START_16)?;
     m.add("INFO_24", icons::INFO_24)?;
@@ -64,6 +76,8 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REPO_DELETED_16", icons::REPO_DELETED_16)?;
     m.add("MEGAPHONE_24", icons::MEGAPHONE_24)?;
     m.add("DIFF_REMOVED_16", icons::DIFF_REMOVED_16)?;
+    m.add("GIT_BRANCH_CHECK_24", icons::GIT_BRANCH_CHECK_24)?;
+    m.add("SMILEY_FROWN_16", icons::SMILEY_FROWN_16)?;
     m.add("COLUMNS_24", icons::COLUMNS_24)?;
     m.add("ISSUE_TRACKED_BY_16", icons::ISSUE_TRACKED_BY_16)?;
     m.add("APPS_16", icons::APPS_16)?;
@@ -85,6 +99,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DOT_16", icons::DOT_16)?;
     m.add("DEVICE_DESKTOP_24", icons::DEVICE_DESKTOP_24)?;
     m.add("CHEVRON_RIGHT_12", icons::CHEVRON_RIGHT_12)?;
+    m.add("SPACING_MEDIUM_16", icons::SPACING_MEDIUM_16)?;
     m.add("SIGN_IN_24", icons::SIGN_IN_24)?;
     m.add("THUMBSDOWN_24", icons::THUMBSDOWN_24)?;
     m.add("ALERT_FILL_12", icons::ALERT_FILL_12)?;
@@ -93,6 +108,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
         "TRACKED_BY_CLOSED_COMPLETED_16",
         icons::TRACKED_BY_CLOSED_COMPLETED_16,
     )?;
+    m.add("GRAPH_BAR_VERTICAL_16", icons::GRAPH_BAR_VERTICAL_16)?;
     m.add("CODE_SQUARE_24", icons::CODE_SQUARE_24)?;
     m.add("FILE_BADGE_24", icons::FILE_BADGE_24)?;
     m.add("ARROW_SWITCH_16", icons::ARROW_SWITCH_16)?;
@@ -109,8 +125,10 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("IMAGE_16", icons::IMAGE_16)?;
     m.add("ARROW_RIGHT_16", icons::ARROW_RIGHT_16)?;
     m.add("GIFT_16", icons::GIFT_16)?;
+    m.add("EXCLAMATION_24", icons::EXCLAMATION_24)?;
     m.add("UPLOAD_24", icons::UPLOAD_24)?;
     m.add("GIT_PULL_REQUEST_16", icons::GIT_PULL_REQUEST_16)?;
+    m.add("SPACING_LARGE_16", icons::SPACING_LARGE_16)?;
     m.add("TRIANGLE_RIGHT_16", icons::TRIANGLE_RIGHT_16)?;
     m.add("PERSON_ADD_24", icons::PERSON_ADD_24)?;
     m.add("SINGLE_SELECT_16", icons::SINGLE_SELECT_16)?;
@@ -119,6 +137,8 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CPU_16", icons::CPU_16)?;
     m.add("DOT_24", icons::DOT_24)?;
     m.add("LOGO_GITHUB_16", icons::LOGO_GITHUB_16)?;
+    m.add("SMILEY_GRIN_24", icons::SMILEY_GRIN_24)?;
+    m.add("SPACING_SMALL_16", icons::SPACING_SMALL_16)?;
     m.add("MAIL_16", icons::MAIL_16)?;
     m.add("SMILEY_16", icons::SMILEY_16)?;
     m.add("KEBAB_HORIZONTAL_24", icons::KEBAB_HORIZONTAL_24)?;
@@ -149,6 +169,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHEVRON_UP_16", icons::CHEVRON_UP_16)?;
     m.add("FILE_CODE_24", icons::FILE_CODE_24)?;
     m.add("KEY_24", icons::KEY_24)?;
+    m.add("FLOWCHART_24", icons::FLOWCHART_24)?;
     m.add("PIN_SLASH_16", icons::PIN_SLASH_16)?;
     m.add("DEVICE_CAMERA_VIDEO_24", icons::DEVICE_CAMERA_VIDEO_24)?;
     m.add("REDO_16", icons::REDO_16)?;
@@ -162,6 +183,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SHARE_16", icons::SHARE_16)?;
     m.add("FILE_MEDIA_24", icons::FILE_MEDIA_24)?;
     m.add("ARROW_DOWN_24", icons::ARROW_DOWN_24)?;
+    m.add("SPACING_SMALL_24", icons::SPACING_SMALL_24)?;
     m.add("DESKTOP_DOWNLOAD_24", icons::DESKTOP_DOWNLOAD_24)?;
     m.add("BELL_FILL_16", icons::BELL_FILL_16)?;
     m.add("FILE_ADDED_16", icons::FILE_ADDED_16)?;
@@ -193,27 +215,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ISSUE_CLOSED_16", icons::ISSUE_CLOSED_16)?;
     m.add("ZAP_16", icons::ZAP_16)?;
     m.add("SCREEN_FULL_16", icons::SCREEN_FULL_16)?;
-    m.add("SIGN_OUT_16", icons::SIGN_OUT_16)?;
-    m.add("DIFF_RENAMED_24", icons::DIFF_RENAMED_24)?;
-    m.add("LIST_ORDERED_16", icons::LIST_ORDERED_16)?;
-    m.add("REPORT_16", icons::REPORT_16)?;
-    m.add("TRASH_24", icons::TRASH_24)?;
-    m.add("STRIKETHROUGH_16", icons::STRIKETHROUGH_16)?;
-    m.add("DISCUSSION_DUPLICATE_16", icons::DISCUSSION_DUPLICATE_16)?;
-    m.add("FILE_SYMLINK_FILE_16", icons::FILE_SYMLINK_FILE_16)?;
-    m.add("UNFOLD_24", icons::UNFOLD_24)?;
-    m.add("PACKAGE_DEPENDENTS_24", icons::PACKAGE_DEPENDENTS_24)?;
-    m.add("TRIANGLE_DOWN_24", icons::TRIANGLE_DOWN_24)?;
-    m.add("SHIELD_SLASH_24", icons::SHIELD_SLASH_24)?;
-    m.add("ITERATIONS_16", icons::ITERATIONS_16)?;
-    m.add("DUPLICATE_16", icons::DUPLICATE_16)?;
-    m.add("DEVICE_CAMERA_16", icons::DEVICE_CAMERA_16)?;
-    m.add("CREDIT_CARD_24", icons::CREDIT_CARD_24)?;
-    m.add("PLUS_CIRCLE_24", icons::PLUS_CIRCLE_24)?;
-    m.add("GIT_COMMIT_16", icons::GIT_COMMIT_16)?;
-    m.add("SHIELD_X_24", icons::SHIELD_X_24)?;
-    m.add("SINGLE_SELECT_24", icons::SINGLE_SELECT_24)?;
-    m.add("ZAP_24", icons::ZAP_24)?;
-    m.add("PAUSE_24", icons::PAUSE_24)?;
     Ok(())
 }

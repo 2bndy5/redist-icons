@@ -37,6 +37,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("MILESTONE_24", icons::MILESTONE_24)?;
     m.add("SPARKLE_16", icons::SPARKLE_16)?;
     m.add("X_CIRCLE_24", icons::X_CIRCLE_24)?;
+    m.add("SMILEY_NEUTRAL_16", icons::SMILEY_NEUTRAL_16)?;
     m.add("UNLOCK_24", icons::UNLOCK_24)?;
     m.add("METER_24", icons::METER_24)?;
     m.add("HOME_16", icons::HOME_16)?;
@@ -66,6 +67,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("TROPHY_24", icons::TROPHY_24)?;
     m.add("MILESTONE_16", icons::MILESTONE_16)?;
     m.add("INFO_16", icons::INFO_16)?;
+    m.add("COMPOSE_16", icons::COMPOSE_16)?;
     m.add("SYNC_24", icons::SYNC_24)?;
     m.add("DEVICES_16", icons::DEVICES_16)?;
     m.add("MCP_24", icons::MCP_24)?;
@@ -102,6 +104,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CONTAINER_16", icons::CONTAINER_16)?;
     m.add("LINK_24", icons::LINK_24)?;
     m.add("TERMINAL_24", icons::TERMINAL_24)?;
+    m.add("SPLIT_VIEW_24", icons::SPLIT_VIEW_24)?;
     m.add("BOOKMARK_SLASH_FILL_16", icons::BOOKMARK_SLASH_FILL_16)?;
     m.add("BOOK_16", icons::BOOK_16)?;
     m.add("BELL_FILL_24", icons::BELL_FILL_24)?;
@@ -134,6 +137,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("RUBY_24", icons::RUBY_24)?;
     m.add("PACKAGE_24", icons::PACKAGE_24)?;
     m.add("SKIP_FILL_24", icons::SKIP_FILL_24)?;
+    m.add("GRAPH_BAR_HORIZONTAL_24", icons::GRAPH_BAR_HORIZONTAL_24)?;
     m.add("SKIP_FILL_16", icons::SKIP_FILL_16)?;
     m.add("CROSS_REFERENCE_24", icons::CROSS_REFERENCE_24)?;
     m.add("HEADING_24", icons::HEADING_24)?;
@@ -146,6 +150,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("PROJECT_SYMLINK_16", icons::PROJECT_SYMLINK_16)?;
     m.add("MOVE_TO_BOTTOM_24", icons::MOVE_TO_BOTTOM_24)?;
     m.add("INBOX_16", icons::INBOX_16)?;
+    m.add("SMILEY_FROWN_24", icons::SMILEY_FROWN_24)?;
     m.add("FILE_ZIP_24", icons::FILE_ZIP_24)?;
     m.add("ACCESSIBILITY_INSET_24", icons::ACCESSIBILITY_INSET_24)?;
     m.add("ISSUE_OPENED_24", icons::ISSUE_OPENED_24)?;
@@ -162,6 +167,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHECKLIST_16", icons::CHECKLIST_16)?;
     m.add("REL_FILE_PATH_24", icons::REL_FILE_PATH_24)?;
     m.add("EYE_16", icons::EYE_16)?;
+    m.add("UNWRAP_24", icons::UNWRAP_24)?;
     m.add("TERMINAL_16", icons::TERMINAL_16)?;
     m.add("X_CIRCLE_FILL_24", icons::X_CIRCLE_FILL_24)?;
     m.add("GIT_COMMIT_24", icons::GIT_COMMIT_24)?;
@@ -175,6 +181,8 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LOCATION_24", icons::LOCATION_24)?;
     m.add("INBOX_FILL_24", icons::INBOX_FILL_24)?;
     m.add("PASSKEY_FILL_24", icons::PASSKEY_FILL_24)?;
+    m.add("NODE_16", icons::NODE_16)?;
+    m.add("GIT_BRANCH_CHECK_16", icons::GIT_BRANCH_CHECK_16)?;
     m.add("FISCAL_HOST_16", icons::FISCAL_HOST_16)?;
     m.add("SHIELD_CHECK_16", icons::SHIELD_CHECK_16)?;
     m.add(
@@ -201,13 +209,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("COPY_16", icons::COPY_16)?;
     m.add("PAPER_AIRPLANE_16", icons::PAPER_AIRPLANE_16)?;
     m.add("SHIELD_SLASH_16", icons::SHIELD_SLASH_16)?;
-    m.add("UNVERIFIED_24", icons::UNVERIFIED_24)?;
-    m.add("ID_BADGE_24", icons::ID_BADGE_24)?;
-    m.add("CHECKBOX_FILL_16", icons::CHECKBOX_FILL_16)?;
-    m.add("PROJECT_24", icons::PROJECT_24)?;
-    m.add("FEED_PERSON_16", icons::FEED_PERSON_16)?;
-    m.add("UNMUTE_16", icons::UNMUTE_16)?;
-    m.add("FILE_DIRECTORY_24", icons::FILE_DIRECTORY_24)?;
-    m.add("READ_16", icons::READ_16)?;
     Ok(())
 }
