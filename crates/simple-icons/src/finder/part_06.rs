@@ -109,6 +109,7 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "almalinux" => Some(icons::SI_ALMALINUX),
         "presto" => Some(icons::SI_PRESTO),
         "sololearn" => Some(icons::SI_SOLOLEARN),
+        "minimax" => Some(icons::SI_MINIMAX),
         "gitter" => Some(icons::SI_GITTER),
         "mdnwebdocs" => Some(icons::SI_MDNWEBDOCS),
         "zcool" => Some(icons::SI_ZCOOL),
@@ -202,7 +203,6 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "lightning" => Some(icons::SI_LIGHTNING),
         "dwavesystems" => Some(icons::SI_DWAVESYSTEMS),
         "primeng" => Some(icons::SI_PRIMENG),
-        "maas" => Some(icons::SI_MAAS),
         _ => None,
     }
 }

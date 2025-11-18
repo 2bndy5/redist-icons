@@ -118,6 +118,7 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ALMALINUX", icons::SI_ALMALINUX)?;
     m.add("SI_PRESTO", icons::SI_PRESTO)?;
     m.add("SI_SOLOLEARN", icons::SI_SOLOLEARN)?;
+    m.add("SI_MINIMAX", icons::SI_MINIMAX)?;
     m.add("SI_GITTER", icons::SI_GITTER)?;
     m.add("SI_MDNWEBDOCS", icons::SI_MDNWEBDOCS)?;
     m.add("SI_ZCOOL", icons::SI_ZCOOL)?;
@@ -211,6 +212,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LIGHTNING", icons::SI_LIGHTNING)?;
     m.add("SI_DWAVESYSTEMS", icons::SI_DWAVESYSTEMS)?;
     m.add("SI_PRIMENG", icons::SI_PRIMENG)?;
-    m.add("SI_MAAS", icons::SI_MAAS)?;
     Ok(())
 }

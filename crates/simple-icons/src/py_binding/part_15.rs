@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TRENDMICRO", icons::SI_TRENDMICRO)?;
     m.add("SI_BLENDER", icons::SI_BLENDER)?;
     m.add("SI_PROCESSON", icons::SI_PROCESSON)?;
     m.add("SI_DOCSDOTRS", icons::SI_DOCSDOTRS)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SPRINGBOOT", icons::SI_SPRINGBOOT)?;
     m.add("SI_RICH", icons::SI_RICH)?;
     m.add("SI_STATUSPAL", icons::SI_STATUSPAL)?;
-    m.add("SI_TOGGL", icons::SI_TOGGL)?;
     Ok(())
 }
