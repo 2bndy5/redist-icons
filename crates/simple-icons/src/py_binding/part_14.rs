@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_UNJS", icons::SI_UNJS)?;
     m.add("SI_MATILLION", icons::SI_MATILLION)?;
     m.add("SI_ADVENTOFCODE", icons::SI_ADVENTOFCODE)?;
     m.add("SI_VIRGINMEDIA", icons::SI_VIRGINMEDIA)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_POE", icons::SI_POE)?;
     m.add("SI_GOOGLESHEETS", icons::SI_GOOGLESHEETS)?;
     m.add("SI_NGINXPROXYMANAGER", icons::SI_NGINXPROXYMANAGER)?;
-    m.add("SI_TRENDMICRO", icons::SI_TRENDMICRO)?;
     Ok(())
 }

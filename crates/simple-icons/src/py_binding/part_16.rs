@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TOGGL", icons::SI_TOGGL)?;
     m.add("SI_BLAZEMETER", icons::SI_BLAZEMETER)?;
     m.add("SI_PLAYSTATION2", icons::SI_PLAYSTATION2)?;
     m.add("SI_HOSTINGER", icons::SI_HOSTINGER)?;
