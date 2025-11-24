@@ -38,11 +38,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
-      - uses: astral-sh/setup-uv@85856786d1ce8acfbcc2f13a5f3fbd6b938f9f41 # v7.1.2
+      - uses: astral-sh/setup-uv@1e862dfacbd1d6d858c55d9b792c756523627244 # v7.1.4
         with:
           enable-cache: true # zizmor: ignore[cache-poisoning]
       - name: Cache cargo artifacts
@@ -75,7 +75,7 @@ jobs:
             target: ppc64le
     name: linux ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
@@ -115,7 +115,7 @@ jobs:
             target: armv7
     name: musllinux ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
@@ -151,7 +151,7 @@ jobs:
             target: x86
     name: windows ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
@@ -187,7 +187,7 @@ jobs:
             target: aarch64
     name: macOS ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
@@ -216,7 +216,7 @@ jobs:
       matrix:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
