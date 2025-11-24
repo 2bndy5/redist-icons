@@ -31,7 +31,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - name: Cache cargo artifacts
@@ -45,7 +45,7 @@ jobs:
   doc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
@@ -64,7 +64,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
@@ -86,7 +86,7 @@ jobs:
       matrix:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
@@ -124,7 +124,7 @@ jobs:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
