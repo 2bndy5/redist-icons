@@ -3,6 +3,13 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
     match slug {
+        "webcomponentsdotorg" => Some(icons::SI_WEBCOMPONENTSDOTORG),
+        "nette" => Some(icons::SI_NETTE),
+        "fluentd" => Some(icons::SI_FLUENTD),
+        "metrodeparis" => Some(icons::SI_METRODEPARIS),
+        "namebase" => Some(icons::SI_NAMEBASE),
+        "overcast" => Some(icons::SI_OVERCAST),
+        "turkishairlines" => Some(icons::SI_TURKISHAIRLINES),
         "coursera" => Some(icons::SI_COURSERA),
         "clarifai" => Some(icons::SI_CLARIFAI),
         "g2a" => Some(icons::SI_G2A),
@@ -86,6 +93,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "metrodemadrid" => Some(icons::SI_METRODEMADRID),
         "apachejmeter" => Some(icons::SI_APACHEJMETER),
         "dunked" => Some(icons::SI_DUNKED),
+        "retroachievements" => Some(icons::SI_RETROACHIEVEMENTS),
         "grandfrais" => Some(icons::SI_GRANDFRAIS),
         "bmw" => Some(icons::SI_BMW),
         "digikeyelectronics" => Some(icons::SI_DIGIKEYELECTRONICS),
@@ -102,6 +110,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "betterauth" => Some(icons::SI_BETTERAUTH),
         "wheniwork" => Some(icons::SI_WHENIWORK),
         "wasmer" => Some(icons::SI_WASMER),
+        "acode" => Some(icons::SI_ACODE),
         "githubpages" => Some(icons::SI_GITHUBPAGES),
         "avast" => Some(icons::SI_AVAST),
         "dazhongdianping" => Some(icons::SI_DAZHONGDIANPING),
@@ -194,15 +203,6 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "polymerproject" => Some(icons::SI_POLYMERPROJECT),
         "arstechnica" => Some(icons::SI_ARSTECHNICA),
         "fineco" => Some(icons::SI_FINECO),
-        "akasaair" => Some(icons::SI_AKASAAIR),
-        "armkeil" => Some(icons::SI_ARMKEIL),
-        "ferretdb" => Some(icons::SI_FERRETDB),
-        "stackshare" => Some(icons::SI_STACKSHARE),
-        "firefoxbrowser" => Some(icons::SI_FIREFOXBROWSER),
-        "laravelnova" => Some(icons::SI_LARAVELNOVA),
-        "svgdotjs" => Some(icons::SI_SVGDOTJS),
-        "nzxt" => Some(icons::SI_NZXT),
-        "appstore" => Some(icons::SI_APPSTORE),
         _ => None,
     }
 }

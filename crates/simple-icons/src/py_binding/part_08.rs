@@ -3,6 +3,14 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WASMCLOUD", icons::SI_WASMCLOUD)?;
+    m.add(
+        "SI_INTERACTIONDESIGNFOUNDATION",
+        icons::SI_INTERACTIONDESIGNFOUNDATION,
+    )?;
+    m.add("SI_WIKIDOTGG", icons::SI_WIKIDOTGG)?;
+    m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
+    m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
     m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
     m.add("SI_RENREN", icons::SI_RENREN)?;
     m.add("SI_NEXTRA", icons::SI_NEXTRA)?;
@@ -81,6 +89,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COPAAIRLINES", icons::SI_COPAAIRLINES)?;
     m.add("SI_TAROM", icons::SI_TAROM)?;
     m.add("SI_TOPCODER", icons::SI_TOPCODER)?;
+    m.add("SI_GLANCE", icons::SI_GLANCE)?;
     m.add("SI_STACKBLITZ", icons::SI_STACKBLITZ)?;
     m.add("SI_SEARXNG", icons::SI_SEARXNG)?;
     m.add("SI_ROOTSSAGE", icons::SI_ROOTSSAGE)?;
@@ -197,11 +206,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_AEROMEXICO", icons::SI_AEROMEXICO)?;
     m.add("SI_VESPA", icons::SI_VESPA)?;
     m.add("SI_GARUDALINUX", icons::SI_GARUDALINUX)?;
-    m.add("SI_SLIDESHARE", icons::SI_SLIDESHARE)?;
-    m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
-    m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
-    m.add("SI_NICONICO", icons::SI_NICONICO)?;
-    m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
-    m.add("SI_BSD", icons::SI_BSD)?;
     Ok(())
 }

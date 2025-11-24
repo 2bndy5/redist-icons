@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SLIDESHARE", icons::SI_SLIDESHARE)?;
+    m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
+    m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
+    m.add("SI_NICONICO", icons::SI_NICONICO)?;
+    m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
+    m.add("SI_BSD", icons::SI_BSD)?;
     m.add("SI_CONVENTIONALCOMMITS", icons::SI_CONVENTIONALCOMMITS)?;
     m.add("SI_PIXLR", icons::SI_PIXLR)?;
     m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
@@ -146,6 +152,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_THEALGORITHMS", icons::SI_THEALGORITHMS)?;
     m.add("SI_JOVIAN", icons::SI_JOVIAN)?;
     m.add("SI_FORMSPREE", icons::SI_FORMSPREE)?;
+    m.add("SI_ROOT", icons::SI_ROOT)?;
     m.add("SI_CLOUDFLARE", icons::SI_CLOUDFLARE)?;
     m.add("SI_GOOGLEHOME", icons::SI_GOOGLEHOME)?;
     m.add("SI_WAYLAND", icons::SI_WAYLAND)?;
@@ -199,12 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FRITZ", icons::SI_FRITZ)?;
     m.add("SI_INVOICENINJA", icons::SI_INVOICENINJA)?;
     m.add("SI_METRO", icons::SI_METRO)?;
-    m.add("SI_WEBCOMPONENTSDOTORG", icons::SI_WEBCOMPONENTSDOTORG)?;
-    m.add("SI_NETTE", icons::SI_NETTE)?;
-    m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
-    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
-    m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
-    m.add("SI_OVERCAST", icons::SI_OVERCAST)?;
-    m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
     Ok(())
 }

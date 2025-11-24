@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
     match slug {
+        "nounproject" => Some(icons::SI_NOUNPROJECT),
+        "youtubetv" => Some(icons::SI_YOUTUBETV),
+        "doubanread" => Some(icons::SI_DOUBANREAD),
+        "alibabacloud" => Some(icons::SI_ALIBABACLOUD),
         "near" => Some(icons::SI_NEAR),
         "dataiku" => Some(icons::SI_DATAIKU),
         "analogue" => Some(icons::SI_ANALOGUE),
@@ -90,6 +94,7 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "kenmei" => Some(icons::SI_KENMEI),
         "kodi" => Some(icons::SI_KODI),
         "yamahamotorcorporation" => Some(icons::SI_YAMAHAMOTORCORPORATION),
+        "appmanager" => Some(icons::SI_APPMANAGER),
         "mongoosedotws" => Some(icons::SI_MONGOOSEDOTWS),
         "educative" => Some(icons::SI_EDUCATIVE),
         "avajs" => Some(icons::SI_AVAJS),
@@ -198,11 +203,6 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "percy" => Some(icons::SI_PERCY),
         "hearth" => Some(icons::SI_HEARTH),
         "eac" => Some(icons::SI_EAC),
-        "fmod" => Some(icons::SI_FMOD),
-        "dinersclub" => Some(icons::SI_DINERSCLUB),
-        "lightning" => Some(icons::SI_LIGHTNING),
-        "dwavesystems" => Some(icons::SI_DWAVESYSTEMS),
-        "primeng" => Some(icons::SI_PRIMENG),
         _ => None,
     }
 }

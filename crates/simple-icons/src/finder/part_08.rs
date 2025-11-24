@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
     match slug {
+        "wasmcloud" => Some(icons::SI_WASMCLOUD),
+        "interactiondesignfoundation" => Some(icons::SI_INTERACTIONDESIGNFOUNDATION),
+        "wikidotgg" => Some(icons::SI_WIKIDOTGG),
+        "eventstore" => Some(icons::SI_EVENTSTORE),
+        "singlestore" => Some(icons::SI_SINGLESTORE),
         "buysellads" => Some(icons::SI_BUYSELLADS),
         "renren" => Some(icons::SI_RENREN),
         "nextra" => Some(icons::SI_NEXTRA),
@@ -81,6 +86,7 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "copaairlines" => Some(icons::SI_COPAAIRLINES),
         "tarom" => Some(icons::SI_TAROM),
         "topcoder" => Some(icons::SI_TOPCODER),
+        "glance" => Some(icons::SI_GLANCE),
         "stackblitz" => Some(icons::SI_STACKBLITZ),
         "searxng" => Some(icons::SI_SEARXNG),
         "rootssage" => Some(icons::SI_ROOTSSAGE),
@@ -197,12 +203,6 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "aeromexico" => Some(icons::SI_AEROMEXICO),
         "vespa" => Some(icons::SI_VESPA),
         "garudalinux" => Some(icons::SI_GARUDALINUX),
-        "slideshare" => Some(icons::SI_SLIDESHARE),
-        "magasinsu" => Some(icons::SI_MAGASINSU),
-        "1dot1dot1dot1" => Some(icons::SI_1DOT1DOT1DOT1),
-        "niconico" => Some(icons::SI_NICONICO),
-        "paperswithcode" => Some(icons::SI_PAPERSWITHCODE),
-        "bsd" => Some(icons::SI_BSD),
         _ => None,
     }
 }

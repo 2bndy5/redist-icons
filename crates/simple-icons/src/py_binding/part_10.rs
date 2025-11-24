@@ -3,6 +3,13 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WEBCOMPONENTSDOTORG", icons::SI_WEBCOMPONENTSDOTORG)?;
+    m.add("SI_NETTE", icons::SI_NETTE)?;
+    m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
+    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
+    m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
+    m.add("SI_OVERCAST", icons::SI_OVERCAST)?;
+    m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
     m.add("SI_COURSERA", icons::SI_COURSERA)?;
     m.add("SI_CLARIFAI", icons::SI_CLARIFAI)?;
     m.add("SI_G2A", icons::SI_G2A)?;
@@ -86,6 +93,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_METRODEMADRID", icons::SI_METRODEMADRID)?;
     m.add("SI_APACHEJMETER", icons::SI_APACHEJMETER)?;
     m.add("SI_DUNKED", icons::SI_DUNKED)?;
+    m.add("SI_RETROACHIEVEMENTS", icons::SI_RETROACHIEVEMENTS)?;
     m.add("SI_GRANDFRAIS", icons::SI_GRANDFRAIS)?;
     m.add("SI_BMW", icons::SI_BMW)?;
     m.add("SI_DIGIKEYELECTRONICS", icons::SI_DIGIKEYELECTRONICS)?;
@@ -102,6 +110,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BETTERAUTH", icons::SI_BETTERAUTH)?;
     m.add("SI_WHENIWORK", icons::SI_WHENIWORK)?;
     m.add("SI_WASMER", icons::SI_WASMER)?;
+    m.add("SI_ACODE", icons::SI_ACODE)?;
     m.add("SI_GITHUBPAGES", icons::SI_GITHUBPAGES)?;
     m.add("SI_AVAST", icons::SI_AVAST)?;
     m.add("SI_DAZHONGDIANPING", icons::SI_DAZHONGDIANPING)?;
@@ -200,14 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_POLYMERPROJECT", icons::SI_POLYMERPROJECT)?;
     m.add("SI_ARSTECHNICA", icons::SI_ARSTECHNICA)?;
     m.add("SI_FINECO", icons::SI_FINECO)?;
-    m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
-    m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
-    m.add("SI_FERRETDB", icons::SI_FERRETDB)?;
-    m.add("SI_STACKSHARE", icons::SI_STACKSHARE)?;
-    m.add("SI_FIREFOXBROWSER", icons::SI_FIREFOXBROWSER)?;
-    m.add("SI_LARAVELNOVA", icons::SI_LARAVELNOVA)?;
-    m.add("SI_SVGDOTJS", icons::SI_SVGDOTJS)?;
-    m.add("SI_NZXT", icons::SI_NZXT)?;
-    m.add("SI_APPSTORE", icons::SI_APPSTORE)?;
     Ok(())
 }

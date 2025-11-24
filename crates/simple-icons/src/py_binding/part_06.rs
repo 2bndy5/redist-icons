@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NOUNPROJECT", icons::SI_NOUNPROJECT)?;
+    m.add("SI_YOUTUBETV", icons::SI_YOUTUBETV)?;
+    m.add("SI_DOUBANREAD", icons::SI_DOUBANREAD)?;
+    m.add("SI_ALIBABACLOUD", icons::SI_ALIBABACLOUD)?;
     m.add("SI_NEAR", icons::SI_NEAR)?;
     m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
     m.add("SI_ANALOGUE", icons::SI_ANALOGUE)?;
@@ -99,6 +103,7 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
         "SI_YAMAHAMOTORCORPORATION",
         icons::SI_YAMAHAMOTORCORPORATION,
     )?;
+    m.add("SI_APPMANAGER", icons::SI_APPMANAGER)?;
     m.add("SI_MONGOOSEDOTWS", icons::SI_MONGOOSEDOTWS)?;
     m.add("SI_EDUCATIVE", icons::SI_EDUCATIVE)?;
     m.add("SI_AVAJS", icons::SI_AVAJS)?;
@@ -207,10 +212,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PERCY", icons::SI_PERCY)?;
     m.add("SI_HEARTH", icons::SI_HEARTH)?;
     m.add("SI_EAC", icons::SI_EAC)?;
-    m.add("SI_FMOD", icons::SI_FMOD)?;
-    m.add("SI_DINERSCLUB", icons::SI_DINERSCLUB)?;
-    m.add("SI_LIGHTNING", icons::SI_LIGHTNING)?;
-    m.add("SI_DWAVESYSTEMS", icons::SI_DWAVESYSTEMS)?;
-    m.add("SI_PRIMENG", icons::SI_PRIMENG)?;
     Ok(())
 }

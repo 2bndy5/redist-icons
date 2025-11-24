@@ -3,6 +3,12 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
     match slug {
+        "slideshare" => Some(icons::SI_SLIDESHARE),
+        "magasinsu" => Some(icons::SI_MAGASINSU),
+        "1dot1dot1dot1" => Some(icons::SI_1DOT1DOT1DOT1),
+        "niconico" => Some(icons::SI_NICONICO),
+        "paperswithcode" => Some(icons::SI_PAPERSWITHCODE),
+        "bsd" => Some(icons::SI_BSD),
         "conventionalcommits" => Some(icons::SI_CONVENTIONALCOMMITS),
         "pixlr" => Some(icons::SI_PIXLR),
         "pkgsrc" => Some(icons::SI_PKGSRC),
@@ -143,6 +149,7 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "thealgorithms" => Some(icons::SI_THEALGORITHMS),
         "jovian" => Some(icons::SI_JOVIAN),
         "formspree" => Some(icons::SI_FORMSPREE),
+        "root" => Some(icons::SI_ROOT),
         "cloudflare" => Some(icons::SI_CLOUDFLARE),
         "googlehome" => Some(icons::SI_GOOGLEHOME),
         "wayland" => Some(icons::SI_WAYLAND),
@@ -196,13 +203,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "fritz" => Some(icons::SI_FRITZ),
         "invoiceninja" => Some(icons::SI_INVOICENINJA),
         "metro" => Some(icons::SI_METRO),
-        "webcomponentsdotorg" => Some(icons::SI_WEBCOMPONENTSDOTORG),
-        "nette" => Some(icons::SI_NETTE),
-        "fluentd" => Some(icons::SI_FLUENTD),
-        "metrodeparis" => Some(icons::SI_METRODEPARIS),
-        "namebase" => Some(icons::SI_NAMEBASE),
-        "overcast" => Some(icons::SI_OVERCAST),
-        "turkishairlines" => Some(icons::SI_TURKISHAIRLINES),
         _ => None,
     }
 }
