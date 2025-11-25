@@ -3,6 +3,15 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
     match slug {
+        "jeep" => Some(icons::SI_JEEP),
+        "kirby" => Some(icons::SI_KIRBY),
+        "scrapbox" => Some(icons::SI_SCRAPBOX),
+        "sfml" => Some(icons::SI_SFML),
+        "teamviewer" => Some(icons::SI_TEAMVIEWER),
+        "gojek" => Some(icons::SI_GOJEK),
+        "kashflow" => Some(icons::SI_KASHFLOW),
+        "intercom" => Some(icons::SI_INTERCOM),
+        "porsche" => Some(icons::SI_PORSCHE),
         "redis" => Some(icons::SI_REDIS),
         "obtainium" => Some(icons::SI_OBTAINIUM),
         "opencontainersinitiative" => Some(icons::SI_OPENCONTAINERSINITIATIVE),
@@ -194,15 +203,6 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "firefish" => Some(icons::SI_FIREFISH),
         "unilever" => Some(icons::SI_UNILEVER),
         "comicfury" => Some(icons::SI_COMICFURY),
-        "sqlalchemy" => Some(icons::SI_SQLALCHEMY),
-        "stellar" => Some(icons::SI_STELLAR),
-        "epson" => Some(icons::SI_EPSON),
-        "ilovepdf" => Some(icons::SI_ILOVEPDF),
-        "contao" => Some(icons::SI_CONTAO),
-        "reverbnation" => Some(icons::SI_REVERBNATION),
-        "intermarche" => Some(icons::SI_INTERMARCHE),
-        "delphi" => Some(icons::SI_DELPHI),
-        "tindie" => Some(icons::SI_TINDIE),
         _ => None,
     }
 }

@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_BACKBONEDOTJS", icons::SI_BACKBONEDOTJS)?;
+    m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
+    m.add("SI_INGRESS", icons::SI_INGRESS)?;
     m.add("SI_R3", icons::SI_R3)?;
     m.add("SI_OKCUPID", icons::SI_OKCUPID)?;
     m.add("SI_NVM", icons::SI_NVM)?;
@@ -132,6 +135,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HEXO", icons::SI_HEXO)?;
     m.add("SI_TYPST", icons::SI_TYPST)?;
     m.add("SI_KAMAILIO", icons::SI_KAMAILIO)?;
+    m.add("SI_HASHCAT", icons::SI_HASHCAT)?;
     m.add("SI_GOOGLECLOUD", icons::SI_GOOGLECLOUD)?;
     m.add("SI_PLAUSIBLEANALYTICS", icons::SI_PLAUSIBLEANALYTICS)?;
     m.add("SI_KIT", icons::SI_KIT)?;
@@ -199,9 +203,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COOP", icons::SI_COOP)?;
     m.add("SI_VITEST", icons::SI_VITEST)?;
     m.add("SI_IEEE", icons::SI_IEEE)?;
-    m.add("SI_NOUNPROJECT", icons::SI_NOUNPROJECT)?;
-    m.add("SI_YOUTUBETV", icons::SI_YOUTUBETV)?;
-    m.add("SI_DOUBANREAD", icons::SI_DOUBANREAD)?;
-    m.add("SI_ALIBABACLOUD", icons::SI_ALIBABACLOUD)?;
     Ok(())
 }

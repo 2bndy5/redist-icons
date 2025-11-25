@@ -3,6 +3,15 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
+    m.add("SI_STELLAR", icons::SI_STELLAR)?;
+    m.add("SI_EPSON", icons::SI_EPSON)?;
+    m.add("SI_ILOVEPDF", icons::SI_ILOVEPDF)?;
+    m.add("SI_CONTAO", icons::SI_CONTAO)?;
+    m.add("SI_REVERBNATION", icons::SI_REVERBNATION)?;
+    m.add("SI_INTERMARCHE", icons::SI_INTERMARCHE)?;
+    m.add("SI_DELPHI", icons::SI_DELPHI)?;
+    m.add("SI_TINDIE", icons::SI_TINDIE)?;
     m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
     m.add("SI_ABB", icons::SI_ABB)?;
     m.add("SI_ZOIPER", icons::SI_ZOIPER)?;
@@ -200,14 +209,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOOGLEMESSAGES", icons::SI_GOOGLEMESSAGES)?;
     m.add("SI_SORIANA", icons::SI_SORIANA)?;
     m.add("SI_AIRBNB", icons::SI_AIRBNB)?;
-    m.add("SI_TACOBELL", icons::SI_TACOBELL)?;
-    m.add("SI_GITFORWINDOWS", icons::SI_GITFORWINDOWS)?;
-    m.add("SI_TRINO", icons::SI_TRINO)?;
-    m.add("SI_COMPILEREXPLORER", icons::SI_COMPILEREXPLORER)?;
-    m.add("SI_OPENVERSE", icons::SI_OPENVERSE)?;
-    m.add("SI_OPENSTACK", icons::SI_OPENSTACK)?;
-    m.add("SI_AMERICANAIRLINES", icons::SI_AMERICANAIRLINES)?;
-    m.add("SI_ENVOYPROXY", icons::SI_ENVOYPROXY)?;
-    m.add("SI_LMMS", icons::SI_LMMS)?;
     Ok(())
 }

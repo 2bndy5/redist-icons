@@ -3,6 +3,15 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
     match slug {
+        "sqlalchemy" => Some(icons::SI_SQLALCHEMY),
+        "stellar" => Some(icons::SI_STELLAR),
+        "epson" => Some(icons::SI_EPSON),
+        "ilovepdf" => Some(icons::SI_ILOVEPDF),
+        "contao" => Some(icons::SI_CONTAO),
+        "reverbnation" => Some(icons::SI_REVERBNATION),
+        "intermarche" => Some(icons::SI_INTERMARCHE),
+        "delphi" => Some(icons::SI_DELPHI),
+        "tindie" => Some(icons::SI_TINDIE),
         "deutschewelle" => Some(icons::SI_DEUTSCHEWELLE),
         "abb" => Some(icons::SI_ABB),
         "zoiper" => Some(icons::SI_ZOIPER),
@@ -194,15 +203,6 @@ pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
         "googlemessages" => Some(icons::SI_GOOGLEMESSAGES),
         "soriana" => Some(icons::SI_SORIANA),
         "airbnb" => Some(icons::SI_AIRBNB),
-        "tacobell" => Some(icons::SI_TACOBELL),
-        "gitforwindows" => Some(icons::SI_GITFORWINDOWS),
-        "trino" => Some(icons::SI_TRINO),
-        "compilerexplorer" => Some(icons::SI_COMPILEREXPLORER),
-        "openverse" => Some(icons::SI_OPENVERSE),
-        "openstack" => Some(icons::SI_OPENSTACK),
-        "americanairlines" => Some(icons::SI_AMERICANAIRLINES),
-        "envoyproxy" => Some(icons::SI_ENVOYPROXY),
-        "lmms" => Some(icons::SI_LMMS),
         _ => None,
     }
 }

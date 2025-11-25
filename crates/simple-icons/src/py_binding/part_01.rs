@@ -70,6 +70,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FAMPAY", icons::SI_FAMPAY)?;
     m.add("SI_MAXPLANCKGESELLSCHAFT", icons::SI_MAXPLANCKGESELLSCHAFT)?;
     m.add("SI_XMPP", icons::SI_XMPP)?;
+    m.add("SI_OPENROUTER", icons::SI_OPENROUTER)?;
     m.add("SI_CIRCLE", icons::SI_CIRCLE)?;
     m.add("SI_OPENJSFOUNDATION", icons::SI_OPENJSFOUNDATION)?;
     m.add("SI_ANDROIDSTUDIO", icons::SI_ANDROIDSTUDIO)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BRAINTRUST", icons::SI_BRAINTRUST)?;
     m.add("SI_NRWL", icons::SI_NRWL)?;
     m.add("SI_TINKERCAD", icons::SI_TINKERCAD)?;
-    m.add("SI_SHOWPAD", icons::SI_SHOWPAD)?;
     Ok(())
 }

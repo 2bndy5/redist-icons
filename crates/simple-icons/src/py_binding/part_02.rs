@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SHOWPAD", icons::SI_SHOWPAD)?;
     m.add("SI_PIX", icons::SI_PIX)?;
     m.add("SI_LIBERAPAY", icons::SI_LIBERAPAY)?;
     m.add("SI_SPOTIFY", icons::SI_SPOTIFY)?;
@@ -109,6 +110,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JUNIPERNETWORKS", icons::SI_JUNIPERNETWORKS)?;
     m.add("SI_SIDEKIQ", icons::SI_SIDEKIQ)?;
     m.add("SI_HBO", icons::SI_HBO)?;
+    m.add("SI_DASH0", icons::SI_DASH0)?;
     m.add("SI_YCOMBINATOR", icons::SI_YCOMBINATOR)?;
     m.add("SI_TOLL", icons::SI_TOLL)?;
     m.add(
@@ -204,7 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PIPX", icons::SI_PIPX)?;
     m.add("SI_TAMIYA", icons::SI_TAMIYA)?;
     m.add("SI_GITKRAKEN", icons::SI_GITKRAKEN)?;
-    m.add("SI_KICAD", icons::SI_KICAD)?;
-    m.add("SI_PANDAS", icons::SI_PANDAS)?;
     Ok(())
 }

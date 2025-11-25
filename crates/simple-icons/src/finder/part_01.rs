@@ -70,6 +70,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "fampay" => Some(icons::SI_FAMPAY),
         "maxplanckgesellschaft" => Some(icons::SI_MAXPLANCKGESELLSCHAFT),
         "xmpp" => Some(icons::SI_XMPP),
+        "openrouter" => Some(icons::SI_OPENROUTER),
         "circle" => Some(icons::SI_CIRCLE),
         "openjsfoundation" => Some(icons::SI_OPENJSFOUNDATION),
         "androidstudio" => Some(icons::SI_ANDROIDSTUDIO),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "braintrust" => Some(icons::SI_BRAINTRUST),
         "nrwl" => Some(icons::SI_NRWL),
         "tinkercad" => Some(icons::SI_TINKERCAD),
-        "showpad" => Some(icons::SI_SHOWPAD),
         _ => None,
     }
 }

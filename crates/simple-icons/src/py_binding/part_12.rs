@@ -3,6 +3,15 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_JEEP", icons::SI_JEEP)?;
+    m.add("SI_KIRBY", icons::SI_KIRBY)?;
+    m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
+    m.add("SI_SFML", icons::SI_SFML)?;
+    m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
+    m.add("SI_GOJEK", icons::SI_GOJEK)?;
+    m.add("SI_KASHFLOW", icons::SI_KASHFLOW)?;
+    m.add("SI_INTERCOM", icons::SI_INTERCOM)?;
+    m.add("SI_PORSCHE", icons::SI_PORSCHE)?;
     m.add("SI_REDIS", icons::SI_REDIS)?;
     m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
     m.add(
@@ -197,14 +206,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FIREFISH", icons::SI_FIREFISH)?;
     m.add("SI_UNILEVER", icons::SI_UNILEVER)?;
     m.add("SI_COMICFURY", icons::SI_COMICFURY)?;
-    m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
-    m.add("SI_STELLAR", icons::SI_STELLAR)?;
-    m.add("SI_EPSON", icons::SI_EPSON)?;
-    m.add("SI_ILOVEPDF", icons::SI_ILOVEPDF)?;
-    m.add("SI_CONTAO", icons::SI_CONTAO)?;
-    m.add("SI_REVERBNATION", icons::SI_REVERBNATION)?;
-    m.add("SI_INTERMARCHE", icons::SI_INTERMARCHE)?;
-    m.add("SI_DELPHI", icons::SI_DELPHI)?;
-    m.add("SI_TINDIE", icons::SI_TINDIE)?;
     Ok(())
 }

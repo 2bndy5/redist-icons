@@ -3,6 +3,15 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
     match slug {
+        "akasaair" => Some(icons::SI_AKASAAIR),
+        "armkeil" => Some(icons::SI_ARMKEIL),
+        "ferretdb" => Some(icons::SI_FERRETDB),
+        "stackshare" => Some(icons::SI_STACKSHARE),
+        "firefoxbrowser" => Some(icons::SI_FIREFOXBROWSER),
+        "laravelnova" => Some(icons::SI_LARAVELNOVA),
+        "svgdotjs" => Some(icons::SI_SVGDOTJS),
+        "nzxt" => Some(icons::SI_NZXT),
+        "appstore" => Some(icons::SI_APPSTORE),
         "theregister" => Some(icons::SI_THEREGISTER),
         "apostrophe" => Some(icons::SI_APOSTROPHE),
         "mix" => Some(icons::SI_MIX),
@@ -194,15 +203,6 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "conekta" => Some(icons::SI_CONEKTA),
         "pegasusairlines" => Some(icons::SI_PEGASUSAIRLINES),
         "infiniti" => Some(icons::SI_INFINITI),
-        "jeep" => Some(icons::SI_JEEP),
-        "kirby" => Some(icons::SI_KIRBY),
-        "scrapbox" => Some(icons::SI_SCRAPBOX),
-        "sfml" => Some(icons::SI_SFML),
-        "teamviewer" => Some(icons::SI_TEAMVIEWER),
-        "gojek" => Some(icons::SI_GOJEK),
-        "kashflow" => Some(icons::SI_KASHFLOW),
-        "intercom" => Some(icons::SI_INTERCOM),
-        "porsche" => Some(icons::SI_PORSCHE),
         _ => None,
     }
 }

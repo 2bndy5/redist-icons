@@ -3,6 +3,15 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MPV", icons::SI_MPV)?;
+    m.add("SI_DISCORD", icons::SI_DISCORD)?;
+    m.add("SI_PASSPORT", icons::SI_PASSPORT)?;
+    m.add("SI_LYDIA", icons::SI_LYDIA)?;
+    m.add("SI_AMD", icons::SI_AMD)?;
+    m.add("SI_FERRARI", icons::SI_FERRARI)?;
+    m.add("SI_POE", icons::SI_POE)?;
+    m.add("SI_GOOGLESHEETS", icons::SI_GOOGLESHEETS)?;
+    m.add("SI_NGINXPROXYMANAGER", icons::SI_NGINXPROXYMANAGER)?;
     m.add("SI_TRENDMICRO", icons::SI_TRENDMICRO)?;
     m.add("SI_BLENDER", icons::SI_BLENDER)?;
     m.add("SI_PROCESSON", icons::SI_PROCESSON)?;
@@ -121,6 +130,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ANA", icons::SI_ANA)?;
     m.add("SI_RETOOL", icons::SI_RETOOL)?;
     m.add("SI_BEM", icons::SI_BEM)?;
+    m.add("SI_KANDO", icons::SI_KANDO)?;
     m.add("SI_BABELIO", icons::SI_BABELIO)?;
     m.add("SI_MYOB", icons::SI_MYOB)?;
     m.add("SI_TURBOSQUID", icons::SI_TURBOSQUID)?;
@@ -140,6 +150,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HOUDINI", icons::SI_HOUDINI)?;
     m.add("SI_K6", icons::SI_K6)?;
     m.add("SI_SWR", icons::SI_SWR)?;
+    m.add("SI_DODOPAYMENTS", icons::SI_DODOPAYMENTS)?;
     m.add("SI_KONGREGATE", icons::SI_KONGREGATE)?;
     m.add("SI_AKIFLOW", icons::SI_AKIFLOW)?;
     m.add("SI_ENDEAVOUROS", icons::SI_ENDEAVOUROS)?;
@@ -195,16 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VITE", icons::SI_VITE)?;
     m.add("SI_PODCASTADDICT", icons::SI_PODCASTADDICT)?;
     m.add("SI_BASICATTENTIONTOKEN", icons::SI_BASICATTENTIONTOKEN)?;
-    m.add("SI_PAGSEGURO", icons::SI_PAGSEGURO)?;
-    m.add("SI_MEDIAMARKT", icons::SI_MEDIAMARKT)?;
-    m.add("SI_WALLABAG", icons::SI_WALLABAG)?;
-    m.add("SI_GENTOO", icons::SI_GENTOO)?;
-    m.add("SI_WORDPRESS", icons::SI_WORDPRESS)?;
-    m.add("SI_DAILYDOTDEV", icons::SI_DAILYDOTDEV)?;
-    m.add("SI_QUICKBOOKS", icons::SI_QUICKBOOKS)?;
-    m.add("SI_CONSTRUCT3", icons::SI_CONSTRUCT3)?;
-    m.add("SI_SPRINGBOOT", icons::SI_SPRINGBOOT)?;
-    m.add("SI_RICH", icons::SI_RICH)?;
-    m.add("SI_STATUSPAL", icons::SI_STATUSPAL)?;
     Ok(())
 }
