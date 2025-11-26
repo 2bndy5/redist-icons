@@ -181,9 +181,9 @@ jobs:
       matrix:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
         platform:
-          - runner: macos-13
+          - runner: macos-15-intel
             target: x86_64
-          - runner: macos-14
+          - runner: macos-15
             target: aarch64
     name: macOS ${{ matrix.pkg }} ${{ matrix.platform.target }}
     steps:
