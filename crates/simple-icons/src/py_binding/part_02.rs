@@ -3,9 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_SHOWPAD", icons::SI_SHOWPAD)?;
-    m.add("SI_PIX", icons::SI_PIX)?;
-    m.add("SI_LIBERAPAY", icons::SI_LIBERAPAY)?;
     m.add("SI_SPOTIFY", icons::SI_SPOTIFY)?;
     m.add("SI_CODEPROJECT", icons::SI_CODEPROJECT)?;
     m.add("SI_THEWEATHERCHANNEL", icons::SI_THEWEATHERCHANNEL)?;
@@ -74,7 +71,6 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_K3S", icons::SI_K3S)?;
     m.add("SI_IMOU", icons::SI_IMOU)?;
     m.add("SI_MARVELAPP", icons::SI_MARVELAPP)?;
-    m.add("SI_AFFINITYPUBLISHER", icons::SI_AFFINITYPUBLISHER)?;
     m.add("SI_MEDIBANGPAINT", icons::SI_MEDIBANGPAINT)?;
     m.add("SI_SAT1", icons::SI_SAT1)?;
     m.add("SI_PLAYSTATIONPORTABLE", icons::SI_PLAYSTATIONPORTABLE)?;
@@ -92,7 +88,6 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BURPSUITE", icons::SI_BURPSUITE)?;
     m.add("SI_MCAFEE", icons::SI_MCAFEE)?;
     m.add("SI_CODECRAFTERS", icons::SI_CODECRAFTERS)?;
-    m.add("SI_AFFINITYDESIGNER", icons::SI_AFFINITYDESIGNER)?;
     m.add("SI_VK", icons::SI_VK)?;
     m.add("SI_SKYPACK", icons::SI_SKYPACK)?;
     m.add("SI_KICKSTARTER", icons::SI_KICKSTARTER)?;
@@ -206,5 +201,10 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PIPX", icons::SI_PIPX)?;
     m.add("SI_TAMIYA", icons::SI_TAMIYA)?;
     m.add("SI_GITKRAKEN", icons::SI_GITKRAKEN)?;
+    m.add("SI_KICAD", icons::SI_KICAD)?;
+    m.add("SI_PANDAS", icons::SI_PANDAS)?;
+    m.add("SI_YOUTUBE", icons::SI_YOUTUBE)?;
+    m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
+    m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     Ok(())
 }

@@ -3,34 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_JEEP", icons::SI_JEEP)?;
-    m.add("SI_KIRBY", icons::SI_KIRBY)?;
-    m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
-    m.add("SI_SFML", icons::SI_SFML)?;
-    m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
-    m.add("SI_GOJEK", icons::SI_GOJEK)?;
-    m.add("SI_KASHFLOW", icons::SI_KASHFLOW)?;
-    m.add("SI_INTERCOM", icons::SI_INTERCOM)?;
-    m.add("SI_PORSCHE", icons::SI_PORSCHE)?;
-    m.add("SI_REDIS", icons::SI_REDIS)?;
-    m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
-    m.add(
-        "SI_OPENCONTAINERSINITIATIVE",
-        icons::SI_OPENCONTAINERSINITIATIVE,
-    )?;
-    m.add("SI_SINAWEIBO", icons::SI_SINAWEIBO)?;
-    m.add("SI_DASSAULTSYSTEMES", icons::SI_DASSAULTSYSTEMES)?;
-    m.add("SI_MERCURIAL", icons::SI_MERCURIAL)?;
-    m.add("SI_QWIKLABS", icons::SI_QWIKLABS)?;
-    m.add("SI_FIDOALLIANCE", icons::SI_FIDOALLIANCE)?;
-    m.add("SI_FLUENTBIT", icons::SI_FLUENTBIT)?;
-    m.add("SI_LEMMY", icons::SI_LEMMY)?;
-    m.add("SI_SEMANTICUI", icons::SI_SEMANTICUI)?;
-    m.add("SI_BAT", icons::SI_BAT)?;
-    m.add("SI_LUCIA", icons::SI_LUCIA)?;
-    m.add("SI_AVM", icons::SI_AVM)?;
-    m.add("SI_TESTCAFE", icons::SI_TESTCAFE)?;
-    m.add("SI_HUBSPOT", icons::SI_HUBSPOT)?;
     m.add("SI_REVOLUT", icons::SI_REVOLUT)?;
     m.add("SI_TOSHIBA", icons::SI_TOSHIBA)?;
     m.add("SI_VODAFONE", icons::SI_VODAFONE)?;
@@ -146,6 +118,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_EXPRESSDOTCOM", icons::SI_EXPRESSDOTCOM)?;
     m.add("SI_MALWAREBYTES", icons::SI_MALWAREBYTES)?;
     m.add("SI_APACHEAVRO", icons::SI_APACHEAVRO)?;
+    m.add("SI_NEWGROUNDS", icons::SI_NEWGROUNDS)?;
     m.add("SI_STRAPI", icons::SI_STRAPI)?;
     m.add("SI_PHABRICATOR", icons::SI_PHABRICATOR)?;
     m.add("SI_RUMBLE", icons::SI_RUMBLE)?;
@@ -206,5 +179,29 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FIREFISH", icons::SI_FIREFISH)?;
     m.add("SI_UNILEVER", icons::SI_UNILEVER)?;
     m.add("SI_COMICFURY", icons::SI_COMICFURY)?;
+    m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
+    m.add("SI_STELLAR", icons::SI_STELLAR)?;
+    m.add("SI_EPSON", icons::SI_EPSON)?;
+    m.add("SI_ILOVEPDF", icons::SI_ILOVEPDF)?;
+    m.add("SI_CONTAO", icons::SI_CONTAO)?;
+    m.add("SI_REVERBNATION", icons::SI_REVERBNATION)?;
+    m.add("SI_INTERMARCHE", icons::SI_INTERMARCHE)?;
+    m.add("SI_DELPHI", icons::SI_DELPHI)?;
+    m.add("SI_TINDIE", icons::SI_TINDIE)?;
+    m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
+    m.add("SI_ABB", icons::SI_ABB)?;
+    m.add("SI_ZOIPER", icons::SI_ZOIPER)?;
+    m.add("SI_PRIVATEDIVISION", icons::SI_PRIVATEDIVISION)?;
+    m.add("SI_ACADEMIA", icons::SI_ACADEMIA)?;
+    m.add("SI_SANITY", icons::SI_SANITY)?;
+    m.add("SI_THUNDERSTORE", icons::SI_THUNDERSTORE)?;
+    m.add("SI_FUTURELEARN", icons::SI_FUTURELEARN)?;
+    m.add("SI_KIA", icons::SI_KIA)?;
+    m.add("SI_VISUALPARADIGM", icons::SI_VISUALPARADIGM)?;
+    m.add("SI_KIBANA", icons::SI_KIBANA)?;
+    m.add("SI_AMUL", icons::SI_AMUL)?;
+    m.add("SI_STEAMDECK", icons::SI_STEAMDECK)?;
+    m.add("SI_DPD", icons::SI_DPD)?;
+    m.add("SI_TABELOG", icons::SI_TABELOG)?;
     Ok(())
 }

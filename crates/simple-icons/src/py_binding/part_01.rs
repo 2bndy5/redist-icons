@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CODEBERG", icons::SI_CODEBERG)?;
     m.add("SI_RATATUI", icons::SI_RATATUI)?;
     m.add("SI_SCHNEIDERELECTRIC", icons::SI_SCHNEIDERELECTRIC)?;
     m.add("SI_BORGBACKUP", icons::SI_BORGBACKUP)?;
@@ -63,7 +64,6 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GITLAB", icons::SI_GITLAB)?;
     m.add("SI_DATEFNS", icons::SI_DATEFNS)?;
     m.add("SI_PANDORA", icons::SI_PANDORA)?;
-    m.add("SI_ALTERYX", icons::SI_ALTERYX)?;
     m.add("SI_PREFECT", icons::SI_PREFECT)?;
     m.add("SI_DAISYUI", icons::SI_DAISYUI)?;
     m.add("SI_MYSHOWS", icons::SI_MYSHOWS)?;
@@ -80,7 +80,6 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ECOVACS", icons::SI_ECOVACS)?;
     m.add("SI_LISTMONK", icons::SI_LISTMONK)?;
     m.add("SI_HANDM", icons::SI_HANDM)?;
-    m.add("SI_SCRIBD", icons::SI_SCRIBD)?;
     m.add("SI_STREAMLIT", icons::SI_STREAMLIT)?;
     m.add("SI_UIPATH", icons::SI_UIPATH)?;
     m.add("SI_WINAMP", icons::SI_WINAMP)?;
@@ -123,7 +122,6 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_IOBROKER", icons::SI_IOBROKER)?;
     m.add("SI_ADMINER", icons::SI_ADMINER)?;
     m.add("SI_SPEAKERDECK", icons::SI_SPEAKERDECK)?;
-    m.add("SI_NEXUSMODS", icons::SI_NEXUSMODS)?;
     m.add("SI_POSTHOG", icons::SI_POSTHOG)?;
     m.add("SI_KASASMART", icons::SI_KASASMART)?;
     m.add("SI_NAMESILO", icons::SI_NAMESILO)?;
@@ -134,7 +132,6 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HOTWIRE", icons::SI_HOTWIRE)?;
     m.add("SI_PAYBACK", icons::SI_PAYBACK)?;
     m.add("SI_FRIGATE", icons::SI_FRIGATE)?;
-    m.add("SI_HEROKU", icons::SI_HEROKU)?;
     m.add("SI_BASEROW", icons::SI_BASEROW)?;
     m.add("SI_SNAPDRAGON", icons::SI_SNAPDRAGON)?;
     m.add("SI_INDEED", icons::SI_INDEED)?;
@@ -203,5 +200,8 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BRAINTRUST", icons::SI_BRAINTRUST)?;
     m.add("SI_NRWL", icons::SI_NRWL)?;
     m.add("SI_TINKERCAD", icons::SI_TINKERCAD)?;
+    m.add("SI_SHOWPAD", icons::SI_SHOWPAD)?;
+    m.add("SI_PIX", icons::SI_PIX)?;
+    m.add("SI_LIBERAPAY", icons::SI_LIBERAPAY)?;
     Ok(())
 }

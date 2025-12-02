@@ -3,11 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_KICAD", icons::SI_KICAD)?;
-    m.add("SI_PANDAS", icons::SI_PANDAS)?;
-    m.add("SI_YOUTUBE", icons::SI_YOUTUBE)?;
-    m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
-    m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     m.add("SI_ROLLBAR", icons::SI_ROLLBAR)?;
     m.add("SI_RARIBLE", icons::SI_RARIBLE)?;
     m.add("SI_OPENAPIINITIATIVE", icons::SI_OPENAPIINITIATIVE)?;
@@ -51,7 +46,6 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DECAPCMS", icons::SI_DECAPCMS)?;
     m.add("SI_ERLANG", icons::SI_ERLANG)?;
     m.add("SI_FONTBASE", icons::SI_FONTBASE)?;
-    m.add("SI_SENDGRID", icons::SI_SENDGRID)?;
     m.add("SI_OPENACCESS", icons::SI_OPENACCESS)?;
     m.add("SI_DICTIONARYDOTCOM", icons::SI_DICTIONARYDOTCOM)?;
     m.add("SI_MIGADU", icons::SI_MIGADU)?;
@@ -66,7 +60,6 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PANTHEON", icons::SI_PANTHEON)?;
     m.add("SI_RAY", icons::SI_RAY)?;
     m.add("SI_THEMODELSRESOURCE", icons::SI_THEMODELSRESOURCE)?;
-    m.add("SI_AEROSPIKE", icons::SI_AEROSPIKE)?;
     m.add("SI_COMMERZBANK", icons::SI_COMMERZBANK)?;
     m.add("SI_APACHELUCENE", icons::SI_APACHELUCENE)?;
     m.add("SI_ARCHIVEOFOUROWN", icons::SI_ARCHIVEOFOUROWN)?;
@@ -203,5 +196,12 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JSS", icons::SI_JSS)?;
     m.add("SI_NIKON", icons::SI_NIKON)?;
     m.add("SI_LABVIEW", icons::SI_LABVIEW)?;
+    m.add("SI_SENTRY", icons::SI_SENTRY)?;
+    m.add("SI_METAGER", icons::SI_METAGER)?;
+    m.add("SI_VAPOR", icons::SI_VAPOR)?;
+    m.add("SI_SMARTTHINGS", icons::SI_SMARTTHINGS)?;
+    m.add("SI_TWENTY", icons::SI_TWENTY)?;
+    m.add("SI_DOVECOT", icons::SI_DOVECOT)?;
+    m.add("SI_TYPESCRIPT", icons::SI_TYPESCRIPT)?;
     Ok(())
 }

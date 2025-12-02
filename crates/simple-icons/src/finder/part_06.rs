@@ -3,17 +3,6 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
     match slug {
-        "nounproject" => Some(icons::SI_NOUNPROJECT),
-        "youtubetv" => Some(icons::SI_YOUTUBETV),
-        "doubanread" => Some(icons::SI_DOUBANREAD),
-        "alibabacloud" => Some(icons::SI_ALIBABACLOUD),
-        "near" => Some(icons::SI_NEAR),
-        "dataiku" => Some(icons::SI_DATAIKU),
-        "analogue" => Some(icons::SI_ANALOGUE),
-        "getx" => Some(icons::SI_GETX),
-        "buddy" => Some(icons::SI_BUDDY),
-        "okta" => Some(icons::SI_OKTA),
-        "instapaper" => Some(icons::SI_INSTAPAPER),
         "xero" => Some(icons::SI_XERO),
         "skaffold" => Some(icons::SI_SKAFFOLD),
         "crayon" => Some(icons::SI_CRAYON),
@@ -175,6 +164,7 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "channel4" => Some(icons::SI_CHANNEL4),
         "sonarqubeforide" => Some(icons::SI_SONARQUBEFORIDE),
         "vox" => Some(icons::SI_VOX),
+        "luanti" => Some(icons::SI_LUANTI),
         "directus" => Some(icons::SI_DIRECTUS),
         "daf" => Some(icons::SI_DAF),
         "semanticuireact" => Some(icons::SI_SEMANTICUIREACT),
@@ -203,6 +193,16 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "percy" => Some(icons::SI_PERCY),
         "hearth" => Some(icons::SI_HEARTH),
         "eac" => Some(icons::SI_EAC),
+        "fmod" => Some(icons::SI_FMOD),
+        "dinersclub" => Some(icons::SI_DINERSCLUB),
+        "lightning" => Some(icons::SI_LIGHTNING),
+        "dwavesystems" => Some(icons::SI_DWAVESYSTEMS),
+        "primeng" => Some(icons::SI_PRIMENG),
+        "maas" => Some(icons::SI_MAAS),
+        "octanerender" => Some(icons::SI_OCTANERENDER),
+        "processwire" => Some(icons::SI_PROCESSWIRE),
+        "anydesk" => Some(icons::SI_ANYDESK),
+        "guitarpro" => Some(icons::SI_GUITARPRO),
         _ => None,
     }
 }

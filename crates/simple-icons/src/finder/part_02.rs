@@ -3,9 +3,6 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
-        "showpad" => Some(icons::SI_SHOWPAD),
-        "pix" => Some(icons::SI_PIX),
-        "liberapay" => Some(icons::SI_LIBERAPAY),
         "spotify" => Some(icons::SI_SPOTIFY),
         "codeproject" => Some(icons::SI_CODEPROJECT),
         "theweatherchannel" => Some(icons::SI_THEWEATHERCHANNEL),
@@ -74,7 +71,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "k3s" => Some(icons::SI_K3S),
         "imou" => Some(icons::SI_IMOU),
         "marvelapp" => Some(icons::SI_MARVELAPP),
-        "affinitypublisher" => Some(icons::SI_AFFINITYPUBLISHER),
         "medibangpaint" => Some(icons::SI_MEDIBANGPAINT),
         "sat1" => Some(icons::SI_SAT1),
         "playstationportable" => Some(icons::SI_PLAYSTATIONPORTABLE),
@@ -92,7 +88,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "burpsuite" => Some(icons::SI_BURPSUITE),
         "mcafee" => Some(icons::SI_MCAFEE),
         "codecrafters" => Some(icons::SI_CODECRAFTERS),
-        "affinitydesigner" => Some(icons::SI_AFFINITYDESIGNER),
         "vk" => Some(icons::SI_VK),
         "skypack" => Some(icons::SI_SKYPACK),
         "kickstarter" => Some(icons::SI_KICKSTARTER),
@@ -203,6 +198,11 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "pipx" => Some(icons::SI_PIPX),
         "tamiya" => Some(icons::SI_TAMIYA),
         "gitkraken" => Some(icons::SI_GITKRAKEN),
+        "kicad" => Some(icons::SI_KICAD),
+        "pandas" => Some(icons::SI_PANDAS),
+        "youtube" => Some(icons::SI_YOUTUBE),
+        "creativecommons" => Some(icons::SI_CREATIVECOMMONS),
+        "sailsdotjs" => Some(icons::SI_SAILSDOTJS),
         _ => None,
     }
 }

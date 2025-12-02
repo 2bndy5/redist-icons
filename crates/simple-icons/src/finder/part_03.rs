@@ -3,11 +3,6 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
-        "kicad" => Some(icons::SI_KICAD),
-        "pandas" => Some(icons::SI_PANDAS),
-        "youtube" => Some(icons::SI_YOUTUBE),
-        "creativecommons" => Some(icons::SI_CREATIVECOMMONS),
-        "sailsdotjs" => Some(icons::SI_SAILSDOTJS),
         "rollbar" => Some(icons::SI_ROLLBAR),
         "rarible" => Some(icons::SI_RARIBLE),
         "openapiinitiative" => Some(icons::SI_OPENAPIINITIATIVE),
@@ -51,7 +46,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "decapcms" => Some(icons::SI_DECAPCMS),
         "erlang" => Some(icons::SI_ERLANG),
         "fontbase" => Some(icons::SI_FONTBASE),
-        "sendgrid" => Some(icons::SI_SENDGRID),
         "openaccess" => Some(icons::SI_OPENACCESS),
         "dictionarydotcom" => Some(icons::SI_DICTIONARYDOTCOM),
         "migadu" => Some(icons::SI_MIGADU),
@@ -66,7 +60,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "pantheon" => Some(icons::SI_PANTHEON),
         "ray" => Some(icons::SI_RAY),
         "themodelsresource" => Some(icons::SI_THEMODELSRESOURCE),
-        "aerospike" => Some(icons::SI_AEROSPIKE),
         "commerzbank" => Some(icons::SI_COMMERZBANK),
         "apachelucene" => Some(icons::SI_APACHELUCENE),
         "archiveofourown" => Some(icons::SI_ARCHIVEOFOUROWN),
@@ -203,6 +196,13 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "jss" => Some(icons::SI_JSS),
         "nikon" => Some(icons::SI_NIKON),
         "labview" => Some(icons::SI_LABVIEW),
+        "sentry" => Some(icons::SI_SENTRY),
+        "metager" => Some(icons::SI_METAGER),
+        "vapor" => Some(icons::SI_VAPOR),
+        "smartthings" => Some(icons::SI_SMARTTHINGS),
+        "twenty" => Some(icons::SI_TWENTY),
+        "dovecot" => Some(icons::SI_DOVECOT),
+        "typescript" => Some(icons::SI_TYPESCRIPT),
         _ => None,
     }
 }

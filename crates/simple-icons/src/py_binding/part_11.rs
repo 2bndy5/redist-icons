@@ -3,34 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
-    m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
-    m.add("SI_FERRETDB", icons::SI_FERRETDB)?;
-    m.add("SI_STACKSHARE", icons::SI_STACKSHARE)?;
-    m.add("SI_FIREFOXBROWSER", icons::SI_FIREFOXBROWSER)?;
-    m.add("SI_LARAVELNOVA", icons::SI_LARAVELNOVA)?;
-    m.add("SI_SVGDOTJS", icons::SI_SVGDOTJS)?;
-    m.add("SI_NZXT", icons::SI_NZXT)?;
-    m.add("SI_APPSTORE", icons::SI_APPSTORE)?;
-    m.add("SI_THEREGISTER", icons::SI_THEREGISTER)?;
-    m.add("SI_APOSTROPHE", icons::SI_APOSTROPHE)?;
-    m.add("SI_MIX", icons::SI_MIX)?;
-    m.add("SI_TERATAIL", icons::SI_TERATAIL)?;
-    m.add("SI_NETIM", icons::SI_NETIM)?;
-    m.add("SI_LAZARUS", icons::SI_LAZARUS)?;
-    m.add("SI_HEADSPACE", icons::SI_HEADSPACE)?;
-    m.add("SI_SANIC", icons::SI_SANIC)?;
-    m.add("SI_PAGESPEEDINSIGHTS", icons::SI_PAGESPEEDINSIGHTS)?;
-    m.add("SI_IROBOT", icons::SI_IROBOT)?;
-    m.add("SI_JIRASOFTWARE", icons::SI_JIRASOFTWARE)?;
-    m.add("SI_OWNCLOUD", icons::SI_OWNCLOUD)?;
-    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     m.add("SI_HOMEBRIDGE", icons::SI_HOMEBRIDGE)?;
     m.add("SI_GOOGLEGEMINI", icons::SI_GOOGLEGEMINI)?;
     m.add("SI_NISSAN", icons::SI_NISSAN)?;
     m.add("SI_GOOGLECHRONICLE", icons::SI_GOOGLECHRONICLE)?;
     m.add("SI_ROCKET", icons::SI_ROCKET)?;
-    m.add("SI_SALESFORCE", icons::SI_SALESFORCE)?;
     m.add("SI_LIBREOFFICEBASE", icons::SI_LIBREOFFICEBASE)?;
     m.add("SI_BRUNO", icons::SI_BRUNO)?;
     m.add("SI_GOOGLESCHOLAR", icons::SI_GOOGLESCHOLAR)?;
@@ -38,7 +15,6 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PREZI", icons::SI_PREZI)?;
     m.add("SI_CLOUDSMITH", icons::SI_CLOUDSMITH)?;
     m.add("SI_OCAML", icons::SI_OCAML)?;
-    m.add("SI_INFORMATICA", icons::SI_INFORMATICA)?;
     m.add("SI_SOUTHWESTAIRLINES", icons::SI_SOUTHWESTAIRLINES)?;
     m.add("SI_PIVOTALTRACKER", icons::SI_PIVOTALTRACKER)?;
     m.add("SI_INDUCTIVEAUTOMATION", icons::SI_INDUCTIVEAUTOMATION)?;
@@ -54,7 +30,6 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WGPU", icons::SI_WGPU)?;
     m.add("SI_CNET", icons::SI_CNET)?;
     m.add("SI_YR", icons::SI_YR)?;
-    m.add("SI_ALLOCINE", icons::SI_ALLOCINE)?;
     m.add("SI_ARKECOSYSTEM", icons::SI_ARKECOSYSTEM)?;
     m.add("SI_KUBUNTU", icons::SI_KUBUNTU)?;
     m.add("SI_PROTON", icons::SI_PROTON)?;
@@ -206,5 +181,33 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CONEKTA", icons::SI_CONEKTA)?;
     m.add("SI_PEGASUSAIRLINES", icons::SI_PEGASUSAIRLINES)?;
     m.add("SI_INFINITI", icons::SI_INFINITI)?;
+    m.add("SI_JEEP", icons::SI_JEEP)?;
+    m.add("SI_KIRBY", icons::SI_KIRBY)?;
+    m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
+    m.add("SI_SFML", icons::SI_SFML)?;
+    m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
+    m.add("SI_GOJEK", icons::SI_GOJEK)?;
+    m.add("SI_KASHFLOW", icons::SI_KASHFLOW)?;
+    m.add("SI_INTERCOM", icons::SI_INTERCOM)?;
+    m.add("SI_PORSCHE", icons::SI_PORSCHE)?;
+    m.add("SI_REDIS", icons::SI_REDIS)?;
+    m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
+    m.add(
+        "SI_OPENCONTAINERSINITIATIVE",
+        icons::SI_OPENCONTAINERSINITIATIVE,
+    )?;
+    m.add("SI_SINAWEIBO", icons::SI_SINAWEIBO)?;
+    m.add("SI_DASSAULTSYSTEMES", icons::SI_DASSAULTSYSTEMES)?;
+    m.add("SI_MERCURIAL", icons::SI_MERCURIAL)?;
+    m.add("SI_QWIKLABS", icons::SI_QWIKLABS)?;
+    m.add("SI_FIDOALLIANCE", icons::SI_FIDOALLIANCE)?;
+    m.add("SI_FLUENTBIT", icons::SI_FLUENTBIT)?;
+    m.add("SI_LEMMY", icons::SI_LEMMY)?;
+    m.add("SI_SEMANTICUI", icons::SI_SEMANTICUI)?;
+    m.add("SI_BAT", icons::SI_BAT)?;
+    m.add("SI_LUCIA", icons::SI_LUCIA)?;
+    m.add("SI_AVM", icons::SI_AVM)?;
+    m.add("SI_TESTCAFE", icons::SI_TESTCAFE)?;
+    m.add("SI_HUBSPOT", icons::SI_HUBSPOT)?;
     Ok(())
 }

@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
     match slug {
+        "codeberg" => Some(icons::SI_CODEBERG),
         "ratatui" => Some(icons::SI_RATATUI),
         "schneiderelectric" => Some(icons::SI_SCHNEIDERELECTRIC),
         "borgbackup" => Some(icons::SI_BORGBACKUP),
@@ -63,7 +64,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "gitlab" => Some(icons::SI_GITLAB),
         "datefns" => Some(icons::SI_DATEFNS),
         "pandora" => Some(icons::SI_PANDORA),
-        "alteryx" => Some(icons::SI_ALTERYX),
         "prefect" => Some(icons::SI_PREFECT),
         "daisyui" => Some(icons::SI_DAISYUI),
         "myshows" => Some(icons::SI_MYSHOWS),
@@ -80,7 +80,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "ecovacs" => Some(icons::SI_ECOVACS),
         "listmonk" => Some(icons::SI_LISTMONK),
         "handm" => Some(icons::SI_HANDM),
-        "scribd" => Some(icons::SI_SCRIBD),
         "streamlit" => Some(icons::SI_STREAMLIT),
         "uipath" => Some(icons::SI_UIPATH),
         "winamp" => Some(icons::SI_WINAMP),
@@ -123,7 +122,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "iobroker" => Some(icons::SI_IOBROKER),
         "adminer" => Some(icons::SI_ADMINER),
         "speakerdeck" => Some(icons::SI_SPEAKERDECK),
-        "nexusmods" => Some(icons::SI_NEXUSMODS),
         "posthog" => Some(icons::SI_POSTHOG),
         "kasasmart" => Some(icons::SI_KASASMART),
         "namesilo" => Some(icons::SI_NAMESILO),
@@ -134,7 +132,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "hotwire" => Some(icons::SI_HOTWIRE),
         "payback" => Some(icons::SI_PAYBACK),
         "frigate" => Some(icons::SI_FRIGATE),
-        "heroku" => Some(icons::SI_HEROKU),
         "baserow" => Some(icons::SI_BASEROW),
         "snapdragon" => Some(icons::SI_SNAPDRAGON),
         "indeed" => Some(icons::SI_INDEED),
@@ -203,6 +200,9 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "braintrust" => Some(icons::SI_BRAINTRUST),
         "nrwl" => Some(icons::SI_NRWL),
         "tinkercad" => Some(icons::SI_TINKERCAD),
+        "showpad" => Some(icons::SI_SHOWPAD),
+        "pix" => Some(icons::SI_PIX),
+        "liberapay" => Some(icons::SI_LIBERAPAY),
         _ => None,
     }
 }

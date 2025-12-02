@@ -3,6 +3,6 @@
     "gen": "deno run --allow-read --allow-write --allow-run --allow-env --allow-sys main.ts"
   },
   "imports": {
-    "@primer/octicons": "npm:@primer/octicons@19.21.0"
+    "@primer/octicons": "npm:@primer/octicons@19.21.1"
   }
 }
