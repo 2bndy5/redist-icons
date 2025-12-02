@@ -3,16 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_FMOD", icons::SI_FMOD)?;
-    m.add("SI_DINERSCLUB", icons::SI_DINERSCLUB)?;
-    m.add("SI_LIGHTNING", icons::SI_LIGHTNING)?;
-    m.add("SI_DWAVESYSTEMS", icons::SI_DWAVESYSTEMS)?;
-    m.add("SI_PRIMENG", icons::SI_PRIMENG)?;
-    m.add("SI_MAAS", icons::SI_MAAS)?;
-    m.add("SI_OCTANERENDER", icons::SI_OCTANERENDER)?;
-    m.add("SI_PROCESSWIRE", icons::SI_PROCESSWIRE)?;
-    m.add("SI_ANYDESK", icons::SI_ANYDESK)?;
-    m.add("SI_GUITARPRO", icons::SI_GUITARPRO)?;
     m.add("SI_CARLSBERGGROUP", icons::SI_CARLSBERGGROUP)?;
     m.add(
         "SI_KARLSRUHERVERKEHRSVERBUND",
@@ -97,7 +87,6 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SAGEMATH", icons::SI_SAGEMATH)?;
     m.add("SI_FOLO", icons::SI_FOLO)?;
     m.add("SI_ZDF", icons::SI_ZDF)?;
-    m.add("SI_LOGITECHG", icons::SI_LOGITECHG)?;
     m.add("SI_TERADATA", icons::SI_TERADATA)?;
     m.add("SI_PREVENTION", icons::SI_PREVENTION)?;
     m.add("SI_STYLUS", icons::SI_STYLUS)?;
@@ -109,6 +98,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TUXEDOCOMPUTERS", icons::SI_TUXEDOCOMPUTERS)?;
     m.add("SI_JUEJIN", icons::SI_JUEJIN)?;
     m.add("SI_SONARQUBECLOUD", icons::SI_SONARQUBECLOUD)?;
+    m.add("SI_MAILBOX", icons::SI_MAILBOX)?;
     m.add("SI_CLUBHOUSE", icons::SI_CLUBHOUSE)?;
     m.add("SI_BAREMETRICS", icons::SI_BAREMETRICS)?;
     m.add("SI_LINUXFOUNDATION", icons::SI_LINUXFOUNDATION)?;
@@ -131,7 +121,6 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DENON", icons::SI_DENON)?;
     m.add("SI_UNSPLASH", icons::SI_UNSPLASH)?;
     m.add("SI_FOSSA", icons::SI_FOSSA)?;
-    m.add("SI_INVISION", icons::SI_INVISION)?;
     m.add("SI_PIPED", icons::SI_PIPED)?;
     m.add("SI_STEEM", icons::SI_STEEM)?;
     m.add("SI_ROCKETDOTCHAT", icons::SI_ROCKETDOTCHAT)?;
@@ -215,5 +204,19 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ATARI", icons::SI_ATARI)?;
     m.add("SI_ROTTENTOMATOES", icons::SI_ROTTENTOMATOES)?;
     m.add("SI_DOWNDETECTOR", icons::SI_DOWNDETECTOR)?;
+    m.add("SI_WASMCLOUD", icons::SI_WASMCLOUD)?;
+    m.add(
+        "SI_INTERACTIONDESIGNFOUNDATION",
+        icons::SI_INTERACTIONDESIGNFOUNDATION,
+    )?;
+    m.add("SI_WIKIDOTGG", icons::SI_WIKIDOTGG)?;
+    m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
+    m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
+    m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
+    m.add("SI_RENREN", icons::SI_RENREN)?;
+    m.add("SI_NEXTRA", icons::SI_NEXTRA)?;
+    m.add("SI_PEXELS", icons::SI_PEXELS)?;
+    m.add("SI_NSIS", icons::SI_NSIS)?;
+    m.add("SI_QISKIT", icons::SI_QISKIT)?;
     Ok(())
 }

@@ -3,25 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_WEBCOMPONENTSDOTORG", icons::SI_WEBCOMPONENTSDOTORG)?;
-    m.add("SI_NETTE", icons::SI_NETTE)?;
-    m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
-    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
-    m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
-    m.add("SI_OVERCAST", icons::SI_OVERCAST)?;
-    m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
-    m.add("SI_COURSERA", icons::SI_COURSERA)?;
-    m.add("SI_CLARIFAI", icons::SI_CLARIFAI)?;
-    m.add("SI_G2A", icons::SI_G2A)?;
-    m.add("SI_RESHARPER", icons::SI_RESHARPER)?;
-    m.add("SI_WOLFRAMLANGUAGE", icons::SI_WOLFRAMLANGUAGE)?;
-    m.add("SI_ZEND", icons::SI_ZEND)?;
-    m.add("SI_ALX", icons::SI_ALX)?;
-    m.add("SI_AFRAME", icons::SI_AFRAME)?;
-    m.add("SI_ROBLOX", icons::SI_ROBLOX)?;
-    m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
-    m.add("SI_NORCO", icons::SI_NORCO)?;
-    m.add("SI_STREAMRUNNERS", icons::SI_STREAMRUNNERS)?;
     m.add("SI_VECTORLOGOZONE", icons::SI_VECTORLOGOZONE)?;
     m.add("SI_CTS", icons::SI_CTS)?;
     m.add("SI_FIGSHARE", icons::SI_FIGSHARE)?;
@@ -44,7 +25,6 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HEPSIEMLAK", icons::SI_HEPSIEMLAK)?;
     m.add("SI_GOOGLEPAY", icons::SI_GOOGLEPAY)?;
     m.add("SI_ZENBROWSER", icons::SI_ZENBROWSER)?;
-    m.add("SI_COGNIZANT", icons::SI_COGNIZANT)?;
     m.add("SI_DRAGONFRAME", icons::SI_DRAGONFRAME)?;
     m.add("SI_OPENSOURCEINITIATIVE", icons::SI_OPENSOURCEINITIATIVE)?;
     m.add("SI_TELE5", icons::SI_TELE5)?;
@@ -75,7 +55,6 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RSOCKET", icons::SI_RSOCKET)?;
     m.add("SI_GOOGLEKEEP", icons::SI_GOOGLEKEEP)?;
     m.add("SI_SKETCHFAB", icons::SI_SKETCHFAB)?;
-    m.add("SI_CODEPEN", icons::SI_CODEPEN)?;
     m.add("SI_JAVASCRIPT", icons::SI_JAVASCRIPT)?;
     m.add("SI_ARAL", icons::SI_ARAL)?;
     m.add("SI_LIBREOFFICEMATH", icons::SI_LIBREOFFICEMATH)?;
@@ -105,7 +84,6 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WOO", icons::SI_WOO)?;
     m.add("SI_BILIBILI", icons::SI_BILIBILI)?;
     m.add("SI_GSMA", icons::SI_GSMA)?;
-    m.add("SI_QUIP", icons::SI_QUIP)?;
     m.add("SI_FARCASTER", icons::SI_FARCASTER)?;
     m.add("SI_BETTERAUTH", icons::SI_BETTERAUTH)?;
     m.add("SI_WHENIWORK", icons::SI_WHENIWORK)?;
@@ -137,6 +115,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BRANDFETCH", icons::SI_BRANDFETCH)?;
     m.add("SI_JABBER", icons::SI_JABBER)?;
     m.add("SI_OYO", icons::SI_OYO)?;
+    m.add("SI_MDBLIST", icons::SI_MDBLIST)?;
     m.add("SI_CLARIVATE", icons::SI_CLARIVATE)?;
     m.add("SI_MYSPACE", icons::SI_MYSPACE)?;
     m.add("SI_MUBI", icons::SI_MUBI)?;
@@ -145,7 +124,6 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HERMES", icons::SI_HERMES)?;
     m.add("SI_SWIPER", icons::SI_SWIPER)?;
     m.add("SI_LOTTIEFILES", icons::SI_LOTTIEFILES)?;
-    m.add("SI_LOGITECH", icons::SI_LOGITECH)?;
     m.add("SI_PCGAMINGWIKI", icons::SI_PCGAMINGWIKI)?;
     m.add("SI_TETHER", icons::SI_TETHER)?;
     m.add("SI_RUBYONRAILS", icons::SI_RUBYONRAILS)?;
@@ -209,5 +187,27 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_POLYMERPROJECT", icons::SI_POLYMERPROJECT)?;
     m.add("SI_ARSTECHNICA", icons::SI_ARSTECHNICA)?;
     m.add("SI_FINECO", icons::SI_FINECO)?;
+    m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
+    m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
+    m.add("SI_FERRETDB", icons::SI_FERRETDB)?;
+    m.add("SI_STACKSHARE", icons::SI_STACKSHARE)?;
+    m.add("SI_FIREFOXBROWSER", icons::SI_FIREFOXBROWSER)?;
+    m.add("SI_LARAVELNOVA", icons::SI_LARAVELNOVA)?;
+    m.add("SI_SVGDOTJS", icons::SI_SVGDOTJS)?;
+    m.add("SI_NZXT", icons::SI_NZXT)?;
+    m.add("SI_APPSTORE", icons::SI_APPSTORE)?;
+    m.add("SI_THEREGISTER", icons::SI_THEREGISTER)?;
+    m.add("SI_APOSTROPHE", icons::SI_APOSTROPHE)?;
+    m.add("SI_MIX", icons::SI_MIX)?;
+    m.add("SI_TERATAIL", icons::SI_TERATAIL)?;
+    m.add("SI_NETIM", icons::SI_NETIM)?;
+    m.add("SI_LAZARUS", icons::SI_LAZARUS)?;
+    m.add("SI_HEADSPACE", icons::SI_HEADSPACE)?;
+    m.add("SI_SANIC", icons::SI_SANIC)?;
+    m.add("SI_PAGESPEEDINSIGHTS", icons::SI_PAGESPEEDINSIGHTS)?;
+    m.add("SI_IROBOT", icons::SI_IROBOT)?;
+    m.add("SI_JIRASOFTWARE", icons::SI_JIRASOFTWARE)?;
+    m.add("SI_OWNCLOUD", icons::SI_OWNCLOUD)?;
+    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     Ok(())
 }

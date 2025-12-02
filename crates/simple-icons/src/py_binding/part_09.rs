@@ -3,19 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_SLIDESHARE", icons::SI_SLIDESHARE)?;
-    m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
-    m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
-    m.add("SI_NICONICO", icons::SI_NICONICO)?;
-    m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
-    m.add("SI_BSD", icons::SI_BSD)?;
-    m.add("SI_CONVENTIONALCOMMITS", icons::SI_CONVENTIONALCOMMITS)?;
-    m.add("SI_PIXLR", icons::SI_PIXLR)?;
-    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
-    m.add("SI_LINUXCONTAINERS", icons::SI_LINUXCONTAINERS)?;
-    m.add("SI_EVERNOTE", icons::SI_EVERNOTE)?;
-    m.add("SI_HOMEADVISOR", icons::SI_HOMEADVISOR)?;
-    m.add("SI_ESBUILD", icons::SI_ESBUILD)?;
     m.add("SI_ASTRA", icons::SI_ASTRA)?;
     m.add("SI_THEODINPROJECT", icons::SI_THEODINPROJECT)?;
     m.add("SI_LIBRETRANSLATE", icons::SI_LIBRETRANSLATE)?;
@@ -81,7 +68,6 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PELOTON", icons::SI_PELOTON)?;
     m.add("SI_BIGCOMMERCE", icons::SI_BIGCOMMERCE)?;
     m.add("SI_HUGGINGFACE", icons::SI_HUGGINGFACE)?;
-    m.add("SI_MAILBOXDOTORG", icons::SI_MAILBOXDOTORG)?;
     m.add("SI_PYPY", icons::SI_PYPY)?;
     m.add("SI_RAZORPAY", icons::SI_RAZORPAY)?;
     m.add("SI_VRCHAT", icons::SI_VRCHAT)?;
@@ -103,7 +89,6 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CIRCUITVERSE", icons::SI_CIRCUITVERSE)?;
     m.add("SI_PLURK", icons::SI_PLURK)?;
     m.add("SI_ANTHROPIC", icons::SI_ANTHROPIC)?;
-    m.add("SI_MUSESCORE", icons::SI_MUSESCORE)?;
     m.add("SI_GOOGLEMAPS", icons::SI_GOOGLEMAPS)?;
     m.add("SI_CAIROMETRO", icons::SI_CAIROMETRO)?;
     m.add("SI_BACKSTAGE_CASTING", icons::SI_BACKSTAGE_CASTING)?;
@@ -111,7 +96,6 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_D", icons::SI_D)?;
     m.add("SI_KNOWN", icons::SI_KNOWN)?;
     m.add("SI_QUASAR", icons::SI_QUASAR)?;
-    m.add("SI_AFFINITYPHOTO", icons::SI_AFFINITYPHOTO)?;
     m.add("SI_MAPTILER", icons::SI_MAPTILER)?;
     m.add("SI_PIHOLE", icons::SI_PIHOLE)?;
     m.add("SI_WISH", icons::SI_WISH)?;
@@ -122,7 +106,6 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DTS", icons::SI_DTS)?;
     m.add("SI_BIGBASKET", icons::SI_BIGBASKET)?;
     m.add("SI_ISSUU", icons::SI_ISSUU)?;
-    m.add("SI_MULESOFT", icons::SI_MULESOFT)?;
     m.add(
         "SI_APACHEDOLPHINSCHEDULER",
         icons::SI_APACHEDOLPHINSCHEDULER,
@@ -178,7 +161,6 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HANDLEBARSDOTJS", icons::SI_HANDLEBARSDOTJS)?;
     m.add("SI_EMLAKJET", icons::SI_EMLAKJET)?;
     m.add("SI_CLOUDCANNON", icons::SI_CLOUDCANNON)?;
-    m.add("SI_SHUTTERSTOCK", icons::SI_SHUTTERSTOCK)?;
     m.add("SI_NETAPP", icons::SI_NETAPP)?;
     m.add("SI_LG", icons::SI_LG)?;
     m.add("SI_BITCOINCASH", icons::SI_BITCOINCASH)?;
@@ -206,5 +188,23 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FRITZ", icons::SI_FRITZ)?;
     m.add("SI_INVOICENINJA", icons::SI_INVOICENINJA)?;
     m.add("SI_METRO", icons::SI_METRO)?;
+    m.add("SI_WEBCOMPONENTSDOTORG", icons::SI_WEBCOMPONENTSDOTORG)?;
+    m.add("SI_NETTE", icons::SI_NETTE)?;
+    m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
+    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
+    m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
+    m.add("SI_OVERCAST", icons::SI_OVERCAST)?;
+    m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
+    m.add("SI_COURSERA", icons::SI_COURSERA)?;
+    m.add("SI_CLARIFAI", icons::SI_CLARIFAI)?;
+    m.add("SI_G2A", icons::SI_G2A)?;
+    m.add("SI_RESHARPER", icons::SI_RESHARPER)?;
+    m.add("SI_WOLFRAMLANGUAGE", icons::SI_WOLFRAMLANGUAGE)?;
+    m.add("SI_ZEND", icons::SI_ZEND)?;
+    m.add("SI_AFRAME", icons::SI_AFRAME)?;
+    m.add("SI_ROBLOX", icons::SI_ROBLOX)?;
+    m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
+    m.add("SI_NORCO", icons::SI_NORCO)?;
+    m.add("SI_STREAMRUNNERS", icons::SI_STREAMRUNNERS)?;
     Ok(())
 }

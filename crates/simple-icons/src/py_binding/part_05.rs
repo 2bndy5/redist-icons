@@ -3,16 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_BACKBONEDOTJS", icons::SI_BACKBONEDOTJS)?;
-    m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
-    m.add("SI_INGRESS", icons::SI_INGRESS)?;
-    m.add("SI_R3", icons::SI_R3)?;
-    m.add("SI_OKCUPID", icons::SI_OKCUPID)?;
-    m.add("SI_NVM", icons::SI_NVM)?;
-    m.add("SI_VELOG", icons::SI_VELOG)?;
-    m.add("SI_QIWI", icons::SI_QIWI)?;
-    m.add("SI_SQUAREENIX", icons::SI_SQUAREENIX)?;
-    m.add("SI_BACKBLAZE", icons::SI_BACKBLAZE)?;
     m.add("SI_NASA", icons::SI_NASA)?;
     m.add("SI_TYPO3", icons::SI_TYPO3)?;
     m.add("SI_VBULLETIN", icons::SI_VBULLETIN)?;
@@ -60,7 +50,6 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WIKIPEDIA", icons::SI_WIKIPEDIA)?;
     m.add("SI_QT", icons::SI_QT)?;
     m.add("SI_SHENZHENMETRO", icons::SI_SHENZHENMETRO)?;
-    m.add("SI_AUTHY", icons::SI_AUTHY)?;
     m.add("SI_MATTERMOST", icons::SI_MATTERMOST)?;
     m.add("SI_NBC", icons::SI_NBC)?;
     m.add("SI_ASANA", icons::SI_ASANA)?;
@@ -104,7 +93,6 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CHOCOLATEY", icons::SI_CHOCOLATEY)?;
     m.add("SI_WISTIA", icons::SI_WISTIA)?;
     m.add("SI_LINTCODE", icons::SI_LINTCODE)?;
-    m.add("SI_DBT", icons::SI_DBT)?;
     m.add("SI_GOOGLEBIGTABLE", icons::SI_GOOGLEBIGTABLE)?;
     m.add("SI_ISTIO", icons::SI_ISTIO)?;
     m.add("SI_WIKIQUOTE", icons::SI_WIKIQUOTE)?;
@@ -113,6 +101,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DMM", icons::SI_DMM)?;
     m.add("SI_2FAS", icons::SI_2FAS)?;
     m.add("SI_MAYTAG", icons::SI_MAYTAG)?;
+    m.add("SI_PASSBOLT", icons::SI_PASSBOLT)?;
     m.add("SI_42", icons::SI_42)?;
     m.add("SI_ECLIPSEMOSQUITTO", icons::SI_ECLIPSEMOSQUITTO)?;
     m.add("SI_KRITA", icons::SI_KRITA)?;
@@ -203,5 +192,16 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COOP", icons::SI_COOP)?;
     m.add("SI_VITEST", icons::SI_VITEST)?;
     m.add("SI_IEEE", icons::SI_IEEE)?;
+    m.add("SI_NOUNPROJECT", icons::SI_NOUNPROJECT)?;
+    m.add("SI_YOUTUBETV", icons::SI_YOUTUBETV)?;
+    m.add("SI_DOUBANREAD", icons::SI_DOUBANREAD)?;
+    m.add("SI_ALIBABACLOUD", icons::SI_ALIBABACLOUD)?;
+    m.add("SI_NEAR", icons::SI_NEAR)?;
+    m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
+    m.add("SI_ANALOGUE", icons::SI_ANALOGUE)?;
+    m.add("SI_GETX", icons::SI_GETX)?;
+    m.add("SI_BUDDY", icons::SI_BUDDY)?;
+    m.add("SI_OKTA", icons::SI_OKTA)?;
+    m.add("SI_INSTAPAPER", icons::SI_INSTAPAPER)?;
     Ok(())
 }

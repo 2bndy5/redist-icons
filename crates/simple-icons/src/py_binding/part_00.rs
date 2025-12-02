@@ -26,7 +26,6 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RANCHER", icons::SI_RANCHER)?;
     m.add("SI_INKDROP", icons::SI_INKDROP)?;
     m.add("SI_ALIBABADOTCOM", icons::SI_ALIBABADOTCOM)?;
-    m.add("SI_JAGUAR", icons::SI_JAGUAR)?;
     m.add("SI_AMERICANEXPRESS", icons::SI_AMERICANEXPRESS)?;
     m.add("SI_SERVERFAULT", icons::SI_SERVERFAULT)?;
     m.add("SI_INKSCAPE", icons::SI_INKSCAPE)?;
@@ -41,7 +40,6 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FIG", icons::SI_FIG)?;
     m.add("SI_RUNRUNDOTIT", icons::SI_RUNRUNDOTIT)?;
     m.add("SI_DECENTRALAND", icons::SI_DECENTRALAND)?;
-    m.add("SI_AEW", icons::SI_AEW)?;
     m.add("SI_DISROOT", icons::SI_DISROOT)?;
     m.add("SI_EXPRESSVPN", icons::SI_EXPRESSVPN)?;
     m.add("SI_MEGA", icons::SI_MEGA)?;
@@ -53,6 +51,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VERIZON", icons::SI_VERIZON)?;
     m.add("SI_SEMANTICWEB", icons::SI_SEMANTICWEB)?;
     m.add("SI_LINKERD", icons::SI_LINKERD)?;
+    m.add("SI_TEXTUAL", icons::SI_TEXTUAL)?;
     m.add("SI_LAMBORGHINI", icons::SI_LAMBORGHINI)?;
     m.add("SI_TABLECHECK", icons::SI_TABLECHECK)?;
     m.add("SI_INSTACART", icons::SI_INSTACART)?;
@@ -76,6 +75,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COPPEL", icons::SI_COPPEL)?;
     m.add("SI_TREEHOUSE", icons::SI_TREEHOUSE)?;
     m.add("SI_TMUX", icons::SI_TMUX)?;
+    m.add("SI_B4X", icons::SI_B4X)?;
     m.add("SI_VAUXHALL", icons::SI_VAUXHALL)?;
     m.add("SI_MERCK", icons::SI_MERCK)?;
     m.add("SI_SUCKLESS", icons::SI_SUCKLESS)?;
@@ -91,6 +91,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOOGLEDOCS", icons::SI_GOOGLEDOCS)?;
     m.add("SI_WIKIMEDIAFOUNDATION", icons::SI_WIKIMEDIAFOUNDATION)?;
     m.add("SI_VEGA", icons::SI_VEGA)?;
+    m.add("SI_TANSTACK", icons::SI_TANSTACK)?;
     m.add("SI_PALOALTOSOFTWARE", icons::SI_PALOALTOSOFTWARE)?;
     m.add("SI_CATERPILLAR", icons::SI_CATERPILLAR)?;
     m.add("SI_ROON", icons::SI_ROON)?;
@@ -99,12 +100,12 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_EXPERTSEXCHANGE", icons::SI_EXPERTSEXCHANGE)?;
     m.add("SI_MEWE", icons::SI_MEWE)?;
     m.add("SI_WPROCKET", icons::SI_WPROCKET)?;
-    m.add("SI_FLIPKART", icons::SI_FLIPKART)?;
     m.add("SI_BAKALARI", icons::SI_BAKALARI)?;
     m.add("SI_LIMESURVEY", icons::SI_LIMESURVEY)?;
     m.add("SI_JET", icons::SI_JET)?;
     m.add("SI_HACKERNOON", icons::SI_HACKERNOON)?;
     m.add("SI_ANTENNAPOD", icons::SI_ANTENNAPOD)?;
+    m.add("SI_POSTIZ", icons::SI_POSTIZ)?;
     m.add("SI_AIRTEL", icons::SI_AIRTEL)?;
     m.add("SI_RUBYSINATRA", icons::SI_RUBYSINATRA)?;
     m.add("SI_LLVM", icons::SI_LLVM)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GUMTREE", icons::SI_GUMTREE)?;
     m.add("SI_QEMU", icons::SI_QEMU)?;
     m.add("SI_APACHETOMCAT", icons::SI_APACHETOMCAT)?;
-    m.add("SI_CODEBERG", icons::SI_CODEBERG)?;
     Ok(())
 }

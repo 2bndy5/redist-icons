@@ -3,20 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_WASMCLOUD", icons::SI_WASMCLOUD)?;
-    m.add(
-        "SI_INTERACTIONDESIGNFOUNDATION",
-        icons::SI_INTERACTIONDESIGNFOUNDATION,
-    )?;
-    m.add("SI_WIKIDOTGG", icons::SI_WIKIDOTGG)?;
-    m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
-    m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
-    m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
-    m.add("SI_RENREN", icons::SI_RENREN)?;
-    m.add("SI_NEXTRA", icons::SI_NEXTRA)?;
-    m.add("SI_PEXELS", icons::SI_PEXELS)?;
-    m.add("SI_NSIS", icons::SI_NSIS)?;
-    m.add("SI_QISKIT", icons::SI_QISKIT)?;
     m.add("SI_OPENTELEMETRY", icons::SI_OPENTELEMETRY)?;
     m.add("SI_STARTDOTGG", icons::SI_STARTDOTGG)?;
     m.add("SI_FONTAWESOME", icons::SI_FONTAWESOME)?;
@@ -73,12 +59,10 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MULTISIM", icons::SI_MULTISIM)?;
     m.add("SI_THUNDERBIRD", icons::SI_THUNDERBIRD)?;
     m.add("SI_PRINTABLES", icons::SI_PRINTABLES)?;
-    m.add("SI_LANDROVER", icons::SI_LANDROVER)?;
     m.add("SI_OCULUS", icons::SI_OCULUS)?;
     m.add("SI_PARADOXINTERACTIVE", icons::SI_PARADOXINTERACTIVE)?;
     m.add("SI_TRICENTIS", icons::SI_TRICENTIS)?;
     m.add("SI_ESEA", icons::SI_ESEA)?;
-    m.add("SI_WALMART", icons::SI_WALMART)?;
     m.add("SI_BLUETOOTH", icons::SI_BLUETOOTH)?;
     m.add("SI_KOMOOT", icons::SI_KOMOOT)?;
     m.add("SI_IKEA", icons::SI_IKEA)?;
@@ -206,5 +190,18 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_AEROMEXICO", icons::SI_AEROMEXICO)?;
     m.add("SI_VESPA", icons::SI_VESPA)?;
     m.add("SI_GARUDALINUX", icons::SI_GARUDALINUX)?;
+    m.add("SI_SLIDESHARE", icons::SI_SLIDESHARE)?;
+    m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
+    m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
+    m.add("SI_NICONICO", icons::SI_NICONICO)?;
+    m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
+    m.add("SI_BSD", icons::SI_BSD)?;
+    m.add("SI_CONVENTIONALCOMMITS", icons::SI_CONVENTIONALCOMMITS)?;
+    m.add("SI_PIXLR", icons::SI_PIXLR)?;
+    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
+    m.add("SI_LINUXCONTAINERS", icons::SI_LINUXCONTAINERS)?;
+    m.add("SI_EVERNOTE", icons::SI_EVERNOTE)?;
+    m.add("SI_HOMEADVISOR", icons::SI_HOMEADVISOR)?;
+    m.add("SI_ESBUILD", icons::SI_ESBUILD)?;
     Ok(())
 }

@@ -3,13 +3,6 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("SI_SENTRY", icons::SI_SENTRY)?;
-    m.add("SI_METAGER", icons::SI_METAGER)?;
-    m.add("SI_VAPOR", icons::SI_VAPOR)?;
-    m.add("SI_SMARTTHINGS", icons::SI_SMARTTHINGS)?;
-    m.add("SI_TWENTY", icons::SI_TWENTY)?;
-    m.add("SI_DOVECOT", icons::SI_DOVECOT)?;
-    m.add("SI_TYPESCRIPT", icons::SI_TYPESCRIPT)?;
     m.add("SI_THREADLESS", icons::SI_THREADLESS)?;
     m.add("SI_EXPENSIFY", icons::SI_EXPENSIFY)?;
     m.add("SI_NUCLEO", icons::SI_NUCLEO)?;
@@ -73,7 +66,6 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VIMEO", icons::SI_VIMEO)?;
     m.add("SI_WEASYL", icons::SI_WEASYL)?;
     m.add("SI_OPENNEBULA", icons::SI_OPENNEBULA)?;
-    m.add("SI_SLACK", icons::SI_SLACK)?;
     m.add("SI_KOREADER", icons::SI_KOREADER)?;
     m.add("SI_PAGERDUTY", icons::SI_PAGERDUTY)?;
     m.add("SI_AUDACITY", icons::SI_AUDACITY)?;
@@ -84,7 +76,6 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_YARN", icons::SI_YARN)?;
     m.add("SI_GOOGLECHAT", icons::SI_GOOGLECHAT)?;
     m.add("SI_REZGO", icons::SI_REZGO)?;
-    m.add("SI_ALTIUMDESIGNER", icons::SI_ALTIUMDESIGNER)?;
     m.add("SI_SHAZAM", icons::SI_SHAZAM)?;
     m.add("SI_DEUTSCHEBANK", icons::SI_DEUTSCHEBANK)?;
     m.add("SI_VIADEO", icons::SI_VIADEO)?;
@@ -125,7 +116,6 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APACHEFLINK", icons::SI_APACHEFLINK)?;
     m.add("SI_BOOTSTRAP", icons::SI_BOOTSTRAP)?;
     m.add("SI_QUALTRICS", icons::SI_QUALTRICS)?;
-    m.add("SI_WESTERNDIGITAL", icons::SI_WESTERNDIGITAL)?;
     m.add("SI_RIOTGAMES", icons::SI_RIOTGAMES)?;
     m.add("SI_JITSI", icons::SI_JITSI)?;
     m.add("SI_DROOBLE", icons::SI_DROOBLE)?;
@@ -206,5 +196,15 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REASONSTUDIOS", icons::SI_REASONSTUDIOS)?;
     m.add("SI_KHANACADEMY", icons::SI_KHANACADEMY)?;
     m.add("SI_ROCKSTARGAMES", icons::SI_ROCKSTARGAMES)?;
+    m.add("SI_BACKBONEDOTJS", icons::SI_BACKBONEDOTJS)?;
+    m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
+    m.add("SI_INGRESS", icons::SI_INGRESS)?;
+    m.add("SI_R3", icons::SI_R3)?;
+    m.add("SI_OKCUPID", icons::SI_OKCUPID)?;
+    m.add("SI_NVM", icons::SI_NVM)?;
+    m.add("SI_VELOG", icons::SI_VELOG)?;
+    m.add("SI_QIWI", icons::SI_QIWI)?;
+    m.add("SI_SQUAREENIX", icons::SI_SQUAREENIX)?;
+    m.add("SI_BACKBLAZE", icons::SI_BACKBLAZE)?;
     Ok(())
 }
