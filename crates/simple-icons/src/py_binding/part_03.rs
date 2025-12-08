@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     m.add("SI_ROLLBAR", icons::SI_ROLLBAR)?;
     m.add("SI_RARIBLE", icons::SI_RARIBLE)?;
     m.add("SI_OPENAPIINITIATIVE", icons::SI_OPENAPIINITIATIVE)?;
@@ -118,6 +119,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_OPENSUSE", icons::SI_OPENSUSE)?;
     m.add("SI_YOLO", icons::SI_YOLO)?;
     m.add("SI_SPYDERIDE", icons::SI_SPYDERIDE)?;
+    m.add("SI_GHOSTTY", icons::SI_GHOSTTY)?;
     m.add("SI_ELEVENTY", icons::SI_ELEVENTY)?;
     m.add("SI_DLIB", icons::SI_DLIB)?;
     m.add("SI_ZEBRATECHNOLOGIES", icons::SI_ZEBRATECHNOLOGIES)?;
@@ -201,7 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VAPOR", icons::SI_VAPOR)?;
     m.add("SI_SMARTTHINGS", icons::SI_SMARTTHINGS)?;
     m.add("SI_TWENTY", icons::SI_TWENTY)?;
-    m.add("SI_DOVECOT", icons::SI_DOVECOT)?;
-    m.add("SI_TYPESCRIPT", icons::SI_TYPESCRIPT)?;
     Ok(())
 }

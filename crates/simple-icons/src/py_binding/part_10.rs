@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ROBLOX", icons::SI_ROBLOX)?;
+    m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
+    m.add("SI_NORCO", icons::SI_NORCO)?;
+    m.add("SI_STREAMRUNNERS", icons::SI_STREAMRUNNERS)?;
     m.add("SI_VECTORLOGOZONE", icons::SI_VECTORLOGOZONE)?;
     m.add("SI_CTS", icons::SI_CTS)?;
     m.add("SI_FIGSHARE", icons::SI_FIGSHARE)?;
@@ -86,6 +90,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GSMA", icons::SI_GSMA)?;
     m.add("SI_FARCASTER", icons::SI_FARCASTER)?;
     m.add("SI_BETTERAUTH", icons::SI_BETTERAUTH)?;
+    m.add("SI_SETUPTOOLS", icons::SI_SETUPTOOLS)?;
     m.add("SI_WHENIWORK", icons::SI_WHENIWORK)?;
     m.add("SI_WASMER", icons::SI_WASMER)?;
     m.add("SI_ACODE", icons::SI_ACODE)?;
@@ -204,10 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LAZARUS", icons::SI_LAZARUS)?;
     m.add("SI_HEADSPACE", icons::SI_HEADSPACE)?;
     m.add("SI_SANIC", icons::SI_SANIC)?;
-    m.add("SI_PAGESPEEDINSIGHTS", icons::SI_PAGESPEEDINSIGHTS)?;
-    m.add("SI_IROBOT", icons::SI_IROBOT)?;
-    m.add("SI_JIRASOFTWARE", icons::SI_JIRASOFTWARE)?;
-    m.add("SI_OWNCLOUD", icons::SI_OWNCLOUD)?;
-    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     Ok(())
 }

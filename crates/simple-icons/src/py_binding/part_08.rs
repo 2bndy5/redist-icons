@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NEXTRA", icons::SI_NEXTRA)?;
+    m.add("SI_PEXELS", icons::SI_PEXELS)?;
+    m.add("SI_NSIS", icons::SI_NSIS)?;
+    m.add("SI_QISKIT", icons::SI_QISKIT)?;
     m.add("SI_OPENTELEMETRY", icons::SI_OPENTELEMETRY)?;
     m.add("SI_STARTDOTGG", icons::SI_STARTDOTGG)?;
     m.add("SI_FONTAWESOME", icons::SI_FONTAWESOME)?;
@@ -199,9 +203,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CONVENTIONALCOMMITS", icons::SI_CONVENTIONALCOMMITS)?;
     m.add("SI_PIXLR", icons::SI_PIXLR)?;
     m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
-    m.add("SI_LINUXCONTAINERS", icons::SI_LINUXCONTAINERS)?;
-    m.add("SI_EVERNOTE", icons::SI_EVERNOTE)?;
-    m.add("SI_HOMEADVISOR", icons::SI_HOMEADVISOR)?;
-    m.add("SI_ESBUILD", icons::SI_ESBUILD)?;
     Ok(())
 }

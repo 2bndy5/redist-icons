@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OCTANERENDER", icons::SI_OCTANERENDER)?;
+    m.add("SI_PROCESSWIRE", icons::SI_PROCESSWIRE)?;
+    m.add("SI_ANYDESK", icons::SI_ANYDESK)?;
+    m.add("SI_GUITARPRO", icons::SI_GUITARPRO)?;
     m.add("SI_CARLSBERGGROUP", icons::SI_CARLSBERGGROUP)?;
     m.add(
         "SI_KARLSRUHERVERKEHRSVERBUND",
@@ -214,9 +218,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
     m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
     m.add("SI_RENREN", icons::SI_RENREN)?;
-    m.add("SI_NEXTRA", icons::SI_NEXTRA)?;
-    m.add("SI_PEXELS", icons::SI_PEXELS)?;
-    m.add("SI_NSIS", icons::SI_NSIS)?;
-    m.add("SI_QISKIT", icons::SI_QISKIT)?;
     Ok(())
 }
