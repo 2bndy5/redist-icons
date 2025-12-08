@@ -3,8 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_BUDDY", icons::SI_BUDDY)?;
+    m.add("SI_OKTA", icons::SI_OKTA)?;
+    m.add("SI_INSTAPAPER", icons::SI_INSTAPAPER)?;
     m.add("SI_XERO", icons::SI_XERO)?;
     m.add("SI_SKAFFOLD", icons::SI_SKAFFOLD)?;
+    m.add("SI_NODEGUI", icons::SI_NODEGUI)?;
     m.add("SI_CRAYON", icons::SI_CRAYON)?;
     m.add("SI_NFCORE", icons::SI_NFCORE)?;
     m.add(
@@ -208,9 +212,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DWAVESYSTEMS", icons::SI_DWAVESYSTEMS)?;
     m.add("SI_PRIMENG", icons::SI_PRIMENG)?;
     m.add("SI_MAAS", icons::SI_MAAS)?;
-    m.add("SI_OCTANERENDER", icons::SI_OCTANERENDER)?;
-    m.add("SI_PROCESSWIRE", icons::SI_PROCESSWIRE)?;
-    m.add("SI_ANYDESK", icons::SI_ANYDESK)?;
-    m.add("SI_GUITARPRO", icons::SI_GUITARPRO)?;
     Ok(())
 }

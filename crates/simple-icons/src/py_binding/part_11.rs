@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PAGESPEEDINSIGHTS", icons::SI_PAGESPEEDINSIGHTS)?;
+    m.add("SI_IROBOT", icons::SI_IROBOT)?;
+    m.add("SI_JIRASOFTWARE", icons::SI_JIRASOFTWARE)?;
+    m.add("SI_OWNCLOUD", icons::SI_OWNCLOUD)?;
+    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     m.add("SI_HOMEBRIDGE", icons::SI_HOMEBRIDGE)?;
     m.add("SI_GOOGLEGEMINI", icons::SI_GOOGLEGEMINI)?;
     m.add("SI_NISSAN", icons::SI_NISSAN)?;
@@ -204,10 +209,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FLUENTBIT", icons::SI_FLUENTBIT)?;
     m.add("SI_LEMMY", icons::SI_LEMMY)?;
     m.add("SI_SEMANTICUI", icons::SI_SEMANTICUI)?;
-    m.add("SI_BAT", icons::SI_BAT)?;
-    m.add("SI_LUCIA", icons::SI_LUCIA)?;
-    m.add("SI_AVM", icons::SI_AVM)?;
-    m.add("SI_TESTCAFE", icons::SI_TESTCAFE)?;
-    m.add("SI_HUBSPOT", icons::SI_HUBSPOT)?;
     Ok(())
 }

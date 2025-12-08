@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_LINUXCONTAINERS", icons::SI_LINUXCONTAINERS)?;
+    m.add("SI_EVERNOTE", icons::SI_EVERNOTE)?;
+    m.add("SI_HOMEADVISOR", icons::SI_HOMEADVISOR)?;
+    m.add("SI_ESBUILD", icons::SI_ESBUILD)?;
     m.add("SI_ASTRA", icons::SI_ASTRA)?;
     m.add("SI_THEODINPROJECT", icons::SI_THEODINPROJECT)?;
     m.add("SI_LIBRETRANSLATE", icons::SI_LIBRETRANSLATE)?;
@@ -202,9 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WOLFRAMLANGUAGE", icons::SI_WOLFRAMLANGUAGE)?;
     m.add("SI_ZEND", icons::SI_ZEND)?;
     m.add("SI_AFRAME", icons::SI_AFRAME)?;
-    m.add("SI_ROBLOX", icons::SI_ROBLOX)?;
-    m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
-    m.add("SI_NORCO", icons::SI_NORCO)?;
-    m.add("SI_STREAMRUNNERS", icons::SI_STREAMRUNNERS)?;
     Ok(())
 }

@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ASCIIDOCTOR", icons::SI_ASCIIDOCTOR)?;
+    m.add("SI_WEBLATE", icons::SI_WEBLATE)?;
+    m.add("SI_TERMIUS", icons::SI_TERMIUS)?;
+    m.add("SI_OHDEAR", icons::SI_OHDEAR)?;
+    m.add("SI_D3", icons::SI_D3)?;
     m.add("SI_GITEXTENSIONS", icons::SI_GITEXTENSIONS)?;
     m.add("SI_IRIS", icons::SI_IRIS)?;
     m.add("SI_SOFTCATALA", icons::SI_SOFTCATALA)?;
@@ -148,6 +153,7 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CHAKRAUI", icons::SI_CHAKRAUI)?;
     m.add("SI_PAYSAFE", icons::SI_PAYSAFE)?;
     m.add("SI_MUSICBRAINZ", icons::SI_MUSICBRAINZ)?;
+    m.add("SI_ELK", icons::SI_ELK)?;
     m.add("SI_GOOGLECHROME", icons::SI_GOOGLECHROME)?;
     m.add("SI_PAYCHEX", icons::SI_PAYCHEX)?;
     m.add("SI_QANTAS", icons::SI_QANTAS)?;
@@ -197,11 +203,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MATERIALDESIGN", icons::SI_MATERIALDESIGN)?;
     m.add("SI_SAILFISHOS", icons::SI_SAILFISHOS)?;
     m.add("SI_ESLGAMING", icons::SI_ESLGAMING)?;
-    m.add("SI_SKODA", icons::SI_SKODA)?;
-    m.add("SI_RUBYGEMS", icons::SI_RUBYGEMS)?;
-    m.add("SI_NBA", icons::SI_NBA)?;
-    m.add("SI_HILTON", icons::SI_HILTON)?;
-    m.add("SI_LIBRARYTHING", icons::SI_LIBRARYTHING)?;
-    m.add("SI_POLARS", icons::SI_POLARS)?;
     Ok(())
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SQUAREENIX", icons::SI_SQUAREENIX)?;
+    m.add("SI_BACKBLAZE", icons::SI_BACKBLAZE)?;
     m.add("SI_NASA", icons::SI_NASA)?;
     m.add("SI_TYPO3", icons::SI_TYPO3)?;
     m.add("SI_VBULLETIN", icons::SI_VBULLETIN)?;
@@ -109,6 +111,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_KOENIGSEGG", icons::SI_KOENIGSEGG)?;
     m.add("SI_SYMBOLAB", icons::SI_SYMBOLAB)?;
     m.add("SI_SHARP", icons::SI_SHARP)?;
+    m.add("SI_APPIMAGE", icons::SI_APPIMAGE)?;
     m.add("SI_BUKALAPAK", icons::SI_BUKALAPAK)?;
     m.add("SI_RAINYUN", icons::SI_RAINYUN)?;
     m.add("SI_ROAMRESEARCH", icons::SI_ROAMRESEARCH)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
     m.add("SI_ANALOGUE", icons::SI_ANALOGUE)?;
     m.add("SI_GETX", icons::SI_GETX)?;
-    m.add("SI_BUDDY", icons::SI_BUDDY)?;
-    m.add("SI_OKTA", icons::SI_OKTA)?;
-    m.add("SI_INSTAPAPER", icons::SI_INSTAPAPER)?;
     Ok(())
 }

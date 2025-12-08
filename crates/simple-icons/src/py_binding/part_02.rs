@@ -92,6 +92,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SKYPACK", icons::SI_SKYPACK)?;
     m.add("SI_KICKSTARTER", icons::SI_KICKSTARTER)?;
     m.add("SI_ALGORAND", icons::SI_ALGORAND)?;
+    m.add("SI_MANGACOLLEC", icons::SI_MANGACOLLEC)?;
     m.add("SI_ZOHO", icons::SI_ZOHO)?;
     m.add("SI_ANTENA3", icons::SI_ANTENA3)?;
     m.add("SI_APPLEARCADE", icons::SI_APPLEARCADE)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PANDAS", icons::SI_PANDAS)?;
     m.add("SI_YOUTUBE", icons::SI_YOUTUBE)?;
     m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
-    m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     Ok(())
 }

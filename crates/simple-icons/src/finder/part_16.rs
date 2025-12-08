@@ -3,6 +3,12 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_16(slug: &str) -> Option<Icon> {
     match slug {
+        "boosty" => Some(icons::SI_BOOSTY),
+        "loopback" => Some(icons::SI_LOOPBACK),
+        "w3schools" => Some(icons::SI_W3SCHOOLS),
+        "draugiemdotlv" => Some(icons::SI_DRAUGIEMDOTLV),
+        "picsart" => Some(icons::SI_PICSART),
+        "sourceengine" => Some(icons::SI_SOURCEENGINE),
         "geocaching" => Some(icons::SI_GEOCACHING),
         "vitess" => Some(icons::SI_VITESS),
         "roadmapdotsh" => Some(icons::SI_ROADMAPDOTSH),

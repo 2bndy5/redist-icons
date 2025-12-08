@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
     match slug {
+        "asciidoctor" => Some(icons::SI_ASCIIDOCTOR),
+        "weblate" => Some(icons::SI_WEBLATE),
+        "termius" => Some(icons::SI_TERMIUS),
+        "ohdear" => Some(icons::SI_OHDEAR),
+        "d3" => Some(icons::SI_D3),
         "gitextensions" => Some(icons::SI_GITEXTENSIONS),
         "iris" => Some(icons::SI_IRIS),
         "softcatala" => Some(icons::SI_SOFTCATALA),
@@ -148,6 +153,7 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "chakraui" => Some(icons::SI_CHAKRAUI),
         "paysafe" => Some(icons::SI_PAYSAFE),
         "musicbrainz" => Some(icons::SI_MUSICBRAINZ),
+        "elk" => Some(icons::SI_ELK),
         "googlechrome" => Some(icons::SI_GOOGLECHROME),
         "paychex" => Some(icons::SI_PAYCHEX),
         "qantas" => Some(icons::SI_QANTAS),
@@ -197,12 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "materialdesign" => Some(icons::SI_MATERIALDESIGN),
         "sailfishos" => Some(icons::SI_SAILFISHOS),
         "eslgaming" => Some(icons::SI_ESLGAMING),
-        "skoda" => Some(icons::SI_SKODA),
-        "rubygems" => Some(icons::SI_RUBYGEMS),
-        "nba" => Some(icons::SI_NBA),
-        "hilton" => Some(icons::SI_HILTON),
-        "librarything" => Some(icons::SI_LIBRARYTHING),
-        "polars" => Some(icons::SI_POLARS),
         _ => None,
     }
 }

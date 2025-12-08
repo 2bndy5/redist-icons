@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
     match slug {
+        "roblox" => Some(icons::SI_ROBLOX),
+        "crowdin" => Some(icons::SI_CROWDIN),
+        "norco" => Some(icons::SI_NORCO),
+        "streamrunners" => Some(icons::SI_STREAMRUNNERS),
         "vectorlogozone" => Some(icons::SI_VECTORLOGOZONE),
         "cts" => Some(icons::SI_CTS),
         "figshare" => Some(icons::SI_FIGSHARE),
@@ -86,6 +90,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "gsma" => Some(icons::SI_GSMA),
         "farcaster" => Some(icons::SI_FARCASTER),
         "betterauth" => Some(icons::SI_BETTERAUTH),
+        "setuptools" => Some(icons::SI_SETUPTOOLS),
         "wheniwork" => Some(icons::SI_WHENIWORK),
         "wasmer" => Some(icons::SI_WASMER),
         "acode" => Some(icons::SI_ACODE),
@@ -198,11 +203,6 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "lazarus" => Some(icons::SI_LAZARUS),
         "headspace" => Some(icons::SI_HEADSPACE),
         "sanic" => Some(icons::SI_SANIC),
-        "pagespeedinsights" => Some(icons::SI_PAGESPEEDINSIGHTS),
-        "irobot" => Some(icons::SI_IROBOT),
-        "jirasoftware" => Some(icons::SI_JIRASOFTWARE),
-        "owncloud" => Some(icons::SI_OWNCLOUD),
-        "calibreweb" => Some(icons::SI_CALIBREWEB),
         _ => None,
     }
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_DOVECOT", icons::SI_DOVECOT)?;
+    m.add("SI_TYPESCRIPT", icons::SI_TYPESCRIPT)?;
     m.add("SI_THREADLESS", icons::SI_THREADLESS)?;
     m.add("SI_EXPENSIFY", icons::SI_EXPENSIFY)?;
     m.add("SI_NUCLEO", icons::SI_NUCLEO)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NVM", icons::SI_NVM)?;
     m.add("SI_VELOG", icons::SI_VELOG)?;
     m.add("SI_QIWI", icons::SI_QIWI)?;
-    m.add("SI_SQUAREENIX", icons::SI_SQUAREENIX)?;
-    m.add("SI_BACKBLAZE", icons::SI_BACKBLAZE)?;
     Ok(())
 }

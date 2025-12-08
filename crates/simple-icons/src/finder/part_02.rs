@@ -92,6 +92,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "skypack" => Some(icons::SI_SKYPACK),
         "kickstarter" => Some(icons::SI_KICKSTARTER),
         "algorand" => Some(icons::SI_ALGORAND),
+        "mangacollec" => Some(icons::SI_MANGACOLLEC),
         "zoho" => Some(icons::SI_ZOHO),
         "antena3" => Some(icons::SI_ANTENA3),
         "applearcade" => Some(icons::SI_APPLEARCADE),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "pandas" => Some(icons::SI_PANDAS),
         "youtube" => Some(icons::SI_YOUTUBE),
         "creativecommons" => Some(icons::SI_CREATIVECOMMONS),
-        "sailsdotjs" => Some(icons::SI_SAILSDOTJS),
         _ => None,
     }
 }

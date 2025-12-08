@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SKODA", icons::SI_SKODA)?;
+    m.add("SI_RUBYGEMS", icons::SI_RUBYGEMS)?;
+    m.add("SI_NBA", icons::SI_NBA)?;
+    m.add("SI_HILTON", icons::SI_HILTON)?;
+    m.add("SI_LIBRARYTHING", icons::SI_LIBRARYTHING)?;
+    m.add("SI_POLARS", icons::SI_POLARS)?;
     m.add("SI_LICHESS", icons::SI_LICHESS)?;
     m.add("SI_ELAVON", icons::SI_ELAVON)?;
     m.add("SI_ZCASH", icons::SI_ZCASH)?;
@@ -200,11 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TEESPRING", icons::SI_TEESPRING)?;
     m.add("SI_GNUICECAT", icons::SI_GNUICECAT)?;
     m.add("SI_ITCHDOTIO", icons::SI_ITCHDOTIO)?;
-    m.add("SI_BOOSTY", icons::SI_BOOSTY)?;
-    m.add("SI_LOOPBACK", icons::SI_LOOPBACK)?;
-    m.add("SI_W3SCHOOLS", icons::SI_W3SCHOOLS)?;
-    m.add("SI_DRAUGIEMDOTLV", icons::SI_DRAUGIEMDOTLV)?;
-    m.add("SI_PICSART", icons::SI_PICSART)?;
-    m.add("SI_SOURCEENGINE", icons::SI_SOURCEENGINE)?;
     Ok(())
 }

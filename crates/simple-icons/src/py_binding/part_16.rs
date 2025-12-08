@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_BOOSTY", icons::SI_BOOSTY)?;
+    m.add("SI_LOOPBACK", icons::SI_LOOPBACK)?;
+    m.add("SI_W3SCHOOLS", icons::SI_W3SCHOOLS)?;
+    m.add("SI_DRAUGIEMDOTLV", icons::SI_DRAUGIEMDOTLV)?;
+    m.add("SI_PICSART", icons::SI_PICSART)?;
+    m.add("SI_SOURCEENGINE", icons::SI_SOURCEENGINE)?;
     m.add("SI_GEOCACHING", icons::SI_GEOCACHING)?;
     m.add("SI_VITESS", icons::SI_VITESS)?;
     m.add("SI_ROADMAPDOTSH", icons::SI_ROADMAPDOTSH)?;
