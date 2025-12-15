@@ -35,7 +35,7 @@ jobs:
           persist-credentials: true # needed for git push
 
       - name: Setup nushell
-        uses: hustcer/setup-nu@3a97c8160c2bb5af321a03336e7addc28f94444e # v3.21
+        uses: hustcer/setup-nu@920172d92eb04671776f3ba69d605d3b09351c30 # v3.22
         with:
           version: ${{ vars.NU_SHELL_VERSION || '*' }}
 

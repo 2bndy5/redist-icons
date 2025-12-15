@@ -42,11 +42,11 @@ jobs:
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
-      - uses: astral-sh/setup-uv@ed21f2f24f8dd64503750218de024bcf64c7250a # v7.1.5
+      - uses: astral-sh/setup-uv@681c641aba71e4a1c380be3ab5e12ad51f415867 # v7.1.6
         with:
           enable-cache: true # zizmor: ignore[cache-poisoning]
       - name: Cache cargo artifacts
-        uses: actions/cache@v4 # zizmor: ignore[cache-poisoning]
+        uses: actions/cache@v5 # zizmor: ignore[cache-poisoning]
         with:
           path: "~/.cargo"
           key: cargo-py-test-${{ hashFiles('Cargo.lock') }}
@@ -94,7 +94,7 @@ jobs:
           manylinux: auto
       - name: Upload wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: wheels-${{ matrix.pkg }}-linux-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
@@ -134,7 +134,7 @@ jobs:
           manylinux: musllinux_1_2
       - name: Upload wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: wheels-${{ matrix.pkg }}-musllinux-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
@@ -170,7 +170,7 @@ jobs:
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }} # zizmor: ignore[cache-poisoning]
       - name: Upload wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: wheels-${{ matrix.pkg }}-windows-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
@@ -205,7 +205,7 @@ jobs:
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }} # zizmor: ignore[cache-poisoning]
       - name: Upload wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: wheels-${{ matrix.pkg }}-macos-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
@@ -229,7 +229,7 @@ jobs:
           args: --out dist
       - name: Upload sdist
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: wheels-${{ matrix.pkg }}-sdist
           path: crates/${{ matrix.pkg }}/dist
@@ -247,7 +247,7 @@ jobs:
       matrix:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
     steps:
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           pattern: wheels-${{ matrix.pkg }}-*
           merge-multiple: true
@@ -265,7 +265,7 @@ jobs:
       matrix:
         pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
     steps:
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           pattern: wheels-${{ matrix.pkg }}-*
           merge-multiple: true

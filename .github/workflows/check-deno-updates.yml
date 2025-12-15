@@ -23,7 +23,7 @@ jobs:
       - run: rustup update --no-self-update
 
       - name: Setup nushell
-        uses: hustcer/setup-nu@3a97c8160c2bb5af321a03336e7addc28f94444e # v3.21
+        uses: hustcer/setup-nu@920172d92eb04671776f3ba69d605d3b09351c30 # v3.22
         with:
           version: ${{ vars.NU_SHELL_VERSION || '*' }}
 
@@ -33,12 +33,12 @@ jobs:
       - name: Install Deno deps
         run: deno install
 
-      - uses: astral-sh/setup-uv@ed21f2f24f8dd64503750218de024bcf64c7250a # v7.1.5
+      - uses: astral-sh/setup-uv@681c641aba71e4a1c380be3ab5e12ad51f415867 # v7.1.6
       - name: Install Python deps
         run: uv sync
 
       - name: Cache pre-commit environments
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: "~/.cache/pre-commit"
           key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
