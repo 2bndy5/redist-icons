@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_AFRAME", icons::SI_AFRAME)?;
     m.add("SI_ROBLOX", icons::SI_ROBLOX)?;
     m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
     m.add("SI_NORCO", icons::SI_NORCO)?;
@@ -191,6 +192,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TENSORFLOW", icons::SI_TENSORFLOW)?;
     m.add("SI_POLYMERPROJECT", icons::SI_POLYMERPROJECT)?;
     m.add("SI_ARSTECHNICA", icons::SI_ARSTECHNICA)?;
+    m.add("SI_BIOCONDUCTOR", icons::SI_BIOCONDUCTOR)?;
     m.add("SI_FINECO", icons::SI_FINECO)?;
     m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
     m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TERATAIL", icons::SI_TERATAIL)?;
     m.add("SI_NETIM", icons::SI_NETIM)?;
     m.add("SI_LAZARUS", icons::SI_LAZARUS)?;
-    m.add("SI_HEADSPACE", icons::SI_HEADSPACE)?;
-    m.add("SI_SANIC", icons::SI_SANIC)?;
     Ok(())
 }
