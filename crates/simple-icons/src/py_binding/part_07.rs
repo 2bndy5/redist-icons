@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MAAS", icons::SI_MAAS)?;
     m.add("SI_OCTANERENDER", icons::SI_OCTANERENDER)?;
     m.add("SI_PROCESSWIRE", icons::SI_PROCESSWIRE)?;
     m.add("SI_ANYDESK", icons::SI_ANYDESK)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
     m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
     m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
-    m.add("SI_RENREN", icons::SI_RENREN)?;
     Ok(())
 }

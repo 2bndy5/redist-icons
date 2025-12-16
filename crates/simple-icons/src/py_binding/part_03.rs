@@ -198,10 +198,10 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JSS", icons::SI_JSS)?;
     m.add("SI_NIKON", icons::SI_NIKON)?;
     m.add("SI_LABVIEW", icons::SI_LABVIEW)?;
+    m.add("SI_PLANE", icons::SI_PLANE)?;
     m.add("SI_SENTRY", icons::SI_SENTRY)?;
     m.add("SI_METAGER", icons::SI_METAGER)?;
     m.add("SI_VAPOR", icons::SI_VAPOR)?;
     m.add("SI_SMARTTHINGS", icons::SI_SMARTTHINGS)?;
-    m.add("SI_TWENTY", icons::SI_TWENTY)?;
     Ok(())
 }

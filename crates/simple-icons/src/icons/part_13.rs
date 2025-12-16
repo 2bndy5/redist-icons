@@ -1,6 +1,28 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// kia
+pub const SI_KIA: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Kia</title><path d="M13.923 14.175c0 .046.015.072.041.072a.123.123 0 0 0 .058-.024l7.48-4.854a.72.72 0 0 1 .432-.13h1.644c.252 0 .422.168.422.42v3.139c0 .38-.084.6-.42.801l-1.994 1.2a.137.137 0 0 1-.067.024c-.024 0-.048-.019-.048-.088v-3.663c0-.043-.012-.071-.041-.071a.113.113 0 0 0-.058.024l-5.466 3.551a.733.733 0 0 1-.42.127h-3.624c-.254 0-.422-.168-.422-.422V9.757c0-.033-.015-.064-.044-.064a.118.118 0 0 0-.057.024L7.732 11.88c-.036.024-.046.041-.046.058 0 .014.008.029.032.055l2.577 2.575c.034.034.058.06.058.089 0 .024-.039.043-.084.043H7.94c-.183 0-.324-.026-.423-.125l-1.562-1.56a.067.067 0 0 0-.048-.024.103.103 0 0 0-.048.015l-2.61 1.57a.72.72 0 0 1-.423.122H.425C.168 14.7 0 14.53 0 14.279v-3.08c0-.38.084-.6.422-.8L2.43 9.192a.103.103 0 0 1 .052-.016c.032 0 .048.03.048.1V13.4c0 .043.01.063.041.063a.144.144 0 0 0 .06-.024L9.407 9.36a.733.733 0 0 1 .446-.124h3.648c.252 0 .422.168.422.42l-.002 4.518z"/></svg>"#,
+    slug: "kia",
+    title: "Kia",
+    hex: "05141F",
+    source: "https://www.kia.com",
+    guidelines: None,
+    license: None,
+};
+
+/// visualparadigm
+pub const SI_VISUALPARADIGM: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Visual Paradigm</title><path d="M 1.92 10.08 C 1.92 10.117 11.916 20.132 11.973 20.15 C 11.987 20.154 15.804 16.353 15.804 16.353 C 15.804 16.353 8.138 8.667 8.138 8.642 C 8.138 8.609 11.944 4.803 11.944 4.803 C 11.944 4.803 15.787 8.661 15.787 8.686 C 15.787 8.703 12.98 11.53 12.98 11.53 L 16.804 15.354 L 22.079 10.079 C 22.079 10.079 13.674 1.674 11.981 0 M 3.787 13.036 C 3.764 13.036 2.366 14.424 2.366 14.424 C 2.366 14.424 11.96 24 11.987 24 C 12.013 24 21.601 14.423 21.601 14.423 C 21.601 14.423 20.2 13.036 20.178 13.036 C 20.158 13.036 11.982 21.193 11.982 21.193 C 11.982 21.193 3.805 13.036 3.787 13.036 Z"/></svg>"#,
+    slug: "visualparadigm",
+    title: "Visual Paradigm",
+    hex: "CC3333",
+    source: "https://forums.visual-paradigm.com/c/general-questions-discussions/9",
+    guidelines: None,
+    license: None,
+};
+
 /// kibana
 pub const SI_KIBANA: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Kibana</title><path d="M2.625 0v21.591L21.375 0zm10.864 12.47L3.477 24h17.522a18.755 18.755 0 0 0-7.51-11.53z"/></svg>"#,
@@ -2181,28 +2203,6 @@ pub const SI_CBC: Icon = Icon {
     title: "CBC",
     hex: "E60505",
     source: "https://www.cbc.ca",
-    guidelines: None,
-    license: None,
-};
-
-/// tui
-pub const SI_TUI: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TUI</title><path d="M24 4.5167a2.117 2.117 0 01-2.117 2.117 2.117 2.117 0 01-2.117-2.117 2.117 2.117 0 012.117-2.117A2.117 2.117 0 0124 4.5168zM1.1397 7.7475h5.7055c.5642 0 .9806.1772 1.1465.9716.185.8836.1129 1.4986-.8858 1.5686l-1.7909.132c1.318 8.3303 9.0277 11.0453 13.2221 2.073.6952-1.485.922-1.7548 1.6826-1.5663 1.0314.2561 1.1724.7899.677 2.2828-3.6234 11.0566-15.8186 12.166-18.211-2.6044l-1.4546.105C.0463 10.7942 0 9.7956 0 9.2404c0-1.0992.4074-1.493 1.1397-1.493z"/></svg>"#,
-    slug: "tui",
-    title: "TUI",
-    hex: "D40E14",
-    source: "https://www.design.tui/brand/logos",
-    guidelines: Some("https://www.design.tui/brand"),
-    license: None,
-};
-
-/// facebookgaming
-pub const SI_FACEBOOKGAMING: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook Gaming</title><path d="M0 0v24h15.67v-7.35H7.35v-9.3H24V0zm8.33 15.68h8.32V24H24V8.32H8.33Z"/></svg>"#,
-    slug: "facebookgaming",
-    title: "Facebook Gaming",
-    hex: "005FED",
-    source: "https://www.facebook.com/fbgaminghome/",
     guidelines: None,
     license: None,
 };

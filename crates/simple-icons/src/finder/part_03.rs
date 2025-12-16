@@ -198,11 +198,11 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "jss" => Some(icons::SI_JSS),
         "nikon" => Some(icons::SI_NIKON),
         "labview" => Some(icons::SI_LABVIEW),
+        "plane" => Some(icons::SI_PLANE),
         "sentry" => Some(icons::SI_SENTRY),
         "metager" => Some(icons::SI_METAGER),
         "vapor" => Some(icons::SI_VAPOR),
         "smartthings" => Some(icons::SI_SMARTTHINGS),
-        "twenty" => Some(icons::SI_TWENTY),
         _ => None,
     }
 }

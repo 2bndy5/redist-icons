@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GNUICECAT", icons::SI_GNUICECAT)?;
+    m.add("SI_ITCHDOTIO", icons::SI_ITCHDOTIO)?;
     m.add("SI_BOOSTY", icons::SI_BOOSTY)?;
     m.add("SI_LOOPBACK", icons::SI_LOOPBACK)?;
     m.add("SI_W3SCHOOLS", icons::SI_W3SCHOOLS)?;
