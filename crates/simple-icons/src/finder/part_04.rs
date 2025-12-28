@@ -164,6 +164,7 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "tistory" => Some(icons::SI_TISTORY),
         "mikrotik" => Some(icons::SI_MIKROTIK),
         "juce" => Some(icons::SI_JUCE),
+        "googlejules" => Some(icons::SI_GOOGLEJULES),
         "axisbank" => Some(icons::SI_AXISBANK),
         "coffeescript" => Some(icons::SI_COFFEESCRIPT),
         "cloudfoundry" => Some(icons::SI_CLOUDFOUNDRY),
@@ -176,6 +177,7 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "appwrite" => Some(icons::SI_APPWRITE),
         "tga" => Some(icons::SI_TGA),
         "laragon" => Some(icons::SI_LARAGON),
+        "just" => Some(icons::SI_JUST),
         "bentley" => Some(icons::SI_BENTLEY),
         "netflix" => Some(icons::SI_NETFLIX),
         "tower" => Some(icons::SI_TOWER),
@@ -201,8 +203,6 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "ingress" => Some(icons::SI_INGRESS),
         "r3" => Some(icons::SI_R3),
         "okcupid" => Some(icons::SI_OKCUPID),
-        "nvm" => Some(icons::SI_NVM),
-        "velog" => Some(icons::SI_VELOG),
         _ => None,
     }
 }

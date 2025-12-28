@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PERSISTENT", icons::SI_PERSISTENT)?;
+    m.add("SI_KAGI", icons::SI_KAGI)?;
+    m.add("SI_CORONARENDERER", icons::SI_CORONARENDERER)?;
+    m.add("SI_CBC", icons::SI_CBC)?;
     m.add("SI_TUI", icons::SI_TUI)?;
     m.add("SI_FACEBOOKGAMING", icons::SI_FACEBOOKGAMING)?;
     m.add("SI_ASCIIDOCTOR", icons::SI_ASCIIDOCTOR)?;
@@ -199,9 +203,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_POSTCSS", icons::SI_POSTCSS)?;
     m.add("SI_ELSEVIER", icons::SI_ELSEVIER)?;
     m.add("SI_JSR", icons::SI_JSR)?;
-    m.add("SI_ZOLA", icons::SI_ZOLA)?;
-    m.add("SI_YOUTUBESTUDIO", icons::SI_YOUTUBESTUDIO)?;
-    m.add("SI_GATLING", icons::SI_GATLING)?;
-    m.add("SI_MATERIALDESIGN", icons::SI_MATERIALDESIGN)?;
     Ok(())
 }

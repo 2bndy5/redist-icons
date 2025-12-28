@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
+    m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
+    m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
     m.add("SI_RENREN", icons::SI_RENREN)?;
     m.add("SI_NEXTRA", icons::SI_NEXTRA)?;
     m.add("SI_PEXELS", icons::SI_PEXELS)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
     m.add("SI_NICONICO", icons::SI_NICONICO)?;
     m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
-    m.add("SI_BSD", icons::SI_BSD)?;
-    m.add("SI_CONVENTIONALCOMMITS", icons::SI_CONVENTIONALCOMMITS)?;
-    m.add("SI_PIXLR", icons::SI_PIXLR)?;
     Ok(())
 }

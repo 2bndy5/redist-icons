@@ -167,6 +167,7 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TISTORY", icons::SI_TISTORY)?;
     m.add("SI_MIKROTIK", icons::SI_MIKROTIK)?;
     m.add("SI_JUCE", icons::SI_JUCE)?;
+    m.add("SI_GOOGLEJULES", icons::SI_GOOGLEJULES)?;
     m.add("SI_AXISBANK", icons::SI_AXISBANK)?;
     m.add("SI_COFFEESCRIPT", icons::SI_COFFEESCRIPT)?;
     m.add("SI_CLOUDFOUNDRY", icons::SI_CLOUDFOUNDRY)?;
@@ -179,6 +180,7 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APPWRITE", icons::SI_APPWRITE)?;
     m.add("SI_TGA", icons::SI_TGA)?;
     m.add("SI_LARAGON", icons::SI_LARAGON)?;
+    m.add("SI_JUST", icons::SI_JUST)?;
     m.add("SI_BENTLEY", icons::SI_BENTLEY)?;
     m.add("SI_NETFLIX", icons::SI_NETFLIX)?;
     m.add("SI_TOWER", icons::SI_TOWER)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_INGRESS", icons::SI_INGRESS)?;
     m.add("SI_R3", icons::SI_R3)?;
     m.add("SI_OKCUPID", icons::SI_OKCUPID)?;
-    m.add("SI_NVM", icons::SI_NVM)?;
-    m.add("SI_VELOG", icons::SI_VELOG)?;
     Ok(())
 }

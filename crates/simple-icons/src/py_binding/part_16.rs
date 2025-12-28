@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_INTEL", icons::SI_INTEL)?;
+    m.add("SI_UIKIT", icons::SI_UIKIT)?;
+    m.add("SI_GMX", icons::SI_GMX)?;
+    m.add("SI_CACHET", icons::SI_CACHET)?;
+    m.add("SI_CISCO", icons::SI_CISCO)?;
+    m.add("SI_TEESPRING", icons::SI_TEESPRING)?;
     m.add("SI_GNUICECAT", icons::SI_GNUICECAT)?;
     m.add("SI_ITCHDOTIO", icons::SI_ITCHDOTIO)?;
     m.add("SI_BOOSTY", icons::SI_BOOSTY)?;
