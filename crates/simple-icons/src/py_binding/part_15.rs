@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ZOLA", icons::SI_ZOLA)?;
+    m.add("SI_YOUTUBESTUDIO", icons::SI_YOUTUBESTUDIO)?;
+    m.add("SI_GATLING", icons::SI_GATLING)?;
+    m.add("SI_MATERIALDESIGN", icons::SI_MATERIALDESIGN)?;
     m.add("SI_SAILFISHOS", icons::SI_SAILFISHOS)?;
     m.add("SI_ESLGAMING", icons::SI_ESLGAMING)?;
     m.add("SI_SKODA", icons::SI_SKODA)?;
@@ -82,6 +86,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MARRIOTT", icons::SI_MARRIOTT)?;
     m.add("SI_ANSIBLE", icons::SI_ANSIBLE)?;
     m.add("SI_SYNCTHING", icons::SI_SYNCTHING)?;
+    m.add("SI_FILLOUT", icons::SI_FILLOUT)?;
     m.add("SI_WAKATIME", icons::SI_WAKATIME)?;
     m.add("SI_APPLETV", icons::SI_APPLETV)?;
     m.add("SI_HP", icons::SI_HP)?;
@@ -171,6 +176,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GREENHOUSE", icons::SI_GREENHOUSE)?;
     m.add("SI_MAMBAUI", icons::SI_MAMBAUI)?;
     m.add("SI_VECTARY", icons::SI_VECTARY)?;
+    m.add("SI_POMERIUM", icons::SI_POMERIUM)?;
     m.add("SI_ODOO", icons::SI_ODOO)?;
     m.add("SI_REFINEDGITHUB", icons::SI_REFINEDGITHUB)?;
     m.add("SI_GIN", icons::SI_GIN)?;
@@ -200,11 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PLAYSTATION2", icons::SI_PLAYSTATION2)?;
     m.add("SI_HOSTINGER", icons::SI_HOSTINGER)?;
     m.add("SI_GOOGLE", icons::SI_GOOGLE)?;
-    m.add("SI_INTEL", icons::SI_INTEL)?;
-    m.add("SI_UIKIT", icons::SI_UIKIT)?;
-    m.add("SI_GMX", icons::SI_GMX)?;
-    m.add("SI_CACHET", icons::SI_CACHET)?;
-    m.add("SI_CISCO", icons::SI_CISCO)?;
-    m.add("SI_TEESPRING", icons::SI_TEESPRING)?;
     Ok(())
 }

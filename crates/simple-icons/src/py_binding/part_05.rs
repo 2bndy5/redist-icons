@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NVM", icons::SI_NVM)?;
+    m.add("SI_VELOG", icons::SI_VELOG)?;
     m.add("SI_QIWI", icons::SI_QIWI)?;
     m.add("SI_SQUAREENIX", icons::SI_SQUAREENIX)?;
     m.add("SI_BACKBLAZE", icons::SI_BACKBLAZE)?;
@@ -18,6 +20,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_KANIKO", icons::SI_KANIKO)?;
     m.add("SI_DIGG", icons::SI_DIGG)?;
     m.add("SI_SOGOU", icons::SI_SOGOU)?;
+    m.add("SI_HACKMD", icons::SI_HACKMD)?;
     m.add("SI_UBEREATS", icons::SI_UBEREATS)?;
     m.add("SI_CRITICALROLE", icons::SI_CRITICALROLE)?;
     m.add("SI_RAVELRY", icons::SI_RAVELRY)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_YOUTUBETV", icons::SI_YOUTUBETV)?;
     m.add("SI_DOUBANREAD", icons::SI_DOUBANREAD)?;
     m.add("SI_ALIBABACLOUD", icons::SI_ALIBABACLOUD)?;
-    m.add("SI_NEAR", icons::SI_NEAR)?;
-    m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
-    m.add("SI_ANALOGUE", icons::SI_ANALOGUE)?;
     Ok(())
 }

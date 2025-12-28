@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
     match slug {
+        "zola" => Some(icons::SI_ZOLA),
+        "youtubestudio" => Some(icons::SI_YOUTUBESTUDIO),
+        "gatling" => Some(icons::SI_GATLING),
+        "materialdesign" => Some(icons::SI_MATERIALDESIGN),
         "sailfishos" => Some(icons::SI_SAILFISHOS),
         "eslgaming" => Some(icons::SI_ESLGAMING),
         "skoda" => Some(icons::SI_SKODA),
@@ -79,6 +83,7 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "marriott" => Some(icons::SI_MARRIOTT),
         "ansible" => Some(icons::SI_ANSIBLE),
         "syncthing" => Some(icons::SI_SYNCTHING),
+        "fillout" => Some(icons::SI_FILLOUT),
         "wakatime" => Some(icons::SI_WAKATIME),
         "appletv" => Some(icons::SI_APPLETV),
         "hp" => Some(icons::SI_HP),
@@ -168,6 +173,7 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "greenhouse" => Some(icons::SI_GREENHOUSE),
         "mambaui" => Some(icons::SI_MAMBAUI),
         "vectary" => Some(icons::SI_VECTARY),
+        "pomerium" => Some(icons::SI_POMERIUM),
         "odoo" => Some(icons::SI_ODOO),
         "refinedgithub" => Some(icons::SI_REFINEDGITHUB),
         "gin" => Some(icons::SI_GIN),
@@ -197,12 +203,6 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "playstation2" => Some(icons::SI_PLAYSTATION2),
         "hostinger" => Some(icons::SI_HOSTINGER),
         "google" => Some(icons::SI_GOOGLE),
-        "intel" => Some(icons::SI_INTEL),
-        "uikit" => Some(icons::SI_UIKIT),
-        "gmx" => Some(icons::SI_GMX),
-        "cachet" => Some(icons::SI_CACHET),
-        "cisco" => Some(icons::SI_CISCO),
-        "teespring" => Some(icons::SI_TEESPRING),
         _ => None,
     }
 }
