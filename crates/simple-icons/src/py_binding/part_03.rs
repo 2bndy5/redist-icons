@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
     m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     m.add("SI_ROLLBAR", icons::SI_ROLLBAR)?;
     m.add("SI_RARIBLE", icons::SI_RARIBLE)?;
@@ -30,6 +31,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BAMBOO", icons::SI_BAMBOO)?;
     m.add("SI_WAPPALYZER", icons::SI_WAPPALYZER)?;
     m.add("SI_MODRINTH", icons::SI_MODRINTH)?;
+    m.add("SI_BITSY", icons::SI_BITSY)?;
     m.add("SI_XENDIT", icons::SI_XENDIT)?;
     m.add("SI_EMIRATES", icons::SI_EMIRATES)?;
     m.add("SI_UNOCSS", icons::SI_UNOCSS)?;
@@ -153,6 +155,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SASS", icons::SI_SASS)?;
     m.add("SI_PULUMI", icons::SI_PULUMI)?;
     m.add("SI_500PX", icons::SI_500PX)?;
+    m.add("SI_WEBAWESOME", icons::SI_WEBAWESOME)?;
     m.add("SI_POLY", icons::SI_POLY)?;
     m.add("SI_APACHEPULSAR", icons::SI_APACHEPULSAR)?;
     m.add("SI_SUBVERSION", icons::SI_SUBVERSION)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LABVIEW", icons::SI_LABVIEW)?;
     m.add("SI_PLANE", icons::SI_PLANE)?;
     m.add("SI_SENTRY", icons::SI_SENTRY)?;
-    m.add("SI_METAGER", icons::SI_METAGER)?;
-    m.add("SI_VAPOR", icons::SI_VAPOR)?;
-    m.add("SI_SMARTTHINGS", icons::SI_SMARTTHINGS)?;
     Ok(())
 }

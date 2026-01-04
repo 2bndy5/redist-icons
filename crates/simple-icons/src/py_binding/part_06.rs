@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_YOUTUBETV", icons::SI_YOUTUBETV)?;
+    m.add("SI_DOUBANREAD", icons::SI_DOUBANREAD)?;
+    m.add("SI_ALIBABACLOUD", icons::SI_ALIBABACLOUD)?;
     m.add("SI_NEAR", icons::SI_NEAR)?;
     m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
     m.add("SI_ANALOGUE", icons::SI_ANALOGUE)?;
@@ -209,8 +212,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HELPSCOUT", icons::SI_HELPSCOUT)?;
     m.add("SI_PERCY", icons::SI_PERCY)?;
     m.add("SI_HEARTH", icons::SI_HEARTH)?;
-    m.add("SI_EAC", icons::SI_EAC)?;
-    m.add("SI_FMOD", icons::SI_FMOD)?;
-    m.add("SI_DINERSCLUB", icons::SI_DINERSCLUB)?;
     Ok(())
 }

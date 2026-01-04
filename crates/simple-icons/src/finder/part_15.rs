@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
     match slug {
+        "planetscale" => Some(icons::SI_PLANETSCALE),
+        "postcss" => Some(icons::SI_POSTCSS),
+        "elsevier" => Some(icons::SI_ELSEVIER),
+        "jsr" => Some(icons::SI_JSR),
         "zola" => Some(icons::SI_ZOLA),
         "youtubestudio" => Some(icons::SI_YOUTUBESTUDIO),
         "gatling" => Some(icons::SI_GATLING),
@@ -60,6 +64,7 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "apacheparquet" => Some(icons::SI_APACHEPARQUET),
         "bluesky" => Some(icons::SI_BLUESKY),
         "steamworks" => Some(icons::SI_STEAMWORKS),
+        "modelscope" => Some(icons::SI_MODELSCOPE),
         "lada" => Some(icons::SI_LADA),
         "bosch" => Some(icons::SI_BOSCH),
         "envato" => Some(icons::SI_ENVATO),
@@ -198,11 +203,6 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "springboot" => Some(icons::SI_SPRINGBOOT),
         "rich" => Some(icons::SI_RICH),
         "statuspal" => Some(icons::SI_STATUSPAL),
-        "toggl" => Some(icons::SI_TOGGL),
-        "blazemeter" => Some(icons::SI_BLAZEMETER),
-        "playstation2" => Some(icons::SI_PLAYSTATION2),
-        "hostinger" => Some(icons::SI_HOSTINGER),
-        "google" => Some(icons::SI_GOOGLE),
         _ => None,
     }
 }

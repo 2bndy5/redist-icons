@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "creativecommons" => Some(icons::SI_CREATIVECOMMONS),
         "sailsdotjs" => Some(icons::SI_SAILSDOTJS),
         "rollbar" => Some(icons::SI_ROLLBAR),
         "rarible" => Some(icons::SI_RARIBLE),
@@ -30,6 +31,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "bamboo" => Some(icons::SI_BAMBOO),
         "wappalyzer" => Some(icons::SI_WAPPALYZER),
         "modrinth" => Some(icons::SI_MODRINTH),
+        "bitsy" => Some(icons::SI_BITSY),
         "xendit" => Some(icons::SI_XENDIT),
         "emirates" => Some(icons::SI_EMIRATES),
         "unocss" => Some(icons::SI_UNOCSS),
@@ -153,6 +155,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "sass" => Some(icons::SI_SASS),
         "pulumi" => Some(icons::SI_PULUMI),
         "500px" => Some(icons::SI_500PX),
+        "webawesome" => Some(icons::SI_WEBAWESOME),
         "poly" => Some(icons::SI_POLY),
         "apachepulsar" => Some(icons::SI_APACHEPULSAR),
         "subversion" => Some(icons::SI_SUBVERSION),
@@ -200,9 +203,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "labview" => Some(icons::SI_LABVIEW),
         "plane" => Some(icons::SI_PLANE),
         "sentry" => Some(icons::SI_SENTRY),
-        "metager" => Some(icons::SI_METAGER),
-        "vapor" => Some(icons::SI_VAPOR),
-        "smartthings" => Some(icons::SI_SMARTTHINGS),
         _ => None,
     }
 }
