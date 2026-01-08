@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_METAGER", icons::SI_METAGER)?;
+    m.add("SI_VAPOR", icons::SI_VAPOR)?;
+    m.add("SI_SMARTTHINGS", icons::SI_SMARTTHINGS)?;
     m.add("SI_TWENTY", icons::SI_TWENTY)?;
     m.add("SI_DOVECOT", icons::SI_DOVECOT)?;
     m.add("SI_TYPESCRIPT", icons::SI_TYPESCRIPT)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ROCKSTARGAMES", icons::SI_ROCKSTARGAMES)?;
     m.add("SI_BACKBONEDOTJS", icons::SI_BACKBONEDOTJS)?;
     m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
-    m.add("SI_INGRESS", icons::SI_INGRESS)?;
-    m.add("SI_R3", icons::SI_R3)?;
-    m.add("SI_OKCUPID", icons::SI_OKCUPID)?;
     Ok(())
 }

@@ -80,6 +80,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SEMANTICSCHOLAR", icons::SI_SEMANTICSCHOLAR)?;
     m.add("SI_G2G", icons::SI_G2G)?;
     m.add("SI_GRAPHQL", icons::SI_GRAPHQL)?;
+    m.add("SI_GRAPHITE_EDITOR", icons::SI_GRAPHITE_EDITOR)?;
     m.add("SI_GOOGLEFONTS", icons::SI_GOOGLEFONTS)?;
     m.add("SI_POSIT", icons::SI_POSIT)?;
     m.add("SI_MENDELEY", icons::SI_MENDELEY)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_KICAD", icons::SI_KICAD)?;
     m.add("SI_PANDAS", icons::SI_PANDAS)?;
     m.add("SI_YOUTUBE", icons::SI_YOUTUBE)?;
-    m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
     Ok(())
 }

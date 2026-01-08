@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WASMCLOUD", icons::SI_WASMCLOUD)?;
+    m.add(
+        "SI_INTERACTIONDESIGNFOUNDATION",
+        icons::SI_INTERACTIONDESIGNFOUNDATION,
+    )?;
+    m.add("SI_WIKIDOTGG", icons::SI_WIKIDOTGG)?;
     m.add("SI_EVENTSTORE", icons::SI_EVENTSTORE)?;
     m.add("SI_SINGLESTORE", icons::SI_SINGLESTORE)?;
     m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
@@ -200,8 +206,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GARUDALINUX", icons::SI_GARUDALINUX)?;
     m.add("SI_SLIDESHARE", icons::SI_SLIDESHARE)?;
     m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
-    m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
-    m.add("SI_NICONICO", icons::SI_NICONICO)?;
-    m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
     Ok(())
 }

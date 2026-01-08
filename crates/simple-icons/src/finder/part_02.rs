@@ -80,6 +80,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "semanticscholar" => Some(icons::SI_SEMANTICSCHOLAR),
         "g2g" => Some(icons::SI_G2G),
         "graphql" => Some(icons::SI_GRAPHQL),
+        "graphite_editor" => Some(icons::SI_GRAPHITE_EDITOR),
         "googlefonts" => Some(icons::SI_GOOGLEFONTS),
         "posit" => Some(icons::SI_POSIT),
         "mendeley" => Some(icons::SI_MENDELEY),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "kicad" => Some(icons::SI_KICAD),
         "pandas" => Some(icons::SI_PANDAS),
         "youtube" => Some(icons::SI_YOUTUBE),
-        "creativecommons" => Some(icons::SI_CREATIVECOMMONS),
         _ => None,
     }
 }
