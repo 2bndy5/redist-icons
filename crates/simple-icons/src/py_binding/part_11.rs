@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_FERRETDB", icons::SI_FERRETDB)?;
+    m.add("SI_STACKSHARE", icons::SI_STACKSHARE)?;
+    m.add("SI_FIREFOXBROWSER", icons::SI_FIREFOXBROWSER)?;
+    m.add("SI_LARAVELNOVA", icons::SI_LARAVELNOVA)?;
+    m.add("SI_SVGDOTJS", icons::SI_SVGDOTJS)?;
     m.add("SI_NZXT", icons::SI_NZXT)?;
     m.add("SI_APPSTORE", icons::SI_APPSTORE)?;
     m.add("SI_THEREGISTER", icons::SI_THEREGISTER)?;
@@ -201,10 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
     m.add("SI_SFML", icons::SI_SFML)?;
     m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
-    m.add("SI_GOJEK", icons::SI_GOJEK)?;
-    m.add("SI_KASHFLOW", icons::SI_KASHFLOW)?;
-    m.add("SI_INTERCOM", icons::SI_INTERCOM)?;
-    m.add("SI_PORSCHE", icons::SI_PORSCHE)?;
-    m.add("SI_REDIS", icons::SI_REDIS)?;
     Ok(())
 }

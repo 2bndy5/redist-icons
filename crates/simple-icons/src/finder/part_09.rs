@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
     match slug {
+        "vespa" => Some(icons::SI_VESPA),
+        "garudalinux" => Some(icons::SI_GARUDALINUX),
+        "slideshare" => Some(icons::SI_SLIDESHARE),
+        "magasinsu" => Some(icons::SI_MAGASINSU),
         "1dot1dot1dot1" => Some(icons::SI_1DOT1DOT1DOT1),
         "niconico" => Some(icons::SI_NICONICO),
         "paperswithcode" => Some(icons::SI_PAPERSWITHCODE),
@@ -86,6 +90,7 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "gnome" => Some(icons::SI_GNOME),
         "esotericsoftware" => Some(icons::SI_ESOTERICSOFTWARE),
         "apachesolr" => Some(icons::SI_APACHESOLR),
+        "flower" => Some(icons::SI_FLOWER),
         "commitlint" => Some(icons::SI_COMMITLINT),
         "adp" => Some(icons::SI_ADP),
         "dlna" => Some(icons::SI_DLNA),
@@ -198,11 +203,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "metro" => Some(icons::SI_METRO),
         "webcomponentsdotorg" => Some(icons::SI_WEBCOMPONENTSDOTORG),
         "nette" => Some(icons::SI_NETTE),
-        "fluentd" => Some(icons::SI_FLUENTD),
-        "metrodeparis" => Some(icons::SI_METRODEPARIS),
-        "namebase" => Some(icons::SI_NAMEBASE),
-        "overcast" => Some(icons::SI_OVERCAST),
-        "turkishairlines" => Some(icons::SI_TURKISHAIRLINES),
         _ => None,
     }
 }

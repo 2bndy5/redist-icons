@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
+    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
+    m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
+    m.add("SI_OVERCAST", icons::SI_OVERCAST)?;
+    m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
     m.add("SI_COURSERA", icons::SI_COURSERA)?;
     m.add("SI_CLARIFAI", icons::SI_CLARIFAI)?;
     m.add("SI_G2A", icons::SI_G2A)?;
@@ -204,10 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FINECO", icons::SI_FINECO)?;
     m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
     m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
-    m.add("SI_FERRETDB", icons::SI_FERRETDB)?;
-    m.add("SI_STACKSHARE", icons::SI_STACKSHARE)?;
-    m.add("SI_FIREFOXBROWSER", icons::SI_FIREFOXBROWSER)?;
-    m.add("SI_LARAVELNOVA", icons::SI_LARAVELNOVA)?;
-    m.add("SI_SVGDOTJS", icons::SI_SVGDOTJS)?;
     Ok(())
 }

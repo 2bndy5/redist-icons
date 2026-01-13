@@ -9,6 +9,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RARIBLE", icons::SI_RARIBLE)?;
     m.add("SI_OPENAPIINITIATIVE", icons::SI_OPENAPIINITIATIVE)?;
     m.add("SI_RUFF", icons::SI_RUFF)?;
+    m.add("SI_APACHEPDFBOX", icons::SI_APACHEPDFBOX)?;
     m.add("SI_STEAM", icons::SI_STEAM)?;
     m.add("SI_REFINE", icons::SI_REFINE)?;
     m.add("SI_METABASE", icons::SI_METABASE)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NIKON", icons::SI_NIKON)?;
     m.add("SI_LABVIEW", icons::SI_LABVIEW)?;
     m.add("SI_PLANE", icons::SI_PLANE)?;
-    m.add("SI_SENTRY", icons::SI_SENTRY)?;
     Ok(())
 }

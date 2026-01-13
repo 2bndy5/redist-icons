@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
     match slug {
+        "hearth" => Some(icons::SI_HEARTH),
         "eac" => Some(icons::SI_EAC),
         "fmod" => Some(icons::SI_FMOD),
         "dinersclub" => Some(icons::SI_DINERSCLUB),
@@ -159,6 +160,7 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "todoist" => Some(icons::SI_TODOIST),
         "apacheant" => Some(icons::SI_APACHEANT),
         "hashicorp" => Some(icons::SI_HASHICORP),
+        "scan" => Some(icons::SI_SCAN),
         "tietoevry" => Some(icons::SI_TIETOEVRY),
         "sennheiser" => Some(icons::SI_SENNHEISER),
         "betterdiscord" => Some(icons::SI_BETTERDISCORD),
@@ -188,6 +190,7 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "tv4play" => Some(icons::SI_TV4PLAY),
         "formstack" => Some(icons::SI_FORMSTACK),
         "tesla" => Some(icons::SI_TESLA),
+        "effect" => Some(icons::SI_EFFECT),
         "aboutdotme" => Some(icons::SI_ABOUTDOTME),
         "wasabi" => Some(icons::SI_WASABI),
         "cloudbees" => Some(icons::SI_CLOUDBEES),
@@ -200,9 +203,6 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "picpay" => Some(icons::SI_PICPAY),
         "googlecampaignmanager360" => Some(icons::SI_GOOGLECAMPAIGNMANAGER360),
         "canonical" => Some(icons::SI_CANONICAL),
-        "atari" => Some(icons::SI_ATARI),
-        "rottentomatoes" => Some(icons::SI_ROTTENTOMATOES),
-        "downdetector" => Some(icons::SI_DOWNDETECTOR),
         _ => None,
     }
 }
