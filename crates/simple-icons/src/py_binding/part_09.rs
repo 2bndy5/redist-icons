@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_VESPA", icons::SI_VESPA)?;
+    m.add("SI_GARUDALINUX", icons::SI_GARUDALINUX)?;
+    m.add("SI_SLIDESHARE", icons::SI_SLIDESHARE)?;
+    m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
     m.add("SI_1DOT1DOT1DOT1", icons::SI_1DOT1DOT1DOT1)?;
     m.add("SI_NICONICO", icons::SI_NICONICO)?;
     m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
@@ -86,6 +90,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GNOME", icons::SI_GNOME)?;
     m.add("SI_ESOTERICSOFTWARE", icons::SI_ESOTERICSOFTWARE)?;
     m.add("SI_APACHESOLR", icons::SI_APACHESOLR)?;
+    m.add("SI_FLOWER", icons::SI_FLOWER)?;
     m.add("SI_COMMITLINT", icons::SI_COMMITLINT)?;
     m.add("SI_ADP", icons::SI_ADP)?;
     m.add("SI_DLNA", icons::SI_DLNA)?;
@@ -201,10 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_METRO", icons::SI_METRO)?;
     m.add("SI_WEBCOMPONENTSDOTORG", icons::SI_WEBCOMPONENTSDOTORG)?;
     m.add("SI_NETTE", icons::SI_NETTE)?;
-    m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
-    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
-    m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
-    m.add("SI_OVERCAST", icons::SI_OVERCAST)?;
-    m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
     Ok(())
 }

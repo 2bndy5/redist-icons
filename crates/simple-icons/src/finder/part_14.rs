@@ -3,6 +3,16 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
     match slug {
+        "trino" => Some(icons::SI_TRINO),
+        "compilerexplorer" => Some(icons::SI_COMPILEREXPLORER),
+        "openverse" => Some(icons::SI_OPENVERSE),
+        "openstack" => Some(icons::SI_OPENSTACK),
+        "americanairlines" => Some(icons::SI_AMERICANAIRLINES),
+        "envoyproxy" => Some(icons::SI_ENVOYPROXY),
+        "lmms" => Some(icons::SI_LMMS),
+        "unjs" => Some(icons::SI_UNJS),
+        "matillion" => Some(icons::SI_MATILLION),
+        "adventofcode" => Some(icons::SI_ADVENTOFCODE),
         "virginmedia" => Some(icons::SI_VIRGINMEDIA),
         "litiengine" => Some(icons::SI_LITIENGINE),
         "newbalance" => Some(icons::SI_NEWBALANCE),
@@ -193,16 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "mpv" => Some(icons::SI_MPV),
         "discord" => Some(icons::SI_DISCORD),
         "passport" => Some(icons::SI_PASSPORT),
-        "lydia" => Some(icons::SI_LYDIA),
-        "amd" => Some(icons::SI_AMD),
-        "ferrari" => Some(icons::SI_FERRARI),
-        "poe" => Some(icons::SI_POE),
-        "googlesheets" => Some(icons::SI_GOOGLESHEETS),
-        "nginxproxymanager" => Some(icons::SI_NGINXPROXYMANAGER),
-        "trendmicro" => Some(icons::SI_TRENDMICRO),
-        "blender" => Some(icons::SI_BLENDER),
-        "processon" => Some(icons::SI_PROCESSON),
-        "docsdotrs" => Some(icons::SI_DOCSDOTRS),
         _ => None,
     }
 }

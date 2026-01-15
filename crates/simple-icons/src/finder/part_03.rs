@@ -9,6 +9,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "rarible" => Some(icons::SI_RARIBLE),
         "openapiinitiative" => Some(icons::SI_OPENAPIINITIATIVE),
         "ruff" => Some(icons::SI_RUFF),
+        "apachepdfbox" => Some(icons::SI_APACHEPDFBOX),
         "steam" => Some(icons::SI_STEAM),
         "refine" => Some(icons::SI_REFINE),
         "metabase" => Some(icons::SI_METABASE),
@@ -202,7 +203,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "nikon" => Some(icons::SI_NIKON),
         "labview" => Some(icons::SI_LABVIEW),
         "plane" => Some(icons::SI_PLANE),
-        "sentry" => Some(icons::SI_SENTRY),
         _ => None,
     }
 }
