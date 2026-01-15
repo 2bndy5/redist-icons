@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GOJEK", icons::SI_GOJEK)?;
+    m.add("SI_KASHFLOW", icons::SI_KASHFLOW)?;
+    m.add("SI_INTERCOM", icons::SI_INTERCOM)?;
+    m.add("SI_PORSCHE", icons::SI_PORSCHE)?;
+    m.add("SI_REDIS", icons::SI_REDIS)?;
     m.add("SI_OBTAINIUM", icons::SI_OBTAINIUM)?;
     m.add(
         "SI_OPENCONTAINERSINITIATIVE",
@@ -69,6 +74,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SCALAR", icons::SI_SCALAR)?;
     m.add("SI_OPENCV", icons::SI_OPENCV)?;
     m.add("SI_PINIA", icons::SI_PINIA)?;
+    m.add("SI_ODIDO", icons::SI_ODIDO)?;
     m.add("SI_ICONFINDER", icons::SI_ICONFINDER)?;
     m.add("SI_LANGGRAPH", icons::SI_LANGGRAPH)?;
     m.add("SI_PATREON", icons::SI_PATREON)?;
@@ -134,6 +140,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CURL", icons::SI_CURL)?;
     m.add("SI_SVELTE", icons::SI_SVELTE)?;
     m.add("SI_EXPRESSDOTCOM", icons::SI_EXPRESSDOTCOM)?;
+    m.add("SI_PIPECAT", icons::SI_PIPECAT)?;
     m.add("SI_MALWAREBYTES", icons::SI_MALWAREBYTES)?;
     m.add("SI_APACHEAVRO", icons::SI_APACHEAVRO)?;
     m.add("SI_NEWGROUNDS", icons::SI_NEWGROUNDS)?;
@@ -199,12 +206,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COMICFURY", icons::SI_COMICFURY)?;
     m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
     m.add("SI_STELLAR", icons::SI_STELLAR)?;
-    m.add("SI_EPSON", icons::SI_EPSON)?;
-    m.add("SI_ILOVEPDF", icons::SI_ILOVEPDF)?;
-    m.add("SI_CONTAO", icons::SI_CONTAO)?;
-    m.add("SI_REVERBNATION", icons::SI_REVERBNATION)?;
-    m.add("SI_INTERMARCHE", icons::SI_INTERMARCHE)?;
-    m.add("SI_DELPHI", icons::SI_DELPHI)?;
-    m.add("SI_TINDIE", icons::SI_TINDIE)?;
     Ok(())
 }

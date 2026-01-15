@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
     m.add("SI_INGRESS", icons::SI_INGRESS)?;
     m.add("SI_R3", icons::SI_R3)?;
     m.add("SI_OKCUPID", icons::SI_OKCUPID)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COOP", icons::SI_COOP)?;
     m.add("SI_VITEST", icons::SI_VITEST)?;
     m.add("SI_IEEE", icons::SI_IEEE)?;
-    m.add("SI_NOUNPROJECT", icons::SI_NOUNPROJECT)?;
     Ok(())
 }

@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_HEARTH", icons::SI_HEARTH)?;
     m.add("SI_EAC", icons::SI_EAC)?;
     m.add("SI_FMOD", icons::SI_FMOD)?;
     m.add("SI_DINERSCLUB", icons::SI_DINERSCLUB)?;
@@ -168,6 +169,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TODOIST", icons::SI_TODOIST)?;
     m.add("SI_APACHEANT", icons::SI_APACHEANT)?;
     m.add("SI_HASHICORP", icons::SI_HASHICORP)?;
+    m.add("SI_SCAN", icons::SI_SCAN)?;
     m.add("SI_TIETOEVRY", icons::SI_TIETOEVRY)?;
     m.add("SI_SENNHEISER", icons::SI_SENNHEISER)?;
     m.add("SI_BETTERDISCORD", icons::SI_BETTERDISCORD)?;
@@ -197,6 +199,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TV4PLAY", icons::SI_TV4PLAY)?;
     m.add("SI_FORMSTACK", icons::SI_FORMSTACK)?;
     m.add("SI_TESLA", icons::SI_TESLA)?;
+    m.add("SI_EFFECT", icons::SI_EFFECT)?;
     m.add("SI_ABOUTDOTME", icons::SI_ABOUTDOTME)?;
     m.add("SI_WASABI", icons::SI_WASABI)?;
     m.add("SI_CLOUDBEES", icons::SI_CLOUDBEES)?;
@@ -212,8 +215,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
         icons::SI_GOOGLECAMPAIGNMANAGER360,
     )?;
     m.add("SI_CANONICAL", icons::SI_CANONICAL)?;
-    m.add("SI_ATARI", icons::SI_ATARI)?;
-    m.add("SI_ROTTENTOMATOES", icons::SI_ROTTENTOMATOES)?;
-    m.add("SI_DOWNDETECTOR", icons::SI_DOWNDETECTOR)?;
     Ok(())
 }

@@ -3,6 +3,16 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_LYDIA", icons::SI_LYDIA)?;
+    m.add("SI_AMD", icons::SI_AMD)?;
+    m.add("SI_FERRARI", icons::SI_FERRARI)?;
+    m.add("SI_POE", icons::SI_POE)?;
+    m.add("SI_GOOGLESHEETS", icons::SI_GOOGLESHEETS)?;
+    m.add("SI_NGINXPROXYMANAGER", icons::SI_NGINXPROXYMANAGER)?;
+    m.add("SI_TRENDMICRO", icons::SI_TRENDMICRO)?;
+    m.add("SI_BLENDER", icons::SI_BLENDER)?;
+    m.add("SI_PROCESSON", icons::SI_PROCESSON)?;
+    m.add("SI_DOCSDOTRS", icons::SI_DOCSDOTRS)?;
     m.add("SI_PLANETSCALE", icons::SI_PLANETSCALE)?;
     m.add("SI_POSTCSS", icons::SI_POSTCSS)?;
     m.add("SI_ELSEVIER", icons::SI_ELSEVIER)?;
@@ -196,15 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PODCASTADDICT", icons::SI_PODCASTADDICT)?;
     m.add("SI_BASICATTENTIONTOKEN", icons::SI_BASICATTENTIONTOKEN)?;
     m.add("SI_PAGSEGURO", icons::SI_PAGSEGURO)?;
-    m.add("SI_MEDIAMARKT", icons::SI_MEDIAMARKT)?;
-    m.add("SI_WALLABAG", icons::SI_WALLABAG)?;
-    m.add("SI_GENTOO", icons::SI_GENTOO)?;
-    m.add("SI_WORDPRESS", icons::SI_WORDPRESS)?;
-    m.add("SI_DAILYDOTDEV", icons::SI_DAILYDOTDEV)?;
-    m.add("SI_QUICKBOOKS", icons::SI_QUICKBOOKS)?;
-    m.add("SI_CONSTRUCT3", icons::SI_CONSTRUCT3)?;
-    m.add("SI_SPRINGBOOT", icons::SI_SPRINGBOOT)?;
-    m.add("SI_RICH", icons::SI_RICH)?;
-    m.add("SI_STATUSPAL", icons::SI_STATUSPAL)?;
     Ok(())
 }

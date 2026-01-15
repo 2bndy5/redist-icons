@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
     match slug {
+        "gojek" => Some(icons::SI_GOJEK),
+        "kashflow" => Some(icons::SI_KASHFLOW),
+        "intercom" => Some(icons::SI_INTERCOM),
+        "porsche" => Some(icons::SI_PORSCHE),
+        "redis" => Some(icons::SI_REDIS),
         "obtainium" => Some(icons::SI_OBTAINIUM),
         "opencontainersinitiative" => Some(icons::SI_OPENCONTAINERSINITIATIVE),
         "sinaweibo" => Some(icons::SI_SINAWEIBO),
@@ -66,6 +71,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "scalar" => Some(icons::SI_SCALAR),
         "opencv" => Some(icons::SI_OPENCV),
         "pinia" => Some(icons::SI_PINIA),
+        "odido" => Some(icons::SI_ODIDO),
         "iconfinder" => Some(icons::SI_ICONFINDER),
         "langgraph" => Some(icons::SI_LANGGRAPH),
         "patreon" => Some(icons::SI_PATREON),
@@ -131,6 +137,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "curl" => Some(icons::SI_CURL),
         "svelte" => Some(icons::SI_SVELTE),
         "expressdotcom" => Some(icons::SI_EXPRESSDOTCOM),
+        "pipecat" => Some(icons::SI_PIPECAT),
         "malwarebytes" => Some(icons::SI_MALWAREBYTES),
         "apacheavro" => Some(icons::SI_APACHEAVRO),
         "newgrounds" => Some(icons::SI_NEWGROUNDS),
@@ -196,13 +203,6 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "comicfury" => Some(icons::SI_COMICFURY),
         "sqlalchemy" => Some(icons::SI_SQLALCHEMY),
         "stellar" => Some(icons::SI_STELLAR),
-        "epson" => Some(icons::SI_EPSON),
-        "ilovepdf" => Some(icons::SI_ILOVEPDF),
-        "contao" => Some(icons::SI_CONTAO),
-        "reverbnation" => Some(icons::SI_REVERBNATION),
-        "intermarche" => Some(icons::SI_INTERMARCHE),
-        "delphi" => Some(icons::SI_DELPHI),
-        "tindie" => Some(icons::SI_TINDIE),
         _ => None,
     }
 }
