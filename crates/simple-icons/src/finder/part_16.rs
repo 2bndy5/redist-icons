@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_16(slug: &str) -> Option<Icon> {
     match slug {
+        "qbittorrent" => Some(icons::SI_QBITTORRENT),
+        "vite" => Some(icons::SI_VITE),
+        "podcastaddict" => Some(icons::SI_PODCASTADDICT),
+        "basicattentiontoken" => Some(icons::SI_BASICATTENTIONTOKEN),
+        "pagseguro" => Some(icons::SI_PAGSEGURO),
         "mediamarkt" => Some(icons::SI_MEDIAMARKT),
         "wallabag" => Some(icons::SI_WALLABAG),
         "gentoo" => Some(icons::SI_GENTOO),

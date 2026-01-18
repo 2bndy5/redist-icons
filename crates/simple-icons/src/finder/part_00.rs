@@ -154,6 +154,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "alltrails" => Some(icons::SI_ALLTRAILS),
         "thinkpad" => Some(icons::SI_THINKPAD),
         "similarweb" => Some(icons::SI_SIMILARWEB),
+        "things" => Some(icons::SI_THINGS),
         "chase" => Some(icons::SI_CHASE),
         "utorrent" => Some(icons::SI_UTORRENT),
         "sqlite" => Some(icons::SI_SQLITE),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "apacheopenoffice" => Some(icons::SI_APACHEOPENOFFICE),
         "gumtree" => Some(icons::SI_GUMTREE),
         "qemu" => Some(icons::SI_QEMU),
-        "apachetomcat" => Some(icons::SI_APACHETOMCAT),
         _ => None,
     }
 }

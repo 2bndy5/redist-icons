@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
     match slug {
+        "sfml" => Some(icons::SI_SFML),
+        "teamviewer" => Some(icons::SI_TEAMVIEWER),
         "gojek" => Some(icons::SI_GOJEK),
         "kashflow" => Some(icons::SI_KASHFLOW),
         "intercom" => Some(icons::SI_INTERCOM),
@@ -65,6 +67,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "elevenlabs" => Some(icons::SI_ELEVENLABS),
         "snyk" => Some(icons::SI_SNYK),
         "expo" => Some(icons::SI_EXPO),
+        "coreboot" => Some(icons::SI_COREBOOT),
         "telegram" => Some(icons::SI_TELEGRAM),
         "apacheairflow" => Some(icons::SI_APACHEAIRFLOW),
         "hellofresh" => Some(icons::SI_HELLOFRESH),
@@ -127,6 +130,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "vercel" => Some(icons::SI_VERCEL),
         "htmlacademy" => Some(icons::SI_HTMLACADEMY),
         "namecheap" => Some(icons::SI_NAMECHEAP),
+        "chinarailway" => Some(icons::SI_CHINARAILWAY),
         "havells" => Some(icons::SI_HAVELLS),
         "maildotru" => Some(icons::SI_MAILDOTRU),
         "soundcloud" => Some(icons::SI_SOUNDCLOUD),
@@ -199,10 +203,6 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "instructure" => Some(icons::SI_INSTRUCTURE),
         "emberdotjs" => Some(icons::SI_EMBERDOTJS),
         "firefish" => Some(icons::SI_FIREFISH),
-        "unilever" => Some(icons::SI_UNILEVER),
-        "comicfury" => Some(icons::SI_COMICFURY),
-        "sqlalchemy" => Some(icons::SI_SQLALCHEMY),
-        "stellar" => Some(icons::SI_STELLAR),
         _ => None,
     }
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SFML", icons::SI_SFML)?;
+    m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
     m.add("SI_GOJEK", icons::SI_GOJEK)?;
     m.add("SI_KASHFLOW", icons::SI_KASHFLOW)?;
     m.add("SI_INTERCOM", icons::SI_INTERCOM)?;
@@ -68,6 +70,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ELEVENLABS", icons::SI_ELEVENLABS)?;
     m.add("SI_SNYK", icons::SI_SNYK)?;
     m.add("SI_EXPO", icons::SI_EXPO)?;
+    m.add("SI_COREBOOT", icons::SI_COREBOOT)?;
     m.add("SI_TELEGRAM", icons::SI_TELEGRAM)?;
     m.add("SI_APACHEAIRFLOW", icons::SI_APACHEAIRFLOW)?;
     m.add("SI_HELLOFRESH", icons::SI_HELLOFRESH)?;
@@ -130,6 +133,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VERCEL", icons::SI_VERCEL)?;
     m.add("SI_HTMLACADEMY", icons::SI_HTMLACADEMY)?;
     m.add("SI_NAMECHEAP", icons::SI_NAMECHEAP)?;
+    m.add("SI_CHINARAILWAY", icons::SI_CHINARAILWAY)?;
     m.add("SI_HAVELLS", icons::SI_HAVELLS)?;
     m.add("SI_MAILDOTRU", icons::SI_MAILDOTRU)?;
     m.add("SI_SOUNDCLOUD", icons::SI_SOUNDCLOUD)?;
@@ -202,9 +206,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_INSTRUCTURE", icons::SI_INSTRUCTURE)?;
     m.add("SI_EMBERDOTJS", icons::SI_EMBERDOTJS)?;
     m.add("SI_FIREFISH", icons::SI_FIREFISH)?;
-    m.add("SI_UNILEVER", icons::SI_UNILEVER)?;
-    m.add("SI_COMICFURY", icons::SI_COMICFURY)?;
-    m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
-    m.add("SI_STELLAR", icons::SI_STELLAR)?;
     Ok(())
 }
