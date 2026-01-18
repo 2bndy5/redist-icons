@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GOOGLEMESSAGES", icons::SI_GOOGLEMESSAGES)?;
+    m.add("SI_SORIANA", icons::SI_SORIANA)?;
+    m.add("SI_AIRBNB", icons::SI_AIRBNB)?;
+    m.add("SI_TACOBELL", icons::SI_TACOBELL)?;
+    m.add("SI_GITFORWINDOWS", icons::SI_GITFORWINDOWS)?;
     m.add("SI_TRINO", icons::SI_TRINO)?;
     m.add("SI_COMPILEREXPLORER", icons::SI_COMPILEREXPLORER)?;
     m.add("SI_OPENVERSE", icons::SI_OPENVERSE)?;
@@ -198,10 +203,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HACKEREARTH", icons::SI_HACKEREARTH)?;
     m.add("SI_CARTHROTTLE", icons::SI_CARTHROTTLE)?;
     m.add("SI_DEEPNOTE", icons::SI_DEEPNOTE)?;
-    m.add("SI_NORMALIZEDOTCSS", icons::SI_NORMALIZEDOTCSS)?;
-    m.add("SI_NUXT", icons::SI_NUXT)?;
-    m.add("SI_MPV", icons::SI_MPV)?;
-    m.add("SI_DISCORD", icons::SI_DISCORD)?;
-    m.add("SI_PASSPORT", icons::SI_PASSPORT)?;
     Ok(())
 }

@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
     match slug {
+        "unilever" => Some(icons::SI_UNILEVER),
+        "comicfury" => Some(icons::SI_COMICFURY),
+        "sqlalchemy" => Some(icons::SI_SQLALCHEMY),
+        "stellar" => Some(icons::SI_STELLAR),
         "epson" => Some(icons::SI_EPSON),
         "ilovepdf" => Some(icons::SI_ILOVEPDF),
         "contao" => Some(icons::SI_CONTAO),
@@ -57,6 +61,7 @@ pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
         "dazn" => Some(icons::SI_DAZN),
         "cloudera" => Some(icons::SI_CLOUDERA),
         "transmission" => Some(icons::SI_TRANSMISSION),
+        "prek" => Some(icons::SI_PREK),
         "notepadplusplus" => Some(icons::SI_NOTEPADPLUSPLUS),
         "meizu" => Some(icons::SI_MEIZU),
         "firebase" => Some(icons::SI_FIREBASE),
@@ -198,11 +203,6 @@ pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
         "libreofficewriter" => Some(icons::SI_LIBREOFFICEWRITER),
         "stackbit" => Some(icons::SI_STACKBIT),
         "odnoklassniki" => Some(icons::SI_ODNOKLASSNIKI),
-        "googlemessages" => Some(icons::SI_GOOGLEMESSAGES),
-        "soriana" => Some(icons::SI_SORIANA),
-        "airbnb" => Some(icons::SI_AIRBNB),
-        "tacobell" => Some(icons::SI_TACOBELL),
-        "gitforwindows" => Some(icons::SI_GITFORWINDOWS),
         _ => None,
     }
 }

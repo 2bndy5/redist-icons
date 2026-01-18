@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add(
+        "SI_GOOGLECAMPAIGNMANAGER360",
+        icons::SI_GOOGLECAMPAIGNMANAGER360,
+    )?;
+    m.add("SI_CANONICAL", icons::SI_CANONICAL)?;
     m.add("SI_ATARI", icons::SI_ATARI)?;
     m.add("SI_ROTTENTOMATOES", icons::SI_ROTTENTOMATOES)?;
     m.add("SI_DOWNDETECTOR", icons::SI_DOWNDETECTOR)?;
@@ -204,7 +209,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SPLUNK", icons::SI_SPLUNK)?;
     m.add("SI_KAKAOTALK", icons::SI_KAKAOTALK)?;
     m.add("SI_ALACRITTY", icons::SI_ALACRITTY)?;
-    m.add("SI_SIMPLENOTE", icons::SI_SIMPLENOTE)?;
-    m.add("SI_AEROMEXICO", icons::SI_AEROMEXICO)?;
     Ok(())
 }

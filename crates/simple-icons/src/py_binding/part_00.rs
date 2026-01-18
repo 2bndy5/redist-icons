@@ -154,6 +154,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ALLTRAILS", icons::SI_ALLTRAILS)?;
     m.add("SI_THINKPAD", icons::SI_THINKPAD)?;
     m.add("SI_SIMILARWEB", icons::SI_SIMILARWEB)?;
+    m.add("SI_THINGS", icons::SI_THINGS)?;
     m.add("SI_CHASE", icons::SI_CHASE)?;
     m.add("SI_UTORRENT", icons::SI_UTORRENT)?;
     m.add("SI_SQLITE", icons::SI_SQLITE)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APACHEOPENOFFICE", icons::SI_APACHEOPENOFFICE)?;
     m.add("SI_GUMTREE", icons::SI_GUMTREE)?;
     m.add("SI_QEMU", icons::SI_QEMU)?;
-    m.add("SI_APACHETOMCAT", icons::SI_APACHETOMCAT)?;
     Ok(())
 }

@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_APACHETOMCAT", icons::SI_APACHETOMCAT)?;
     m.add("SI_CODEBERG", icons::SI_CODEBERG)?;
     m.add("SI_RATATUI", icons::SI_RATATUI)?;
     m.add("SI_SCHNEIDERELECTRIC", icons::SI_SCHNEIDERELECTRIC)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TINKERCAD", icons::SI_TINKERCAD)?;
     m.add("SI_SHOWPAD", icons::SI_SHOWPAD)?;
     m.add("SI_PIX", icons::SI_PIX)?;
-    m.add("SI_LIBERAPAY", icons::SI_LIBERAPAY)?;
     Ok(())
 }

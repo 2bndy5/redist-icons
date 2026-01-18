@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
     match slug {
+        "normalizedotcss" => Some(icons::SI_NORMALIZEDOTCSS),
+        "nuxt" => Some(icons::SI_NUXT),
+        "mpv" => Some(icons::SI_MPV),
+        "discord" => Some(icons::SI_DISCORD),
+        "passport" => Some(icons::SI_PASSPORT),
         "lydia" => Some(icons::SI_LYDIA),
         "amd" => Some(icons::SI_AMD),
         "ferrari" => Some(icons::SI_FERRARI),
@@ -198,11 +203,6 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "wikisource" => Some(icons::SI_WIKISOURCE),
         "isc2" => Some(icons::SI_ISC2),
         "jellyfin" => Some(icons::SI_JELLYFIN),
-        "qbittorrent" => Some(icons::SI_QBITTORRENT),
-        "vite" => Some(icons::SI_VITE),
-        "podcastaddict" => Some(icons::SI_PODCASTADDICT),
-        "basicattentiontoken" => Some(icons::SI_BASICATTENTIONTOKEN),
-        "pagseguro" => Some(icons::SI_PAGSEGURO),
         _ => None,
     }
 }
