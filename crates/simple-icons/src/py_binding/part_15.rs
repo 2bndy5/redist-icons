@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NORMALIZEDOTCSS", icons::SI_NORMALIZEDOTCSS)?;
+    m.add("SI_NUXT", icons::SI_NUXT)?;
+    m.add("SI_MPV", icons::SI_MPV)?;
+    m.add("SI_DISCORD", icons::SI_DISCORD)?;
+    m.add("SI_PASSPORT", icons::SI_PASSPORT)?;
     m.add("SI_LYDIA", icons::SI_LYDIA)?;
     m.add("SI_AMD", icons::SI_AMD)?;
     m.add("SI_FERRARI", icons::SI_FERRARI)?;
@@ -201,10 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WIKISOURCE", icons::SI_WIKISOURCE)?;
     m.add("SI_ISC2", icons::SI_ISC2)?;
     m.add("SI_JELLYFIN", icons::SI_JELLYFIN)?;
-    m.add("SI_QBITTORRENT", icons::SI_QBITTORRENT)?;
-    m.add("SI_VITE", icons::SI_VITE)?;
-    m.add("SI_PODCASTADDICT", icons::SI_PODCASTADDICT)?;
-    m.add("SI_BASICATTENTIONTOKEN", icons::SI_BASICATTENTIONTOKEN)?;
-    m.add("SI_PAGSEGURO", icons::SI_PAGSEGURO)?;
     Ok(())
 }

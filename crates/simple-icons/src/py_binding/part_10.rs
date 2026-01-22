@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WEBCOMPONENTSDOTORG", icons::SI_WEBCOMPONENTSDOTORG)?;
+    m.add("SI_NETTE", icons::SI_NETTE)?;
     m.add("SI_FLUENTD", icons::SI_FLUENTD)?;
     m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
     m.add("SI_NAMEBASE", icons::SI_NAMEBASE)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ARSTECHNICA", icons::SI_ARSTECHNICA)?;
     m.add("SI_BIOCONDUCTOR", icons::SI_BIOCONDUCTOR)?;
     m.add("SI_FINECO", icons::SI_FINECO)?;
-    m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
-    m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
     Ok(())
 }

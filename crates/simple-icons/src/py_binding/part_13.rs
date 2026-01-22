@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_UNILEVER", icons::SI_UNILEVER)?;
+    m.add("SI_COMICFURY", icons::SI_COMICFURY)?;
+    m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
+    m.add("SI_STELLAR", icons::SI_STELLAR)?;
     m.add("SI_EPSON", icons::SI_EPSON)?;
     m.add("SI_ILOVEPDF", icons::SI_ILOVEPDF)?;
     m.add("SI_CONTAO", icons::SI_CONTAO)?;
@@ -57,6 +61,7 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DAZN", icons::SI_DAZN)?;
     m.add("SI_CLOUDERA", icons::SI_CLOUDERA)?;
     m.add("SI_TRANSMISSION", icons::SI_TRANSMISSION)?;
+    m.add("SI_PREK", icons::SI_PREK)?;
     m.add("SI_NOTEPADPLUSPLUS", icons::SI_NOTEPADPLUSPLUS)?;
     m.add("SI_MEIZU", icons::SI_MEIZU)?;
     m.add("SI_FIREBASE", icons::SI_FIREBASE)?;
@@ -204,10 +209,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LIBREOFFICEWRITER", icons::SI_LIBREOFFICEWRITER)?;
     m.add("SI_STACKBIT", icons::SI_STACKBIT)?;
     m.add("SI_ODNOKLASSNIKI", icons::SI_ODNOKLASSNIKI)?;
-    m.add("SI_GOOGLEMESSAGES", icons::SI_GOOGLEMESSAGES)?;
-    m.add("SI_SORIANA", icons::SI_SORIANA)?;
-    m.add("SI_AIRBNB", icons::SI_AIRBNB)?;
-    m.add("SI_TACOBELL", icons::SI_TACOBELL)?;
-    m.add("SI_GITFORWINDOWS", icons::SI_GITFORWINDOWS)?;
     Ok(())
 }

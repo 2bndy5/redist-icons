@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_YOUTUBE", icons::SI_YOUTUBE)?;
     m.add("SI_CREATIVECOMMONS", icons::SI_CREATIVECOMMONS)?;
     m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     m.add("SI_ROLLBAR", icons::SI_ROLLBAR)?;
@@ -180,6 +181,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CODECOV", icons::SI_CODECOV)?;
     m.add("SI_RAKUTENKOBO", icons::SI_RAKUTENKOBO)?;
     m.add("SI_LAZYVIM", icons::SI_LAZYVIM)?;
+    m.add("SI_DEVELOPMENTCONTAINERS", icons::SI_DEVELOPMENTCONTAINERS)?;
     m.add("SI_WOOCOMMERCE", icons::SI_WOOCOMMERCE)?;
     m.add("SI_ELECTRON", icons::SI_ELECTRON)?;
     m.add("SI_EASYJET", icons::SI_EASYJET)?;
@@ -201,7 +203,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PLURALSIGHT", icons::SI_PLURALSIGHT)?;
     m.add("SI_JSS", icons::SI_JSS)?;
     m.add("SI_NIKON", icons::SI_NIKON)?;
-    m.add("SI_LABVIEW", icons::SI_LABVIEW)?;
-    m.add("SI_PLANE", icons::SI_PLANE)?;
     Ok(())
 }
