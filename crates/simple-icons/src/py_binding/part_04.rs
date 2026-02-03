@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NIKON", icons::SI_NIKON)?;
     m.add("SI_LABVIEW", icons::SI_LABVIEW)?;
     m.add("SI_PLANE", icons::SI_PLANE)?;
     m.add("SI_SENTRY", icons::SI_SENTRY)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CHECKMK", icons::SI_CHECKMK)?;
     m.add("SI_F5", icons::SI_F5)?;
     m.add("SI_REASONSTUDIOS", icons::SI_REASONSTUDIOS)?;
-    m.add("SI_KHANACADEMY", icons::SI_KHANACADEMY)?;
     Ok(())
 }

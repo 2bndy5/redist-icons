@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
     match slug {
+        "kx" => Some(icons::SI_KX),
+        "hackerearth" => Some(icons::SI_HACKEREARTH),
+        "carthrottle" => Some(icons::SI_CARTHROTTLE),
+        "deepnote" => Some(icons::SI_DEEPNOTE),
         "normalizedotcss" => Some(icons::SI_NORMALIZEDOTCSS),
         "nuxt" => Some(icons::SI_NUXT),
         "mpv" => Some(icons::SI_MPV),
@@ -166,6 +170,7 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "cockpit" => Some(icons::SI_COCKPIT),
         "tomorrowland" => Some(icons::SI_TOMORROWLAND),
         "dialogflow" => Some(icons::SI_DIALOGFLOW),
+        "ory" => Some(icons::SI_ORY),
         "cnn" => Some(icons::SI_CNN),
         "mainwp" => Some(icons::SI_MAINWP),
         "paloaltonetworks" => Some(icons::SI_PALOALTONETWORKS),
@@ -198,11 +203,6 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "refinedgithub" => Some(icons::SI_REFINEDGITHUB),
         "gin" => Some(icons::SI_GIN),
         "thurgauerkantonalbank" => Some(icons::SI_THURGAUERKANTONALBANK),
-        "planet" => Some(icons::SI_PLANET),
-        "contentful" => Some(icons::SI_CONTENTFUL),
-        "wikisource" => Some(icons::SI_WIKISOURCE),
-        "isc2" => Some(icons::SI_ISC2),
-        "jellyfin" => Some(icons::SI_JELLYFIN),
         _ => None,
     }
 }

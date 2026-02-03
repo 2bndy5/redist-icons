@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ARSTECHNICA", icons::SI_ARSTECHNICA)?;
+    m.add("SI_BIOCONDUCTOR", icons::SI_BIOCONDUCTOR)?;
+    m.add("SI_FINECO", icons::SI_FINECO)?;
     m.add("SI_AKASAAIR", icons::SI_AKASAAIR)?;
     m.add("SI_ARMKEIL", icons::SI_ARMKEIL)?;
     m.add("SI_FERRETDB", icons::SI_FERRETDB)?;
@@ -74,6 +77,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CODENEWBIE", icons::SI_CODENEWBIE)?;
     m.add("SI_PLATFORMIO", icons::SI_PLATFORMIO)?;
     m.add("SI_STYLESHARE", icons::SI_STYLESHARE)?;
+    m.add("SI_INFUSE", icons::SI_INFUSE)?;
     m.add("SI_PORTSWIGGER", icons::SI_PORTSWIGGER)?;
     m.add("SI_MONEYGRAM", icons::SI_MONEYGRAM)?;
     m.add("SI_PUBMED", icons::SI_PUBMED)?;
@@ -202,9 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_EAGLE", icons::SI_EAGLE)?;
     m.add("SI_CONEKTA", icons::SI_CONEKTA)?;
     m.add("SI_PEGASUSAIRLINES", icons::SI_PEGASUSAIRLINES)?;
-    m.add("SI_INFINITI", icons::SI_INFINITI)?;
-    m.add("SI_JEEP", icons::SI_JEEP)?;
-    m.add("SI_KIRBY", icons::SI_KIRBY)?;
-    m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
     Ok(())
 }

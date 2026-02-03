@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OPENTEXT", icons::SI_OPENTEXT)?;
     m.add("SI_HELPSCOUT", icons::SI_HELPSCOUT)?;
     m.add("SI_PERCY", icons::SI_PERCY)?;
     m.add("SI_HEARTH", icons::SI_HEARTH)?;
@@ -85,6 +86,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_XRP", icons::SI_XRP)?;
     m.add("SI_NUNJUCKS", icons::SI_NUNJUCKS)?;
     m.add("SI_THESPRITERSRESOURCE", icons::SI_THESPRITERSRESOURCE)?;
+    m.add("SI_DEVUAN", icons::SI_DEVUAN)?;
     m.add("SI_WIKIVERSITY", icons::SI_WIKIVERSITY)?;
     m.add("SI_BANDSINTOWN", icons::SI_BANDSINTOWN)?;
     m.add("SI_PRETZEL", icons::SI_PRETZEL)?;
@@ -210,7 +212,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WARP", icons::SI_WARP)?;
     m.add("SI_CONTRIBUTORCOVENANT", icons::SI_CONTRIBUTORCOVENANT)?;
     m.add("SI_BITCOIN", icons::SI_BITCOIN)?;
-    m.add("SI_KLARNA", icons::SI_KLARNA)?;
-    m.add("SI_PICPAY", icons::SI_PICPAY)?;
     Ok(())
 }

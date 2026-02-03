@@ -130,6 +130,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "ethereum" => Some(icons::SI_ETHEREUM),
         "oreilly" => Some(icons::SI_OREILLY),
         "e3" => Some(icons::SI_E3),
+        "convex" => Some(icons::SI_CONVEX),
         "postmates" => Some(icons::SI_POSTMATES),
         "wagtail" => Some(icons::SI_WAGTAIL),
         "coderabbit" => Some(icons::SI_CODERABBIT),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "tamiya" => Some(icons::SI_TAMIYA),
         "gitkraken" => Some(icons::SI_GITKRAKEN),
         "kicad" => Some(icons::SI_KICAD),
-        "pandas" => Some(icons::SI_PANDAS),
         _ => None,
     }
 }
