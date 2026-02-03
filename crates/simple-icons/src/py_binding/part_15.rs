@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_KX", icons::SI_KX)?;
+    m.add("SI_HACKEREARTH", icons::SI_HACKEREARTH)?;
+    m.add("SI_CARTHROTTLE", icons::SI_CARTHROTTLE)?;
+    m.add("SI_DEEPNOTE", icons::SI_DEEPNOTE)?;
     m.add("SI_NORMALIZEDOTCSS", icons::SI_NORMALIZEDOTCSS)?;
     m.add("SI_NUXT", icons::SI_NUXT)?;
     m.add("SI_MPV", icons::SI_MPV)?;
@@ -169,6 +173,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COCKPIT", icons::SI_COCKPIT)?;
     m.add("SI_TOMORROWLAND", icons::SI_TOMORROWLAND)?;
     m.add("SI_DIALOGFLOW", icons::SI_DIALOGFLOW)?;
+    m.add("SI_ORY", icons::SI_ORY)?;
     m.add("SI_CNN", icons::SI_CNN)?;
     m.add("SI_MAINWP", icons::SI_MAINWP)?;
     m.add("SI_PALOALTONETWORKS", icons::SI_PALOALTONETWORKS)?;
@@ -201,10 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REFINEDGITHUB", icons::SI_REFINEDGITHUB)?;
     m.add("SI_GIN", icons::SI_GIN)?;
     m.add("SI_THURGAUERKANTONALBANK", icons::SI_THURGAUERKANTONALBANK)?;
-    m.add("SI_PLANET", icons::SI_PLANET)?;
-    m.add("SI_CONTENTFUL", icons::SI_CONTENTFUL)?;
-    m.add("SI_WIKISOURCE", icons::SI_WIKISOURCE)?;
-    m.add("SI_ISC2", icons::SI_ISC2)?;
-    m.add("SI_JELLYFIN", icons::SI_JELLYFIN)?;
     Ok(())
 }

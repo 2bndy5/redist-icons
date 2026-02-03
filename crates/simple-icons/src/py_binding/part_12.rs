@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_INFINITI", icons::SI_INFINITI)?;
+    m.add("SI_JEEP", icons::SI_JEEP)?;
+    m.add("SI_KIRBY", icons::SI_KIRBY)?;
+    m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
     m.add("SI_SFML", icons::SI_SFML)?;
     m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
     m.add("SI_GOJEK", icons::SI_GOJEK)?;
@@ -202,9 +206,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REMOVEDOTBG", icons::SI_REMOVEDOTBG)?;
     m.add("SI_LUFTHANSA", icons::SI_LUFTHANSA)?;
     m.add("SI_INTERNETARCHIVE", icons::SI_INTERNETARCHIVE)?;
-    m.add("SI_1PASSWORD", icons::SI_1PASSWORD)?;
-    m.add("SI_INSTRUCTURE", icons::SI_INSTRUCTURE)?;
-    m.add("SI_EMBERDOTJS", icons::SI_EMBERDOTJS)?;
-    m.add("SI_FIREFISH", icons::SI_FIREFISH)?;
     Ok(())
 }

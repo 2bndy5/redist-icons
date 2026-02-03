@@ -133,6 +133,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ETHEREUM", icons::SI_ETHEREUM)?;
     m.add("SI_OREILLY", icons::SI_OREILLY)?;
     m.add("SI_E3", icons::SI_E3)?;
+    m.add("SI_CONVEX", icons::SI_CONVEX)?;
     m.add("SI_POSTMATES", icons::SI_POSTMATES)?;
     m.add("SI_WAGTAIL", icons::SI_WAGTAIL)?;
     m.add("SI_CODERABBIT", icons::SI_CODERABBIT)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TAMIYA", icons::SI_TAMIYA)?;
     m.add("SI_GITKRAKEN", icons::SI_GITKRAKEN)?;
     m.add("SI_KICAD", icons::SI_KICAD)?;
-    m.add("SI_PANDAS", icons::SI_PANDAS)?;
     Ok(())
 }

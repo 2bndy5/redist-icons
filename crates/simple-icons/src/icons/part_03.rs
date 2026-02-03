@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// pandas
+pub const SI_PANDAS: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>pandas</title><path d="M16.922 0h2.623v18.104h-2.623zm-4.126 12.94h2.623v2.57h-2.623zm0-7.037h2.623v5.446h-2.623zm0 11.197h2.623v5.446h-2.623zM4.456 5.896h2.622V24H4.455zm4.213 2.559h2.623v2.57H8.67zm0 4.151h2.623v5.447H8.67zm0-11.187h2.623v5.446H8.67Z"/></svg>"#,
+    slug: "pandas",
+    title: "pandas",
+    hex: "150458",
+    source: "https://pandas.pydata.org/about/citing.html",
+    guidelines: Some("https://pandas.pydata.org/about/citing.html"),
+    license: None,
+};
+
 /// youtube
 pub const SI_YOUTUBE: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>"#,
@@ -2199,16 +2210,5 @@ pub const SI_JSS: Icon = Icon {
     hex: "F7DF1E",
     source: "https://cssinjs.org",
     guidelines: None,
-    license: None,
-};
-
-/// nikon
-pub const SI_NIKON: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Nikon</title><path d="M8.267 8.681c-.69 0-1.054.463-1.054.873 0 .144.032.653.949.653.762 0 1.057-.488 1.057-.854 0-.244-.2-.672-.952-.672zm-6.87.215L0 15.146h1.72c.194-1 .455-2.056.711-3.138l1.206 3.136H5.27L6.681 8.9H5l-.715 3.176-1.18-3.18Zm8.587.004L8.6 15.144h1.663l.558-2.375.703 2.375h1.705l-.707-2.508 1.715-2.08h-1.91l-1.38 1.664.743-3.32zm6.608 1.465c-2.582 0-2.962 2.01-3.034 2.379-.19.93.02 2.137 1.235 2.457.8.21 2.051.187 2.855-.47.736-.6 1.1-1.619 1.088-2.575-.012-.92-.79-1.791-2.144-1.791zm6.193.072c-.573.038-1.156.35-1.486.807.044-.188.088-.404.14-.658h-1.7l-.999 4.558h1.695l.563-2.586c.104-.476.488-.68.826-.591.146.04.35.15.281.548l-.574 2.63h1.674l.767-3.51a.96.96 0 0 0-.627-1.14 1.594 1.594 0 0 0-.56-.058zm-15.66.121-1.02 4.586h1.676l1.022-4.586zm9.23 1.104c.372-.002.472.218.44.426-.09.545-.245 1.081-.362 1.539-.082.254-.321.4-.601.4-.286 0-.458-.178-.432-.406.04-.384.286-1.357.356-1.549.12-.334.451-.408.6-.41z"/></svg>"#,
-    slug: "nikon",
-    title: "Nikon",
-    hex: "FFE100",
-    source: "https://www.nikon.com",
-    guidelines: Some("https://www.nikon.com/usage/group-info"),
     license: None,
 };

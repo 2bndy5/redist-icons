@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_KLARNA", icons::SI_KLARNA)?;
+    m.add("SI_PICPAY", icons::SI_PICPAY)?;
     m.add(
         "SI_GOOGLECAMPAIGNMANAGER360",
         icons::SI_GOOGLECAMPAIGNMANAGER360,
@@ -104,6 +106,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WIRESHARK", icons::SI_WIRESHARK)?;
     m.add("SI_PAYONEER", icons::SI_PAYONEER)?;
     m.add("SI_CINEMA4D", icons::SI_CINEMA4D)?;
+    m.add("SI_KODULAR", icons::SI_KODULAR)?;
     m.add("SI_ETCD", icons::SI_ETCD)?;
     m.add("SI_PDM", icons::SI_PDM)?;
     m.add("SI_LBRY", icons::SI_LBRY)?;
@@ -206,8 +209,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TURBO", icons::SI_TURBO)?;
     m.add("SI_PROTONVPN", icons::SI_PROTONVPN)?;
     m.add("SI_FALCO", icons::SI_FALCO)?;
-    m.add("SI_SPLUNK", icons::SI_SPLUNK)?;
-    m.add("SI_KAKAOTALK", icons::SI_KAKAOTALK)?;
-    m.add("SI_ALACRITTY", icons::SI_ALACRITTY)?;
     Ok(())
 }

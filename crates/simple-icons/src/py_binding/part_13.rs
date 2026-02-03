@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_1PASSWORD", icons::SI_1PASSWORD)?;
+    m.add("SI_INSTRUCTURE", icons::SI_INSTRUCTURE)?;
+    m.add("SI_EMBERDOTJS", icons::SI_EMBERDOTJS)?;
+    m.add("SI_FIREFISH", icons::SI_FIREFISH)?;
     m.add("SI_UNILEVER", icons::SI_UNILEVER)?;
     m.add("SI_COMICFURY", icons::SI_COMICFURY)?;
     m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
@@ -205,9 +209,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ABSTRACT", icons::SI_ABSTRACT)?;
     m.add("SI_RAYCAST", icons::SI_RAYCAST)?;
     m.add("SI_GITCONNECTED", icons::SI_GITCONNECTED)?;
-    m.add("SI_BREAKER", icons::SI_BREAKER)?;
-    m.add("SI_LIBREOFFICEWRITER", icons::SI_LIBREOFFICEWRITER)?;
-    m.add("SI_STACKBIT", icons::SI_STACKBIT)?;
-    m.add("SI_ODNOKLASSNIKI", icons::SI_ODNOKLASSNIKI)?;
     Ok(())
 }
