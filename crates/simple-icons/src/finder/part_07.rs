@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
     match slug {
+        "adblock" => Some(icons::SI_ADBLOCK),
         "opentext" => Some(icons::SI_OPENTEXT),
         "helpscout" => Some(icons::SI_HELPSCOUT),
         "percy" => Some(icons::SI_PERCY),
@@ -101,6 +102,7 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "prevention" => Some(icons::SI_PREVENTION),
         "stylus" => Some(icons::SI_STYLUS),
         "geeksforgeeks" => Some(icons::SI_GEEKSFORGEEKS),
+        "deezer" => Some(icons::SI_DEEZER),
         "ublockorigin" => Some(icons::SI_UBLOCKORIGIN),
         "prdotco" => Some(icons::SI_PRDOTCO),
         "godotengine" => Some(icons::SI_GODOTENGINE),
@@ -148,6 +150,7 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "saopaulometro" => Some(icons::SI_SAOPAULOMETRO),
         "delonghi" => Some(icons::SI_DELONGHI),
         "neptune" => Some(icons::SI_NEPTUNE),
+        "pandoc" => Some(icons::SI_PANDOC),
         "wxt" => Some(icons::SI_WXT),
         "toggltrack" => Some(icons::SI_TOGGLTRACK),
         "figma" => Some(icons::SI_FIGMA),
@@ -200,9 +203,6 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "cloudbees" => Some(icons::SI_CLOUDBEES),
         "kueski" => Some(icons::SI_KUESKI),
         "apachenetbeanside" => Some(icons::SI_APACHENETBEANSIDE),
-        "warp" => Some(icons::SI_WARP),
-        "contributorcovenant" => Some(icons::SI_CONTRIBUTORCOVENANT),
-        "bitcoin" => Some(icons::SI_BITCOIN),
         _ => None,
     }
 }

@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ADBLOCK", icons::SI_ADBLOCK)?;
     m.add("SI_OPENTEXT", icons::SI_OPENTEXT)?;
     m.add("SI_HELPSCOUT", icons::SI_HELPSCOUT)?;
     m.add("SI_PERCY", icons::SI_PERCY)?;
@@ -107,6 +108,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PREVENTION", icons::SI_PREVENTION)?;
     m.add("SI_STYLUS", icons::SI_STYLUS)?;
     m.add("SI_GEEKSFORGEEKS", icons::SI_GEEKSFORGEEKS)?;
+    m.add("SI_DEEZER", icons::SI_DEEZER)?;
     m.add("SI_UBLOCKORIGIN", icons::SI_UBLOCKORIGIN)?;
     m.add("SI_PRDOTCO", icons::SI_PRDOTCO)?;
     m.add("SI_GODOTENGINE", icons::SI_GODOTENGINE)?;
@@ -157,6 +159,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SAOPAULOMETRO", icons::SI_SAOPAULOMETRO)?;
     m.add("SI_DELONGHI", icons::SI_DELONGHI)?;
     m.add("SI_NEPTUNE", icons::SI_NEPTUNE)?;
+    m.add("SI_PANDOC", icons::SI_PANDOC)?;
     m.add("SI_WXT", icons::SI_WXT)?;
     m.add("SI_TOGGLTRACK", icons::SI_TOGGLTRACK)?;
     m.add("SI_FIGMA", icons::SI_FIGMA)?;
@@ -209,8 +212,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CLOUDBEES", icons::SI_CLOUDBEES)?;
     m.add("SI_KUESKI", icons::SI_KUESKI)?;
     m.add("SI_APACHENETBEANSIDE", icons::SI_APACHENETBEANSIDE)?;
-    m.add("SI_WARP", icons::SI_WARP)?;
-    m.add("SI_CONTRIBUTORCOVENANT", icons::SI_CONTRIBUTORCOVENANT)?;
-    m.add("SI_BITCOIN", icons::SI_BITCOIN)?;
     Ok(())
 }

@@ -30,6 +30,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "notebooklm" => Some(icons::SI_NOTEBOOKLM),
         "protools" => Some(icons::SI_PROTOOLS),
         "htop" => Some(icons::SI_HTOP),
+        "denodeploy" => Some(icons::SI_DENODEPLOY),
         "isro" => Some(icons::SI_ISRO),
         "storybook" => Some(icons::SI_STORYBOOK),
         "midi" => Some(icons::SI_MIDI),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "nrwl" => Some(icons::SI_NRWL),
         "tinkercad" => Some(icons::SI_TINKERCAD),
         "showpad" => Some(icons::SI_SHOWPAD),
-        "pix" => Some(icons::SI_PIX),
         _ => None,
     }
 }
