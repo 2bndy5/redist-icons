@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MUMBLE", icons::SI_MUMBLE)?;
+    m.add("SI_KLM", icons::SI_KLM)?;
+    m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
     m.add("SI_FRITZ", icons::SI_FRITZ)?;
     m.add("SI_INVOICENINJA", icons::SI_INVOICENINJA)?;
     m.add("SI_METRO", icons::SI_METRO)?;
@@ -111,6 +114,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BETTERAUTH", icons::SI_BETTERAUTH)?;
     m.add("SI_SETUPTOOLS", icons::SI_SETUPTOOLS)?;
     m.add("SI_WHENIWORK", icons::SI_WHENIWORK)?;
+    m.add("SI_NDI", icons::SI_NDI)?;
     m.add("SI_WASMER", icons::SI_WASMER)?;
     m.add("SI_ACODE", icons::SI_ACODE)?;
     m.add("SI_GITHUBPAGES", icons::SI_GITHUBPAGES)?;
@@ -205,9 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PERFORCE", icons::SI_PERFORCE)?;
     m.add("SI_OCTOPRINT", icons::SI_OCTOPRINT)?;
     m.add("SI_VIVINT", icons::SI_VIVINT)?;
-    m.add("SI_KDENLIVE", icons::SI_KDENLIVE)?;
-    m.add("SI_RYANAIR", icons::SI_RYANAIR)?;
-    m.add("SI_TENSORFLOW", icons::SI_TENSORFLOW)?;
-    m.add("SI_POLYMERPROJECT", icons::SI_POLYMERPROJECT)?;
     Ok(())
 }

@@ -30,6 +30,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NOTEBOOKLM", icons::SI_NOTEBOOKLM)?;
     m.add("SI_PROTOOLS", icons::SI_PROTOOLS)?;
     m.add("SI_HTOP", icons::SI_HTOP)?;
+    m.add("SI_DENODEPLOY", icons::SI_DENODEPLOY)?;
     m.add("SI_ISRO", icons::SI_ISRO)?;
     m.add("SI_STORYBOOK", icons::SI_STORYBOOK)?;
     m.add("SI_MIDI", icons::SI_MIDI)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NRWL", icons::SI_NRWL)?;
     m.add("SI_TINKERCAD", icons::SI_TINKERCAD)?;
     m.add("SI_SHOWPAD", icons::SI_SHOWPAD)?;
-    m.add("SI_PIX", icons::SI_PIX)?;
     Ok(())
 }

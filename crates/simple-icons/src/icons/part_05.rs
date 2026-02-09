@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// reasonstudios
+pub const SI_REASONSTUDIOS: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Reason Studios</title><path d="M2.49 5.114l8.3-4.79a2.421 2.421 0 012.39-.017l.03.017 8.299 4.79c.74.427 1.2 1.212 1.211 2.065V16.79c0 .854-.451 1.645-1.184 2.08l-.027.016-8.299 4.79a2.42 2.42 0 01-2.39.017l-.03-.017-8.3-4.79a2.421 2.421 0 01-1.21-2.065V7.21c0-.855.45-1.645 1.184-2.08l.026-.016 8.3-4.79zM12 4.026L5.092 8.013v7.974L12 19.974V12l6.908-3.987z"/></svg>"#,
+    slug: "reasonstudios",
+    title: "Reason Studios",
+    hex: "FFFFFF",
+    source: "https://www.reasonstudios.com/press",
+    guidelines: Some("https://www.reasonstudios.com/press"),
+    license: None,
+};
+
 /// khanacademy
 pub const SI_KHANACADEMY: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Khan Academy</title><path d="M21.724 4.973L13.418.328a3.214 3.214 0 0 0-2.828 0L2.276 4.973A3.05 3.05 0 0 0 .862 7.371v9.256a3.05 3.05 0 0 0 1.414 2.4l8.306 4.645a3.214 3.214 0 0 0 2.828 0l8.314-4.645a3.05 3.05 0 0 0 1.414-2.4V7.373a3.05 3.05 0 0 0-1.414-2.4zM12 4.921a2.571 2.571 0 1 1 .001 5.143A2.571 2.571 0 0 1 12 4.92zm3.094 13.627a9.119 9.119 0 0 1-3.103.549 8.972 8.972 0 0 1-3.076-.55 8.493 8.493 0 0 1-5.486-7.987v-.857c4.646.017 8.074 3.823 8.074 8.51v.198h.926v-.197c0-4.688 3.445-8.51 8.056-8.51.026.29.043.582.086.856a8.502 8.502 0 0 1-5.477 7.988z"/></svg>"#,
@@ -2194,17 +2205,6 @@ pub const SI_DASK: Icon = Icon {
     title: "Dask",
     hex: "FC6E6B",
     source: "https://github.com/dask/dask/blob/67e648922512615f94f8a90726423e721d0e3eb2/docs/source/images/dask_icon_black.svg",
-    guidelines: None,
-    license: None,
-};
-
-/// lit
-pub const SI_LIT: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Lit</title><path d="M2.4 9.6l4.8 4.8V24l-4.8-4.8V9.6zm4.8-4.8v9.6L12 9.6V0L7.2 4.8zM12 9.6v9.6l4.8-4.8V4.8L12 9.6zm4.8 4.8V24l4.8-4.8V9.6l-4.8 4.8z"/></svg>"#,
-    slug: "lit",
-    title: "Lit",
-    hex: "324FFF",
-    source: "https://github.com/lit/lit.dev/blob/5e59bdb00b7a261d6fdcd6a4ae529e17f6146ed3/packages/lit-dev-content/site/images/flame-favicon.svg",
     guidelines: None,
     license: None,
 };
