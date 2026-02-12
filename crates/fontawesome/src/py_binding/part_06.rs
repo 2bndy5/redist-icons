@@ -4,6 +4,69 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MAGNIFYING_GLASS_ARROW_RIGHT",
+        icons::SOLID_MAGNIFYING_GLASS_ARROW_RIGHT,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MAGNIFYING_GLASS_CHART",
+        icons::SOLID_MAGNIFYING_GLASS_CHART,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MAGNIFYING_GLASS_DOLLAR",
+        icons::SOLID_MAGNIFYING_GLASS_DOLLAR,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MAGNIFYING_GLASS_LOCATION",
+        icons::SOLID_MAGNIFYING_GLASS_LOCATION,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MAGNIFYING_GLASS_MINUS",
+        icons::SOLID_MAGNIFYING_GLASS_MINUS,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MAGNIFYING_GLASS_PLUS",
+        icons::SOLID_MAGNIFYING_GLASS_PLUS,
+    )?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_MAILCHIMP", icons::BRANDS_MAILCHIMP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MANAT_SIGN", icons::SOLID_MANAT_SIGN)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_MANDALORIAN", icons::BRANDS_MANDALORIAN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MAP", icons::SOLID_MAP)?;
+    #[cfg(feature = "regular")]
+    m.add("REGULAR_MAP", icons::REGULAR_MAP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MAP_LOCATION", icons::SOLID_MAP_LOCATION)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MAP_LOCATION_DOT", icons::SOLID_MAP_LOCATION_DOT)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MAP_PIN", icons::SOLID_MAP_PIN)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_MARKDOWN", icons::BRANDS_MARKDOWN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MARKER", icons::SOLID_MARKER)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MARS", icons::SOLID_MARS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MARS_AND_VENUS", icons::SOLID_MARS_AND_VENUS)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_MARS_AND_VENUS_BURST",
+        icons::SOLID_MARS_AND_VENUS_BURST,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MARS_DOUBLE", icons::SOLID_MARS_DOUBLE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MARS_STROKE", icons::SOLID_MARS_STROKE)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_MARS_STROKE_RIGHT", icons::SOLID_MARS_STROKE_RIGHT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_MARS_STROKE_UP", icons::SOLID_MARS_STROKE_UP)?;
@@ -235,6 +298,8 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_OBJECT_UNGROUP", icons::SOLID_OBJECT_UNGROUP)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_OBJECT_UNGROUP", icons::REGULAR_OBJECT_UNGROUP)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_OBSIDIAN", icons::BRANDS_OBSIDIAN)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_OCTAGON", icons::SOLID_OCTAGON)?;
     #[cfg(feature = "brands")]
@@ -257,6 +322,8 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_OPENCART", icons::BRANDS_OPENCART)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_OPENID", icons::BRANDS_OPENID)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_OPENSTREETMAP", icons::BRANDS_OPENSTREETMAP)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_OPENSUSE", icons::BRANDS_OPENSUSE)?;
     #[cfg(feature = "brands")]
@@ -384,81 +451,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_PERSON_BURST", icons::SOLID_PERSON_BURST)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_CANE", icons::SOLID_PERSON_CANE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_CHALKBOARD", icons::SOLID_PERSON_CHALKBOARD)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_CIRCLE_CHECK",
-        icons::SOLID_PERSON_CIRCLE_CHECK,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_CIRCLE_EXCLAMATION",
-        icons::SOLID_PERSON_CIRCLE_EXCLAMATION,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_CIRCLE_MINUS",
-        icons::SOLID_PERSON_CIRCLE_MINUS,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_CIRCLE_PLUS", icons::SOLID_PERSON_CIRCLE_PLUS)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_CIRCLE_QUESTION",
-        icons::SOLID_PERSON_CIRCLE_QUESTION,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_CIRCLE_XMARK",
-        icons::SOLID_PERSON_CIRCLE_XMARK,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_DIGGING", icons::SOLID_PERSON_DIGGING)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_DOTS_FROM_LINE",
-        icons::SOLID_PERSON_DOTS_FROM_LINE,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_DRESS", icons::SOLID_PERSON_DRESS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_DRESS_BURST", icons::SOLID_PERSON_DRESS_BURST)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_DROWNING", icons::SOLID_PERSON_DROWNING)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_FALLING", icons::SOLID_PERSON_FALLING)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_FALLING_BURST",
-        icons::SOLID_PERSON_FALLING_BURST,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_HALF_DRESS", icons::SOLID_PERSON_HALF_DRESS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_HARASSING", icons::SOLID_PERSON_HARASSING)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_HIKING", icons::SOLID_PERSON_HIKING)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_MILITARY_POINTING",
-        icons::SOLID_PERSON_MILITARY_POINTING,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_MILITARY_RIFLE",
-        icons::SOLID_PERSON_MILITARY_RIFLE,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_MILITARY_TO_PERSON",
-        icons::SOLID_PERSON_MILITARY_TO_PERSON,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_PRAYING", icons::SOLID_PERSON_PRAYING)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_PREGNANT", icons::SOLID_PERSON_PREGNANT)?;
     Ok(())
 }

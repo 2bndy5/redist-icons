@@ -129,7 +129,13 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
     m.add("SOLID_APPLE_WHOLE", icons::SOLID_APPLE_WHOLE)?;
     #[cfg(feature = "solid")]
+    m.add("SOLID_AQUARIUS", icons::SOLID_AQUARIUS)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_ARCH_LINUX", icons::BRANDS_ARCH_LINUX)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_ARCHWAY", icons::SOLID_ARCHWAY)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_ARIES", icons::SOLID_ARIES)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_ARROW_DOWN", icons::SOLID_ARROW_DOWN)?;
     #[cfg(feature = "solid")]
@@ -452,6 +458,8 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_BLUETOOTH", icons::BRANDS_BLUETOOTH)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_BLUETOOTH_B", icons::BRANDS_BLUETOOTH_B)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_BOARD_GAME_GEEK", icons::BRANDS_BOARD_GAME_GEEK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_BOLD", icons::SOLID_BOLD)?;
     #[cfg(feature = "solid")]
@@ -470,16 +478,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_BOOK_ATLAS", icons::SOLID_BOOK_ATLAS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_BOOK_BIBLE", icons::SOLID_BOOK_BIBLE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_BOOK_BOOKMARK", icons::SOLID_BOOK_BOOKMARK)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_BOOK_JOURNAL_WHILLS",
-        icons::SOLID_BOOK_JOURNAL_WHILLS,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_BOOK_MEDICAL", icons::SOLID_BOOK_MEDICAL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_BOOK_OPEN", icons::SOLID_BOOK_OPEN)?;
     Ok(())
 }

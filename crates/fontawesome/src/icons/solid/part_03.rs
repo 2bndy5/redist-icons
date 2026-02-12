@@ -1,6 +1,72 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// solid/greater-than
+pub const SOLID_GREATER_THAN: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M34.9 50.6c-7.4 16-.4 35.1 15.6 42.5L403.6 256 50.6 419c-16 7.4-23.1 26.4-15.6 42.5s26.4 23 42.5 15.6l416-192c11.3-5.2 18.6-16.6 18.6-29.1s-7.3-23.8-18.6-29.1L77.4 35c-16-7.4-35.1-.4-42.5 15.6z"/></svg>"#,
+    slug: "greater-than",
+    last_modified: 1739374285,
+    family: "solid",
+    width: 512,
+    height: 512,
+    label: "Greater Than",
+};
+
+/// solid/greater-than-equal
+pub const SOLID_GREATER_THAN_EQUAL: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M21.9 94.4C5.1 88.8-3.9 70.6 1.7 53.9S25.4 28.1 42.1 33.6l384 128C439.2 166 448 178.2 448 192s-8.8 26-21.9 30.4l-384 128c-16.8 5.6-34.9-3.5-40.5-20.2s3.5-34.9 20.2-40.5L314.8 192 21.9 94.4zM416 416c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 480c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0z"/></svg>"#,
+    slug: "greater-than-equal",
+    last_modified: 1739374287,
+    family: "solid",
+    width: 448,
+    height: 512,
+    label: "Greater Than Equal",
+};
+
+/// solid/grip
+pub const SOLID_GRIP: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M88 96c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0zM280 224l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40zm192 0l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40zm0 192l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40zM280 288c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0zM88 416l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40z"/></svg>"#,
+    slug: "grip",
+    last_modified: 1739375990,
+    family: "solid",
+    width: 512,
+    height: 512,
+    label: "Grip",
+};
+
+/// solid/grip-lines
+pub const SOLID_GRIP_LINES: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M32 288c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 288zm0-128c-17.7 0-32 14.3-32 32s14.3 32 32 32l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 160z"/></svg>"#,
+    slug: "grip-lines",
+    last_modified: 1739375990,
+    family: "solid",
+    width: 448,
+    height: 512,
+    label: "Grip Lines",
+};
+
+/// solid/grip-lines-vertical
+pub const SOLID_GRIP_LINES_VERTICAL: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 448c0 17.7 14.3 32 32 32s32-14.3 32-32L64 64zm128 0c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 384c0 17.7 14.3 32 32 32s32-14.3 32-32l0-384z"/></svg>"#,
+    slug: "grip-lines-vertical",
+    last_modified: 1739375992,
+    family: "solid",
+    width: 192,
+    height: 512,
+    label: "Grip Lines Vertical",
+};
+
+/// solid/grip-vertical
+pub const SOLID_GRIP_VERTICAL: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M128 40c0-22.1-17.9-40-40-40L40 0C17.9 0 0 17.9 0 40L0 88c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zm0 192c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zM0 424l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM320 40c0-22.1-17.9-40-40-40L232 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48zM192 232l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zM320 424c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40l0 48c0 22.1 17.9 40 40 40l48 0c22.1 0 40-17.9 40-40l0-48z"/></svg>"#,
+    slug: "grip-vertical",
+    last_modified: 1739375991,
+    family: "solid",
+    width: 320,
+    height: 512,
+    label: "Grip Vertical",
+};
+
 /// solid/group-arrows-rotate
 pub const SOLID_GROUP_ARROWS_ROTATE: Icon = Icon {
     svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M37.6 122.3c-11.5 18.7-20.6 39-27 60.5-5 16.9 4.6 34.8 21.5 39.8s34.8-4.6 39.8-21.5c18.4-61.9 67.3-110.8 129.2-129.2 16.9-5 26.6-22.9 21.5-39.8S199.8 5.6 182.9 10.6C161.4 17 141.1 26.1 122.3 37.6 112.3 15.4 89.9 0 64 0 28.7 0 0 28.7 0 64 0 89.9 15.4 112.3 37.6 122.3zm436.7 0c22.2-10 37.6-32.4 37.6-58.3 0-35.3-28.7-64-64-64-25.9 0-48.3 15.4-58.3 37.6-18.7-11.5-39-20.6-60.5-27-16.9-5-34.8 4.6-39.8 21.5s4.6 34.8 21.5 39.8c61.9 18.4 110.8 67.3 129.2 129.2 5 16.9 22.9 26.6 39.8 21.5s26.6-22.9 21.5-39.8c-6.4-21.5-15.5-41.8-27-60.5zM512 448c0-25.9-15.4-48.3-37.6-58.3 11.5-18.7 20.6-39 27-60.5 5-16.9-4.6-34.8-21.5-39.8s-34.8 4.6-39.8 21.5c-18.4 61.9-67.3 110.8-129.2 129.2-16.9 5-26.6 22.9-21.5 39.8s22.9 26.6 39.8 21.5c21.5-6.4 41.8-15.5 60.5-27 10 22.2 32.4 37.6 58.3 37.6 35.3 0 64-28.7 64-64zM37.6 389.7c-22.2 10-37.6 32.4-37.6 58.3 0 35.3 28.7 64 64 64 25.9 0 48.3-15.4 58.3-37.6 18.7 11.5 39 20.6 60.5 27 16.9 5 34.8-4.6 39.8-21.5s-4.6-34.8-21.5-39.8c-61.9-18.4-110.8-67.3-129.2-129.2-5-16.9-22.9-26.6-39.8-21.5S5.6 312.2 10.6 329.1c6.4 21.5 15.5 41.8 27 60.5zM256 192c15.6 0 30 5.6 41.1 14.9l-15.3 15.3c-6.6 6.6-1.9 17.8 7.4 17.8l60.5 0c5.7 0 10.4-4.7 10.4-10.4l0-60.5c0-9.3-11.2-13.9-17.8-7.4l-11.2 11.2c-19.8-17.9-46.2-28.9-75.1-28.9-43.6 0-81.3 24.9-99.8 61.1-6 11.8-1.4 26.3 10.4 32.3s26.3 1.4 32.3-10.4c10.6-20.8 32.2-34.9 57-34.9zm58.6 93.1c-10.6 20.8-32.2 34.9-57 34.9-15.7 0-30-5.6-41.1-14.9l15.3-15.3c6.6-6.6 1.9-17.8-7.4-17.8L164 272c-5.7 0-10.4 4.7-10.4 10.4l0 60.5c0 9.3 11.2 13.9 17.8 7.4l11.2-11.2c19.8 17.9 46.2 28.9 75.1 28.9 43.6 0 81.3-24.9 99.8-61.1 6-11.8 1.4-26.3-10.4-32.3s-26.3-1.4-32.3 10.4z"/></svg>"#,
@@ -1816,6 +1882,17 @@ pub const SOLID_LEMON: Icon = Icon {
     label: "Lemon",
 };
 
+/// solid/leo
+pub const SOLID_LEO: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M260 0c72.9 0 132 59.1 132 132l0 5.4-.1 1.4-23.8 270c.4 21.7 18.2 39.2 40 39.2 22.1 0 40-17.9 40-40l0-40c0-17.7 14.3-32 32-32s32 14.3 32 32l0 40c0 57.4-46.6 104-104 104S304 465.4 304 408l0-1.4 .1-1.4 23.9-270.6 0-2.6c0-37.6-30.4-68-68-68s-68 30.4-68 68l0 4c0 3.7 .3 7.3 .8 11l29.7 193.4c.9 6.1 1.4 12.2 1.4 18.4l0 9.2c0 61.9-50.1 112-112 112S0 429.9 0 368 50.1 256 112 256c11.7 0 23 1.8 33.7 5.1L129.6 156.7c-1.1-6.8-1.6-13.8-1.6-20.7l0-4C128 59.1 187.1 0 260 0zM112 320a48 48 0 1 0 0 96 48 48 0 1 0 0-96z"/></svg>"#,
+    slug: "leo",
+    last_modified: 1764713315,
+    family: "solid",
+    width: 512,
+    height: 512,
+    label: "Leo",
+};
+
 /// solid/less-than
 pub const SOLID_LESS_THAN: Icon = Icon {
     svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M477.1 50.6c7.4 16 .4 35.1-15.6 42.5L108.4 256 461.4 419c16 7.4 23 26.4 15.6 42.5s-26.4 23-42.5 15.6l-416-192C7.3 279.8 0 268.5 0 256S7.3 232.2 18.6 227l416-192c16-7.4 35.1-.4 42.5 15.6z"/></svg>"#,
@@ -1836,6 +1913,17 @@ pub const SOLID_LESS_THAN_EQUAL: Icon = Icon {
     width: 448,
     height: 512,
     label: "Less Than Equal",
+};
+
+/// solid/libra
+pub const SOLID_LIBRA: Icon = Icon {
+    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M480 384c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l448 0zM256 32c97.2 0 176 78.8 176 176 0 16.6-2.4 32.7-6.7 48l54.7 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-104.2 0c-11.8 0-22.7-6.5-28.2-16.9s-4.9-23.1 1.6-32.9c11.9-17.8 18.8-39.1 18.8-62.2 0-61.9-50.1-112-112-112S144 146.1 144 208c0 23.1 6.9 44.4 18.8 62.2 6.6 9.8 7.2 22.5 1.6 32.9S148.1 320 136.2 320L32 320c-17.7 0-32-14.3-32-32s14.3-32 32-32l54.8 0c-4.3-15.3-6.8-31.4-6.8-48 0-97.2 78.8-176 176-176z"/></svg>"#,
+    slug: "libra",
+    last_modified: 1764713315,
+    family: "solid",
+    width: 512,
+    height: 512,
+    label: "Libra",
 };
 
 /// solid/life-ring
@@ -2111,92 +2199,4 @@ pub const SOLID_MAGNIFYING_GLASS_ARROW_RIGHT: Icon = Icon {
     width: 512,
     height: 512,
     label: "Magnifying Glass Arrow Right",
-};
-
-/// solid/magnifying-glass-chart
-pub const SOLID_MAGNIFYING_GLASS_CHART: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zm-312 8l0 64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64l0 96c0 13.3 10.7 24 24 24s24-10.7 24-24l0-96c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>"#,
-    slug: "magnifying-glass-chart",
-    last_modified: 1739376861,
-    family: "solid",
-    width: 512,
-    height: 512,
-    label: "Magnifying Glass Chart",
-};
-
-/// solid/magnifying-glass-dollar
-pub const SOLID_MAGNIFYING_GLASS_DOLLAR: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM212 96c-11 0-20 9-20 20l0 4c-28.8 .3-52 23.7-52 52.5 0 25.7 18.5 47.6 43.9 51.8l41.7 7c6 1 10.4 6.2 10.4 12.3 0 6.9-5.6 12.5-12.5 12.5L168 256c-11 0-20 9-20 20s9 20 20 20l24 0 0 4c0 11 9 20 20 20s20-9 20-20l0-4.7c25-4.1 44-25.7 44-51.8 0-25.7-18.5-47.6-43.9-51.8l-41.7-7c-6-1-10.4-6.2-10.4-12.3 0-6.9 5.6-12.5 12.5-12.5l47.5 0c11 0 20-9 20-20s-9-20-20-20l-8 0 0-4c0-11-9-20-20-20z"/></svg>"#,
-    slug: "magnifying-glass-dollar",
-    last_modified: 1739376859,
-    family: "solid",
-    width: 512,
-    height: 512,
-    label: "Magnifying Glass Dollar",
-};
-
-/// solid/magnifying-glass-location
-pub const SOLID_MAGNIFYING_GLASS_LOCATION: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM288 176c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 48.8 46.5 111.6 68.6 138.6 6 7.3 16.8 7.3 22.7 0 22.1-27 68.6-89.8 68.6-138.6zm-112 0a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>"#,
-    slug: "magnifying-glass-location",
-    last_modified: 1739376863,
-    family: "solid",
-    width: 512,
-    height: 512,
-    label: "Magnifying Glass Location",
-};
-
-/// solid/magnifying-glass-minus
-pub const SOLID_MAGNIFYING_GLASS_MINUS: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM136 184c-13.3 0-24 10.7-24 24s10.7 24 24 24l144 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-144 0z"/></svg>"#,
-    slug: "magnifying-glass-minus",
-    last_modified: 1739376859,
-    family: "solid",
-    width: 512,
-    height: 512,
-    label: "Magnifying Glass Minus",
-};
-
-/// solid/magnifying-glass-plus
-pub const SOLID_MAGNIFYING_GLASS_PLUS: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 112c-13.3 0-24 10.7-24 24l0 48-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l48 0 0 48c0 13.3 10.7 24 24 24s24-10.7 24-24l0-48 48 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-48c0-13.3-10.7-24-24-24z"/></svg>"#,
-    slug: "magnifying-glass-plus",
-    last_modified: 1739376859,
-    family: "solid",
-    width: 512,
-    height: 512,
-    label: "Magnifying Glass Plus",
-};
-
-/// solid/manat-sign
-pub const SOLID_MANAT_SIGN: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M192 32c-13.3 0-24 10.7-24 24l0 41.5C73.3 109.3 0 190.1 0 288L0 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-62.5 44.8-114.5 104-125.8L168 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-293.8c59.2 11.2 104 63.3 104 125.8l0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-97.9-73.3-178.7-168-190.5L216 56c0-13.3-10.7-24-24-24z"/></svg>"#,
-    slug: "manat-sign",
-    last_modified: 1739375758,
-    family: "solid",
-    width: 384,
-    height: 512,
-    label: "Manat Sign",
-};
-
-/// solid/map
-pub const SOLID_MAP: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 48c0-11.1-5.7-21.4-15.2-27.2s-21.2-6.4-31.1-1.4L349.5 77.5 170.1 17.6c-8.1-2.7-16.8-2.1-24.4 1.7l-128 64C6.8 88.8 0 99.9 0 112L0 464c0 11.1 5.7 21.4 15.2 27.2s21.2 6.4 31.1 1.4l116.1-58.1 179.4 59.8c8.1 2.7 16.8 2.1 24.4-1.7l128-64c10.8-5.4 17.7-16.5 17.7-28.6l0-352zM192 376.9l0-284.5 128 42.7 0 284.5-128-42.7z"/></svg>"#,
-    slug: "map",
-    last_modified: 1739378391,
-    family: "solid",
-    width: 512,
-    height: 512,
-    label: "Map",
-};
-
-/// solid/map-location
-pub const SOLID_MAP_LOCATION: Icon = Icon {
-    svg: r#"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M576 48c0-11.1-5.7-21.4-15.2-27.2s-21.2-6.4-31.1-1.4L413.5 77.5 234.1 17.6c-8.1-2.7-16.8-2.1-24.4 1.7l-128 64C70.8 88.8 64 99.9 64 112l0 352c0 11.1 5.7 21.4 15.2 27.2s21.2 6.4 31.1 1.4l116.1-58.1 173.3 57.8c-4.3-6.4-8.5-13.1-12.6-19.9-11-18.3-21.9-39.3-30-61.8l-101.2-33.7 0-284.5 128 42.7 0 99.3c31-35.8 77-58.4 128-58.4 22.6 0 44.2 4.4 64 12.5L576 48zM392 341.9c0 68.9 64.1 150.4 98.6 189.3 11.6 13 31.3 13 42.9 0 34.5-38.9 98.6-120.4 98.6-189.3 0-65.1-53.7-117.9-120-117.9S392 276.8 392 341.9z"/></svg>"#,
-    slug: "map-location",
-    last_modified: 1739378392,
-    family: "solid",
-    width: 640,
-    height: 512,
-    label: "Map Location",
 };
