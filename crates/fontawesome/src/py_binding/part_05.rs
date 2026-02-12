@@ -3,6 +3,34 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_CRACK", icons::SOLID_HEART_CRACK)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_PULSE", icons::SOLID_HEART_PULSE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HELICOPTER", icons::SOLID_HELICOPTER)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HELICOPTER_SYMBOL", icons::SOLID_HELICOPTER_SYMBOL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HELMET_SAFETY", icons::SOLID_HELMET_SAFETY)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HELMET_UN", icons::SOLID_HELMET_UN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEXAGON", icons::SOLID_HEXAGON)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEXAGON_NODES", icons::SOLID_HEXAGON_NODES)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEXAGON_NODES_BOLT", icons::SOLID_HEXAGON_NODES_BOLT)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HIGHLIGHTER", icons::SOLID_HIGHLIGHTER)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HILL_AVALANCHE", icons::SOLID_HILL_AVALANCHE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HILL_ROCKSLIDE", icons::SOLID_HILL_ROCKSLIDE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HIPPO", icons::SOLID_HIPPO)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_HIPS", icons::BRANDS_HIPS)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_HIRE_A_HELPER", icons::BRANDS_HIRE_A_HELPER)?;
     #[cfg(feature = "brands")]
@@ -127,6 +155,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_HTML5", icons::BRANDS_HTML5)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_HUBSPOT", icons::BRANDS_HUBSPOT)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_HUGGING_FACE", icons::BRANDS_HUGGING_FACE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_HURRICANE", icons::SOLID_HURRICANE)?;
     #[cfg(feature = "solid")]
@@ -230,6 +260,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
     m.add("SOLID_JUG_DETERGENT", icons::SOLID_JUG_DETERGENT)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_JULIA", icons::BRANDS_JULIA)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_JXL", icons::BRANDS_JXL)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_K", icons::SOLID_K)?;
@@ -264,7 +296,11 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
     m.add("SOLID_KIWI_BIRD", icons::SOLID_KIWI_BIRD)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_KO_FI", icons::BRANDS_KO_FI)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_KORVUE", icons::BRANDS_KORVUE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_KUBERNETES", icons::BRANDS_KUBERNETES)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_L", icons::SOLID_L)?;
     #[cfg(feature = "solid")]
@@ -297,6 +333,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_LEAF", icons::SOLID_LEAF)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_LEANPUB", icons::BRANDS_LEANPUB)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_LEETCODE", icons::BRANDS_LEETCODE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_LEFT_LONG", icons::SOLID_LEFT_LONG)?;
     #[cfg(feature = "solid")]
@@ -305,6 +343,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_LEMON", icons::SOLID_LEMON)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_LEMON", icons::REGULAR_LEMON)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_LEO", icons::SOLID_LEO)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_LESS", icons::BRANDS_LESS)?;
     #[cfg(feature = "solid")]
@@ -313,6 +353,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_LESS_THAN_EQUAL", icons::SOLID_LESS_THAN_EQUAL)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_LETTERBOXD", icons::BRANDS_LETTERBOXD)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_LIBRA", icons::SOLID_LIBRA)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_LIFE_RING", icons::SOLID_LIFE_RING)?;
     #[cfg(feature = "regular")]
@@ -388,68 +430,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_MAGNET", icons::SOLID_MAGNET)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_MAGNIFYING_GLASS", icons::SOLID_MAGNIFYING_GLASS)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MAGNIFYING_GLASS_ARROW_RIGHT",
-        icons::SOLID_MAGNIFYING_GLASS_ARROW_RIGHT,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MAGNIFYING_GLASS_CHART",
-        icons::SOLID_MAGNIFYING_GLASS_CHART,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MAGNIFYING_GLASS_DOLLAR",
-        icons::SOLID_MAGNIFYING_GLASS_DOLLAR,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MAGNIFYING_GLASS_LOCATION",
-        icons::SOLID_MAGNIFYING_GLASS_LOCATION,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MAGNIFYING_GLASS_MINUS",
-        icons::SOLID_MAGNIFYING_GLASS_MINUS,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MAGNIFYING_GLASS_PLUS",
-        icons::SOLID_MAGNIFYING_GLASS_PLUS,
-    )?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_MAILCHIMP", icons::BRANDS_MAILCHIMP)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MANAT_SIGN", icons::SOLID_MANAT_SIGN)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_MANDALORIAN", icons::BRANDS_MANDALORIAN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MAP", icons::SOLID_MAP)?;
-    #[cfg(feature = "regular")]
-    m.add("REGULAR_MAP", icons::REGULAR_MAP)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MAP_LOCATION", icons::SOLID_MAP_LOCATION)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MAP_LOCATION_DOT", icons::SOLID_MAP_LOCATION_DOT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MAP_PIN", icons::SOLID_MAP_PIN)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_MARKDOWN", icons::BRANDS_MARKDOWN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MARKER", icons::SOLID_MARKER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MARS", icons::SOLID_MARS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MARS_AND_VENUS", icons::SOLID_MARS_AND_VENUS)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_MARS_AND_VENUS_BURST",
-        icons::SOLID_MARS_AND_VENUS_BURST,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MARS_DOUBLE", icons::SOLID_MARS_DOUBLE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MARS_STROKE", icons::SOLID_MARS_STROKE)?;
     Ok(())
 }

@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "fontawesome-free-pack"
-version = "7.1.0"
+version = "7.2.0"
 dependencies = [
  "pyo3",
 ]

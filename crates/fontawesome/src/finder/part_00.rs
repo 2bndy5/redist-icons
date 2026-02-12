@@ -120,7 +120,13 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         #[cfg(feature = "solid")]
         "solid/apple-whole" => Some(icons::SOLID_APPLE_WHOLE),
         #[cfg(feature = "solid")]
+        "solid/aquarius" => Some(icons::SOLID_AQUARIUS),
+        #[cfg(feature = "brands")]
+        "brands/arch-linux" => Some(icons::BRANDS_ARCH_LINUX),
+        #[cfg(feature = "solid")]
         "solid/archway" => Some(icons::SOLID_ARCHWAY),
+        #[cfg(feature = "solid")]
+        "solid/aries" => Some(icons::SOLID_ARIES),
         #[cfg(feature = "solid")]
         "solid/arrow-down" => Some(icons::SOLID_ARROW_DOWN),
         #[cfg(feature = "solid")]
@@ -377,6 +383,8 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "brands/bluetooth" => Some(icons::BRANDS_BLUETOOTH),
         #[cfg(feature = "brands")]
         "brands/bluetooth-b" => Some(icons::BRANDS_BLUETOOTH_B),
+        #[cfg(feature = "brands")]
+        "brands/board-game-geek" => Some(icons::BRANDS_BOARD_GAME_GEEK),
         #[cfg(feature = "solid")]
         "solid/bold" => Some(icons::SOLID_BOLD),
         #[cfg(feature = "solid")]
@@ -395,14 +403,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "solid/book-atlas" => Some(icons::SOLID_BOOK_ATLAS),
         #[cfg(feature = "solid")]
         "solid/book-bible" => Some(icons::SOLID_BOOK_BIBLE),
-        #[cfg(feature = "solid")]
-        "solid/book-bookmark" => Some(icons::SOLID_BOOK_BOOKMARK),
-        #[cfg(feature = "solid")]
-        "solid/book-journal-whills" => Some(icons::SOLID_BOOK_JOURNAL_WHILLS),
-        #[cfg(feature = "solid")]
-        "solid/book-medical" => Some(icons::SOLID_BOOK_MEDICAL),
-        #[cfg(feature = "solid")]
-        "solid/book-open" => Some(icons::SOLID_BOOK_OPEN),
         _ => None,
     }
 }

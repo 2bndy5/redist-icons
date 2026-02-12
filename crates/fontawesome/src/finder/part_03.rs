@@ -3,6 +3,24 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "brands")]
+        "brands/dropbox" => Some(icons::BRANDS_DROPBOX),
+        #[cfg(feature = "solid")]
+        "solid/droplet" => Some(icons::SOLID_DROPLET),
+        #[cfg(feature = "solid")]
+        "solid/droplet-slash" => Some(icons::SOLID_DROPLET_SLASH),
+        #[cfg(feature = "solid")]
+        "solid/drum" => Some(icons::SOLID_DRUM),
+        #[cfg(feature = "solid")]
+        "solid/drum-steelpan" => Some(icons::SOLID_DRUM_STEELPAN),
+        #[cfg(feature = "solid")]
+        "solid/drumstick-bite" => Some(icons::SOLID_DRUMSTICK_BITE),
+        #[cfg(feature = "brands")]
+        "brands/drupal" => Some(icons::BRANDS_DRUPAL),
+        #[cfg(feature = "solid")]
+        "solid/dumbbell" => Some(icons::SOLID_DUMBBELL),
+        #[cfg(feature = "solid")]
+        "solid/dumpster" => Some(icons::SOLID_DUMPSTER),
         #[cfg(feature = "solid")]
         "solid/dumpster-fire" => Some(icons::SOLID_DUMPSTER_FIRE),
         #[cfg(feature = "solid")]
@@ -276,6 +294,8 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         #[cfg(feature = "brands")]
         "brands/fedex" => Some(icons::BRANDS_FEDEX),
         #[cfg(feature = "brands")]
+        "brands/fediverse" => Some(icons::BRANDS_FEDIVERSE),
+        #[cfg(feature = "brands")]
         "brands/fedora" => Some(icons::BRANDS_FEDORA),
         #[cfg(feature = "solid")]
         "solid/ferry" => Some(icons::SOLID_FERRY),
@@ -383,26 +403,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "solid/filter-circle-dollar" => Some(icons::SOLID_FILTER_CIRCLE_DOLLAR),
         #[cfg(feature = "solid")]
         "solid/filter-circle-xmark" => Some(icons::SOLID_FILTER_CIRCLE_XMARK),
-        #[cfg(feature = "solid")]
-        "solid/fingerprint" => Some(icons::SOLID_FINGERPRINT),
-        #[cfg(feature = "solid")]
-        "solid/fire" => Some(icons::SOLID_FIRE),
-        #[cfg(feature = "solid")]
-        "solid/fire-burner" => Some(icons::SOLID_FIRE_BURNER),
-        #[cfg(feature = "solid")]
-        "solid/fire-extinguisher" => Some(icons::SOLID_FIRE_EXTINGUISHER),
-        #[cfg(feature = "solid")]
-        "solid/fire-flame-curved" => Some(icons::SOLID_FIRE_FLAME_CURVED),
-        #[cfg(feature = "solid")]
-        "solid/fire-flame-simple" => Some(icons::SOLID_FIRE_FLAME_SIMPLE),
-        #[cfg(feature = "brands")]
-        "brands/firefox" => Some(icons::BRANDS_FIREFOX),
-        #[cfg(feature = "brands")]
-        "brands/firefox-browser" => Some(icons::BRANDS_FIREFOX_BROWSER),
-        #[cfg(feature = "brands")]
-        "brands/first-order" => Some(icons::BRANDS_FIRST_ORDER),
-        #[cfg(feature = "brands")]
-        "brands/first-order-alt" => Some(icons::BRANDS_FIRST_ORDER_ALT),
         _ => None,
     }
 }
