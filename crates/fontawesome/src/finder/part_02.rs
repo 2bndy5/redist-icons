@@ -4,6 +4,18 @@ use crate::{Icon, icons};
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "regular")]
+        "regular/circle-down" => Some(icons::REGULAR_CIRCLE_DOWN),
+        #[cfg(feature = "solid")]
+        "solid/circle-exclamation" => Some(icons::SOLID_CIRCLE_EXCLAMATION),
+        #[cfg(feature = "solid")]
+        "solid/circle-h" => Some(icons::SOLID_CIRCLE_H),
+        #[cfg(feature = "solid")]
+        "solid/circle-half-stroke" => Some(icons::SOLID_CIRCLE_HALF_STROKE),
+        #[cfg(feature = "solid")]
+        "solid/circle-info" => Some(icons::SOLID_CIRCLE_INFO),
+        #[cfg(feature = "solid")]
+        "solid/circle-left" => Some(icons::SOLID_CIRCLE_LEFT),
+        #[cfg(feature = "regular")]
         "regular/circle-left" => Some(icons::REGULAR_CIRCLE_LEFT),
         #[cfg(feature = "solid")]
         "solid/circle-minus" => Some(icons::SOLID_CIRCLE_MINUS),
@@ -47,10 +59,14 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/circle-xmark" => Some(icons::SOLID_CIRCLE_XMARK),
         #[cfg(feature = "regular")]
         "regular/circle-xmark" => Some(icons::REGULAR_CIRCLE_XMARK),
+        #[cfg(feature = "brands")]
+        "brands/circle-zulip" => Some(icons::BRANDS_CIRCLE_ZULIP),
         #[cfg(feature = "solid")]
         "solid/city" => Some(icons::SOLID_CITY),
         #[cfg(feature = "solid")]
         "solid/clapperboard" => Some(icons::SOLID_CLAPPERBOARD),
+        #[cfg(feature = "brands")]
+        "brands/claude" => Some(icons::BRANDS_CLAUDE),
         #[cfg(feature = "solid")]
         "solid/clipboard" => Some(icons::SOLID_CLIPBOARD),
         #[cfg(feature = "regular")]
@@ -77,6 +93,8 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/closed-captioning" => Some(icons::SOLID_CLOSED_CAPTIONING),
         #[cfg(feature = "regular")]
         "regular/closed-captioning" => Some(icons::REGULAR_CLOSED_CAPTIONING),
+        #[cfg(feature = "solid")]
+        "solid/closed-captioning-slash" => Some(icons::SOLID_CLOSED_CAPTIONING_SLASH),
         #[cfg(feature = "solid")]
         "solid/cloud" => Some(icons::SOLID_CLOUD),
         #[cfg(feature = "regular")]
@@ -389,24 +407,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/draw-polygon" => Some(icons::SOLID_DRAW_POLYGON),
         #[cfg(feature = "brands")]
         "brands/dribbble" => Some(icons::BRANDS_DRIBBBLE),
-        #[cfg(feature = "brands")]
-        "brands/dropbox" => Some(icons::BRANDS_DROPBOX),
-        #[cfg(feature = "solid")]
-        "solid/droplet" => Some(icons::SOLID_DROPLET),
-        #[cfg(feature = "solid")]
-        "solid/droplet-slash" => Some(icons::SOLID_DROPLET_SLASH),
-        #[cfg(feature = "solid")]
-        "solid/drum" => Some(icons::SOLID_DRUM),
-        #[cfg(feature = "solid")]
-        "solid/drum-steelpan" => Some(icons::SOLID_DRUM_STEELPAN),
-        #[cfg(feature = "solid")]
-        "solid/drumstick-bite" => Some(icons::SOLID_DRUMSTICK_BITE),
-        #[cfg(feature = "brands")]
-        "brands/drupal" => Some(icons::BRANDS_DRUPAL),
-        #[cfg(feature = "solid")]
-        "solid/dumbbell" => Some(icons::SOLID_DUMBBELL),
-        #[cfg(feature = "solid")]
-        "solid/dumpster" => Some(icons::SOLID_DUMPSTER),
         _ => None,
     }
 }

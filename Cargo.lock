@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "fontawesome-free-pack"
-version = "7.1.0"
+version = "7.2.0"
 dependencies = [
  "pyo3",
 ]
@@ -30,7 +30,7 @@ dependencies = [
 
 [[package]]
 name = "octicons-pack"
-version = "19.21.2"
+version = "19.22.0"
 dependencies = [
  "pyo3",
 ]

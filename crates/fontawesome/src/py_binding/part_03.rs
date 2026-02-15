@@ -3,6 +3,24 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_DROPBOX", icons::BRANDS_DROPBOX)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DROPLET", icons::SOLID_DROPLET)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DROPLET_SLASH", icons::SOLID_DROPLET_SLASH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DRUM", icons::SOLID_DRUM)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DRUM_STEELPAN", icons::SOLID_DRUM_STEELPAN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DRUMSTICK_BITE", icons::SOLID_DRUMSTICK_BITE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_DRUPAL", icons::BRANDS_DRUPAL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DUMBBELL", icons::SOLID_DUMBBELL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DUMPSTER", icons::SOLID_DUMPSTER)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_DUMPSTER_FIRE", icons::SOLID_DUMPSTER_FIRE)?;
     #[cfg(feature = "solid")]
@@ -321,6 +339,8 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "brands")]
     m.add("BRANDS_FEDEX", icons::BRANDS_FEDEX)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_FEDIVERSE", icons::BRANDS_FEDIVERSE)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_FEDORA", icons::BRANDS_FEDORA)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_FERRY", icons::SOLID_FERRY)?;
@@ -443,25 +463,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
         "SOLID_FILTER_CIRCLE_XMARK",
         icons::SOLID_FILTER_CIRCLE_XMARK,
     )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FINGERPRINT", icons::SOLID_FINGERPRINT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FIRE", icons::SOLID_FIRE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FIRE_BURNER", icons::SOLID_FIRE_BURNER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FIRE_EXTINGUISHER", icons::SOLID_FIRE_EXTINGUISHER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FIRE_FLAME_CURVED", icons::SOLID_FIRE_FLAME_CURVED)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FIRE_FLAME_SIMPLE", icons::SOLID_FIRE_FLAME_SIMPLE)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_FIREFOX", icons::BRANDS_FIREFOX)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_FIREFOX_BROWSER", icons::BRANDS_FIREFOX_BROWSER)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_FIRST_ORDER", icons::BRANDS_FIRST_ORDER)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_FIRST_ORDER_ALT", icons::BRANDS_FIRST_ORDER_ALT)?;
     Ok(())
 }

@@ -1,7 +1,7 @@
 [package]
 name = "fontawesome-free-pack"
 description = "A redistribution of @fortawesome/fontawesome-free npm package's SVG and metadata."
-version = "7.1.0"
+version = "7.2.0"
 license = "(CC-BY-4.0 AND OFL-1.1 AND MIT)"
 exclude = ["deno.json","main.ts","pyproject.toml","tests/*"]
 

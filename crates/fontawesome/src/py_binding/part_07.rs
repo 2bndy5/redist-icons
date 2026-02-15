@@ -4,6 +4,82 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_CANE", icons::SOLID_PERSON_CANE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_CHALKBOARD", icons::SOLID_PERSON_CHALKBOARD)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_CIRCLE_CHECK",
+        icons::SOLID_PERSON_CIRCLE_CHECK,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_CIRCLE_EXCLAMATION",
+        icons::SOLID_PERSON_CIRCLE_EXCLAMATION,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_CIRCLE_MINUS",
+        icons::SOLID_PERSON_CIRCLE_MINUS,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_CIRCLE_PLUS", icons::SOLID_PERSON_CIRCLE_PLUS)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_CIRCLE_QUESTION",
+        icons::SOLID_PERSON_CIRCLE_QUESTION,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_CIRCLE_XMARK",
+        icons::SOLID_PERSON_CIRCLE_XMARK,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_DIGGING", icons::SOLID_PERSON_DIGGING)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_DOTS_FROM_LINE",
+        icons::SOLID_PERSON_DOTS_FROM_LINE,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_DRESS", icons::SOLID_PERSON_DRESS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_DRESS_BURST", icons::SOLID_PERSON_DRESS_BURST)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_DROWNING", icons::SOLID_PERSON_DROWNING)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_FALLING", icons::SOLID_PERSON_FALLING)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_FALLING_BURST",
+        icons::SOLID_PERSON_FALLING_BURST,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_HALF_DRESS", icons::SOLID_PERSON_HALF_DRESS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_HARASSING", icons::SOLID_PERSON_HARASSING)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_HIKING", icons::SOLID_PERSON_HIKING)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_MILITARY_POINTING",
+        icons::SOLID_PERSON_MILITARY_POINTING,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_MILITARY_RIFLE",
+        icons::SOLID_PERSON_MILITARY_RIFLE,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_MILITARY_TO_PERSON",
+        icons::SOLID_PERSON_MILITARY_TO_PERSON,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_PRAYING", icons::SOLID_PERSON_PRAYING)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_PREGNANT", icons::SOLID_PERSON_PREGNANT)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_PERSON_RAYS", icons::SOLID_PERSON_RAYS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_PERSON_RIFLE", icons::SOLID_PERSON_RIFLE)?;
@@ -81,6 +157,8 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_PHOTO_FILM", icons::SOLID_PHOTO_FILM)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_PHP", icons::BRANDS_PHP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PICTURE_IN_PICTURE", icons::SOLID_PICTURE_IN_PICTURE)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_PIED_PIPER", icons::BRANDS_PIED_PIPER)?;
     #[cfg(feature = "brands")]
@@ -97,6 +175,8 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_PINTEREST", icons::BRANDS_PINTEREST)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_PINTEREST_P", icons::BRANDS_PINTEREST_P)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PISCES", icons::SOLID_PISCES)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_PIX", icons::BRANDS_PIX)?;
     #[cfg(feature = "brands")]
@@ -165,6 +245,8 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_POO_STORM", icons::SOLID_POO_STORM)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_POOP", icons::SOLID_POOP)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_POSTGRESQL", icons::BRANDS_POSTGRESQL)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_POWER_OFF", icons::SOLID_POWER_OFF)?;
     #[cfg(feature = "solid")]
@@ -359,6 +441,8 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "brands")]
     m.add("BRANDS_SAFARI", icons::BRANDS_SAFARI)?;
     #[cfg(feature = "solid")]
+    m.add("SOLID_SAGITTARIUS", icons::SOLID_SAGITTARIUS)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_SAILBOAT", icons::SOLID_SAILBOAT)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_SALESFORCE", icons::BRANDS_SALESFORCE)?;
@@ -377,6 +461,8 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
         "SOLID_SCALE_UNBALANCED_FLIP",
         icons::SOLID_SCALE_UNBALANCED_FLIP,
     )?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_SCALEWAY", icons::BRANDS_SCALEWAY)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_SCHLIX", icons::BRANDS_SCHLIX)?;
     #[cfg(feature = "solid")]
@@ -398,64 +484,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SCHOOL_FLAG", icons::SOLID_SCHOOL_FLAG)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCHOOL_LOCK", icons::SOLID_SCHOOL_LOCK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCISSORS", icons::SOLID_SCISSORS)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SCREENPAL", icons::BRANDS_SCREENPAL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCREWDRIVER", icons::SOLID_SCREWDRIVER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCREWDRIVER_WRENCH", icons::SOLID_SCREWDRIVER_WRENCH)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SCRIBD", icons::BRANDS_SCRIBD)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCROLL", icons::SOLID_SCROLL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCROLL_TORAH", icons::SOLID_SCROLL_TORAH)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SD_CARD", icons::SOLID_SD_CARD)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SEARCHENGIN", icons::BRANDS_SEARCHENGIN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SECTION", icons::SOLID_SECTION)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SEEDLING", icons::SOLID_SEEDLING)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SELLCAST", icons::BRANDS_SELLCAST)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SELLSY", icons::BRANDS_SELLSY)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SEPTAGON", icons::SOLID_SEPTAGON)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SERVER", icons::SOLID_SERVER)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SERVICESTACK", icons::BRANDS_SERVICESTACK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHAPES", icons::SOLID_SHAPES)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHARE", icons::SOLID_SHARE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHARE_FROM_SQUARE", icons::SOLID_SHARE_FROM_SQUARE)?;
-    #[cfg(feature = "regular")]
-    m.add(
-        "REGULAR_SHARE_FROM_SQUARE",
-        icons::REGULAR_SHARE_FROM_SQUARE,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHARE_NODES", icons::SOLID_SHARE_NODES)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHEET_PLASTIC", icons::SOLID_SHEET_PLASTIC)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHEKEL_SIGN", icons::SOLID_SHEKEL_SIGN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHIELD", icons::SOLID_SHIELD)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHIELD_CAT", icons::SOLID_SHIELD_CAT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHIELD_DOG", icons::SOLID_SHIELD_DOG)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SHIELD_HALVED", icons::SOLID_SHIELD_HALVED)?;
     Ok(())
 }

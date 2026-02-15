@@ -3,6 +3,26 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "solid")]
+        "solid/fingerprint" => Some(icons::SOLID_FINGERPRINT),
+        #[cfg(feature = "solid")]
+        "solid/fire" => Some(icons::SOLID_FIRE),
+        #[cfg(feature = "solid")]
+        "solid/fire-burner" => Some(icons::SOLID_FIRE_BURNER),
+        #[cfg(feature = "solid")]
+        "solid/fire-extinguisher" => Some(icons::SOLID_FIRE_EXTINGUISHER),
+        #[cfg(feature = "solid")]
+        "solid/fire-flame-curved" => Some(icons::SOLID_FIRE_FLAME_CURVED),
+        #[cfg(feature = "solid")]
+        "solid/fire-flame-simple" => Some(icons::SOLID_FIRE_FLAME_SIMPLE),
+        #[cfg(feature = "brands")]
+        "brands/firefox" => Some(icons::BRANDS_FIREFOX),
+        #[cfg(feature = "brands")]
+        "brands/firefox-browser" => Some(icons::BRANDS_FIREFOX_BROWSER),
+        #[cfg(feature = "brands")]
+        "brands/first-order" => Some(icons::BRANDS_FIRST_ORDER),
+        #[cfg(feature = "brands")]
+        "brands/first-order-alt" => Some(icons::BRANDS_FIRST_ORDER_ALT),
         #[cfg(feature = "brands")]
         "brands/firstdraft" => Some(icons::BRANDS_FIRSTDRAFT),
         #[cfg(feature = "solid")]
@@ -68,6 +88,8 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         #[cfg(feature = "solid")]
         "solid/football" => Some(icons::SOLID_FOOTBALL),
         #[cfg(feature = "brands")]
+        "brands/forgejo" => Some(icons::BRANDS_FORGEJO),
+        #[cfg(feature = "brands")]
         "brands/fort-awesome" => Some(icons::BRANDS_FORT_AWESOME),
         #[cfg(feature = "brands")]
         "brands/fort-awesome-alt" => Some(icons::BRANDS_FORT_AWESOME_ALT),
@@ -124,6 +146,8 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         #[cfg(feature = "regular")]
         "regular/gem" => Some(icons::REGULAR_GEM),
         #[cfg(feature = "solid")]
+        "solid/gemini" => Some(icons::SOLID_GEMINI),
+        #[cfg(feature = "solid")]
         "solid/genderless" => Some(icons::SOLID_GENDERLESS),
         #[cfg(feature = "brands")]
         "brands/get-pocket" => Some(icons::BRANDS_GET_POCKET),
@@ -141,6 +165,8 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "brands/git" => Some(icons::BRANDS_GIT),
         #[cfg(feature = "brands")]
         "brands/git-alt" => Some(icons::BRANDS_GIT_ALT),
+        #[cfg(feature = "brands")]
+        "brands/gitee" => Some(icons::BRANDS_GITEE),
         #[cfg(feature = "brands")]
         "brands/github" => Some(icons::BRANDS_GITHUB),
         #[cfg(feature = "brands")]
@@ -161,6 +187,8 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "brands/glide" => Some(icons::BRANDS_GLIDE),
         #[cfg(feature = "brands")]
         "brands/glide-g" => Some(icons::BRANDS_GLIDE_G),
+        #[cfg(feature = "brands")]
+        "brands/globaleaks" => Some(icons::BRANDS_GLOBALEAKS),
         #[cfg(feature = "solid")]
         "solid/globe" => Some(icons::SOLID_GLOBE),
         #[cfg(feature = "brands")]
@@ -375,34 +403,6 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "solid/heart-circle-plus" => Some(icons::SOLID_HEART_CIRCLE_PLUS),
         #[cfg(feature = "solid")]
         "solid/heart-circle-xmark" => Some(icons::SOLID_HEART_CIRCLE_XMARK),
-        #[cfg(feature = "solid")]
-        "solid/heart-crack" => Some(icons::SOLID_HEART_CRACK),
-        #[cfg(feature = "solid")]
-        "solid/heart-pulse" => Some(icons::SOLID_HEART_PULSE),
-        #[cfg(feature = "solid")]
-        "solid/helicopter" => Some(icons::SOLID_HELICOPTER),
-        #[cfg(feature = "solid")]
-        "solid/helicopter-symbol" => Some(icons::SOLID_HELICOPTER_SYMBOL),
-        #[cfg(feature = "solid")]
-        "solid/helmet-safety" => Some(icons::SOLID_HELMET_SAFETY),
-        #[cfg(feature = "solid")]
-        "solid/helmet-un" => Some(icons::SOLID_HELMET_UN),
-        #[cfg(feature = "solid")]
-        "solid/hexagon" => Some(icons::SOLID_HEXAGON),
-        #[cfg(feature = "solid")]
-        "solid/hexagon-nodes" => Some(icons::SOLID_HEXAGON_NODES),
-        #[cfg(feature = "solid")]
-        "solid/hexagon-nodes-bolt" => Some(icons::SOLID_HEXAGON_NODES_BOLT),
-        #[cfg(feature = "solid")]
-        "solid/highlighter" => Some(icons::SOLID_HIGHLIGHTER),
-        #[cfg(feature = "solid")]
-        "solid/hill-avalanche" => Some(icons::SOLID_HILL_AVALANCHE),
-        #[cfg(feature = "solid")]
-        "solid/hill-rockslide" => Some(icons::SOLID_HILL_ROCKSLIDE),
-        #[cfg(feature = "solid")]
-        "solid/hippo" => Some(icons::SOLID_HIPPO),
-        #[cfg(feature = "brands")]
-        "brands/hips" => Some(icons::BRANDS_HIPS),
         _ => None,
     }
 }
