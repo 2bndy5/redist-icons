@@ -4,6 +4,18 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "regular")]
+    m.add("REGULAR_CIRCLE_DOWN", icons::REGULAR_CIRCLE_DOWN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CIRCLE_EXCLAMATION", icons::SOLID_CIRCLE_EXCLAMATION)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CIRCLE_H", icons::SOLID_CIRCLE_H)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CIRCLE_HALF_STROKE", icons::SOLID_CIRCLE_HALF_STROKE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CIRCLE_INFO", icons::SOLID_CIRCLE_INFO)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CIRCLE_LEFT", icons::SOLID_CIRCLE_LEFT)?;
+    #[cfg(feature = "regular")]
     m.add("REGULAR_CIRCLE_LEFT", icons::REGULAR_CIRCLE_LEFT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CIRCLE_MINUS", icons::SOLID_CIRCLE_MINUS)?;
@@ -47,10 +59,14 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_CIRCLE_XMARK", icons::SOLID_CIRCLE_XMARK)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_CIRCLE_XMARK", icons::REGULAR_CIRCLE_XMARK)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_CIRCLE_ZULIP", icons::BRANDS_CIRCLE_ZULIP)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CITY", icons::SOLID_CITY)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CLAPPERBOARD", icons::SOLID_CLAPPERBOARD)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_CLAUDE", icons::BRANDS_CLAUDE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CLIPBOARD", icons::SOLID_CLIPBOARD)?;
     #[cfg(feature = "regular")]
@@ -79,6 +95,11 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add(
         "REGULAR_CLOSED_CAPTIONING",
         icons::REGULAR_CLOSED_CAPTIONING,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_CLOSED_CAPTIONING_SLASH",
+        icons::SOLID_CLOSED_CAPTIONING_SLASH,
     )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CLOUD", icons::SOLID_CLOUD)?;
@@ -439,23 +460,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_DRAW_POLYGON", icons::SOLID_DRAW_POLYGON)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_DRIBBBLE", icons::BRANDS_DRIBBBLE)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_DROPBOX", icons::BRANDS_DROPBOX)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DROPLET", icons::SOLID_DROPLET)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DROPLET_SLASH", icons::SOLID_DROPLET_SLASH)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DRUM", icons::SOLID_DRUM)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DRUM_STEELPAN", icons::SOLID_DRUM_STEELPAN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DRUMSTICK_BITE", icons::SOLID_DRUMSTICK_BITE)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_DRUPAL", icons::BRANDS_DRUPAL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DUMBBELL", icons::SOLID_DUMBBELL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DUMPSTER", icons::SOLID_DUMPSTER)?;
     Ok(())
 }

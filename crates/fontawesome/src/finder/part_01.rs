@@ -4,6 +4,14 @@ use crate::{Icon, icons};
 pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "solid")]
+        "solid/book-bookmark" => Some(icons::SOLID_BOOK_BOOKMARK),
+        #[cfg(feature = "solid")]
+        "solid/book-journal-whills" => Some(icons::SOLID_BOOK_JOURNAL_WHILLS),
+        #[cfg(feature = "solid")]
+        "solid/book-medical" => Some(icons::SOLID_BOOK_MEDICAL),
+        #[cfg(feature = "solid")]
+        "solid/book-open" => Some(icons::SOLID_BOOK_OPEN),
+        #[cfg(feature = "solid")]
         "solid/book-open-reader" => Some(icons::SOLID_BOOK_OPEN_READER),
         #[cfg(feature = "solid")]
         "solid/book-quran" => Some(icons::SOLID_BOOK_QURAN),
@@ -194,9 +202,13 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         #[cfg(feature = "brands")]
         "brands/canadian-maple-leaf" => Some(icons::BRANDS_CANADIAN_MAPLE_LEAF),
         #[cfg(feature = "solid")]
+        "solid/cancer" => Some(icons::SOLID_CANCER),
+        #[cfg(feature = "solid")]
         "solid/candy-cane" => Some(icons::SOLID_CANDY_CANE),
         #[cfg(feature = "solid")]
         "solid/cannabis" => Some(icons::SOLID_CANNABIS),
+        #[cfg(feature = "solid")]
+        "solid/capricorn" => Some(icons::SOLID_CAPRICORN),
         #[cfg(feature = "solid")]
         "solid/capsules" => Some(icons::SOLID_CAPSULES),
         #[cfg(feature = "solid")]
@@ -391,18 +403,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "regular/circle-dot" => Some(icons::REGULAR_CIRCLE_DOT),
         #[cfg(feature = "solid")]
         "solid/circle-down" => Some(icons::SOLID_CIRCLE_DOWN),
-        #[cfg(feature = "regular")]
-        "regular/circle-down" => Some(icons::REGULAR_CIRCLE_DOWN),
-        #[cfg(feature = "solid")]
-        "solid/circle-exclamation" => Some(icons::SOLID_CIRCLE_EXCLAMATION),
-        #[cfg(feature = "solid")]
-        "solid/circle-h" => Some(icons::SOLID_CIRCLE_H),
-        #[cfg(feature = "solid")]
-        "solid/circle-half-stroke" => Some(icons::SOLID_CIRCLE_HALF_STROKE),
-        #[cfg(feature = "solid")]
-        "solid/circle-info" => Some(icons::SOLID_CIRCLE_INFO),
-        #[cfg(feature = "solid")]
-        "solid/circle-left" => Some(icons::SOLID_CIRCLE_LEFT),
         _ => None,
     }
 }

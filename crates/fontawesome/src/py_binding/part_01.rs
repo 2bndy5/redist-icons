@@ -4,6 +4,17 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_BOOK_BOOKMARK", icons::SOLID_BOOK_BOOKMARK)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_BOOK_JOURNAL_WHILLS",
+        icons::SOLID_BOOK_JOURNAL_WHILLS,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_BOOK_MEDICAL", icons::SOLID_BOOK_MEDICAL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_BOOK_OPEN", icons::SOLID_BOOK_OPEN)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_BOOK_OPEN_READER", icons::SOLID_BOOK_OPEN_READER)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_BOOK_QURAN", icons::SOLID_BOOK_QURAN)?;
@@ -221,9 +232,13 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
         icons::BRANDS_CANADIAN_MAPLE_LEAF,
     )?;
     #[cfg(feature = "solid")]
+    m.add("SOLID_CANCER", icons::SOLID_CANCER)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_CANDY_CANE", icons::SOLID_CANDY_CANE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CANNABIS", icons::SOLID_CANNABIS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CAPRICORN", icons::SOLID_CAPRICORN)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CAPSULES", icons::SOLID_CAPSULES)?;
     #[cfg(feature = "solid")]
@@ -433,17 +448,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REGULAR_CIRCLE_DOT", icons::REGULAR_CIRCLE_DOT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CIRCLE_DOWN", icons::SOLID_CIRCLE_DOWN)?;
-    #[cfg(feature = "regular")]
-    m.add("REGULAR_CIRCLE_DOWN", icons::REGULAR_CIRCLE_DOWN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_CIRCLE_EXCLAMATION", icons::SOLID_CIRCLE_EXCLAMATION)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_CIRCLE_H", icons::SOLID_CIRCLE_H)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_CIRCLE_HALF_STROKE", icons::SOLID_CIRCLE_HALF_STROKE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_CIRCLE_INFO", icons::SOLID_CIRCLE_INFO)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_CIRCLE_LEFT", icons::SOLID_CIRCLE_LEFT)?;
     Ok(())
 }

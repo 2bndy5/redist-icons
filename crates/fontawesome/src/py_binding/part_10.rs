@@ -4,6 +4,105 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_USER_PLUS", icons::SOLID_USER_PLUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_SECRET", icons::SOLID_USER_SECRET)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_SHIELD", icons::SOLID_USER_SHIELD)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_SLASH", icons::SOLID_USER_SLASH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_TAG", icons::SOLID_USER_TAG)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_TIE", icons::SOLID_USER_TIE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_XMARK", icons::SOLID_USER_XMARK)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS", icons::SOLID_USERS)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_USERS_BETWEEN_LINES",
+        icons::SOLID_USERS_BETWEEN_LINES,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS_GEAR", icons::SOLID_USERS_GEAR)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS_LINE", icons::SOLID_USERS_LINE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS_RAYS", icons::SOLID_USERS_RAYS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS_RECTANGLE", icons::SOLID_USERS_RECTANGLE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS_SLASH", icons::SOLID_USERS_SLASH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USERS_VIEWFINDER", icons::SOLID_USERS_VIEWFINDER)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_USPS", icons::BRANDS_USPS)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_USSUNNAH", icons::BRANDS_USSUNNAH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_UTENSILS", icons::SOLID_UTENSILS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_V", icons::SOLID_V)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VAADIN", icons::BRANDS_VAADIN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VAN_SHUTTLE", icons::SOLID_VAN_SHUTTLE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VAULT", icons::SOLID_VAULT)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VENMO", icons::BRANDS_VENMO)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VENMO_V", icons::BRANDS_VENMO_V)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VENUS", icons::SOLID_VENUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VENUS_DOUBLE", icons::SOLID_VENUS_DOUBLE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VENUS_MARS", icons::SOLID_VENUS_MARS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VEST", icons::SOLID_VEST)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VEST_PATCHES", icons::SOLID_VEST_PATCHES)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VIACOIN", icons::BRANDS_VIACOIN)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VIADEO", icons::BRANDS_VIADEO)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIAL", icons::SOLID_VIAL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIAL_CIRCLE_CHECK", icons::SOLID_VIAL_CIRCLE_CHECK)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIAL_VIRUS", icons::SOLID_VIAL_VIRUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIALS", icons::SOLID_VIALS)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VIBER", icons::BRANDS_VIBER)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIDEO", icons::SOLID_VIDEO)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIDEO_SLASH", icons::SOLID_VIDEO_SLASH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIHARA", icons::SOLID_VIHARA)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VIM", icons::BRANDS_VIM)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VIMEO", icons::BRANDS_VIMEO)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VIMEO_V", icons::BRANDS_VIMEO_V)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VINE", icons::BRANDS_VINE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIRGO", icons::SOLID_VIRGO)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIRUS", icons::SOLID_VIRUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIRUS_COVID", icons::SOLID_VIRUS_COVID)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIRUS_COVID_SLASH", icons::SOLID_VIRUS_COVID_SLASH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VIRUS_SLASH", icons::SOLID_VIRUS_SLASH)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_VIRUSES", icons::SOLID_VIRUSES)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_VK", icons::BRANDS_VK)?;
@@ -15,6 +114,8 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_VOLCANO", icons::SOLID_VOLCANO)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_VOLLEYBALL", icons::SOLID_VOLLEYBALL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_VOLUME", icons::SOLID_VOLUME)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_VOLUME_HIGH", icons::SOLID_VOLUME_HIGH)?;
     #[cfg(feature = "solid")]
@@ -168,6 +269,8 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_XMARK", icons::SOLID_XMARK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_XMARKS_LINES", icons::SOLID_XMARKS_LINES)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_XMPP", icons::BRANDS_XMPP)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_Y", icons::SOLID_Y)?;
     #[cfg(feature = "brands")]
@@ -199,5 +302,9 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_Z", icons::SOLID_Z)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_ZHIHU", icons::BRANDS_ZHIHU)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_ZOOM", icons::BRANDS_ZOOM)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_ZULIP", icons::BRANDS_ZULIP)?;
     Ok(())
 }
