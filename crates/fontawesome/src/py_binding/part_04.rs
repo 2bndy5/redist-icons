@@ -3,6 +3,26 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FINGERPRINT", icons::SOLID_FINGERPRINT)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FIRE", icons::SOLID_FIRE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FIRE_BURNER", icons::SOLID_FIRE_BURNER)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FIRE_EXTINGUISHER", icons::SOLID_FIRE_EXTINGUISHER)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FIRE_FLAME_CURVED", icons::SOLID_FIRE_FLAME_CURVED)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FIRE_FLAME_SIMPLE", icons::SOLID_FIRE_FLAME_SIMPLE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_FIREFOX", icons::BRANDS_FIREFOX)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_FIREFOX_BROWSER", icons::BRANDS_FIREFOX_BROWSER)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_FIRST_ORDER", icons::BRANDS_FIRST_ORDER)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_FIRST_ORDER_ALT", icons::BRANDS_FIRST_ORDER_ALT)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_FIRSTDRAFT", icons::BRANDS_FIRSTDRAFT)?;
     #[cfg(feature = "solid")]
@@ -68,6 +88,8 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
     m.add("SOLID_FOOTBALL", icons::SOLID_FOOTBALL)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_FORGEJO", icons::BRANDS_FORGEJO)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_FORT_AWESOME", icons::BRANDS_FORT_AWESOME)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_FORT_AWESOME_ALT", icons::BRANDS_FORT_AWESOME_ALT)?;
@@ -124,6 +146,8 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "regular")]
     m.add("REGULAR_GEM", icons::REGULAR_GEM)?;
     #[cfg(feature = "solid")]
+    m.add("SOLID_GEMINI", icons::SOLID_GEMINI)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_GENDERLESS", icons::SOLID_GENDERLESS)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_GET_POCKET", icons::BRANDS_GET_POCKET)?;
@@ -141,6 +165,8 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_GIT", icons::BRANDS_GIT)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_GIT_ALT", icons::BRANDS_GIT_ALT)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_GITEE", icons::BRANDS_GITEE)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_GITHUB", icons::BRANDS_GITHUB)?;
     #[cfg(feature = "brands")]
@@ -164,6 +190,8 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_GLIDE", icons::BRANDS_GLIDE)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_GLIDE_G", icons::BRANDS_GLIDE_G)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_GLOBALEAKS", icons::BRANDS_GLOBALEAKS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_GLOBE", icons::SOLID_GLOBE)?;
     #[cfg(feature = "brands")]
@@ -408,33 +436,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_HEART_CIRCLE_PLUS", icons::SOLID_HEART_CIRCLE_PLUS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_HEART_CIRCLE_XMARK", icons::SOLID_HEART_CIRCLE_XMARK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_CRACK", icons::SOLID_HEART_CRACK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_PULSE", icons::SOLID_HEART_PULSE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HELICOPTER", icons::SOLID_HELICOPTER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HELICOPTER_SYMBOL", icons::SOLID_HELICOPTER_SYMBOL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HELMET_SAFETY", icons::SOLID_HELMET_SAFETY)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HELMET_UN", icons::SOLID_HELMET_UN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEXAGON", icons::SOLID_HEXAGON)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEXAGON_NODES", icons::SOLID_HEXAGON_NODES)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEXAGON_NODES_BOLT", icons::SOLID_HEXAGON_NODES_BOLT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HIGHLIGHTER", icons::SOLID_HIGHLIGHTER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HILL_AVALANCHE", icons::SOLID_HILL_AVALANCHE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HILL_ROCKSLIDE", icons::SOLID_HILL_ROCKSLIDE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HIPPO", icons::SOLID_HIPPO)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_HIPS", icons::BRANDS_HIPS)?;
     Ok(())
 }
