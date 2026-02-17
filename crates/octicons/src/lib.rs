@@ -12,7 +12,7 @@ pub mod py_binding;
 
 /// A Generic structure to describe a single icon.
 #[cfg_attr(feature = "pyo3", pyclass(module = "octicons_pack", get_all, frozen))]
-#[derive(Debug)]
+#[derive(Debug, PartialEq, Eq)]
 pub struct Icon {
     /// The SVG data.
     pub svg: &'static str,
