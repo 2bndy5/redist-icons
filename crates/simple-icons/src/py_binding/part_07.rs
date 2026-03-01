@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_UPPTIME", icons::SI_UPPTIME)?;
     m.add("SI_AIRPLAYVIDEO", icons::SI_AIRPLAYVIDEO)?;
     m.add("SI_ECLIPSEVERTDOTX", icons::SI_ECLIPSEVERTDOTX)?;
     m.add("SI_BAT", icons::SI_BAT)?;
@@ -175,6 +176,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SAILFISHOS", icons::SI_SAILFISHOS)?;
     m.add("SI_CHEERIO", icons::SI_CHEERIO)?;
     m.add("SI_AUDIBLE", icons::SI_AUDIBLE)?;
+    m.add("SI_BASEUI", icons::SI_BASEUI)?;
     m.add("SI_MULLVAD", icons::SI_MULLVAD)?;
     m.add("SI_OCLIF", icons::SI_OCLIF)?;
     m.add("SI_STARSHIP", icons::SI_STARSHIP)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APACHEHADOOP", icons::SI_APACHEHADOOP)?;
     m.add("SI_INSPIRE", icons::SI_INSPIRE)?;
     m.add("SI_ANSIBLE", icons::SI_ANSIBLE)?;
-    m.add("SI_PROMETHEUS", icons::SI_PROMETHEUS)?;
-    m.add("SI_DEVEXPRESS", icons::SI_DEVEXPRESS)?;
     Ok(())
 }

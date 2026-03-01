@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_KLEINANZEIGEN", icons::SI_KLEINANZEIGEN)?;
+    m.add("SI_ECLIPSECHE", icons::SI_ECLIPSECHE)?;
+    m.add("SI_BT", icons::SI_BT)?;
+    m.add("SI_FOODPANDA", icons::SI_FOODPANDA)?;
+    m.add("SI_WIKIMEDIACOMMONS", icons::SI_WIKIMEDIACOMMONS)?;
     m.add("SI_BIGBLUEBUTTON", icons::SI_BIGBLUEBUTTON)?;
     m.add("SI_ZOTERO", icons::SI_ZOTERO)?;
     m.add("SI_APACHEDRUID", icons::SI_APACHEDRUID)?;
@@ -10,6 +15,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NFCORE", icons::SI_NFCORE)?;
     m.add("SI_GRAPHENEOS", icons::SI_GRAPHENEOS)?;
     m.add("SI_CODEPROJECT", icons::SI_CODEPROJECT)?;
+    m.add("SI_KARAKEEP", icons::SI_KARAKEEP)?;
     m.add("SI_FERRARI", icons::SI_FERRARI)?;
     m.add("SI_LOGSEQ", icons::SI_LOGSEQ)?;
     m.add("SI_MISTRALAI", icons::SI_MISTRALAI)?;
@@ -113,6 +119,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MAMBAUI", icons::SI_MAMBAUI)?;
     m.add("SI_CLOUDNATIVEBUILD", icons::SI_CLOUDNATIVEBUILD)?;
     m.add("SI_APACHEHBASE", icons::SI_APACHEHBASE)?;
+    m.add("SI_LINKVERTISE", icons::SI_LINKVERTISE)?;
     m.add("SI_FILAMENT", icons::SI_FILAMENT)?;
     m.add("SI_EDITORCONFIG", icons::SI_EDITORCONFIG)?;
     m.add("SI_GUITARPRO", icons::SI_GUITARPRO)?;
@@ -196,12 +203,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GRIDDOTAI", icons::SI_GRIDDOTAI)?;
     m.add("SI_PRETZEL", icons::SI_PRETZEL)?;
     m.add("SI_VMWARE", icons::SI_VMWARE)?;
-    m.add("SI_ADONISJS", icons::SI_ADONISJS)?;
-    m.add("SI_SONATYPE", icons::SI_SONATYPE)?;
-    m.add("SI_AWESOMELISTS", icons::SI_AWESOMELISTS)?;
-    m.add("SI_AVAJS", icons::SI_AVAJS)?;
-    m.add("SI_JUKE", icons::SI_JUKE)?;
-    m.add("SI_FING", icons::SI_FING)?;
-    m.add("SI_SEMANTICUIREACT", icons::SI_SEMANTICUIREACT)?;
     Ok(())
 }

@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
     match slug {
+        "hearthisdotat" => Some(icons::SI_HEARTHISDOTAT),
+        "haskell" => Some(icons::SI_HASKELL),
+        "zaim" => Some(icons::SI_ZAIM),
+        "tidyverse" => Some(icons::SI_TIDYVERSE),
         "picxy" => Some(icons::SI_PICXY),
         "triller" => Some(icons::SI_TRILLER),
         "jeep" => Some(icons::SI_JEEP),
@@ -41,6 +45,7 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "webtrees" => Some(icons::SI_WEBTREES),
         "ltspice" => Some(icons::SI_LTSPICE),
         "furrynetwork" => Some(icons::SI_FURRYNETWORK),
+        "yew" => Some(icons::SI_YEW),
         "scpfoundation" => Some(icons::SI_SCPFOUNDATION),
         "googlepubsub" => Some(icons::SI_GOOGLEPUBSUB),
         "cobalt" => Some(icons::SI_COBALT),
@@ -198,11 +203,6 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "asahilinux" => Some(icons::SI_ASAHILINUX),
         "cairographics" => Some(icons::SI_CAIROGRAPHICS),
         "voidlinux" => Some(icons::SI_VOIDLINUX),
-        "kleinanzeigen" => Some(icons::SI_KLEINANZEIGEN),
-        "eclipseche" => Some(icons::SI_ECLIPSECHE),
-        "bt" => Some(icons::SI_BT),
-        "foodpanda" => Some(icons::SI_FOODPANDA),
-        "wikimediacommons" => Some(icons::SI_WIKIMEDIACOMMONS),
         _ => None,
     }
 }

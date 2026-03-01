@@ -5,6 +5,7 @@ use pyo3::prelude::*;
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DEEPIN", icons::SI_DEEPIN)?;
     m.add("SI_ROCKSDB", icons::SI_ROCKSDB)?;
+    m.add("SI_TIDB", icons::SI_TIDB)?;
     m.add("SI_PYCHARM", icons::SI_PYCHARM)?;
     m.add("SI_PINIA", icons::SI_PINIA)?;
     m.add("SI_HONOR", icons::SI_HONOR)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ATARI", icons::SI_ATARI)?;
     m.add("SI_BOEING", icons::SI_BOEING)?;
     m.add("SI_TYPEFORM", icons::SI_TYPEFORM)?;
-    m.add("SI_SOURCEHUT", icons::SI_SOURCEHUT)?;
     Ok(())
 }

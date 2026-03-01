@@ -3,6 +3,13 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
     match slug {
+        "adonisjs" => Some(icons::SI_ADONISJS),
+        "sonatype" => Some(icons::SI_SONATYPE),
+        "awesomelists" => Some(icons::SI_AWESOMELISTS),
+        "avajs" => Some(icons::SI_AVAJS),
+        "juke" => Some(icons::SI_JUKE),
+        "fing" => Some(icons::SI_FING),
+        "semanticuireact" => Some(icons::SI_SEMANTICUIREACT),
         "softpedia" => Some(icons::SI_SOFTPEDIA),
         "alibabadotcom" => Some(icons::SI_ALIBABADOTCOM),
         "dm" => Some(icons::SI_DM),
@@ -23,6 +30,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "googlecloud" => Some(icons::SI_GOOGLECLOUD),
         "arangodb" => Some(icons::SI_ARANGODB),
         "vega" => Some(icons::SI_VEGA),
+        "solveddotac" => Some(icons::SI_SOLVEDDOTAC),
         "stencil" => Some(icons::SI_STENCIL),
         "deutschepost" => Some(icons::SI_DEUTSCHEPOST),
         "mta" => Some(icons::SI_MTA),
@@ -175,6 +183,7 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "picardsurgeles" => Some(icons::SI_PICARDSURGELES),
         "deutschebank" => Some(icons::SI_DEUTSCHEBANK),
         "protoncalendar" => Some(icons::SI_PROTONCALENDAR),
+        "pangolin" => Some(icons::SI_PANGOLIN),
         "chakraui" => Some(icons::SI_CHAKRAUI),
         "emirates" => Some(icons::SI_EMIRATES),
         "monzo" => Some(icons::SI_MONZO),
@@ -194,15 +203,6 @@ pub(super) fn find_part_12(slug: &str) -> Option<Icon> {
         "carthrottle" => Some(icons::SI_CARTHROTTLE),
         "flyway" => Some(icons::SI_FLYWAY),
         "typer" => Some(icons::SI_TYPER),
-        "americanexpress" => Some(icons::SI_AMERICANEXPRESS),
-        "heroui" => Some(icons::SI_HEROUI),
-        "applemusic" => Some(icons::SI_APPLEMUSIC),
-        "nuke" => Some(icons::SI_NUKE),
-        "hoppscotch" => Some(icons::SI_HOPPSCOTCH),
-        "revanced" => Some(icons::SI_REVANCED),
-        "qantas" => Some(icons::SI_QANTAS),
-        "gentoo" => Some(icons::SI_GENTOO),
-        "glovo" => Some(icons::SI_GLOVO),
         _ => None,
     }
 }

@@ -3,6 +3,16 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_STYLELINT", icons::SI_STYLELINT)?;
+    m.add("SI_FAREHARBOR", icons::SI_FAREHARBOR)?;
+    m.add("SI_FORMSPREE", icons::SI_FORMSPREE)?;
+    m.add("SI_CONTAO", icons::SI_CONTAO)?;
+    m.add("SI_RESCRIPT", icons::SI_RESCRIPT)?;
+    m.add("SI_ZINGAT", icons::SI_ZINGAT)?;
+    m.add("SI_VUEUSE", icons::SI_VUEUSE)?;
+    m.add("SI_ROOTSSAGE", icons::SI_ROOTSSAGE)?;
+    m.add("SI_LEFTHOOK", icons::SI_LEFTHOOK)?;
+    m.add("SI_GRAB", icons::SI_GRAB)?;
     m.add("SI_RASPBERRYPI", icons::SI_RASPBERRYPI)?;
     m.add("SI_NAVER", icons::SI_NAVER)?;
     m.add("SI_ROOT", icons::SI_ROOT)?;
@@ -193,12 +203,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DELONGHI", icons::SI_DELONGHI)?;
     m.add("SI_QGIS", icons::SI_QGIS)?;
     m.add("SI_DOCSDOTRS", icons::SI_DOCSDOTRS)?;
-    m.add("SI_VECTARY", icons::SI_VECTARY)?;
-    m.add("SI_APACHESTORM", icons::SI_APACHESTORM)?;
-    m.add("SI_CREATEREACTAPP", icons::SI_CREATEREACTAPP)?;
-    m.add("SI_DSAUTOMOBILES", icons::SI_DSAUTOMOBILES)?;
-    m.add("SI_NEBULA", icons::SI_NEBULA)?;
-    m.add("SI_BETFAIR", icons::SI_BETFAIR)?;
-    m.add("SI_DECAPCMS", icons::SI_DECAPCMS)?;
     Ok(())
 }
