@@ -5,6 +5,7 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
     match slug {
         "deepin" => Some(icons::SI_DEEPIN),
         "rocksdb" => Some(icons::SI_ROCKSDB),
+        "tidb" => Some(icons::SI_TIDB),
         "pycharm" => Some(icons::SI_PYCHARM),
         "pinia" => Some(icons::SI_PINIA),
         "honor" => Some(icons::SI_HONOR),
@@ -202,7 +203,6 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "atari" => Some(icons::SI_ATARI),
         "boeing" => Some(icons::SI_BOEING),
         "typeform" => Some(icons::SI_TYPEFORM),
-        "sourcehut" => Some(icons::SI_SOURCEHUT),
         _ => None,
     }
 }

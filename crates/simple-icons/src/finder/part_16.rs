@@ -3,6 +3,16 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_16(slug: &str) -> Option<Icon> {
     match slug {
+        "stylelint" => Some(icons::SI_STYLELINT),
+        "fareharbor" => Some(icons::SI_FAREHARBOR),
+        "formspree" => Some(icons::SI_FORMSPREE),
+        "contao" => Some(icons::SI_CONTAO),
+        "rescript" => Some(icons::SI_RESCRIPT),
+        "zingat" => Some(icons::SI_ZINGAT),
+        "vueuse" => Some(icons::SI_VUEUSE),
+        "rootssage" => Some(icons::SI_ROOTSSAGE),
+        "lefthook" => Some(icons::SI_LEFTHOOK),
+        "grab" => Some(icons::SI_GRAB),
         "raspberrypi" => Some(icons::SI_RASPBERRYPI),
         "naver" => Some(icons::SI_NAVER),
         "root" => Some(icons::SI_ROOT),
@@ -193,13 +203,6 @@ pub(super) fn find_part_16(slug: &str) -> Option<Icon> {
         "delonghi" => Some(icons::SI_DELONGHI),
         "qgis" => Some(icons::SI_QGIS),
         "docsdotrs" => Some(icons::SI_DOCSDOTRS),
-        "vectary" => Some(icons::SI_VECTARY),
-        "apachestorm" => Some(icons::SI_APACHESTORM),
-        "createreactapp" => Some(icons::SI_CREATEREACTAPP),
-        "dsautomobiles" => Some(icons::SI_DSAUTOMOBILES),
-        "nebula" => Some(icons::SI_NEBULA),
-        "betfair" => Some(icons::SI_BETFAIR),
-        "decapcms" => Some(icons::SI_DECAPCMS),
         _ => None,
     }
 }

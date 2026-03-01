@@ -3,6 +3,13 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ADONISJS", icons::SI_ADONISJS)?;
+    m.add("SI_SONATYPE", icons::SI_SONATYPE)?;
+    m.add("SI_AWESOMELISTS", icons::SI_AWESOMELISTS)?;
+    m.add("SI_AVAJS", icons::SI_AVAJS)?;
+    m.add("SI_JUKE", icons::SI_JUKE)?;
+    m.add("SI_FING", icons::SI_FING)?;
+    m.add("SI_SEMANTICUIREACT", icons::SI_SEMANTICUIREACT)?;
     m.add("SI_SOFTPEDIA", icons::SI_SOFTPEDIA)?;
     m.add("SI_ALIBABADOTCOM", icons::SI_ALIBABADOTCOM)?;
     m.add("SI_DM", icons::SI_DM)?;
@@ -23,6 +30,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOOGLECLOUD", icons::SI_GOOGLECLOUD)?;
     m.add("SI_ARANGODB", icons::SI_ARANGODB)?;
     m.add("SI_VEGA", icons::SI_VEGA)?;
+    m.add("SI_SOLVEDDOTAC", icons::SI_SOLVEDDOTAC)?;
     m.add("SI_STENCIL", icons::SI_STENCIL)?;
     m.add("SI_DEUTSCHEPOST", icons::SI_DEUTSCHEPOST)?;
     m.add("SI_MTA", icons::SI_MTA)?;
@@ -181,6 +189,7 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PICARDSURGELES", icons::SI_PICARDSURGELES)?;
     m.add("SI_DEUTSCHEBANK", icons::SI_DEUTSCHEBANK)?;
     m.add("SI_PROTONCALENDAR", icons::SI_PROTONCALENDAR)?;
+    m.add("SI_PANGOLIN", icons::SI_PANGOLIN)?;
     m.add("SI_CHAKRAUI", icons::SI_CHAKRAUI)?;
     m.add("SI_EMIRATES", icons::SI_EMIRATES)?;
     m.add("SI_MONZO", icons::SI_MONZO)?;
@@ -200,14 +209,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CARTHROTTLE", icons::SI_CARTHROTTLE)?;
     m.add("SI_FLYWAY", icons::SI_FLYWAY)?;
     m.add("SI_TYPER", icons::SI_TYPER)?;
-    m.add("SI_AMERICANEXPRESS", icons::SI_AMERICANEXPRESS)?;
-    m.add("SI_HEROUI", icons::SI_HEROUI)?;
-    m.add("SI_APPLEMUSIC", icons::SI_APPLEMUSIC)?;
-    m.add("SI_NUKE", icons::SI_NUKE)?;
-    m.add("SI_HOPPSCOTCH", icons::SI_HOPPSCOTCH)?;
-    m.add("SI_REVANCED", icons::SI_REVANCED)?;
-    m.add("SI_QANTAS", icons::SI_QANTAS)?;
-    m.add("SI_GENTOO", icons::SI_GENTOO)?;
-    m.add("SI_GLOVO", icons::SI_GLOVO)?;
     Ok(())
 }

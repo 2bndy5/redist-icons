@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_HEARTHISDOTAT", icons::SI_HEARTHISDOTAT)?;
+    m.add("SI_HASKELL", icons::SI_HASKELL)?;
+    m.add("SI_ZAIM", icons::SI_ZAIM)?;
+    m.add("SI_TIDYVERSE", icons::SI_TIDYVERSE)?;
     m.add("SI_PICXY", icons::SI_PICXY)?;
     m.add("SI_TRILLER", icons::SI_TRILLER)?;
     m.add("SI_JEEP", icons::SI_JEEP)?;
@@ -41,6 +45,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WEBTREES", icons::SI_WEBTREES)?;
     m.add("SI_LTSPICE", icons::SI_LTSPICE)?;
     m.add("SI_FURRYNETWORK", icons::SI_FURRYNETWORK)?;
+    m.add("SI_YEW", icons::SI_YEW)?;
     m.add("SI_SCPFOUNDATION", icons::SI_SCPFOUNDATION)?;
     m.add("SI_GOOGLEPUBSUB", icons::SI_GOOGLEPUBSUB)?;
     m.add("SI_COBALT", icons::SI_COBALT)?;
@@ -201,10 +206,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ASAHILINUX", icons::SI_ASAHILINUX)?;
     m.add("SI_CAIROGRAPHICS", icons::SI_CAIROGRAPHICS)?;
     m.add("SI_VOIDLINUX", icons::SI_VOIDLINUX)?;
-    m.add("SI_KLEINANZEIGEN", icons::SI_KLEINANZEIGEN)?;
-    m.add("SI_ECLIPSECHE", icons::SI_ECLIPSECHE)?;
-    m.add("SI_BT", icons::SI_BT)?;
-    m.add("SI_FOODPANDA", icons::SI_FOODPANDA)?;
-    m.add("SI_WIKIMEDIACOMMONS", icons::SI_WIKIMEDIACOMMONS)?;
     Ok(())
 }

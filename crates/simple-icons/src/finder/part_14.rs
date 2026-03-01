@@ -3,6 +3,16 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
     match slug {
+        "nextflow" => Some(icons::SI_NEXTFLOW),
+        "photon" => Some(icons::SI_PHOTON),
+        "leaflet" => Some(icons::SI_LEAFLET),
+        "zhihu" => Some(icons::SI_ZHIHU),
+        "argos" => Some(icons::SI_ARGOS),
+        "nanostores" => Some(icons::SI_NANOSTORES),
+        "googletranslate" => Some(icons::SI_GOOGLETRANSLATE),
+        "japanairlines" => Some(icons::SI_JAPANAIRLINES),
+        "zorin" => Some(icons::SI_ZORIN),
+        "bandsintown" => Some(icons::SI_BANDSINTOWN),
         "formstack" => Some(icons::SI_FORMSTACK),
         "sqlite" => Some(icons::SI_SQLITE),
         "pinetwork" => Some(icons::SI_PINETWORK),
@@ -193,16 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "jabber" => Some(icons::SI_JABBER),
         "derspiegel" => Some(icons::SI_DERSPIEGEL),
         "istio" => Some(icons::SI_ISTIO),
-        "dashlane" => Some(icons::SI_DASHLANE),
-        "esbuild" => Some(icons::SI_ESBUILD),
-        "joplin" => Some(icons::SI_JOPLIN),
-        "vitest" => Some(icons::SI_VITEST),
-        "venmo" => Some(icons::SI_VENMO),
-        "roku" => Some(icons::SI_ROKU),
-        "orchardcore" => Some(icons::SI_ORCHARDCORE),
-        "liberadotchat" => Some(icons::SI_LIBERADOTCHAT),
-        "1password" => Some(icons::SI_1PASSWORD),
-        "virgin" => Some(icons::SI_VIRGIN),
         _ => None,
     }
 }
