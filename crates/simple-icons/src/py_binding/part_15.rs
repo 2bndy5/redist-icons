@@ -3,6 +3,16 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_DASHLANE", icons::SI_DASHLANE)?;
+    m.add("SI_ESBUILD", icons::SI_ESBUILD)?;
+    m.add("SI_JOPLIN", icons::SI_JOPLIN)?;
+    m.add("SI_VITEST", icons::SI_VITEST)?;
+    m.add("SI_VENMO", icons::SI_VENMO)?;
+    m.add("SI_ROKU", icons::SI_ROKU)?;
+    m.add("SI_ORCHARDCORE", icons::SI_ORCHARDCORE)?;
+    m.add("SI_LIBERADOTCHAT", icons::SI_LIBERADOTCHAT)?;
+    m.add("SI_1PASSWORD", icons::SI_1PASSWORD)?;
+    m.add("SI_VIRGIN", icons::SI_VIRGIN)?;
     m.add("SI_TERRAFORM", icons::SI_TERRAFORM)?;
     m.add("SI_MISSKEY", icons::SI_MISSKEY)?;
     m.add("SI_GATSBY", icons::SI_GATSBY)?;
@@ -196,15 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GITHUBSPONSORS", icons::SI_GITHUBSPONSORS)?;
     m.add("SI_LIGHTNING", icons::SI_LIGHTNING)?;
     m.add("SI_STEAMDB", icons::SI_STEAMDB)?;
-    m.add("SI_STYLELINT", icons::SI_STYLELINT)?;
-    m.add("SI_FAREHARBOR", icons::SI_FAREHARBOR)?;
-    m.add("SI_FORMSPREE", icons::SI_FORMSPREE)?;
-    m.add("SI_CONTAO", icons::SI_CONTAO)?;
-    m.add("SI_RESCRIPT", icons::SI_RESCRIPT)?;
-    m.add("SI_ZINGAT", icons::SI_ZINGAT)?;
-    m.add("SI_VUEUSE", icons::SI_VUEUSE)?;
-    m.add("SI_ROOTSSAGE", icons::SI_ROOTSSAGE)?;
-    m.add("SI_LEFTHOOK", icons::SI_LEFTHOOK)?;
-    m.add("SI_GRAB", icons::SI_GRAB)?;
     Ok(())
 }

@@ -3,6 +3,16 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
     match slug {
+        "dashlane" => Some(icons::SI_DASHLANE),
+        "esbuild" => Some(icons::SI_ESBUILD),
+        "joplin" => Some(icons::SI_JOPLIN),
+        "vitest" => Some(icons::SI_VITEST),
+        "venmo" => Some(icons::SI_VENMO),
+        "roku" => Some(icons::SI_ROKU),
+        "orchardcore" => Some(icons::SI_ORCHARDCORE),
+        "liberadotchat" => Some(icons::SI_LIBERADOTCHAT),
+        "1password" => Some(icons::SI_1PASSWORD),
+        "virgin" => Some(icons::SI_VIRGIN),
         "terraform" => Some(icons::SI_TERRAFORM),
         "misskey" => Some(icons::SI_MISSKEY),
         "gatsby" => Some(icons::SI_GATSBY),
@@ -193,16 +203,6 @@ pub(super) fn find_part_15(slug: &str) -> Option<Icon> {
         "githubsponsors" => Some(icons::SI_GITHUBSPONSORS),
         "lightning" => Some(icons::SI_LIGHTNING),
         "steamdb" => Some(icons::SI_STEAMDB),
-        "stylelint" => Some(icons::SI_STYLELINT),
-        "fareharbor" => Some(icons::SI_FAREHARBOR),
-        "formspree" => Some(icons::SI_FORMSPREE),
-        "contao" => Some(icons::SI_CONTAO),
-        "rescript" => Some(icons::SI_RESCRIPT),
-        "zingat" => Some(icons::SI_ZINGAT),
-        "vueuse" => Some(icons::SI_VUEUSE),
-        "rootssage" => Some(icons::SI_ROOTSSAGE),
-        "lefthook" => Some(icons::SI_LEFTHOOK),
-        "grab" => Some(icons::SI_GRAB),
         _ => None,
     }
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PROMETHEUS", icons::SI_PROMETHEUS)?;
+    m.add("SI_DEVEXPRESS", icons::SI_DEVEXPRESS)?;
     m.add("SI_NASA", icons::SI_NASA)?;
     m.add("SI_RADARR", icons::SI_RADARR)?;
     m.add("SI_PLATFORMIO", icons::SI_PLATFORMIO)?;
@@ -59,6 +61,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APACHECORDOVA", icons::SI_APACHECORDOVA)?;
     m.add("SI_JHIPSTER", icons::SI_JHIPSTER)?;
     m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
+    m.add("SI_LOOPS", icons::SI_LOOPS)?;
     m.add("SI_UBUNTUMATE", icons::SI_UBUNTUMATE)?;
     m.add("SI_STATAMIC", icons::SI_STATAMIC)?;
     m.add("SI_DASH0", icons::SI_DASH0)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WOLFRAMMATHEMATICA", icons::SI_WOLFRAMMATHEMATICA)?;
     m.add("SI_DOXYGEN", icons::SI_DOXYGEN)?;
     m.add("SI_MARIADB", icons::SI_MARIADB)?;
-    m.add("SI_MATTERDOTJS", icons::SI_MATTERDOTJS)?;
-    m.add("SI_DOWNDETECTOR", icons::SI_DOWNDETECTOR)?;
-    m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
     Ok(())
 }

@@ -23,6 +23,17 @@ pub const SI_ROCKSDB: Icon = Icon {
     license: Some("CC-BY-4.0"),
 };
 
+/// tidb
+pub const SI_TIDB: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TiDB</title><path d="M12 0 1.609 6.001v11.998L11.999 24l10.393-6.001V6.001ZM8.535 17.999v-7.998L5.07 12V8L12 4l3.462 2-3.464 2.001v12Zm6.93 0v-7.997l3.464-2v7.997z"/></svg>"#,
+    slug: "tidb",
+    title: "TiDB",
+    hex: "DC150B",
+    source: "https://www.pingcap.com/tidb-brand-guidelines/",
+    guidelines: Some("https://www.pingcap.com/tidb-brand-guidelines/"),
+    license: None,
+};
+
 /// pycharm
 pub const SI_PYCHARM: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PyCharm</title><path d="M7.833 6.666v-.055c0-1-.667-1.5-1.778-1.5H4.389v3.055h1.723c1.111 0 1.721-.666 1.721-1.5zM0 0v24h24V0H0zm2.223 3.167h4c2.389 0 3.833 1.389 3.833 3.445v.055c0 2.278-1.778 3.5-4.001 3.5H4.389v2.945H2.223V3.167zM11.277 21h-9v-1.5h9V21zm4.779-7.777c-2.944.055-5.111-2.223-5.111-5.057C10.944 5.333 13.056 3 16.111 3c1.889 0 3 .611 3.944 1.556l-1.389 1.61c-.778-.722-1.556-1.111-2.556-1.111-1.658 0-2.873 1.375-2.887 3.084.014 1.709 1.174 3.083 2.887 3.083 1.111 0 1.833-.445 2.61-1.167l1.39 1.389c-.999 1.112-2.166 1.779-4.054 1.779z"/></svg>"#,
@@ -2196,15 +2207,4 @@ pub const SI_TYPEFORM: Icon = Icon {
     source: "https://www.typeform.com",
     guidelines: None,
     license: None,
-};
-
-/// sourcehut
-pub const SI_SOURCEHUT: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SourceHut</title><path d="M12 0C5.371 0 0 5.371 0 12s5.371 12 12 12 12-5.371 12-12S18.629 0 12 0Zm0 21.677A9.675 9.675 0 0 1 2.323 12 9.675 9.675 0 0 1 12 2.323 9.675 9.675 0 0 1 21.677 12 9.675 9.675 0 0 1 12 21.677Z"/></svg>"#,
-    slug: "sourcehut",
-    title: "SourceHut",
-    hex: "000000",
-    source: "https://sourcehut.org/logo/",
-    guidelines: Some("https://sourcehut.org/logo/"),
-    license: Some("CC0-1.0"),
 };

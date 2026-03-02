@@ -16,6 +16,7 @@ mod part_13;
 mod part_14;
 mod part_15;
 mod part_16;
+mod part_17;
 use crate::Icon;
 
 #[cfg(feature = "pyo3")]
@@ -71,6 +72,9 @@ pub fn get_icon(slug: &str) -> Option<Icon> {
     }
     if result.is_none() {
         result = part_16::find_part_16(slug);
+    }
+    if result.is_none() {
+        result = part_17::find_part_17(slug);
     }
     result
 }

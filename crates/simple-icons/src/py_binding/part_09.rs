@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MATTERDOTJS", icons::SI_MATTERDOTJS)?;
+    m.add("SI_DOWNDETECTOR", icons::SI_DOWNDETECTOR)?;
+    m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
     m.add("SI_THREADLESS", icons::SI_THREADLESS)?;
     m.add("SI_GOTOMEETING", icons::SI_GOTOMEETING)?;
     m.add("SI_CODESANDBOX", icons::SI_CODESANDBOX)?;
@@ -172,6 +175,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ADIDAS", icons::SI_ADIDAS)?;
     m.add("SI_CORSAIR", icons::SI_CORSAIR)?;
     m.add("SI_OBB", icons::SI_OBB)?;
+    m.add("SI_GHOSTFOLIO", icons::SI_GHOSTFOLIO)?;
     m.add("SI_PUSHER", icons::SI_PUSHER)?;
     m.add("SI_STEELSERIES", icons::SI_STEELSERIES)?;
     m.add("SI_CADDY", icons::SI_CADDY)?;
@@ -202,9 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BITCOINSV", icons::SI_BITCOINSV)?;
     m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
     m.add("SI_MAZE", icons::SI_MAZE)?;
-    m.add("SI_HEARTHISDOTAT", icons::SI_HEARTHISDOTAT)?;
-    m.add("SI_HASKELL", icons::SI_HASKELL)?;
-    m.add("SI_ZAIM", icons::SI_ZAIM)?;
-    m.add("SI_TIDYVERSE", icons::SI_TIDYVERSE)?;
     Ok(())
 }

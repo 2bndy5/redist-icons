@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// sourcehut
+pub const SI_SOURCEHUT: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SourceHut</title><path d="M12 0C5.371 0 0 5.371 0 12s5.371 12 12 12 12-5.371 12-12S18.629 0 12 0Zm0 21.677A9.675 9.675 0 0 1 2.323 12 9.675 9.675 0 0 1 12 2.323 9.675 9.675 0 0 1 21.677 12 9.675 9.675 0 0 1 12 21.677Z"/></svg>"#,
+    slug: "sourcehut",
+    title: "SourceHut",
+    hex: "000000",
+    source: "https://sourcehut.org/logo/",
+    guidelines: Some("https://sourcehut.org/logo/"),
+    license: Some("CC0-1.0"),
+};
+
 /// quora
 pub const SI_QUORA: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Quora</title><path d="M7.3799.9483A11.9628 11.9628 0 0 1 21.248 19.5397l2.4096 2.4225c.7322.7362.21 1.9905-.8272 1.9905l-10.7105.01a12.52 12.52 0 0 1-.304 0h-.02A11.9628 11.9628 0 0 1 7.3818.9503Zm7.3217 4.428a7.1717 7.1717 0 1 0-5.4873 13.2512 7.1717 7.1717 0 0 0 5.4883-13.2511Z"/></svg>"#,
@@ -2188,17 +2199,6 @@ pub const SI_CALDOTCOM: Icon = Icon {
     title: "Cal.com",
     hex: "292929",
     source: "https://design.cal.com/assets/logos",
-    guidelines: None,
-    license: None,
-};
-
-/// upptime
-pub const SI_UPPTIME: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Upptime</title><path d="M11.86 15.68c1.926 0 3.489 1.526 3.489 3.406 0 1.88-1.563 3.407-3.488 3.407-1.926 0-3.489-1.526-3.489-3.407 0-1.88 1.563-3.407 3.489-3.407ZM24 14.884 12 1.507 0 14.885l3.158 3.52L12 8.548l8.842 9.857L24 14.885Z"/></svg>"#,
-    slug: "upptime",
-    title: "Upptime",
-    hex: "1ABC9C",
-    source: "https://upptime.js.org",
     guidelines: None,
     license: None,
 };

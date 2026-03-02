@@ -3,6 +3,11 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
     match slug {
+        "kleinanzeigen" => Some(icons::SI_KLEINANZEIGEN),
+        "eclipseche" => Some(icons::SI_ECLIPSECHE),
+        "bt" => Some(icons::SI_BT),
+        "foodpanda" => Some(icons::SI_FOODPANDA),
+        "wikimediacommons" => Some(icons::SI_WIKIMEDIACOMMONS),
         "bigbluebutton" => Some(icons::SI_BIGBLUEBUTTON),
         "zotero" => Some(icons::SI_ZOTERO),
         "apachedruid" => Some(icons::SI_APACHEDRUID),
@@ -10,6 +15,7 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "nfcore" => Some(icons::SI_NFCORE),
         "grapheneos" => Some(icons::SI_GRAPHENEOS),
         "codeproject" => Some(icons::SI_CODEPROJECT),
+        "karakeep" => Some(icons::SI_KARAKEEP),
         "ferrari" => Some(icons::SI_FERRARI),
         "logseq" => Some(icons::SI_LOGSEQ),
         "mistralai" => Some(icons::SI_MISTRALAI),
@@ -113,6 +119,7 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "mambaui" => Some(icons::SI_MAMBAUI),
         "cloudnativebuild" => Some(icons::SI_CLOUDNATIVEBUILD),
         "apachehbase" => Some(icons::SI_APACHEHBASE),
+        "linkvertise" => Some(icons::SI_LINKVERTISE),
         "filament" => Some(icons::SI_FILAMENT),
         "editorconfig" => Some(icons::SI_EDITORCONFIG),
         "guitarpro" => Some(icons::SI_GUITARPRO),
@@ -196,13 +203,6 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "griddotai" => Some(icons::SI_GRIDDOTAI),
         "pretzel" => Some(icons::SI_PRETZEL),
         "vmware" => Some(icons::SI_VMWARE),
-        "adonisjs" => Some(icons::SI_ADONISJS),
-        "sonatype" => Some(icons::SI_SONATYPE),
-        "awesomelists" => Some(icons::SI_AWESOMELISTS),
-        "avajs" => Some(icons::SI_AVAJS),
-        "juke" => Some(icons::SI_JUKE),
-        "fing" => Some(icons::SI_FING),
-        "semanticuireact" => Some(icons::SI_SEMANTICUIREACT),
         _ => None,
     }
 }

@@ -3,6 +3,16 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NEXTFLOW", icons::SI_NEXTFLOW)?;
+    m.add("SI_PHOTON", icons::SI_PHOTON)?;
+    m.add("SI_LEAFLET", icons::SI_LEAFLET)?;
+    m.add("SI_ZHIHU", icons::SI_ZHIHU)?;
+    m.add("SI_ARGOS", icons::SI_ARGOS)?;
+    m.add("SI_NANOSTORES", icons::SI_NANOSTORES)?;
+    m.add("SI_GOOGLETRANSLATE", icons::SI_GOOGLETRANSLATE)?;
+    m.add("SI_JAPANAIRLINES", icons::SI_JAPANAIRLINES)?;
+    m.add("SI_ZORIN", icons::SI_ZORIN)?;
+    m.add("SI_BANDSINTOWN", icons::SI_BANDSINTOWN)?;
     m.add("SI_FORMSTACK", icons::SI_FORMSTACK)?;
     m.add("SI_SQLITE", icons::SI_SQLITE)?;
     m.add("SI_PINETWORK", icons::SI_PINETWORK)?;
@@ -193,15 +203,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JABBER", icons::SI_JABBER)?;
     m.add("SI_DERSPIEGEL", icons::SI_DERSPIEGEL)?;
     m.add("SI_ISTIO", icons::SI_ISTIO)?;
-    m.add("SI_DASHLANE", icons::SI_DASHLANE)?;
-    m.add("SI_ESBUILD", icons::SI_ESBUILD)?;
-    m.add("SI_JOPLIN", icons::SI_JOPLIN)?;
-    m.add("SI_VITEST", icons::SI_VITEST)?;
-    m.add("SI_VENMO", icons::SI_VENMO)?;
-    m.add("SI_ROKU", icons::SI_ROKU)?;
-    m.add("SI_ORCHARDCORE", icons::SI_ORCHARDCORE)?;
-    m.add("SI_LIBERADOTCHAT", icons::SI_LIBERADOTCHAT)?;
-    m.add("SI_1PASSWORD", icons::SI_1PASSWORD)?;
-    m.add("SI_VIRGIN", icons::SI_VIRGIN)?;
     Ok(())
 }

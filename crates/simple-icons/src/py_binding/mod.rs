@@ -16,6 +16,7 @@ mod part_13;
 mod part_14;
 mod part_15;
 mod part_16;
+mod part_17;
 use crate::{Icon, finder::get_icon};
 use pyo3::prelude::*;
 
@@ -40,5 +41,6 @@ pub fn simple_icons_pack(m: &Bound<'_, PyModule>) -> PyResult<()> {
     part_14::bind_part_14(m)?;
     part_15::bind_part_15(m)?;
     part_16::bind_part_16(m)?;
+    part_17::bind_part_17(m)?;
     Ok(())
 }

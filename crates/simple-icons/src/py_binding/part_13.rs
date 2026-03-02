@@ -3,6 +3,15 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_AMERICANEXPRESS", icons::SI_AMERICANEXPRESS)?;
+    m.add("SI_HEROUI", icons::SI_HEROUI)?;
+    m.add("SI_APPLEMUSIC", icons::SI_APPLEMUSIC)?;
+    m.add("SI_NUKE", icons::SI_NUKE)?;
+    m.add("SI_HOPPSCOTCH", icons::SI_HOPPSCOTCH)?;
+    m.add("SI_REVANCED", icons::SI_REVANCED)?;
+    m.add("SI_QANTAS", icons::SI_QANTAS)?;
+    m.add("SI_GENTOO", icons::SI_GENTOO)?;
+    m.add("SI_GLOVO", icons::SI_GLOVO)?;
     m.add("SI_PASSBOLT", icons::SI_PASSBOLT)?;
     m.add("SI_KENMEI", icons::SI_KENMEI)?;
     m.add("SI_OPENSOURCEHARDWARE", icons::SI_OPENSOURCEHARDWARE)?;
@@ -202,15 +211,6 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COGGLE", icons::SI_COGGLE)?;
     m.add("SI_S7AIRLINES", icons::SI_S7AIRLINES)?;
     m.add("SI_CODESTREAM", icons::SI_CODESTREAM)?;
-    m.add("SI_NEXTFLOW", icons::SI_NEXTFLOW)?;
-    m.add("SI_PHOTON", icons::SI_PHOTON)?;
-    m.add("SI_LEAFLET", icons::SI_LEAFLET)?;
-    m.add("SI_ZHIHU", icons::SI_ZHIHU)?;
-    m.add("SI_ARGOS", icons::SI_ARGOS)?;
-    m.add("SI_NANOSTORES", icons::SI_NANOSTORES)?;
-    m.add("SI_GOOGLETRANSLATE", icons::SI_GOOGLETRANSLATE)?;
-    m.add("SI_JAPANAIRLINES", icons::SI_JAPANAIRLINES)?;
-    m.add("SI_ZORIN", icons::SI_ZORIN)?;
-    m.add("SI_BANDSINTOWN", icons::SI_BANDSINTOWN)?;
+    m.add("SI_TREZOR", icons::SI_TREZOR)?;
     Ok(())
 }

@@ -3,6 +3,15 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
     match slug {
+        "americanexpress" => Some(icons::SI_AMERICANEXPRESS),
+        "heroui" => Some(icons::SI_HEROUI),
+        "applemusic" => Some(icons::SI_APPLEMUSIC),
+        "nuke" => Some(icons::SI_NUKE),
+        "hoppscotch" => Some(icons::SI_HOPPSCOTCH),
+        "revanced" => Some(icons::SI_REVANCED),
+        "qantas" => Some(icons::SI_QANTAS),
+        "gentoo" => Some(icons::SI_GENTOO),
+        "glovo" => Some(icons::SI_GLOVO),
         "passbolt" => Some(icons::SI_PASSBOLT),
         "kenmei" => Some(icons::SI_KENMEI),
         "opensourcehardware" => Some(icons::SI_OPENSOURCEHARDWARE),
@@ -193,16 +202,7 @@ pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
         "coggle" => Some(icons::SI_COGGLE),
         "s7airlines" => Some(icons::SI_S7AIRLINES),
         "codestream" => Some(icons::SI_CODESTREAM),
-        "nextflow" => Some(icons::SI_NEXTFLOW),
-        "photon" => Some(icons::SI_PHOTON),
-        "leaflet" => Some(icons::SI_LEAFLET),
-        "zhihu" => Some(icons::SI_ZHIHU),
-        "argos" => Some(icons::SI_ARGOS),
-        "nanostores" => Some(icons::SI_NANOSTORES),
-        "googletranslate" => Some(icons::SI_GOOGLETRANSLATE),
-        "japanairlines" => Some(icons::SI_JAPANAIRLINES),
-        "zorin" => Some(icons::SI_ZORIN),
-        "bandsintown" => Some(icons::SI_BANDSINTOWN),
+        "trezor" => Some(icons::SI_TREZOR),
         _ => None,
     }
 }
