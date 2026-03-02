@@ -56,7 +56,7 @@ jobs:
           key: cargo-doc-${{ hashFiles('Cargo.lock') }}
       - run: cargo doc --no-deps --lib
       - name: Upload docs as artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           path: target/doc
           name: rust-docs
