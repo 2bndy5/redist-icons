@@ -1,5 +1,5 @@
 import { walk } from "@std/fs";
-import { loadConfig, optimize } from "npm:svgo";
+import { loadConfig, optimize } from "svgo";
 import {
   copyPkgMeta,
   type GeneratedBinding,
