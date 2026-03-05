@@ -1,4 +1,4 @@
-import { loadConfig, optimize } from "npm:svgo";
+import { loadConfig, optimize } from "svgo";
 import {
   copyPkgMeta,
   GeneratedBinding,
