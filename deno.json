@@ -11,7 +11,7 @@
   "imports": {
     "@std/fs": "jsr:@std/fs@1.0.23",
     "@std/path": "jsr:@std/path@1.1.4",
-    "svgo": "npm:svgo@4.0.0",
+    "svgo": "npm:svgo@4.0.1",
     "common": "./common/mod.ts"
   },
   "fmt": {
