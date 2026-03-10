@@ -23,6 +23,7 @@ permissions: {}
 jobs:
   tag-release:
     runs-on: ubuntu-latest
+    environment: deploy
     # permissions are set per secrets.REDIST_ICONS_UPDATE token's access
     # permissions:
     #   contents: write

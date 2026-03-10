@@ -12,6 +12,7 @@ permissions: {}
 jobs:
   check-updates:
     runs-on: ubuntu-latest
+    environment: deno-upgrades
 
     steps:
       - uses: actions/checkout@v6
