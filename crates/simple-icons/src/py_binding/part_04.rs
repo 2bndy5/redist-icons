@@ -99,6 +99,7 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LOTTIEFILES", icons::SI_LOTTIEFILES)?;
     m.add("SI_BEHANCE", icons::SI_BEHANCE)?;
     m.add("SI_SUPERCREASE", icons::SI_SUPERCREASE)?;
+    m.add("SI_CLINE", icons::SI_CLINE)?;
     m.add("SI_FIFA", icons::SI_FIFA)?;
     m.add("SI_STADIA", icons::SI_STADIA)?;
     m.add("SI_PANASONIC", icons::SI_PANASONIC)?;
@@ -120,6 +121,7 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COMMA", icons::SI_COMMA)?;
     m.add("SI_METABASE", icons::SI_METABASE)?;
     m.add("SI_LEANPUB", icons::SI_LEANPUB)?;
+    m.add("SI_LONGHORN", icons::SI_LONGHORN)?;
     m.add("SI_NOTION", icons::SI_NOTION)?;
     m.add("SI_CLERK", icons::SI_CLERK)?;
     m.add("SI_KIRBY", icons::SI_KIRBY)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ZENODO", icons::SI_ZENODO)?;
     m.add("SI_DOVETAIL", icons::SI_DOVETAIL)?;
     m.add("SI_LEROYMERLIN", icons::SI_LEROYMERLIN)?;
-    m.add("SI_VIVINO", icons::SI_VIVINO)?;
-    m.add("SI_TWENTY", icons::SI_TWENTY)?;
     Ok(())
 }

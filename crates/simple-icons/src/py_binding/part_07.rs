@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CHINASOUTHERNAIRLINES", icons::SI_CHINASOUTHERNAIRLINES)?;
+    m.add("SI_CALDOTCOM", icons::SI_CALDOTCOM)?;
     m.add("SI_UPPTIME", icons::SI_UPPTIME)?;
     m.add("SI_AIRPLAYVIDEO", icons::SI_AIRPLAYVIDEO)?;
     m.add("SI_ECLIPSEVERTDOTX", icons::SI_ECLIPSEVERTDOTX)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TABLECHECK", icons::SI_TABLECHECK)?;
     m.add("SI_KAGGLE", icons::SI_KAGGLE)?;
     m.add("SI_APACHEHADOOP", icons::SI_APACHEHADOOP)?;
-    m.add("SI_INSPIRE", icons::SI_INSPIRE)?;
-    m.add("SI_ANSIBLE", icons::SI_ANSIBLE)?;
     Ok(())
 }

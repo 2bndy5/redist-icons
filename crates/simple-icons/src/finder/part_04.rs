@@ -96,6 +96,7 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "lottiefiles" => Some(icons::SI_LOTTIEFILES),
         "behance" => Some(icons::SI_BEHANCE),
         "supercrease" => Some(icons::SI_SUPERCREASE),
+        "cline" => Some(icons::SI_CLINE),
         "fifa" => Some(icons::SI_FIFA),
         "stadia" => Some(icons::SI_STADIA),
         "panasonic" => Some(icons::SI_PANASONIC),
@@ -117,6 +118,7 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "comma" => Some(icons::SI_COMMA),
         "metabase" => Some(icons::SI_METABASE),
         "leanpub" => Some(icons::SI_LEANPUB),
+        "longhorn" => Some(icons::SI_LONGHORN),
         "notion" => Some(icons::SI_NOTION),
         "clerk" => Some(icons::SI_CLERK),
         "kirby" => Some(icons::SI_KIRBY),
@@ -201,8 +203,6 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "zenodo" => Some(icons::SI_ZENODO),
         "dovetail" => Some(icons::SI_DOVETAIL),
         "leroymerlin" => Some(icons::SI_LEROYMERLIN),
-        "vivino" => Some(icons::SI_VIVINO),
-        "twenty" => Some(icons::SI_TWENTY),
         _ => None,
     }
 }

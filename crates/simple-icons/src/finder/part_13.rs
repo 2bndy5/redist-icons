@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
     match slug {
+        "carthrottle" => Some(icons::SI_CARTHROTTLE),
+        "flyway" => Some(icons::SI_FLYWAY),
+        "typer" => Some(icons::SI_TYPER),
         "americanexpress" => Some(icons::SI_AMERICANEXPRESS),
         "heroui" => Some(icons::SI_HEROUI),
         "applemusic" => Some(icons::SI_APPLEMUSIC),
@@ -200,9 +203,6 @@ pub(super) fn find_part_13(slug: &str) -> Option<Icon> {
         "adyen" => Some(icons::SI_ADYEN),
         "akaunting" => Some(icons::SI_AKAUNTING),
         "coggle" => Some(icons::SI_COGGLE),
-        "s7airlines" => Some(icons::SI_S7AIRLINES),
-        "codestream" => Some(icons::SI_CODESTREAM),
-        "trezor" => Some(icons::SI_TREZOR),
         _ => None,
     }
 }
