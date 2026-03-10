@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ASAHILINUX", icons::SI_ASAHILINUX)?;
+    m.add("SI_CAIROGRAPHICS", icons::SI_CAIROGRAPHICS)?;
+    m.add("SI_VOIDLINUX", icons::SI_VOIDLINUX)?;
     m.add("SI_KLEINANZEIGEN", icons::SI_KLEINANZEIGEN)?;
     m.add("SI_ECLIPSECHE", icons::SI_ECLIPSECHE)?;
     m.add("SI_BT", icons::SI_BT)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_QT", icons::SI_QT)?;
     m.add("SI_EYEEM", icons::SI_EYEEM)?;
     m.add("SI_RADAR", icons::SI_RADAR)?;
-    m.add("SI_GRIDDOTAI", icons::SI_GRIDDOTAI)?;
-    m.add("SI_PRETZEL", icons::SI_PRETZEL)?;
-    m.add("SI_VMWARE", icons::SI_VMWARE)?;
     Ok(())
 }

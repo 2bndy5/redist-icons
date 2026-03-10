@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GITHUBSPONSORS", icons::SI_GITHUBSPONSORS)?;
+    m.add("SI_LIGHTNING", icons::SI_LIGHTNING)?;
+    m.add("SI_STEAMDB", icons::SI_STEAMDB)?;
     m.add("SI_STYLELINT", icons::SI_STYLELINT)?;
     m.add("SI_FAREHARBOR", icons::SI_FAREHARBOR)?;
     m.add("SI_FORMSPREE", icons::SI_FORMSPREE)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FLATHUB", icons::SI_FLATHUB)?;
     m.add("SI_OVH", icons::SI_OVH)?;
     m.add("SI_LOSPEC", icons::SI_LOSPEC)?;
-    m.add("SI_DELONGHI", icons::SI_DELONGHI)?;
-    m.add("SI_QGIS", icons::SI_QGIS)?;
-    m.add("SI_DOCSDOTRS", icons::SI_DOCSDOTRS)?;
     Ok(())
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_DOXYGEN", icons::SI_DOXYGEN)?;
+    m.add("SI_MARIADB", icons::SI_MARIADB)?;
     m.add("SI_MATTERDOTJS", icons::SI_MATTERDOTJS)?;
     m.add("SI_DOWNDETECTOR", icons::SI_DOWNDETECTOR)?;
     m.add("SI_DEUTSCHEWELLE", icons::SI_DEUTSCHEWELLE)?;
@@ -170,6 +172,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RTL", icons::SI_RTL)?;
     m.add("SI_CODESIGNAL", icons::SI_CODESIGNAL)?;
     m.add("SI_IRIS", icons::SI_IRIS)?;
+    m.add("SI_DLTHUB", icons::SI_DLTHUB)?;
     m.add("SI_TRANSPORTFORLONDON", icons::SI_TRANSPORTFORLONDON)?;
     m.add("SI_NBA", icons::SI_NBA)?;
     m.add("SI_ADIDAS", icons::SI_ADIDAS)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CONTENTFUL", icons::SI_CONTENTFUL)?;
     m.add("SI_QQ", icons::SI_QQ)?;
     m.add("SI_COMPILEREXPLORER", icons::SI_COMPILEREXPLORER)?;
-    m.add("SI_BITCOINSV", icons::SI_BITCOINSV)?;
-    m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
-    m.add("SI_MAZE", icons::SI_MAZE)?;
     Ok(())
 }
