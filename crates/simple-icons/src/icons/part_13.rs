@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// cloudera
+pub const SI_CLOUDERA: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Cloudera</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm.344 20.251a8.25 8.25 0 1 1 0-16.502 8.21 8.21 0 0 1 5.633 2.234L15.519 8.53a4.686 4.686 0 0 0-3.175-1.239 4.709 4.709 0 1 0 3.284 8.081l2.657 2.346a8.224 8.224 0 0 1-5.941 2.533z"/></svg>"#,
+    slug: "cloudera",
+    title: "Cloudera",
+    hex: "F96702",
+    source: "https://www.cloudera.com",
+    guidelines: None,
+    license: None,
+};
+
 /// carthrottle
 pub const SI_CARTHROTTLE: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Car Throttle</title><path d="M0 19.99h5.31l1-5.76h2.673L7.97 19.99h5.272l1.037-5.76h2.824l-1 5.76h7.584L21.9 17.029 24 4.01h-5.16l-.987 5.647h-2.86l.936-5.647H8.483l1.724 2.749-.487 2.898H6.996l.9-5.647H.35l1.76 2.774Z"/></svg>"#,
@@ -2196,15 +2207,4 @@ pub const SI_AKAUNTING: Icon = Icon {
     source: "https://akaunting.com/logo",
     guidelines: None,
     license: Some("GPL-3.0-only"),
-};
-
-/// coggle
-pub const SI_COGGLE: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Coggle</title><path d="M3.684 0A3.683 3.683 0 0 0 0 3.684v10.92c2.052-.535 3.606-1.577 5.158-3.13h7.367v7.368c-1.88 1.88-5.438 4.598-8.052 5.158h15.843A3.683 3.683 0 0 0 24 20.316V8.881c-1.544.537-3.087 1.575-4.63 3.119l-4.74 4.736V9.37H7.265l3.683-3.685c2.35-2.35 5.96-5.119 8.58-5.684H3.684z"/></svg>"#,
-    slug: "coggle",
-    title: "Coggle",
-    hex: "9ED56B",
-    source: "https://coggle.it/press",
-    guidelines: None,
-    license: None,
 };

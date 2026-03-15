@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_STOPSTALK", icons::SI_STOPSTALK)?;
+    m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
     m.add("SI_GITHUBSPONSORS", icons::SI_GITHUBSPONSORS)?;
     m.add("SI_LIGHTNING", icons::SI_LIGHTNING)?;
     m.add("SI_STEAMDB", icons::SI_STEAMDB)?;
@@ -201,7 +203,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VIMEO", icons::SI_VIMEO)?;
     m.add("SI_SCIPY", icons::SI_SCIPY)?;
     m.add("SI_FLATHUB", icons::SI_FLATHUB)?;
-    m.add("SI_OVH", icons::SI_OVH)?;
-    m.add("SI_LOSPEC", icons::SI_LOSPEC)?;
     Ok(())
 }

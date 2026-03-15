@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OVH", icons::SI_OVH)?;
+    m.add("SI_LOSPEC", icons::SI_LOSPEC)?;
     m.add("SI_DELONGHI", icons::SI_DELONGHI)?;
     m.add("SI_QGIS", icons::SI_QGIS)?;
     m.add("SI_DOCSDOTRS", icons::SI_DOCSDOTRS)?;

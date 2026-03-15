@@ -101,6 +101,7 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "sourceengine" => Some(icons::SI_SOURCEENGINE),
         "letsencrypt" => Some(icons::SI_LETSENCRYPT),
         "flydotio" => Some(icons::SI_FLYDOTIO),
+        "contensis" => Some(icons::SI_CONTENSIS),
         "thirdweb" => Some(icons::SI_THIRDWEB),
         "thewashingtonpost" => Some(icons::SI_THEWASHINGTONPOST),
         "youtube" => Some(icons::SI_YOUTUBE),
@@ -202,7 +203,6 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "plane" => Some(icons::SI_PLANE),
         "tablecheck" => Some(icons::SI_TABLECHECK),
         "kaggle" => Some(icons::SI_KAGGLE),
-        "apachehadoop" => Some(icons::SI_APACHEHADOOP),
         _ => None,
     }
 }

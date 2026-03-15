@@ -101,6 +101,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SOURCEENGINE", icons::SI_SOURCEENGINE)?;
     m.add("SI_LETSENCRYPT", icons::SI_LETSENCRYPT)?;
     m.add("SI_FLYDOTIO", icons::SI_FLYDOTIO)?;
+    m.add("SI_CONTENSIS", icons::SI_CONTENSIS)?;
     m.add("SI_THIRDWEB", icons::SI_THIRDWEB)?;
     m.add("SI_THEWASHINGTONPOST", icons::SI_THEWASHINGTONPOST)?;
     m.add("SI_YOUTUBE", icons::SI_YOUTUBE)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PLANE", icons::SI_PLANE)?;
     m.add("SI_TABLECHECK", icons::SI_TABLECHECK)?;
     m.add("SI_KAGGLE", icons::SI_KAGGLE)?;
-    m.add("SI_APACHEHADOOP", icons::SI_APACHEHADOOP)?;
     Ok(())
 }

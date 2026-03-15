@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_APACHEHADOOP", icons::SI_APACHEHADOOP)?;
     m.add("SI_INSPIRE", icons::SI_INSPIRE)?;
     m.add("SI_ANSIBLE", icons::SI_ANSIBLE)?;
     m.add("SI_PROMETHEUS", icons::SI_PROMETHEUS)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GREENHOUSE", icons::SI_GREENHOUSE)?;
     m.add("SI_EDOTLECLERC", icons::SI_EDOTLECLERC)?;
     m.add("SI_APPMANAGER", icons::SI_APPMANAGER)?;
-    m.add("SI_WOLFRAMMATHEMATICA", icons::SI_WOLFRAMMATHEMATICA)?;
     Ok(())
 }
