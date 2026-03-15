@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_COMPILEREXPLORER", icons::SI_COMPILEREXPLORER)?;
     m.add("SI_BITCOINSV", icons::SI_BITCOINSV)?;
     m.add("SI_JEKYLL", icons::SI_JEKYLL)?;
     m.add("SI_MAZE", icons::SI_MAZE)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BITLY", icons::SI_BITLY)?;
     m.add("SI_LOCAL", icons::SI_LOCAL)?;
     m.add("SI_BAZEL", icons::SI_BAZEL)?;
-    m.add("SI_DOCUSAURUS", icons::SI_DOCUSAURUS)?;
     Ok(())
 }

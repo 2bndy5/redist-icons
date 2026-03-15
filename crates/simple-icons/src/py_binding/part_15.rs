@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ALBERTHEIJN", icons::SI_ALBERTHEIJN)?;
     m.add("SI_JABBER", icons::SI_JABBER)?;
     m.add("SI_DERSPIEGEL", icons::SI_DERSPIEGEL)?;
     m.add("SI_ISTIO", icons::SI_ISTIO)?;
@@ -69,6 +70,7 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BUZZFEED", icons::SI_BUZZFEED)?;
     m.add("SI_REACTQUERY", icons::SI_REACTQUERY)?;
     m.add("SI_FREECAD", icons::SI_FREECAD)?;
+    m.add("SI_DICEBEAR", icons::SI_DICEBEAR)?;
     m.add("SI_INOREADER", icons::SI_INOREADER)?;
     m.add("SI_DELIVEROO", icons::SI_DELIVEROO)?;
     m.add("SI_PUSHBULLET", icons::SI_PUSHBULLET)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CONEKTA", icons::SI_CONEKTA)?;
     m.add("SI_BASEROW", icons::SI_BASEROW)?;
     m.add("SI_EVERYDOTORG", icons::SI_EVERYDOTORG)?;
-    m.add("SI_STOPSTALK", icons::SI_STOPSTALK)?;
-    m.add("SI_CROWDIN", icons::SI_CROWDIN)?;
     Ok(())
 }
