@@ -135,6 +135,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "lock-16" => Some(icons::LOCK_16),
         "zap-24" => Some(icons::ZAP_24),
         "calendar-16" => Some(icons::CALENDAR_16),
+        "lockup-github-16" => Some(icons::LOCKUP_GITHUB_16),
         "sync-16" => Some(icons::SYNC_16),
         "square-fill-16" => Some(icons::SQUARE_FILL_16),
         "history-24" => Some(icons::HISTORY_24),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "device-mobile-24" => Some(icons::DEVICE_MOBILE_24),
         "spacing-large-24" => Some(icons::SPACING_LARGE_24),
         "person-add-24" => Some(icons::PERSON_ADD_24),
-        "file-moved-24" => Some(icons::FILE_MOVED_24),
         _ => None,
     }
 }
