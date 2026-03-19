@@ -147,6 +147,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LOCK_16", icons::LOCK_16)?;
     m.add("ZAP_24", icons::ZAP_24)?;
     m.add("CALENDAR_16", icons::CALENDAR_16)?;
+    m.add("LOCKUP_GITHUB_16", icons::LOCKUP_GITHUB_16)?;
     m.add("SYNC_16", icons::SYNC_16)?;
     m.add("SQUARE_FILL_16", icons::SQUARE_FILL_16)?;
     m.add("HISTORY_24", icons::HISTORY_24)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DEVICE_MOBILE_24", icons::DEVICE_MOBILE_24)?;
     m.add("SPACING_LARGE_24", icons::SPACING_LARGE_24)?;
     m.add("PERSON_ADD_24", icons::PERSON_ADD_24)?;
-    m.add("FILE_MOVED_24", icons::FILE_MOVED_24)?;
     Ok(())
 }

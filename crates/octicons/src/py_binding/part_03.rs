@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("UNWRAP_16", icons::UNWRAP_16)?;
     m.add("UNLINK_24", icons::UNLINK_24)?;
     m.add("SHARE_16", icons::SHARE_16)?;
     m.add("GIT_BRANCH_16", icons::GIT_BRANCH_16)?;
@@ -27,6 +28,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ITERATIONS_24", icons::ITERATIONS_24)?;
     m.add("MCP_16", icons::MCP_16)?;
     m.add("CHECK_CIRCLE_FILL_24", icons::CHECK_CIRCLE_FILL_24)?;
+    m.add("LOCKUP_GITHUB_24", icons::LOCKUP_GITHUB_24)?;
     m.add(
         "FEED_PULL_REQUEST_DRAFT_16",
         icons::FEED_PULL_REQUEST_DRAFT_16,
