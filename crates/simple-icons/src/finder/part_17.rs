@@ -3,18 +3,20 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_17(slug: &str) -> Option<Icon> {
     match slug {
-        "ovh" => Some(icons::SI_OVH),
-        "lospec" => Some(icons::SI_LOSPEC),
-        "delonghi" => Some(icons::SI_DELONGHI),
-        "qgis" => Some(icons::SI_QGIS),
-        "docsdotrs" => Some(icons::SI_DOCSDOTRS),
-        "vectary" => Some(icons::SI_VECTARY),
-        "apachestorm" => Some(icons::SI_APACHESTORM),
-        "createreactapp" => Some(icons::SI_CREATEREACTAPP),
-        "dsautomobiles" => Some(icons::SI_DSAUTOMOBILES),
-        "nebula" => Some(icons::SI_NEBULA),
-        "betfair" => Some(icons::SI_BETFAIR),
-        "decapcms" => Some(icons::SI_DECAPCMS),
+        "libreofficeimpress" => Some(icons::SI_LIBREOFFICEIMPRESS),
+        "coder" => Some(icons::SI_CODER),
+        "aparat" => Some(icons::SI_APARAT),
+        "googlecast" => Some(icons::SI_GOOGLECAST),
+        "omarchy" => Some(icons::SI_OMARCHY),
+        "lionair" => Some(icons::SI_LIONAIR),
+        "sequelize" => Some(icons::SI_SEQUELIZE),
+        "ocaml" => Some(icons::SI_OCAML),
+        "laragon" => Some(icons::SI_LARAGON),
+        "gcore" => Some(icons::SI_GCORE),
+        "tinkercad" => Some(icons::SI_TINKERCAD),
+        "creativecommons" => Some(icons::SI_CREATIVECOMMONS),
+        "webmin" => Some(icons::SI_WEBMIN),
+        "rottentomatoes" => Some(icons::SI_ROTTENTOMATOES),
         _ => None,
     }
 }
