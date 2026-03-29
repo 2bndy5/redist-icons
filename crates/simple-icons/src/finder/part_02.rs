@@ -30,6 +30,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "wikisource" => Some(icons::SI_WIKISOURCE),
         "mautic" => Some(icons::SI_MAUTIC),
         "indieweb" => Some(icons::SI_INDIEWEB),
+        "prosemirror" => Some(icons::SI_PROSEMIRROR),
         "airbrake" => Some(icons::SI_AIRBRAKE),
         "kong" => Some(icons::SI_KONG),
         "polkadot" => Some(icons::SI_POLKADOT),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "nette" => Some(icons::SI_NETTE),
         "cloudinary" => Some(icons::SI_CLOUDINARY),
         "frigate" => Some(icons::SI_FRIGATE),
-        "daserste" => Some(icons::SI_DASERSTE),
         _ => None,
     }
 }
