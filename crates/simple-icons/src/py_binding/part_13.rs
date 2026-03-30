@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CANONICAL", icons::SI_CANONICAL)?;
+    m.add("SI_REVANCED", icons::SI_REVANCED)?;
     m.add("SI_APACHECORDOVA", icons::SI_APACHECORDOVA)?;
     m.add("SI_SYMANTEC", icons::SI_SYMANTEC)?;
     m.add("SI_DEPOSITPHOTOS", icons::SI_DEPOSITPHOTOS)?;
@@ -200,11 +202,9 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ROS", icons::SI_ROS)?;
     m.add("SI_RAZER", icons::SI_RAZER)?;
     m.add("SI_EDOTLECLERC", icons::SI_EDOTLECLERC)?;
+    m.add("SI_QDRANT", icons::SI_QDRANT)?;
     m.add("SI_JRGROUP", icons::SI_JRGROUP)?;
     m.add("SI_ARIAKIT", icons::SI_ARIAKIT)?;
     m.add("SI_SORIANA", icons::SI_SORIANA)?;
-    m.add("SI_KDEPLASMA", icons::SI_KDEPLASMA)?;
-    m.add("SI_AUDIOBOOKSHELF", icons::SI_AUDIOBOOKSHELF)?;
-    m.add("SI_KOTLIN", icons::SI_KOTLIN)?;
     Ok(())
 }

@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MOQ", icons::SI_MOQ)?;
     m.add("SI_KUBESPRAY", icons::SI_KUBESPRAY)?;
     m.add("SI_FARCASTER", icons::SI_FARCASTER)?;
     m.add("SI_VIBLO", icons::SI_VIBLO)?;
@@ -44,6 +45,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BOARDGAMEGEEK", icons::SI_BOARDGAMEGEEK)?;
     m.add("SI_CLOJURE", icons::SI_CLOJURE)?;
     m.add("SI_RESEARCHGATE", icons::SI_RESEARCHGATE)?;
+    m.add("SI_FAKER", icons::SI_FAKER)?;
     m.add("SI_INTELLIJIDEA", icons::SI_INTELLIJIDEA)?;
     m.add("SI_CODESHIP", icons::SI_CODESHIP)?;
     m.add("SI_JPEG", icons::SI_JPEG)?;
@@ -201,7 +203,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_INFRACOST", icons::SI_INFRACOST)?;
     m.add("SI_FANDOM", icons::SI_FANDOM)?;
     m.add("SI_MARIADB", icons::SI_MARIADB)?;
-    m.add("SI_MALWAREBYTES", icons::SI_MALWAREBYTES)?;
-    m.add("SI_NUCLEO", icons::SI_NUCLEO)?;
     Ok(())
 }

@@ -1,6 +1,39 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// gamescience
+pub const SI_GAMESCIENCE: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Game Science</title><path d="M1.847 19.089c-.555-.137-.853-.305-1.213-.685-.613-.645-.76-1.273-.534-2.287.394-1.77 1.645-3.34 3.321-4.166 1.03-.508 1.64-.657 2.693-.656.759 0 .928.027 1.325.212l.456.213 4.263-2.841c2.344-1.563 4.276-2.828 4.294-2.81s-.177.987-.431 2.155c-.254 1.169-.462 2.176-.462 2.24 0 .063 1.865-1.167 4.144-2.734 4.153-2.856 4.42-3.037 4.265-2.883-.268.266-10.33 8.653-10.353 8.63-.015-.017.174-1.036.419-2.267s.436-2.28.426-2.334c-.011-.053-1.231.964-2.712 2.26l-2.693 2.356-.053.765c-.17 2.428-2.022 4.156-5.168 4.823-.69.146-1.42.15-1.987.009"/></svg>"#,
+    slug: "gamescience",
+    title: "Game Science",
+    hex: "000000",
+    source: "https://gamesci.cn",
+    guidelines: None,
+    license: None,
+};
+
+/// sidequest
+pub const SI_SIDEQUEST: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SideQuest</title><path d="M24 10.409 18.689 1.21H8.065l2.518 4.359.769 1.331-.918 1.592H8.598l-.769-1.333-2.517-4.36L0 11.999l5.311 9.199 2.518-4.36.769-1.333h1.836l.919 1.593-.77 1.332-2.517 4.359H18.69L24 13.59h-6.571l-.919-1.591.919-1.59H24ZM5.288 5.328 6.27 7.03 4.763 9.64h6.334l3.169-5.486h-3.015l-.983-1.702h7.046l-5.183 8.977H1.763l3.525-6.101Zm4.98 16.219.983-1.703h3.015l-3.169-5.488H4.763l1.507 2.611-.982 1.704-3.525-6.104h10.368l1.364 2.363 3.819 6.617h-7.046Zm8.084-4.062 1.505-2.61h1.969l-3.525 6.102-3.109-5.382-2.077-3.596 2.459-4.257 2.727-4.72 3.525 6.102h-1.969l-1.505-2.611-3.17 5.486 3.17 5.486Z"/></svg>"#,
+    slug: "sidequest",
+    title: "SideQuest",
+    hex: "101227",
+    source: "https://sidequestvr.com/branding",
+    guidelines: Some("https://sidequestvr.com/branding"),
+    license: None,
+};
+
+/// academia
+pub const SI_ACADEMIA: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Academia</title><path d="M22.033 21.18L13.77.459H7.869l1.049 2.623L1.836 21.18C1.574 22.098.787 22.23 0 22.361v1.18h6.82v-1.18C4.984 22.23 3.934 21.967 4.721 20c.131-.131.656-1.574 1.311-3.41h8.393l1.18 3.016c.131.525.262.918.262 1.311 0 1.049-.918 1.443-2.623 1.443v1.18H24v-1.18c-.918-.13-1.705-.393-1.967-1.18zM6.82 14.361a363.303 363.303 0 0 0 3.279-8.525l3.41 8.525H6.82z"/></svg>"#,
+    slug: "academia",
+    title: "Academia",
+    hex: "41454A",
+    source: "https://www.academia.edu",
+    guidelines: None,
+    license: None,
+};
+
 /// doordash
 pub const SI_DOORDASH: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>DoorDash</title><path d="M23.071 8.409a6.09 6.09 0 00-5.396-3.228H.584A.589.589 0 00.17 6.184L3.894 9.93a1.752 1.752 0 001.242.516h12.049a1.554 1.554 0 11.031 3.108H8.91a.589.589 0 00-.415 1.003l3.725 3.747a1.75 1.75 0 001.242.516h3.757c4.887 0 8.584-5.225 5.852-10.413"/></svg>"#,
@@ -2172,39 +2205,6 @@ pub const SI_VERITAS: Icon = Icon {
     title: "Veritas",
     hex: "B1181E",
     source: "https://my.veritas.com/cs/groups/partner/documents/styleguide/mdaw/mdq5/~edisp/tus3cpeapp3855186572.pdf",
-    guidelines: None,
-    license: None,
-};
-
-/// retroarch
-pub const SI_RETROARCH: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>RetroArch</title><path d="M6.84 5.76L8.4 7.68H5.28l-.72 2.88H2.64l.72-2.88H1.44L0 13.44h3.84l-.48 1.92h3.36L4.2 18.24h2.82l2.34-2.88h5.28l2.34 2.88h2.82l-2.52-2.88h3.36l-.48-1.92H24l-1.44-5.76h-1.92l.72 2.88h-1.92l-.72-2.88H15.6l1.56-1.92h-2.04l-1.68 1.92h-2.88L8.88 5.76zm.24 3.84H9v1.92H7.08zm7.925 0h1.92v1.92h-1.92Z"/></svg>"#,
-    slug: "retroarch",
-    title: "RetroArch",
-    hex: "000000",
-    source: "https://github.com/libretro/RetroArch/blob/b01aabf7d1f025999ad0f7812e6e6816d011e631/media/retroarch.svg",
-    guidelines: None,
-    license: None,
-};
-
-/// talos
-pub const SI_TALOS: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Talos</title><path d="M9.678 11.98c0-2.664-1.13-6.896-2.867-10.804a12 12 0 0 0-1.585.917c1.608 3.668 2.647 7.553 2.647 9.886 0 2.254-1.08 6.145-2.735 9.865a12 12 0 0 0 1.576.93c1.79-3.976 2.964-8.229 2.964-10.795m6.442 0c0-2.336 1.042-6.22 2.646-9.89a12 12 0 0 0-1.608-.922c-1.756 3.957-2.843 8.166-2.843 10.816 0 2.564 1.177 6.819 2.965 10.797a12 12 0 0 0 1.575-.931c-1.655-3.723-2.735-7.616-2.735-9.87m5.45 6.525.31.307a12 12 0 0 0 .936-1.612c-1.866-1.893-3.457-3.938-3.47-5.233-.012-1.264 1.57-3.308 3.446-5.222a12 12 0 0 0-.945-1.603l-.259.258c-2.739 2.766-4.063 4.92-4.047 6.583.016 1.662 1.332 3.81 4.028 6.522M2.411 5.405l-.26-.259a12 12 0 0 0-.946 1.608c3.123 3.173 3.452 4.704 3.448 5.217-.012 1.3-1.603 3.34-3.47 5.229a12 12 0 0 0 .939 1.608c.106-.106.207-.204.31-.308 2.694-2.711 4.01-4.842 4.026-6.516s-1.308-3.809-4.047-6.58M12.002 24c.303 0 .602-.016.898-.037V.037A12 12 0 0 0 12 0c-.304 0-.605.015-.905.037v23.925q.448.035.903.038z"/></svg>"#,
-    slug: "talos",
-    title: "Talos",
-    hex: "FF7300",
-    source: "https://github.com/siderolabs/talos/blob/e3fda049fee62f3c5cef4ae08eaf848826a6dbed/website/assets/icons/logo.svg",
-    guidelines: None,
-    license: None,
-};
-
-/// tresorit
-pub const SI_TRESORIT: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tresorit</title><path d="M12 0 1.636 6v12L12 24l10.364-6V6zM3.818 7.258 12 2.521l3.574 2.069-11.756 6.753zm16.364 9.484L12 21.48 3.82 16.742V13.86l13.938-8.006 2.425 1.404z"/></svg>"#,
-    slug: "tresorit",
-    title: "Tresorit",
-    hex: "00A9E2",
-    source: "https://tresorit.com/press",
     guidelines: None,
     license: None,
 };

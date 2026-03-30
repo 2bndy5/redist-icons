@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GRAPHQL", icons::SI_GRAPHQL)?;
+    m.add("SI_WEIGHTSANDBIASES", icons::SI_WEIGHTSANDBIASES)?;
     m.add("SI_RAINYUN", icons::SI_RAINYUN)?;
     m.add("SI_SCYLLADB", icons::SI_SCYLLADB)?;
     m.add("SI_LBRY", icons::SI_LBRY)?;
@@ -210,7 +212,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DOUBANREAD", icons::SI_DOUBANREAD)?;
     m.add("SI_VIVALDI", icons::SI_VIVALDI)?;
     m.add("SI_OPENBAO", icons::SI_OPENBAO)?;
-    m.add("SI_CANONICAL", icons::SI_CANONICAL)?;
-    m.add("SI_REVANCED", icons::SI_REVANCED)?;
     Ok(())
 }

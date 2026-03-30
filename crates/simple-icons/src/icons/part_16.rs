@@ -1,6 +1,39 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// retroarch
+pub const SI_RETROARCH: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>RetroArch</title><path d="M6.84 5.76L8.4 7.68H5.28l-.72 2.88H2.64l.72-2.88H1.44L0 13.44h3.84l-.48 1.92h3.36L4.2 18.24h2.82l2.34-2.88h5.28l2.34 2.88h2.82l-2.52-2.88h3.36l-.48-1.92H24l-1.44-5.76h-1.92l.72 2.88h-1.92l-.72-2.88H15.6l1.56-1.92h-2.04l-1.68 1.92h-2.88L8.88 5.76zm.24 3.84H9v1.92H7.08zm7.925 0h1.92v1.92h-1.92Z"/></svg>"#,
+    slug: "retroarch",
+    title: "RetroArch",
+    hex: "000000",
+    source: "https://github.com/libretro/RetroArch/blob/b01aabf7d1f025999ad0f7812e6e6816d011e631/media/retroarch.svg",
+    guidelines: None,
+    license: None,
+};
+
+/// talos
+pub const SI_TALOS: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Talos</title><path d="M9.678 11.98c0-2.664-1.13-6.896-2.867-10.804a12 12 0 0 0-1.585.917c1.608 3.668 2.647 7.553 2.647 9.886 0 2.254-1.08 6.145-2.735 9.865a12 12 0 0 0 1.576.93c1.79-3.976 2.964-8.229 2.964-10.795m6.442 0c0-2.336 1.042-6.22 2.646-9.89a12 12 0 0 0-1.608-.922c-1.756 3.957-2.843 8.166-2.843 10.816 0 2.564 1.177 6.819 2.965 10.797a12 12 0 0 0 1.575-.931c-1.655-3.723-2.735-7.616-2.735-9.87m5.45 6.525.31.307a12 12 0 0 0 .936-1.612c-1.866-1.893-3.457-3.938-3.47-5.233-.012-1.264 1.57-3.308 3.446-5.222a12 12 0 0 0-.945-1.603l-.259.258c-2.739 2.766-4.063 4.92-4.047 6.583.016 1.662 1.332 3.81 4.028 6.522M2.411 5.405l-.26-.259a12 12 0 0 0-.946 1.608c3.123 3.173 3.452 4.704 3.448 5.217-.012 1.3-1.603 3.34-3.47 5.229a12 12 0 0 0 .939 1.608c.106-.106.207-.204.31-.308 2.694-2.711 4.01-4.842 4.026-6.516s-1.308-3.809-4.047-6.58M12.002 24c.303 0 .602-.016.898-.037V.037A12 12 0 0 0 12 0c-.304 0-.605.015-.905.037v23.925q.448.035.903.038z"/></svg>"#,
+    slug: "talos",
+    title: "Talos",
+    hex: "FF7300",
+    source: "https://github.com/siderolabs/talos/blob/e3fda049fee62f3c5cef4ae08eaf848826a6dbed/website/assets/icons/logo.svg",
+    guidelines: None,
+    license: None,
+};
+
+/// tresorit
+pub const SI_TRESORIT: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tresorit</title><path d="M12 0 1.636 6v12L12 24l10.364-6V6zM3.818 7.258 12 2.521l3.574 2.069-11.756 6.753zm16.364 9.484L12 21.48 3.82 16.742V13.86l13.938-8.006 2.425 1.404z"/></svg>"#,
+    slug: "tresorit",
+    title: "Tresorit",
+    hex: "00A9E2",
+    source: "https://tresorit.com/press",
+    guidelines: None,
+    license: None,
+};
+
 /// bigcartel
 pub const SI_BIGCARTEL: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Big Cartel</title><path d="M12 13.068v-1.006c0-.63.252-1.256.88-1.508l7.79-4.9c.503-.252.755-.88.755-1.51V0L12 6.03 2.575 0v12.69c0 3.394 1.51 6.284 4.02 7.917L11.875 24l5.28-3.393c2.513-1.51 4.02-4.398 4.02-7.916V7.036L12 13.068z"/></svg>"#,
@@ -2179,38 +2212,5 @@ pub const SI_BITWIG: Icon = Icon {
     hex: "FF5A00",
     source: "https://www.bitwig.com",
     guidelines: None,
-    license: None,
-};
-
-/// stmicroelectronics
-pub const SI_STMICROELECTRONICS: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>STMicroelectronics</title><path d="M 23.818 5.61 L 6.402 5.61 C 5.125 5.609 3.968 6.362 3.452 7.529 L 0.014 15.811 C -0.036 15.931 0.052 16.063 0.182 16.061 L 8.046 16.061 C 8.601 16.061 8.848 15.523 8.412 15.093 L 5.524 12.388 C 4.008 10.9 4.658 7.45 7.81 7.45 L 23.206 7.45 C 23.283 7.451 23.352 7.402 23.378 7.329 L 23.987 5.857 C 23.996 5.835 24.001 5.811 24 5.787 C 23.997 5.689 23.917 5.61 23.818 5.61 M 22.082 9.826 L 19.126 9.826 C 18.932 9.825 18.756 9.94 18.681 10.118 L 15.369 18.118 C 15.355 18.144 15.347 18.173 15.347 18.202 C 15.348 18.302 15.429 18.383 15.529 18.381 L 16.632 18.381 C 17.93 18.387 19.105 17.613 19.612 16.418 L 22.244 10.063 C 22.252 10.042 22.257 10.019 22.257 9.996 C 22.253 9.902 22.176 9.828 22.082 9.826 M 16.271 10.005 C 16.271 9.905 16.189 9.825 16.089 9.825 L 7.706 9.825 C 7.251 9.825 6.853 10.38 7.335 10.825 L 10.104 13.404 C 10.104 13.404 11.224 14.437 10.984 15.916 C 10.778 17.219 9.889 18.016 9.241 18.302 C 9.208 18.31 9.196 18.351 9.219 18.376 C 9.23 18.387 9.246 18.392 9.261 18.388 L 12.489 18.388 C 12.683 18.39 12.859 18.275 12.934 18.095 L 16.256 10.068 C 16.266 10.049 16.271 10.027 16.271 10.005"/></svg>"#,
-    slug: "stmicroelectronics",
-    title: "STMicroelectronics",
-    hex: "03234B",
-    source: "https://www.st.com",
-    guidelines: None,
-    license: None,
-};
-
-/// coreldraw
-pub const SI_CORELDRAW: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CorelDRAW</title><path d="M10.651 0C10.265.019 9.4.272 8.584.657c-.816.39-3.696 2.161-3.752 6.536.072 4.145 3.847 11.191 6.397 13.455 0 0-4.141-6.952-4.439-13.013C6.488 1.575 10.651 0 10.651 0Zm2.679 0s4.159 1.575 3.861 7.635c-.299 6.061-4.439 13.013-4.439 13.013 2.547-2.264 6.324-9.31 6.396-13.455-.057-4.375-2.936-6.146-3.752-6.536C14.58.272 13.715.019 13.33 0Zm-1.38.019a1.088 1.088 0 0 0-.555.144C9.864.99 8.909 3.982 9.177 8.66c.185 3.242 1.009 7.291 2.422 11.988h.7c1.413-4.697 2.24-8.742 2.425-11.984.268-4.677-.688-7.674-2.219-8.501a1.088 1.088 0 0 0-.555-.144ZM7.017 1.066S2.543 2.909 3.431 8.225c.884 5.32 5.588 10.995 6.986 12.2.503.457-5.777-6.548-6.386-12.699-.291-2.323.39-4.9 2.986-6.66Zm9.966 0c2.595 1.76 3.276 4.337 2.985 6.66-.608 6.151-6.888 13.156-6.386 12.699 1.398-1.205 6.103-6.88 6.987-12.2.888-5.316-3.586-7.159-3.586-7.159Zm-6.815 20.78L10.647 24h2.599l.488-2.154h-3.566Z"/></svg>"#,
-    slug: "coreldraw",
-    title: "CorelDRAW",
-    hex: "000000",
-    source: "https://www.coreldraw.com/en/learn/webinars/ebook-embroidery",
-    guidelines: None,
-    license: None,
-};
-
-/// starlingbank
-pub const SI_STARLINGBANK: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starling Bank</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.738 3.822h.666v2.724h-.666a4.794 4.794 0 0 0-4.789 4.788V12H7.226v-.666c0-4.142 3.37-7.512 7.512-7.512zM14.05 12h2.723v.666c0 4.142-3.37 7.512-7.512 7.512h-.666v-2.724h.666a4.794 4.794 0 0 0 4.789-4.788z"/></svg>"#,
-    slug: "starlingbank",
-    title: "Starling Bank",
-    hex: "6935D3",
-    source: "https://www.starlingbank.com/media/",
-    guidelines: Some("https://www.starlingbank.com/docs/brand/starling-bank-brand-guidelines.pdf"),
     license: None,
 };

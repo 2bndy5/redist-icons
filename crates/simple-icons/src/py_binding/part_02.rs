@@ -30,6 +30,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WIKISOURCE", icons::SI_WIKISOURCE)?;
     m.add("SI_MAUTIC", icons::SI_MAUTIC)?;
     m.add("SI_INDIEWEB", icons::SI_INDIEWEB)?;
+    m.add("SI_PROSEMIRROR", icons::SI_PROSEMIRROR)?;
     m.add("SI_AIRBRAKE", icons::SI_AIRBRAKE)?;
     m.add("SI_KONG", icons::SI_KONG)?;
     m.add("SI_POLKADOT", icons::SI_POLKADOT)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NETTE", icons::SI_NETTE)?;
     m.add("SI_CLOUDINARY", icons::SI_CLOUDINARY)?;
     m.add("SI_FRIGATE", icons::SI_FRIGATE)?;
-    m.add("SI_DASERSTE", icons::SI_DASERSTE)?;
     Ok(())
 }

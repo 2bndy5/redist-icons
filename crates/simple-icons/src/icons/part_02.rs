@@ -300,6 +300,17 @@ pub const SI_INDIEWEB: Icon = Icon {
     license: None,
 };
 
+/// prosemirror
+pub const SI_PROSEMIRROR: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>ProseMirror</title><path d="M22.47 10.47c0 2.831-1.123 5.4-2.948 7.284.659 1.65 1.139 3.287 2.179 6.246-2.687-1.972-4.4-2.744-5.883-3.546h.001c-1.008-.545-1.917-1.106-2.946-2.07-1.02-.954-2.193-2.225-2.787-3.393 1.45 3.263 4.86 5.53 4.86 5.53l.003-.001A10.5 10.5 0 0 1 12 20.94c-5.783 0-10.47-4.688-10.47-10.47S6.217 0 12 0s10.47 4.688 10.47 10.47M12 1.53a8.94 8.94 0 0 0-8.941 8.94 8.94 8.94 0 0 0 7.517 8.827 6.5 6.5 0 0 1-1.532-.748c-3.131-2.145-2.67-6.929-2.66-9.71.011-2.916 2.629-4.702 5.123-4.65 2.987.05 5.153 2.216 4.917 5.122a49 49 0 0 0-.143 2.49c.337.352.659.78.954 1.308a48 48 0 0 1 1.619 3.103A8.941 8.941 0 0 0 12 1.53m.39 10.224c4.065-.01 4.024-5.071 1.653-5.092-1.047-.02-1.54.934-1.54.934s-.41-1.19-1.848-1.18c-3.08.02-2.956 5.348 1.735 5.338m.164-2.207c1.109 0 .206 1.53-.061 2.145-.185-.862-1.047-2.145.061-2.145m-.626-.483c0 .585-.472 1.047-1.047 1.047a1.045 1.045 0 0 1-1.047-1.047c0-.585.472-1.047 1.047-1.047.585 0 1.047.472 1.047 1.047m2.987-.01c0 .585-.41 1.047-.903 1.047-.503 0-.903-.472-.903-1.047 0-.585.41-1.047.903-1.047.503 0 .903.472.903 1.047"/></svg>"#,
+    slug: "prosemirror",
+    title: "ProseMirror",
+    hex: "000000",
+    source: "https://github.com/ProseMirror/prosemirror/blob/e30c5109570a6c05abab853c29920eb614dd8e35/assets/prosemirror_light.svg",
+    guidelines: None,
+    license: None,
+};
+
 /// airbrake
 pub const SI_AIRBRAKE: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Airbrake</title><path d="M15.815.576 24 23.424h-6.072L10.679.576Zm-6.456 0 1.872 5.929-2.447 7.751c1.038.183 2.09.28 3.144.288.576 0 1.175-.048 1.824-.096l1.151 3.912a28.7 28.7 0 0 1-2.951.169 26.568 26.568 0 0 1-4.32-.361L5.88 23.424H0L8.181.576Z"/></svg>"#,
@@ -2192,17 +2203,6 @@ pub const SI_FRIGATE: Icon = Icon {
     title: "Frigate",
     hex: "000000",
     source: "https://frigate.video",
-    guidelines: None,
-    license: None,
-};
-
-/// daserste
-pub const SI_DASERSTE: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Das Erste</title><path d="M11.646.005C5.158.2-.001 5.57 0 12.127.135 18.724 5.468 24 12 24s11.865-5.276 12-11.873C24.001 5.291 18.41-.195 11.645.005zm5.138 4.93V16.96L8.78 19.92v-9.08l-3.9 1.386V9.263l11.903-4.328z"/></svg>"#,
-    slug: "daserste",
-    title: "Das Erste",
-    hex: "001A4B",
-    source: "https://commons.wikimedia.org/wiki/File:Das_Erste_2014.svg",
     guidelines: None,
     license: None,
 };
