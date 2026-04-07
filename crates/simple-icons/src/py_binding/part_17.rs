@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SKETCH", icons::SI_SKETCH)?;
+    m.add("SI_NFCORE", icons::SI_NFCORE)?;
+    m.add("SI_BITWIG", icons::SI_BITWIG)?;
     m.add("SI_STMICROELECTRONICS", icons::SI_STMICROELECTRONICS)?;
     m.add("SI_CORELDRAW", icons::SI_CORELDRAW)?;
     m.add("SI_STARLINGBANK", icons::SI_STARLINGBANK)?;

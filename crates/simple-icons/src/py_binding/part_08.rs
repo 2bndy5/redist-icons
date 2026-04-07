@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OPENJDK", icons::SI_OPENJDK)?;
     m.add("SI_DATAIKU", icons::SI_DATAIKU)?;
     m.add("SI_ULTRALYTICS", icons::SI_ULTRALYTICS)?;
     m.add("SI_HACKCLUB", icons::SI_HACKCLUB)?;
@@ -186,6 +187,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOOGLESUMMEROFCODE", icons::SI_GOOGLESUMMEROFCODE)?;
     m.add("SI_GROCY", icons::SI_GROCY)?;
     m.add("SI_KODAK", icons::SI_KODAK)?;
+    m.add("SI_RUSTFS", icons::SI_RUSTFS)?;
     m.add("SI_FREECAD", icons::SI_FREECAD)?;
     m.add("SI_COMMA", icons::SI_COMMA)?;
     m.add("SI_NEWEGG", icons::SI_NEWEGG)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WORDPRESS", icons::SI_WORDPRESS)?;
     m.add("SI_SPEEDYPAGE", icons::SI_SPEEDYPAGE)?;
     m.add("SI_TQDM", icons::SI_TQDM)?;
-    m.add("SI_GOOGLEJULES", icons::SI_GOOGLEJULES)?;
-    m.add("SI_HANDLEBARSDOTJS", icons::SI_HANDLEBARSDOTJS)?;
     Ok(())
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ARIAKIT", icons::SI_ARIAKIT)?;
+    m.add("SI_SORIANA", icons::SI_SORIANA)?;
     m.add("SI_KDEPLASMA", icons::SI_KDEPLASMA)?;
     m.add("SI_AUDIOBOOKSHELF", icons::SI_AUDIOBOOKSHELF)?;
     m.add("SI_KOTLIN", icons::SI_KOTLIN)?;
@@ -74,6 +76,7 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RESCUETIME", icons::SI_RESCUETIME)?;
     m.add("SI_PEERTUBE", icons::SI_PEERTUBE)?;
     m.add("SI_THURGAUERKANTONALBANK", icons::SI_THURGAUERKANTONALBANK)?;
+    m.add("SI_SPIDERMONKEY", icons::SI_SPIDERMONKEY)?;
     m.add("SI_VESPA", icons::SI_VESPA)?;
     m.add("SI_SURVEYMONKEY", icons::SI_SURVEYMONKEY)?;
     m.add("SI_KUESKI", icons::SI_KUESKI)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ROCKETDOTCHAT", icons::SI_ROCKETDOTCHAT)?;
     m.add("SI_IMAGETOOLBOX", icons::SI_IMAGETOOLBOX)?;
     m.add("SI_SEARXNG", icons::SI_SEARXNG)?;
-    m.add("SI_KDENLIVE", icons::SI_KDENLIVE)?;
-    m.add("SI_ANIMALPLANET", icons::SI_ANIMALPLANET)?;
-    m.add("SI_STELLAR", icons::SI_STELLAR)?;
     Ok(())
 }

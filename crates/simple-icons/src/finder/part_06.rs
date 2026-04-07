@@ -127,6 +127,7 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "houdini" => Some(icons::SI_HOUDINI),
         "transifex" => Some(icons::SI_TRANSIFEX),
         "composer" => Some(icons::SI_COMPOSER),
+        "ty" => Some(icons::SI_TY),
         "pingdom" => Some(icons::SI_PINGDOM),
         "nederlandsespoorwegen" => Some(icons::SI_NEDERLANDSESPOORWEGEN),
         "supercrease" => Some(icons::SI_SUPERCREASE),
@@ -202,7 +203,6 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "satellite" => Some(icons::SI_SATELLITE),
         "swr" => Some(icons::SI_SWR),
         "ccleaner" => Some(icons::SI_CCLEANER),
-        "nushell" => Some(icons::SI_NUSHELL),
         _ => None,
     }
 }
