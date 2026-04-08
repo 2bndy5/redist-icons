@@ -130,6 +130,7 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HOUDINI", icons::SI_HOUDINI)?;
     m.add("SI_TRANSIFEX", icons::SI_TRANSIFEX)?;
     m.add("SI_COMPOSER", icons::SI_COMPOSER)?;
+    m.add("SI_TY", icons::SI_TY)?;
     m.add("SI_PINGDOM", icons::SI_PINGDOM)?;
     m.add("SI_NEDERLANDSESPOORWEGEN", icons::SI_NEDERLANDSESPOORWEGEN)?;
     m.add("SI_SUPERCREASE", icons::SI_SUPERCREASE)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SATELLITE", icons::SI_SATELLITE)?;
     m.add("SI_SWR", icons::SI_SWR)?;
     m.add("SI_CCLEANER", icons::SI_CCLEANER)?;
-    m.add("SI_NUSHELL", icons::SI_NUSHELL)?;
     Ok(())
 }

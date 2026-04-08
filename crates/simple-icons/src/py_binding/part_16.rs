@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_RIDER", icons::SI_RIDER)?;
+    m.add("SI_NOTION", icons::SI_NOTION)?;
+    m.add("SI_VERITAS", icons::SI_VERITAS)?;
     m.add("SI_RETROARCH", icons::SI_RETROARCH)?;
     m.add("SI_TALOS", icons::SI_TALOS)?;
     m.add("SI_TRESORIT", icons::SI_TRESORIT)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MONOPRIX", icons::SI_MONOPRIX)?;
     m.add("SI_ZILCH", icons::SI_ZILCH)?;
     m.add("SI_AUTHELIA", icons::SI_AUTHELIA)?;
-    m.add("SI_SKETCH", icons::SI_SKETCH)?;
-    m.add("SI_NFCORE", icons::SI_NFCORE)?;
-    m.add("SI_BITWIG", icons::SI_BITWIG)?;
     Ok(())
 }

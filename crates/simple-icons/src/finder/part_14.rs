@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
     match slug {
+        "ariakit" => Some(icons::SI_ARIAKIT),
+        "soriana" => Some(icons::SI_SORIANA),
         "kdeplasma" => Some(icons::SI_KDEPLASMA),
         "audiobookshelf" => Some(icons::SI_AUDIOBOOKSHELF),
         "kotlin" => Some(icons::SI_KOTLIN),
@@ -74,6 +76,7 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "rescuetime" => Some(icons::SI_RESCUETIME),
         "peertube" => Some(icons::SI_PEERTUBE),
         "thurgauerkantonalbank" => Some(icons::SI_THURGAUERKANTONALBANK),
+        "spidermonkey" => Some(icons::SI_SPIDERMONKEY),
         "vespa" => Some(icons::SI_VESPA),
         "surveymonkey" => Some(icons::SI_SURVEYMONKEY),
         "kueski" => Some(icons::SI_KUESKI),
@@ -200,9 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "rocketdotchat" => Some(icons::SI_ROCKETDOTCHAT),
         "imagetoolbox" => Some(icons::SI_IMAGETOOLBOX),
         "searxng" => Some(icons::SI_SEARXNG),
-        "kdenlive" => Some(icons::SI_KDENLIVE),
-        "animalplanet" => Some(icons::SI_ANIMALPLANET),
-        "stellar" => Some(icons::SI_STELLAR),
         _ => None,
     }
 }
