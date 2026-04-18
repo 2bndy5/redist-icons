@@ -46,7 +46,7 @@ jobs:
         with:
           enable-cache: true # zizmor: ignore[cache-poisoning]
       - name: Cache cargo artifacts
-        uses: actions/cache@v5 # zizmor: ignore[cache-poisoning]
+        uses: actions/cache@v5.0.4 # zizmor: ignore[cache-poisoning]
         with:
           path: "~/.cargo"
           key: cargo-py-test-${{ hashFiles('Cargo.lock') }}
@@ -85,7 +85,7 @@ jobs:
           python-version: 3.x
       - name: Build wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: PyO3/maturin-action@04ac600d27cdf7a9a280dadf7147097c42b757ad # v1.50.1
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
           target: ${{ matrix.platform.target }}
@@ -125,7 +125,7 @@ jobs:
           python-version: 3.x
       - name: Build wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: PyO3/maturin-action@04ac600d27cdf7a9a280dadf7147097c42b757ad # v1.50.1
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
           target: ${{ matrix.platform.target }}
@@ -162,7 +162,7 @@ jobs:
           architecture: ${{ matrix.platform.target }}
       - name: Build wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: PyO3/maturin-action@04ac600d27cdf7a9a280dadf7147097c42b757ad # v1.50.1
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
           target: ${{ matrix.platform.target }}
@@ -197,7 +197,7 @@ jobs:
           python-version: 3.x
       - name: Build wheels
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: PyO3/maturin-action@04ac600d27cdf7a9a280dadf7147097c42b757ad # v1.50.1
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
           target: ${{ matrix.platform.target }}
@@ -222,7 +222,7 @@ jobs:
           persist-credentials: false
       - name: Build sdist
         if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
-        uses: PyO3/maturin-action@04ac600d27cdf7a9a280dadf7147097c42b757ad # v1.50.1
+        uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
           command: sdist
@@ -254,7 +254,7 @@ jobs:
           path: dist
       - name: Publish to PyPI
         if: ${{ startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg) }}
-        uses: pypa/gh-action-pypi-publish@ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e # v1.13.0
+        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # v1.14.0
 
   check-dist:
     name: Check distribution
