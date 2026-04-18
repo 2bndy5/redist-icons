@@ -23,7 +23,7 @@ si = ["simple-icons-pack"]
 dev = [
     "mypy>=1.20.0",
     "pre-commit>=4.3.0",
-    "ruff>=0.15.9",
+    "ruff>=0.15.10",
 ]
 test = [
     "pytest>=9.0.3",
