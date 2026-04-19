@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_HANDM", icons::SI_HANDM)?;
     m.add("SI_OSMC", icons::SI_OSMC)?;
     m.add("SI_CREDLY", icons::SI_CREDLY)?;
     m.add("SI_MISTRALAI", icons::SI_MISTRALAI)?;
@@ -59,6 +60,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REPLIT", icons::SI_REPLIT)?;
     m.add("SI_WISE", icons::SI_WISE)?;
     m.add("SI_INSTACART", icons::SI_INSTACART)?;
+    m.add("SI_LOCUST", icons::SI_LOCUST)?;
     m.add("SI_PAYHIP", icons::SI_PAYHIP)?;
     m.add("SI_STREAMRUNNERS", icons::SI_STREAMRUNNERS)?;
     m.add("SI_KOC", icons::SI_KOC)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PICSART", icons::SI_PICSART)?;
     m.add("SI_OCTOPUSDEPLOY", icons::SI_OCTOPUSDEPLOY)?;
     m.add("SI_ANKI", icons::SI_ANKI)?;
-    m.add("SI_PANTHEON", icons::SI_PANTHEON)?;
-    m.add("SI_PIXELFED", icons::SI_PIXELFED)?;
     Ok(())
 }

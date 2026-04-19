@@ -69,6 +69,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CONTAO", icons::SI_CONTAO)?;
     m.add("SI_UNDERSCOREDOTJS", icons::SI_UNDERSCOREDOTJS)?;
     m.add("SI_MEDIBANGPAINT", icons::SI_MEDIBANGPAINT)?;
+    m.add("SI_VLLM", icons::SI_VLLM)?;
     m.add("SI_CLOUDFOUNDRY", icons::SI_CLOUDFOUNDRY)?;
     m.add("SI_APACHEJMETER", icons::SI_APACHEJMETER)?;
     m.add("SI_MIXPANEL", icons::SI_MIXPANEL)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APPLE", icons::SI_APPLE)?;
     m.add("SI_DATAGRIP", icons::SI_DATAGRIP)?;
     m.add("SI_HACKCLUB", icons::SI_HACKCLUB)?;
-    m.add("SI_DUCKDB", icons::SI_DUCKDB)?;
     Ok(())
 }

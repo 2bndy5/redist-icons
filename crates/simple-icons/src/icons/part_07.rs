@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// lospec
+pub const SI_LOSPEC: Icon = Icon {
+    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Lospec</title><path d="M4.23 0v24h15.541v-8.4004h-7.1719v3.5996H11.402V0z"/></svg>"#,
+    slug: "lospec",
+    title: "Lospec",
+    hex: "EAEAEA",
+    source: "https://lospec.com/brand",
+    guidelines: Some("https://lospec.com/brand"),
+    license: None,
+};
+
 /// cmake
 pub const SI_CMAKE: Icon = Icon {
     svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CMake</title><path d="M11.769.066L.067 23.206l12.76-10.843zM23.207 23.934L7.471 17.587 0 23.934zM24 23.736L12.298.463l1.719 19.24zM12.893 12.959l-5.025 4.298 5.62 2.248z"/></svg>"#,
@@ -2197,16 +2208,5 @@ pub const SI_IEEE: Icon = Icon {
     hex: "00629B",
     source: "https://brand-experience.ieee.org/templates-tools-resources/resources/master-brand-and-logos/",
     guidelines: Some("https://brand-experience.ieee.org/guidelines/brand-identity/"),
-    license: None,
-};
-
-/// equinixmetal
-pub const SI_EQUINIXMETAL: Icon = Icon {
-    svg: r#"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Equinix Metal</title><path d="M22.399 7.789v7.005l-1.599.56V7.231L16 5.557v11.472l-1.601.557V4.996L12 4.16l-2.4.836v12.59l-1.599-.557V5.557L3.2 7.232v8.121l-1.599-.56V7.79L0 8.349v7.582l4.801 1.676v-9.24l1.6-.558v10.356L11.2 19.84V6.133l.8-.28.8.28v13.708l4.801-1.676V7.809l1.599.558v9.24L24 15.93V8.349z"/></svg>"#,
-    slug: "equinixmetal",
-    title: "Equinix Metal",
-    hex: "ED2224",
-    source: "https://metal.equinix.com",
-    guidelines: None,
     license: None,
 };

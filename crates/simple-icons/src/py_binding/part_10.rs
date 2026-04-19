@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ACCENTURE", icons::SI_ACCENTURE)?;
     m.add("SI_ARTIXLINUX", icons::SI_ARTIXLINUX)?;
     m.add("SI_RASPBERRYPI", icons::SI_RASPBERRYPI)?;
     m.add("SI_ILEDEFRANCEMOBILITES", icons::SI_ILEDEFRANCEMOBILITES)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FONTBASE", icons::SI_FONTBASE)?;
     m.add("SI_REDWOODJS", icons::SI_REDWOODJS)?;
     m.add("SI_GRAPHITE_EDITOR", icons::SI_GRAPHITE_EDITOR)?;
-    m.add("SI_HANDM", icons::SI_HANDM)?;
     Ok(())
 }
