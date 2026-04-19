@@ -1,0 +1,53 @@
+name: Dynamic CI Matrix Builder
+description: "A GitHub Action to dynamically generate a CI matrix."
+
+inputs:
+  nushell-version:
+    description: "The version of nushell to use for processing."
+    required: false
+    default: "*"
+  is-python-ci:
+    description: "Whether this is being used for a Python CI workflow."
+    required: false
+    default: "false"
+outputs:
+  crates:
+    description: >-
+      A JSON array of crate names to be included in the CI matrix.
+    value: ${{ steps.generate-matrix.outputs.crates }}
+  uv-groups:
+    description: >-
+      A space separated string of uv args
+      (e.g. `--group foo --group bar`)
+      to be used in the Python CI test job.
+    value: ${{ steps.generate-matrix.outputs.uv-groups }}
+  pytest-paths:
+    description: >-
+      A space-separated string of paths to pass to pytest for
+      testing only the changed packages.
+    value: ${{ steps.generate-matrix.outputs.pytest-paths }}
+  cargo-packages:
+    description: >-
+      A space-separated string of cargo package flags
+      (e.g. `-p foo -p bar`) for the changed crates.
+    value: ${{ steps.generate-matrix.outputs.cargo-packages }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Setup nushell
+      uses: hustcer/setup-nu@92c296ba1ba2ba04cc948ab64ddefe192dc13f0c # v3.23
+      with:
+        version: ${{ inputs.nushell-version }}
+
+    - name: Generate CI matrix
+      id: generate-matrix
+      shell: bash
+      env:
+        REF_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        REF_BASE: ${{ github.event.pull_request.base.sha || 'HEAD~1' }}
+        REF_FULL: ${{ github.ref }}
+        IS_FOR_PYTHON: ${{ inputs.is-python-ci }}
+      run: >-
+        nu
+        ${{ github.workspace }}/.github/dyn-ci-matrix/generate_matrix.nu

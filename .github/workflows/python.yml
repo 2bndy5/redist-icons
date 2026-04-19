@@ -35,7 +35,28 @@ on:
 permissions: {}
 
 jobs:
+  get-changed-crates:
+    name: Get changed crates
+    runs-on: ubuntu-latest
+    outputs:
+      crates: ${{ steps.generate-matrix.outputs.crates }}
+      uv-groups: ${{ steps.generate-matrix.outputs.uv-groups }}
+      pytest-paths: ${{ steps.generate-matrix.outputs.pytest-paths }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: ./.github/dyn-ci-matrix
+        id: generate-matrix
+        with:
+          nushell-version: ${{ vars.NU_SHELL_VERSION || '*' }}
+          is-python-ci: true
+
   test:
+    needs: [get-changed-crates]
+    if: needs.get-changed-crates.outputs.crates != '[]'
+    name: Test ${{ needs.get-changed-crates.outputs.crates }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -51,15 +72,21 @@ jobs:
           path: "~/.cargo"
           key: cargo-py-test-${{ hashFiles('Cargo.lock') }}
       - name: Install Python deps
-        run: uv sync --all-groups --no-dev
+        env:
+          UV_GROUPS: ${{ needs.get-changed-crates.outputs.uv-groups }}
+        run: uv sync --group test ${UV_GROUPS} --no-dev
       - name: Run Tests
-        run: uv run --no-sync pytest
+        env:
+          PYTEST_PATHS: ${{ needs.get-changed-crates.outputs.pytest-paths }}
+        run: uv run --no-sync pytest ${PYTEST_PATHS}
 
   linux:
+    needs: [get-changed-crates]
+    if: needs.get-changed-crates.outputs.crates != '[]'
     runs-on: ${{ matrix.platform.runner }}
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
         platform:
           - runner: ubuntu-22.04
             target: x86_64
@@ -73,18 +100,15 @@ jobs:
             target: s390x
           - runner: ubuntu-22.04
             target: ppc64le
-    name: linux ${{ matrix.pkg }} ${{ matrix.platform.target }}
+    name: linux ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
       - uses: actions/checkout@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
       - name: Build wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -93,17 +117,18 @@ jobs:
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }} # zizmor: ignore[cache-poisoning]
           manylinux: auto
       - name: Upload wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v7
         with:
           name: wheels-${{ matrix.pkg }}-linux-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
 
   musllinux:
+    needs: [get-changed-crates]
+    if: needs.get-changed-crates.outputs.crates != '[]'
     runs-on: ${{ matrix.platform.runner }}
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
         platform:
           - runner: ubuntu-22.04
             target: x86_64
@@ -113,18 +138,15 @@ jobs:
             target: aarch64
           - runner: ubuntu-22.04
             target: armv7
-    name: musllinux ${{ matrix.pkg }} ${{ matrix.platform.target }}
+    name: musllinux ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
       - uses: actions/checkout@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
       - name: Build wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -133,35 +155,33 @@ jobs:
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }} # zizmor: ignore[cache-poisoning]
           manylinux: musllinux_1_2
       - name: Upload wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v7
         with:
           name: wheels-${{ matrix.pkg }}-musllinux-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
 
   windows:
+    needs: [get-changed-crates]
+    if: needs.get-changed-crates.outputs.crates != '[]'
     runs-on: ${{ matrix.platform.runner }}
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
         platform:
           - runner: windows-latest
             target: x64
           - runner: windows-latest
             target: x86
-    name: windows ${{ matrix.pkg }} ${{ matrix.platform.target }}
+    name: windows ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
       - uses: actions/checkout@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
           architecture: ${{ matrix.platform.target }}
       - name: Build wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -169,34 +189,32 @@ jobs:
           args: --release --out dist --find-interpreter
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }} # zizmor: ignore[cache-poisoning]
       - name: Upload wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v7
         with:
           name: wheels-${{ matrix.pkg }}-windows-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
 
   macos:
+    needs: [get-changed-crates]
+    if: needs.get-changed-crates.outputs.crates != '[]'
     runs-on: ${{ matrix.platform.runner }}
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
         platform:
           - runner: macos-15-intel
             target: x86_64
           - runner: macos-15
             target: aarch64
-    name: macOS ${{ matrix.pkg }} ${{ matrix.platform.target }}
+    name: macOS ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
       - uses: actions/checkout@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           python-version: 3.x
       - name: Build wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
@@ -204,48 +222,47 @@ jobs:
           args: --release --out dist --find-interpreter
           sccache: ${{ !startsWith(github.ref, 'refs/tags/') }} # zizmor: ignore[cache-poisoning]
       - name: Upload wheels
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v7
         with:
           name: wheels-${{ matrix.pkg }}-macos-${{ matrix.platform.target }}
           path: crates/${{ matrix.pkg }}/dist
 
   sdist:
+    if: needs.get-changed-crates.outputs.crates != '[]'
+    needs: [get-changed-crates]
+    name: sdist ${{ matrix.pkg }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
     steps:
       - uses: actions/checkout@v6
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         with:
           persist-credentials: false
       - name: Build sdist
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: PyO3/maturin-action@e83996d129638aa358a18fbd1dfb82f0b0fb5d3b # v1.51.0
         with:
           working-directory: crates/${{ matrix.pkg }}
           command: sdist
           args: --out dist
       - name: Upload sdist
-        if: ${{ (startsWith(github.ref, 'refs/tags/') && startsWith(github.ref_name, matrix.pkg)) || !startsWith(github.ref, 'refs/tags/') }}
         uses: actions/upload-artifact@v7
         with:
           name: wheels-${{ matrix.pkg }}-sdist
           path: crates/${{ matrix.pkg }}/dist
 
   release:
-    name: Release
+    name: Release ${{ needs.get-changed-crates.outputs.crates }}
     if: startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
-    needs: [linux, musllinux, windows, macos, sdist, test]
+    needs: [linux, musllinux, windows, macos, sdist, test, get-changed-crates]
     permissions:
       # Use for deploying release artifacts via trusted publishing
       id-token: write
     environment: release
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
     steps:
       - uses: actions/download-artifact@v8
         with:
@@ -257,13 +274,13 @@ jobs:
         uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # v1.14.0
 
   check-dist:
-    name: Check distribution
+    name: Check distribution ${{ needs.get-changed-crates.outputs.crates }}
     if: ${{ !startsWith(github.ref, 'refs/tags/') }}
     runs-on: ubuntu-latest
-    needs: [linux, musllinux, windows, macos, sdist, test]
+    needs: [linux, musllinux, windows, macos, sdist, test, get-changed-crates]
     strategy:
       matrix:
-        pkg: ["mdi", "octicons", "fontawesome", "simple-icons"]
+        pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
     steps:
       - uses: actions/download-artifact@v8
         with:
