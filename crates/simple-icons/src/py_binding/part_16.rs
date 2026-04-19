@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TWINMOTION", icons::SI_TWINMOTION)?;
+    m.add("SI_CONTENTFUL", icons::SI_CONTENTFUL)?;
     m.add("SI_FRITZ", icons::SI_FRITZ)?;
     m.add("SI_IMPROVMX", icons::SI_IMPROVMX)?;
     m.add("SI_STANDARDJS", icons::SI_STANDARDJS)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MAPILLARY", icons::SI_MAPILLARY)?;
     m.add("SI_PM2", icons::SI_PM2)?;
     m.add("SI_ANDROID", icons::SI_ANDROID)?;
-    m.add("SI_MAX", icons::SI_MAX)?;
-    m.add("SI_CHINASOUTHERNAIRLINES", icons::SI_CHINASOUTHERNAIRLINES)?;
     Ok(())
 }

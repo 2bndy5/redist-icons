@@ -69,6 +69,7 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "contao" => Some(icons::SI_CONTAO),
         "underscoredotjs" => Some(icons::SI_UNDERSCOREDOTJS),
         "medibangpaint" => Some(icons::SI_MEDIBANGPAINT),
+        "vllm" => Some(icons::SI_VLLM),
         "cloudfoundry" => Some(icons::SI_CLOUDFOUNDRY),
         "apachejmeter" => Some(icons::SI_APACHEJMETER),
         "mixpanel" => Some(icons::SI_MIXPANEL),
@@ -202,7 +203,6 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "apple" => Some(icons::SI_APPLE),
         "datagrip" => Some(icons::SI_DATAGRIP),
         "hackclub" => Some(icons::SI_HACKCLUB),
-        "duckdb" => Some(icons::SI_DUCKDB),
         _ => None,
     }
 }
