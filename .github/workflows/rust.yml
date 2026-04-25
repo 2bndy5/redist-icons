@@ -55,7 +55,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Cache cargo artifacts
-        uses: actions/cache@v5.0.4 # zizmor: ignore[cache-poisoning]
+        uses: actions/cache@v5.0.5 # zizmor: ignore[cache-poisoning]
         with:
           path: "~/.cargo"
           key: cargo-lint-${{ hashFiles('Cargo.lock') }}
@@ -73,7 +73,7 @@ jobs:
           persist-credentials: false
       - run: rustup update --no-self-update
       - name: Cache cargo artifacts
-        uses: actions/cache@v5.0.4 # zizmor: ignore[cache-poisoning]
+        uses: actions/cache@v5.0.5 # zizmor: ignore[cache-poisoning]
         with:
           path: "~/.cargo"
           key: cargo-doc-${{ hashFiles('Cargo.lock') }}
@@ -97,7 +97,7 @@ jobs:
           persist-credentials: false
       - run: rustup update --no-self-update
       - name: Cache cargo artifacts
-        uses: actions/cache@v5.0.4 # zizmor: ignore[cache-poisoning]
+        uses: actions/cache@v5.0.5 # zizmor: ignore[cache-poisoning]
         with:
           path: "~/.cargo"
           key: cargo-test-${{ hashFiles('Cargo.lock') }}
