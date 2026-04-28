@@ -112,6 +112,7 @@ jobs:
     permissions:
       id-token: write
     environment: release
+    name: Release ${{ matrix.pkg }}
     strategy:
       matrix:
         pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
@@ -150,7 +151,7 @@ jobs:
   check-dist:
     needs: [lint, doc, test, get-changed-crates]
     if: needs.get-changed-crates.outputs.crates != '[]' && !startsWith(github.ref, 'refs/tags/')
-    name: Check package dist ${{ needs.get-changed-crates.outputs.crates }}
+    name: Check package dist ${{ matrix.pkg }}
     strategy:
       matrix:
         pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
