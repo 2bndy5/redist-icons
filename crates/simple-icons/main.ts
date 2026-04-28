@@ -86,7 +86,7 @@ def get_icon(slug: str) -> Icon | None: ...
     }
     const appendSrc = `\n/// ${slug}
 pub const ${constName}: Icon = Icon {
-    svg: r#"${optimized.data}"#,
+    svg: r##"${optimized.data}"##,
     slug: "${slug}",
     title: "${iconMeta.title}",
     hex: "${iconMeta.hex}",

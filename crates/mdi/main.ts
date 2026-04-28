@@ -80,7 +80,7 @@ def get_icon(slug: str) -> Icon | None: ...
 
     const docComment = `\n/// ${slug}`;
     const appendSrc = `\npub const ${constName}: Icon = Icon {
-    svg: r#"${optimized.data}"#,
+    svg: r##"${optimized.data}"##,
     slug: "${slug}",
     version: "${iconMeta.version}",
     deprecated: ${iconMeta.deprecated},

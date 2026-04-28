@@ -86,7 +86,7 @@ def get_icon(slug: str) -> Icon | None: ...
     rsLibIcons.src.push(`
 /// ${name}
 pub const ${constName}: Icon = Icon {
-    svg: r#"${optimized.data}"#,
+    svg: r##"${optimized.data}"##,
     slug: "${name}",\n};\n`);
   }
 
