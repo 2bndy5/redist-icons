@@ -16,6 +16,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_R", icons::SI_R)?;
     m.add("SI_NAMESILO", icons::SI_NAMESILO)?;
     m.add("SI_BOOKINGDOTCOM", icons::SI_BOOKINGDOTCOM)?;
+    m.add("SI_DEEPSEEK", icons::SI_DEEPSEEK)?;
     m.add("SI_COMPTIA", icons::SI_COMPTIA)?;
     m.add("SI_MACOS", icons::SI_MACOS)?;
     m.add("SI_UBUNTU", icons::SI_UBUNTU)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_STRIPE", icons::SI_STRIPE)?;
     m.add("SI_OPENVERSE", icons::SI_OPENVERSE)?;
     m.add("SI_NIRI", icons::SI_NIRI)?;
-    m.add("SI_SELENIUM", icons::SI_SELENIUM)?;
     Ok(())
 }

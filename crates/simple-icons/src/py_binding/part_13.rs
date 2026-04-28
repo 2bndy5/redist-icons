@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ECLIPSECHE", icons::SI_ECLIPSECHE)?;
+    m.add("SI_VECTORLOGOZONE", icons::SI_VECTORLOGOZONE)?;
+    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
     m.add("SI_INKDROP", icons::SI_INKDROP)?;
     m.add("SI_RESCUETIME", icons::SI_RESCUETIME)?;
     m.add("SI_ALTERNATIVETO", icons::SI_ALTERNATIVETO)?;
@@ -209,8 +212,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_EMBERDOTJS", icons::SI_EMBERDOTJS)?;
     m.add("SI_MYSQL", icons::SI_MYSQL)?;
     m.add("SI_SPEEDYPAGE", icons::SI_SPEEDYPAGE)?;
-    m.add("SI_ISTIO", icons::SI_ISTIO)?;
-    m.add("SI_DUCATI", icons::SI_DUCATI)?;
-    m.add("SI_BANKOFAMERICA", icons::SI_BANKOFAMERICA)?;
     Ok(())
 }

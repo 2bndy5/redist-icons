@@ -61,6 +61,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("HEADING_16", icons::HEADING_16)?;
     m.add("INFINITY_24", icons::INFINITY_24)?;
     m.add("BELL_FILL_24", icons::BELL_FILL_24)?;
+    m.add("STACK_CHECK_16", icons::STACK_CHECK_16)?;
     m.add("ARROW_RIGHT_16", icons::ARROW_RIGHT_16)?;
     m.add("SPACING_MEDIUM_16", icons::SPACING_MEDIUM_16)?;
     m.add("ALERT_24", icons::ALERT_24)?;
@@ -187,6 +188,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("GIFT_16", icons::GIFT_16)?;
     m.add("FILE_CODE_24", icons::FILE_CODE_24)?;
     m.add("ARROW_SWITCH_16", icons::ARROW_SWITCH_16)?;
+    m.add("STACK_REMOVE_16", icons::STACK_REMOVE_16)?;
     m.add("CALENDAR_24", icons::CALENDAR_24)?;
     m.add(
         "FEED_PULL_REQUEST_DRAFT_16",
@@ -225,7 +227,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FEED_ISSUE_CLOSED_16", icons::FEED_ISSUE_CLOSED_16)?;
     m.add("COPILOT_16", icons::COPILOT_16)?;
     m.add("TERMINAL_24", icons::TERMINAL_24)?;
-    m.add("IMAGE_24", icons::IMAGE_24)?;
-    m.add("FOLD_DOWN_16", icons::FOLD_DOWN_16)?;
     Ok(())
 }

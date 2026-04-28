@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SELENIUM", icons::SI_SELENIUM)?;
     m.add("SI_WEBMONEY", icons::SI_WEBMONEY)?;
     m.add("SI_G2G", icons::SI_G2G)?;
     m.add("SI_PROTONVPN", icons::SI_PROTONVPN)?;
@@ -127,6 +128,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COMMONLISP", icons::SI_COMMONLISP)?;
     m.add("SI_BT", icons::SI_BT)?;
     m.add("SI_MATTERMOST", icons::SI_MATTERMOST)?;
+    m.add("SI_QWEN", icons::SI_QWEN)?;
     m.add("SI_MEIZU", icons::SI_MEIZU)?;
     m.add("SI_TOMTOM", icons::SI_TOMTOM)?;
     m.add("SI_SUCKLESS", icons::SI_SUCKLESS)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MOBXSTATETREE", icons::SI_MOBXSTATETREE)?;
     m.add("SI_NOTEBOOKLM", icons::SI_NOTEBOOKLM)?;
     m.add("SI_POLYWORK", icons::SI_POLYWORK)?;
-    m.add("SI_VISX", icons::SI_VISX)?;
-    m.add("SI_PENNY", icons::SI_PENNY)?;
     Ok(())
 }

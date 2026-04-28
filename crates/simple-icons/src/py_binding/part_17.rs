@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MOSCOWMETRO", icons::SI_MOSCOWMETRO)?;
+    m.add("SI_MAPILLARY", icons::SI_MAPILLARY)?;
+    m.add("SI_PM2", icons::SI_PM2)?;
+    m.add("SI_ANDROID", icons::SI_ANDROID)?;
     m.add("SI_MAX", icons::SI_MAX)?;
     m.add("SI_CHINASOUTHERNAIRLINES", icons::SI_CHINASOUTHERNAIRLINES)?;
     m.add("SI_MOQUPS", icons::SI_MOQUPS)?;

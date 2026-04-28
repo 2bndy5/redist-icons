@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        "package-24" => Some(icons::PACKAGE_24),
+        "tracked-by-closed-completed-16" => Some(icons::TRACKED_BY_CLOSED_COMPLETED_16),
+        "tab-16" => Some(icons::TAB_16),
         "pivot-column-24" => Some(icons::PIVOT_COLUMN_24),
         "codespaces-24" => Some(icons::CODESPACES_24),
         "square-circle-16" => Some(icons::SQUARE_CIRCLE_16),
@@ -200,9 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "issue-opened-16" => Some(icons::ISSUE_OPENED_16),
         "pin-16" => Some(icons::PIN_16),
         "reply-24" => Some(icons::REPLY_24),
-        "pin-slash-16" => Some(icons::PIN_SLASH_16),
-        "diff-added-24" => Some(icons::DIFF_ADDED_24),
-        "mark-github-24" => Some(icons::MARK_GITHUB_24),
         _ => None,
     }
 }

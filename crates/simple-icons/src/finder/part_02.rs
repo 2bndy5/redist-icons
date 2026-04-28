@@ -16,6 +16,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "r" => Some(icons::SI_R),
         "namesilo" => Some(icons::SI_NAMESILO),
         "bookingdotcom" => Some(icons::SI_BOOKINGDOTCOM),
+        "deepseek" => Some(icons::SI_DEEPSEEK),
         "comptia" => Some(icons::SI_COMPTIA),
         "macos" => Some(icons::SI_MACOS),
         "ubuntu" => Some(icons::SI_UBUNTU),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "stripe" => Some(icons::SI_STRIPE),
         "openverse" => Some(icons::SI_OPENVERSE),
         "niri" => Some(icons::SI_NIRI),
-        "selenium" => Some(icons::SI_SELENIUM),
         _ => None,
     }
 }

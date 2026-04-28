@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("IMAGE_24", icons::IMAGE_24)?;
+    m.add("FOLD_DOWN_16", icons::FOLD_DOWN_16)?;
     m.add("ISSUE_TRACKED_BY_16", icons::ISSUE_TRACKED_BY_16)?;
     m.add("PERSON_24", icons::PERSON_24)?;
     m.add("LOGO_GIST_24", icons::LOGO_GIST_24)?;
@@ -135,6 +137,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_UP_LEFT_24", icons::ARROW_UP_LEFT_24)?;
     m.add("EYE_24", icons::EYE_24)?;
     m.add("MORTAR_BOARD_16", icons::MORTAR_BOARD_16)?;
+    m.add("SANDBOX_16", icons::SANDBOX_16)?;
     m.add("COMMENT_DISCUSSION_24", icons::COMMENT_DISCUSSION_24)?;
     m.add("BOOLEAN_OFF_24", icons::BOOLEAN_OFF_24)?;
     m.add("GIT_BRANCH_16", icons::GIT_BRANCH_16)?;
@@ -215,11 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SQUARE_CIRCLE_24", icons::SQUARE_CIRCLE_24)?;
     m.add("LIST_UNORDERED_24", icons::LIST_UNORDERED_24)?;
     m.add("SYNC_16", icons::SYNC_16)?;
-    m.add("PACKAGE_24", icons::PACKAGE_24)?;
-    m.add(
-        "TRACKED_BY_CLOSED_COMPLETED_16",
-        icons::TRACKED_BY_CLOSED_COMPLETED_16,
-    )?;
-    m.add("TAB_16", icons::TAB_16)?;
     Ok(())
 }

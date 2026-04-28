@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PICSART", icons::SI_PICSART)?;
+    m.add("SI_OCTOPUSDEPLOY", icons::SI_OCTOPUSDEPLOY)?;
+    m.add("SI_ANKI", icons::SI_ANKI)?;
     m.add("SI_PANTHEON", icons::SI_PANTHEON)?;
     m.add("SI_PIXELFED", icons::SI_PIXELFED)?;
     m.add("SI_INDIEWEB", icons::SI_INDIEWEB)?;
@@ -206,8 +209,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HEARTHISDOTAT", icons::SI_HEARTHISDOTAT)?;
     m.add("SI_TYPER", icons::SI_TYPER)?;
     m.add("SI_GOOGLECLOUD", icons::SI_GOOGLECLOUD)?;
-    m.add("SI_ECLIPSECHE", icons::SI_ECLIPSECHE)?;
-    m.add("SI_VECTORLOGOZONE", icons::SI_VECTORLOGOZONE)?;
-    m.add("SI_PKGSRC", icons::SI_PKGSRC)?;
     Ok(())
 }

@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("PIN_SLASH_16", icons::PIN_SLASH_16)?;
+    m.add("DIFF_ADDED_24", icons::DIFF_ADDED_24)?;
+    m.add("MARK_GITHUB_24", icons::MARK_GITHUB_24)?;
     m.add("SINGLE_SELECT_16", icons::SINGLE_SELECT_16)?;
     m.add("DIFF_MODIFIED_16", icons::DIFF_MODIFIED_16)?;
     m.add("QUOTE_24", icons::QUOTE_24)?;

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_DATAGRIP", icons::SI_DATAGRIP)?;
+    m.add("SI_HACKCLUB", icons::SI_HACKCLUB)?;
     m.add("SI_DUCKDB", icons::SI_DUCKDB)?;
     m.add("SI_CONTENTSTACK", icons::SI_CONTENTSTACK)?;
     m.add("SI_PEAKDESIGN", icons::SI_PEAKDESIGN)?;
@@ -97,6 +99,7 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WAGTAIL", icons::SI_WAGTAIL)?;
     m.add("SI_NUNJUCKS", icons::SI_NUNJUCKS)?;
     m.add("SI_ROLLDOWN", icons::SI_ROLLDOWN)?;
+    m.add("SI_MOONSHOTAI", icons::SI_MOONSHOTAI)?;
     m.add("SI_VIRTUALBOX", icons::SI_VIRTUALBOX)?;
     m.add("SI_PYSYFT", icons::SI_PYSYFT)?;
     m.add("SI_METABASE", icons::SI_METABASE)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MISSKEY", icons::SI_MISSKEY)?;
     m.add("SI_INTERNETARCHIVE", icons::SI_INTERNETARCHIVE)?;
     m.add("SI_KNOWLEDGEBASE", icons::SI_KNOWLEDGEBASE)?;
-    m.add("SI_SIDEQUEST", icons::SI_SIDEQUEST)?;
-    m.add("SI_COPPEL", icons::SI_COPPEL)?;
-    m.add("SI_KUCOIN", icons::SI_KUCOIN)?;
     Ok(())
 }
