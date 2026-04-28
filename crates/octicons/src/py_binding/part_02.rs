@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("PACKAGE_24", icons::PACKAGE_24)?;
+    m.add(
+        "TRACKED_BY_CLOSED_COMPLETED_16",
+        icons::TRACKED_BY_CLOSED_COMPLETED_16,
+    )?;
+    m.add("TAB_16", icons::TAB_16)?;
     m.add("PIVOT_COLUMN_24", icons::PIVOT_COLUMN_24)?;
     m.add("CODESPACES_24", icons::CODESPACES_24)?;
     m.add("SQUARE_CIRCLE_16", icons::SQUARE_CIRCLE_16)?;
@@ -206,8 +212,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ISSUE_OPENED_16", icons::ISSUE_OPENED_16)?;
     m.add("PIN_16", icons::PIN_16)?;
     m.add("REPLY_24", icons::REPLY_24)?;
-    m.add("PIN_SLASH_16", icons::PIN_SLASH_16)?;
-    m.add("DIFF_ADDED_24", icons::DIFF_ADDED_24)?;
-    m.add("MARK_GITHUB_24", icons::MARK_GITHUB_24)?;
     Ok(())
 }

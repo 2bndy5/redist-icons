@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_VISX", icons::SI_VISX)?;
+    m.add("SI_PENNY", icons::SI_PENNY)?;
     m.add("SI_OWNCLOUD", icons::SI_OWNCLOUD)?;
     m.add("SI_SAILSDOTJS", icons::SI_SAILSDOTJS)?;
     m.add("SI_OWASP", icons::SI_OWASP)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_YANDEXCLOUD", icons::SI_YANDEXCLOUD)?;
     m.add("SI_ACTIVELOOP", icons::SI_ACTIVELOOP)?;
     m.add("SI_PWA", icons::SI_PWA)?;
-    m.add("SI_FOURSQUARE", icons::SI_FOURSQUARE)?;
-    m.add("SI_REDUXSAGA", icons::SI_REDUXSAGA)?;
     Ok(())
 }

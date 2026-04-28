@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TEXTUAL", icons::SI_TEXTUAL)?;
+    m.add(
+        "SI_YAMAHAMOTORCORPORATION",
+        icons::SI_YAMAHAMOTORCORPORATION,
+    )?;
+    m.add("SI_VERIZON", icons::SI_VERIZON)?;
     m.add("SI_TWINMOTION", icons::SI_TWINMOTION)?;
     m.add("SI_CONTENTFUL", icons::SI_CONTENTFUL)?;
     m.add("SI_FRITZ", icons::SI_FRITZ)?;
@@ -127,6 +133,7 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WEB3DOTJS", icons::SI_WEB3DOTJS)?;
     m.add("SI_PUG", icons::SI_PUG)?;
     m.add("SI_MODX", icons::SI_MODX)?;
+    m.add("SI_NEON", icons::SI_NEON)?;
     m.add("SI_PREFECT", icons::SI_PREFECT)?;
     m.add("SI_RESHARPER", icons::SI_RESHARPER)?;
     m.add("SI_PAYBACK", icons::SI_PAYBACK)?;
@@ -202,9 +209,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_RUBYGEMS", icons::SI_RUBYGEMS)?;
     m.add("SI_BACKSTAGE", icons::SI_BACKSTAGE)?;
     m.add("SI_QUICKBOOKS", icons::SI_QUICKBOOKS)?;
-    m.add("SI_MOSCOWMETRO", icons::SI_MOSCOWMETRO)?;
-    m.add("SI_MAPILLARY", icons::SI_MAPILLARY)?;
-    m.add("SI_PM2", icons::SI_PM2)?;
-    m.add("SI_ANDROID", icons::SI_ANDROID)?;
     Ok(())
 }

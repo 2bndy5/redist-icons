@@ -58,6 +58,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "heading-16" => Some(icons::HEADING_16),
         "infinity-24" => Some(icons::INFINITY_24),
         "bell-fill-24" => Some(icons::BELL_FILL_24),
+        "stack-check-16" => Some(icons::STACK_CHECK_16),
         "arrow-right-16" => Some(icons::ARROW_RIGHT_16),
         "spacing-medium-16" => Some(icons::SPACING_MEDIUM_16),
         "alert-24" => Some(icons::ALERT_24),
@@ -172,6 +173,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "gift-16" => Some(icons::GIFT_16),
         "file-code-24" => Some(icons::FILE_CODE_24),
         "arrow-switch-16" => Some(icons::ARROW_SWITCH_16),
+        "stack-remove-16" => Some(icons::STACK_REMOVE_16),
         "calendar-24" => Some(icons::CALENDAR_24),
         "feed-pull-request-draft-16" => Some(icons::FEED_PULL_REQUEST_DRAFT_16),
         "zoom-out-24" => Some(icons::ZOOM_OUT_24),
@@ -201,8 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "feed-issue-closed-16" => Some(icons::FEED_ISSUE_CLOSED_16),
         "copilot-16" => Some(icons::COPILOT_16),
         "terminal-24" => Some(icons::TERMINAL_24),
-        "image-24" => Some(icons::IMAGE_24),
-        "fold-down-16" => Some(icons::FOLD_DOWN_16),
         _ => None,
     }
 }

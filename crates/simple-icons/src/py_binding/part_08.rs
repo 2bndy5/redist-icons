@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OCLIF", icons::SI_OCLIF)?;
+    m.add("SI_KFC", icons::SI_KFC)?;
+    m.add("SI_IEEE", icons::SI_IEEE)?;
     m.add("SI_EQUINIXMETAL", icons::SI_EQUINIXMETAL)?;
     m.add("SI_APPMANAGER", icons::SI_APPMANAGER)?;
     m.add("SI_FUGACLOUD", icons::SI_FUGACLOUD)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LIMESURVEY", icons::SI_LIMESURVEY)?;
     m.add("SI_CARRD", icons::SI_CARRD)?;
     m.add("SI_BURGERKING", icons::SI_BURGERKING)?;
-    m.add("SI_GOOGLETAGMANAGER", icons::SI_GOOGLETAGMANAGER)?;
-    m.add("SI_ENVOYPROXY", icons::SI_ENVOYPROXY)?;
-    m.add("SI_CUSTOMINK", icons::SI_CUSTOMINK)?;
     Ok(())
 }
