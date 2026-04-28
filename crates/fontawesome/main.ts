@@ -114,7 +114,7 @@ def get_icon(slug: str) -> Icon | None: ...
         rsIcons[key].src.push(`
 /// ${family}/${slug}
 pub const ${constName}: Icon = Icon {
-    svg: r#"${optimized.data}"#,
+    svg: r##"${optimized.data}"##,
     slug: "${slug}",
     last_modified: ${data.lastModified},
     family: "${family}",
