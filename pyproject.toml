@@ -21,9 +21,9 @@ oct = ["octicons-pack"]
 fa = ["fontawesome-free-pack"]
 si = ["simple-icons-pack"]
 dev = [
-    "mypy>=1.20.0",
-    "pre-commit>=4.3.0",
-    "ruff>=0.15.9",
+    "mypy>=1.20.2",
+    "pre-commit>=4.6.0",
+    "ruff>=0.15.12",
 ]
 test = [
     "pytest>=9.0.3",
