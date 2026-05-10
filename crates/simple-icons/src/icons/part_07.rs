@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// knowledgebase
+pub const SI_KNOWLEDGEBASE: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>KnowledgeBase</title><path d="M20.1 5.52V1.5h-.18c-3.36.15-6.15 2.31-7.83 4.02l-.09.09-.09-.09C10.2 3.81 7.44 1.65 4.08 1.5H3.9v4.02H0v6.93c0 1.68.06 3.36.18 4.74a5.57 5.57 0 005.19 5.1c2.13.12 4.38.21 6.63.21s4.5-.09 6.63-.24a5.57 5.57 0 005.19-5.1c.12-1.38.18-3.06.18-4.74v-6.9zm0 6.93c0 1.59-.06 3.15-.18 4.41-.09.81-.75 1.47-1.56 1.5a90 90 0 01-12.72 0c-.81-.03-1.5-.69-1.56-1.5-.12-1.26-.18-2.85-.18-4.41V5.52c2.82.12 5.64 3.15 6.48 4.32L12 12.09l1.62-2.25c.84-1.2 3.66-4.2 6.48-4.32z"/></svg>"##,
+    slug: "knowledgebase",
+    title: "KnowledgeBase",
+    hex: "9146FF",
+    source: "https://www.knowledgebase.com/design",
+    guidelines: Some("https://www.knowledgebase.com/design"),
+    license: None,
+};
+
 /// sidequest
 pub const SI_SIDEQUEST: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SideQuest</title><path d="M24 10.409 18.689 1.21H8.065l2.518 4.359.769 1.331-.918 1.592H8.598l-.769-1.333-2.517-4.36L0 11.999l5.311 9.199 2.518-4.36.769-1.333h1.836l.919 1.593-.77 1.332-2.517 4.359H18.69L24 13.59h-6.571l-.919-1.591.919-1.59H24ZM5.288 5.328 6.27 7.03 4.763 9.64h6.334l3.169-5.486h-3.015l-.983-1.702h7.046l-5.183 8.977H1.763l3.525-6.101Zm4.98 16.219.983-1.703h3.015l-3.169-5.488H4.763l1.507 2.611-.982 1.704-3.525-6.104h10.368l1.364 2.363 3.819 6.617h-7.046Zm8.084-4.062 1.505-2.61h1.969l-3.525 6.102-3.109-5.382-2.077-3.596 2.459-4.257 2.727-4.72 3.525 6.102h-1.969l-1.505-2.611-3.17 5.486 3.17 5.486Z"/></svg>"##,
@@ -2197,16 +2208,5 @@ pub const SI_NANO: Icon = Icon {
     hex: "209CE9",
     source: "https://nano.org/en/currency",
     guidelines: None,
-    license: None,
-};
-
-/// nederlandsespoorwegen
-pub const SI_NEDERLANDSESPOORWEGEN: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Nederlandse Spoorwegen</title><path d="M10.494 11.812a2.602 2.602 0 0 0-1.835-.751H3.576L5.46 9.184h4.753a.757.757 0 0 1 .516.234l2.777 2.77a2.602 2.602 0 0 0 1.835.75h5.084l-1.884 1.878h-4.752a.757.757 0 0 1-.516-.235zm1.459 4.083a2.863 2.863 0 0 0 1.835.798h5.506L24 12l-4.706-4.694H16.66l3.764 3.755h-5.082a.99.99 0 0 1-.516-.188l-2.778-2.769a2.863 2.863 0 0 0-1.835-.798H4.706L0 12l4.706 4.693H7.34L3.577 12.94h5.082a.99.99 0 0 1 .516.187z"/></svg>"##,
-    slug: "nederlandsespoorwegen",
-    title: "Nederlandse Spoorwegen",
-    hex: "003082",
-    source: "https://www.ns.nl/platform/fundamentals/icons.html",
-    guidelines: Some("https://www.ns.nl/platform/fundamentals"),
     license: None,
 };

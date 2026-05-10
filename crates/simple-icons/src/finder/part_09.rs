@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
     match slug {
+        "burgerking" => Some(icons::SI_BURGERKING),
         "googletagmanager" => Some(icons::SI_GOOGLETAGMANAGER),
         "envoyproxy" => Some(icons::SI_ENVOYPROXY),
         "customink" => Some(icons::SI_CUSTOMINK),
@@ -172,12 +173,14 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "gleam" => Some(icons::SI_GLEAM),
         "phpbb" => Some(icons::SI_PHPBB),
         "soundcloud" => Some(icons::SI_SOUNDCLOUD),
+        "langchaincorporate" => Some(icons::SI_LANGCHAINCORPORATE),
         "gulp" => Some(icons::SI_GULP),
         "styledcomponents" => Some(icons::SI_STYLEDCOMPONENTS),
         "airindia" => Some(icons::SI_AIRINDIA),
         "stackhawk" => Some(icons::SI_STACKHAWK),
         "upstash" => Some(icons::SI_UPSTASH),
         "ios" => Some(icons::SI_IOS),
+        "heliumbrowser" => Some(icons::SI_HELIUMBROWSER),
         "wasmcloud" => Some(icons::SI_WASMCLOUD),
         "morrisons" => Some(icons::SI_MORRISONS),
         "redhatopenshift" => Some(icons::SI_REDHATOPENSHIFT),
@@ -200,9 +203,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "bentoml" => Some(icons::SI_BENTOML),
         "textpattern" => Some(icons::SI_TEXTPATTERN),
         "webflow" => Some(icons::SI_WEBFLOW),
-        "studio3t" => Some(icons::SI_STUDIO3T),
-        "buysellads" => Some(icons::SI_BUYSELLADS),
-        "leetcode" => Some(icons::SI_LEETCODE),
         _ => None,
     }
 }

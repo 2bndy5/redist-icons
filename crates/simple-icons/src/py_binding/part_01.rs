@@ -130,6 +130,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_3M", icons::SI_3M)?;
     m.add("SI_TWENTY", icons::SI_TWENTY)?;
     m.add("SI_TEMPORAL", icons::SI_TEMPORAL)?;
+    m.add("SI_CINNY", icons::SI_CINNY)?;
     m.add("SI_SOCKETDOTIO", icons::SI_SOCKETDOTIO)?;
     m.add("SI_STRYKER", icons::SI_STRYKER)?;
     m.add("SI_HELLYHANSEN", icons::SI_HELLYHANSEN)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_QUEST", icons::SI_QUEST)?;
     m.add("SI_DOLIBARR", icons::SI_DOLIBARR)?;
     m.add("SI_ANSWER", icons::SI_ANSWER)?;
-    m.add("SI_ALLEGRO", icons::SI_ALLEGRO)?;
     Ok(())
 }
