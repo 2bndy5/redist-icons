@@ -127,6 +127,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "3m" => Some(icons::SI_3M),
         "twenty" => Some(icons::SI_TWENTY),
         "temporal" => Some(icons::SI_TEMPORAL),
+        "cinny" => Some(icons::SI_CINNY),
         "socketdotio" => Some(icons::SI_SOCKETDOTIO),
         "stryker" => Some(icons::SI_STRYKER),
         "hellyhansen" => Some(icons::SI_HELLYHANSEN),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "quest" => Some(icons::SI_QUEST),
         "dolibarr" => Some(icons::SI_DOLIBARR),
         "answer" => Some(icons::SI_ANSWER),
-        "allegro" => Some(icons::SI_ALLEGRO),
         _ => None,
     }
 }

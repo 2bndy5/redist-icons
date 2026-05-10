@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_BURGERKING", icons::SI_BURGERKING)?;
     m.add("SI_GOOGLETAGMANAGER", icons::SI_GOOGLETAGMANAGER)?;
     m.add("SI_ENVOYPROXY", icons::SI_ENVOYPROXY)?;
     m.add("SI_CUSTOMINK", icons::SI_CUSTOMINK)?;
@@ -172,12 +173,14 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GLEAM", icons::SI_GLEAM)?;
     m.add("SI_PHPBB", icons::SI_PHPBB)?;
     m.add("SI_SOUNDCLOUD", icons::SI_SOUNDCLOUD)?;
+    m.add("SI_LANGCHAINCORPORATE", icons::SI_LANGCHAINCORPORATE)?;
     m.add("SI_GULP", icons::SI_GULP)?;
     m.add("SI_STYLEDCOMPONENTS", icons::SI_STYLEDCOMPONENTS)?;
     m.add("SI_AIRINDIA", icons::SI_AIRINDIA)?;
     m.add("SI_STACKHAWK", icons::SI_STACKHAWK)?;
     m.add("SI_UPSTASH", icons::SI_UPSTASH)?;
     m.add("SI_IOS", icons::SI_IOS)?;
+    m.add("SI_HELIUMBROWSER", icons::SI_HELIUMBROWSER)?;
     m.add("SI_WASMCLOUD", icons::SI_WASMCLOUD)?;
     m.add("SI_MORRISONS", icons::SI_MORRISONS)?;
     m.add("SI_REDHATOPENSHIFT", icons::SI_REDHATOPENSHIFT)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BENTOML", icons::SI_BENTOML)?;
     m.add("SI_TEXTPATTERN", icons::SI_TEXTPATTERN)?;
     m.add("SI_WEBFLOW", icons::SI_WEBFLOW)?;
-    m.add("SI_STUDIO3T", icons::SI_STUDIO3T)?;
-    m.add("SI_BUYSELLADS", icons::SI_BUYSELLADS)?;
-    m.add("SI_LEETCODE", icons::SI_LEETCODE)?;
     Ok(())
 }

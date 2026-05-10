@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OVH", icons::SI_OVH)?;
+    m.add("SI_INDIEHACKERS", icons::SI_INDIEHACKERS)?;
+    m.add("SI_SQLALCHEMY", icons::SI_SQLALCHEMY)?;
     m.add("SI_FONTBASE", icons::SI_FONTBASE)?;
     m.add("SI_REDWOODJS", icons::SI_REDWOODJS)?;
     m.add("SI_GRAPHITE_EDITOR", icons::SI_GRAPHITE_EDITOR)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_INDIGO", icons::SI_INDIGO)?;
     m.add("SI_LINUXMINT", icons::SI_LINUXMINT)?;
     m.add("SI_AUTENTIQUE", icons::SI_AUTENTIQUE)?;
-    m.add("SI_YAML", icons::SI_YAML)?;
-    m.add("SI_CSSMODULES", icons::SI_CSSMODULES)?;
-    m.add("SI_ZCOOL", icons::SI_ZCOOL)?;
     Ok(())
 }
