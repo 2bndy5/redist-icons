@@ -1,40 +1,37 @@
-# This script shall act as a auto-updater since
-# dependabot lacks support for deno.
+# This script shall act as a auto-regenerator for
+# dependabot updates to the deno ecosystem.
 #
-# If deno-specific updates are detected, then
-# this script will
+# If any changes to the workspace's crates are detected,
+# then this script will
 #
-# 1. create a branch and apply updates to that branch
-# 2. create a Pull Request for review
+# 1. run the appropriate `deno task` to regenerate the rust sources (& python type stubs)
+# 2. push a commit with the updated sources back to the remote.
 #
 # This script requires the following tools installed:
 #
 # - git
-# - deno
-# - gh-cli (https://cli.github.com)
+# - deno (https://deno.com/)
 # - uv (https://docs.astral.sh/uv)
 # - cargo (https://rustup.rs/)
 use ./common.nu *
 use ../dyn-ci-matrix/generate_matrix.nu list-changed-files
 
-# Translate a given `pkg` name into a deno task
+# Translate a given `crate` name into a deno task
 def translate-pkg-to-task [
-    pkg: string, # The npm package name to translate
+    crate: string, # The npm package name to translate
 ] {
-    match $pkg {
-        "@fortawesome/fontawesome-free" => "fa",
-        "@mdi/svg" => "mdi",
-        "@primer/octicons" => "oct",
+    match $crate {
+        "fontawesome" => "fa",
+        "mdi" => "mdi",
+        "octicons" => "oct",
         "simple-icons" => "si",
         _ => null
     }
 }
 
-# Apply the given `update`.
-#
-# Returns a record summarizing the applied changes.
+# Regenerates the rust and python sources of the given list of crate names.
 def apply-update [
-    updated_crates: list<string>, # the dependency update info to apply.
+    updated_crates: list<string>, # the crate names to regenerate.
 ] {
     # normalize pkg name
     for pkg in $updated_crates {
@@ -47,9 +44,9 @@ def apply-update [
     }
 }
 
-# Create a new branch, applies updates, and opens a Pull Request.
+# Create a new commit, and pushes it to the remote.
 def push-updates [] {
-    run-cmd git add .
+    run-cmd git add --all
     let has_changes = (
         ^git status -s
         | lines

@@ -15,10 +15,6 @@ export def list-changed-files [
         | each { $in | str trim }
     )
     print $"Changed files:\n($changed_files | to md)\n"
-    let crates = (
-        $changed_files
-        | where { ($in | str starts-with "crates/") and ($in != 'crates/README.md') }
-    )
     for changed_file in $changed_files {
         let crate = (
             $changed_file
