@@ -5,6 +5,44 @@ const PY_PKG_MAP = {
     "simple-icons": "si",
 }
 
+export def list-changed-files [
+    is_for_python: bool = false, # whether to consider changes to root Cargo.toml as affecting all crates (for python bindings)
+] {
+    mut result = []
+    let changed_files = (
+        (^git diff --name-only $env.REF_BASE $env.REF_HEAD)
+        | lines
+        | each { $in | str trim }
+    )
+    print $"Changed files:\n($changed_files | to md)\n"
+    let crates = (
+        $changed_files
+        | where { ($in | str starts-with "crates/") and ($in != 'crates/README.md') }
+    )
+    for changed_file in $changed_files {
+        let crate = (
+            $changed_file
+            | parse "crates/{crate}/{_}"
+            | get crate
+            | first
+        )
+        if ($crate | is-not-empty) and not ($crate in $result) {
+            $result = $result | append [$crate]
+        } else if ($changed_file == "Cargo.toml") and ($is_for_python) {
+            print $"(ansi yellow)Cargo.toml changed at repo root; affects all python bindings.(ansi reset)"
+            let all_crates = (
+                ls crates
+                | where { $in.type == "dir" }
+                | get name
+                | each { $in | path basename }
+            )
+            $result = ($all_crates)
+            break
+        }
+    }
+    $result
+}
+
 # Generates a json list of crates that have changed.
 #
 # This script uses the following env variables:
@@ -36,36 +74,7 @@ export def main [] {
         }
         $result = $result | append ($crate)
     } else {
-        let changed_files = (
-            (^git diff --name-only $env.REF_BASE $env.REF_HEAD)
-            | lines
-            | each { $in | str trim }
-        )
-        let crates = (
-            $changed_files
-            | where { ($in | str starts-with "crates/") and ($in != 'crates/README.md') }
-        )
-        for changed_file in $changed_files {
-            let crate = (
-                $changed_file
-                | parse "crates/{crate}/{_}"
-                | get crate
-                | first
-            )
-            if ($crate | is-not-empty) and not ($crate in $result) {
-                $result = $result | append [$crate]
-            } else if ($changed_file == "Cargo.toml") and ($is_for_python) {
-                print $"(ansi yellow)Cargo.toml changed at repo root; affects all python bindings.(ansi reset)"
-                let all_crates = (
-                    ls crates
-                    | where { $in.type == "dir" }
-                    | get name
-                    | each { $in | path basename }
-                )
-                $result = ($all_crates)
-                break
-            }
-        }
+        $result = list-changed-files $is_for_python
     }
     if ($result | is-not-empty) {
         print "Found changes in the following crates:"

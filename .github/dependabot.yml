@@ -35,3 +35,13 @@ updates:
       uv-pip:
         patterns:
           - "*"
+  - package-ecosystem: deno
+    directory: /
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    groups:
+      deno:
+        patterns:
+          - "*"
