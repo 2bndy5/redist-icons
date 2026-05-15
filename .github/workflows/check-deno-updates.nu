@@ -18,7 +18,7 @@ use ../dyn-ci-matrix/generate_matrix.nu list-changed-files
 
 # Translate a given `crate` name into a deno task
 def translate-pkg-to-task [
-    crate: string, # The npm package name to translate
+    crate: string, # The workspace crate path to translate
 ] {
     match $crate {
         "fontawesome" => "fa",
@@ -71,7 +71,7 @@ def push-updates [] {
 }
 
 def main [] {
-    let updated_crates = list-changed-files true
+    let updated_crates = list-changed-files true true
     if ($updated_crates | is-empty) {
         print $"(ansi green)No updates found(ansi reset)"
         exit 0

@@ -5,8 +5,16 @@ const PY_PKG_MAP = {
     "simple-icons": "si",
 }
 
+# Get the list of changed files.
+#
+# This function uses the following env variables:
+# - REF_HEAD: The edge/tip commit of the current branch
+# - REF_BASE:
+#     The base commit of the current branch (for pull_request events)
+#     or HEAD~1 (for push events).
 export def list-changed-files [
-    is_for_python: bool = false, # whether to consider changes to root Cargo.toml as affecting all crates (for python bindings)
+    is_for_python: bool = false, # whether to consider changes to root Cargo.toml (affects all python bindings)
+    is_for_deno: bool = false, # whether to consider changes to deno workspace (affects all crates and bindings)
 ] {
     mut result = []
     let changed_files = (
@@ -24,8 +32,18 @@ export def list-changed-files [
         )
         if ($crate | is-not-empty) and not ($crate in $result) {
             $result = $result | append [$crate]
-        } else if ($changed_file == "Cargo.toml") and ($is_for_python) {
-            print $"(ansi yellow)Cargo.toml changed at repo root; affects all python bindings.(ansi reset)"
+        } else if (
+            (($changed_file == "Cargo.toml") and ($is_for_python))
+            or ($is_for_deno
+                and (
+                    # Ignore deno.lock as it would cause any deno update to trigger all crates.
+                    # The relevant deps in deno.json files are pinned to exact versions anyway.
+                    ($changed_file == "deno.json")
+                    or (($changed_file | path expand) in (glob "common/*.{ts,json}"))
+                )
+            )
+        ) {
+            print $"(ansi yellow)($changed_file) affects all generated code.(ansi reset)"
             let all_crates = (
                 ls crates
                 | where { $in.type == "dir" }
@@ -33,7 +51,7 @@ export def list-changed-files [
                 | each { $in | path basename }
             )
             $result = ($all_crates)
-            break
+            break # no need to keep iterating the changed files
         }
     }
     $result
