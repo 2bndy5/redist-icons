@@ -4,6 +4,12 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
+
+# Allow beta ecosystems.
+# This can be removed when deno support is stable.
+# see https://github.com/dependabot/dependabot-core/issues/2417
+enable-beta-ecosystems: true
+
 updates:
   - package-ecosystem: github-actions
     directory: /
