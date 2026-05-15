@@ -38,7 +38,9 @@ updates:
   - package-ecosystem: deno
     directory: /
     schedule:
-      interval: "weekly"
+      interval: "cron"
+      # run sunday, tuesday, and thursday
+      cronjob: 0 0 * * 0,2,4
     cooldown:
       default-days: 7
     groups:
