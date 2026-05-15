@@ -4,15 +4,16 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-  schedule:
-    - cron: "0 0 * * 0,2,4"
+  pull_request:
+    branches: [main]
 
 permissions: {}
 
 jobs:
   check-updates:
     runs-on: ubuntu-latest
-    environment: deno-upgrades
+    # spell-checker: disable-next-line
+    environment: regen-src
 
     steps:
       - uses: actions/checkout@v6
@@ -47,4 +48,5 @@ jobs:
       - name: Check for updates
         run: nu .github/workflows/check-deno-updates.nu
         env:
-          GITHUB_TOKEN: ${{ secrets.REDIST_ICONS_UPDATE }}
+          REF_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+          REF_BASE: ${{ github.event.pull_request.base.sha || 'HEAD~1' }}
