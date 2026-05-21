@@ -1,4 +1,4 @@
-# This script shall act as a auto-regenerator for
+# This script shall act as an auto-regenerator for
 # dependabot updates to the deno ecosystem.
 #
 # If any changes to the workspace's crates are detected,

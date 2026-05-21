@@ -1,5 +1,5 @@
-# This script shall act as a auto-updater since
-# dependabot lacks support for deno.
+# This script shall act as an manual-updater since
+# dependabot lacks stable support for deno.
 #
 # If deno-specific updates are detected, then
 # this script will
@@ -114,7 +114,7 @@ def create-pr [
 ] {
     let is_ci = (is-in-ci)
     # create branch
-    let sha_hash = $updates | str join | hash sha256 | str substring ..6
+    let sha_hash = $updates | to json --raw | hash sha256 | str substring ..6
     let branch_name = $"deno/updates-($sha_hash)"
     let branch_exists = (^git branch -r) | lines | where {$in | str ends-with $branch_name} | is-not-empty
     run-cmd git checkout -b $branch_name

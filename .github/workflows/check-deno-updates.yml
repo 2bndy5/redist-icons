@@ -20,6 +20,7 @@ jobs:
         with:
           token: ${{ secrets.REDIST_ICONS_UPDATE }}
           fetch-depth: 0
+          ref: ${{ github.head_ref || github.ref_name }}
           persist-credentials: true # needed for git push
 
       - run: rustup update --no-self-update
