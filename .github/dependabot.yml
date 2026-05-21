@@ -41,14 +41,12 @@ updates:
       uv-pip:
         patterns:
           - "*"
-  - package-ecosystem: deno
+  - package-ecosystem: deno # zizmor: ignore[dependabot-cooldown]
     directory: /
     schedule:
       interval: "cron"
       # run sunday, tuesday, and thursday
       cronjob: 0 0 * * 0,2,4
-    cooldown:
-      default-days: 7
     groups:
       deno:
         patterns:
