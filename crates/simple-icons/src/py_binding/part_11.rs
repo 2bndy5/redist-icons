@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SKETCHUP", icons::SI_SKETCHUP)?;
+    m.add("SI_CLOUDFLAREPAGES", icons::SI_CLOUDFLAREPAGES)?;
     m.add("SI_LITERAL", icons::SI_LITERAL)?;
     m.add("SI_READDOTCV", icons::SI_READDOTCV)?;
     m.add("SI_YETI", icons::SI_YETI)?;
@@ -37,6 +39,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_QUICKTYPE", icons::SI_QUICKTYPE)?;
     m.add("SI_AVM", icons::SI_AVM)?;
     m.add("SI_TEESPRING", icons::SI_TEESPRING)?;
+    m.add("SI_OPENTUI", icons::SI_OPENTUI)?;
     m.add("SI_IFIXIT", icons::SI_IFIXIT)?;
     m.add("SI_SHOPEE", icons::SI_SHOPEE)?;
     m.add("SI_TELEQUEBEC", icons::SI_TELEQUEBEC)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JEEP", icons::SI_JEEP)?;
     m.add("SI_RETROPIE", icons::SI_RETROPIE)?;
     m.add("SI_PRESTO", icons::SI_PRESTO)?;
-    m.add("SI_APACHEAIRFLOW", icons::SI_APACHEAIRFLOW)?;
-    m.add("SI_BRANDFOLDER", icons::SI_BRANDFOLDER)?;
-    m.add("SI_FIRESHIP", icons::SI_FIRESHIP)?;
     Ok(())
 }

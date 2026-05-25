@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
     match slug {
+        "sketchup" => Some(icons::SI_SKETCHUP),
+        "cloudflarepages" => Some(icons::SI_CLOUDFLAREPAGES),
         "literal" => Some(icons::SI_LITERAL),
         "readdotcv" => Some(icons::SI_READDOTCV),
         "yeti" => Some(icons::SI_YETI),
@@ -37,6 +39,7 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "quicktype" => Some(icons::SI_QUICKTYPE),
         "avm" => Some(icons::SI_AVM),
         "teespring" => Some(icons::SI_TEESPRING),
+        "opentui" => Some(icons::SI_OPENTUI),
         "ifixit" => Some(icons::SI_IFIXIT),
         "shopee" => Some(icons::SI_SHOPEE),
         "telequebec" => Some(icons::SI_TELEQUEBEC),
@@ -200,9 +203,6 @@ pub(super) fn find_part_11(slug: &str) -> Option<Icon> {
         "jeep" => Some(icons::SI_JEEP),
         "retropie" => Some(icons::SI_RETROPIE),
         "presto" => Some(icons::SI_PRESTO),
-        "apacheairflow" => Some(icons::SI_APACHEAIRFLOW),
-        "brandfolder" => Some(icons::SI_BRANDFOLDER),
-        "fireship" => Some(icons::SI_FIRESHIP),
         _ => None,
     }
 }

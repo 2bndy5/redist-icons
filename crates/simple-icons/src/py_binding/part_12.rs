@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_APACHEAIRFLOW", icons::SI_APACHEAIRFLOW)?;
+    m.add("SI_BRANDFOLDER", icons::SI_BRANDFOLDER)?;
+    m.add("SI_FIRESHIP", icons::SI_FIRESHIP)?;
     m.add("SI_JITSI", icons::SI_JITSI)?;
     m.add("SI_DUNGEONSANDDRAGONS", icons::SI_DUNGEONSANDDRAGONS)?;
     m.add("SI_SWR", icons::SI_SWR)?;
@@ -206,8 +209,5 @@ pub(super) fn bind_part_12(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SAGE", icons::SI_SAGE)?;
     m.add("SI_STADIA", icons::SI_STADIA)?;
     m.add("SI_ROLLBAR", icons::SI_ROLLBAR)?;
-    m.add("SI_PAYLOADCMS", icons::SI_PAYLOADCMS)?;
-    m.add("SI_VIRGINMEDIA", icons::SI_VIRGINMEDIA)?;
-    m.add("SI_PHOSPHORICONS", icons::SI_PHOSPHORICONS)?;
     Ok(())
 }

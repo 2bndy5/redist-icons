@@ -152,6 +152,7 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_REACTBOOTSTRAP", icons::SI_REACTBOOTSTRAP)?;
     m.add("SI_BOTBLECMS", icons::SI_BOTBLECMS)?;
     m.add("SI_ETIHADAIRWAYS", icons::SI_ETIHADAIRWAYS)?;
+    m.add("SI_AWAIT", icons::SI_AWAIT)?;
     m.add("SI_ZILCH", icons::SI_ZILCH)?;
     m.add("SI_SPOJ", icons::SI_SPOJ)?;
     m.add("SI_ROOTSSAGE", icons::SI_ROOTSSAGE)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ONESTREAM", icons::SI_ONESTREAM)?;
     m.add("SI_BASEUI", icons::SI_BASEUI)?;
     m.add("SI_GOOGLEDRIVE", icons::SI_GOOGLEDRIVE)?;
-    m.add("SI_OPENZFS", icons::SI_OPENZFS)?;
     Ok(())
 }
