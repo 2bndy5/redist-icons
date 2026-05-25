@@ -10,10 +10,10 @@
     "jsr:@std/toml@1.0.11": "1.0.11",
     "npm:@fortawesome/fontawesome-free@7.2.0": "7.2.0",
     "npm:@mdi/svg@7.4.47": "7.4.47",
-    "npm:@primer/octicons@19.26.0": "19.26.0",
+    "npm:@primer/octicons@19.27.0": "19.27.0",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
-    "npm:simple-icons@16.20.0": "16.20.0",
+    "npm:simple-icons@16.21.0": "16.21.0",
     "npm:svgo@4.0.1": "4.0.1",
     "npm:which@7.0.0": "7.0.0"
   },
@@ -63,8 +63,8 @@
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
     },
-    "@primer/octicons@19.26.0": {
-      "integrity": "sha512-K+ewEvXf9w+65i4OeLDXOhd1yT5qdMIpU/miqmjTuaGufZCxFn4131SIh0CfrinmLFnL9Ow60kk3hxx0Y4oIAQ==",
+    "@primer/octicons@19.27.0": {
+      "integrity": "sha512-7xC6D89f9IcoDezeKTGETbgRAoXJnbZlakavqYzD4Wo+uTC6212k0fTE/dLV8WCDOwfp//WyONftdaFRdI1VdQ==",
       "dependencies": [
         "object-assign"
       ]
@@ -169,8 +169,8 @@
     "sax@1.5.0": {
       "integrity": "sha512-21IYA3Q5cQf089Z6tgaUTr7lDAyzoTPx5HRtbhsME8Udispad8dC/+sziTNugOEx54ilvatQ9YCzl4KQLPcRHA=="
     },
-    "simple-icons@16.20.0": {
-      "integrity": "sha512-2b7Xu+Zy+iwLiuLSAcWuxnM1ETNFy7JmxWSjh0Y/A8P3KGjFFcokbpWbUf/IivMNbR9WuZ/QQlirh5bGh3Q2vA=="
+    "simple-icons@16.21.0": {
+      "integrity": "sha512-kH6LEx5yvBGVNaVrHnZ7D17G16CmmHiI8DD7MwIwgnWmDFTiFu4PhFZLNdV6bMGr61qbHMMTXLoo/T6C25dMGA=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -226,12 +226,12 @@
       },
       "crates/octicons": {
         "dependencies": [
-          "npm:@primer/octicons@19.26.0"
+          "npm:@primer/octicons@19.27.0"
         ]
       },
       "crates/simple-icons": {
         "dependencies": [
-          "npm:simple-icons@16.20.0"
+          "npm:simple-icons@16.21.0"
         ]
       }
     }
