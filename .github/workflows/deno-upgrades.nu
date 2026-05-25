@@ -116,15 +116,22 @@ def create-pr [
     # create branch
     let sha_hash = $updates | to json --raw | hash sha256 | str substring ..6
     let branch_name = $"deno/updates-($sha_hash)"
-    let branch_exists = (^git branch) | lines | where {$in | str ends-with $branch_name} | is-not-empty
+    let local_exists = (^git branch) | lines | where {$in | str trim | $in == $branch_name} | is-not-empty
+    let remote_exists = (^git ls-remote --heads origin $branch_name) | str trim | is-not-empty
+    let branch_exists = $local_exists or $remote_exists
     if ($is_ci) {
         run-cmd git config --global user.name $"($env.GITHUB_ACTOR)"
         run-cmd git config --global user.email $"($env.GITHUB_ACTOR_ID)+($env.GITHUB_ACTOR)@users.noreply.github.com"
     }
     if ($branch_exists) {
         print $"Branch ($branch_name) already exists"
-        run-cmd git checkout $branch_name
-        run-cmd git pull --rebase origin $branch_name
+        if ($remote_exists and not $local_exists) {
+            run-cmd git fetch origin $branch_name
+            run-cmd git checkout -b $branch_name $"origin/($branch_name)"
+        } else {
+            run-cmd git checkout $branch_name
+            run-cmd git pull --rebase origin $branch_name
+        }
     } else {
         run-cmd git checkout -b $branch_name
     }
