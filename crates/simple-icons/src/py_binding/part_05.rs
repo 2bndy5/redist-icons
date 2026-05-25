@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_OPENZFS", icons::SI_OPENZFS)?;
     m.add("SI_KTM", icons::SI_KTM)?;
     m.add("SI_GREATLEARNING", icons::SI_GREATLEARNING)?;
     m.add("SI_CONFLUENCE", icons::SI_CONFLUENCE)?;
@@ -76,6 +77,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CLARIS", icons::SI_CLARIS)?;
     m.add("SI_AKAMAI", icons::SI_AKAMAI)?;
     m.add("SI_MONKEYTYPE", icons::SI_MONKEYTYPE)?;
+    m.add("SI_LMSTUDIO", icons::SI_LMSTUDIO)?;
     m.add("SI_TACOBELL", icons::SI_TACOBELL)?;
     m.add("SI_INTUIT", icons::SI_INTUIT)?;
     m.add("SI_PALOALTONETWORKS", icons::SI_PALOALTONETWORKS)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SEAGATE", icons::SI_SEAGATE)?;
     m.add("SI_YABAI", icons::SI_YABAI)?;
     m.add("SI_SITEPOINT", icons::SI_SITEPOINT)?;
-    m.add("SI_WIRE", icons::SI_WIRE)?;
-    m.add("SI_SNAPDRAGON", icons::SI_SNAPDRAGON)?;
     Ok(())
 }

@@ -152,6 +152,7 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "reactbootstrap" => Some(icons::SI_REACTBOOTSTRAP),
         "botblecms" => Some(icons::SI_BOTBLECMS),
         "etihadairways" => Some(icons::SI_ETIHADAIRWAYS),
+        "await" => Some(icons::SI_AWAIT),
         "zilch" => Some(icons::SI_ZILCH),
         "spoj" => Some(icons::SI_SPOJ),
         "rootssage" => Some(icons::SI_ROOTSSAGE),
@@ -202,7 +203,6 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "onestream" => Some(icons::SI_ONESTREAM),
         "baseui" => Some(icons::SI_BASEUI),
         "googledrive" => Some(icons::SI_GOOGLEDRIVE),
-        "openzfs" => Some(icons::SI_OPENZFS),
         _ => None,
     }
 }

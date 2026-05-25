@@ -56,6 +56,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_UP_LEFT_24", icons::ARROW_UP_LEFT_24)?;
     m.add("CHECKLIST_24", icons::CHECKLIST_24)?;
     m.add("ZAP_16", icons::ZAP_16)?;
+    m.add("FLAG_24", icons::FLAG_24)?;
     m.add("MINIMIZE_24", icons::MINIMIZE_24)?;
     m.add("LOOP_24", icons::LOOP_24)?;
     m.add("EXCLAMATION_16", icons::EXCLAMATION_16)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FEED_REPO_16", icons::FEED_REPO_16)?;
     m.add("KEY_ASTERISK_16", icons::KEY_ASTERISK_16)?;
     m.add("CODESCAN_16", icons::CODESCAN_16)?;
-    m.add("PASSKEY_FILL_24", icons::PASSKEY_FILL_24)?;
     Ok(())
 }

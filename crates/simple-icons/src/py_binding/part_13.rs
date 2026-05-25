@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_PAYLOADCMS", icons::SI_PAYLOADCMS)?;
+    m.add("SI_VIRGINMEDIA", icons::SI_VIRGINMEDIA)?;
+    m.add("SI_PHOSPHORICONS", icons::SI_PHOSPHORICONS)?;
     m.add("SI_ADONISJS", icons::SI_ADONISJS)?;
     m.add("SI_DEPENDABOT", icons::SI_DEPENDABOT)?;
     m.add("SI_APPIMAGE", icons::SI_APPIMAGE)?;
@@ -206,8 +209,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_COFFEESCRIPT", icons::SI_COFFEESCRIPT)?;
     m.add("SI_NETIM", icons::SI_NETIM)?;
     m.add("SI_CHASE", icons::SI_CHASE)?;
-    m.add("SI_BOOKMYSHOW", icons::SI_BOOKMYSHOW)?;
-    m.add("SI_DISCOVER", icons::SI_DISCOVER)?;
-    m.add("SI_PLAYCANVAS", icons::SI_PLAYCANVAS)?;
     Ok(())
 }

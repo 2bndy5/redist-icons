@@ -53,6 +53,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "arrow-up-left-24" => Some(icons::ARROW_UP_LEFT_24),
         "checklist-24" => Some(icons::CHECKLIST_24),
         "zap-16" => Some(icons::ZAP_16),
+        "flag-24" => Some(icons::FLAG_24),
         "minimize-24" => Some(icons::MINIMIZE_24),
         "loop-24" => Some(icons::LOOP_24),
         "exclamation-16" => Some(icons::EXCLAMATION_16),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "feed-repo-16" => Some(icons::FEED_REPO_16),
         "key-asterisk-16" => Some(icons::KEY_ASTERISK_16),
         "codescan-16" => Some(icons::CODESCAN_16),
-        "passkey-fill-24" => Some(icons::PASSKEY_FILL_24),
         _ => None,
     }
 }

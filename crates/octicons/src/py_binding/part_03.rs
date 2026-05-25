@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("CIRCLE_16", icons::CIRCLE_16)?;
+    m.add("ALERT_FILL_16", icons::ALERT_FILL_16)?;
     m.add("TROPHY_24", icons::TROPHY_24)?;
     m.add("TRIANGLE_DOWN_24", icons::TRIANGLE_DOWN_24)?;
     m.add("AI_MODEL_16", icons::AI_MODEL_16)?;

@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("MOVE_TO_END_24", icons::MOVE_TO_END_24)?;
     m.add("TRIANGLE_LEFT_24", icons::TRIANGLE_LEFT_24)?;
     m.add("LAW_24", icons::LAW_24)?;
     m.add("GRAPH_16", icons::GRAPH_16)?;
@@ -124,6 +125,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("PLUS_16", icons::PLUS_16)?;
     m.add("HEADING_24", icons::HEADING_24)?;
     m.add("THUMBSDOWN_24", icons::THUMBSDOWN_24)?;
+    m.add("FLAG_16", icons::FLAG_16)?;
     m.add("UNVERIFIED_24", icons::UNVERIFIED_24)?;
     m.add("STAR_16", icons::STAR_16)?;
     m.add("COPILOT_48", icons::COPILOT_48)?;
@@ -216,7 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SKIP_FILL_16", icons::SKIP_FILL_16)?;
     m.add("X_CIRCLE_24", icons::X_CIRCLE_24)?;
     m.add("DATABASE_16", icons::DATABASE_16)?;
-    m.add("CIRCLE_16", icons::CIRCLE_16)?;
-    m.add("ALERT_FILL_16", icons::ALERT_FILL_16)?;
     Ok(())
 }

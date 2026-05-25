@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("PASSKEY_FILL_24", icons::PASSKEY_FILL_24)?;
     m.add("LOCKUP_GITHUB_24", icons::LOCKUP_GITHUB_24)?;
     m.add("PAUSE_24", icons::PAUSE_24)?;
     m.add("MAXIMIZE_24", icons::MAXIMIZE_24)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
         "FEED_PULL_REQUEST_DRAFT_16",
         icons::FEED_PULL_REQUEST_DRAFT_16,
     )?;
-    m.add("MOVE_TO_END_24", icons::MOVE_TO_END_24)?;
     Ok(())
 }
