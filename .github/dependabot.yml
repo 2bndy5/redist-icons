@@ -44,9 +44,9 @@ updates:
   - package-ecosystem: deno # zizmor: ignore[dependabot-cooldown]
     directory: /
     schedule:
-      interval: "cron"
+      interval: "daily"
       # run sunday, tuesday, and thursday
-      cronjob: 0 0 * * 0,2,4
+      # cronjob: 0 0 * * 0,2,4
     groups:
       deno:
         patterns:
