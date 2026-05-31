@@ -146,13 +146,14 @@ def create-pr [
 
     run-cmd cargo update --workspace
 
-    run-cmd uv run pre-commit run --all-files
-
     $desc_table | to md | save --force $PR_NOTES
 
     # commit changes
     let title = $"build: bump ($updates | length) packages in deno group"
     run-cmd git add --all
+
+    run-cmd uv run pre-commit run --all-files
+
     let git_status = (^git status -s) | lines
     if ($git_status | is-not-empty) {
         run-cmd git commit -m $title
