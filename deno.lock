@@ -1,19 +1,19 @@
 {
   "version": "5",
   "specifiers": {
-    "jsr:@std/collections@^1.1.3": "1.1.6",
+    "jsr:@std/collections@^1.1.3": "1.2.0",
     "jsr:@std/fmt@1.0.10": "1.0.10",
-    "jsr:@std/fs@1.0.23": "1.0.23",
-    "jsr:@std/internal@^1.0.12": "1.0.12",
-    "jsr:@std/path@1.1.4": "1.1.4",
-    "jsr:@std/path@^1.1.4": "1.1.4",
+    "jsr:@std/fs@1.0.24": "1.0.24",
+    "jsr:@std/internal@^1.0.14": "1.0.14",
+    "jsr:@std/path@1.1.5": "1.1.5",
+    "jsr:@std/path@^1.1.5": "1.1.5",
     "jsr:@std/toml@1.0.11": "1.0.11",
     "npm:@fortawesome/fontawesome-free@7.2.0": "7.2.0",
     "npm:@mdi/svg@7.4.47": "7.4.47",
-    "npm:@primer/octicons@19.27.0": "19.27.0",
+    "npm:@primer/octicons@19.28.0": "19.28.0",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
-    "npm:simple-icons@16.21.0": "16.21.0",
+    "npm:simple-icons@16.22.0": "16.22.0",
     "npm:svgo@4.0.1": "4.0.1",
     "npm:which@7.0.0": "7.0.0"
   },
@@ -27,24 +27,27 @@
     "@std/collections@1.1.6": {
       "integrity": "b458160ce65ea5ad35da05d0a5cbee4b583677c8b443a10d7beb0c4ac63f2baa"
     },
+    "@std/collections@1.2.0": {
+      "integrity": "47627a21d3a13138b77fd0e4d790ba9d2e603c3510b686cde6b132fe9aa98a88"
+    },
     "@std/fmt@1.0.8": {
       "integrity": "71e1fc498787e4434d213647a6e43e794af4fd393ef8f52062246e06f7e372b7"
     },
     "@std/fmt@1.0.10": {
       "integrity": "90dfba288802ac6de82fb31d0917eb9e4450b9925b954d5e51fc29ac07419db5"
     },
-    "@std/fs@1.0.23": {
-      "integrity": "3ecbae4ce4fee03b180fa710caff36bb5adb66631c46a6460aaad49515565a37",
+    "@std/fs@1.0.24": {
+      "integrity": "f3061b45b81673a2bece689da041df32d174be064c89eb6397fb5718d3fb7877",
       "dependencies": [
         "jsr:@std/internal",
-        "jsr:@std/path@^1.1.4"
+        "jsr:@std/path@^1.1.5"
       ]
     },
-    "@std/internal@1.0.12": {
-      "integrity": "972a634fd5bc34b242024402972cd5143eac68d8dffaca5eaa4dba30ce17b027"
+    "@std/internal@1.0.14": {
+      "integrity": "291516b3d4c35024d6ffbc0a9df5bf4c64116e05b50012cf846710152d2ffdf7"
     },
-    "@std/path@1.1.4": {
-      "integrity": "1d2d43f39efb1b42f0b1882a25486647cb851481862dc7313390b2bb044314b5",
+    "@std/path@1.1.5": {
+      "integrity": "ccea00982ea28c36becaf6e62f855406c76a8c32d462f66f415bbb7d83a271bc",
       "dependencies": [
         "jsr:@std/internal"
       ]
@@ -63,8 +66,8 @@
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
     },
-    "@primer/octicons@19.27.0": {
-      "integrity": "sha512-7xC6D89f9IcoDezeKTGETbgRAoXJnbZlakavqYzD4Wo+uTC6212k0fTE/dLV8WCDOwfp//WyONftdaFRdI1VdQ==",
+    "@primer/octicons@19.28.0": {
+      "integrity": "sha512-FCpW9ZXI9U9h7wjYSXFQK4Zyp1Roc/kF8nymak4bYccWaWoUixbnIr4u8UYiRoPRSglm+23TZEyUZHrgNql9Jw==",
       "dependencies": [
         "object-assign"
       ]
@@ -169,8 +172,8 @@
     "sax@1.5.0": {
       "integrity": "sha512-21IYA3Q5cQf089Z6tgaUTr7lDAyzoTPx5HRtbhsME8Udispad8dC/+sziTNugOEx54ilvatQ9YCzl4KQLPcRHA=="
     },
-    "simple-icons@16.21.0": {
-      "integrity": "sha512-kH6LEx5yvBGVNaVrHnZ7D17G16CmmHiI8DD7MwIwgnWmDFTiFu4PhFZLNdV6bMGr61qbHMMTXLoo/T6C25dMGA=="
+    "simple-icons@16.22.0": {
+      "integrity": "sha512-/raPcEWh89R2O2IMmHum6W2dF99NNX3yWikVXKUalkDIWz3Rw/S2S+oDPTgJcIGsRh+25m0y8vj4aBaV/KPz3Q=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -201,8 +204,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@std/fs@1.0.23",
-      "jsr:@std/path@1.1.4",
+      "jsr:@std/fs@1.0.24",
+      "jsr:@std/path@1.1.5",
       "npm:svgo@4.0.1"
     ],
     "members": {
@@ -226,12 +229,12 @@
       },
       "crates/octicons": {
         "dependencies": [
-          "npm:@primer/octicons@19.27.0"
+          "npm:@primer/octicons@19.28.0"
         ]
       },
       "crates/simple-icons": {
         "dependencies": [
-          "npm:simple-icons@16.21.0"
+          "npm:simple-icons@16.22.0"
         ]
       }
     }
