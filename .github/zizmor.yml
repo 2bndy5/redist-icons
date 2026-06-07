@@ -5,3 +5,5 @@ rules:
         actions/*: ref-pin
         github/*: ref-pin
         dependabot/*: ref-pin
+  dependabot-cooldown:
+    ignore: [dependabot.yml:44]
