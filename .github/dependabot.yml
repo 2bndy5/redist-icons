@@ -42,7 +42,13 @@ updates:
         patterns:
           - "*"
   - package-ecosystem: deno # zizmor: ignore[dependabot-cooldown]
-    directory: /
+    directories:
+      - /
+      - /common
+      - /crates/fontawesome
+      - /crates/mdi
+      - /crates/octicons
+      - /crates/simple-icons
     schedule:
       interval: "daily"
       # run sunday, tuesday, and thursday
