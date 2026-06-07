@@ -41,7 +41,7 @@ updates:
       uv-pip:
         patterns:
           - "*"
-  - package-ecosystem: deno # zizmor: ignore[dependabot-cooldown]
+  - package-ecosystem: deno
     directories:
       - /
       - /common
