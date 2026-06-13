@@ -47,7 +47,7 @@ jobs:
       uv-groups: ${{ steps.generate-matrix.outputs.uv-groups }}
       pytest-paths: ${{ steps.generate-matrix.outputs.pytest-paths }}
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -63,11 +63,11 @@ jobs:
     name: Test ${{ needs.get-changed-crates.outputs.crates }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
-      - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      - uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
         with:
           enable-cache: true # zizmor: ignore[cache-poisoning]
       - name: Cache cargo artifacts
@@ -106,7 +106,7 @@ jobs:
             target: ppc64le
     name: linux ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
@@ -144,7 +144,7 @@ jobs:
             target: armv7
     name: musllinux ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
@@ -178,7 +178,7 @@ jobs:
             target: x86
     name: windows ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
@@ -212,7 +212,7 @@ jobs:
             target: aarch64
     name: macOS ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
       - uses: actions/setup-python@v6
@@ -240,7 +240,7 @@ jobs:
       matrix:
         pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
         with:
           persist-credentials: false
       - name: Build sdist
