@@ -3,64 +3,73 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_37(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("WINDSOCK", icons::WINDSOCK)?;
-    m.add("WIPER_WASH_ALERT", icons::WIPER_WASH_ALERT)?;
-    m.add("WIPER_WASH", icons::WIPER_WASH)?;
-    m.add("WIPER", icons::WIPER)?;
-    m.add("WIZARD_HAT", icons::WIZARD_HAT)?;
+    m.add("UNFOLD_LESS_VERTICAL", icons::UNFOLD_LESS_VERTICAL)?;
+    m.add("CPU_32_BIT", icons::CPU_32_BIT)?;
+    m.add(
+        "SMOKE_DETECTOR_ALERT_OUTLINE",
+        icons::SMOKE_DETECTOR_ALERT_OUTLINE,
+    )?;
+    m.add("SQUARE_MEDIUM_OUTLINE", icons::SQUARE_MEDIUM_OUTLINE)?;
+    m.add("BATTERY_CHECK_OUTLINE", icons::BATTERY_CHECK_OUTLINE)?;
+    m.add("ALPHA_J_BOX", icons::ALPHA_J_BOX)?;
+    m.add("CHEVRON_DOWN_CIRCLE", icons::CHEVRON_DOWN_CIRCLE)?;
+    m.add("PRINTER_ALERT", icons::PRINTER_ALERT)?;
+    m.add("ACCOUNT_CANCEL", icons::ACCOUNT_CANCEL)?;
+    m.add("ARROW_LEFT_BOTTOM_BOLD", icons::ARROW_LEFT_BOTTOM_BOLD)?;
+    m.add("NEWSPAPER_CHECK", icons::NEWSPAPER_CHECK)?;
+    m.add(
+        "BATTERY_CHARGING_WIRELESS_90",
+        icons::BATTERY_CHARGING_WIRELESS_90,
+    )?;
+    m.add("CHEVRON_DOUBLE_LEFT", icons::CHEVRON_DOUBLE_LEFT)?;
+    m.add("TAG_OUTLINE", icons::TAG_OUTLINE)?;
+    m.add("FORMAT_PAGE_BREAK", icons::FORMAT_PAGE_BREAK)?;
+    m.add("SHIELD_PLUS", icons::SHIELD_PLUS)?;
+    m.add("DELETE_EMPTY", icons::DELETE_EMPTY)?;
+    m.add("CURRENCY_CNY", icons::CURRENCY_CNY)?;
+    m.add("REWIND_60", icons::REWIND_60)?;
+    m.add("WATER_OFF", icons::WATER_OFF)?;
+    m.add("EMOTICON_HAPPY_OUTLINE", icons::EMOTICON_HAPPY_OUTLINE)?;
+    m.add("WINDOW_RESTORE", icons::WINDOW_RESTORE)?;
+    m.add("MESSAGE_LOCK_OUTLINE", icons::MESSAGE_LOCK_OUTLINE)?;
+    m.add(
+        "CODE_GREATER_THAN_OR_EQUAL",
+        icons::CODE_GREATER_THAN_OR_EQUAL,
+    )?;
+    m.add("FILE_SETTINGS", icons::FILE_SETTINGS)?;
+    m.add(
+        "NEWSPAPER_VARIANT_MULTIPLE",
+        icons::NEWSPAPER_VARIANT_MULTIPLE,
+    )?;
+    m.add("DEATH_STAR", icons::DEATH_STAR)?;
+    m.add("DOTS_VERTICAL_CIRCLE", icons::DOTS_VERTICAL_CIRCLE)?;
     #[allow(deprecated)]
-    m.add("WORDPRESS", icons::WORDPRESS)?;
-    m.add("WRAP_DISABLED", icons::WRAP_DISABLED)?;
-    m.add("WRAP", icons::WRAP)?;
-    m.add("WRENCH_CHECK_OUTLINE", icons::WRENCH_CHECK_OUTLINE)?;
-    m.add("WRENCH_CHECK", icons::WRENCH_CHECK)?;
-    m.add("WRENCH_CLOCK_OUTLINE", icons::WRENCH_CLOCK_OUTLINE)?;
-    m.add("WRENCH_CLOCK", icons::WRENCH_CLOCK)?;
-    m.add("WRENCH_COG_OUTLINE", icons::WRENCH_COG_OUTLINE)?;
-    m.add("WRENCH_COG", icons::WRENCH_COG)?;
-    m.add("WRENCH_OUTLINE", icons::WRENCH_OUTLINE)?;
-    m.add("WRENCH", icons::WRENCH)?;
+    m.add("QQCHAT", icons::QQCHAT)?;
+    m.add("TELEVISION_SHIMMER", icons::TELEVISION_SHIMMER)?;
+    m.add("MOVE_RESIZE_VARIANT", icons::MOVE_RESIZE_VARIANT)?;
+    m.add("VECTOR_RECTANGLE", icons::VECTOR_RECTANGLE)?;
+    m.add("LOCK_OFF", icons::LOCK_OFF)?;
+    m.add("CHECKBOX_BLANK", icons::CHECKBOX_BLANK)?;
+    m.add("BIKE_FAST", icons::BIKE_FAST)?;
+    m.add("MESSAGE_DRAW", icons::MESSAGE_DRAW)?;
+    m.add(
+        "CARD_BULLETED_SETTINGS_OUTLINE",
+        icons::CARD_BULLETED_SETTINGS_OUTLINE,
+    )?;
     #[allow(deprecated)]
-    m.add("XAMARIN", icons::XAMARIN)?;
-    m.add("XML", icons::XML)?;
+    m.add("MICROSOFT_EDGE", icons::MICROSOFT_EDGE)?;
+    m.add("GESTURE_SWIPE_UP", icons::GESTURE_SWIPE_UP)?;
+    m.add("WEBCAM", icons::WEBCAM)?;
+    m.add("VOLUME_OFF", icons::VOLUME_OFF)?;
+    m.add("TAG_FACES", icons::TAG_FACES)?;
     #[allow(deprecated)]
-    m.add("XMPP", icons::XMPP)?;
-    #[allow(deprecated)]
-    m.add("YAHOO", icons::YAHOO)?;
-    m.add("YEAST", icons::YEAST)?;
-    m.add("YIN_YANG", icons::YIN_YANG)?;
-    m.add("YOGA", icons::YOGA)?;
-    #[allow(deprecated)]
-    m.add("YOUTUBE_GAMING", icons::YOUTUBE_GAMING)?;
-    #[allow(deprecated)]
-    m.add("YOUTUBE_STUDIO", icons::YOUTUBE_STUDIO)?;
-    #[allow(deprecated)]
-    m.add("YOUTUBE_SUBSCRIPTION", icons::YOUTUBE_SUBSCRIPTION)?;
-    #[allow(deprecated)]
-    m.add("YOUTUBE_TV", icons::YOUTUBE_TV)?;
-    #[allow(deprecated)]
-    m.add("YOUTUBE", icons::YOUTUBE)?;
-    m.add("YURT", icons::YURT)?;
-    #[allow(deprecated)]
-    m.add("Z_WAVE", icons::Z_WAVE)?;
-    #[allow(deprecated)]
-    m.add("ZEND", icons::ZEND)?;
-    #[allow(deprecated)]
-    m.add("ZIGBEE", icons::ZIGBEE)?;
-    m.add("ZIP_BOX_OUTLINE", icons::ZIP_BOX_OUTLINE)?;
-    m.add("ZIP_BOX", icons::ZIP_BOX)?;
-    m.add("ZIP_DISK", icons::ZIP_DISK)?;
-    m.add("ZODIAC_AQUARIUS", icons::ZODIAC_AQUARIUS)?;
-    m.add("ZODIAC_ARIES", icons::ZODIAC_ARIES)?;
-    m.add("ZODIAC_CANCER", icons::ZODIAC_CANCER)?;
-    m.add("ZODIAC_CAPRICORN", icons::ZODIAC_CAPRICORN)?;
-    m.add("ZODIAC_GEMINI", icons::ZODIAC_GEMINI)?;
-    m.add("ZODIAC_LEO", icons::ZODIAC_LEO)?;
-    m.add("ZODIAC_LIBRA", icons::ZODIAC_LIBRA)?;
-    m.add("ZODIAC_PISCES", icons::ZODIAC_PISCES)?;
-    m.add("ZODIAC_SAGITTARIUS", icons::ZODIAC_SAGITTARIUS)?;
-    m.add("ZODIAC_SCORPIO", icons::ZODIAC_SCORPIO)?;
-    m.add("ZODIAC_TAURUS", icons::ZODIAC_TAURUS)?;
-    m.add("ZODIAC_VIRGO", icons::ZODIAC_VIRGO)?;
+    m.add("GOOGLE_LENS", icons::GOOGLE_LENS)?;
+    m.add("WATER_BOILER_AUTO", icons::WATER_BOILER_AUTO)?;
+    m.add("IP", icons::IP)?;
+    m.add("VIDEO_3D", icons::VIDEO_3D)?;
+    m.add(
+        "STOREFRONT_REMOVE_OUTLINE",
+        icons::STOREFRONT_REMOVE_OUTLINE,
+    )?;
     Ok(())
 }

@@ -2,210 +2,286 @@
 use crate::{Icon, icons};
 
 #[cfg(feature = "pyo3")]
+use pyo3::exceptions::PyDeprecationWarning;
+
+#[cfg(feature = "pyo3")]
 use pyo3::prelude::*;
 
-pub(super) fn find_part_0(#[cfg(feature = "pyo3")] _py: Python, slug: &str) -> Option<Icon> {
+pub(super) fn find_part_0(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "ab-testing" => Some(icons::AB_TESTING),
-        "abacus" => Some(icons::ABACUS),
-        "abjad-arabic" => Some(icons::ABJAD_ARABIC),
-        "abjad-hebrew" => Some(icons::ABJAD_HEBREW),
-        "abugida-devanagari" => Some(icons::ABUGIDA_DEVANAGARI),
-        "abugida-thai" => Some(icons::ABUGIDA_THAI),
-        "access-point-check" => Some(icons::ACCESS_POINT_CHECK),
-        "access-point-minus" => Some(icons::ACCESS_POINT_MINUS),
-        "access-point-network-off" => Some(icons::ACCESS_POINT_NETWORK_OFF),
-        "access-point-network" => Some(icons::ACCESS_POINT_NETWORK),
-        "access-point-off" => Some(icons::ACCESS_POINT_OFF),
-        "access-point-plus" => Some(icons::ACCESS_POINT_PLUS),
-        "access-point-remove" => Some(icons::ACCESS_POINT_REMOVE),
+        "sticker-text-outline" => Some(icons::STICKER_TEXT_OUTLINE),
+        "timer-stop-outline" => Some(icons::TIMER_STOP_OUTLINE),
+        "battery-charging-wireless-50" => Some(icons::BATTERY_CHARGING_WIRELESS_50),
+        "movie-open-settings" => Some(icons::MOVIE_OPEN_SETTINGS),
+        "mortar-pestle" => Some(icons::MORTAR_PESTLE),
+        "speedometer-slow" => Some(icons::SPEEDOMETER_SLOW),
+        #[allow(deprecated)]
+        "language-kotlin" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'language-kotlin' is deprecated.")
+                    .print(py);
+            }
+            Some(icons::LANGUAGE_KOTLIN)
+        }
+        "timer-check" => Some(icons::TIMER_CHECK),
+        "minidisc" => Some(icons::MINIDISC),
+        "calendar-multiselect" => Some(icons::CALENDAR_MULTISELECT),
+        "message-cog-outline" => Some(icons::MESSAGE_COG_OUTLINE),
+        "storefront-plus-outline" => Some(icons::STOREFRONT_PLUS_OUTLINE),
+        "tooltip-account" => Some(icons::TOOLTIP_ACCOUNT),
+        "email-remove-outline" => Some(icons::EMAIL_REMOVE_OUTLINE),
+        "source-repository" => Some(icons::SOURCE_REPOSITORY),
+        "storefront-edit" => Some(icons::STOREFRONT_EDIT),
+        "telescope" => Some(icons::TELESCOPE),
+        "hand-coin-outline" => Some(icons::HAND_COIN_OUTLINE),
+        "account-reactivate" => Some(icons::ACCOUNT_REACTIVATE),
+        "folder-text" => Some(icons::FOLDER_TEXT),
+        "file-lock-outline" => Some(icons::FILE_LOCK_OUTLINE),
+        "card-bulleted-outline" => Some(icons::CARD_BULLETED_OUTLINE),
+        "invert-colors-off" => Some(icons::INVERT_COLORS_OFF),
+        "math-norm" => Some(icons::MATH_NORM),
+        "check-network" => Some(icons::CHECK_NETWORK),
+        "anchor" => Some(icons::ANCHOR),
+        "alarm-bell" => Some(icons::ALARM_BELL),
+        "bed-outline" => Some(icons::BED_OUTLINE),
+        "quality-medium" => Some(icons::QUALITY_MEDIUM),
+        "timeline-plus-outline" => Some(icons::TIMELINE_PLUS_OUTLINE),
+        "format-line-style" => Some(icons::FORMAT_LINE_STYLE),
+        "calendar-outline" => Some(icons::CALENDAR_OUTLINE),
+        "lan-disconnect" => Some(icons::LAN_DISCONNECT),
+        "clipboard-text-off" => Some(icons::CLIPBOARD_TEXT_OFF),
+        "bed-clock" => Some(icons::BED_CLOCK),
+        "usb-flash-drive" => Some(icons::USB_FLASH_DRIVE),
+        "network-strength-1" => Some(icons::NETWORK_STRENGTH_1),
+        "api-off" => Some(icons::API_OFF),
+        "rabbit" => Some(icons::RABBIT),
+        "briefcase-remove" => Some(icons::BRIEFCASE_REMOVE),
+        "bed-single" => Some(icons::BED_SINGLE),
+        "cash-minus" => Some(icons::CASH_MINUS),
+        "alpha-x-box-outline" => Some(icons::ALPHA_X_BOX_OUTLINE),
+        "stadium-variant" => Some(icons::STADIUM_VARIANT),
+        "comment-search-outline" => Some(icons::COMMENT_SEARCH_OUTLINE),
+        "information-off-outline" => Some(icons::INFORMATION_OFF_OUTLINE),
+        "headphones-box" => Some(icons::HEADPHONES_BOX),
+        "clipboard-play-outline" => Some(icons::CLIPBOARD_PLAY_OUTLINE),
+        "razor-single-edge" => Some(icons::RAZOR_SINGLE_EDGE),
+        "zodiac-sagittarius" => Some(icons::ZODIAC_SAGITTARIUS),
+        "magnify-minus-cursor" => Some(icons::MAGNIFY_MINUS_CURSOR),
+        "align-horizontal-center" => Some(icons::ALIGN_HORIZONTAL_CENTER),
+        "file-excel-outline" => Some(icons::FILE_EXCEL_OUTLINE),
+        #[allow(deprecated)]
+        "gatsby" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'gatsby' is deprecated.").print(py);
+            }
+            Some(icons::GATSBY)
+        }
+        "receipt-text-check" => Some(icons::RECEIPT_TEXT_CHECK),
+        "laser-pointer" => Some(icons::LASER_POINTER),
+        "keyboard-close-outline" => Some(icons::KEYBOARD_CLOSE_OUTLINE),
+        "cake" => Some(icons::CAKE),
+        "widgets-outline" => Some(icons::WIDGETS_OUTLINE),
+        "coffin" => Some(icons::COFFIN),
+        "doorbell-video" => Some(icons::DOORBELL_VIDEO),
+        "sd" => Some(icons::SD),
+        "playlist-play" => Some(icons::PLAYLIST_PLAY),
+        "checkbox-marked-outline" => Some(icons::CHECKBOX_MARKED_OUTLINE),
+        "arrow-up" => Some(icons::ARROW_UP),
+        "leaf-maple" => Some(icons::LEAF_MAPLE),
+        "progress-wrench" => Some(icons::PROGRESS_WRENCH),
+        "snowflake-off" => Some(icons::SNOWFLAKE_OFF),
+        "play-speed" => Some(icons::PLAY_SPEED),
+        "sim-alert-outline" => Some(icons::SIM_ALERT_OUTLINE),
+        "account-wrench-outline" => Some(icons::ACCOUNT_WRENCH_OUTLINE),
+        "sail-boat" => Some(icons::SAIL_BOAT),
+        "folder-minus-outline" => Some(icons::FOLDER_MINUS_OUTLINE),
+        "snake" => Some(icons::SNAKE),
+        "spa" => Some(icons::SPA),
+        "clipboard-list-outline" => Some(icons::CLIPBOARD_LIST_OUTLINE),
+        "archive-arrow-down" => Some(icons::ARCHIVE_ARROW_DOWN),
+        "arrow-down-bold-circle" => Some(icons::ARROW_DOWN_BOLD_CIRCLE),
+        "map-marker-minus" => Some(icons::MAP_MARKER_MINUS),
+        "network-strength-3-alert" => Some(icons::NETWORK_STRENGTH_3_ALERT),
+        "menu-left" => Some(icons::MENU_LEFT),
+        "fencing" => Some(icons::FENCING),
+        "keyboard-f4" => Some(icons::KEYBOARD_F4),
+        #[allow(deprecated)]
+        "creative-commons" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'creative-commons' is deprecated.")
+                    .print(py);
+            }
+            Some(icons::CREATIVE_COMMONS)
+        }
+        "bike-pedal" => Some(icons::BIKE_PEDAL),
+        "car-seat-heater" => Some(icons::CAR_SEAT_HEATER),
+        "content-save-alert" => Some(icons::CONTENT_SAVE_ALERT),
+        #[allow(deprecated)]
+        "google-glass" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'google-glass' is deprecated.").print(py);
+            }
+            Some(icons::GOOGLE_GLASS)
+        }
+        #[allow(deprecated)]
+        "hulu" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'hulu' is deprecated.").print(py);
+            }
+            Some(icons::HULU)
+        }
+        "dice-d4" => Some(icons::DICE_D4),
+        "blender-outline" => Some(icons::BLENDER_OUTLINE),
+        "magnet-on" => Some(icons::MAGNET_ON),
+        "folder-file-outline" => Some(icons::FOLDER_FILE_OUTLINE),
+        "cards" => Some(icons::CARDS),
+        "jump-rope" => Some(icons::JUMP_ROPE),
+        "file-image-remove-outline" => Some(icons::FILE_IMAGE_REMOVE_OUTLINE),
+        "movie-minus" => Some(icons::MOVIE_MINUS),
+        "diamond-stone" => Some(icons::DIAMOND_STONE),
+        "file-document-refresh" => Some(icons::FILE_DOCUMENT_REFRESH),
+        "select-group" => Some(icons::SELECT_GROUP),
+        #[allow(deprecated)]
+        "nix" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'nix' is deprecated.").print(py);
+            }
+            Some(icons::NIX)
+        }
+        "teddy-bear" => Some(icons::TEDDY_BEAR),
+        "view-list-outline" => Some(icons::VIEW_LIST_OUTLINE),
+        "send-variant-clock" => Some(icons::SEND_VARIANT_CLOCK),
+        "kayaking" => Some(icons::KAYAKING),
+        "tooltip-image" => Some(icons::TOOLTIP_IMAGE),
+        "bottle-soda-outline" => Some(icons::BOTTLE_SODA_OUTLINE),
+        "alpha-r-box" => Some(icons::ALPHA_R_BOX),
+        "relation-only-one-to-many" => Some(icons::RELATION_ONLY_ONE_TO_MANY),
+        "arrow-up-thick" => Some(icons::ARROW_UP_THICK),
+        "lightbulb-on-30" => Some(icons::LIGHTBULB_ON_30),
+        "clock-minus-outline" => Some(icons::CLOCK_MINUS_OUTLINE),
+        "plus-box-outline" => Some(icons::PLUS_BOX_OUTLINE),
+        "battery" => Some(icons::BATTERY),
+        "octagram-plus-outline" => Some(icons::OCTAGRAM_PLUS_OUTLINE),
+        "football-australian" => Some(icons::FOOTBALL_AUSTRALIAN),
+        "book-alphabet" => Some(icons::BOOK_ALPHABET),
+        "numeric-2-box-outline" => Some(icons::NUMERIC_2_BOX_OUTLINE),
+        "faucet-variant" => Some(icons::FAUCET_VARIANT),
+        "bookmark-box-multiple-outline" => Some(icons::BOOKMARK_BOX_MULTIPLE_OUTLINE),
+        "cloud-circle" => Some(icons::CLOUD_CIRCLE),
+        "cellphone-nfc-off" => Some(icons::CELLPHONE_NFC_OFF),
+        "set-left-right" => Some(icons::SET_LEFT_RIGHT),
+        "bow-arrow" => Some(icons::BOW_ARROW),
+        #[allow(deprecated)]
+        "reddit" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'reddit' is deprecated.").print(py);
+            }
+            Some(icons::REDDIT)
+        }
+        "tag-remove" => Some(icons::TAG_REMOVE),
+        "clipboard-text-outline" => Some(icons::CLIPBOARD_TEXT_OUTLINE),
+        "table-cancel" => Some(icons::TABLE_CANCEL),
+        "lightbulb-on-70" => Some(icons::LIGHTBULB_ON_70),
+        "emoticon-minus-outline" => Some(icons::EMOTICON_MINUS_OUTLINE),
+        "bulkhead-light" => Some(icons::BULKHEAD_LIGHT),
+        "peanut-off" => Some(icons::PEANUT_OFF),
+        "timeline-alert-outline" => Some(icons::TIMELINE_ALERT_OUTLINE),
+        "approximately-equal-box" => Some(icons::APPROXIMATELY_EQUAL_BOX),
+        "television-stop" => Some(icons::TELEVISION_STOP),
+        "decimal" => Some(icons::DECIMAL),
+        "credit-card-minus" => Some(icons::CREDIT_CARD_MINUS),
+        "phone" => Some(icons::PHONE),
+        "tortoise" => Some(icons::TORTOISE),
+        "shape-rectangle-plus" => Some(icons::SHAPE_RECTANGLE_PLUS),
+        "arrow-down-bold-outline" => Some(icons::ARROW_DOWN_BOLD_OUTLINE),
+        "checkbox-marked-circle-minus-outline" => Some(icons::CHECKBOX_MARKED_CIRCLE_MINUS_OUTLINE),
         "access-point" => Some(icons::ACCESS_POINT),
-        "account-alert-outline" => Some(icons::ACCOUNT_ALERT_OUTLINE),
-        "account-alert" => Some(icons::ACCOUNT_ALERT),
-        "account-arrow-down-outline" => Some(icons::ACCOUNT_ARROW_DOWN_OUTLINE),
-        "account-arrow-down" => Some(icons::ACCOUNT_ARROW_DOWN),
-        "account-arrow-left-outline" => Some(icons::ACCOUNT_ARROW_LEFT_OUTLINE),
-        "account-arrow-left" => Some(icons::ACCOUNT_ARROW_LEFT),
-        "account-arrow-right-outline" => Some(icons::ACCOUNT_ARROW_RIGHT_OUTLINE),
-        "account-arrow-right" => Some(icons::ACCOUNT_ARROW_RIGHT),
-        "account-arrow-up-outline" => Some(icons::ACCOUNT_ARROW_UP_OUTLINE),
-        "account-arrow-up" => Some(icons::ACCOUNT_ARROW_UP),
-        "account-badge-outline" => Some(icons::ACCOUNT_BADGE_OUTLINE),
-        "account-badge" => Some(icons::ACCOUNT_BADGE),
-        "account-box-edit-outline" => Some(icons::ACCOUNT_BOX_EDIT_OUTLINE),
-        "account-box-minus-outline" => Some(icons::ACCOUNT_BOX_MINUS_OUTLINE),
-        "account-box-multiple-outline" => Some(icons::ACCOUNT_BOX_MULTIPLE_OUTLINE),
-        "account-box-multiple" => Some(icons::ACCOUNT_BOX_MULTIPLE),
-        "account-box-outline" => Some(icons::ACCOUNT_BOX_OUTLINE),
-        "account-box-plus-outline" => Some(icons::ACCOUNT_BOX_PLUS_OUTLINE),
-        "account-box" => Some(icons::ACCOUNT_BOX),
-        "account-cancel-outline" => Some(icons::ACCOUNT_CANCEL_OUTLINE),
-        "account-cancel" => Some(icons::ACCOUNT_CANCEL),
-        "account-card-outline" => Some(icons::ACCOUNT_CARD_OUTLINE),
-        "account-card" => Some(icons::ACCOUNT_CARD),
-        "account-cash-outline" => Some(icons::ACCOUNT_CASH_OUTLINE),
-        "account-cash" => Some(icons::ACCOUNT_CASH),
-        "account-check-outline" => Some(icons::ACCOUNT_CHECK_OUTLINE),
-        "account-check" => Some(icons::ACCOUNT_CHECK),
-        "account-child-circle" => Some(icons::ACCOUNT_CHILD_CIRCLE),
-        "account-child-outline" => Some(icons::ACCOUNT_CHILD_OUTLINE),
-        "account-child" => Some(icons::ACCOUNT_CHILD),
-        "account-circle-outline" => Some(icons::ACCOUNT_CIRCLE_OUTLINE),
-        "account-circle" => Some(icons::ACCOUNT_CIRCLE),
-        "account-clock-outline" => Some(icons::ACCOUNT_CLOCK_OUTLINE),
-        "account-clock" => Some(icons::ACCOUNT_CLOCK),
-        "account-cog-outline" => Some(icons::ACCOUNT_COG_OUTLINE),
-        "account-cog" => Some(icons::ACCOUNT_COG),
-        "account-convert-outline" => Some(icons::ACCOUNT_CONVERT_OUTLINE),
-        "account-convert" => Some(icons::ACCOUNT_CONVERT),
-        "account-cowboy-hat-outline" => Some(icons::ACCOUNT_COWBOY_HAT_OUTLINE),
-        "account-cowboy-hat" => Some(icons::ACCOUNT_COWBOY_HAT),
-        "account-credit-card-outline" => Some(icons::ACCOUNT_CREDIT_CARD_OUTLINE),
-        "account-credit-card" => Some(icons::ACCOUNT_CREDIT_CARD),
-        "account-details-outline" => Some(icons::ACCOUNT_DETAILS_OUTLINE),
-        "account-details" => Some(icons::ACCOUNT_DETAILS),
-        "account-edit-outline" => Some(icons::ACCOUNT_EDIT_OUTLINE),
-        "account-edit" => Some(icons::ACCOUNT_EDIT),
-        "account-eye-outline" => Some(icons::ACCOUNT_EYE_OUTLINE),
-        "account-eye" => Some(icons::ACCOUNT_EYE),
-        "account-file-outline" => Some(icons::ACCOUNT_FILE_OUTLINE),
-        "account-file-text-outline" => Some(icons::ACCOUNT_FILE_TEXT_OUTLINE),
-        "account-file-text" => Some(icons::ACCOUNT_FILE_TEXT),
-        "account-file" => Some(icons::ACCOUNT_FILE),
-        "account-filter-outline" => Some(icons::ACCOUNT_FILTER_OUTLINE),
-        "account-filter" => Some(icons::ACCOUNT_FILTER),
-        "account-group-outline" => Some(icons::ACCOUNT_GROUP_OUTLINE),
-        "account-group" => Some(icons::ACCOUNT_GROUP),
-        "account-hard-hat-outline" => Some(icons::ACCOUNT_HARD_HAT_OUTLINE),
-        "account-hard-hat" => Some(icons::ACCOUNT_HARD_HAT),
-        "account-heart-outline" => Some(icons::ACCOUNT_HEART_OUTLINE),
-        "account-heart" => Some(icons::ACCOUNT_HEART),
-        "account-injury-outline" => Some(icons::ACCOUNT_INJURY_OUTLINE),
-        "account-injury" => Some(icons::ACCOUNT_INJURY),
-        "account-key-outline" => Some(icons::ACCOUNT_KEY_OUTLINE),
+        "eye-arrow-left-outline" => Some(icons::EYE_ARROW_LEFT_OUTLINE),
+        "trophy-award" => Some(icons::TROPHY_AWARD),
+        "tooltip-outline" => Some(icons::TOOLTIP_OUTLINE),
+        "printer-pos-sync-outline" => Some(icons::PRINTER_POS_SYNC_OUTLINE),
+        "vector-square-open" => Some(icons::VECTOR_SQUARE_OPEN),
+        "tune" => Some(icons::TUNE),
+        "pan" => Some(icons::PAN),
+        #[allow(deprecated)]
+        "centos" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'centos' is deprecated.").print(py);
+            }
+            Some(icons::CENTOS)
+        }
         "account-key" => Some(icons::ACCOUNT_KEY),
         "account-lock-open-outline" => Some(icons::ACCOUNT_LOCK_OPEN_OUTLINE),
-        "account-lock-open" => Some(icons::ACCOUNT_LOCK_OPEN),
-        "account-lock-outline" => Some(icons::ACCOUNT_LOCK_OUTLINE),
-        "account-lock" => Some(icons::ACCOUNT_LOCK),
-        "account-minus-outline" => Some(icons::ACCOUNT_MINUS_OUTLINE),
-        "account-minus" => Some(icons::ACCOUNT_MINUS),
-        "account-multiple-check-outline" => Some(icons::ACCOUNT_MULTIPLE_CHECK_OUTLINE),
-        "account-multiple-check" => Some(icons::ACCOUNT_MULTIPLE_CHECK),
-        "account-multiple-minus-outline" => Some(icons::ACCOUNT_MULTIPLE_MINUS_OUTLINE),
-        "account-multiple-minus" => Some(icons::ACCOUNT_MULTIPLE_MINUS),
-        "account-multiple-outline" => Some(icons::ACCOUNT_MULTIPLE_OUTLINE),
-        "account-multiple-plus-outline" => Some(icons::ACCOUNT_MULTIPLE_PLUS_OUTLINE),
-        "account-multiple-plus" => Some(icons::ACCOUNT_MULTIPLE_PLUS),
-        "account-multiple-remove-outline" => Some(icons::ACCOUNT_MULTIPLE_REMOVE_OUTLINE),
-        "account-multiple-remove" => Some(icons::ACCOUNT_MULTIPLE_REMOVE),
-        "account-multiple" => Some(icons::ACCOUNT_MULTIPLE),
-        "account-music-outline" => Some(icons::ACCOUNT_MUSIC_OUTLINE),
-        "account-music" => Some(icons::ACCOUNT_MUSIC),
-        "account-network-off-outline" => Some(icons::ACCOUNT_NETWORK_OFF_OUTLINE),
-        "account-network-off" => Some(icons::ACCOUNT_NETWORK_OFF),
-        "account-network-outline" => Some(icons::ACCOUNT_NETWORK_OUTLINE),
-        "account-network" => Some(icons::ACCOUNT_NETWORK),
-        "account-off-outline" => Some(icons::ACCOUNT_OFF_OUTLINE),
-        "account-off" => Some(icons::ACCOUNT_OFF),
-        "account-outline" => Some(icons::ACCOUNT_OUTLINE),
-        "account-plus-outline" => Some(icons::ACCOUNT_PLUS_OUTLINE),
-        "account-plus" => Some(icons::ACCOUNT_PLUS),
-        "account-question-outline" => Some(icons::ACCOUNT_QUESTION_OUTLINE),
-        "account-question" => Some(icons::ACCOUNT_QUESTION),
-        "account-reactivate-outline" => Some(icons::ACCOUNT_REACTIVATE_OUTLINE),
-        "account-reactivate" => Some(icons::ACCOUNT_REACTIVATE),
-        "account-remove-outline" => Some(icons::ACCOUNT_REMOVE_OUTLINE),
-        "account-remove" => Some(icons::ACCOUNT_REMOVE),
-        "account-school-outline" => Some(icons::ACCOUNT_SCHOOL_OUTLINE),
-        "account-school" => Some(icons::ACCOUNT_SCHOOL),
-        "account-search-outline" => Some(icons::ACCOUNT_SEARCH_OUTLINE),
-        "account-search" => Some(icons::ACCOUNT_SEARCH),
-        "account-settings-outline" => Some(icons::ACCOUNT_SETTINGS_OUTLINE),
-        "account-settings" => Some(icons::ACCOUNT_SETTINGS),
-        "account-star-outline" => Some(icons::ACCOUNT_STAR_OUTLINE),
-        "account-star" => Some(icons::ACCOUNT_STAR),
-        "account-supervisor-circle-outline" => Some(icons::ACCOUNT_SUPERVISOR_CIRCLE_OUTLINE),
-        "account-supervisor-circle" => Some(icons::ACCOUNT_SUPERVISOR_CIRCLE),
-        "account-supervisor-outline" => Some(icons::ACCOUNT_SUPERVISOR_OUTLINE),
-        "account-supervisor" => Some(icons::ACCOUNT_SUPERVISOR),
-        "account-switch-outline" => Some(icons::ACCOUNT_SWITCH_OUTLINE),
-        "account-switch" => Some(icons::ACCOUNT_SWITCH),
-        "account-sync-outline" => Some(icons::ACCOUNT_SYNC_OUTLINE),
-        "account-sync" => Some(icons::ACCOUNT_SYNC),
-        "account-tag-outline" => Some(icons::ACCOUNT_TAG_OUTLINE),
-        "account-tag" => Some(icons::ACCOUNT_TAG),
-        "account-tie-hat-outline" => Some(icons::ACCOUNT_TIE_HAT_OUTLINE),
-        "account-tie-hat" => Some(icons::ACCOUNT_TIE_HAT),
-        "account-tie-outline" => Some(icons::ACCOUNT_TIE_OUTLINE),
-        "account-tie-voice-off-outline" => Some(icons::ACCOUNT_TIE_VOICE_OFF_OUTLINE),
-        "account-tie-voice-off" => Some(icons::ACCOUNT_TIE_VOICE_OFF),
-        "account-tie-voice-outline" => Some(icons::ACCOUNT_TIE_VOICE_OUTLINE),
-        "account-tie-voice" => Some(icons::ACCOUNT_TIE_VOICE),
-        "account-tie-woman" => Some(icons::ACCOUNT_TIE_WOMAN),
-        "account-tie" => Some(icons::ACCOUNT_TIE),
-        "account-voice-off" => Some(icons::ACCOUNT_VOICE_OFF),
-        "account-voice" => Some(icons::ACCOUNT_VOICE),
-        "account-wrench-outline" => Some(icons::ACCOUNT_WRENCH_OUTLINE),
-        "account-wrench" => Some(icons::ACCOUNT_WRENCH),
-        "account" => Some(icons::ACCOUNT),
-        "adjust" => Some(icons::ADJUST),
-        "advertisements-off" => Some(icons::ADVERTISEMENTS_OFF),
-        "advertisements" => Some(icons::ADVERTISEMENTS),
-        "air-conditioner" => Some(icons::AIR_CONDITIONER),
-        "air-filter" => Some(icons::AIR_FILTER),
-        "air-horn" => Some(icons::AIR_HORN),
-        "air-humidifier-off" => Some(icons::AIR_HUMIDIFIER_OFF),
-        "air-humidifier" => Some(icons::AIR_HUMIDIFIER),
-        "air-purifier-off" => Some(icons::AIR_PURIFIER_OFF),
-        "air-purifier" => Some(icons::AIR_PURIFIER),
-        "airbag" => Some(icons::AIRBAG),
-        "airballoon-outline" => Some(icons::AIRBALLOON_OUTLINE),
-        "airballoon" => Some(icons::AIRBALLOON),
-        "airplane-alert" => Some(icons::AIRPLANE_ALERT),
-        "airplane-check" => Some(icons::AIRPLANE_CHECK),
-        "airplane-clock" => Some(icons::AIRPLANE_CLOCK),
-        "airplane-cog" => Some(icons::AIRPLANE_COG),
-        "airplane-edit" => Some(icons::AIRPLANE_EDIT),
-        "airplane-landing" => Some(icons::AIRPLANE_LANDING),
-        "airplane-marker" => Some(icons::AIRPLANE_MARKER),
-        "airplane-minus" => Some(icons::AIRPLANE_MINUS),
-        "airplane-off" => Some(icons::AIRPLANE_OFF),
-        "airplane-plus" => Some(icons::AIRPLANE_PLUS),
-        "airplane-remove" => Some(icons::AIRPLANE_REMOVE),
-        "airplane-search" => Some(icons::AIRPLANE_SEARCH),
-        "airplane-settings" => Some(icons::AIRPLANE_SETTINGS),
-        "airplane-takeoff" => Some(icons::AIRPLANE_TAKEOFF),
-        "airplane" => Some(icons::AIRPLANE),
-        "airport" => Some(icons::AIRPORT),
-        "alarm-bell" => Some(icons::ALARM_BELL),
-        "alarm-check" => Some(icons::ALARM_CHECK),
-        "alarm-light-off-outline" => Some(icons::ALARM_LIGHT_OFF_OUTLINE),
-        "alarm-light-off" => Some(icons::ALARM_LIGHT_OFF),
-        "alarm-light-outline" => Some(icons::ALARM_LIGHT_OUTLINE),
-        "alarm-light" => Some(icons::ALARM_LIGHT),
-        "alarm-multiple" => Some(icons::ALARM_MULTIPLE),
-        "alarm-note-off" => Some(icons::ALARM_NOTE_OFF),
-        "alarm-note" => Some(icons::ALARM_NOTE),
-        "alarm-off" => Some(icons::ALARM_OFF),
-        "alarm-panel-outline" => Some(icons::ALARM_PANEL_OUTLINE),
-        "alarm-panel" => Some(icons::ALARM_PANEL),
-        "alarm-plus" => Some(icons::ALARM_PLUS),
-        "alarm-snooze" => Some(icons::ALARM_SNOOZE),
-        "alarm" => Some(icons::ALARM),
-        "album" => Some(icons::ALBUM),
-        "alert-box-outline" => Some(icons::ALERT_BOX_OUTLINE),
-        "alert-box" => Some(icons::ALERT_BOX),
-        "alert-circle-check-outline" => Some(icons::ALERT_CIRCLE_CHECK_OUTLINE),
-        "alert-circle-check" => Some(icons::ALERT_CIRCLE_CHECK),
-        "alert-circle-outline" => Some(icons::ALERT_CIRCLE_OUTLINE),
-        "alert-circle" => Some(icons::ALERT_CIRCLE),
-        "alert-decagram-outline" => Some(icons::ALERT_DECAGRAM_OUTLINE),
-        "alert-decagram" => Some(icons::ALERT_DECAGRAM),
-        "alert-minus-outline" => Some(icons::ALERT_MINUS_OUTLINE),
-        "alert-minus" => Some(icons::ALERT_MINUS),
-        "alert-octagon-outline" => Some(icons::ALERT_OCTAGON_OUTLINE),
-        "alert-octagon" => Some(icons::ALERT_OCTAGON),
+        "variable-box" => Some(icons::VARIABLE_BOX),
+        "wifi-strength-4-lock" => Some(icons::WIFI_STRENGTH_4_LOCK),
+        "bus-stop-covered" => Some(icons::BUS_STOP_COVERED),
+        "timer-edit-outline" => Some(icons::TIMER_EDIT_OUTLINE),
+        "package-down" => Some(icons::PACKAGE_DOWN),
+        "puzzle-check-outline" => Some(icons::PUZZLE_CHECK_OUTLINE),
+        "home-edit" => Some(icons::HOME_EDIT),
+        "book-lock" => Some(icons::BOOK_LOCK),
+        "hand-peace" => Some(icons::HAND_PEACE),
+        "arrow-up-down-bold" => Some(icons::ARROW_UP_DOWN_BOLD),
+        "alpha-p-circle-outline" => Some(icons::ALPHA_P_CIRCLE_OUTLINE),
+        "torch" => Some(icons::TORCH),
+        "minus-box-multiple" => Some(icons::MINUS_BOX_MULTIPLE),
+        "escalator-box" => Some(icons::ESCALATOR_BOX),
+        "car-search-outline" => Some(icons::CAR_SEARCH_OUTLINE),
+        "head-minus-outline" => Some(icons::HEAD_MINUS_OUTLINE),
+        #[allow(deprecated)]
+        "microsoft-excel" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'microsoft-excel' is deprecated.")
+                    .print(py);
+            }
+            Some(icons::MICROSOFT_EXCEL)
+        }
+        "magnify-expand" => Some(icons::MAGNIFY_EXPAND),
+        "weather-lightning" => Some(icons::WEATHER_LIGHTNING),
+        "tally-mark-2" => Some(icons::TALLY_MARK_2),
+        "sausage-off" => Some(icons::SAUSAGE_OFF),
+        "clipboard-arrow-left-outline" => Some(icons::CLIPBOARD_ARROW_LEFT_OUTLINE),
+        "paperclip" => Some(icons::PAPERCLIP),
+        "truck-off-road-off" => Some(icons::TRUCK_OFF_ROAD_OFF),
+        "microwave" => Some(icons::MICROWAVE),
+        #[allow(deprecated)]
+        "bulma" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'bulma' is deprecated.").print(py);
+            }
+            Some(icons::BULMA)
+        }
+        "file-remove" => Some(icons::FILE_REMOVE),
+        "bell-outline" => Some(icons::BELL_OUTLINE),
+        "television-speaker" => Some(icons::TELEVISION_SPEAKER),
+        "folder-arrow-left" => Some(icons::FOLDER_ARROW_LEFT),
+        "chili-hot-outline" => Some(icons::CHILI_HOT_OUTLINE),
+        "dice-d20-outline" => Some(icons::DICE_D20_OUTLINE),
+        "shark" => Some(icons::SHARK),
+        "koala" => Some(icons::KOALA),
+        "battery-arrow-down" => Some(icons::BATTERY_ARROW_DOWN),
+        "arrow-collapse-up" => Some(icons::ARROW_COLLAPSE_UP),
+        "compass-off-outline" => Some(icons::COMPASS_OFF_OUTLINE),
+        "landslide-outline" => Some(icons::LANDSLIDE_OUTLINE),
+        "cart-percent" => Some(icons::CART_PERCENT),
+        "tooltip-question-outline" => Some(icons::TOOLTIP_QUESTION_OUTLINE),
+        "format-text-variant-outline" => Some(icons::FORMAT_TEXT_VARIANT_OUTLINE),
+        "comment-eye-outline" => Some(icons::COMMENT_EYE_OUTLINE),
+        "credit-card-wireless-outline" => Some(icons::CREDIT_CARD_WIRELESS_OUTLINE),
+        "table-remove" => Some(icons::TABLE_REMOVE),
+        "format-paint" => Some(icons::FORMAT_PAINT),
+        "shield-sword-outline" => Some(icons::SHIELD_SWORD_OUTLINE),
+        "progress-upload" => Some(icons::PROGRESS_UPLOAD),
         _ => None,
     }
 }

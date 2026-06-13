@@ -9,138 +9,74 @@ use pyo3::prelude::*;
 
 pub(super) fn find_part_37(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "windsock" => Some(icons::WINDSOCK),
-        "wiper-wash-alert" => Some(icons::WIPER_WASH_ALERT),
-        "wiper-wash" => Some(icons::WIPER_WASH),
-        "wiper" => Some(icons::WIPER),
-        "wizard-hat" => Some(icons::WIZARD_HAT),
+        "unfold-less-vertical" => Some(icons::UNFOLD_LESS_VERTICAL),
+        "cpu-32-bit" => Some(icons::CPU_32_BIT),
+        "smoke-detector-alert-outline" => Some(icons::SMOKE_DETECTOR_ALERT_OUTLINE),
+        "square-medium-outline" => Some(icons::SQUARE_MEDIUM_OUTLINE),
+        "battery-check-outline" => Some(icons::BATTERY_CHECK_OUTLINE),
+        "alpha-j-box" => Some(icons::ALPHA_J_BOX),
+        "chevron-down-circle" => Some(icons::CHEVRON_DOWN_CIRCLE),
+        "printer-alert" => Some(icons::PRINTER_ALERT),
+        "account-cancel" => Some(icons::ACCOUNT_CANCEL),
+        "arrow-left-bottom-bold" => Some(icons::ARROW_LEFT_BOTTOM_BOLD),
+        "newspaper-check" => Some(icons::NEWSPAPER_CHECK),
+        "battery-charging-wireless-90" => Some(icons::BATTERY_CHARGING_WIRELESS_90),
+        "chevron-double-left" => Some(icons::CHEVRON_DOUBLE_LEFT),
+        "tag-outline" => Some(icons::TAG_OUTLINE),
+        "format-page-break" => Some(icons::FORMAT_PAGE_BREAK),
+        "shield-plus" => Some(icons::SHIELD_PLUS),
+        "delete-empty" => Some(icons::DELETE_EMPTY),
+        "currency-cny" => Some(icons::CURRENCY_CNY),
+        "rewind-60" => Some(icons::REWIND_60),
+        "water-off" => Some(icons::WATER_OFF),
+        "emoticon-happy-outline" => Some(icons::EMOTICON_HAPPY_OUTLINE),
+        "window-restore" => Some(icons::WINDOW_RESTORE),
+        "message-lock-outline" => Some(icons::MESSAGE_LOCK_OUTLINE),
+        "code-greater-than-or-equal" => Some(icons::CODE_GREATER_THAN_OR_EQUAL),
+        "file-settings" => Some(icons::FILE_SETTINGS),
+        "newspaper-variant-multiple" => Some(icons::NEWSPAPER_VARIANT_MULTIPLE),
+        "death-star" => Some(icons::DEATH_STAR),
+        "dots-vertical-circle" => Some(icons::DOTS_VERTICAL_CIRCLE),
         #[allow(deprecated)]
-        "wordpress" => {
+        "qqchat" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'wordpress' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'qqchat' is deprecated.").print(py);
             }
-            Some(icons::WORDPRESS)
+            Some(icons::QQCHAT)
         }
-        "wrap-disabled" => Some(icons::WRAP_DISABLED),
-        "wrap" => Some(icons::WRAP),
-        "wrench-check-outline" => Some(icons::WRENCH_CHECK_OUTLINE),
-        "wrench-check" => Some(icons::WRENCH_CHECK),
-        "wrench-clock-outline" => Some(icons::WRENCH_CLOCK_OUTLINE),
-        "wrench-clock" => Some(icons::WRENCH_CLOCK),
-        "wrench-cog-outline" => Some(icons::WRENCH_COG_OUTLINE),
-        "wrench-cog" => Some(icons::WRENCH_COG),
-        "wrench-outline" => Some(icons::WRENCH_OUTLINE),
-        "wrench" => Some(icons::WRENCH),
+        "television-shimmer" => Some(icons::TELEVISION_SHIMMER),
+        "move-resize-variant" => Some(icons::MOVE_RESIZE_VARIANT),
+        "vector-rectangle" => Some(icons::VECTOR_RECTANGLE),
+        "lock-off" => Some(icons::LOCK_OFF),
+        "checkbox-blank" => Some(icons::CHECKBOX_BLANK),
+        "bike-fast" => Some(icons::BIKE_FAST),
+        "message-draw" => Some(icons::MESSAGE_DRAW),
+        "card-bulleted-settings-outline" => Some(icons::CARD_BULLETED_SETTINGS_OUTLINE),
         #[allow(deprecated)]
-        "xamarin" => {
+        "microsoft-edge" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'xamarin' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'microsoft-edge' is deprecated.").print(py);
             }
-            Some(icons::XAMARIN)
+            Some(icons::MICROSOFT_EDGE)
         }
-        "xml" => Some(icons::XML),
+        "gesture-swipe-up" => Some(icons::GESTURE_SWIPE_UP),
+        "webcam" => Some(icons::WEBCAM),
+        "volume-off" => Some(icons::VOLUME_OFF),
+        "tag-faces" => Some(icons::TAG_FACES),
         #[allow(deprecated)]
-        "xmpp" => {
+        "google-lens" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'xmpp' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'google-lens' is deprecated.").print(py);
             }
-            Some(icons::XMPP)
+            Some(icons::GOOGLE_LENS)
         }
-        #[allow(deprecated)]
-        "yahoo" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'yahoo' is deprecated.").print(py);
-            }
-            Some(icons::YAHOO)
-        }
-        "yeast" => Some(icons::YEAST),
-        "yin-yang" => Some(icons::YIN_YANG),
-        "yoga" => Some(icons::YOGA),
-        #[allow(deprecated)]
-        "youtube-gaming" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'youtube-gaming' is deprecated.").print(py);
-            }
-            Some(icons::YOUTUBE_GAMING)
-        }
-        #[allow(deprecated)]
-        "youtube-studio" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'youtube-studio' is deprecated.").print(py);
-            }
-            Some(icons::YOUTUBE_STUDIO)
-        }
-        #[allow(deprecated)]
-        "youtube-subscription" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'youtube-subscription' is deprecated.")
-                    .print(py);
-            }
-            Some(icons::YOUTUBE_SUBSCRIPTION)
-        }
-        #[allow(deprecated)]
-        "youtube-tv" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'youtube-tv' is deprecated.").print(py);
-            }
-            Some(icons::YOUTUBE_TV)
-        }
-        #[allow(deprecated)]
-        "youtube" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'youtube' is deprecated.").print(py);
-            }
-            Some(icons::YOUTUBE)
-        }
-        "yurt" => Some(icons::YURT),
-        #[allow(deprecated)]
-        "z-wave" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'z-wave' is deprecated.").print(py);
-            }
-            Some(icons::Z_WAVE)
-        }
-        #[allow(deprecated)]
-        "zend" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'zend' is deprecated.").print(py);
-            }
-            Some(icons::ZEND)
-        }
-        #[allow(deprecated)]
-        "zigbee" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'zigbee' is deprecated.").print(py);
-            }
-            Some(icons::ZIGBEE)
-        }
-        "zip-box-outline" => Some(icons::ZIP_BOX_OUTLINE),
-        "zip-box" => Some(icons::ZIP_BOX),
-        "zip-disk" => Some(icons::ZIP_DISK),
-        "zodiac-aquarius" => Some(icons::ZODIAC_AQUARIUS),
-        "zodiac-aries" => Some(icons::ZODIAC_ARIES),
-        "zodiac-cancer" => Some(icons::ZODIAC_CANCER),
-        "zodiac-capricorn" => Some(icons::ZODIAC_CAPRICORN),
-        "zodiac-gemini" => Some(icons::ZODIAC_GEMINI),
-        "zodiac-leo" => Some(icons::ZODIAC_LEO),
-        "zodiac-libra" => Some(icons::ZODIAC_LIBRA),
-        "zodiac-pisces" => Some(icons::ZODIAC_PISCES),
-        "zodiac-sagittarius" => Some(icons::ZODIAC_SAGITTARIUS),
-        "zodiac-scorpio" => Some(icons::ZODIAC_SCORPIO),
-        "zodiac-taurus" => Some(icons::ZODIAC_TAURUS),
-        "zodiac-virgo" => Some(icons::ZODIAC_VIRGO),
+        "water-boiler-auto" => Some(icons::WATER_BOILER_AUTO),
+        "ip" => Some(icons::IP),
+        "video-3d" => Some(icons::VIDEO_3D),
+        "storefront-remove-outline" => Some(icons::STOREFRONT_REMOVE_OUTLINE),
         _ => None,
     }
 }
