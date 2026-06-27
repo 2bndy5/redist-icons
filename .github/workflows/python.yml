@@ -47,7 +47,7 @@ jobs:
       uv-groups: ${{ steps.generate-matrix.outputs.uv-groups }}
       pytest-paths: ${{ steps.generate-matrix.outputs.pytest-paths }}
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
           fetch-depth: 0
@@ -63,7 +63,7 @@ jobs:
     name: Test ${{ needs.get-changed-crates.outputs.crates }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
       - run: rustup update --no-self-update
@@ -106,10 +106,10 @@ jobs:
             target: ppc64le
     name: linux ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
       - name: Build wheels
@@ -144,10 +144,10 @@ jobs:
             target: armv7
     name: musllinux ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
       - name: Build wheels
@@ -178,10 +178,10 @@ jobs:
             target: x86
     name: windows ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
           architecture: ${{ matrix.platform.target }}
@@ -212,10 +212,10 @@ jobs:
             target: aarch64
     name: macOS ${{ matrix.pkg }} (${{ matrix.platform.target }})
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
       - name: Build wheels
@@ -240,7 +240,7 @@ jobs:
       matrix:
         pkg: ${{ fromJson(needs.get-changed-crates.outputs.crates) }}
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           persist-credentials: false
       - name: Build sdist
@@ -291,7 +291,7 @@ jobs:
           pattern: wheels-${{ matrix.pkg }}-*
           merge-multiple: true
           path: dist
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@v6.2.0
         with:
           python-version: 3.x
       - name: Twine check
