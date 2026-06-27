@@ -16,7 +16,7 @@ jobs:
     environment: regen-src
 
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
         with:
           token: ${{ secrets.REDIST_ICONS_UPDATE }}
           fetch-depth: 0
