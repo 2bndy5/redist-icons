@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ROBOFLOW", icons::SI_ROBOFLOW)?;
     m.add("SI_RTE", icons::SI_RTE)?;
     m.add("SI_SESSION", icons::SI_SESSION)?;
     m.add("SI_LIBREOFFICEMATH", icons::SI_LIBREOFFICEMATH)?;
@@ -198,6 +199,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PROCESSWIRE", icons::SI_PROCESSWIRE)?;
     m.add("SI_SCRAPBOX", icons::SI_SCRAPBOX)?;
     m.add("SI_ACURA", icons::SI_ACURA)?;
+    m.add("SI_METAAI", icons::SI_METAAI)?;
     m.add("SI_MASERATI", icons::SI_MASERATI)?;
     m.add("SI_ZENSAR", icons::SI_ZENSAR)?;
     m.add("SI_TRUSTEDSHOPS", icons::SI_TRUSTEDSHOPS)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PHPMYADMIN", icons::SI_PHPMYADMIN)?;
     m.add("SI_WIKIDATA", icons::SI_WIKIDATA)?;
     m.add("SI_RCLONE", icons::SI_RCLONE)?;
-    m.add("SI_ZOMATO", icons::SI_ZOMATO)?;
-    m.add("SI_COPPEL", icons::SI_COPPEL)?;
     Ok(())
 }

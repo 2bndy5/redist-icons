@@ -1,6 +1,50 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// gamebanana
+pub const SI_GAMEBANANA: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GameBanana</title><path d="M14.249 0v3h1.5V1.5h1.505V3h-1.505V7.5h1.5V4.5h3.002v-1.5h-1.505V0Zm6.002 4.498v1.5h1.5V4.501Zm1.5 1.5v10.503h1.5V5.998Zm0 10.503h-1.5V19.5h1.5zm-1.5 2.998h-1.505v1.5h1.5zm-1.5 1.5h-3.002v1.5h3.001zm-3.002 1.5H6.75V24h9zm-8.999 0V21h-3v1.5zm-3-1.5v-1.497H2.248v1.5zm-1.501-1.497v-2.997H9.75v-1.5H.748v4.497zm7.502-4.497h2.997v-1.5H9.751Zm2.997-1.5h1.5v-1.501h-1.5zm1.5-1.501h1.501V7.506h-1.5z"/></svg>"##,
+    slug: "gamebanana",
+    title: "GameBanana",
+    hex: "FCEF40",
+    source: "https://gamebanana.com/tools/3474",
+    guidelines: None,
+    license: Some("CC-BY-NC-ND-4.0"),
+};
+
+/// magic
+pub const SI_MAGIC: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Magic</title><path d="M12 0a29.658 29.658 0 0 1-3.611 3.53A27.326 27.326 0 0 1 9.729 12c0 2.948-.47 5.792-1.34 8.47A29.658 29.658 0 0 1 12 24a29.658 29.658 0 0 1 3.611-3.53 27.326 27.326 0 0 1-1.34-8.47c0-2.948.47-5.792 1.34-8.47A29.658 29.658 0 0 1 12 0Zm6.109 5.381A27.362 27.362 0 0 0 17.3 12c0 2.278.28 4.494.809 6.619a30.696 30.696 0 0 1 4.391-2.424A13.662 13.662 0 0 1 21.843 12c0-1.46.23-2.868.657-4.195a30.698 30.698 0 0 1-4.391-2.424Zm-12.218 0A30.7 30.7 0 0 1 1.5 7.805c.427 1.327.657 2.736.657 4.195 0 1.46-.23 2.868-.657 4.195a30.696 30.696 0 0 1 4.391 2.424C6.42 16.494 6.7 14.278 6.7 12c0-2.278-.28-4.494-.809-6.619z"/></svg>"##,
+    slug: "magic",
+    title: "Magic",
+    hex: "6851FF",
+    source: "https://magic.link/brand-assets",
+    guidelines: Some("https://magic.link/brand-assets"),
+    license: None,
+};
+
+/// jrgroup
+pub const SI_JRGROUP: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>JR Group</title><path d="M19.955 13.653h1.089c2.684 0 2.684-4.123 2.684-4.123s0-4.162-2.684-4.162H9.18v8.869c0 1.556-3.112 1.478-3.112 1.478s-3.073.116-3.073-1.478v-3.423H0v4.395c0 3.19 5.68 3.384 6.107 3.423.428 0 6.107-.194 6.107-3.423V8.363h7.896c.661 0 .661 1.167.661 1.167s0 1.167-.66 1.167h-6.069l5.952 7.702H24Z"/></svg>"##,
+    slug: "jrgroup",
+    title: "JR Group",
+    hex: "44AF35",
+    source: "https://www.jrhokkaido.co.jp",
+    guidelines: None,
+    license: None,
+};
+
+/// dash0
+pub const SI_DASH0: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dash0</title><path d="M0 4.421c4.883 0 8.842 3.393 8.842 7.579S4.883 19.579 0 19.579zm16.421 0C20.608 4.421 24 7.814 24 12s-3.392 7.579-7.579 7.579S8.842 16.186 8.842 12s3.393-7.579 7.579-7.579"/></svg>"##,
+    slug: "dash0",
+    title: "Dash0",
+    hex: "EA3D3B",
+    source: "https://www.dash0.com",
+    guidelines: None,
+    license: None,
+};
+
 /// camunda
 pub const SI_CAMUNDA: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Camunda</title><path d="M3.327 0A3.327 3.327 0 0 0 0 3.326v17.348A3.327 3.327 0 0 0 3.327 24h17.347A3.326 3.326 0 0 0 24 20.674V3.326A3.326 3.326 0 0 0 20.674 0H3.327Zm8.687 3.307c1.875 0 2.84 1.105 2.84 3.049v1.175H13.05V6.23c0-.867-.392-1.203-.994-1.203-.615-.014-.993.322-.993 1.189v6.56c0 .867.392 1.175.993 1.175.616 0 .994-.308.994-1.175v-1.734h1.804v1.608c-.014 1.945-.979 3.049-2.854 3.049-1.874 0-2.839-1.119-2.839-3.035V6.356c.014-1.944.979-3.049 2.853-3.049ZM9.161 17.476h5.693v3.217H9.161v-3.217Z"/></svg>"##,

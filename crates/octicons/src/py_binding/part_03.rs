@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SPACING_LARGE_24", icons::SPACING_LARGE_24)?;
+    m.add("CROSSHAIRS_24", icons::CROSSHAIRS_24)?;
+    m.add("COPY_16", icons::COPY_16)?;
+    m.add("SMILEY_GRIN_16", icons::SMILEY_GRIN_16)?;
+    m.add("INBOX_24", icons::INBOX_24)?;
     m.add("CREDIT_CARD_24", icons::CREDIT_CARD_24)?;
     m.add("DOT_16", icons::DOT_16)?;
     m.add("GIT_MERGE_24", icons::GIT_MERGE_24)?;
@@ -135,6 +140,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LIST_UNORDERED_16", icons::LIST_UNORDERED_16)?;
     m.add("SMILEY_NEUTRAL_24", icons::SMILEY_NEUTRAL_24)?;
     m.add("BOOKMARK_16", icons::BOOKMARK_16)?;
+    m.add("VIEW_FILES_16", icons::VIEW_FILES_16)?;
     m.add("FEED_ISSUE_DRAFT_16", icons::FEED_ISSUE_DRAFT_16)?;
     m.add("X_CIRCLE_16", icons::X_CIRCLE_16)?;
     m.add("GRAPH_BAR_VERTICAL_24", icons::GRAPH_BAR_VERTICAL_24)?;

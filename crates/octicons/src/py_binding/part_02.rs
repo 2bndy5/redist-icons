@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("X_CIRCLE_FILL_24", icons::X_CIRCLE_FILL_24)?;
+    m.add("FEED_HEART_16", icons::FEED_HEART_16)?;
+    m.add("COPILOT_ERROR_16", icons::COPILOT_ERROR_16)?;
     m.add("BLOCKED_16", icons::BLOCKED_16)?;
     m.add("CPU_24", icons::CPU_24)?;
     m.add("HUBOT_24", icons::HUBOT_24)?;
@@ -67,6 +70,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BROADCAST_24", icons::BROADCAST_24)?;
     m.add("SQUARE_CIRCLE_16", icons::SQUARE_CIRCLE_16)?;
     m.add("VERIFIED_16", icons::VERIFIED_16)?;
+    m.add("PROJECT_CHECK_16", icons::PROJECT_CHECK_16)?;
     m.add("CHEVRON_LEFT_12", icons::CHEVRON_LEFT_12)?;
     m.add("BELL_16", icons::BELL_16)?;
     m.add("QUOTE_24", icons::QUOTE_24)?;
@@ -180,6 +184,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("STOP_24", icons::STOP_24)?;
     m.add("REPO_LOCKED_16", icons::REPO_LOCKED_16)?;
     m.add("PIVOT_COLUMN_24", icons::PIVOT_COLUMN_24)?;
+    m.add("GRAPH_STACKED_AREA_16", icons::GRAPH_STACKED_AREA_16)?;
     m.add("SORT_DESC_24", icons::SORT_DESC_24)?;
     m.add("DIFF_24", icons::DIFF_24)?;
     m.add("BOOKMARK_SLASH_FILL_16", icons::BOOKMARK_SLASH_FILL_16)?;
@@ -207,10 +212,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("COMMAND_PALETTE_16", icons::COMMAND_PALETTE_16)?;
     m.add("CHECK_16", icons::CHECK_16)?;
     m.add("FILE_CHECK_24", icons::FILE_CHECK_24)?;
-    m.add("SPACING_LARGE_24", icons::SPACING_LARGE_24)?;
-    m.add("CROSSHAIRS_24", icons::CROSSHAIRS_24)?;
-    m.add("COPY_16", icons::COPY_16)?;
-    m.add("SMILEY_GRIN_16", icons::SMILEY_GRIN_16)?;
-    m.add("INBOX_24", icons::INBOX_24)?;
     Ok(())
 }

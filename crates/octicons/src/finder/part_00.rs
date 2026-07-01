@@ -185,6 +185,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "redo-16" => Some(icons::REDO_16),
         "x-circle-fill-12" => Some(icons::X_CIRCLE_FILL_12),
         "skip-24" => Some(icons::SKIP_24),
+        "graph-stacked-area-24" => Some(icons::GRAPH_STACKED_AREA_24),
         "number-16" => Some(icons::NUMBER_16),
         "chevron-right-16" => Some(icons::CHEVRON_RIGHT_16),
         "codescan-24" => Some(icons::CODESCAN_24),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "lock-16" => Some(icons::LOCK_16),
         "file-24" => Some(icons::FILE_24),
         "zoom-out-16" => Some(icons::ZOOM_OUT_16),
-        "pause-16" => Some(icons::PAUSE_16),
         _ => None,
     }
 }

@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "solid")]
+        "solid/circle-down" => Some(icons::SOLID_CIRCLE_DOWN),
         #[cfg(feature = "regular")]
         "regular/circle-down" => Some(icons::REGULAR_CIRCLE_DOWN),
         #[cfg(feature = "solid")]
@@ -147,6 +149,8 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/code-merge" => Some(icons::SOLID_CODE_MERGE),
         #[cfg(feature = "solid")]
         "solid/code-pull-request" => Some(icons::SOLID_CODE_PULL_REQUEST),
+        #[cfg(feature = "brands")]
+        "brands/codeberg" => Some(icons::BRANDS_CODEBERG),
         #[cfg(feature = "brands")]
         "brands/codepen" => Some(icons::BRANDS_CODEPEN),
         #[cfg(feature = "brands")]
@@ -319,6 +323,8 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "brands/dev" => Some(icons::BRANDS_DEV),
         #[cfg(feature = "brands")]
         "brands/deviantart" => Some(icons::BRANDS_DEVIANTART),
+        #[cfg(feature = "brands")]
+        "brands/devpost" => Some(icons::BRANDS_DEVPOST),
         #[cfg(feature = "solid")]
         "solid/dharmachakra" => Some(icons::SOLID_DHARMACHAKRA),
         #[cfg(feature = "brands")]
@@ -401,12 +407,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/download" => Some(icons::SOLID_DOWNLOAD),
         #[cfg(feature = "brands")]
         "brands/draft2digital" => Some(icons::BRANDS_DRAFT2DIGITAL),
-        #[cfg(feature = "solid")]
-        "solid/dragon" => Some(icons::SOLID_DRAGON),
-        #[cfg(feature = "solid")]
-        "solid/draw-polygon" => Some(icons::SOLID_DRAW_POLYGON),
-        #[cfg(feature = "brands")]
-        "brands/dribbble" => Some(icons::BRANDS_DRIBBBLE),
         _ => None,
     }
 }

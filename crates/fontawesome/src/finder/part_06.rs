@@ -3,6 +3,16 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "brands")]
+        "brands/lyft" => Some(icons::BRANDS_LYFT),
+        #[cfg(feature = "solid")]
+        "solid/m" => Some(icons::SOLID_M),
+        #[cfg(feature = "brands")]
+        "brands/magento" => Some(icons::BRANDS_MAGENTO),
+        #[cfg(feature = "solid")]
+        "solid/magnet" => Some(icons::SOLID_MAGNET),
+        #[cfg(feature = "solid")]
+        "solid/magnifying-glass" => Some(icons::SOLID_MAGNIFYING_GLASS),
         #[cfg(feature = "solid")]
         "solid/magnifying-glass-arrow-right" => Some(icons::SOLID_MAGNIFYING_GLASS_ARROW_RIGHT),
         #[cfg(feature = "solid")]
@@ -65,6 +75,10 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "solid/masks-theater" => Some(icons::SOLID_MASKS_THEATER),
         #[cfg(feature = "brands")]
         "brands/mastodon" => Some(icons::BRANDS_MASTODON),
+        #[cfg(feature = "brands")]
+        "brands/matrix" => Some(icons::BRANDS_MATRIX),
+        #[cfg(feature = "brands")]
+        "brands/mattermost" => Some(icons::BRANDS_MATTERMOST),
         #[cfg(feature = "solid")]
         "solid/mattress-pillow" => Some(icons::SOLID_MATTRESS_PILLOW),
         #[cfg(feature = "brands")]
@@ -219,6 +233,8 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "solid/newspaper" => Some(icons::SOLID_NEWSPAPER),
         #[cfg(feature = "regular")]
         "regular/newspaper" => Some(icons::REGULAR_NEWSPAPER),
+        #[cfg(feature = "brands")]
+        "brands/nextcloud" => Some(icons::BRANDS_NEXTCLOUD),
         #[cfg(feature = "brands")]
         "brands/nfc-directional" => Some(icons::BRANDS_NFC_DIRECTIONAL),
         #[cfg(feature = "brands")]
@@ -387,22 +403,6 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "brands/perbyte" => Some(icons::BRANDS_PERBYTE),
         #[cfg(feature = "solid")]
         "solid/percent" => Some(icons::SOLID_PERCENT),
-        #[cfg(feature = "brands")]
-        "brands/periscope" => Some(icons::BRANDS_PERISCOPE),
-        #[cfg(feature = "solid")]
-        "solid/person" => Some(icons::SOLID_PERSON),
-        #[cfg(feature = "solid")]
-        "solid/person-arrow-down-to-line" => Some(icons::SOLID_PERSON_ARROW_DOWN_TO_LINE),
-        #[cfg(feature = "solid")]
-        "solid/person-arrow-up-from-line" => Some(icons::SOLID_PERSON_ARROW_UP_FROM_LINE),
-        #[cfg(feature = "solid")]
-        "solid/person-biking" => Some(icons::SOLID_PERSON_BIKING),
-        #[cfg(feature = "solid")]
-        "solid/person-booth" => Some(icons::SOLID_PERSON_BOOTH),
-        #[cfg(feature = "solid")]
-        "solid/person-breastfeeding" => Some(icons::SOLID_PERSON_BREASTFEEDING),
-        #[cfg(feature = "solid")]
-        "solid/person-burst" => Some(icons::SOLID_PERSON_BURST),
         _ => None,
     }
 }

@@ -4,6 +4,32 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_USER_ASTRONAUT", icons::SOLID_USER_ASTRONAUT)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_CHECK", icons::SOLID_USER_CHECK)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_CLOCK", icons::SOLID_USER_CLOCK)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_DOCTOR", icons::SOLID_USER_DOCTOR)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_GEAR", icons::SOLID_USER_GEAR)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_GRADUATE", icons::SOLID_USER_GRADUATE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_GROUP", icons::SOLID_USER_GROUP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_INJURED", icons::SOLID_USER_INJURED)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_LOCK", icons::SOLID_USER_LOCK)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_MINUS", icons::SOLID_USER_MINUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_NINJA", icons::SOLID_USER_NINJA)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_NURSE", icons::SOLID_USER_NURSE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER_PEN", icons::SOLID_USER_PEN)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_USER_PLUS", icons::SOLID_USER_PLUS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_USER_SECRET", icons::SOLID_USER_SECRET)?;
@@ -271,6 +297,10 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_XMARKS_LINES", icons::SOLID_XMARKS_LINES)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_XMPP", icons::BRANDS_XMPP)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_XRP", icons::BRANDS_XRP)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_XRPL", icons::BRANDS_XRPL)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_Y", icons::SOLID_Y)?;
     #[cfg(feature = "brands")]
@@ -298,6 +328,8 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_YOAST", icons::BRANDS_YOAST)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_YOUTUBE", icons::BRANDS_YOUTUBE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_YOUTUBE_SHORTS", icons::BRANDS_YOUTUBE_SHORTS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_Z", icons::SOLID_Z)?;
     #[cfg(feature = "brands")]

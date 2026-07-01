@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
     match slug {
+        "pause-16" => Some(icons::PAUSE_16),
         "smiley-frown-16" => Some(icons::SMILEY_FROWN_16),
         "paper-airplane-16" => Some(icons::PAPER_AIRPLANE_16),
         "x-16" => Some(icons::X_16),
@@ -49,6 +50,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "terminal-24" => Some(icons::TERMINAL_24),
         "paperclip-24" => Some(icons::PAPERCLIP_24),
         "triangle-up-24" => Some(icons::TRIANGLE_UP_24),
+        "view-files-24" => Some(icons::VIEW_FILES_24),
         "file-16" => Some(icons::FILE_16),
         "report-16" => Some(icons::REPORT_16),
         "undo-16" => Some(icons::UNDO_16),
@@ -108,6 +110,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "goal-24" => Some(icons::GOAL_24),
         "devices-24" => Some(icons::DEVICES_24),
         "file-binary-16" => Some(icons::FILE_BINARY_16),
+        "project-check-24" => Some(icons::PROJECT_CHECK_24),
         "flowchart-24" => Some(icons::FLOWCHART_24),
         "codescan-16" => Some(icons::CODESCAN_16),
         "git-branch-check-16" => Some(icons::GIT_BRANCH_CHECK_16),
@@ -200,9 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "beaker-24" => Some(icons::BEAKER_24),
         "smiley-16" => Some(icons::SMILEY_16),
         "repo-deleted-16" => Some(icons::REPO_DELETED_16),
-        "x-circle-fill-24" => Some(icons::X_CIRCLE_FILL_24),
-        "feed-heart-16" => Some(icons::FEED_HEART_16),
-        "copilot-error-16" => Some(icons::COPILOT_ERROR_16),
         _ => None,
     }
 }

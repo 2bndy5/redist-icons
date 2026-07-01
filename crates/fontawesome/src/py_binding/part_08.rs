@@ -4,6 +4,38 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_SCALE_BALANCED", icons::SOLID_SCALE_BALANCED)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_SCALE_UNBALANCED", icons::SOLID_SCALE_UNBALANCED)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_SCALE_UNBALANCED_FLIP",
+        icons::SOLID_SCALE_UNBALANCED_FLIP,
+    )?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_SCALEWAY", icons::BRANDS_SCALEWAY)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_SCHLIX", icons::BRANDS_SCHLIX)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_SCHOOL", icons::SOLID_SCHOOL)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_SCHOOL_CIRCLE_CHECK",
+        icons::SOLID_SCHOOL_CIRCLE_CHECK,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_SCHOOL_CIRCLE_EXCLAMATION",
+        icons::SOLID_SCHOOL_CIRCLE_EXCLAMATION,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_SCHOOL_CIRCLE_XMARK",
+        icons::SOLID_SCHOOL_CIRCLE_XMARK,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_SCHOOL_FLAG", icons::SOLID_SCHOOL_FLAG)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_SCHOOL_LOCK", icons::SOLID_SCHOOL_LOCK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SCISSORS", icons::SOLID_SCISSORS)?;
@@ -222,6 +254,11 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_SQUARE_BINARY", icons::SOLID_SQUARE_BINARY)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_SQUARE_BLUESKY", icons::BRANDS_SQUARE_BLUESKY)?;
+    #[cfg(feature = "brands")]
+    m.add(
+        "BRANDS_SQUARE_BUILD_AWESOME_STROKE",
+        icons::BRANDS_SQUARE_BUILD_AWESOME_STROKE,
+    )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SQUARE_CARET_DOWN", icons::SOLID_SQUARE_CARET_DOWN)?;
     #[cfg(feature = "regular")]
@@ -432,27 +469,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_STAR_OF_LIFE", icons::SOLID_STAR_OF_LIFE)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_STAYLINKED", icons::BRANDS_STAYLINKED)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_STEAM", icons::BRANDS_STEAM)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_STEAM_SYMBOL", icons::BRANDS_STEAM_SYMBOL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STERLING_SIGN", icons::SOLID_STERLING_SIGN)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STETHOSCOPE", icons::SOLID_STETHOSCOPE)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_STICKER_MULE", icons::BRANDS_STICKER_MULE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STOP", icons::SOLID_STOP)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STOPWATCH", icons::SOLID_STOPWATCH)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STOPWATCH_20", icons::SOLID_STOPWATCH_20)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STORE", icons::SOLID_STORE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STORE_SLASH", icons::SOLID_STORE_SLASH)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_STRAVA", icons::BRANDS_STRAVA)?;
     Ok(())
 }

@@ -4,6 +4,26 @@ use crate::{Icon, icons};
 pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "solid")]
+        "solid/scale-balanced" => Some(icons::SOLID_SCALE_BALANCED),
+        #[cfg(feature = "solid")]
+        "solid/scale-unbalanced" => Some(icons::SOLID_SCALE_UNBALANCED),
+        #[cfg(feature = "solid")]
+        "solid/scale-unbalanced-flip" => Some(icons::SOLID_SCALE_UNBALANCED_FLIP),
+        #[cfg(feature = "brands")]
+        "brands/scaleway" => Some(icons::BRANDS_SCALEWAY),
+        #[cfg(feature = "brands")]
+        "brands/schlix" => Some(icons::BRANDS_SCHLIX),
+        #[cfg(feature = "solid")]
+        "solid/school" => Some(icons::SOLID_SCHOOL),
+        #[cfg(feature = "solid")]
+        "solid/school-circle-check" => Some(icons::SOLID_SCHOOL_CIRCLE_CHECK),
+        #[cfg(feature = "solid")]
+        "solid/school-circle-exclamation" => Some(icons::SOLID_SCHOOL_CIRCLE_EXCLAMATION),
+        #[cfg(feature = "solid")]
+        "solid/school-circle-xmark" => Some(icons::SOLID_SCHOOL_CIRCLE_XMARK),
+        #[cfg(feature = "solid")]
+        "solid/school-flag" => Some(icons::SOLID_SCHOOL_FLAG),
+        #[cfg(feature = "solid")]
         "solid/school-lock" => Some(icons::SOLID_SCHOOL_LOCK),
         #[cfg(feature = "solid")]
         "solid/scissors" => Some(icons::SOLID_SCISSORS),
@@ -213,6 +233,8 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "solid/square-binary" => Some(icons::SOLID_SQUARE_BINARY),
         #[cfg(feature = "brands")]
         "brands/square-bluesky" => Some(icons::BRANDS_SQUARE_BLUESKY),
+        #[cfg(feature = "brands")]
+        "brands/square-build-awesome-stroke" => Some(icons::BRANDS_SQUARE_BUILD_AWESOME_STROKE),
         #[cfg(feature = "solid")]
         "solid/square-caret-down" => Some(icons::SOLID_SQUARE_CARET_DOWN),
         #[cfg(feature = "regular")]
@@ -381,28 +403,6 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "solid/star-of-life" => Some(icons::SOLID_STAR_OF_LIFE),
         #[cfg(feature = "brands")]
         "brands/staylinked" => Some(icons::BRANDS_STAYLINKED),
-        #[cfg(feature = "brands")]
-        "brands/steam" => Some(icons::BRANDS_STEAM),
-        #[cfg(feature = "brands")]
-        "brands/steam-symbol" => Some(icons::BRANDS_STEAM_SYMBOL),
-        #[cfg(feature = "solid")]
-        "solid/sterling-sign" => Some(icons::SOLID_STERLING_SIGN),
-        #[cfg(feature = "solid")]
-        "solid/stethoscope" => Some(icons::SOLID_STETHOSCOPE),
-        #[cfg(feature = "brands")]
-        "brands/sticker-mule" => Some(icons::BRANDS_STICKER_MULE),
-        #[cfg(feature = "solid")]
-        "solid/stop" => Some(icons::SOLID_STOP),
-        #[cfg(feature = "solid")]
-        "solid/stopwatch" => Some(icons::SOLID_STOPWATCH),
-        #[cfg(feature = "solid")]
-        "solid/stopwatch-20" => Some(icons::SOLID_STOPWATCH_20),
-        #[cfg(feature = "solid")]
-        "solid/store" => Some(icons::SOLID_STORE),
-        #[cfg(feature = "solid")]
-        "solid/store-slash" => Some(icons::SOLID_STORE_SLASH),
-        #[cfg(feature = "brands")]
-        "brands/strava" => Some(icons::BRANDS_STRAVA),
         _ => None,
     }
 }

@@ -52,6 +52,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "momenteo" => Some(icons::SI_MOMENTEO),
         "chai" => Some(icons::SI_CHAI),
         "glance" => Some(icons::SI_GLANCE),
+        "fawry" => Some(icons::SI_FAWRY),
         "vimeo" => Some(icons::SI_VIMEO),
         "norwegian" => Some(icons::SI_NORWEGIAN),
         "bootstrap" => Some(icons::SI_BOOTSTRAP),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "turkishairlines" => Some(icons::SI_TURKISHAIRLINES),
         "jet" => Some(icons::SI_JET),
         "springboot" => Some(icons::SI_SPRINGBOOT),
-        "privateinternetaccess" => Some(icons::SI_PRIVATEINTERNETACCESS),
         _ => None,
     }
 }

@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        "x-circle-fill-24" => Some(icons::X_CIRCLE_FILL_24),
+        "feed-heart-16" => Some(icons::FEED_HEART_16),
+        "copilot-error-16" => Some(icons::COPILOT_ERROR_16),
         "blocked-16" => Some(icons::BLOCKED_16),
         "cpu-24" => Some(icons::CPU_24),
         "hubot-24" => Some(icons::HUBOT_24),
@@ -64,6 +67,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "broadcast-24" => Some(icons::BROADCAST_24),
         "square-circle-16" => Some(icons::SQUARE_CIRCLE_16),
         "verified-16" => Some(icons::VERIFIED_16),
+        "project-check-16" => Some(icons::PROJECT_CHECK_16),
         "chevron-left-12" => Some(icons::CHEVRON_LEFT_12),
         "bell-16" => Some(icons::BELL_16),
         "quote-24" => Some(icons::QUOTE_24),
@@ -171,6 +175,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "stop-24" => Some(icons::STOP_24),
         "repo-locked-16" => Some(icons::REPO_LOCKED_16),
         "pivot-column-24" => Some(icons::PIVOT_COLUMN_24),
+        "graph-stacked-area-16" => Some(icons::GRAPH_STACKED_AREA_16),
         "sort-desc-24" => Some(icons::SORT_DESC_24),
         "diff-24" => Some(icons::DIFF_24),
         "bookmark-slash-fill-16" => Some(icons::BOOKMARK_SLASH_FILL_16),
@@ -198,11 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "command-palette-16" => Some(icons::COMMAND_PALETTE_16),
         "check-16" => Some(icons::CHECK_16),
         "file-check-24" => Some(icons::FILE_CHECK_24),
-        "spacing-large-24" => Some(icons::SPACING_LARGE_24),
-        "crosshairs-24" => Some(icons::CROSSHAIRS_24),
-        "copy-16" => Some(icons::COPY_16),
-        "smiley-grin-16" => Some(icons::SMILEY_GRIN_16),
-        "inbox-24" => Some(icons::INBOX_24),
         _ => None,
     }
 }

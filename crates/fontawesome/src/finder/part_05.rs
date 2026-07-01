@@ -4,6 +4,12 @@ use crate::{Icon, icons};
 pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "solid")]
+        "solid/heart-circle-minus" => Some(icons::SOLID_HEART_CIRCLE_MINUS),
+        #[cfg(feature = "solid")]
+        "solid/heart-circle-plus" => Some(icons::SOLID_HEART_CIRCLE_PLUS),
+        #[cfg(feature = "solid")]
+        "solid/heart-circle-xmark" => Some(icons::SOLID_HEART_CIRCLE_XMARK),
+        #[cfg(feature = "solid")]
         "solid/heart-crack" => Some(icons::SOLID_HEART_CRACK),
         #[cfg(feature = "solid")]
         "solid/heart-pulse" => Some(icons::SOLID_HEART_PULSE),
@@ -194,6 +200,8 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         #[cfg(feature = "brands")]
         "brands/intercom" => Some(icons::BRANDS_INTERCOM),
         #[cfg(feature = "brands")]
+        "brands/internet-archive" => Some(icons::BRANDS_INTERNET_ARCHIVE),
+        #[cfg(feature = "brands")]
         "brands/internet-explorer" => Some(icons::BRANDS_INTERNET_EXPLORER),
         #[cfg(feature = "brands")]
         "brands/invision" => Some(icons::BRANDS_INVISION),
@@ -332,6 +340,8 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         #[cfg(feature = "solid")]
         "solid/less-than-equal" => Some(icons::SOLID_LESS_THAN_EQUAL),
         #[cfg(feature = "brands")]
+        "brands/lets-encrypt" => Some(icons::BRANDS_LETS_ENCRYPT),
+        #[cfg(feature = "brands")]
         "brands/letterboxd" => Some(icons::BRANDS_LETTERBOXD),
         #[cfg(feature = "solid")]
         "solid/libra" => Some(icons::SOLID_LIBRA),
@@ -397,16 +407,6 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "solid/lungs" => Some(icons::SOLID_LUNGS),
         #[cfg(feature = "solid")]
         "solid/lungs-virus" => Some(icons::SOLID_LUNGS_VIRUS),
-        #[cfg(feature = "brands")]
-        "brands/lyft" => Some(icons::BRANDS_LYFT),
-        #[cfg(feature = "solid")]
-        "solid/m" => Some(icons::SOLID_M),
-        #[cfg(feature = "brands")]
-        "brands/magento" => Some(icons::BRANDS_MAGENTO),
-        #[cfg(feature = "solid")]
-        "solid/magnet" => Some(icons::SOLID_MAGNET),
-        #[cfg(feature = "solid")]
-        "solid/magnifying-glass" => Some(icons::SOLID_MAGNIFYING_GLASS),
         _ => None,
     }
 }

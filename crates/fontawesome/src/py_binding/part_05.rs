@@ -4,6 +4,12 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_CIRCLE_MINUS", icons::SOLID_HEART_CIRCLE_MINUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_CIRCLE_PLUS", icons::SOLID_HEART_CIRCLE_PLUS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_CIRCLE_XMARK", icons::SOLID_HEART_CIRCLE_XMARK)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_HEART_CRACK", icons::SOLID_HEART_CRACK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_HEART_PULSE", icons::SOLID_HEART_PULSE)?;
@@ -214,6 +220,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "brands")]
     m.add("BRANDS_INTERCOM", icons::BRANDS_INTERCOM)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_INTERNET_ARCHIVE", icons::BRANDS_INTERNET_ARCHIVE)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_INTERNET_EXPLORER", icons::BRANDS_INTERNET_EXPLORER)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_INVISION", icons::BRANDS_INVISION)?;
@@ -352,6 +360,8 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
     m.add("SOLID_LESS_THAN_EQUAL", icons::SOLID_LESS_THAN_EQUAL)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_LETS_ENCRYPT", icons::BRANDS_LETS_ENCRYPT)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_LETTERBOXD", icons::BRANDS_LETTERBOXD)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_LIBRA", icons::SOLID_LIBRA)?;
@@ -420,15 +430,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_LUNGS", icons::SOLID_LUNGS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_LUNGS_VIRUS", icons::SOLID_LUNGS_VIRUS)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_LYFT", icons::BRANDS_LYFT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_M", icons::SOLID_M)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_MAGENTO", icons::BRANDS_MAGENTO)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MAGNET", icons::SOLID_MAGNET)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_MAGNIFYING_GLASS", icons::SOLID_MAGNIFYING_GLASS)?;
     Ok(())
 }
