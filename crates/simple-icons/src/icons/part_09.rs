@@ -1,6 +1,28 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// disroot
+pub const SI_DISROOT: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Disroot</title><path d="M3.976 2.856C2.321 3.296.603 4.491.122 5.536c-.144.315-.164.885-.04 1.133.178.35.343.384 1.387.24.817-.11 1.085-.117 1.985-.055 1.106.076 1.594.213 1.882.522.172.179 3.75 9.033 3.813 9.418.11.694-.234 1.312-1.189 2.143-.797.687-.927.907-.824 1.381.151.666.508.982 1.113.982.508 0 2.095-.268 3.297-.55 3.476-.817 6.437-1.923 8.504-3.173 1.944-1.168 3.25-2.555 3.765-3.984.15-.433.178-.618.185-1.326 0-.975-.11-1.38-.536-1.958-.858-1.16-1.8-2.005-3.338-2.988-2.96-1.902-3.778-2.294-6.67-3.215-2.521-.803-5.358-1.318-7.728-1.394-1.017-.027-1.147-.02-1.752.144zm9.411 6.526c1.477.563 2.823 1.47 4.554 3.07.838.777 1.024 1.072 1.058 1.732.076 1.23-.597 2.033-2.088 2.507-.708.22-2.191.536-2.253.474-.02-.014 0-.13.041-.254.048-.13.062-.447.048-.749-.027-.433-.096-.68-.364-1.319-.179-.433-.708-1.91-1.175-3.283l-.851-2.5.22.047c.123.028.487.151.81.275z"/></svg>"##,
+    slug: "disroot",
+    title: "Disroot",
+    hex: "50162D",
+    source: "https://disroot.org/en",
+    guidelines: None,
+    license: None,
+};
+
+/// linktree
+pub const SI_LINKTREE: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linktree</title><path d="m13.73635 5.85251 4.00467-4.11665 2.3248 2.3808-4.20064 4.00466h5.9085v3.30473h-5.9365l4.22865 4.10766-2.3248 2.3338L12.0005 12.099l-5.74052 5.76852-2.3248-2.3248 4.22864-4.10766h-5.9375V8.12132h5.9085L3.93417 4.11666l2.3248-2.3808 4.00468 4.11665V0h3.4727zm-3.4727 10.30614h3.4727V24h-3.4727z"/></svg>"##,
+    slug: "linktree",
+    title: "Linktree",
+    hex: "43E55E",
+    source: "https://linktr.ee",
+    guidelines: None,
+    license: None,
+};
+
 /// kdeplasma
 pub const SI_KDEPLASMA: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>KDE Plasma</title><path d="M6 0c-.831 0-1.5.669-1.5 1.5S5.169 3 6 3s1.5-.669 1.5-1.5S6.831 0 6 0m10.5 0-3 3L18 7.5 13.5 12l3 3 4.5-4.5 3-3zM2.25 9A2.245 2.245 0 0 0 0 11.25a2.245 2.245 0 0 0 2.25 2.25 2.245 2.245 0 0 0 2.25-2.25A2.245 2.245 0 0 0 2.25 9M9 18c-1.662 0-3 1.338-3 3s1.338 3 3 3 3-1.338 3-3-1.338-3-3-3"/></svg>"##,
@@ -2193,28 +2215,6 @@ pub const SI_WIRESHARK: Icon = Icon {
     title: "Wireshark",
     hex: "1679A7",
     source: "https://gitlab.com/wanduow/wireshark/-/blob/cd5539b0f76975474869984a9d2f0fce29d5c21e/image/wsicon.svg",
-    guidelines: None,
-    license: None,
-};
-
-/// agentskills
-pub const SI_AGENTSKILLS: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Agent Skills</title><path d="m12 0 10.392 6v12L12 24 1.608 18V6Z"/></svg>"##,
-    slug: "agentskills",
-    title: "Agent Skills",
-    hex: "000000",
-    source: "https://github.com/agentskills/agentskills/blob/5d4c1fda3f786fff826c7f56b6cb3341e7f3a911/docs/favicon.svg",
-    guidelines: None,
-    license: None,
-};
-
-/// microdotblog
-pub const SI_MICRODOTBLOG: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Micro.blog</title><path d="M12 0C5.4 0 0 4.9 0 10.95 0 17 5.4 21.9 12 21.9c1.4 0 2.85-.25 4.2-.7.15-.05.35 0 .45.1 1 1.35 2.55 2.3 4.25 2.7l.25-.1v-.3a4.65 4.65 0 01.2-5.9C22.9 15.85 24 13.5 24 10.95 24 4.9 18.55 0 12 0zm-.05 5.2c.15 0 .3.1.35.25L13.55 9l3.85.1c.15 0 .3.1.35.2.05.15 0 .3-.15.4L14.55 12l1.1 3.6c.05.15 0 .3-.15.4h-.4l-3.15-2.15L8.8 16h-.4c-.15-.1-.2-.25-.15-.4l1.1-3.6L6.3 9.7c-.15-.1-.2-.25-.15-.4.05-.1.2-.2.35-.2l3.85-.1 1.25-3.55c.05-.15.2-.25.35-.25z"/></svg>"##,
-    slug: "microdotblog",
-    title: "Micro.blog",
-    hex: "FF8800",
-    source: "https://help.micro.blog",
     guidelines: None,
     license: None,
 };

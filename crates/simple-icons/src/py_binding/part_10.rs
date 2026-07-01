@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_AGENTSKILLS", icons::SI_AGENTSKILLS)?;
+    m.add("SI_MICRODOTBLOG", icons::SI_MICRODOTBLOG)?;
     m.add("SI_REACTIVERESUME", icons::SI_REACTIVERESUME)?;
     m.add("SI_FLATHUB", icons::SI_FLATHUB)?;
     m.add("SI_ROSSMANN", icons::SI_ROSSMANN)?;
@@ -12,6 +14,7 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_WEMO", icons::SI_WEMO)?;
     m.add("SI_PLAYSTATION2", icons::SI_PLAYSTATION2)?;
     m.add("SI_CODINGAME", icons::SI_CODINGAME)?;
+    m.add("SI_RADIANTEARTH", icons::SI_RADIANTEARTH)?;
     m.add("SI_PYCQA", icons::SI_PYCQA)?;
     m.add("SI_AUDI", icons::SI_AUDI)?;
     m.add("SI_BAMBOO", icons::SI_BAMBOO)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PICXY", icons::SI_PICXY)?;
     m.add("SI_THEODINPROJECT", icons::SI_THEODINPROJECT)?;
     m.add("SI_ACTIVELOOP", icons::SI_ACTIVELOOP)?;
-    m.add("SI_ELK", icons::SI_ELK)?;
-    m.add("SI_BLACKBERRY", icons::SI_BLACKBERRY)?;
-    m.add("SI_STANDARDJS", icons::SI_STANDARDJS)?;
     Ok(())
 }

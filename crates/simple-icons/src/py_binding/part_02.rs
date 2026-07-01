@@ -52,6 +52,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MOMENTEO", icons::SI_MOMENTEO)?;
     m.add("SI_CHAI", icons::SI_CHAI)?;
     m.add("SI_GLANCE", icons::SI_GLANCE)?;
+    m.add("SI_FAWRY", icons::SI_FAWRY)?;
     m.add("SI_VIMEO", icons::SI_VIMEO)?;
     m.add("SI_NORWEGIAN", icons::SI_NORWEGIAN)?;
     m.add("SI_BOOTSTRAP", icons::SI_BOOTSTRAP)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
     m.add("SI_JET", icons::SI_JET)?;
     m.add("SI_SPRINGBOOT", icons::SI_SPRINGBOOT)?;
-    m.add("SI_PRIVATEINTERNETACCESS", icons::SI_PRIVATEINTERNETACCESS)?;
     Ok(())
 }

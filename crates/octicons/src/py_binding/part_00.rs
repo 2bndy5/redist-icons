@@ -197,6 +197,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REDO_16", icons::REDO_16)?;
     m.add("X_CIRCLE_FILL_12", icons::X_CIRCLE_FILL_12)?;
     m.add("SKIP_24", icons::SKIP_24)?;
+    m.add("GRAPH_STACKED_AREA_24", icons::GRAPH_STACKED_AREA_24)?;
     m.add("NUMBER_16", icons::NUMBER_16)?;
     m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
     m.add("CODESCAN_24", icons::CODESCAN_24)?;
@@ -214,6 +215,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LOCK_16", icons::LOCK_16)?;
     m.add("FILE_24", icons::FILE_24)?;
     m.add("ZOOM_OUT_16", icons::ZOOM_OUT_16)?;
-    m.add("PAUSE_16", icons::PAUSE_16)?;
     Ok(())
 }

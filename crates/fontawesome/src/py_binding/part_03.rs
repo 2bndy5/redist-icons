@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DRAGON", icons::SOLID_DRAGON)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DRAW_POLYGON", icons::SOLID_DRAW_POLYGON)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_DRIBBBLE", icons::BRANDS_DRIBBBLE)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_DROPBOX", icons::BRANDS_DROPBOX)?;
     #[cfg(feature = "solid")]
@@ -451,17 +457,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_FILL_DRIP", icons::SOLID_FILL_DRIP)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_FILM", icons::SOLID_FILM)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FILTER", icons::SOLID_FILTER)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_FILTER_CIRCLE_DOLLAR",
-        icons::SOLID_FILTER_CIRCLE_DOLLAR,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_FILTER_CIRCLE_XMARK",
-        icons::SOLID_FILTER_CIRCLE_XMARK,
-    )?;
     Ok(())
 }

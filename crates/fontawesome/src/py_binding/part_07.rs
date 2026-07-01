@@ -3,6 +3,31 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_PERISCOPE", icons::BRANDS_PERISCOPE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON", icons::SOLID_PERSON)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_ARROW_DOWN_TO_LINE",
+        icons::SOLID_PERSON_ARROW_DOWN_TO_LINE,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_ARROW_UP_FROM_LINE",
+        icons::SOLID_PERSON_ARROW_UP_FROM_LINE,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_BIKING", icons::SOLID_PERSON_BIKING)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_BOOTH", icons::SOLID_PERSON_BOOTH)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_PERSON_BREASTFEEDING",
+        icons::SOLID_PERSON_BREASTFEEDING,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERSON_BURST", icons::SOLID_PERSON_BURST)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_PERSON_CANE", icons::SOLID_PERSON_CANE)?;
     #[cfg(feature = "solid")]
@@ -396,6 +421,11 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_ROAD_LOCK", icons::SOLID_ROAD_LOCK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_ROAD_SPIKES", icons::SOLID_ROAD_SPIKES)?;
+    #[cfg(feature = "brands")]
+    m.add(
+        "BRANDS_ROBLOX_CREATOR_STUDIO",
+        icons::BRANDS_ROBLOX_CREATOR_STUDIO,
+    )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_ROBOT", icons::SOLID_ROBOT)?;
     #[cfg(feature = "solid")]
@@ -404,6 +434,8 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_ROCKETCHAT", icons::BRANDS_ROCKETCHAT)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_ROCKRMS", icons::BRANDS_ROCKRMS)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_ROR", icons::BRANDS_ROR)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_ROTATE", icons::SOLID_ROTATE)?;
     #[cfg(feature = "solid")]
@@ -452,37 +484,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_SATELLITE", icons::SOLID_SATELLITE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SATELLITE_DISH", icons::SOLID_SATELLITE_DISH)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCALE_BALANCED", icons::SOLID_SCALE_BALANCED)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCALE_UNBALANCED", icons::SOLID_SCALE_UNBALANCED)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_SCALE_UNBALANCED_FLIP",
-        icons::SOLID_SCALE_UNBALANCED_FLIP,
-    )?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SCALEWAY", icons::BRANDS_SCALEWAY)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SCHLIX", icons::BRANDS_SCHLIX)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCHOOL", icons::SOLID_SCHOOL)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_SCHOOL_CIRCLE_CHECK",
-        icons::SOLID_SCHOOL_CIRCLE_CHECK,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_SCHOOL_CIRCLE_EXCLAMATION",
-        icons::SOLID_SCHOOL_CIRCLE_EXCLAMATION,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_SCHOOL_CIRCLE_XMARK",
-        icons::SOLID_SCHOOL_CIRCLE_XMARK,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SCHOOL_FLAG", icons::SOLID_SCHOOL_FLAG)?;
     Ok(())
 }

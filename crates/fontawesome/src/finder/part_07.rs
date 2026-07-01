@@ -3,6 +3,22 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "brands")]
+        "brands/periscope" => Some(icons::BRANDS_PERISCOPE),
+        #[cfg(feature = "solid")]
+        "solid/person" => Some(icons::SOLID_PERSON),
+        #[cfg(feature = "solid")]
+        "solid/person-arrow-down-to-line" => Some(icons::SOLID_PERSON_ARROW_DOWN_TO_LINE),
+        #[cfg(feature = "solid")]
+        "solid/person-arrow-up-from-line" => Some(icons::SOLID_PERSON_ARROW_UP_FROM_LINE),
+        #[cfg(feature = "solid")]
+        "solid/person-biking" => Some(icons::SOLID_PERSON_BIKING),
+        #[cfg(feature = "solid")]
+        "solid/person-booth" => Some(icons::SOLID_PERSON_BOOTH),
+        #[cfg(feature = "solid")]
+        "solid/person-breastfeeding" => Some(icons::SOLID_PERSON_BREASTFEEDING),
+        #[cfg(feature = "solid")]
+        "solid/person-burst" => Some(icons::SOLID_PERSON_BURST),
         #[cfg(feature = "solid")]
         "solid/person-cane" => Some(icons::SOLID_PERSON_CANE),
         #[cfg(feature = "solid")]
@@ -329,6 +345,8 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "solid/road-lock" => Some(icons::SOLID_ROAD_LOCK),
         #[cfg(feature = "solid")]
         "solid/road-spikes" => Some(icons::SOLID_ROAD_SPIKES),
+        #[cfg(feature = "brands")]
+        "brands/roblox-creator-studio" => Some(icons::BRANDS_ROBLOX_CREATOR_STUDIO),
         #[cfg(feature = "solid")]
         "solid/robot" => Some(icons::SOLID_ROBOT),
         #[cfg(feature = "solid")]
@@ -337,6 +355,8 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "brands/rocketchat" => Some(icons::BRANDS_ROCKETCHAT),
         #[cfg(feature = "brands")]
         "brands/rockrms" => Some(icons::BRANDS_ROCKRMS),
+        #[cfg(feature = "brands")]
+        "brands/ror" => Some(icons::BRANDS_ROR),
         #[cfg(feature = "solid")]
         "solid/rotate" => Some(icons::SOLID_ROTATE),
         #[cfg(feature = "solid")]
@@ -385,26 +405,6 @@ pub(super) fn find_part_7(slug: &str) -> Option<Icon> {
         "solid/satellite" => Some(icons::SOLID_SATELLITE),
         #[cfg(feature = "solid")]
         "solid/satellite-dish" => Some(icons::SOLID_SATELLITE_DISH),
-        #[cfg(feature = "solid")]
-        "solid/scale-balanced" => Some(icons::SOLID_SCALE_BALANCED),
-        #[cfg(feature = "solid")]
-        "solid/scale-unbalanced" => Some(icons::SOLID_SCALE_UNBALANCED),
-        #[cfg(feature = "solid")]
-        "solid/scale-unbalanced-flip" => Some(icons::SOLID_SCALE_UNBALANCED_FLIP),
-        #[cfg(feature = "brands")]
-        "brands/scaleway" => Some(icons::BRANDS_SCALEWAY),
-        #[cfg(feature = "brands")]
-        "brands/schlix" => Some(icons::BRANDS_SCHLIX),
-        #[cfg(feature = "solid")]
-        "solid/school" => Some(icons::SOLID_SCHOOL),
-        #[cfg(feature = "solid")]
-        "solid/school-circle-check" => Some(icons::SOLID_SCHOOL_CIRCLE_CHECK),
-        #[cfg(feature = "solid")]
-        "solid/school-circle-exclamation" => Some(icons::SOLID_SCHOOL_CIRCLE_EXCLAMATION),
-        #[cfg(feature = "solid")]
-        "solid/school-circle-xmark" => Some(icons::SOLID_SCHOOL_CIRCLE_XMARK),
-        #[cfg(feature = "solid")]
-        "solid/school-flag" => Some(icons::SOLID_SCHOOL_FLAG),
         _ => None,
     }
 }

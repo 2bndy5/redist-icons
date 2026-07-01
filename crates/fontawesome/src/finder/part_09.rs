@@ -3,6 +3,28 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "brands")]
+        "brands/steam" => Some(icons::BRANDS_STEAM),
+        #[cfg(feature = "brands")]
+        "brands/steam-symbol" => Some(icons::BRANDS_STEAM_SYMBOL),
+        #[cfg(feature = "solid")]
+        "solid/sterling-sign" => Some(icons::SOLID_STERLING_SIGN),
+        #[cfg(feature = "solid")]
+        "solid/stethoscope" => Some(icons::SOLID_STETHOSCOPE),
+        #[cfg(feature = "brands")]
+        "brands/sticker-mule" => Some(icons::BRANDS_STICKER_MULE),
+        #[cfg(feature = "solid")]
+        "solid/stop" => Some(icons::SOLID_STOP),
+        #[cfg(feature = "solid")]
+        "solid/stopwatch" => Some(icons::SOLID_STOPWATCH),
+        #[cfg(feature = "solid")]
+        "solid/stopwatch-20" => Some(icons::SOLID_STOPWATCH_20),
+        #[cfg(feature = "solid")]
+        "solid/store" => Some(icons::SOLID_STORE),
+        #[cfg(feature = "solid")]
+        "solid/store-slash" => Some(icons::SOLID_STORE_SLASH),
+        #[cfg(feature = "brands")]
+        "brands/strava" => Some(icons::BRANDS_STRAVA),
         #[cfg(feature = "solid")]
         "solid/street-view" => Some(icons::SOLID_STREET_VIEW),
         #[cfg(feature = "solid")]
@@ -23,6 +45,8 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "brands/stumbleupon-circle" => Some(icons::BRANDS_STUMBLEUPON_CIRCLE),
         #[cfg(feature = "solid")]
         "solid/subscript" => Some(icons::SOLID_SUBSCRIPT),
+        #[cfg(feature = "brands")]
+        "brands/substack" => Some(icons::BRANDS_SUBSTACK),
         #[cfg(feature = "solid")]
         "solid/suitcase" => Some(icons::SOLID_SUITCASE),
         #[cfg(feature = "solid")]
@@ -149,6 +173,8 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "solid/tents" => Some(icons::SOLID_TENTS),
         #[cfg(feature = "solid")]
         "solid/terminal" => Some(icons::SOLID_TERMINAL),
+        #[cfg(feature = "brands")]
+        "brands/tesla" => Some(icons::BRANDS_TESLA),
         #[cfg(feature = "brands")]
         "brands/tex" => Some(icons::BRANDS_TEX),
         #[cfg(feature = "solid")]
@@ -379,32 +405,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "solid/user" => Some(icons::SOLID_USER),
         #[cfg(feature = "regular")]
         "regular/user" => Some(icons::REGULAR_USER),
-        #[cfg(feature = "solid")]
-        "solid/user-astronaut" => Some(icons::SOLID_USER_ASTRONAUT),
-        #[cfg(feature = "solid")]
-        "solid/user-check" => Some(icons::SOLID_USER_CHECK),
-        #[cfg(feature = "solid")]
-        "solid/user-clock" => Some(icons::SOLID_USER_CLOCK),
-        #[cfg(feature = "solid")]
-        "solid/user-doctor" => Some(icons::SOLID_USER_DOCTOR),
-        #[cfg(feature = "solid")]
-        "solid/user-gear" => Some(icons::SOLID_USER_GEAR),
-        #[cfg(feature = "solid")]
-        "solid/user-graduate" => Some(icons::SOLID_USER_GRADUATE),
-        #[cfg(feature = "solid")]
-        "solid/user-group" => Some(icons::SOLID_USER_GROUP),
-        #[cfg(feature = "solid")]
-        "solid/user-injured" => Some(icons::SOLID_USER_INJURED),
-        #[cfg(feature = "solid")]
-        "solid/user-lock" => Some(icons::SOLID_USER_LOCK),
-        #[cfg(feature = "solid")]
-        "solid/user-minus" => Some(icons::SOLID_USER_MINUS),
-        #[cfg(feature = "solid")]
-        "solid/user-ninja" => Some(icons::SOLID_USER_NINJA),
-        #[cfg(feature = "solid")]
-        "solid/user-nurse" => Some(icons::SOLID_USER_NURSE),
-        #[cfg(feature = "solid")]
-        "solid/user-pen" => Some(icons::SOLID_USER_PEN),
         _ => None,
     }
 }

@@ -4,6 +4,18 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_FILTER", icons::SOLID_FILTER)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_FILTER_CIRCLE_DOLLAR",
+        icons::SOLID_FILTER_CIRCLE_DOLLAR,
+    )?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_FILTER_CIRCLE_XMARK",
+        icons::SOLID_FILTER_CIRCLE_XMARK,
+    )?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_FINGERPRINT", icons::SOLID_FINGERPRINT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_FIRE", icons::SOLID_FIRE)?;
@@ -430,11 +442,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
         "SOLID_HEART_CIRCLE_EXCLAMATION",
         icons::SOLID_HEART_CIRCLE_EXCLAMATION,
     )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_CIRCLE_MINUS", icons::SOLID_HEART_CIRCLE_MINUS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_CIRCLE_PLUS", icons::SOLID_HEART_CIRCLE_PLUS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_CIRCLE_XMARK", icons::SOLID_HEART_CIRCLE_XMARK)?;
     Ok(())
 }

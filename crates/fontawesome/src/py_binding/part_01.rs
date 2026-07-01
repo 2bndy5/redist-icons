@@ -118,6 +118,8 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_BUG_SLASH", icons::SOLID_BUG_SLASH)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_BUGS", icons::SOLID_BUGS)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_BUILD_AWESOME", icons::BRANDS_BUILD_AWESOME)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_BUILDING", icons::SOLID_BUILDING)?;
     #[cfg(feature = "regular")]
@@ -446,7 +448,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_CIRCLE_DOT", icons::SOLID_CIRCLE_DOT)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_CIRCLE_DOT", icons::REGULAR_CIRCLE_DOT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_CIRCLE_DOWN", icons::SOLID_CIRCLE_DOWN)?;
     Ok(())
 }

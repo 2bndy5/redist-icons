@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("PAUSE_16", icons::PAUSE_16)?;
     m.add("SMILEY_FROWN_16", icons::SMILEY_FROWN_16)?;
     m.add("PAPER_AIRPLANE_16", icons::PAPER_AIRPLANE_16)?;
     m.add("X_16", icons::X_16)?;
@@ -55,6 +56,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("TERMINAL_24", icons::TERMINAL_24)?;
     m.add("PAPERCLIP_24", icons::PAPERCLIP_24)?;
     m.add("TRIANGLE_UP_24", icons::TRIANGLE_UP_24)?;
+    m.add("VIEW_FILES_24", icons::VIEW_FILES_24)?;
     m.add("FILE_16", icons::FILE_16)?;
     m.add("REPORT_16", icons::REPORT_16)?;
     m.add("UNDO_16", icons::UNDO_16)?;
@@ -123,6 +125,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("GOAL_24", icons::GOAL_24)?;
     m.add("DEVICES_24", icons::DEVICES_24)?;
     m.add("FILE_BINARY_16", icons::FILE_BINARY_16)?;
+    m.add("PROJECT_CHECK_24", icons::PROJECT_CHECK_24)?;
     m.add("FLOWCHART_24", icons::FLOWCHART_24)?;
     m.add("CODESCAN_16", icons::CODESCAN_16)?;
     m.add("GIT_BRANCH_CHECK_16", icons::GIT_BRANCH_CHECK_16)?;
@@ -218,8 +221,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BEAKER_24", icons::BEAKER_24)?;
     m.add("SMILEY_16", icons::SMILEY_16)?;
     m.add("REPO_DELETED_16", icons::REPO_DELETED_16)?;
-    m.add("X_CIRCLE_FILL_24", icons::X_CIRCLE_FILL_24)?;
-    m.add("FEED_HEART_16", icons::FEED_HEART_16)?;
-    m.add("COPILOT_ERROR_16", icons::COPILOT_ERROR_16)?;
     Ok(())
 }

@@ -3,6 +3,16 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_LYFT", icons::BRANDS_LYFT)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_M", icons::SOLID_M)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_MAGENTO", icons::BRANDS_MAGENTO)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MAGNET", icons::SOLID_MAGNET)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_MAGNIFYING_GLASS", icons::SOLID_MAGNIFYING_GLASS)?;
     #[cfg(feature = "solid")]
     m.add(
         "SOLID_MAGNIFYING_GLASS_ARROW_RIGHT",
@@ -92,6 +102,10 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_MASKS_THEATER", icons::SOLID_MASKS_THEATER)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_MASTODON", icons::BRANDS_MASTODON)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_MATRIX", icons::BRANDS_MATRIX)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_MATTERMOST", icons::BRANDS_MATTERMOST)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_MATTRESS_PILLOW", icons::SOLID_MATTRESS_PILLOW)?;
     #[cfg(feature = "brands")]
@@ -258,6 +272,8 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_NEWSPAPER", icons::SOLID_NEWSPAPER)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_NEWSPAPER", icons::REGULAR_NEWSPAPER)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_NEXTCLOUD", icons::BRANDS_NEXTCLOUD)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_NFC_DIRECTIONAL", icons::BRANDS_NFC_DIRECTIONAL)?;
     #[cfg(feature = "brands")]
@@ -426,30 +442,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_PERBYTE", icons::BRANDS_PERBYTE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_PERCENT", icons::SOLID_PERCENT)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_PERISCOPE", icons::BRANDS_PERISCOPE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON", icons::SOLID_PERSON)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_ARROW_DOWN_TO_LINE",
-        icons::SOLID_PERSON_ARROW_DOWN_TO_LINE,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_ARROW_UP_FROM_LINE",
-        icons::SOLID_PERSON_ARROW_UP_FROM_LINE,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_BIKING", icons::SOLID_PERSON_BIKING)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_BOOTH", icons::SOLID_PERSON_BOOTH)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_PERSON_BREASTFEEDING",
-        icons::SOLID_PERSON_BREASTFEEDING,
-    )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERSON_BURST", icons::SOLID_PERSON_BURST)?;
     Ok(())
 }

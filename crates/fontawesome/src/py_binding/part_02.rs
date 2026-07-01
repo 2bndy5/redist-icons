@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "solid")]
+    m.add("SOLID_CIRCLE_DOWN", icons::SOLID_CIRCLE_DOWN)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_CIRCLE_DOWN", icons::REGULAR_CIRCLE_DOWN)?;
     #[cfg(feature = "solid")]
@@ -159,6 +161,8 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_CODE_MERGE", icons::SOLID_CODE_MERGE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CODE_PULL_REQUEST", icons::SOLID_CODE_PULL_REQUEST)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_CODEBERG", icons::BRANDS_CODEBERG)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_CODEPEN", icons::BRANDS_CODEPEN)?;
     #[cfg(feature = "brands")]
@@ -368,6 +372,8 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_DEV", icons::BRANDS_DEV)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_DEVIANTART", icons::BRANDS_DEVIANTART)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_DEVPOST", icons::BRANDS_DEVPOST)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_DHARMACHAKRA", icons::SOLID_DHARMACHAKRA)?;
     #[cfg(feature = "brands")]
@@ -454,11 +460,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_DOWNLOAD", icons::SOLID_DOWNLOAD)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_DRAFT2DIGITAL", icons::BRANDS_DRAFT2DIGITAL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DRAGON", icons::SOLID_DRAGON)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DRAW_POLYGON", icons::SOLID_DRAW_POLYGON)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_DRIBBBLE", icons::BRANDS_DRIBBBLE)?;
     Ok(())
 }

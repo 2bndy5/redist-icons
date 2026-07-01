@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_VODAFONE", icons::SI_VODAFONE)?;
+    m.add("SI_SCROLLREVEAL", icons::SI_SCROLLREVEAL)?;
+    m.add("SI_BILIBILI", icons::SI_BILIBILI)?;
     m.add("SI_VISUALPARADIGM", icons::SI_VISUALPARADIGM)?;
     m.add("SI_SMRT", icons::SI_SMRT)?;
     m.add("SI_GRAFANA", icons::SI_GRAFANA)?;
@@ -196,12 +199,9 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CREATEREACTAPP", icons::SI_CREATEREACTAPP)?;
     m.add("SI_GNUSOCIAL", icons::SI_GNUSOCIAL)?;
     m.add("SI_RHINOCEROS", icons::SI_RHINOCEROS)?;
+    m.add("SI_TANGLED", icons::SI_TANGLED)?;
     m.add("SI_DATTO", icons::SI_DATTO)?;
     m.add("SI_CHEVROLET", icons::SI_CHEVROLET)?;
     m.add("SI_STARTDOTGG", icons::SI_STARTDOTGG)?;
-    m.add("SI_HP", icons::SI_HP)?;
-    m.add("SI_VIVINO", icons::SI_VIVINO)?;
-    m.add("SI_SHANGHAIMETRO", icons::SI_SHANGHAIMETRO)?;
-    m.add("SI_LIVEKIT", icons::SI_LIVEKIT)?;
     Ok(())
 }

@@ -3,6 +3,28 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_STEAM", icons::BRANDS_STEAM)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_STEAM_SYMBOL", icons::BRANDS_STEAM_SYMBOL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STERLING_SIGN", icons::SOLID_STERLING_SIGN)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STETHOSCOPE", icons::SOLID_STETHOSCOPE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_STICKER_MULE", icons::BRANDS_STICKER_MULE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STOP", icons::SOLID_STOP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STOPWATCH", icons::SOLID_STOPWATCH)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STOPWATCH_20", icons::SOLID_STOPWATCH_20)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STORE", icons::SOLID_STORE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STORE_SLASH", icons::SOLID_STORE_SLASH)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_STRAVA", icons::BRANDS_STRAVA)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_STREET_VIEW", icons::SOLID_STREET_VIEW)?;
     #[cfg(feature = "solid")]
@@ -26,6 +48,8 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SUBSCRIPT", icons::SOLID_SUBSCRIPT)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_SUBSTACK", icons::BRANDS_SUBSTACK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SUITCASE", icons::SOLID_SUITCASE)?;
     #[cfg(feature = "solid")]
@@ -188,6 +212,8 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_TENTS", icons::SOLID_TENTS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_TERMINAL", icons::SOLID_TERMINAL)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_TESLA", icons::BRANDS_TESLA)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_TEX", icons::BRANDS_TEX)?;
     #[cfg(feature = "solid")]
@@ -425,31 +451,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_USER", icons::SOLID_USER)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_USER", icons::REGULAR_USER)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_ASTRONAUT", icons::SOLID_USER_ASTRONAUT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_CHECK", icons::SOLID_USER_CHECK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_CLOCK", icons::SOLID_USER_CLOCK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_DOCTOR", icons::SOLID_USER_DOCTOR)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_GEAR", icons::SOLID_USER_GEAR)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_GRADUATE", icons::SOLID_USER_GRADUATE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_GROUP", icons::SOLID_USER_GROUP)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_INJURED", icons::SOLID_USER_INJURED)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_LOCK", icons::SOLID_USER_LOCK)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_MINUS", icons::SOLID_USER_MINUS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_NINJA", icons::SOLID_USER_NINJA)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_NURSE", icons::SOLID_USER_NURSE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER_PEN", icons::SOLID_USER_PEN)?;
     Ok(())
 }

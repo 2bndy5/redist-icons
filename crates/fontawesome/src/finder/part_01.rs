@@ -103,6 +103,8 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "solid/bug-slash" => Some(icons::SOLID_BUG_SLASH),
         #[cfg(feature = "solid")]
         "solid/bugs" => Some(icons::SOLID_BUGS),
+        #[cfg(feature = "brands")]
+        "brands/build-awesome" => Some(icons::BRANDS_BUILD_AWESOME),
         #[cfg(feature = "solid")]
         "solid/building" => Some(icons::SOLID_BUILDING),
         #[cfg(feature = "regular")]
@@ -401,8 +403,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "solid/circle-dot" => Some(icons::SOLID_CIRCLE_DOT),
         #[cfg(feature = "regular")]
         "regular/circle-dot" => Some(icons::REGULAR_CIRCLE_DOT),
-        #[cfg(feature = "solid")]
-        "solid/circle-down" => Some(icons::SOLID_CIRCLE_DOWN),
         _ => None,
     }
 }
