@@ -30,6 +30,7 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "aftership" => Some(icons::SI_AFTERSHIP),
         "rumble" => Some(icons::SI_RUMBLE),
         "fcc" => Some(icons::SI_FCC),
+        "glass" => Some(icons::SI_GLASS),
         "openscad" => Some(icons::SI_OPENSCAD),
         "wgpu" => Some(icons::SI_WGPU),
         "500px" => Some(icons::SI_500PX),
@@ -202,7 +203,6 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "maildotcom" => Some(icons::SI_MAILDOTCOM),
         "teamviewer" => Some(icons::SI_TEAMVIEWER),
         "nanostores" => Some(icons::SI_NANOSTORES),
-        "jsdelivr" => Some(icons::SI_JSDELIVR),
         _ => None,
     }
 }

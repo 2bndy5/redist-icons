@@ -10,7 +10,7 @@
   },
   "imports": {
     "@std/fs": "jsr:@std/fs@1.0.24",
-    "@std/path": "jsr:@std/path@1.1.5",
+    "@std/path": "jsr:@std/path@1.1.6",
     "svgo": "npm:svgo@4.0.1",
     "common": "./common/mod.ts"
   },

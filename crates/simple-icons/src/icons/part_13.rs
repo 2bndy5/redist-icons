@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// langchain
+pub const SI_LANGCHAIN: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LangChain</title><path d="M13.796 0a6.93 6.93 0 0 0-4.91 2.019L5.451 5.455l3.273 3.27 3.432-3.432a2.284 2.284 0 0 1 3.277 0 2.28 2.28 0 0 1 0 3.275L12 12.001l3.273 3.273 3.433-3.435c2.692-2.692 2.692-7.127 0-9.82A6.92 6.92 0 0 0 13.796 0m-5.07 8.728-3.433 3.434c-2.692 2.693-2.692 7.126 0 9.819A6.92 6.92 0 0 0 10.203 24a6.93 6.93 0 0 0 4.911-2.02l3.432-3.432-3.271-3.272-3.433 3.433a2.284 2.284 0 0 1-3.277 0 2.28 2.28 0 0 1 0-3.276L12 12z"/></svg>"##,
+    slug: "langchain",
+    title: "LangChain",
+    hex: "7FC8FF",
+    source: "https://www.langchain.com/langchain",
+    guidelines: None,
+    license: None,
+};
+
 /// apachepulsar
 pub const SI_APACHEPULSAR: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Apache Pulsar</title><path d="M24 8.925h-5.866c-1.586-3.041-3.262-5.402-5.544-5.402-2.97 0-4.367 2.593-5.717 5.115l-.118.22H0v1.5h3.934c1.39 0 1.673.468 1.673.468-1.09 1.691-2.4 3.363-4.584 3.363H0v1.574h1.03c4.234 0 6.083-3.434 7.567-6.193 1.361-2.541 2.31-4.08 3.993-4.08 1.747 0 3.584 3.801 5.201 7.157.237.488.477.988.72 1.483-6.2.197-9.155 1.649-11.559 2.833-1.759.866-3.147 1.94-5.433 1.94H0v1.574h1.507c2.754 0 4.47-.85 6.295-1.751 2.53-1.243 5.398-2.652 12.157-2.652h3.907V14.5H21.66a1.18 1.18 0 01-.972-.393 70.83 70.83 0 01-1.133-2.321l-.511-1.047s.366-.393 1.38-.393H24Z"/></svg>"##,
@@ -2195,16 +2206,5 @@ pub const SI_SUCKLESS: Icon = Icon {
     hex: "1177AA",
     source: "https://suckless.org",
     guidelines: None,
-    license: None,
-};
-
-/// x
-pub const SI_X: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>"##,
-    slug: "x",
-    title: "X",
-    hex: "000000",
-    source: "https://x.com",
-    guidelines: Some("https://about.x.com/en/who-we-are/brand-toolkit"),
     license: None,
 };

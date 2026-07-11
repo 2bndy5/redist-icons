@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_X", icons::SI_X)?;
     m.add("SI_INTELLIJIDEA", icons::SI_INTELLIJIDEA)?;
     m.add("SI_GOOGLEBIGQUERY", icons::SI_GOOGLEBIGQUERY)?;
     m.add("SI_SUBSTACK", icons::SI_SUBSTACK)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SEMRUSH", icons::SI_SEMRUSH)?;
     m.add("SI_BYJUS", icons::SI_BYJUS)?;
     m.add("SI_MINIO", icons::SI_MINIO)?;
-    m.add("SI_ARKECOSYSTEM", icons::SI_ARKECOSYSTEM)?;
     Ok(())
 }

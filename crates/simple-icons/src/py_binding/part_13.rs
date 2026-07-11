@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_LANGCHAIN", icons::SI_LANGCHAIN)?;
     m.add("SI_APACHEPULSAR", icons::SI_APACHEPULSAR)?;
     m.add("SI_XERO", icons::SI_XERO)?;
     m.add("SI_PRIMEREACT", icons::SI_PRIMEREACT)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FORTRAN", icons::SI_FORTRAN)?;
     m.add("SI_LEPTOS", icons::SI_LEPTOS)?;
     m.add("SI_SUCKLESS", icons::SI_SUCKLESS)?;
-    m.add("SI_X", icons::SI_X)?;
     Ok(())
 }

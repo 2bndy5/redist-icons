@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// x
+pub const SI_X: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>"##,
+    slug: "x",
+    title: "X",
+    hex: "000000",
+    source: "https://x.com",
+    guidelines: Some("https://about.x.com/en/who-we-are/brand-toolkit"),
+    license: None,
+};
+
 /// intellijidea
 pub const SI_INTELLIJIDEA: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>IntelliJ IDEA</title><path d="M0 0v24h24V0zm3.723 3.111h5v1.834h-1.39v6.277h1.39v1.834h-5v-1.834h1.444V4.945H3.723zm11.055 0H17v6.5c0 .612-.055 1.111-.222 1.556-.167.444-.39.777-.723 1.11-.277.279-.666.557-1.11.668a3.933 3.933 0 0 1-1.445.278c-.778 0-1.444-.167-1.944-.445a4.81 4.81 0 0 1-1.279-1.056l1.39-1.555c.277.334.555.555.833.722.277.167.611.278.945.278.389 0 .721-.111 1-.389.221-.278.333-.667.333-1.278zM2.222 19.5h9V21h-9z"/></svg>"##,
@@ -2189,16 +2200,5 @@ pub const SI_MINIO: Icon = Icon {
     hex: "C72E49",
     source: "https://min.io",
     guidelines: Some("https://min.io/logo"),
-    license: None,
-};
-
-/// arkecosystem
-pub const SI_ARKECOSYSTEM: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>ARK Ecosystem</title><path d="M1.8 0C.806 0 0 .805 0 1.8v20.4c0 .995.805 1.8 1.8 1.8h20.4c.995 0 1.8-.805 1.8-1.8V1.8c0-.995-.805-1.8-1.8-1.8H1.8zm10.223 4.39l9.29 15.098-9.29-9.82-9.351 9.82 9.351-15.097zm0 7.583l1.633 1.691h-3.285l1.652-1.691zM9.31 14.762h5.41l1.496 1.574H7.813l1.496-1.574z"/></svg>"##,
-    slug: "arkecosystem",
-    title: "ARK Ecosystem",
-    hex: "C9292C",
-    source: "https://ark.io",
-    guidelines: None,
     license: None,
 };

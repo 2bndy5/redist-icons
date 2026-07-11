@@ -33,6 +33,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_AFTERSHIP", icons::SI_AFTERSHIP)?;
     m.add("SI_RUMBLE", icons::SI_RUMBLE)?;
     m.add("SI_FCC", icons::SI_FCC)?;
+    m.add("SI_GLASS", icons::SI_GLASS)?;
     m.add("SI_OPENSCAD", icons::SI_OPENSCAD)?;
     m.add("SI_WGPU", icons::SI_WGPU)?;
     m.add("SI_500PX", icons::SI_500PX)?;
@@ -211,6 +212,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MAILDOTCOM", icons::SI_MAILDOTCOM)?;
     m.add("SI_TEAMVIEWER", icons::SI_TEAMVIEWER)?;
     m.add("SI_NANOSTORES", icons::SI_NANOSTORES)?;
-    m.add("SI_JSDELIVR", icons::SI_JSDELIVR)?;
     Ok(())
 }
