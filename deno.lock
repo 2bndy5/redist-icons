@@ -5,15 +5,15 @@
     "jsr:@std/fmt@1.0.10": "1.0.10",
     "jsr:@std/fs@1.0.24": "1.0.24",
     "jsr:@std/internal@^1.0.14": "1.0.14",
-    "jsr:@std/path@1.1.5": "1.1.5",
-    "jsr:@std/path@^1.1.5": "1.1.5",
+    "jsr:@std/path@1.1.6": "1.1.6",
+    "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/toml@1.0.11": "1.0.11",
     "npm:@fortawesome/fontawesome-free@7.3.0": "7.3.0",
     "npm:@mdi/svg@7.4.47": "7.4.47",
-    "npm:@primer/octicons@19.29.1": "19.29.1",
+    "npm:@primer/octicons@19.29.2": "19.29.2",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
-    "npm:simple-icons@16.24.1": "16.24.1",
+    "npm:simple-icons@16.25.0": "16.25.0",
     "npm:svgo@4.0.1": "4.0.1",
     "npm:which@7.0.0": "7.0.0"
   },
@@ -46,8 +46,8 @@
     "@std/internal@1.0.14": {
       "integrity": "291516b3d4c35024d6ffbc0a9df5bf4c64116e05b50012cf846710152d2ffdf7"
     },
-    "@std/path@1.1.5": {
-      "integrity": "ccea00982ea28c36becaf6e62f855406c76a8c32d462f66f415bbb7d83a271bc",
+    "@std/path@1.1.6": {
+      "integrity": "c68485c2a4dfbb5ae3cc74fae4e8c4e5d874cf8a8ed12927917235c758b46cbe",
       "dependencies": [
         "jsr:@std/internal"
       ]
@@ -66,8 +66,8 @@
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
     },
-    "@primer/octicons@19.29.1": {
-      "integrity": "sha512-XVRArUP8bN+IEjfNQSquXAJinVqAWRx36sVvhN5VzC+gOLfbx16EfFFvcFhSVaqQJ+57PjBrbj75oqm8VlOoYQ==",
+    "@primer/octicons@19.29.2": {
+      "integrity": "sha512-n7zuEgzTz70m5dmBqpYuE8zpeLKxgf73OeDudQWByNzIwWLb0I/UlxqdCLkk6Qb338O7em0aNuhVfExNBVCfTQ==",
       "dependencies": [
         "object-assign"
       ]
@@ -172,8 +172,8 @@
     "sax@1.5.0": {
       "integrity": "sha512-21IYA3Q5cQf089Z6tgaUTr7lDAyzoTPx5HRtbhsME8Udispad8dC/+sziTNugOEx54ilvatQ9YCzl4KQLPcRHA=="
     },
-    "simple-icons@16.24.1": {
-      "integrity": "sha512-AnDQPrZAVzYSym7cBVIrnbhLk9auWGgkl+9hKvkbTqGEfH6TU7WKgumEXYYaJuM1Ib87+cnzr881UZniCM7t+A=="
+    "simple-icons@16.25.0": {
+      "integrity": "sha512-ReYPfbqjkTBovxjerHw2tf6E1rQdaCqNJKaJbd78Mui8w+78xQlE1aDO/2ekID++n8qa+1t+oaueYLeiSoQsIA=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -205,7 +205,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/fs@1.0.24",
-      "jsr:@std/path@1.1.5",
+      "jsr:@std/path@1.1.6",
       "npm:svgo@4.0.1"
     ],
     "members": {
@@ -229,12 +229,12 @@
       },
       "crates/octicons": {
         "dependencies": [
-          "npm:@primer/octicons@19.29.1"
+          "npm:@primer/octicons@19.29.2"
         ]
       },
       "crates/simple-icons": {
         "dependencies": [
-          "npm:simple-icons@16.24.1"
+          "npm:simple-icons@16.25.0"
         ]
       }
     }
