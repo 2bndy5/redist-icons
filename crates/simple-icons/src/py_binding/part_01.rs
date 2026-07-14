@@ -115,6 +115,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_KEEWEB", icons::SI_KEEWEB)?;
     m.add("SI_SYMPY", icons::SI_SYMPY)?;
     m.add("SI_RACKET", icons::SI_RACKET)?;
+    m.add("SI_ZDOTAI", icons::SI_ZDOTAI)?;
     m.add("SI_LINUXMINT", icons::SI_LINUXMINT)?;
     m.add("SI_CLICKUP", icons::SI_CLICKUP)?;
     m.add("SI_RIDER", icons::SI_RIDER)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TMUX", icons::SI_TMUX)?;
     m.add("SI_BOULANGER", icons::SI_BOULANGER)?;
     m.add("SI_UNACADEMY", icons::SI_UNACADEMY)?;
-    m.add("SI_NSIS", icons::SI_NSIS)?;
     Ok(())
 }

@@ -1,6 +1,28 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// vuetify
+pub const SI_VUETIFY: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Vuetify</title><path d="M6.312 12.564 12.636 1.2H0l6.312 11.364ZM14.94 1.2 7.464 14.64 12 22.8 24 1.2h-9.06Zm4.98 2.4L12 17.856l-1.788-3.216L16.344 3.6h3.576ZM6.312 7.62 4.08 3.6h4.476L6.312 7.62Z"/></svg>"##,
+    slug: "vuetify",
+    title: "Vuetify",
+    hex: "1867C0",
+    source: "https://vuetifyjs.com/resources/brand-kit",
+    guidelines: Some("https://vuetifyjs.com/resources/brand-kit"),
+    license: Some("MIT"),
+};
+
+/// cairometro
+pub const SI_CAIROMETRO: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Cairo Metro</title><path d="M12.397 4.14h.882v.881h-.882zm-1.628 0h.883v.881h-.883zm4.915 1.055v3.402h-1.386V5.195h-.84v1.763h-2.983V5.196h-.84v3.402H8.543v.84h1.911V7.82h2.983v1.617h5.44V5.195zm2.352 3.395h-1.512V6.028h1.512zM5.173 5.195v2.604h2.353v.805H5.173v.833h3.193V5.195zm2.339 1.757H5.999v-.924h1.513zm-2.64 12.177V9.726h4.175L12 12.68l2.954-2.953h4.176v9.403h-4.176v-3.442L12 18.754l-2.952-3.048v3.424zM12 0L8.485 3.515h-4.97v4.97L0 12l3.515 3.515v4.97h4.97L12 24l3.515-3.515h4.97v-4.97L24 12l-3.515-3.515v-4.97h-4.97zm0 1.708l3.014 3.015h4.263v4.263L22.292 12l-3.015 3.014v4.263h-4.263L12 22.292l-3.014-3.015H4.723v-4.263L1.708 12l3.015-3.014V4.723h4.263Z"/></svg>"##,
+    slug: "cairometro",
+    title: "Cairo Metro",
+    hex: "C10C0C",
+    source: "https://en.wikipedia.org/wiki/File:Cairo_metro_logo2012.svg",
+    guidelines: None,
+    license: None,
+};
+
 /// jellyfin
 pub const SI_JELLYFIN: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Jellyfin</title><path d="M12 .002C8.826.002-1.398 18.537.16 21.666c1.56 3.129 22.14 3.094 23.682 0C25.384 18.573 15.177 0 12 0zm7.76 18.949c-1.008 2.028-14.493 2.05-15.514 0C3.224 16.9 9.92 4.755 12.003 4.755c2.081 0 8.77 12.166 7.759 14.196zM12 9.198c-1.054 0-4.446 6.15-3.93 7.189.518 1.04 7.348 1.027 7.86 0 .511-1.027-2.874-7.19-3.93-7.19z"/></svg>"##,
@@ -2187,28 +2209,6 @@ pub const SI_BOOKSTACK: Icon = Icon {
     title: "BookStack",
     hex: "0288D1",
     source: "https://www.bookstackapp.com",
-    guidelines: None,
-    license: None,
-};
-
-/// 4chan
-pub const SI_4CHAN: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>4chan</title><path d="M11.07 8.82S9.803 1.079 5.145 1.097C2.006 1.109.78 4.124 3.055 4.802c0 0-2.698.973-2.698 2.697 0 1.725 4.274 3.54 10.713 1.32zm1.931 5.924s.904 7.791 5.558 7.991c3.136.135 4.503-2.82 2.262-3.604 0 0 2.74-.845 2.82-2.567.08-1.723-4.105-3.737-10.64-1.82zm-3.672-1.55s-7.532 2.19-6.952 6.813c.39 3.114 3.53 3.969 3.93 1.63 0 0 1.29 2.559 3.002 2.351 1.712-.208 3-4.67.02-10.794zm5.623-2.467s7.727-1.35 7.66-6.008c-.046-3.138-3.074-4.333-3.728-2.051 0 0-1-2.686-2.726-2.668-1.724.018-3.494 4.312-1.206 10.727z"/></svg>"##,
-    slug: "4chan",
-    title: "4chan",
-    hex: "006600",
-    source: "https://www.4chan.org",
-    guidelines: None,
-    license: None,
-};
-
-/// klook
-pub const SI_KLOOK: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Klook</title><path d="M4.8 0A4.79 4.79 0 0 0 0 4.8v14.4C0 21.86 2.14 24 4.8 24h14.4c2.66 0 4.8-2.14 4.8-4.8V4.8C24 2.14 21.86 0 19.2 0H4.8zM12 3.449v.001c4.242 0 7.833 1.904 7.833 6.17 0 2.932-3.86 7.815-6.164 10.164-.99 1.008-2.32 1.036-3.338 0-2.303-2.349-6.164-7.232-6.164-10.164 0-4.162 3.476-6.171 7.833-6.171zm3.54 2.155l-5.05 4.96 5.05 4.956a1.84 1.84 0 0 0 0-2.634v-.001l-2.366-2.323 2.366-2.323a1.84 1.84 0 0 0 0-2.635zm-7.349.144v9.772a1.86 1.86 0 0 0 1.868-1.852V7.602a1.86 1.86 0 0 0-1.866-1.854h-.002z"/></svg>"##,
-    slug: "klook",
-    title: "Klook",
-    hex: "FF5722",
-    source: "https://www.klook.com/en-GB/newsroom/",
     guidelines: None,
     license: None,
 };

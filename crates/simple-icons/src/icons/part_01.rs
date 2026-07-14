@@ -1235,6 +1235,17 @@ pub const SI_RACKET: Icon = Icon {
     license: None,
 };
 
+/// zdotai
+pub const SI_ZDOTAI: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Z.ai</title><path d="M12.606 1.806l-1.677 2.388c-0.258 0.374-0.697 0.606-1.161 0.606h-9.162V1.794C0.594 1.806 12.606 1.806 12.606 1.806zM24 1.806L9.6 22.206 0 22.206 14.4 1.806zM11.394 22.206l1.69-2.4c0.258-0.374 0.697-0.606 1.161-0.606h9.149v3.006H11.394z"/></svg>"##,
+    slug: "zdotai",
+    title: "Z.ai",
+    hex: "2D2D2D",
+    source: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    guidelines: None,
+    license: None,
+};
+
 /// linuxmint
 pub const SI_LINUXMINT: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Linux Mint</title><path d="M5.438 5.906v8.438c0 2.06 1.69 3.75 3.75 3.75h5.625c2.06 0 3.75-1.69 3.75-3.75V9.656a2.827 2.827 0 0 0-2.813-2.812 2.8 2.8 0 0 0-1.875.737A2.8 2.8 0 0 0 12 6.844a2.827 2.827 0 0 0-2.812 2.812v4.688h1.875V9.656c0-.529.408-.937.937-.937s.938.408.938.937v4.688h1.875V9.656c0-.529.408-.937.937-.937s.938.408.938.937v4.688a1.86 1.86 0 0 1-1.875 1.875H9.188a1.86 1.86 0 0 1-1.875-1.875V5.906ZM12 0C5.384 0 0 5.384 0 12s5.384 12 12 12 12-5.384 12-12S18.616 0 12 0m0 1.875A10.11 10.11 0 0 1 22.125 12 10.11 10.11 0 0 1 12 22.125 10.11 10.11 0 0 1 1.875 12 10.11 10.11 0 0 1 12 1.875"/></svg>"##,
@@ -2188,17 +2199,6 @@ pub const SI_UNACADEMY: Icon = Icon {
     title: "Unacademy",
     hex: "08BD80",
     source: "https://unacademy.com",
-    guidelines: None,
-    license: None,
-};
-
-/// nsis
-pub const SI_NSIS: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>NSIS</title><path d="M13.736 24H24l-5.132-4.919L13.736 24Zm-6.021-5.064 5.133 4.918 5.132-4.919-10.265.001Zm-6.539-5.272v9.838l5.132-4.919-1.503-1.441-3.629-3.478Zm21.648-1.626-5.132 4.919 5.132 4.919v-9.838Zm-4.844 6.193-5.132-4.92-5.132 4.92H17.98ZM1.696 13.165l5.132 4.92 5.132-4.92H1.696Zm20.608-1.625H12.039l5.133 4.919 5.132-4.919ZM6.828 7.541l-5.132 4.92H11.96l-5.132-4.92Zm-5.652 4.421 5.132-4.919-5.132-4.919v9.838Zm21.128-1.127-5.132-4.92-5.133 4.92h10.265Zm-6.02-5.065H6.02l5.132 4.919 5.132-4.919Zm6.54-5.272-5.132 4.919 5.132 4.92V.498Zm-6.539 4.567L11.152.146 6.02 5.065h10.265ZM10.264 0H0l5.132 4.919L10.264 0Z"/></svg>"##,
-    slug: "nsis",
-    title: "NSIS",
-    hex: "01B0F0",
-    source: "https://github.com/idleberg/nsis-logo/blob/885ba2fd08a6ff450c6f7cbd675563b5df728d38/src/Logo/below%2024x24/mono-flat.svg",
     guidelines: None,
     license: None,
 };

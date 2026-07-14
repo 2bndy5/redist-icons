@@ -115,6 +115,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "keeweb" => Some(icons::SI_KEEWEB),
         "sympy" => Some(icons::SI_SYMPY),
         "racket" => Some(icons::SI_RACKET),
+        "zdotai" => Some(icons::SI_ZDOTAI),
         "linuxmint" => Some(icons::SI_LINUXMINT),
         "clickup" => Some(icons::SI_CLICKUP),
         "rider" => Some(icons::SI_RIDER),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "tmux" => Some(icons::SI_TMUX),
         "boulanger" => Some(icons::SI_BOULANGER),
         "unacademy" => Some(icons::SI_UNACADEMY),
-        "nsis" => Some(icons::SI_NSIS),
         _ => None,
     }
 }

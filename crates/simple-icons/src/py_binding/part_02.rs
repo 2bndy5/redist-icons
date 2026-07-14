@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_NSIS", icons::SI_NSIS)?;
     m.add("SI_OPENID", icons::SI_OPENID)?;
     m.add("SI_BACKBLAZE", icons::SI_BACKBLAZE)?;
     m.add("SI_LASTPASS", icons::SI_LASTPASS)?;
@@ -15,6 +16,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HOPPSCOTCH", icons::SI_HOPPSCOTCH)?;
     m.add("SI_PICARTODOTTV", icons::SI_PICARTODOTTV)?;
     m.add("SI_B4X", icons::SI_B4X)?;
+    m.add("SI_KIMI", icons::SI_KIMI)?;
     m.add("SI_IOBROKER", icons::SI_IOBROKER)?;
     m.add("SI_REMARK", icons::SI_REMARK)?;
     m.add("SI_FOLO", icons::SI_FOLO)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BLOCKBENCH", icons::SI_BLOCKBENCH)?;
     m.add("SI_REEBOK", icons::SI_REEBOK)?;
     m.add("SI_TURKISHAIRLINES", icons::SI_TURKISHAIRLINES)?;
-    m.add("SI_JET", icons::SI_JET)?;
-    m.add("SI_SPRINGBOOT", icons::SI_SPRINGBOOT)?;
     Ok(())
 }
