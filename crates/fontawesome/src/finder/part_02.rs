@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "regular")]
+        "regular/circle-dot" => Some(icons::REGULAR_CIRCLE_DOT),
         #[cfg(feature = "solid")]
         "solid/circle-down" => Some(icons::SOLID_CIRCLE_DOWN),
         #[cfg(feature = "regular")]
@@ -207,6 +209,8 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/cookie" => Some(icons::SOLID_COOKIE),
         #[cfg(feature = "solid")]
         "solid/cookie-bite" => Some(icons::SOLID_COOKIE_BITE),
+        #[cfg(feature = "brands")]
+        "brands/copilot" => Some(icons::BRANDS_COPILOT),
         #[cfg(feature = "solid")]
         "solid/copy" => Some(icons::SOLID_COPY),
         #[cfg(feature = "regular")]
@@ -385,6 +389,8 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "brands/docker" => Some(icons::BRANDS_DOCKER),
         #[cfg(feature = "solid")]
         "solid/dog" => Some(icons::SOLID_DOG),
+        #[cfg(feature = "brands")]
+        "brands/dolibarr" => Some(icons::BRANDS_DOLIBARR),
         #[cfg(feature = "solid")]
         "solid/dollar-sign" => Some(icons::SOLID_DOLLAR_SIGN),
         #[cfg(feature = "solid")]
@@ -401,12 +407,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "solid/down-left-and-up-right-to-center" => {
             Some(icons::SOLID_DOWN_LEFT_AND_UP_RIGHT_TO_CENTER)
         }
-        #[cfg(feature = "solid")]
-        "solid/down-long" => Some(icons::SOLID_DOWN_LONG),
-        #[cfg(feature = "solid")]
-        "solid/download" => Some(icons::SOLID_DOWNLOAD),
-        #[cfg(feature = "brands")]
-        "brands/draft2digital" => Some(icons::BRANDS_DRAFT2DIGITAL),
         _ => None,
     }
 }

@@ -30,6 +30,8 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
     m.add("SOLID_A", icons::SOLID_A)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_A11Y_PROJECT", icons::BRANDS_A11Y_PROJECT)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_ACCESSIBLE_ICON", icons::BRANDS_ACCESSIBLE_ICON)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_ACCUSOFT", icons::BRANDS_ACCUSOFT)?;
@@ -476,7 +478,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_BOOK", icons::SOLID_BOOK)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_BOOK_ATLAS", icons::SOLID_BOOK_ATLAS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_BOOK_BIBLE", icons::SOLID_BOOK_BIBLE)?;
     Ok(())
 }

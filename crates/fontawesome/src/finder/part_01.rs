@@ -4,6 +4,8 @@ use crate::{Icon, icons};
 pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "solid")]
+        "solid/book-bible" => Some(icons::SOLID_BOOK_BIBLE),
+        #[cfg(feature = "solid")]
         "solid/book-bookmark" => Some(icons::SOLID_BOOK_BOOKMARK),
         #[cfg(feature = "solid")]
         "solid/book-journal-whills" => Some(icons::SOLID_BOOK_JOURNAL_WHILLS),
@@ -401,8 +403,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "solid/circle-dollar-to-slot" => Some(icons::SOLID_CIRCLE_DOLLAR_TO_SLOT),
         #[cfg(feature = "solid")]
         "solid/circle-dot" => Some(icons::SOLID_CIRCLE_DOT),
-        #[cfg(feature = "regular")]
-        "regular/circle-dot" => Some(icons::REGULAR_CIRCLE_DOT),
         _ => None,
     }
 }

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "regular")]
+    m.add("REGULAR_CIRCLE_DOT", icons::REGULAR_CIRCLE_DOT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CIRCLE_DOWN", icons::SOLID_CIRCLE_DOWN)?;
     #[cfg(feature = "regular")]
@@ -219,6 +221,8 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_COOKIE", icons::SOLID_COOKIE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_COOKIE_BITE", icons::SOLID_COOKIE_BITE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_COPILOT", icons::BRANDS_COPILOT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_COPY", icons::SOLID_COPY)?;
     #[cfg(feature = "regular")]
@@ -437,6 +441,8 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BRANDS_DOCKER", icons::BRANDS_DOCKER)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_DOG", icons::SOLID_DOG)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_DOLIBARR", icons::BRANDS_DOLIBARR)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_DOLLAR_SIGN", icons::SOLID_DOLLAR_SIGN)?;
     #[cfg(feature = "solid")]
@@ -454,11 +460,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
         "SOLID_DOWN_LEFT_AND_UP_RIGHT_TO_CENTER",
         icons::SOLID_DOWN_LEFT_AND_UP_RIGHT_TO_CENTER,
     )?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DOWN_LONG", icons::SOLID_DOWN_LONG)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_DOWNLOAD", icons::SOLID_DOWNLOAD)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_DRAFT2DIGITAL", icons::BRANDS_DRAFT2DIGITAL)?;
     Ok(())
 }

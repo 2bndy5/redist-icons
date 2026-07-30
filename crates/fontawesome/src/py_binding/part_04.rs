@@ -4,6 +4,12 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_FILL", icons::SOLID_FILL)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FILL_DRIP", icons::SOLID_FILL_DRIP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_FILM", icons::SOLID_FILM)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_FILTER", icons::SOLID_FILTER)?;
     #[cfg(feature = "solid")]
     m.add(
@@ -433,14 +439,5 @@ pub(super) fn bind_part_4(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_HEART", icons::SOLID_HEART)?;
     #[cfg(feature = "regular")]
     m.add("REGULAR_HEART", icons::REGULAR_HEART)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_CIRCLE_BOLT", icons::SOLID_HEART_CIRCLE_BOLT)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_HEART_CIRCLE_CHECK", icons::SOLID_HEART_CIRCLE_CHECK)?;
-    #[cfg(feature = "solid")]
-    m.add(
-        "SOLID_HEART_CIRCLE_EXCLAMATION",
-        icons::SOLID_HEART_CIRCLE_EXCLAMATION,
-    )?;
     Ok(())
 }

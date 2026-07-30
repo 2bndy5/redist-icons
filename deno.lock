@@ -8,12 +8,12 @@
     "jsr:@std/path@1.1.6": "1.1.6",
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/toml@1.0.11": "1.0.11",
-    "npm:@fortawesome/fontawesome-free@7.3.0": "7.3.0",
+    "npm:@fortawesome/fontawesome-free@7.3.1": "7.3.1",
     "npm:@mdi/svg@7.4.47": "7.4.47",
     "npm:@primer/octicons@19.29.2": "19.29.2",
     "npm:@types/node@*": "24.2.0",
     "npm:@types/which@^3.0.4": "3.0.4",
-    "npm:simple-icons@16.27.0": "16.27.0",
+    "npm:simple-icons@16.27.1": "16.27.1",
     "npm:svgo@4.0.2": "4.0.2",
     "npm:which@7.0.0": "7.0.0"
   },
@@ -60,8 +60,8 @@
     }
   },
   "npm": {
-    "@fortawesome/fontawesome-free@7.3.0": {
-      "integrity": "sha512-Yw4Qa43P6e4Xwh0TwEUkHQNRJInWaqIBo73VJmns3j2AIlZPAvUcR4yGIxCPqPRCgyJ5KIVIalF/I1GxhZ/Kgw=="
+    "@fortawesome/fontawesome-free@7.3.1": {
+      "integrity": "sha512-wmglKKPDIkgV3aWlZzWECCPoGIkYCulzBwxG9+w7rc5BGapZ6cPMpoPOT8k36J0Ni7PPX6c/rsoMWfS4d1MUMg=="
     },
     "@mdi/svg@7.4.47": {
       "integrity": "sha512-WQ2gDll12T9WD34fdRFgQVgO8bag3gavrAgJ0frN4phlwdJARpE6gO1YvLEMJR0KKgoc+/Ea/A0Pp11I00xBvw=="
@@ -172,8 +172,8 @@
     "sax@1.6.0": {
       "integrity": "sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA=="
     },
-    "simple-icons@16.27.0": {
-      "integrity": "sha512-Rk2dCRVCPHnla9/mHmztJOlbkfncPDUMSOPozQO3+c+vr6Uwy9jhNHeuxxvNZgbF9ZwpoT1BCu1LNB4Q07VmZQ=="
+    "simple-icons@16.27.1": {
+      "integrity": "sha512-slZF8iKxkv7Lb9SF3L1AcIl5iYLNvDrKKm8yV69cG66XvxJ12SX+bYTgxRwCY4bXSmklGXoXaKEyVmEypOCeqw=="
     },
     "source-map-js@1.2.1": {
       "integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA=="
@@ -219,7 +219,7 @@
       },
       "crates/fontawesome": {
         "dependencies": [
-          "npm:@fortawesome/fontawesome-free@7.3.0"
+          "npm:@fortawesome/fontawesome-free@7.3.1"
         ]
       },
       "crates/mdi": {
@@ -234,7 +234,7 @@
       },
       "crates/simple-icons": {
         "dependencies": [
-          "npm:simple-icons@16.27.0"
+          "npm:simple-icons@16.27.1"
         ]
       }
     }

@@ -4,6 +4,12 @@ use crate::{Icon, icons};
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "solid")]
+        "solid/down-long" => Some(icons::SOLID_DOWN_LONG),
+        #[cfg(feature = "solid")]
+        "solid/download" => Some(icons::SOLID_DOWNLOAD),
+        #[cfg(feature = "brands")]
+        "brands/draft2digital" => Some(icons::BRANDS_DRAFT2DIGITAL),
+        #[cfg(feature = "solid")]
         "solid/dragon" => Some(icons::SOLID_DRAGON),
         #[cfg(feature = "solid")]
         "solid/draw-polygon" => Some(icons::SOLID_DRAW_POLYGON),
@@ -397,12 +403,6 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "regular/file-zipper" => Some(icons::REGULAR_FILE_ZIPPER),
         #[cfg(feature = "brands")]
         "brands/files-pinwheel" => Some(icons::BRANDS_FILES_PINWHEEL),
-        #[cfg(feature = "solid")]
-        "solid/fill" => Some(icons::SOLID_FILL),
-        #[cfg(feature = "solid")]
-        "solid/fill-drip" => Some(icons::SOLID_FILL_DRIP),
-        #[cfg(feature = "solid")]
-        "solid/film" => Some(icons::SOLID_FILM),
         _ => None,
     }
 }

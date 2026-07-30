@@ -4,6 +4,12 @@ use crate::{Icon, icons};
 pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "solid")]
+        "solid/fill" => Some(icons::SOLID_FILL),
+        #[cfg(feature = "solid")]
+        "solid/fill-drip" => Some(icons::SOLID_FILL_DRIP),
+        #[cfg(feature = "solid")]
+        "solid/film" => Some(icons::SOLID_FILM),
+        #[cfg(feature = "solid")]
         "solid/filter" => Some(icons::SOLID_FILTER),
         #[cfg(feature = "solid")]
         "solid/filter-circle-dollar" => Some(icons::SOLID_FILTER_CIRCLE_DOLLAR),
@@ -397,12 +403,6 @@ pub(super) fn find_part_4(slug: &str) -> Option<Icon> {
         "solid/heart" => Some(icons::SOLID_HEART),
         #[cfg(feature = "regular")]
         "regular/heart" => Some(icons::REGULAR_HEART),
-        #[cfg(feature = "solid")]
-        "solid/heart-circle-bolt" => Some(icons::SOLID_HEART_CIRCLE_BOLT),
-        #[cfg(feature = "solid")]
-        "solid/heart-circle-check" => Some(icons::SOLID_HEART_CIRCLE_CHECK),
-        #[cfg(feature = "solid")]
-        "solid/heart-circle-exclamation" => Some(icons::SOLID_HEART_CIRCLE_EXCLAMATION),
         _ => None,
     }
 }

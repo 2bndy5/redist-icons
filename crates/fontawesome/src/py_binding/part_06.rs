@@ -4,6 +4,12 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "brands")]
+    m.add("BRANDS_LUMON_DROP", icons::BRANDS_LUMON_DROP)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_LUNGS", icons::SOLID_LUNGS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_LUNGS_VIRUS", icons::SOLID_LUNGS_VIRUS)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_LYFT", icons::BRANDS_LYFT)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_M", icons::SOLID_M)?;
@@ -315,6 +321,8 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "regular")]
     m.add("REGULAR_OBJECT_UNGROUP", icons::REGULAR_OBJECT_UNGROUP)?;
     #[cfg(feature = "brands")]
+    m.add("BRANDS_OBS_STUDIO", icons::BRANDS_OBS_STUDIO)?;
+    #[cfg(feature = "brands")]
     m.add("BRANDS_OBSIDIAN", icons::BRANDS_OBSIDIAN)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_OCTAGON", icons::SOLID_OCTAGON)?;
@@ -434,13 +442,5 @@ pub(super) fn bind_part_6(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_PEOPLE_PULLING", icons::SOLID_PEOPLE_PULLING)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_PEOPLE_ROBBERY", icons::SOLID_PEOPLE_ROBBERY)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PEOPLE_ROOF", icons::SOLID_PEOPLE_ROOF)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PEPPER_HOT", icons::SOLID_PEPPER_HOT)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_PERBYTE", icons::BRANDS_PERBYTE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_PERCENT", icons::SOLID_PERCENT)?;
     Ok(())
 }

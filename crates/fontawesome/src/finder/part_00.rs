@@ -30,6 +30,8 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         #[cfg(feature = "solid")]
         "solid/a" => Some(icons::SOLID_A),
         #[cfg(feature = "brands")]
+        "brands/a11y-project" => Some(icons::BRANDS_A11Y_PROJECT),
+        #[cfg(feature = "brands")]
         "brands/accessible-icon" => Some(icons::BRANDS_ACCESSIBLE_ICON),
         #[cfg(feature = "brands")]
         "brands/accusoft" => Some(icons::BRANDS_ACCUSOFT),
@@ -401,8 +403,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "solid/book" => Some(icons::SOLID_BOOK),
         #[cfg(feature = "solid")]
         "solid/book-atlas" => Some(icons::SOLID_BOOK_ATLAS),
-        #[cfg(feature = "solid")]
-        "solid/book-bible" => Some(icons::SOLID_BOOK_BIBLE),
         _ => None,
     }
 }

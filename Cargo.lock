@@ -4,7 +4,7 @@ version = 4
 
 [[package]]
 name = "fontawesome-free-pack"
-version = "7.3.0"
+version = "7.3.1"
 dependencies = [
  "pyo3",
 ]
@@ -124,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "simple-icons-pack"
-version = "16.27.0"
+version = "16.27.1"
 dependencies = [
  "pyo3",
 ]

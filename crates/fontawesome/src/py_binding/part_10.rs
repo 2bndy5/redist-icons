@@ -3,6 +3,16 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_UPS", icons::BRANDS_UPS)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_UPWORK", icons::BRANDS_UPWORK)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_USB", icons::BRANDS_USB)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_USER", icons::SOLID_USER)?;
+    #[cfg(feature = "regular")]
+    m.add("REGULAR_USER", icons::REGULAR_USER)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_USER_ASTRONAUT", icons::SOLID_USER_ASTRONAUT)?;
     #[cfg(feature = "solid")]
@@ -130,6 +140,8 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_VIRUS_SLASH", icons::SOLID_VIRUS_SLASH)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_VIRUSES", icons::SOLID_VIRUSES)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_VISUAL_STUDIO", icons::BRANDS_VISUAL_STUDIO)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_VK", icons::BRANDS_VK)?;
     #[cfg(feature = "brands")]

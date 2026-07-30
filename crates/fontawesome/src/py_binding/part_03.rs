@@ -4,6 +4,12 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_DOWN_LONG", icons::SOLID_DOWN_LONG)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_DOWNLOAD", icons::SOLID_DOWNLOAD)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_DRAFT2DIGITAL", icons::BRANDS_DRAFT2DIGITAL)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_DRAGON", icons::SOLID_DRAGON)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_DRAW_POLYGON", icons::SOLID_DRAW_POLYGON)?;
@@ -451,11 +457,5 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REGULAR_FILE_ZIPPER", icons::REGULAR_FILE_ZIPPER)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_FILES_PINWHEEL", icons::BRANDS_FILES_PINWHEEL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FILL", icons::SOLID_FILL)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FILL_DRIP", icons::SOLID_FILL_DRIP)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_FILM", icons::SOLID_FILM)?;
     Ok(())
 }

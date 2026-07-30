@@ -4,6 +4,15 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_CIRCLE_BOLT", icons::SOLID_HEART_CIRCLE_BOLT)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_HEART_CIRCLE_CHECK", icons::SOLID_HEART_CIRCLE_CHECK)?;
+    #[cfg(feature = "solid")]
+    m.add(
+        "SOLID_HEART_CIRCLE_EXCLAMATION",
+        icons::SOLID_HEART_CIRCLE_EXCLAMATION,
+    )?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_HEART_CIRCLE_MINUS", icons::SOLID_HEART_CIRCLE_MINUS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_HEART_CIRCLE_PLUS", icons::SOLID_HEART_CIRCLE_PLUS)?;
@@ -424,11 +433,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_LOCUST", icons::SOLID_LOCUST)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_LUMON", icons::BRANDS_LUMON)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_LUMON_DROP", icons::BRANDS_LUMON_DROP)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_LUNGS", icons::SOLID_LUNGS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_LUNGS_VIRUS", icons::SOLID_LUNGS_VIRUS)?;
     Ok(())
 }

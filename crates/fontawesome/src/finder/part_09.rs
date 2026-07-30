@@ -3,6 +3,14 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "regular")]
+        "regular/star-half-stroke" => Some(icons::REGULAR_STAR_HALF_STROKE),
+        #[cfg(feature = "solid")]
+        "solid/star-of-david" => Some(icons::SOLID_STAR_OF_DAVID),
+        #[cfg(feature = "solid")]
+        "solid/star-of-life" => Some(icons::SOLID_STAR_OF_LIFE),
+        #[cfg(feature = "brands")]
+        "brands/staylinked" => Some(icons::BRANDS_STAYLINKED),
         #[cfg(feature = "brands")]
         "brands/steam" => Some(icons::BRANDS_STEAM),
         #[cfg(feature = "brands")]
@@ -23,6 +31,8 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "solid/store" => Some(icons::SOLID_STORE),
         #[cfg(feature = "solid")]
         "solid/store-slash" => Some(icons::SOLID_STORE_SLASH),
+        #[cfg(feature = "brands")]
+        "brands/storybook" => Some(icons::BRANDS_STORYBOOK),
         #[cfg(feature = "brands")]
         "brands/strava" => Some(icons::BRANDS_STRAVA),
         #[cfg(feature = "solid")]
@@ -395,16 +405,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "solid/up-right-from-square" => Some(icons::SOLID_UP_RIGHT_FROM_SQUARE),
         #[cfg(feature = "solid")]
         "solid/upload" => Some(icons::SOLID_UPLOAD),
-        #[cfg(feature = "brands")]
-        "brands/ups" => Some(icons::BRANDS_UPS),
-        #[cfg(feature = "brands")]
-        "brands/upwork" => Some(icons::BRANDS_UPWORK),
-        #[cfg(feature = "brands")]
-        "brands/usb" => Some(icons::BRANDS_USB),
-        #[cfg(feature = "solid")]
-        "solid/user" => Some(icons::SOLID_USER),
-        #[cfg(feature = "regular")]
-        "regular/user" => Some(icons::REGULAR_USER),
         _ => None,
     }
 }
