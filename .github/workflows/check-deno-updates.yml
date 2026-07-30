@@ -53,3 +53,5 @@ jobs:
         env:
           REF_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
           REF_BASE: ${{ github.event.pull_request.base.sha || 'HEAD~1' }}
+          # used by gh-cli to create a PR
+          GH_TOKEN: ${{ secrets.REDIST_ICONS_UPDATE }}
