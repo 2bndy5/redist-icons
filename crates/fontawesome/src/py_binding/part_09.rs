@@ -3,6 +3,14 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "regular")]
+    m.add("REGULAR_STAR_HALF_STROKE", icons::REGULAR_STAR_HALF_STROKE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STAR_OF_DAVID", icons::SOLID_STAR_OF_DAVID)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_STAR_OF_LIFE", icons::SOLID_STAR_OF_LIFE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_STAYLINKED", icons::BRANDS_STAYLINKED)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_STEAM", icons::BRANDS_STEAM)?;
     #[cfg(feature = "brands")]
@@ -23,6 +31,8 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_STORE", icons::SOLID_STORE)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_STORE_SLASH", icons::SOLID_STORE_SLASH)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_STORYBOOK", icons::BRANDS_STORYBOOK)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_STRAVA", icons::BRANDS_STRAVA)?;
     #[cfg(feature = "solid")]
@@ -441,15 +451,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_UPLOAD", icons::SOLID_UPLOAD)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_UPS", icons::BRANDS_UPS)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_UPWORK", icons::BRANDS_UPWORK)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_USB", icons::BRANDS_USB)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_USER", icons::SOLID_USER)?;
-    #[cfg(feature = "regular")]
-    m.add("REGULAR_USER", icons::REGULAR_USER)?;
     Ok(())
 }

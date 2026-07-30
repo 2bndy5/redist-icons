@@ -4,6 +4,12 @@ use crate::{Icon, icons};
 pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
     match slug {
         #[cfg(feature = "brands")]
+        "brands/lumon-drop" => Some(icons::BRANDS_LUMON_DROP),
+        #[cfg(feature = "solid")]
+        "solid/lungs" => Some(icons::SOLID_LUNGS),
+        #[cfg(feature = "solid")]
+        "solid/lungs-virus" => Some(icons::SOLID_LUNGS_VIRUS),
+        #[cfg(feature = "brands")]
         "brands/lyft" => Some(icons::BRANDS_LYFT),
         #[cfg(feature = "solid")]
         "solid/m" => Some(icons::SOLID_M),
@@ -276,6 +282,8 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         #[cfg(feature = "regular")]
         "regular/object-ungroup" => Some(icons::REGULAR_OBJECT_UNGROUP),
         #[cfg(feature = "brands")]
+        "brands/obs-studio" => Some(icons::BRANDS_OBS_STUDIO),
+        #[cfg(feature = "brands")]
         "brands/obsidian" => Some(icons::BRANDS_OBSIDIAN),
         #[cfg(feature = "solid")]
         "solid/octagon" => Some(icons::SOLID_OCTAGON),
@@ -395,14 +403,6 @@ pub(super) fn find_part_6(slug: &str) -> Option<Icon> {
         "solid/people-pulling" => Some(icons::SOLID_PEOPLE_PULLING),
         #[cfg(feature = "solid")]
         "solid/people-robbery" => Some(icons::SOLID_PEOPLE_ROBBERY),
-        #[cfg(feature = "solid")]
-        "solid/people-roof" => Some(icons::SOLID_PEOPLE_ROOF),
-        #[cfg(feature = "solid")]
-        "solid/pepper-hot" => Some(icons::SOLID_PEPPER_HOT),
-        #[cfg(feature = "brands")]
-        "brands/perbyte" => Some(icons::BRANDS_PERBYTE),
-        #[cfg(feature = "solid")]
-        "solid/percent" => Some(icons::SOLID_PERCENT),
         _ => None,
     }
 }

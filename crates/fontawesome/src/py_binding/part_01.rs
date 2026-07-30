@@ -4,6 +4,8 @@ use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     #[cfg(feature = "solid")]
+    m.add("SOLID_BOOK_BIBLE", icons::SOLID_BOOK_BIBLE)?;
+    #[cfg(feature = "solid")]
     m.add("SOLID_BOOK_BOOKMARK", icons::SOLID_BOOK_BOOKMARK)?;
     #[cfg(feature = "solid")]
     m.add(
@@ -446,7 +448,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     #[cfg(feature = "solid")]
     m.add("SOLID_CIRCLE_DOT", icons::SOLID_CIRCLE_DOT)?;
-    #[cfg(feature = "regular")]
-    m.add("REGULAR_CIRCLE_DOT", icons::REGULAR_CIRCLE_DOT)?;
     Ok(())
 }

@@ -3,6 +3,14 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_SALESFORCE", icons::BRANDS_SALESFORCE)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_SASS", icons::BRANDS_SASS)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_SATELLITE", icons::SOLID_SATELLITE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_SATELLITE_DISH", icons::SOLID_SATELLITE_DISH)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SCALE_BALANCED", icons::SOLID_SCALE_BALANCED)?;
     #[cfg(feature = "solid")]
@@ -461,13 +469,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REGULAR_STAR_HALF", icons::REGULAR_STAR_HALF)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_STAR_HALF_STROKE", icons::SOLID_STAR_HALF_STROKE)?;
-    #[cfg(feature = "regular")]
-    m.add("REGULAR_STAR_HALF_STROKE", icons::REGULAR_STAR_HALF_STROKE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STAR_OF_DAVID", icons::SOLID_STAR_OF_DAVID)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_STAR_OF_LIFE", icons::SOLID_STAR_OF_LIFE)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_STAYLINKED", icons::BRANDS_STAYLINKED)?;
     Ok(())
 }

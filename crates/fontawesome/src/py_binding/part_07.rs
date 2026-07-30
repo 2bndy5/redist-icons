@@ -3,6 +3,14 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PEOPLE_ROOF", icons::SOLID_PEOPLE_ROOF)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PEPPER_HOT", icons::SOLID_PEPPER_HOT)?;
+    #[cfg(feature = "brands")]
+    m.add("BRANDS_PERBYTE", icons::BRANDS_PERBYTE)?;
+    #[cfg(feature = "solid")]
+    m.add("SOLID_PERCENT", icons::SOLID_PERCENT)?;
     #[cfg(feature = "brands")]
     m.add("BRANDS_PERISCOPE", icons::BRANDS_PERISCOPE)?;
     #[cfg(feature = "solid")]
@@ -476,13 +484,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SOLID_SAGITTARIUS", icons::SOLID_SAGITTARIUS)?;
     #[cfg(feature = "solid")]
     m.add("SOLID_SAILBOAT", icons::SOLID_SAILBOAT)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SALESFORCE", icons::BRANDS_SALESFORCE)?;
-    #[cfg(feature = "brands")]
-    m.add("BRANDS_SASS", icons::BRANDS_SASS)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SATELLITE", icons::SOLID_SATELLITE)?;
-    #[cfg(feature = "solid")]
-    m.add("SOLID_SATELLITE_DISH", icons::SOLID_SATELLITE_DISH)?;
     Ok(())
 }

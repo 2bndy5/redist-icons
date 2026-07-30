@@ -3,6 +3,16 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "brands")]
+        "brands/ups" => Some(icons::BRANDS_UPS),
+        #[cfg(feature = "brands")]
+        "brands/upwork" => Some(icons::BRANDS_UPWORK),
+        #[cfg(feature = "brands")]
+        "brands/usb" => Some(icons::BRANDS_USB),
+        #[cfg(feature = "solid")]
+        "solid/user" => Some(icons::SOLID_USER),
+        #[cfg(feature = "regular")]
+        "regular/user" => Some(icons::REGULAR_USER),
         #[cfg(feature = "solid")]
         "solid/user-astronaut" => Some(icons::SOLID_USER_ASTRONAUT),
         #[cfg(feature = "solid")]
@@ -127,6 +137,8 @@ pub(super) fn find_part_10(slug: &str) -> Option<Icon> {
         "solid/virus-slash" => Some(icons::SOLID_VIRUS_SLASH),
         #[cfg(feature = "solid")]
         "solid/viruses" => Some(icons::SOLID_VIRUSES),
+        #[cfg(feature = "brands")]
+        "brands/visual-studio" => Some(icons::BRANDS_VISUAL_STUDIO),
         #[cfg(feature = "brands")]
         "brands/vk" => Some(icons::BRANDS_VK),
         #[cfg(feature = "brands")]

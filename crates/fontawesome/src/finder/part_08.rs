@@ -3,6 +3,14 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
     match slug {
+        #[cfg(feature = "brands")]
+        "brands/salesforce" => Some(icons::BRANDS_SALESFORCE),
+        #[cfg(feature = "brands")]
+        "brands/sass" => Some(icons::BRANDS_SASS),
+        #[cfg(feature = "solid")]
+        "solid/satellite" => Some(icons::SOLID_SATELLITE),
+        #[cfg(feature = "solid")]
+        "solid/satellite-dish" => Some(icons::SOLID_SATELLITE_DISH),
         #[cfg(feature = "solid")]
         "solid/scale-balanced" => Some(icons::SOLID_SCALE_BALANCED),
         #[cfg(feature = "solid")]
@@ -395,14 +403,6 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "regular/star-half" => Some(icons::REGULAR_STAR_HALF),
         #[cfg(feature = "solid")]
         "solid/star-half-stroke" => Some(icons::SOLID_STAR_HALF_STROKE),
-        #[cfg(feature = "regular")]
-        "regular/star-half-stroke" => Some(icons::REGULAR_STAR_HALF_STROKE),
-        #[cfg(feature = "solid")]
-        "solid/star-of-david" => Some(icons::SOLID_STAR_OF_DAVID),
-        #[cfg(feature = "solid")]
-        "solid/star-of-life" => Some(icons::SOLID_STAR_OF_LIFE),
-        #[cfg(feature = "brands")]
-        "brands/staylinked" => Some(icons::BRANDS_STAYLINKED),
         _ => None,
     }
 }
