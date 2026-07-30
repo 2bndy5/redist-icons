@@ -5,11 +5,6 @@
 
 version: 2
 
-# Allow beta ecosystems.
-# This can be removed when deno support is stable.
-# see https://github.com/dependabot/dependabot-core/issues/2417
-enable-beta-ecosystems: true
-
 updates:
   - package-ecosystem: github-actions
     directory: /
@@ -41,19 +36,20 @@ updates:
       uv-pip:
         patterns:
           - "*"
-  - package-ecosystem: deno
-    directories:
-      - /
-      - /common
-      - /crates/fontawesome
-      - /crates/mdi
-      - /crates/octicons
-      - /crates/simple-icons
-    schedule:
-      interval: "daily"
-      # run sunday, tuesday, and thursday
-      # cronjob: 0 0 * * 0,2,4
-    groups:
-      deno:
-        patterns:
-          - "*"
+  ## Deno support in beta did not pan out. We'll try again when it goes stable.
+  # - package-ecosystem: deno
+  #   directories:
+  #     - /
+  #     - /common
+  #     - /crates/fontawesome
+  #     - /crates/mdi
+  #     - /crates/octicons
+  #     - /crates/simple-icons
+  #   schedule:
+  #     interval: "daily"
+  #     # run sunday, tuesday, and thursday
+  #     # cronjob: 0 0 * * 0,2,4
+  #   groups:
+  #     deno:
+  #       patterns:
+  #         - "*"
