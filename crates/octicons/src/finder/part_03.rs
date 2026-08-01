@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "file-symlink-file-24" => Some(icons::FILE_SYMLINK_FILE_24),
+        "bookmark-fill-24" => Some(icons::BOOKMARK_FILL_24),
         "check-circle-24" => Some(icons::CHECK_CIRCLE_24),
         "git-commit-24" => Some(icons::GIT_COMMIT_24),
         "meter-16" => Some(icons::METER_16),

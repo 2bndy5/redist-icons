@@ -83,6 +83,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "git-merge-queue-16" => Some(icons::GIT_MERGE_QUEUE_16),
         "play-24" => Some(icons::PLAY_24),
         "info-24" => Some(icons::INFO_24),
+        "question-bubble-16" => Some(icons::QUESTION_BUBBLE_16),
         "zap-16" => Some(icons::ZAP_16),
         "book-24" => Some(icons::BOOK_24),
         "archive-24" => Some(icons::ARCHIVE_24),
@@ -148,6 +149,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "git-pull-request-24" => Some(icons::GIT_PULL_REQUEST_24),
         "stack-add-16" => Some(icons::STACK_ADD_16),
         "graph-bar-horizontal-16" => Some(icons::GRAPH_BAR_HORIZONTAL_16),
+        "question-bubble-24" => Some(icons::QUESTION_BUBBLE_24),
         "shield-x-16" => Some(icons::SHIELD_X_16),
         "gift-24" => Some(icons::GIFT_24),
         "law-16" => Some(icons::LAW_16),
@@ -201,8 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "sun-24" => Some(icons::SUN_24),
         "telescope-fill-24" => Some(icons::TELESCOPE_FILL_24),
         "file-media-16" => Some(icons::FILE_MEDIA_16),
-        "device-camera-24" => Some(icons::DEVICE_CAMERA_24),
-        "smiley-grin-24" => Some(icons::SMILEY_GRIN_24),
         _ => None,
     }
 }
