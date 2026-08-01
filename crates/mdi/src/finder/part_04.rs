@@ -9,300 +9,266 @@ use pyo3::prelude::*;
 
 pub(super) fn find_part_4(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "battery-charging-wireless-outline" => Some(icons::BATTERY_CHARGING_WIRELESS_OUTLINE),
-        "receipt" => Some(icons::RECEIPT),
-        "dice-2-outline" => Some(icons::DICE_2_OUTLINE),
-        "file-chart" => Some(icons::FILE_CHART),
-        "vector-triangle" => Some(icons::VECTOR_TRIANGLE),
-        "arrow-left-bold-circle-outline" => Some(icons::ARROW_LEFT_BOLD_CIRCLE_OUTLINE),
-        "message-star-outline" => Some(icons::MESSAGE_STAR_OUTLINE),
-        "city-variant-outline" => Some(icons::CITY_VARIANT_OUTLINE),
-        "timer-star" => Some(icons::TIMER_STAR),
-        "cards-playing-club" => Some(icons::CARDS_PLAYING_CLUB),
-        "snowflake-variant" => Some(icons::SNOWFLAKE_VARIANT),
-        "toolbox-outline" => Some(icons::TOOLBOX_OUTLINE),
-        "battery-90" => Some(icons::BATTERY_90),
-        "set-merge" => Some(icons::SET_MERGE),
-        "cloud-search" => Some(icons::CLOUD_SEARCH),
-        "relation-one-or-many-to-only-one" => Some(icons::RELATION_ONE_OR_MANY_TO_ONLY_ONE),
-        "calendar-refresh" => Some(icons::CALENDAR_REFRESH),
-        "movie-minus-outline" => Some(icons::MOVIE_MINUS_OUTLINE),
-        "wall-sconce-flat-variant" => Some(icons::WALL_SCONCE_FLAT_VARIANT),
-        "power-standby" => Some(icons::POWER_STANDBY),
-        "basket-off" => Some(icons::BASKET_OFF),
-        "gate-nand" => Some(icons::GATE_NAND),
-        #[allow(deprecated)]
-        "openid" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'openid' is deprecated.").print(py);
-            }
-            Some(icons::OPENID)
-        }
-        #[allow(deprecated)]
-        "lastpass" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'lastpass' is deprecated.").print(py);
-            }
-            Some(icons::LASTPASS)
-        }
-        "select-compare" => Some(icons::SELECT_COMPARE),
-        "map-marker-star" => Some(icons::MAP_MARKER_STAR),
-        "panorama-wide-angle" => Some(icons::PANORAMA_WIDE_ANGLE),
-        "brightness-1" => Some(icons::BRIGHTNESS_1),
-        "assistant" => Some(icons::ASSISTANT),
-        "code-json" => Some(icons::CODE_JSON),
-        "file-powerpoint" => Some(icons::FILE_POWERPOINT),
-        "chemical-weapon" => Some(icons::CHEMICAL_WEAPON),
-        "invoice-multiple-outline" => Some(icons::INVOICE_MULTIPLE_OUTLINE),
-        "pause-circle" => Some(icons::PAUSE_CIRCLE),
-        "waves-arrow-right" => Some(icons::WAVES_ARROW_RIGHT),
-        "alpha-o-box-outline" => Some(icons::ALPHA_O_BOX_OUTLINE),
-        "bunk-bed" => Some(icons::BUNK_BED),
-        #[allow(deprecated)]
-        "rollupjs" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'rollupjs' is deprecated.").print(py);
-            }
-            Some(icons::ROLLUPJS)
-        }
-        "file-link" => Some(icons::FILE_LINK),
+        "gesture-tap" => Some(icons::GESTURE_TAP),
+        "arrow-bottom-left" => Some(icons::ARROW_BOTTOM_LEFT),
+        "arrow-down-thin" => Some(icons::ARROW_DOWN_THIN),
+        "circle-off-outline" => Some(icons::CIRCLE_OFF_OUTLINE),
+        "numeric-6-circle-outline" => Some(icons::NUMERIC_6_CIRCLE_OUTLINE),
+        "router-network" => Some(icons::ROUTER_NETWORK),
+        "chat-outline" => Some(icons::CHAT_OUTLINE),
         "podium-silver" => Some(icons::PODIUM_SILVER),
-        "propane-tank" => Some(icons::PROPANE_TANK),
-        "layers-plus" => Some(icons::LAYERS_PLUS),
-        "thumbs-up-down" => Some(icons::THUMBS_UP_DOWN),
-        "email-check" => Some(icons::EMAIL_CHECK),
-        "calendar-text" => Some(icons::CALENDAR_TEXT),
-        "shuffle-disabled" => Some(icons::SHUFFLE_DISABLED),
-        #[allow(deprecated)]
-        "skype" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'skype' is deprecated.").print(py);
-            }
-            Some(icons::SKYPE)
-        }
-        "dice-multiple" => Some(icons::DICE_MULTIPLE),
-        "clock-out" => Some(icons::CLOCK_OUT),
-        "popcorn" => Some(icons::POPCORN),
-        "account-clock" => Some(icons::ACCOUNT_CLOCK),
-        "comment-minus-outline" => Some(icons::COMMENT_MINUS_OUTLINE),
-        "tag-arrow-right-outline" => Some(icons::TAG_ARROW_RIGHT_OUTLINE),
-        "text-box-multiple-outline" => Some(icons::TEXT_BOX_MULTIPLE_OUTLINE),
-        "text-recognition" => Some(icons::TEXT_RECOGNITION),
-        "office-building-minus" => Some(icons::OFFICE_BUILDING_MINUS),
-        "airport" => Some(icons::AIRPORT),
-        "white-balance-iridescent" => Some(icons::WHITE_BALANCE_IRIDESCENT),
-        "weather-cloudy-alert" => Some(icons::WEATHER_CLOUDY_ALERT),
-        "power-on" => Some(icons::POWER_ON),
-        "image-lock" => Some(icons::IMAGE_LOCK),
-        "cash-marker" => Some(icons::CASH_MARKER),
-        "select" => Some(icons::SELECT),
-        #[allow(deprecated)]
-        "iobroker" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'iobroker' is deprecated.").print(py);
-            }
-            Some(icons::IOBROKER)
-        }
-        "key-chain" => Some(icons::KEY_CHAIN),
-        "alpha-z-circle" => Some(icons::ALPHA_Z_CIRCLE),
-        "home-sound-out-outline" => Some(icons::HOME_SOUND_OUT_OUTLINE),
-        "video-wireless" => Some(icons::VIDEO_WIRELESS),
-        "keyboard-tab" => Some(icons::KEYBOARD_TAB),
-        "cards-playing-heart-multiple" => Some(icons::CARDS_PLAYING_HEART_MULTIPLE),
-        "axe-battle" => Some(icons::AXE_BATTLE),
-        "bus-electric" => Some(icons::BUS_ELECTRIC),
-        "text-search" => Some(icons::TEXT_SEARCH),
-        "relation-one-or-many-to-one-or-many" => Some(icons::RELATION_ONE_OR_MANY_TO_ONE_OR_MANY),
+        "shipping-pallet" => Some(icons::SHIPPING_PALLET),
+        "tag-edit-outline" => Some(icons::TAG_EDIT_OUTLINE),
+        "led-variant-on" => Some(icons::LED_VARIANT_ON),
+        "shuriken" => Some(icons::SHURIKEN),
+        "archive-arrow-down-outline" => Some(icons::ARCHIVE_ARROW_DOWN_OUTLINE),
+        "calendar-arrow-left" => Some(icons::CALENDAR_ARROW_LEFT),
+        "bug-stop-outline" => Some(icons::BUG_STOP_OUTLINE),
+        "autorenew" => Some(icons::AUTORENEW),
+        "credit-card-refund-outline" => Some(icons::CREDIT_CARD_REFUND_OUTLINE),
         "texture-box" => Some(icons::TEXTURE_BOX),
-        "archive-edit-outline" => Some(icons::ARCHIVE_EDIT_OUTLINE),
-        "camera-off" => Some(icons::CAMERA_OFF),
-        "attachment-check" => Some(icons::ATTACHMENT_CHECK),
-        "spotlight-beam" => Some(icons::SPOTLIGHT_BEAM),
-        "car-turbocharger" => Some(icons::CAR_TURBOCHARGER),
-        "battery-bluetooth-variant" => Some(icons::BATTERY_BLUETOOTH_VARIANT),
-        "account-wrench" => Some(icons::ACCOUNT_WRENCH),
-        "gift-off" => Some(icons::GIFT_OFF),
-        "text-box" => Some(icons::TEXT_BOX),
-        "weather-partly-cloudy" => Some(icons::WEATHER_PARTLY_CLOUDY),
-        "pan-horizontal" => Some(icons::PAN_HORIZONTAL),
-        "stamper" => Some(icons::STAMPER),
+        "alpha-k-circle" => Some(icons::ALPHA_K_CIRCLE),
+        "power-socket-uk" => Some(icons::POWER_SOCKET_UK),
+        "text-long" => Some(icons::TEXT_LONG),
+        "crown" => Some(icons::CROWN),
+        "note-plus-outline" => Some(icons::NOTE_PLUS_OUTLINE),
+        "bench-back" => Some(icons::BENCH_BACK),
+        "power-socket-ch" => Some(icons::POWER_SOCKET_CH),
+        "newspaper-check" => Some(icons::NEWSPAPER_CHECK),
         #[allow(deprecated)]
-        "microsoft-word" => {
+        "polymer" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'microsoft-word' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'polymer' is deprecated.").print(py);
             }
-            Some(icons::MICROSOFT_WORD)
+            Some(icons::POLYMER)
         }
-        "land-plots-marker" => Some(icons::LAND_PLOTS_MARKER),
-        "music" => Some(icons::MUSIC),
-        "tag-remove-outline" => Some(icons::TAG_REMOVE_OUTLINE),
-        "usb-flash-drive-outline" => Some(icons::USB_FLASH_DRIVE_OUTLINE),
-        "send-circle" => Some(icons::SEND_CIRCLE),
-        "format-letter-ends-with" => Some(icons::FORMAT_LETTER_ENDS_WITH),
-        "hand-pointing-up" => Some(icons::HAND_POINTING_UP),
+        "stomach" => Some(icons::STOMACH),
+        "cloud-percent-outline" => Some(icons::CLOUD_PERCENT_OUTLINE),
+        "car-electric" => Some(icons::CAR_ELECTRIC),
+        #[allow(deprecated)]
+        "nuxt" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'nuxt' is deprecated.").print(py);
+            }
+            Some(icons::NUXT)
+        }
+        "car-sports" => Some(icons::CAR_SPORTS),
+        "link-lock" => Some(icons::LINK_LOCK),
+        "table-account" => Some(icons::TABLE_ACCOUNT),
+        "rolodex" => Some(icons::ROLODEX),
+        "alarm-off" => Some(icons::ALARM_OFF),
+        "skip-forward" => Some(icons::SKIP_FORWARD),
+        "power-plug-battery" => Some(icons::POWER_PLUG_BATTERY),
+        "arrow-down-left" => Some(icons::ARROW_DOWN_LEFT),
+        "cards-club" => Some(icons::CARDS_CLUB),
+        "format-quote-open-outline" => Some(icons::FORMAT_QUOTE_OPEN_OUTLINE),
+        "guitar-electric" => Some(icons::GUITAR_ELECTRIC),
+        "arrow-down-right-bold" => Some(icons::ARROW_DOWN_RIGHT_BOLD),
+        "sort-variant-lock-open" => Some(icons::SORT_VARIANT_LOCK_OPEN),
+        "microwave" => Some(icons::MICROWAVE),
+        "elevation-decline" => Some(icons::ELEVATION_DECLINE),
+        "head-cog-outline" => Some(icons::HEAD_COG_OUTLINE),
+        "invoice-text-fast-outline" => Some(icons::INVOICE_TEXT_FAST_OUTLINE),
+        "monitor-screenshot" => Some(icons::MONITOR_SCREENSHOT),
+        "alphabet-greek" => Some(icons::ALPHABET_GREEK),
+        "arrow-expand-left" => Some(icons::ARROW_EXPAND_LEFT),
+        "chevron-triple-right" => Some(icons::CHEVRON_TRIPLE_RIGHT),
+        "tune-vertical" => Some(icons::TUNE_VERTICAL),
+        "menorah-fire" => Some(icons::MENORAH_FIRE),
+        "heart-plus" => Some(icons::HEART_PLUS),
+        "axis-x-arrow-lock" => Some(icons::AXIS_X_ARROW_LOCK),
+        "upload-circle" => Some(icons::UPLOAD_CIRCLE),
+        "numeric-7-circle-outline" => Some(icons::NUMERIC_7_CIRCLE_OUTLINE),
+        "folder-lock-open-outline" => Some(icons::FOLDER_LOCK_OPEN_OUTLINE),
+        "sale-outline" => Some(icons::SALE_OUTLINE),
+        "pan-top-right" => Some(icons::PAN_TOP_RIGHT),
+        "dots-square" => Some(icons::DOTS_SQUARE),
+        "sign-yield" => Some(icons::SIGN_YIELD),
+        #[allow(deprecated)]
+        "xamarin" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'xamarin' is deprecated.").print(py);
+            }
+            Some(icons::XAMARIN)
+        }
+        "puzzle-star-outline" => Some(icons::PUZZLE_STAR_OUTLINE),
+        "transmission-tower" => Some(icons::TRANSMISSION_TOWER),
+        "bank-circle" => Some(icons::BANK_CIRCLE),
+        "phone-settings-outline" => Some(icons::PHONE_SETTINGS_OUTLINE),
+        "selection-ellipse" => Some(icons::SELECTION_ELLIPSE),
+        "shovel" => Some(icons::SHOVEL),
+        "image-plus" => Some(icons::IMAGE_PLUS),
+        "pine-tree" => Some(icons::PINE_TREE),
+        "baby-buggy" => Some(icons::BABY_BUGGY),
+        "music-note-whole" => Some(icons::MUSIC_NOTE_WHOLE),
+        "ticket" => Some(icons::TICKET),
+        #[allow(deprecated)]
+        "apple-safari" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'apple-safari' is deprecated.").print(py);
+            }
+            Some(icons::APPLE_SAFARI)
+        }
+        "robot-vacuum-variant-off" => Some(icons::ROBOT_VACUUM_VARIANT_OFF),
+        "form-textbox" => Some(icons::FORM_TEXTBOX),
         "bank-transfer" => Some(icons::BANK_TRANSFER),
+        "office-building-remove-outline" => Some(icons::OFFICE_BUILDING_REMOVE_OUTLINE),
+        "comma" => Some(icons::COMMA),
+        "gesture-swipe-horizontal" => Some(icons::GESTURE_SWIPE_HORIZONTAL),
+        "wallet-giftcard" => Some(icons::WALLET_GIFTCARD),
+        "iron-board" => Some(icons::IRON_BOARD),
+        "crosshairs-question" => Some(icons::CROSSHAIRS_QUESTION),
+        "crosshairs-gps" => Some(icons::CROSSHAIRS_GPS),
+        "menu-left" => Some(icons::MENU_LEFT),
+        "car-arrow-left" => Some(icons::CAR_ARROW_LEFT),
+        "folder-alert" => Some(icons::FOLDER_ALERT),
+        "comment-outline" => Some(icons::COMMENT_OUTLINE),
+        "delete-empty-outline" => Some(icons::DELETE_EMPTY_OUTLINE),
+        "information-variant-box-outline" => Some(icons::INFORMATION_VARIANT_BOX_OUTLINE),
+        "numeric-9-plus-box-outline" => Some(icons::NUMERIC_9_PLUS_BOX_OUTLINE),
+        "greater-than-or-equal" => Some(icons::GREATER_THAN_OR_EQUAL),
+        "golf-tee" => Some(icons::GOLF_TEE),
+        "hamburger-check" => Some(icons::HAMBURGER_CHECK),
+        "tunnel" => Some(icons::TUNNEL),
+        "trash-can-outline" => Some(icons::TRASH_CAN_OUTLINE),
+        "shuffle-variant" => Some(icons::SHUFFLE_VARIANT),
+        "keyboard-settings" => Some(icons::KEYBOARD_SETTINGS),
+        "cash-multiple" => Some(icons::CASH_MULTIPLE),
+        "heart-broken" => Some(icons::HEART_BROKEN),
+        "dice-d4" => Some(icons::DICE_D4),
+        "pipe-valve" => Some(icons::PIPE_VALVE),
+        "calendar-star" => Some(icons::CALENDAR_STAR),
+        "plus-network-outline" => Some(icons::PLUS_NETWORK_OUTLINE),
+        "watch-import-variant" => Some(icons::WATCH_IMPORT_VARIANT),
+        "folder-cog-outline" => Some(icons::FOLDER_COG_OUTLINE),
+        "moon-first-quarter" => Some(icons::MOON_FIRST_QUARTER),
+        "toy-brick-remove-outline" => Some(icons::TOY_BRICK_REMOVE_OUTLINE),
+        "turbine" => Some(icons::TURBINE),
+        "printer-3d-nozzle" => Some(icons::PRINTER_3D_NOZZLE),
+        "comment-alert" => Some(icons::COMMENT_ALERT),
+        "silverware" => Some(icons::SILVERWARE),
+        "music-circle-outline" => Some(icons::MUSIC_CIRCLE_OUTLINE),
+        "table-row-plus-before" => Some(icons::TABLE_ROW_PLUS_BEFORE),
+        "alert" => Some(icons::ALERT),
+        "music-note-sixteenth-dotted" => Some(icons::MUSIC_NOTE_SIXTEENTH_DOTTED),
+        "receipt-outline" => Some(icons::RECEIPT_OUTLINE),
+        "sprout" => Some(icons::SPROUT),
+        "camera-metering-partial" => Some(icons::CAMERA_METERING_PARTIAL),
+        "lambda" => Some(icons::LAMBDA),
+        "cookie-cog" => Some(icons::COOKIE_COG),
+        "heart-flash" => Some(icons::HEART_FLASH),
         #[allow(deprecated)]
-        "facebook-gaming" => {
+        "microsoft-visual-studio" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'facebook-gaming' is deprecated.")
+                PyDeprecationWarning::new_err("The icon 'microsoft-visual-studio' is deprecated.")
                     .print(py);
             }
-            Some(icons::FACEBOOK_GAMING)
+            Some(icons::MICROSOFT_VISUAL_STUDIO)
         }
+        "weather-sunny-alert" => Some(icons::WEATHER_SUNNY_ALERT),
+        "electric-switch" => Some(icons::ELECTRIC_SWITCH),
+        "receipt-text-check" => Some(icons::RECEIPT_TEXT_CHECK),
+        "smart-card-reader" => Some(icons::SMART_CARD_READER),
+        "tooltip-account" => Some(icons::TOOLTIP_ACCOUNT),
+        "flash-alert" => Some(icons::FLASH_ALERT),
+        "needle-off" => Some(icons::NEEDLE_OFF),
+        "human-greeting" => Some(icons::HUMAN_GREETING),
+        "qrcode-edit" => Some(icons::QRCODE_EDIT),
+        "inbox-arrow-down-outline" => Some(icons::INBOX_ARROW_DOWN_OUTLINE),
+        "octagon" => Some(icons::OCTAGON),
+        "database-off-outline" => Some(icons::DATABASE_OFF_OUTLINE),
+        "tie" => Some(icons::TIE),
+        "butterfly" => Some(icons::BUTTERFLY),
+        "comment-eye" => Some(icons::COMMENT_EYE),
+        "alpha-v" => Some(icons::ALPHA_V),
+        "hands-pray" => Some(icons::HANDS_PRAY),
+        "file-image-outline" => Some(icons::FILE_IMAGE_OUTLINE),
+        "snowflake-off" => Some(icons::SNOWFLAKE_OFF),
+        "cube-off-outline" => Some(icons::CUBE_OFF_OUTLINE),
+        "folder-cancel-outline" => Some(icons::FOLDER_CANCEL_OUTLINE),
+        "map-marker-remove-variant" => Some(icons::MAP_MARKER_REMOVE_VARIANT),
+        "bottle-soda-outline" => Some(icons::BOTTLE_SODA_OUTLINE),
+        "golf-cart" => Some(icons::GOLF_CART),
+        "spider" => Some(icons::SPIDER),
+        "home-lightning-bolt-outline" => Some(icons::HOME_LIGHTNING_BOLT_OUTLINE),
+        "fishbowl" => Some(icons::FISHBOWL),
+        "clock-time-five" => Some(icons::CLOCK_TIME_FIVE),
+        "cookie-off-outline" => Some(icons::COOKIE_OFF_OUTLINE),
+        "chevron-triple-left" => Some(icons::CHEVRON_TRIPLE_LEFT),
+        "plus-circle-outline" => Some(icons::PLUS_CIRCLE_OUTLINE),
+        "timeline-outline" => Some(icons::TIMELINE_OUTLINE),
+        "incognito" => Some(icons::INCOGNITO),
         #[allow(deprecated)]
-        "slack" => {
+        "onepassword" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'slack' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'onepassword' is deprecated.").print(py);
             }
-            Some(icons::SLACK)
+            Some(icons::ONEPASSWORD)
         }
-        "pizza" => Some(icons::PIZZA),
-        "film" => Some(icons::FILM),
-        "alpha-y-circle" => Some(icons::ALPHA_Y_CIRCLE),
-        "train-car-flatbed-car" => Some(icons::TRAIN_CAR_FLATBED_CAR),
-        "camera-outline" => Some(icons::CAMERA_OUTLINE),
-        "radioactive" => Some(icons::RADIOACTIVE),
-        "format-clear" => Some(icons::FORMAT_CLEAR),
-        "fast-forward" => Some(icons::FAST_FORWARD),
-        "currency-ils" => Some(icons::CURRENCY_ILS),
-        "video-check-outline" => Some(icons::VIDEO_CHECK_OUTLINE),
-        "shield-sync" => Some(icons::SHIELD_SYNC),
-        "map-marker-off-outline" => Some(icons::MAP_MARKER_OFF_OUTLINE),
-        "scissors-cutting" => Some(icons::SCISSORS_CUTTING),
-        "vector-difference-ba" => Some(icons::VECTOR_DIFFERENCE_BA),
-        "clock-time-twelve" => Some(icons::CLOCK_TIME_TWELVE),
-        "remote-desktop" => Some(icons::REMOTE_DESKTOP),
-        "rollerblade-off" => Some(icons::ROLLERBLADE_OFF),
-        "boom-gate-arrow-up-outline" => Some(icons::BOOM_GATE_ARROW_UP_OUTLINE),
-        "set-left" => Some(icons::SET_LEFT),
-        "switch" => Some(icons::SWITCH),
-        "timer-cancel-outline" => Some(icons::TIMER_CANCEL_OUTLINE),
-        "video-marker" => Some(icons::VIDEO_MARKER),
-        "bag-suitcase-off" => Some(icons::BAG_SUITCASE_OFF),
-        "login" => Some(icons::LOGIN),
-        "card-search-outline" => Some(icons::CARD_SEARCH_OUTLINE),
-        #[allow(deprecated)]
-        "vimeo" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'vimeo' is deprecated.").print(py);
-            }
-            Some(icons::VIMEO)
-        }
-        "folder-star-multiple" => Some(icons::FOLDER_STAR_MULTIPLE),
-        "phone-plus" => Some(icons::PHONE_PLUS),
+        "application-array" => Some(icons::APPLICATION_ARRAY),
+        "cloud-cog-outline" => Some(icons::CLOUD_COG_OUTLINE),
+        "numeric-2-box-multiple-outline" => Some(icons::NUMERIC_2_BOX_MULTIPLE_OUTLINE),
+        "view-grid-plus" => Some(icons::VIEW_GRID_PLUS),
+        "file-cabinet" => Some(icons::FILE_CABINET),
+        "food-drumstick-outline" => Some(icons::FOOD_DRUMSTICK_OUTLINE),
+        "account-card-outline" => Some(icons::ACCOUNT_CARD_OUTLINE),
+        "room-service" => Some(icons::ROOM_SERVICE),
         "alpha-s-circle" => Some(icons::ALPHA_S_CIRCLE),
-        "numeric-2-box-multiple" => Some(icons::NUMERIC_2_BOX_MULTIPLE),
-        "cards-playing-spade-multiple-outline" => Some(icons::CARDS_PLAYING_SPADE_MULTIPLE_OUTLINE),
+        "door-sliding-lock" => Some(icons::DOOR_SLIDING_LOCK),
+        "store-check-outline" => Some(icons::STORE_CHECK_OUTLINE),
+        "bookmark-music-outline" => Some(icons::BOOKMARK_MUSIC_OUTLINE),
+        "contactless-payment" => Some(icons::CONTACTLESS_PAYMENT),
+        "paperclip-plus" => Some(icons::PAPERCLIP_PLUS),
+        "gender-transgender" => Some(icons::GENDER_TRANSGENDER),
+        "store-remove" => Some(icons::STORE_REMOVE),
         #[allow(deprecated)]
-        "bootstrap" => {
+        "pi-hole" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'bootstrap' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'pi-hole' is deprecated.").print(py);
             }
-            Some(icons::BOOTSTRAP)
+            Some(icons::PI_HOLE)
         }
-        "cellphone-link" => Some(icons::CELLPHONE_LINK),
-        "lightbulb-spot-off" => Some(icons::LIGHTBULB_SPOT_OFF),
-        "file-excel" => Some(icons::FILE_EXCEL),
-        "vector-circle" => Some(icons::VECTOR_CIRCLE),
-        "gender-male-female" => Some(icons::GENDER_MALE_FEMALE),
-        "tag-heart" => Some(icons::TAG_HEART),
-        "file-document-plus" => Some(icons::FILE_DOCUMENT_PLUS),
-        "lock-check" => Some(icons::LOCK_CHECK),
-        "exit-to-app" => Some(icons::EXIT_TO_APP),
-        "crop-landscape" => Some(icons::CROP_LANDSCAPE),
-        "arrow-up-bold" => Some(icons::ARROW_UP_BOLD),
-        "battery-charging-10" => Some(icons::BATTERY_CHARGING_10),
-        "book-cancel" => Some(icons::BOOK_CANCEL),
-        "ray-start" => Some(icons::RAY_START),
-        "relation-one-to-zero-or-many" => Some(icons::RELATION_ONE_TO_ZERO_OR_MANY),
-        "allergy" => Some(icons::ALLERGY),
-        "account-music-outline" => Some(icons::ACCOUNT_MUSIC_OUTLINE),
-        "lock-outline" => Some(icons::LOCK_OUTLINE),
-        "account-multiple-minus" => Some(icons::ACCOUNT_MULTIPLE_MINUS),
-        "lightbulb-alert" => Some(icons::LIGHTBULB_ALERT),
-        "seat-passenger" => Some(icons::SEAT_PASSENGER),
+        "vector-selection" => Some(icons::VECTOR_SELECTION),
+        "movie-minus" => Some(icons::MOVIE_MINUS),
+        "emoticon-minus-outline" => Some(icons::EMOTICON_MINUS_OUTLINE),
+        "face-mask" => Some(icons::FACE_MASK),
+        "dna" => Some(icons::DNA),
+        "domain-switch" => Some(icons::DOMAIN_SWITCH),
+        "gamepad-right" => Some(icons::GAMEPAD_RIGHT),
+        "kite-outline" => Some(icons::KITE_OUTLINE),
+        "mailbox" => Some(icons::MAILBOX),
+        "mouse-scroll-wheel" => Some(icons::MOUSE_SCROLL_WHEEL),
+        "water-off" => Some(icons::WATER_OFF),
+        "pencil-plus-outline" => Some(icons::PENCIL_PLUS_OUTLINE),
+        "format-font-size-decrease" => Some(icons::FORMAT_FONT_SIZE_DECREASE),
+        "alert-octagram-outline" => Some(icons::ALERT_OCTAGRAM_OUTLINE),
+        "penguin" => Some(icons::PENGUIN),
+        "note-check-outline" => Some(icons::NOTE_CHECK_OUTLINE),
+        "emoticon-plus" => Some(icons::EMOTICON_PLUS),
+        "tractor" => Some(icons::TRACTOR),
         #[allow(deprecated)]
-        "google-translate" => {
+        "microsoft-internet-explorer" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'google-translate' is deprecated.")
-                    .print(py);
+                PyDeprecationWarning::new_err(
+                    "The icon 'microsoft-internet-explorer' is deprecated.",
+                )
+                .print(py);
             }
-            Some(icons::GOOGLE_TRANSLATE)
+            Some(icons::MICROSOFT_INTERNET_EXPLORER)
         }
-        "molecule" => Some(icons::MOLECULE),
-        "mouse-move-vertical" => Some(icons::MOUSE_MOVE_VERTICAL),
-        "fan-speed-3" => Some(icons::FAN_SPEED_3),
-        "grease-pencil" => Some(icons::GREASE_PENCIL),
-        #[allow(deprecated)]
-        "facebook-messenger" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'facebook-messenger' is deprecated.")
-                    .print(py);
-            }
-            Some(icons::FACEBOOK_MESSENGER)
-        }
-        "form-textarea" => Some(icons::FORM_TEXTAREA),
-        "checkbox-intermediate" => Some(icons::CHECKBOX_INTERMEDIATE),
-        "pyramid" => Some(icons::PYRAMID),
-        "translate-variant" => Some(icons::TRANSLATE_VARIANT),
-        "archive-sync" => Some(icons::ARCHIVE_SYNC),
-        "eye-off-outline" => Some(icons::EYE_OFF_OUTLINE),
-        "gate-nor" => Some(icons::GATE_NOR),
-        "plus-circle" => Some(icons::PLUS_CIRCLE),
-        "file-cad-box" => Some(icons::FILE_CAD_BOX),
-        "comment-bookmark" => Some(icons::COMMENT_BOOKMARK),
-        "email-plus" => Some(icons::EMAIL_PLUS),
-        "timer-music-outline" => Some(icons::TIMER_MUSIC_OUTLINE),
-        "note-search-outline" => Some(icons::NOTE_SEARCH_OUTLINE),
-        "face-mask-outline" => Some(icons::FACE_MASK_OUTLINE),
-        "timer-refresh" => Some(icons::TIMER_REFRESH),
-        "folder" => Some(icons::FOLDER),
-        "wifi-marker" => Some(icons::WIFI_MARKER),
-        "home-percent-outline" => Some(icons::HOME_PERCENT_OUTLINE),
-        "gesture-double-tap" => Some(icons::GESTURE_DOUBLE_TAP),
-        "file-image-marker" => Some(icons::FILE_IMAGE_MARKER),
-        "cellphone-message" => Some(icons::CELLPHONE_MESSAGE),
-        "toaster" => Some(icons::TOASTER),
-        "motorbike" => Some(icons::MOTORBIKE),
-        "printer-pos-remove-outline" => Some(icons::PRINTER_POS_REMOVE_OUTLINE),
-        "paperclip-remove" => Some(icons::PAPERCLIP_REMOVE),
-        "wheelchair-accessibility" => Some(icons::WHEELCHAIR_ACCESSIBILITY),
-        "wifi-strength-3-lock-open" => Some(icons::WIFI_STRENGTH_3_LOCK_OPEN),
-        "blur-radial" => Some(icons::BLUR_RADIAL),
-        "format-align-justify" => Some(icons::FORMAT_ALIGN_JUSTIFY),
-        "ip-outline" => Some(icons::IP_OUTLINE),
-        "clock-time-seven" => Some(icons::CLOCK_TIME_SEVEN),
-        "inbox-full" => Some(icons::INBOX_FULL),
-        "tab-search" => Some(icons::TAB_SEARCH),
-        "hamburger-plus" => Some(icons::HAMBURGER_PLUS),
-        "file-document-minus-outline" => Some(icons::FILE_DOCUMENT_MINUS_OUTLINE),
-        "meter-electric-outline" => Some(icons::METER_ELECTRIC_OUTLINE),
-        "repeat-once" => Some(icons::REPEAT_ONCE),
-        "star-circle-outline" => Some(icons::STAR_CIRCLE_OUTLINE),
-        "account-credit-card-outline" => Some(icons::ACCOUNT_CREDIT_CARD_OUTLINE),
-        #[allow(deprecated)]
-        "stackpath" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'stackpath' is deprecated.").print(py);
-            }
-            Some(icons::STACKPATH)
-        }
-        "shield-home" => Some(icons::SHIELD_HOME),
-        "vector-point-select" => Some(icons::VECTOR_POINT_SELECT),
-        "clock-time-eight-outline" => Some(icons::CLOCK_TIME_EIGHT_OUTLINE),
+        "panorama-variant" => Some(icons::PANORAMA_VARIANT),
+        "cart-heart" => Some(icons::CART_HEART),
+        "cloud-arrow-left-outline" => Some(icons::CLOUD_ARROW_LEFT_OUTLINE),
+        "account-reactivate" => Some(icons::ACCOUNT_REACTIVATE),
+        "minus-network-outline" => Some(icons::MINUS_NETWORK_OUTLINE),
         _ => None,
     }
 }
