@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("DEVICE_CAMERA_24", icons::DEVICE_CAMERA_24)?;
+    m.add("SMILEY_GRIN_24", icons::SMILEY_GRIN_24)?;
     m.add("CHEVRON_DOWN_24", icons::CHEVRON_DOWN_24)?;
     m.add("GIT_COMPARE_24", icons::GIT_COMPARE_24)?;
     m.add("PROJECT_CHECK_16", icons::PROJECT_CHECK_16)?;
@@ -216,7 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("REL_FILE_PATH_16", icons::REL_FILE_PATH_16)?;
     m.add("SHIELD_LOCK_16", icons::SHIELD_LOCK_16)?;
     m.add("NO_ENTRY_16", icons::NO_ENTRY_16)?;
-    m.add("FILE_SYMLINK_FILE_24", icons::FILE_SYMLINK_FILE_24)?;
-    m.add("BOOKMARK_FILL_24", icons::BOOKMARK_FILL_24)?;
     Ok(())
 }

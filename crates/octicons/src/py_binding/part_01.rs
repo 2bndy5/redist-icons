@@ -83,6 +83,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("GIT_MERGE_QUEUE_16", icons::GIT_MERGE_QUEUE_16)?;
     m.add("PLAY_24", icons::PLAY_24)?;
     m.add("INFO_24", icons::INFO_24)?;
+    m.add("QUESTION_BUBBLE_16", icons::QUESTION_BUBBLE_16)?;
     m.add("ZAP_16", icons::ZAP_16)?;
     m.add("BOOK_24", icons::BOOK_24)?;
     m.add("ARCHIVE_24", icons::ARCHIVE_24)?;
@@ -157,6 +158,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("GIT_PULL_REQUEST_24", icons::GIT_PULL_REQUEST_24)?;
     m.add("STACK_ADD_16", icons::STACK_ADD_16)?;
     m.add("GRAPH_BAR_HORIZONTAL_16", icons::GRAPH_BAR_HORIZONTAL_16)?;
+    m.add("QUESTION_BUBBLE_24", icons::QUESTION_BUBBLE_24)?;
     m.add("SHIELD_X_16", icons::SHIELD_X_16)?;
     m.add("GIFT_24", icons::GIFT_24)?;
     m.add("LAW_16", icons::LAW_16)?;
@@ -213,7 +215,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SUN_24", icons::SUN_24)?;
     m.add("TELESCOPE_FILL_24", icons::TELESCOPE_FILL_24)?;
     m.add("FILE_MEDIA_16", icons::FILE_MEDIA_16)?;
-    m.add("DEVICE_CAMERA_24", icons::DEVICE_CAMERA_24)?;
-    m.add("SMILEY_GRIN_24", icons::SMILEY_GRIN_24)?;
     Ok(())
 }
