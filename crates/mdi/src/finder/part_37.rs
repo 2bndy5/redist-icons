@@ -9,74 +9,60 @@ use pyo3::prelude::*;
 
 pub(super) fn find_part_37(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "unfold-less-vertical" => Some(icons::UNFOLD_LESS_VERTICAL),
-        "cpu-32-bit" => Some(icons::CPU_32_BIT),
-        "smoke-detector-alert-outline" => Some(icons::SMOKE_DETECTOR_ALERT_OUTLINE),
-        "square-medium-outline" => Some(icons::SQUARE_MEDIUM_OUTLINE),
-        "battery-check-outline" => Some(icons::BATTERY_CHECK_OUTLINE),
-        "alpha-j-box" => Some(icons::ALPHA_J_BOX),
-        "chevron-down-circle" => Some(icons::CHEVRON_DOWN_CIRCLE),
-        "printer-alert" => Some(icons::PRINTER_ALERT),
-        "account-cancel" => Some(icons::ACCOUNT_CANCEL),
-        "arrow-left-bottom-bold" => Some(icons::ARROW_LEFT_BOTTOM_BOLD),
-        "newspaper-check" => Some(icons::NEWSPAPER_CHECK),
-        "battery-charging-wireless-90" => Some(icons::BATTERY_CHARGING_WIRELESS_90),
-        "chevron-double-left" => Some(icons::CHEVRON_DOUBLE_LEFT),
-        "tag-outline" => Some(icons::TAG_OUTLINE),
-        "format-page-break" => Some(icons::FORMAT_PAGE_BREAK),
-        "shield-plus" => Some(icons::SHIELD_PLUS),
-        "delete-empty" => Some(icons::DELETE_EMPTY),
-        "currency-cny" => Some(icons::CURRENCY_CNY),
-        "rewind-60" => Some(icons::REWIND_60),
-        "water-off" => Some(icons::WATER_OFF),
-        "emoticon-happy-outline" => Some(icons::EMOTICON_HAPPY_OUTLINE),
-        "window-restore" => Some(icons::WINDOW_RESTORE),
-        "message-lock-outline" => Some(icons::MESSAGE_LOCK_OUTLINE),
-        "code-greater-than-or-equal" => Some(icons::CODE_GREATER_THAN_OR_EQUAL),
-        "file-settings" => Some(icons::FILE_SETTINGS),
-        "newspaper-variant-multiple" => Some(icons::NEWSPAPER_VARIANT_MULTIPLE),
-        "death-star" => Some(icons::DEATH_STAR),
-        "dots-vertical-circle" => Some(icons::DOTS_VERTICAL_CIRCLE),
+        "keyboard-space" => Some(icons::KEYBOARD_SPACE),
+        "alpha-o" => Some(icons::ALPHA_O),
+        "web-remove" => Some(icons::WEB_REMOVE),
+        "highway" => Some(icons::HIGHWAY),
+        "flag-triangle" => Some(icons::FLAG_TRIANGLE),
+        "diabetes" => Some(icons::DIABETES),
+        "emoticon-plus-outline" => Some(icons::EMOTICON_PLUS_OUTLINE),
+        "contain-end" => Some(icons::CONTAIN_END),
         #[allow(deprecated)]
-        "qqchat" => {
+        "apache-kafka" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'qqchat' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'apache-kafka' is deprecated.").print(py);
             }
-            Some(icons::QQCHAT)
+            Some(icons::APACHE_KAFKA)
         }
-        "television-shimmer" => Some(icons::TELEVISION_SHIMMER),
-        "move-resize-variant" => Some(icons::MOVE_RESIZE_VARIANT),
-        "vector-rectangle" => Some(icons::VECTOR_RECTANGLE),
-        "lock-off" => Some(icons::LOCK_OFF),
-        "checkbox-blank" => Some(icons::CHECKBOX_BLANK),
-        "bike-fast" => Some(icons::BIKE_FAST),
-        "message-draw" => Some(icons::MESSAGE_DRAW),
-        "card-bulleted-settings-outline" => Some(icons::CARD_BULLETED_SETTINGS_OUTLINE),
-        #[allow(deprecated)]
-        "microsoft-edge" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'microsoft-edge' is deprecated.").print(py);
-            }
-            Some(icons::MICROSOFT_EDGE)
-        }
-        "gesture-swipe-up" => Some(icons::GESTURE_SWIPE_UP),
-        "webcam" => Some(icons::WEBCAM),
-        "volume-off" => Some(icons::VOLUME_OFF),
-        "tag-faces" => Some(icons::TAG_FACES),
-        #[allow(deprecated)]
-        "google-lens" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'google-lens' is deprecated.").print(py);
-            }
-            Some(icons::GOOGLE_LENS)
-        }
-        "water-boiler-auto" => Some(icons::WATER_BOILER_AUTO),
+        "bee" => Some(icons::BEE),
+        "copyleft" => Some(icons::COPYLEFT),
+        "account-child" => Some(icons::ACCOUNT_CHILD),
+        "clock-remove-outline" => Some(icons::CLOCK_REMOVE_OUTLINE),
+        "chart-box-outline" => Some(icons::CHART_BOX_OUTLINE),
+        "message-text" => Some(icons::MESSAGE_TEXT),
+        "ring" => Some(icons::RING),
+        "alpha-e-circle" => Some(icons::ALPHA_E_CIRCLE),
+        "arrow-up-box" => Some(icons::ARROW_UP_BOX),
+        "grill" => Some(icons::GRILL),
+        "lock-check-outline" => Some(icons::LOCK_CHECK_OUTLINE),
+        "piano-off" => Some(icons::PIANO_OFF),
+        "folder-upload" => Some(icons::FOLDER_UPLOAD),
+        "racing-helmet" => Some(icons::RACING_HELMET),
+        "map-check" => Some(icons::MAP_CHECK),
+        "screwdriver" => Some(icons::SCREWDRIVER),
+        "screw-machine-round-top" => Some(icons::SCREW_MACHINE_ROUND_TOP),
+        "format-strikethrough" => Some(icons::FORMAT_STRIKETHROUGH),
+        "cash-marker" => Some(icons::CASH_MARKER),
+        "code-greater-than" => Some(icons::CODE_GREATER_THAN),
+        "peanut-outline" => Some(icons::PEANUT_OUTLINE),
+        "handball" => Some(icons::HANDBALL),
+        "violin" => Some(icons::VIOLIN),
+        "home-variant" => Some(icons::HOME_VARIANT),
+        "food-turkey" => Some(icons::FOOD_TURKEY),
+        "view-day" => Some(icons::VIEW_DAY),
+        "cursor-move" => Some(icons::CURSOR_MOVE),
+        "watch-export-variant" => Some(icons::WATCH_EXPORT_VARIANT),
+        "panorama" => Some(icons::PANORAMA),
+        "valve-closed" => Some(icons::VALVE_CLOSED),
+        "border-top" => Some(icons::BORDER_TOP),
+        "power-socket-eu" => Some(icons::POWER_SOCKET_EU),
         "ip" => Some(icons::IP),
-        "video-3d" => Some(icons::VIDEO_3D),
-        "storefront-remove-outline" => Some(icons::STOREFRONT_REMOVE_OUTLINE),
+        "paw-off-outline" => Some(icons::PAW_OFF_OUTLINE),
+        "archive-arrow-up-outline" => Some(icons::ARCHIVE_ARROW_UP_OUTLINE),
+        "delete-clock-outline" => Some(icons::DELETE_CLOCK_OUTLINE),
+        "hand-extended-outline" => Some(icons::HAND_EXTENDED_OUTLINE),
+        "cards-playing-spade-multiple" => Some(icons::CARDS_PLAYING_SPADE_MULTIPLE),
         _ => None,
     }
 }
