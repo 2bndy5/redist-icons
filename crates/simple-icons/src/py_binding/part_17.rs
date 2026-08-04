@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SEFARIA", icons::SI_SEFARIA)?;
+    m.add("SI_PAGERDUTY", icons::SI_PAGERDUTY)?;
+    m.add("SI_APACHEFLINK", icons::SI_APACHEFLINK)?;
     m.add("SI_CODECHEF", icons::SI_CODECHEF)?;
     m.add("SI_ONEPLUS", icons::SI_ONEPLUS)?;
     m.add("SI_KEYCLOAK", icons::SI_KEYCLOAK)?;

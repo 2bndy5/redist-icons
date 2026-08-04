@@ -184,6 +184,7 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "linksys" => Some(icons::SI_LINKSYS),
         "thurgauerkantonalbank" => Some(icons::SI_THURGAUERKANTONALBANK),
         "opensea" => Some(icons::SI_OPENSEA),
+        "trae" => Some(icons::SI_TRAE),
         "dblp" => Some(icons::SI_DBLP),
         "quad9" => Some(icons::SI_QUAD9),
         "homarr" => Some(icons::SI_HOMARR),
@@ -202,7 +203,6 @@ pub(super) fn find_part_9(slug: &str) -> Option<Icon> {
         "gtk" => Some(icons::SI_GTK),
         "vmware" => Some(icons::SI_VMWARE),
         "pixelfed" => Some(icons::SI_PIXELFED),
-        "adminer" => Some(icons::SI_ADMINER),
         _ => None,
     }
 }

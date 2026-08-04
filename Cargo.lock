@@ -124,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "simple-icons-pack"
-version = "16.27.1"
+version = "16.28.0"
 dependencies = [
  "pyo3",
 ]
