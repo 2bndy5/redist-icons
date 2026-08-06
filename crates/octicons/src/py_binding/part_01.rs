@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("FILTER_REMOVE_24", icons::FILTER_REMOVE_24)?;
     m.add("DIFF_REMOVED_24", icons::DIFF_REMOVED_24)?;
     m.add("DIFF_IGNORED_24", icons::DIFF_IGNORED_24)?;
     m.add("PERSON_16", icons::PERSON_16)?;
@@ -208,12 +209,11 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FILE_ZIP_24", icons::FILE_ZIP_24)?;
     m.add("DATABASE_24", icons::DATABASE_24)?;
     m.add("CODE_16", icons::CODE_16)?;
+    m.add("ISSUE_RELATES_TO_24", icons::ISSUE_RELATES_TO_24)?;
     m.add("HEADING_16", icons::HEADING_16)?;
     m.add("COMPOSE_16", icons::COMPOSE_16)?;
     m.add("DEPENDABOT_24", icons::DEPENDABOT_24)?;
     m.add("BOOLEAN_OFF_16", icons::BOOLEAN_OFF_16)?;
     m.add("SUN_24", icons::SUN_24)?;
-    m.add("TELESCOPE_FILL_24", icons::TELESCOPE_FILL_24)?;
-    m.add("FILE_MEDIA_16", icons::FILE_MEDIA_16)?;
     Ok(())
 }

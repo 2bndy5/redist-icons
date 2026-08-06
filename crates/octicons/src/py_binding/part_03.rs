@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SHIELD_LOCK_16", icons::SHIELD_LOCK_16)?;
+    m.add("NO_ENTRY_16", icons::NO_ENTRY_16)?;
     m.add("FILE_SYMLINK_FILE_24", icons::FILE_SYMLINK_FILE_24)?;
     m.add("BOOKMARK_FILL_24", icons::BOOKMARK_FILL_24)?;
     m.add("CHECK_CIRCLE_24", icons::CHECK_CIRCLE_24)?;

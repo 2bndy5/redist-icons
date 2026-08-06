@@ -193,6 +193,7 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LINKSYS", icons::SI_LINKSYS)?;
     m.add("SI_THURGAUERKANTONALBANK", icons::SI_THURGAUERKANTONALBANK)?;
     m.add("SI_OPENSEA", icons::SI_OPENSEA)?;
+    m.add("SI_TRAE", icons::SI_TRAE)?;
     m.add("SI_DBLP", icons::SI_DBLP)?;
     m.add("SI_QUAD9", icons::SI_QUAD9)?;
     m.add("SI_HOMARR", icons::SI_HOMARR)?;
@@ -214,6 +215,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GTK", icons::SI_GTK)?;
     m.add("SI_VMWARE", icons::SI_VMWARE)?;
     m.add("SI_PIXELFED", icons::SI_PIXELFED)?;
-    m.add("SI_ADMINER", icons::SI_ADMINER)?;
     Ok(())
 }

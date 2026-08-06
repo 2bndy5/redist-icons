@@ -149,6 +149,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "arrow-up-right-16" => Some(icons::ARROW_UP_RIGHT_16),
         "stop-24" => Some(icons::STOP_24),
         "multi-select-16" => Some(icons::MULTI_SELECT_16),
+        "issue-relates-to-16" => Some(icons::ISSUE_RELATES_TO_16),
         "sparkle-fill-16" => Some(icons::SPARKLE_FILL_16),
         "arrow-down-right-16" => Some(icons::ARROW_DOWN_RIGHT_16),
         "git-commit-16" => Some(icons::GIT_COMMIT_16),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "agent-16" => Some(icons::AGENT_16),
         "quote-24" => Some(icons::QUOTE_24),
         "people-24" => Some(icons::PEOPLE_24),
-        "filter-remove-24" => Some(icons::FILTER_REMOVE_24),
         _ => None,
     }
 }

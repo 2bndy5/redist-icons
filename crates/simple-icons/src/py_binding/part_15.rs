@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_FANDOM", icons::SI_FANDOM)?;
+    m.add("SI_INFRACOST", icons::SI_INFRACOST)?;
+    m.add("SI_GRAVATAR", icons::SI_GRAVATAR)?;
     m.add("SI_TUTA", icons::SI_TUTA)?;
     m.add("SI_REDBULL", icons::SI_REDBULL)?;
     m.add("SI_JUSTEAT", icons::SI_JUSTEAT)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SONARQUBESERVER", icons::SI_SONARQUBESERVER)?;
     m.add("SI_WOLFRAM", icons::SI_WOLFRAM)?;
     m.add("SI_PLAYSTATION4", icons::SI_PLAYSTATION4)?;
-    m.add("SI_TIDE", icons::SI_TIDE)?;
-    m.add("SI_UPSTASH", icons::SI_UPSTASH)?;
-    m.add("SI_THYMELEAF", icons::SI_THYMELEAF)?;
     Ok(())
 }

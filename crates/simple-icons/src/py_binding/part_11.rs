@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_BUGATTI", icons::SI_BUGATTI)?;
     m.add("SI_MONSTER", icons::SI_MONSTER)?;
     m.add("SI_VALVE", icons::SI_VALVE)?;
     m.add("SI_O2", icons::SI_O2)?;
@@ -102,6 +103,7 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_VAULTWARDEN", icons::SI_VAULTWARDEN)?;
     m.add("SI_AUDACITY", icons::SI_AUDACITY)?;
     m.add("SI_PLEROMA", icons::SI_PLEROMA)?;
+    m.add("SI_ZECTRIX", icons::SI_ZECTRIX)?;
     m.add("SI_OCULUS", icons::SI_OCULUS)?;
     m.add("SI_PETSATHOME", icons::SI_PETSATHOME)?;
     m.add("SI_CURSEFORGE", icons::SI_CURSEFORGE)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_JELLYFIN", icons::SI_JELLYFIN)?;
     m.add("SI_SPACESHIP", icons::SI_SPACESHIP)?;
     m.add("SI_WIKIDOTJS", icons::SI_WIKIDOTJS)?;
-    m.add("SI_IOBROKER", icons::SI_IOBROKER)?;
-    m.add("SI_HEXO", icons::SI_HEXO)?;
     Ok(())
 }

@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SHADOW", icons::SI_SHADOW)?;
+    m.add("SI_EQUINIXMETAL", icons::SI_EQUINIXMETAL)?;
+    m.add("SI_STYLUS", icons::SI_STYLUS)?;
     m.add("SI_FANDANGO", icons::SI_FANDANGO)?;
     m.add("SI_FLUTTER", icons::SI_FLUTTER)?;
     m.add("SI_SONICWALL", icons::SI_SONICWALL)?;
@@ -200,8 +203,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TADO", icons::SI_TADO)?;
     m.add("SI_ECLIPSEIDE", icons::SI_ECLIPSEIDE)?;
     m.add("SI_SAHIBINDEN", icons::SI_SAHIBINDEN)?;
-    m.add("SI_EUROPEANUNION", icons::SI_EUROPEANUNION)?;
-    m.add("SI_CREALITY", icons::SI_CREALITY)?;
-    m.add("SI_NEWGROUNDS", icons::SI_NEWGROUNDS)?;
     Ok(())
 }

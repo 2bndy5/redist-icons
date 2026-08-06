@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_17(slug: &str) -> Option<Icon> {
     match slug {
+        "sefaria" => Some(icons::SI_SEFARIA),
+        "pagerduty" => Some(icons::SI_PAGERDUTY),
+        "apacheflink" => Some(icons::SI_APACHEFLINK),
         "codechef" => Some(icons::SI_CODECHEF),
         "oneplus" => Some(icons::SI_ONEPLUS),
         "keycloak" => Some(icons::SI_KEYCLOAK),

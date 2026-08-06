@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("TELESCOPE_FILL_24", icons::TELESCOPE_FILL_24)?;
+    m.add("FILE_MEDIA_16", icons::FILE_MEDIA_16)?;
     m.add("DEVICE_CAMERA_24", icons::DEVICE_CAMERA_24)?;
     m.add("SMILEY_GRIN_24", icons::SMILEY_GRIN_24)?;
     m.add("CHEVRON_DOWN_24", icons::CHEVRON_DOWN_24)?;
@@ -216,7 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FILE_CODE_24", icons::FILE_CODE_24)?;
     m.add("REPORT_24", icons::REPORT_24)?;
     m.add("REL_FILE_PATH_16", icons::REL_FILE_PATH_16)?;
-    m.add("SHIELD_LOCK_16", icons::SHIELD_LOCK_16)?;
-    m.add("NO_ENTRY_16", icons::NO_ENTRY_16)?;
     Ok(())
 }
