@@ -155,6 +155,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_UP_RIGHT_16", icons::ARROW_UP_RIGHT_16)?;
     m.add("STOP_24", icons::STOP_24)?;
     m.add("MULTI_SELECT_16", icons::MULTI_SELECT_16)?;
+    m.add("ISSUE_RELATES_TO_16", icons::ISSUE_RELATES_TO_16)?;
     m.add("SPARKLE_FILL_16", icons::SPARKLE_FILL_16)?;
     m.add("ARROW_DOWN_RIGHT_16", icons::ARROW_DOWN_RIGHT_16)?;
     m.add("GIT_COMMIT_16", icons::GIT_COMMIT_16)?;
@@ -214,6 +215,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("AGENT_16", icons::AGENT_16)?;
     m.add("QUOTE_24", icons::QUOTE_24)?;
     m.add("PEOPLE_24", icons::PEOPLE_24)?;
-    m.add("FILTER_REMOVE_24", icons::FILTER_REMOVE_24)?;
     Ok(())
 }

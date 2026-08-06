@@ -30,7 +30,7 @@ dependencies = [
 
 [[package]]
 name = "octicons-pack"
-version = "19.32.0"
+version = "19.33.0"
 dependencies = [
  "pyo3",
 ]
@@ -124,7 +124,7 @@ dependencies = [
 
 [[package]]
 name = "simple-icons-pack"
-version = "16.27.1"
+version = "16.28.0"
 dependencies = [
  "pyo3",
 ]

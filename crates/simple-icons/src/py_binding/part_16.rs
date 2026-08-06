@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TIDE", icons::SI_TIDE)?;
+    m.add("SI_UPSTASH", icons::SI_UPSTASH)?;
+    m.add("SI_THYMELEAF", icons::SI_THYMELEAF)?;
     m.add("SI_GUTENBERG", icons::SI_GUTENBERG)?;
     m.add("SI_FILES", icons::SI_FILES)?;
     m.add("SI_RENOVATE", icons::SI_RENOVATE)?;
@@ -203,8 +206,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SELENIUM", icons::SI_SELENIUM)?;
     m.add("SI_MACOS", icons::SI_MACOS)?;
     m.add("SI_ORCHARDCORE", icons::SI_ORCHARDCORE)?;
-    m.add("SI_SEFARIA", icons::SI_SEFARIA)?;
-    m.add("SI_PAGERDUTY", icons::SI_PAGERDUTY)?;
-    m.add("SI_APACHEFLINK", icons::SI_APACHEFLINK)?;
     Ok(())
 }
