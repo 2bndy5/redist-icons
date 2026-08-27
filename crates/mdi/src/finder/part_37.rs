@@ -9,14 +9,56 @@ use pyo3::prelude::*;
 
 pub(super) fn find_part_37(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "keyboard-space" => Some(icons::KEYBOARD_SPACE),
-        "alpha-o" => Some(icons::ALPHA_O),
-        "web-remove" => Some(icons::WEB_REMOVE),
-        "highway" => Some(icons::HIGHWAY),
-        "flag-triangle" => Some(icons::FLAG_TRIANGLE),
-        "diabetes" => Some(icons::DIABETES),
-        "emoticon-plus-outline" => Some(icons::EMOTICON_PLUS_OUTLINE),
-        "contain-end" => Some(icons::CONTAIN_END),
+        "hand-water" => Some(icons::HAND_WATER),
+        "alpha-u" => Some(icons::ALPHA_U),
+        "wall-sconce-flat-outline" => Some(icons::WALL_SCONCE_FLAT_OUTLINE),
+        "hexagon-slice-3" => Some(icons::HEXAGON_SLICE_3),
+        "flash-alert-outline" => Some(icons::FLASH_ALERT_OUTLINE),
+        "view-week" => Some(icons::VIEW_WEEK),
+        "hand-saw" => Some(icons::HAND_SAW),
+        "alert-remove-outline" => Some(icons::ALERT_REMOVE_OUTLINE),
+        "mower-bag" => Some(icons::MOWER_BAG),
+        "table-refresh" => Some(icons::TABLE_REFRESH),
+        "emoticon-happy-outline" => Some(icons::EMOTICON_HAPPY_OUTLINE),
+        "leaf-circle-outline" => Some(icons::LEAF_CIRCLE_OUTLINE),
+        "multiplication-box" => Some(icons::MULTIPLICATION_BOX),
+        #[allow(deprecated)]
+        "mastodon" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'mastodon' is deprecated.").print(py);
+            }
+            Some(icons::MASTODON)
+        }
+        "image" => Some(icons::IMAGE),
+        "projector-screen" => Some(icons::PROJECTOR_SCREEN),
+        "book-music-outline" => Some(icons::BOOK_MUSIC_OUTLINE),
+        "target" => Some(icons::TARGET),
+        "power-cycle" => Some(icons::POWER_CYCLE),
+        #[allow(deprecated)]
+        "google-nearby" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'google-nearby' is deprecated.").print(py);
+            }
+            Some(icons::GOOGLE_NEARBY)
+        }
+        "menu-up-outline" => Some(icons::MENU_UP_OUTLINE),
+        "image-refresh-outline" => Some(icons::IMAGE_REFRESH_OUTLINE),
+        "format-letter-case" => Some(icons::FORMAT_LETTER_CASE),
+        "flask-off" => Some(icons::FLASK_OFF),
+        "flag-remove-outline" => Some(icons::FLAG_REMOVE_OUTLINE),
+        #[allow(deprecated)]
+        "language-markdown-outline" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err(
+                    "The icon 'language-markdown-outline' is deprecated.",
+                )
+                .print(py);
+            }
+            Some(icons::LANGUAGE_MARKDOWN_OUTLINE)
+        }
         #[allow(deprecated)]
         "apache-kafka" => {
             #[cfg(feature = "pyo3")]
@@ -25,44 +67,43 @@ pub(super) fn find_part_37(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> O
             }
             Some(icons::APACHE_KAFKA)
         }
-        "bee" => Some(icons::BEE),
-        "copyleft" => Some(icons::COPYLEFT),
-        "account-child" => Some(icons::ACCOUNT_CHILD),
-        "clock-remove-outline" => Some(icons::CLOCK_REMOVE_OUTLINE),
-        "chart-box-outline" => Some(icons::CHART_BOX_OUTLINE),
-        "message-text" => Some(icons::MESSAGE_TEXT),
-        "ring" => Some(icons::RING),
-        "alpha-e-circle" => Some(icons::ALPHA_E_CIRCLE),
-        "arrow-up-box" => Some(icons::ARROW_UP_BOX),
-        "grill" => Some(icons::GRILL),
-        "lock-check-outline" => Some(icons::LOCK_CHECK_OUTLINE),
-        "piano-off" => Some(icons::PIANO_OFF),
-        "folder-upload" => Some(icons::FOLDER_UPLOAD),
-        "racing-helmet" => Some(icons::RACING_HELMET),
-        "map-check" => Some(icons::MAP_CHECK),
-        "screwdriver" => Some(icons::SCREWDRIVER),
-        "screw-machine-round-top" => Some(icons::SCREW_MACHINE_ROUND_TOP),
-        "format-strikethrough" => Some(icons::FORMAT_STRIKETHROUGH),
-        "cash-marker" => Some(icons::CASH_MARKER),
-        "code-greater-than" => Some(icons::CODE_GREATER_THAN),
-        "peanut-outline" => Some(icons::PEANUT_OUTLINE),
-        "handball" => Some(icons::HANDBALL),
-        "violin" => Some(icons::VIOLIN),
-        "home-variant" => Some(icons::HOME_VARIANT),
-        "food-turkey" => Some(icons::FOOD_TURKEY),
-        "view-day" => Some(icons::VIEW_DAY),
-        "cursor-move" => Some(icons::CURSOR_MOVE),
-        "watch-export-variant" => Some(icons::WATCH_EXPORT_VARIANT),
-        "panorama" => Some(icons::PANORAMA),
-        "valve-closed" => Some(icons::VALVE_CLOSED),
-        "border-top" => Some(icons::BORDER_TOP),
-        "power-socket-eu" => Some(icons::POWER_SOCKET_EU),
-        "ip" => Some(icons::IP),
-        "paw-off-outline" => Some(icons::PAW_OFF_OUTLINE),
-        "archive-arrow-up-outline" => Some(icons::ARCHIVE_ARROW_UP_OUTLINE),
-        "delete-clock-outline" => Some(icons::DELETE_CLOCK_OUTLINE),
-        "hand-extended-outline" => Some(icons::HAND_EXTENDED_OUTLINE),
-        "cards-playing-spade-multiple" => Some(icons::CARDS_PLAYING_SPADE_MULTIPLE),
+        "barn" => Some(icons::BARN),
+        "asterisk-circle-outline" => Some(icons::ASTERISK_CIRCLE_OUTLINE),
+        "hat-fedora" => Some(icons::HAT_FEDORA),
+        "peace" => Some(icons::PEACE),
+        "bank-circle" => Some(icons::BANK_CIRCLE),
+        "spray" => Some(icons::SPRAY),
+        "database-minus" => Some(icons::DATABASE_MINUS),
+        "brightness-percent" => Some(icons::BRIGHTNESS_PERCENT),
+        "lotion-plus-outline" => Some(icons::LOTION_PLUS_OUTLINE),
+        "brightness-3" => Some(icons::BRIGHTNESS_3),
+        #[allow(deprecated)]
+        "microsoft-xbox-controller-battery-alert" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err(
+                    "The icon 'microsoft-xbox-controller-battery-alert' is deprecated.",
+                )
+                .print(py);
+            }
+            Some(icons::MICROSOFT_XBOX_CONTROLLER_BATTERY_ALERT)
+        }
+        "beach" => Some(icons::BEACH),
+        "shield-lock" => Some(icons::SHIELD_LOCK),
+        "bus-school" => Some(icons::BUS_SCHOOL),
+        "book-remove-outline" => Some(icons::BOOK_REMOVE_OUTLINE),
+        "calendar-text-outline" => Some(icons::CALENDAR_TEXT_OUTLINE),
+        "microphone-question" => Some(icons::MICROPHONE_QUESTION),
+        #[allow(deprecated)]
+        "salesforce" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'salesforce' is deprecated.").print(py);
+            }
+            Some(icons::SALESFORCE)
+        }
+        "weather-partly-lightning" => Some(icons::WEATHER_PARTLY_LIGHTNING),
+        "flash-auto" => Some(icons::FLASH_AUTO),
         _ => None,
     }
 }
