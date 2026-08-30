@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_METRODEPARIS", icons::SI_METRODEPARIS)?;
+    m.add("SI_OSF", icons::SI_OSF)?;
+    m.add("SI_INSTRUCTURE", icons::SI_INSTRUCTURE)?;
+    m.add("SI_MEGA", icons::SI_MEGA)?;
     m.add("SI_KEYBASE", icons::SI_KEYBASE)?;
     m.add("SI_STRAPI", icons::SI_STRAPI)?;
     m.add("SI_REVANCED", icons::SI_REVANCED)?;
@@ -205,9 +209,5 @@ pub(super) fn bind_part_16(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_MOVISTAR", icons::SI_MOVISTAR)?;
     m.add("SI_APMTERMINALS", icons::SI_APMTERMINALS)?;
     m.add("SI_VERCEL", icons::SI_VERCEL)?;
-    m.add("SI_RASA", icons::SI_RASA)?;
-    m.add("SI_KICAD", icons::SI_KICAD)?;
-    m.add("SI_LIBREOFFICEIMPRESS", icons::SI_LIBREOFFICEIMPRESS)?;
-    m.add("SI_EPICGAMES", icons::SI_EPICGAMES)?;
     Ok(())
 }

@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GNU", icons::SI_GNU)?;
+    m.add("SI_BIGBLUEBUTTON", icons::SI_BIGBLUEBUTTON)?;
+    m.add("SI_MSIBUSINESS", icons::SI_MSIBUSINESS)?;
     m.add("SI_FLATPAK", icons::SI_FLATPAK)?;
     m.add("SI_GOOGLETRANSLATE", icons::SI_GOOGLETRANSLATE)?;
     m.add("SI_OPENVERSE", icons::SI_OPENVERSE)?;
@@ -203,11 +206,5 @@ pub(super) fn bind_part_9(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LANGCHAIN", icons::SI_LANGCHAIN)?;
     m.add("SI_NETTO", icons::SI_NETTO)?;
     m.add("SI_LENOVO", icons::SI_LENOVO)?;
-    m.add("SI_VLCMEDIAPLAYER", icons::SI_VLCMEDIAPLAYER)?;
-    m.add(
-        "SI_OPENCONTAINERSINITIATIVE",
-        icons::SI_OPENCONTAINERSINITIATIVE,
-    )?;
-    m.add("SI_SUBTITLEEDIT", icons::SI_SUBTITLEEDIT)?;
     Ok(())
 }
