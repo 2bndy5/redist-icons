@@ -3,6 +3,12 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_VLCMEDIAPLAYER", icons::SI_VLCMEDIAPLAYER)?;
+    m.add(
+        "SI_OPENCONTAINERSINITIATIVE",
+        icons::SI_OPENCONTAINERSINITIATIVE,
+    )?;
+    m.add("SI_SUBTITLEEDIT", icons::SI_SUBTITLEEDIT)?;
     m.add("SI_HACKERONE", icons::SI_HACKERONE)?;
     m.add("SI_YABAI", icons::SI_YABAI)?;
     m.add("SI_BEATS", icons::SI_BEATS)?;
@@ -203,8 +209,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_POLARS", icons::SI_POLARS)?;
     m.add("SI_EDITORCONFIG", icons::SI_EDITORCONFIG)?;
     m.add("SI_YUBICO", icons::SI_YUBICO)?;
-    m.add("SI_KOMOOT", icons::SI_KOMOOT)?;
-    m.add("SI_CODERWALL", icons::SI_CODERWALL)?;
-    m.add("SI_CLION", icons::SI_CLION)?;
     Ok(())
 }

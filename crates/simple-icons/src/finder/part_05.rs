@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
     match slug {
+        "sidequest" => Some(icons::SI_SIDEQUEST),
         "bower" => Some(icons::SI_BOWER),
         "languagetool" => Some(icons::SI_LANGUAGETOOL),
         "hackthebox" => Some(icons::SI_HACKTHEBOX),
@@ -61,6 +62,7 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "nhost" => Some(icons::SI_NHOST),
         "clickup" => Some(icons::SI_CLICKUP),
         "actigraph" => Some(icons::SI_ACTIGRAPH),
+        "traxsource" => Some(icons::SI_TRAXSOURCE),
         "markdown" => Some(icons::SI_MARKDOWN),
         "tsnode" => Some(icons::SI_TSNODE),
         "patreon" => Some(icons::SI_PATREON),
@@ -201,8 +203,6 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "torproject" => Some(icons::SI_TORPROJECT),
         "terraform" => Some(icons::SI_TERRAFORM),
         "honor" => Some(icons::SI_HONOR),
-        "immich" => Some(icons::SI_IMMICH),
-        "virtualbox" => Some(icons::SI_VIRTUALBOX),
         _ => None,
     }
 }

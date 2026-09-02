@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_JUPYTER", icons::SI_JUPYTER)?;
+    m.add("SI_LUDWIG", icons::SI_LUDWIG)?;
+    m.add("SI_STACKEDIT", icons::SI_STACKEDIT)?;
     m.add("SI_CHANGEDETECTION", icons::SI_CHANGEDETECTION)?;
     m.add("SI_GOJEK", icons::SI_GOJEK)?;
     m.add(
@@ -92,6 +95,7 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NAPSTER", icons::SI_NAPSTER)?;
     m.add("SI_STACKHAWK", icons::SI_STACKHAWK)?;
     m.add("SI_SNAPCHAT", icons::SI_SNAPCHAT)?;
+    m.add("SI_SIMPLEICONSCDN", icons::SI_SIMPLEICONSCDN)?;
     m.add("SI_PUSHBULLET", icons::SI_PUSHBULLET)?;
     m.add("SI_NORDVPN", icons::SI_NORDVPN)?;
     m.add("SI_PHPBB", icons::SI_PHPBB)?;
@@ -208,9 +212,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_HOMEADVISOR", icons::SI_HOMEADVISOR)?;
     m.add("SI_PORKBUN", icons::SI_PORKBUN)?;
     m.add("SI_FASTAPI", icons::SI_FASTAPI)?;
-    m.add("SI_DEDGE", icons::SI_DEDGE)?;
-    m.add("SI_GHOSTTY", icons::SI_GHOSTTY)?;
-    m.add("SI_KUCOIN", icons::SI_KUCOIN)?;
-    m.add("SI_SVELTE", icons::SI_SVELTE)?;
     Ok(())
 }

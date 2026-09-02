@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_SIDEQUEST", icons::SI_SIDEQUEST)?;
     m.add("SI_BOWER", icons::SI_BOWER)?;
     m.add("SI_LANGUAGETOOL", icons::SI_LANGUAGETOOL)?;
     m.add("SI_HACKTHEBOX", icons::SI_HACKTHEBOX)?;
@@ -61,6 +62,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_NHOST", icons::SI_NHOST)?;
     m.add("SI_CLICKUP", icons::SI_CLICKUP)?;
     m.add("SI_ACTIGRAPH", icons::SI_ACTIGRAPH)?;
+    m.add("SI_TRAXSOURCE", icons::SI_TRAXSOURCE)?;
     m.add("SI_MARKDOWN", icons::SI_MARKDOWN)?;
     m.add("SI_TSNODE", icons::SI_TSNODE)?;
     m.add("SI_PATREON", icons::SI_PATREON)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TORPROJECT", icons::SI_TORPROJECT)?;
     m.add("SI_TERRAFORM", icons::SI_TERRAFORM)?;
     m.add("SI_HONOR", icons::SI_HONOR)?;
-    m.add("SI_IMMICH", icons::SI_IMMICH)?;
-    m.add("SI_VIRTUALBOX", icons::SI_VIRTUALBOX)?;
     Ok(())
 }

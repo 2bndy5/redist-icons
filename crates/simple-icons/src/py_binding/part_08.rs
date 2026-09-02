@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_FARCASTER", icons::SI_FARCASTER)?;
+    m.add("SI_KEEWEB", icons::SI_KEEWEB)?;
     m.add("SI_MACYS", icons::SI_MACYS)?;
     m.add("SI_GREATLEARNING", icons::SI_GREATLEARNING)?;
     m.add("SI_RISEUP", icons::SI_RISEUP)?;
@@ -199,9 +201,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TATA", icons::SI_TATA)?;
     m.add("SI_SQUARESPACE", icons::SI_SQUARESPACE)?;
     m.add("SI_TURSO", icons::SI_TURSO)?;
+    m.add("SI_TENCENTHY", icons::SI_TENCENTHY)?;
     m.add("SI_CYTOSCAPEDOTJS", icons::SI_CYTOSCAPEDOTJS)?;
-    m.add("SI_GNU", icons::SI_GNU)?;
-    m.add("SI_BIGBLUEBUTTON", icons::SI_BIGBLUEBUTTON)?;
-    m.add("SI_MSIBUSINESS", icons::SI_MSIBUSINESS)?;
     Ok(())
 }

@@ -80,6 +80,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BITCOINCASH", icons::SI_BITCOINCASH)?;
     m.add("SI_PREPBYTES", icons::SI_PREPBYTES)?;
     m.add("SI_OYO", icons::SI_OYO)?;
+    m.add("SI_ALBUMOFTHEYEAR", icons::SI_ALBUMOFTHEYEAR)?;
     m.add("SI_CLERK", icons::SI_CLERK)?;
     m.add("SI_STADIA", icons::SI_STADIA)?;
     m.add("SI_KINGSTONTECHNOLOGY", icons::SI_KINGSTONTECHNOLOGY)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TV4PLAY", icons::SI_TV4PLAY)?;
     m.add("SI_PICARTODOTTV", icons::SI_PICARTODOTTV)?;
     m.add("SI_XMPP", icons::SI_XMPP)?;
-    m.add("SI_FLICKR", icons::SI_FLICKR)?;
     Ok(())
 }

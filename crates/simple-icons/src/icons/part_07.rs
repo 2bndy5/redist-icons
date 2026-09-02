@@ -1,6 +1,28 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// hermes
+pub const SI_HERMES: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Hermes</title><path d="m21.818 4.516-1.05 4.148h2.175L24 4.516M19.41 14.04h2.17l1.04-4.08h-2.178m-2.41 9.523h2.154l1.056-4.147h-2.16m.193-5.377H5.55v.92l3.341 3.161h9.349m2.41-9.525H0v1.116l3.206 3.032H19.6m-8.372 7.58 3.43 3.24h2.205l1.05-4.147h-6.685"/></svg>"##,
+    slug: "hermes",
+    title: "Hermes",
+    hex: "0091CD",
+    source: "https://www.myhermes.de/assets/touchicons/favicon.svg",
+    guidelines: None,
+    license: None,
+};
+
+/// atlasos
+pub const SI_ATLASOS: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>AtlasOS</title><path d="m12 1.608 12 20.785H0l2.537-4.394h13.852L12 10.396l-1.844 3.193H5.082z"/></svg>"##,
+    slug: "atlasos",
+    title: "AtlasOS",
+    hex: "1A91FF",
+    source: "https://docs.atlasos.net/branding",
+    guidelines: Some("https://docs.atlasos.net/branding"),
+    license: None,
+};
+
 /// googlescholar
 pub const SI_GOOGLESCHOLAR: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Scholar</title><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>"##,
@@ -2187,28 +2209,6 @@ pub const SI_HOMIFY: Icon = Icon {
     title: "homify",
     hex: "7DCDA3",
     source: "https://www.homify.com",
-    guidelines: None,
-    license: None,
-};
-
-/// farcaster
-pub const SI_FARCASTER: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Farcaster</title><path d="M18.24.24H5.76C2.5789.24 0 2.8188 0 6v12c0 3.1811 2.5789 5.76 5.76 5.76h12.48c3.1812 0 5.76-2.5789 5.76-5.76V6C24 2.8188 21.4212.24 18.24.24m.8155 17.1662v.504c.2868-.0256.5458.1905.5439.479v.5688h-5.1437v-.5688c-.0019-.2885.2576-.5047.5443-.479v-.504c0-.22.1525-.402.358-.458l-.0095-4.3645c-.1589-1.7366-1.6402-3.0979-3.4435-3.0979-1.8038 0-3.2846 1.3613-3.4435 3.0979l-.0096 4.3578c.2276.0424.5318.2083.5395.4648v.504c.2863-.0256.5457.1905.5438.479v.5688H4.3915v-.5688c-.0019-.2885.2575-.5047.5438-.479v-.504c0-.2529.2011-.4548.4536-.4724v-7.895h-.4905L4.2898 7.008l2.6405-.0005V5.0419h9.9495v1.9656h2.8219l-.6091 2.0314h-.4901v7.8949c.2519.0177.453.2195.453.4724"/></svg>"##,
-    slug: "farcaster",
-    title: "Farcaster",
-    hex: "855DCD",
-    source: "https://www.farcaster.xyz",
-    guidelines: None,
-    license: None,
-};
-
-/// keeweb
-pub const SI_KEEWEB: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>KeeWeb</title><path d="M6.4138 24c-.2293-.0004-.4838-.0966-.7462-.2342-.5598-.2937-.9436-.665-.6231-1.2759l7.786-14.8424a58 58 0 0 1-.2224-.1157C9.8007 6.059 8.5551 3.8816 9.5635 1.9594c1.159-2.2094 4.7486-2.6104 8.0176-.8956 3.269 1.7149 4.9794 4.8961 3.8204 7.1056-.9968 1.9001-3.5993 2.0696-6.2161.6968a85 85 0 0 0-.3215-.1672L7.0716 23.5533c-.1703.3246-.3979.4471-.6578.4467m-1.4335-3.1798-.1474-.0773-.0328-.0171-1.9943-1.0463-.4808-.2522a.1664.1664 0 0 1-.0701-.2247l.6312-1.2032a.1665.1665 0 0 1 .2235-.0707l.0013.0006.9615.5044a.1665.1665 0 0 0 .2247-.0701l.6312-1.2031a.1665.1665 0 0 0-.0701-.2248l-.4808-.2522-.4807-.2522a.1664.1664 0 0 1-.0701-.2247l.6311-1.2033a.1664.1664 0 0 1 .2247-.07l.4809.2522 1.2514.6565.7757.4069.001.0005.1465.0768-.663 1.2636-.0456.087v.0002l-.9405 1.7927-.0957.1823-.5355 1.0208-.0003.0007zm3.1515-6.0076-.1474-.0774-.7002-.3673-.5529-.29a.1665.1665 0 0 1-.0702-.2247l.6313-1.2032a.1665.1665 0 0 1 .2247-.0702l.5529.2901.7002.3674.001.0004.1465.077-.0774.1473-.3155.6016-.3156.6016-.0004.0006zm10.302-7.121c.4153.0008.74-.1664.9557-.5777.6575-1.2533-.5588-3.1869-2.7166-4.3188s-4.44-1.0336-5.0974.2197 1.1712 2.0762 3.329 3.2082c1.4498.7605 2.6792 1.467 3.5294 1.4687"/></svg>"##,
-    slug: "keeweb",
-    title: "KeeWeb",
-    hex: "528BFF",
-    source: "https://github.com/keeweb/keeweb/blob/44432eb66d5b771d5867cdd74f2500d00e006783/graphics/svg/keeweb.svg",
     guidelines: None,
     license: None,
 };

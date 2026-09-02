@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
     match slug {
+        "jupyter" => Some(icons::SI_JUPYTER),
+        "ludwig" => Some(icons::SI_LUDWIG),
+        "stackedit" => Some(icons::SI_STACKEDIT),
         "changedetection" => Some(icons::SI_CHANGEDETECTION),
         "gojek" => Some(icons::SI_GOJEK),
         "fraunhofergesellschaft" => Some(icons::SI_FRAUNHOFERGESELLSCHAFT),
@@ -89,6 +92,7 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "napster" => Some(icons::SI_NAPSTER),
         "stackhawk" => Some(icons::SI_STACKHAWK),
         "snapchat" => Some(icons::SI_SNAPCHAT),
+        "simpleiconscdn" => Some(icons::SI_SIMPLEICONSCDN),
         "pushbullet" => Some(icons::SI_PUSHBULLET),
         "nordvpn" => Some(icons::SI_NORDVPN),
         "phpbb" => Some(icons::SI_PHPBB),
@@ -199,10 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "homeadvisor" => Some(icons::SI_HOMEADVISOR),
         "porkbun" => Some(icons::SI_PORKBUN),
         "fastapi" => Some(icons::SI_FASTAPI),
-        "dedge" => Some(icons::SI_DEDGE),
-        "ghostty" => Some(icons::SI_GHOSTTY),
-        "kucoin" => Some(icons::SI_KUCOIN),
-        "svelte" => Some(icons::SI_SVELTE),
         _ => None,
     }
 }

@@ -80,6 +80,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "bitcoincash" => Some(icons::SI_BITCOINCASH),
         "prepbytes" => Some(icons::SI_PREPBYTES),
         "oyo" => Some(icons::SI_OYO),
+        "albumoftheyear" => Some(icons::SI_ALBUMOFTHEYEAR),
         "clerk" => Some(icons::SI_CLERK),
         "stadia" => Some(icons::SI_STADIA),
         "kingstontechnology" => Some(icons::SI_KINGSTONTECHNOLOGY),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "tv4play" => Some(icons::SI_TV4PLAY),
         "picartodottv" => Some(icons::SI_PICARTODOTTV),
         "xmpp" => Some(icons::SI_XMPP),
-        "flickr" => Some(icons::SI_FLICKR),
         _ => None,
     }
 }
