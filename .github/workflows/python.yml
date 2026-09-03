@@ -51,7 +51,7 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - uses: ./.github/dyn-ci-matrix
+      - uses: $/.github/dyn-ci-matrix
         id: generate-matrix
         with:
           nushell-version: ${{ vars.NU_SHELL_VERSION || '*' }}
