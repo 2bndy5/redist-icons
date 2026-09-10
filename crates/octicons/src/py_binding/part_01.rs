@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("CROSSHAIRS_16", icons::CROSSHAIRS_16)?;
     m.add("ALERT_FILL_12", icons::ALERT_FILL_12)?;
     m.add("REPO_TEMPLATE_24", icons::REPO_TEMPLATE_24)?;
     m.add("COPILOT_96", icons::COPILOT_96)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
         icons::GIT_PULL_REQUEST_DRAFT_24,
     )?;
     m.add("SPLIT_VIEW_24", icons::SPLIT_VIEW_24)?;
-    m.add("KEBAB_HORIZONTAL_16", icons::KEBAB_HORIZONTAL_16)?;
     Ok(())
 }

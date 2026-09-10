@@ -71,6 +71,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "broadcast-24" => Some(icons::BROADCAST_24),
         "unlink-16" => Some(icons::UNLINK_16),
         "git-commit-24" => Some(icons::GIT_COMMIT_24),
+        "library-24" => Some(icons::LIBRARY_24),
         "hubot-16" => Some(icons::HUBOT_16),
         "single-select-16" => Some(icons::SINGLE_SELECT_16),
         "sync-24" => Some(icons::SYNC_24),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "unverified-24" => Some(icons::UNVERIFIED_24),
         "feed-issue-open-16" => Some(icons::FEED_ISSUE_OPEN_16),
         "beaker-24" => Some(icons::BEAKER_24),
-        "crosshairs-16" => Some(icons::CROSSHAIRS_16),
         _ => None,
     }
 }
