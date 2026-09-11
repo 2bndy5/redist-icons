@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        "kebab-horizontal-16" => Some(icons::KEBAB_HORIZONTAL_16),
         "moon-16" => Some(icons::MOON_16),
         "read-24" => Some(icons::READ_24),
         "dot-16" => Some(icons::DOT_16),
@@ -27,6 +28,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "arrow-both-16" => Some(icons::ARROW_BOTH_16),
         "logo-gist-24" => Some(icons::LOGO_GIST_24),
         "shield-lock-16" => Some(icons::SHIELD_LOCK_16),
+        "chat-question-24" => Some(icons::CHAT_QUESTION_24),
         "codescan-checkmark-24" => Some(icons::CODESCAN_CHECKMARK_24),
         "list-ordered-24" => Some(icons::LIST_ORDERED_24),
         "tag-24" => Some(icons::TAG_24),
@@ -39,7 +41,9 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "git-pull-request-draft-16" => Some(icons::GIT_PULL_REQUEST_DRAFT_16),
         "screen-normal-16" => Some(icons::SCREEN_NORMAL_16),
         "circle-slash-24" => Some(icons::CIRCLE_SLASH_24),
+        "chat-locked-16" => Some(icons::CHAT_LOCKED_16),
         "cache-16" => Some(icons::CACHE_16),
+        "chat-question-16" => Some(icons::CHAT_QUESTION_16),
         "issue-opened-16" => Some(icons::ISSUE_OPENED_16),
         "home-16" => Some(icons::HOME_16),
         "arrow-left-24" => Some(icons::ARROW_LEFT_24),
@@ -111,6 +115,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "id-badge-16" => Some(icons::ID_BADGE_16),
         "browser-24" => Some(icons::BROWSER_24),
         "feed-discussion-16" => Some(icons::FEED_DISCUSSION_16),
+        "library-16" => Some(icons::LIBRARY_16),
         "code-16" => Some(icons::CODE_16),
         "thumbsup-16" => Some(icons::THUMBSUP_16),
         "north-star-24" => Some(icons::NORTH_STAR_24),
@@ -198,11 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "sun-16" => Some(icons::SUN_16),
         "shield-check-24" => Some(icons::SHIELD_CHECK_24),
         "issue-reopened-24" => Some(icons::ISSUE_REOPENED_24),
-        "sponsor-tiers-24" => Some(icons::SPONSOR_TIERS_24),
-        "device-mobile-24" => Some(icons::DEVICE_MOBILE_24),
-        "sandbox-16" => Some(icons::SANDBOX_16),
-        "graph-bar-horizontal-16" => Some(icons::GRAPH_BAR_HORIZONTAL_16),
-        "megaphone-24" => Some(icons::MEGAPHONE_24),
         _ => None,
     }
 }

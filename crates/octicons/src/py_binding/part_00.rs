@@ -80,6 +80,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BROADCAST_24", icons::BROADCAST_24)?;
     m.add("UNLINK_16", icons::UNLINK_16)?;
     m.add("GIT_COMMIT_24", icons::GIT_COMMIT_24)?;
+    m.add("LIBRARY_24", icons::LIBRARY_24)?;
     m.add("HUBOT_16", icons::HUBOT_16)?;
     m.add("SINGLE_SELECT_16", icons::SINGLE_SELECT_16)?;
     m.add("SYNC_24", icons::SYNC_24)?;
@@ -214,6 +215,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("UNVERIFIED_24", icons::UNVERIFIED_24)?;
     m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
     m.add("BEAKER_24", icons::BEAKER_24)?;
-    m.add("CROSSHAIRS_16", icons::CROSSHAIRS_16)?;
     Ok(())
 }

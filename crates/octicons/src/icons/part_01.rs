@@ -1,6 +1,12 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// crosshairs-16
+pub const CROSSHAIRS_16: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14 8A6 6 0 1 1 2 8a6 6 0 0 1 12 0Zm-1.5 0a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0Z"/><path d="M5 7.25a.75.75 0 0 1 0 1.5H1a.75.75 0 0 1 0-1.5Zm3-7a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0V1A.75.75 0 0 1 8 .25Zm7 7a.75.75 0 0 1 0 1.5h-4a.75.75 0 0 1 0-1.5Zm-7 3a.75.75 0 0 1 .75.75v4a.75.75 0 0 1-1.5 0v-4a.75.75 0 0 1 .75-.75Z"/></svg>"##,
+    slug: "crosshairs-16",
+};
+
 /// alert-fill-12
 pub const ALERT_FILL_12: Icon = Icon {
     svg: r##"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path d="M4.855.708c.5-.896 1.79-.896 2.29 0l4.675 8.351a1.312 1.312 0 0 1-1.146 1.954H1.33A1.313 1.313 0 0 1 .183 9.058ZM7 7V3H5v4Zm-1 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>"##,
@@ -1193,10 +1199,4 @@ pub const GIT_PULL_REQUEST_DRAFT_24: Icon = Icon {
 pub const SPLIT_VIEW_24: Icon = Icon {
     svg: r##"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5c0 .464-.184.909-.513 1.237A1.746 1.746 0 0 1 20.25 22H3.75c-.464 0-.909-.184-1.237-.513A1.746 1.746 0 0 1 2 20.25V3.75C2 2.784 2.784 2 3.75 2ZM3.5 3.75v16.5c0 .138.112.25.25.25H11v-17H3.75a.25.25 0 0 0-.25.25Zm9 16.75h7.75a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25H12.5v17Z"/></svg>"##,
     slug: "split-view-24",
-};
-
-/// kebab-horizontal-16
-pub const KEBAB_HORIZONTAL_16: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm13 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg>"##,
-    slug: "kebab-horizontal-16",
 };

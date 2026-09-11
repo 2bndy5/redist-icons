@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("KEBAB_HORIZONTAL_16", icons::KEBAB_HORIZONTAL_16)?;
     m.add("MOON_16", icons::MOON_16)?;
     m.add("READ_24", icons::READ_24)?;
     m.add("DOT_16", icons::DOT_16)?;
@@ -30,6 +31,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_BOTH_16", icons::ARROW_BOTH_16)?;
     m.add("LOGO_GIST_24", icons::LOGO_GIST_24)?;
     m.add("SHIELD_LOCK_16", icons::SHIELD_LOCK_16)?;
+    m.add("CHAT_QUESTION_24", icons::CHAT_QUESTION_24)?;
     m.add("CODESCAN_CHECKMARK_24", icons::CODESCAN_CHECKMARK_24)?;
     m.add("LIST_ORDERED_24", icons::LIST_ORDERED_24)?;
     m.add("TAG_24", icons::TAG_24)?;
@@ -45,7 +47,9 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     )?;
     m.add("SCREEN_NORMAL_16", icons::SCREEN_NORMAL_16)?;
     m.add("CIRCLE_SLASH_24", icons::CIRCLE_SLASH_24)?;
+    m.add("CHAT_LOCKED_16", icons::CHAT_LOCKED_16)?;
     m.add("CACHE_16", icons::CACHE_16)?;
+    m.add("CHAT_QUESTION_16", icons::CHAT_QUESTION_16)?;
     m.add("ISSUE_OPENED_16", icons::ISSUE_OPENED_16)?;
     m.add("HOME_16", icons::HOME_16)?;
     m.add("ARROW_LEFT_24", icons::ARROW_LEFT_24)?;
@@ -120,6 +124,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ID_BADGE_16", icons::ID_BADGE_16)?;
     m.add("BROWSER_24", icons::BROWSER_24)?;
     m.add("FEED_DISCUSSION_16", icons::FEED_DISCUSSION_16)?;
+    m.add("LIBRARY_16", icons::LIBRARY_16)?;
     m.add("CODE_16", icons::CODE_16)?;
     m.add("THUMBSUP_16", icons::THUMBSUP_16)?;
     m.add("NORTH_STAR_24", icons::NORTH_STAR_24)?;
@@ -210,10 +215,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SUN_16", icons::SUN_16)?;
     m.add("SHIELD_CHECK_24", icons::SHIELD_CHECK_24)?;
     m.add("ISSUE_REOPENED_24", icons::ISSUE_REOPENED_24)?;
-    m.add("SPONSOR_TIERS_24", icons::SPONSOR_TIERS_24)?;
-    m.add("DEVICE_MOBILE_24", icons::DEVICE_MOBILE_24)?;
-    m.add("SANDBOX_16", icons::SANDBOX_16)?;
-    m.add("GRAPH_BAR_HORIZONTAL_16", icons::GRAPH_BAR_HORIZONTAL_16)?;
-    m.add("MEGAPHONE_24", icons::MEGAPHONE_24)?;
     Ok(())
 }

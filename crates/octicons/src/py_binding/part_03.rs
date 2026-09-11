@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SPONSOR_TIERS_24", icons::SPONSOR_TIERS_24)?;
+    m.add("DEVICE_MOBILE_24", icons::DEVICE_MOBILE_24)?;
+    m.add("SANDBOX_16", icons::SANDBOX_16)?;
+    m.add("GRAPH_BAR_HORIZONTAL_16", icons::GRAPH_BAR_HORIZONTAL_16)?;
+    m.add("MEGAPHONE_24", icons::MEGAPHONE_24)?;
     m.add("DEVICE_CAMERA_VIDEO_16", icons::DEVICE_CAMERA_VIDEO_16)?;
     m.add("GRAPH_STACKED_AREA_24", icons::GRAPH_STACKED_AREA_24)?;
     m.add("PLAY_24", icons::PLAY_24)?;
