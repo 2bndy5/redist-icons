@@ -86,6 +86,7 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_INVIDIOUS", icons::SI_INVIDIOUS)?;
     m.add("SI_FORMSTACK", icons::SI_FORMSTACK)?;
     m.add("SI_FLUTTER", icons::SI_FLUTTER)?;
+    m.add("SI_ALPHAXIV", icons::SI_ALPHAXIV)?;
     m.add("SI_SOFTPEDIA", icons::SI_SOFTPEDIA)?;
     m.add("SI_COPAAIRLINES", icons::SI_COPAAIRLINES)?;
     m.add("SI_SAUCELABS", icons::SI_SAUCELABS)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_8(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TERMIUS", icons::SI_TERMIUS)?;
     m.add("SI_MQTT", icons::SI_MQTT)?;
     m.add("SI_CMAKE", icons::SI_CMAKE)?;
-    m.add("SI_SYMPHONY", icons::SI_SYMPHONY)?;
     Ok(())
 }
