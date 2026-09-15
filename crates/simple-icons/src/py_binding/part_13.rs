@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ANYDESK", icons::SI_ANYDESK)?;
     m.add("SI_LIBUV", icons::SI_LIBUV)?;
     m.add("SI_GITTER", icons::SI_GITTER)?;
     m.add("SI_OPENJSFOUNDATION", icons::SI_OPENJSFOUNDATION)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_13(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PRETZEL", icons::SI_PRETZEL)?;
     m.add("SI_YOUTUBETV", icons::SI_YOUTUBETV)?;
     m.add("SI_LOOPS", icons::SI_LOOPS)?;
-    m.add("SI_UNLICENSE", icons::SI_UNLICENSE)?;
     Ok(())
 }

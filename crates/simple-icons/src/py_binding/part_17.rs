@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_MINDS", icons::SI_MINDS)?;
     m.add("SI_BUEFY", icons::SI_BUEFY)?;
     m.add("SI_CRATEDB", icons::SI_CRATEDB)?;
     m.add("SI_KODI", icons::SI_KODI)?;

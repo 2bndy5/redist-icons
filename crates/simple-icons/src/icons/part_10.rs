@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// guilded
+pub const SI_GUILDED: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Guilded</title><path d="M5.297 6.255s.02 2.846 1.481 5.79c1.502 2.834 3.572 4.654 5.28 5.38 1.765-.826 3.47-2.258 4.4-3.8h-4.845c-1.253-1.04-2.24-2.763-2.466-4.755H23.36c-.701 3.203-2.188 6.116-3.605 7.971a17.108 17.108 0 01-7.686 5.659h-.045c-5.098-2.031-7.84-5.23-9.65-8.84C1.214 11.347 0 7.147 0 1.5h24a34.23 34.23 0 01-.32 4.755z"/></svg>"##,
+    slug: "guilded",
+    title: "Guilded",
+    hex: "F5C400",
+    source: "https://www.guilded.gg/brand",
+    guidelines: Some("https://www.guilded.gg/brand"),
+    license: None,
+};
+
 /// protonvpn
 pub const SI_PROTONVPN: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Proton VPN</title><path d="m10.176 20.058.858-1.28 6.513-9.838c.57-.86.026-2.014-1.005-2.131L.378 4.95l8.373 15.055a.84.84 0 0 0 1.424.052h.001zM23.586 7.14l-9.662 14.61c-1.036 1.567-3.38 1.478-4.293-.162l-.093-.168c.3-.01.594-.086.855-.235a1.85 1.85 0 0 0 .612-.57l.86-1.28 6.516-9.844c.46-.694.525-1.56.173-2.314a2.375 2.375 0 0 0-1.899-1.364L.493 3.956l-.476-.054C-.163 2.392 1.101.95 2.784 1.143l18.991 2.16c1.856.21 2.835 2.289 1.812 3.838z"/></svg>"##,
@@ -2192,17 +2203,6 @@ pub const SI_HACKERRANK: Icon = Icon {
     title: "HackerRank",
     hex: "00EA64",
     source: "https://www.hackerrank.com/about-us/",
-    guidelines: None,
-    license: None,
-};
-
-/// bloglovin
-pub const SI_BLOGLOVIN: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Bloglovin</title><path d="M12.526 11.695c1.84-.382 3.367-2.044 3.367-4.478 0-2.604-1.9-4.97-5.615-4.97H0v19.506h10.6c3.75 0 5.683-2.341 5.683-5.292-.009-2.426-1.646-4.444-3.757-4.766zm-8.37-5.793h5.207c1.407 0 2.28.849 2.28 2.044 0 1.255-.881 2.044-2.28 2.044H4.155zM9.54 18.098H4.155v-4.444h5.386c1.61 0 2.484.992 2.484 2.222.009 1.399-.932 2.222-2.484 2.222zM21.396 2.28c-1.255 0-2.315 1.052-2.315 2.307s.882 2.103 1.993 2.103c.238 0 .467-.025.56-.085-.238 1.052-1.315 2.282-2.256 2.782l1.611 1.314C22.796 9.422 24 7.462 24 5.266c0-1.9-1.23-2.985-2.604-2.985Z"/></svg>"##,
-    slug: "bloglovin",
-    title: "Bloglovin",
-    hex: "000000",
-    source: "https://www.bloglovin.com/widgets",
     guidelines: None,
     license: None,
 };
