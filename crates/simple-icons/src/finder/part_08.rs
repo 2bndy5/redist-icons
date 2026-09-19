@@ -86,6 +86,7 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "invidious" => Some(icons::SI_INVIDIOUS),
         "formstack" => Some(icons::SI_FORMSTACK),
         "flutter" => Some(icons::SI_FLUTTER),
+        "alphaxiv" => Some(icons::SI_ALPHAXIV),
         "softpedia" => Some(icons::SI_SOFTPEDIA),
         "copaairlines" => Some(icons::SI_COPAAIRLINES),
         "saucelabs" => Some(icons::SI_SAUCELABS),
@@ -202,7 +203,6 @@ pub(super) fn find_part_8(slug: &str) -> Option<Icon> {
         "termius" => Some(icons::SI_TERMIUS),
         "mqtt" => Some(icons::SI_MQTT),
         "cmake" => Some(icons::SI_CMAKE),
-        "symphony" => Some(icons::SI_SYMPHONY),
         _ => None,
     }
 }
