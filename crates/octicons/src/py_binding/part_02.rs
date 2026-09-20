@@ -3,9 +3,25 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("HORIZONTAL_RULE_24", icons::HORIZONTAL_RULE_24)?;
+    m.add("EXCLAMATION_16", icons::EXCLAMATION_16)?;
+    m.add("FILE_SUBMODULE_24", icons::FILE_SUBMODULE_24)?;
+    m.add("BUG_16", icons::BUG_16)?;
+    m.add("FILE_DIFF_24", icons::FILE_DIFF_24)?;
+    m.add("DEVICE_DESKTOP_16", icons::DEVICE_DESKTOP_16)?;
+    m.add("BLOCKED_24", icons::BLOCKED_24)?;
+    m.add("ID_BADGE_24", icons::ID_BADGE_24)?;
+    m.add("SQUARE_24", icons::SQUARE_24)?;
+    m.add("ISSUE_TRACKED_BY_24", icons::ISSUE_TRACKED_BY_24)?;
+    m.add(
+        "GIT_PULL_REQUEST_DRAFT_24",
+        icons::GIT_PULL_REQUEST_DRAFT_24,
+    )?;
+    m.add("SPLIT_VIEW_24", icons::SPLIT_VIEW_24)?;
     m.add("KEBAB_HORIZONTAL_16", icons::KEBAB_HORIZONTAL_16)?;
     m.add("MOON_16", icons::MOON_16)?;
     m.add("READ_24", icons::READ_24)?;
+    m.add("TRIANGLE_FILL_16", icons::TRIANGLE_FILL_16)?;
     m.add("DOT_16", icons::DOT_16)?;
     m.add("PEOPLE_16", icons::PEOPLE_16)?;
     m.add("TELESCOPE_24", icons::TELESCOPE_24)?;
@@ -122,6 +138,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LOGO_GITHUB_24", icons::LOGO_GITHUB_24)?;
     m.add("UNLOCK_24", icons::UNLOCK_24)?;
     m.add("ID_BADGE_16", icons::ID_BADGE_16)?;
+    m.add("CHAT_ADD_16", icons::CHAT_ADD_16)?;
     m.add("BROWSER_24", icons::BROWSER_24)?;
     m.add("FEED_DISCUSSION_16", icons::FEED_DISCUSSION_16)?;
     m.add("LIBRARY_16", icons::LIBRARY_16)?;
@@ -137,6 +154,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SQUARE_CIRCLE_16", icons::SQUARE_CIRCLE_16)?;
     m.add("LOCK_24", icons::LOCK_24)?;
     m.add("CHECK_16", icons::CHECK_16)?;
+    m.add("TRIANGLE_FILL_24", icons::TRIANGLE_FILL_24)?;
     m.add("COLUMNS_24", icons::COLUMNS_24)?;
     m.add("SORT_ASC_24", icons::SORT_ASC_24)?;
     m.add("VERIFIED_24", icons::VERIFIED_24)?;
@@ -197,23 +215,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SYNC_16", icons::SYNC_16)?;
     m.add("SQUARE_FILL_16", icons::SQUARE_FILL_16)?;
     m.add("REPLY_24", icons::REPLY_24)?;
-    m.add("TAB_EXTERNAL_24", icons::TAB_EXTERNAL_24)?;
-    m.add("INBOX_16", icons::INBOX_16)?;
-    m.add("GIT_BRANCH_CHECK_16", icons::GIT_BRANCH_CHECK_16)?;
-    m.add("DEVICE_MOBILE_16", icons::DEVICE_MOBILE_16)?;
-    m.add("FOLD_16", icons::FOLD_16)?;
-    m.add("DIFF_RENAMED_24", icons::DIFF_RENAMED_24)?;
-    m.add("MORTAR_BOARD_24", icons::MORTAR_BOARD_24)?;
-    m.add("DIFF_IGNORED_16", icons::DIFF_IGNORED_16)?;
-    m.add("CHECKBOX_FILL_16", icons::CHECKBOX_FILL_16)?;
-    m.add(
-        "FILE_DIRECTORY_OPEN_FILL_24",
-        icons::FILE_DIRECTORY_OPEN_FILL_24,
-    )?;
-    m.add("THREE_BARS_16", icons::THREE_BARS_16)?;
-    m.add("TASKLIST_24", icons::TASKLIST_24)?;
-    m.add("SUN_16", icons::SUN_16)?;
-    m.add("SHIELD_CHECK_24", icons::SHIELD_CHECK_24)?;
-    m.add("ISSUE_REOPENED_24", icons::ISSUE_REOPENED_24)?;
     Ok(())
 }
