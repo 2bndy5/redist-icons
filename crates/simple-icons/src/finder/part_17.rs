@@ -53,6 +53,7 @@ pub(super) fn find_part_17(slug: &str) -> Option<Icon> {
         "dash" => Some(icons::SI_DASH),
         "vectorlogozone" => Some(icons::SI_VECTORLOGOZONE),
         "astro" => Some(icons::SI_ASTRO),
+        "godox" => Some(icons::SI_GODOX),
         "ritzcarlton" => Some(icons::SI_RITZCARLTON),
         "modelscope" => Some(icons::SI_MODELSCOPE),
         "rarible" => Some(icons::SI_RARIBLE),

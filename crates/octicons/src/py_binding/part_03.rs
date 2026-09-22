@@ -3,8 +3,27 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("TAB_EXTERNAL_24", icons::TAB_EXTERNAL_24)?;
+    m.add("INBOX_16", icons::INBOX_16)?;
+    m.add("GIT_BRANCH_CHECK_16", icons::GIT_BRANCH_CHECK_16)?;
+    m.add("DEVICE_MOBILE_16", icons::DEVICE_MOBILE_16)?;
+    m.add("FOLD_16", icons::FOLD_16)?;
+    m.add("DIFF_RENAMED_24", icons::DIFF_RENAMED_24)?;
+    m.add("MORTAR_BOARD_24", icons::MORTAR_BOARD_24)?;
+    m.add("DIFF_IGNORED_16", icons::DIFF_IGNORED_16)?;
+    m.add("CHECKBOX_FILL_16", icons::CHECKBOX_FILL_16)?;
+    m.add(
+        "FILE_DIRECTORY_OPEN_FILL_24",
+        icons::FILE_DIRECTORY_OPEN_FILL_24,
+    )?;
+    m.add("THREE_BARS_16", icons::THREE_BARS_16)?;
+    m.add("TASKLIST_24", icons::TASKLIST_24)?;
+    m.add("SUN_16", icons::SUN_16)?;
+    m.add("SHIELD_CHECK_24", icons::SHIELD_CHECK_24)?;
+    m.add("ISSUE_REOPENED_24", icons::ISSUE_REOPENED_24)?;
     m.add("SPONSOR_TIERS_24", icons::SPONSOR_TIERS_24)?;
     m.add("DEVICE_MOBILE_24", icons::DEVICE_MOBILE_24)?;
+    m.add("TERMINAL_LOCKED_24", icons::TERMINAL_LOCKED_24)?;
     m.add("SANDBOX_16", icons::SANDBOX_16)?;
     m.add("GRAPH_BAR_HORIZONTAL_16", icons::GRAPH_BAR_HORIZONTAL_16)?;
     m.add("MEGAPHONE_24", icons::MEGAPHONE_24)?;
@@ -20,6 +39,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SKIP_16", icons::SKIP_16)?;
     m.add("DASH_16", icons::DASH_16)?;
     m.add("FEED_ISSUE_DRAFT_16", icons::FEED_ISSUE_DRAFT_16)?;
+    m.add("TRIANGLE_CIRCLE_16", icons::TRIANGLE_CIRCLE_16)?;
     m.add("FILE_REMOVED_16", icons::FILE_REMOVED_16)?;
     m.add("DOT_FILL_24", icons::DOT_FILL_24)?;
     m.add(
@@ -130,6 +150,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ISSUE_TRACKS_24", icons::ISSUE_TRACKS_24)?;
     m.add("CHEVRON_UP_12", icons::CHEVRON_UP_12)?;
     m.add("UPLOAD_16", icons::UPLOAD_16)?;
+    m.add("BOOKMARK_FILL_16", icons::BOOKMARK_FILL_16)?;
     m.add("LOCKUP_GITHUB_16", icons::LOCKUP_GITHUB_16)?;
     m.add("LIST_UNORDERED_24", icons::LIST_UNORDERED_24)?;
     m.add("PACKAGE_DEPENDENCIES_16", icons::PACKAGE_DEPENDENCIES_16)?;
@@ -153,6 +174,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LOCKUP_GITHUB_24", icons::LOCKUP_GITHUB_24)?;
     m.add("BOOKMARK_SLASH_FILL_16", icons::BOOKMARK_SLASH_FILL_16)?;
     m.add("DIAMOND_16", icons::DIAMOND_16)?;
+    m.add("COMMENT_FILL_24", icons::COMMENT_FILL_24)?;
     m.add("AGENT_16", icons::AGENT_16)?;
     m.add("SORT_DESC_16", icons::SORT_DESC_16)?;
     m.add("HEART_FILL_16", icons::HEART_FILL_16)?;

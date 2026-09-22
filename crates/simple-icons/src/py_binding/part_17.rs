@@ -53,6 +53,7 @@ pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_DASH", icons::SI_DASH)?;
     m.add("SI_VECTORLOGOZONE", icons::SI_VECTORLOGOZONE)?;
     m.add("SI_ASTRO", icons::SI_ASTRO)?;
+    m.add("SI_GODOX", icons::SI_GODOX)?;
     m.add("SI_RITZCARLTON", icons::SI_RITZCARLTON)?;
     m.add("SI_MODELSCOPE", icons::SI_MODELSCOPE)?;
     m.add("SI_RARIBLE", icons::SI_RARIBLE)?;

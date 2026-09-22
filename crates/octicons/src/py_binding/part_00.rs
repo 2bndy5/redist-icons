@@ -41,8 +41,10 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SIDEBAR_COLLAPSE_16", icons::SIDEBAR_COLLAPSE_16)?;
     m.add("X_CIRCLE_16", icons::X_CIRCLE_16)?;
     m.add("PROJECT_ROADMAP_24", icons::PROJECT_ROADMAP_24)?;
+    m.add("TRIANGLE_16", icons::TRIANGLE_16)?;
     m.add("PENCIL_AI_24", icons::PENCIL_AI_24)?;
     m.add("HEADING_16", icons::HEADING_16)?;
+    m.add("CURSOR_24", icons::CURSOR_24)?;
     m.add("ARROW_UP_16", icons::ARROW_UP_16)?;
     m.add("REPO_TEMPLATE_16", icons::REPO_TEMPLATE_16)?;
     m.add("ITALIC_24", icons::ITALIC_24)?;
@@ -129,6 +131,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHECKBOX_24", icons::CHECKBOX_24)?;
     m.add("ZAP_16", icons::ZAP_16)?;
     m.add("STAR_FILL_24", icons::STAR_FILL_24)?;
+    m.add("CHAT_ADD_24", icons::CHAT_ADD_24)?;
     m.add("KEY_ASTERISK_24", icons::KEY_ASTERISK_24)?;
     m.add("LOCK_16", icons::LOCK_16)?;
     m.add("BOOLEAN_ON_16", icons::BOOLEAN_ON_16)?;
@@ -140,11 +143,15 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DASH_24", icons::DASH_24)?;
     m.add("ACCESSIBILITY_16", icons::ACCESSIBILITY_16)?;
     m.add("ALERT_FILL_24", icons::ALERT_FILL_24)?;
+    m.add("CURSOR_16", icons::CURSOR_16)?;
+    m.add("TRIANGLE_24", icons::TRIANGLE_24)?;
     m.add("MOVE_TO_BOTTOM_16", icons::MOVE_TO_BOTTOM_16)?;
     m.add("ARROW_BOTH_24", icons::ARROW_BOTH_24)?;
     m.add("BOOKMARK_24", icons::BOOKMARK_24)?;
+    m.add("TERMINAL_LOCKED_16", icons::TERMINAL_LOCKED_16)?;
     m.add("GIT_PULL_REQUEST_16", icons::GIT_PULL_REQUEST_16)?;
     m.add("UNDO_24", icons::UNDO_24)?;
+    m.add("PERSON_CURSOR_24", icons::PERSON_CURSOR_24)?;
     m.add("MARKDOWN_24", icons::MARKDOWN_24)?;
     m.add("NUMBER_24", icons::NUMBER_24)?;
     m.add("ISSUE_DRAFT_24", icons::ISSUE_DRAFT_24)?;
@@ -208,12 +215,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LAW_16", icons::LAW_16)?;
     m.add("TRIANGLE_DOWN_16", icons::TRIANGLE_DOWN_16)?;
     m.add("QUOTE_16", icons::QUOTE_16)?;
-    m.add("VERSIONS_16", icons::VERSIONS_16)?;
-    m.add("PACKAGE_DEPENDENTS_16", icons::PACKAGE_DEPENDENTS_16)?;
-    m.add("MILESTONE_24", icons::MILESTONE_24)?;
-    m.add("HISTORY_16", icons::HISTORY_16)?;
-    m.add("UNVERIFIED_24", icons::UNVERIFIED_24)?;
-    m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
-    m.add("BEAKER_24", icons::BEAKER_24)?;
     Ok(())
 }

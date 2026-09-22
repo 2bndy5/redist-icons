@@ -3,7 +3,15 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("VERSIONS_16", icons::VERSIONS_16)?;
+    m.add("PACKAGE_DEPENDENTS_16", icons::PACKAGE_DEPENDENTS_16)?;
+    m.add("MILESTONE_24", icons::MILESTONE_24)?;
+    m.add("HISTORY_16", icons::HISTORY_16)?;
+    m.add("UNVERIFIED_24", icons::UNVERIFIED_24)?;
+    m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
+    m.add("BEAKER_24", icons::BEAKER_24)?;
     m.add("CROSSHAIRS_16", icons::CROSSHAIRS_16)?;
+    m.add("PERSON_CURSOR_16", icons::PERSON_CURSOR_16)?;
     m.add("ALERT_FILL_12", icons::ALERT_FILL_12)?;
     m.add("REPO_TEMPLATE_24", icons::REPO_TEMPLATE_24)?;
     m.add("COPILOT_96", icons::COPILOT_96)?;
@@ -34,8 +42,10 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SMILEY_NEUTRAL_24", icons::SMILEY_NEUTRAL_24)?;
     m.add("PASTE_24", icons::PASTE_24)?;
     m.add("FILE_CHECK_24", icons::FILE_CHECK_24)?;
+    m.add("COMMENT_FILL_16", icons::COMMENT_FILL_16)?;
     m.add("WORKFLOW_16", icons::WORKFLOW_16)?;
     m.add("CPU_24", icons::CPU_24)?;
+    m.add("REPO_DELETE_16", icons::REPO_DELETE_16)?;
     m.add("BLOCKED_16", icons::BLOCKED_16)?;
     m.add("REL_FILE_PATH_16", icons::REL_FILE_PATH_16)?;
     m.add("MULTI_SELECT_24", icons::MULTI_SELECT_24)?;
@@ -139,6 +149,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DATABASE_16", icons::DATABASE_16)?;
     m.add("CONTAINER_24", icons::CONTAINER_24)?;
     m.add("FLOWCHART_16", icons::FLOWCHART_16)?;
+    m.add("TRIANGLE_CIRCLE_24", icons::TRIANGLE_CIRCLE_24)?;
     m.add("PROJECT_CHECK_16", icons::PROJECT_CHECK_16)?;
     m.add("ARROW_UP_24", icons::ARROW_UP_24)?;
     m.add("FOLD_UP_16", icons::FOLD_UP_16)?;
@@ -200,23 +211,12 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHEVRON_LEFT_24", icons::CHEVRON_LEFT_24)?;
     m.add("QUOTE_24", icons::QUOTE_24)?;
     m.add("ISSUE_RELATES_TO_24", icons::ISSUE_RELATES_TO_24)?;
+    m.add(
+        "GIT_PULL_REQUEST_UNLISTED_16",
+        icons::GIT_PULL_REQUEST_UNLISTED_16,
+    )?;
     m.add("FILE_BADGE_24", icons::FILE_BADGE_24)?;
     m.add("PENCIL_16", icons::PENCIL_16)?;
     m.add("TELESCOPE_FILL_24", icons::TELESCOPE_FILL_24)?;
-    m.add("HORIZONTAL_RULE_24", icons::HORIZONTAL_RULE_24)?;
-    m.add("EXCLAMATION_16", icons::EXCLAMATION_16)?;
-    m.add("FILE_SUBMODULE_24", icons::FILE_SUBMODULE_24)?;
-    m.add("BUG_16", icons::BUG_16)?;
-    m.add("FILE_DIFF_24", icons::FILE_DIFF_24)?;
-    m.add("DEVICE_DESKTOP_16", icons::DEVICE_DESKTOP_16)?;
-    m.add("BLOCKED_24", icons::BLOCKED_24)?;
-    m.add("ID_BADGE_24", icons::ID_BADGE_24)?;
-    m.add("SQUARE_24", icons::SQUARE_24)?;
-    m.add("ISSUE_TRACKED_BY_24", icons::ISSUE_TRACKED_BY_24)?;
-    m.add(
-        "GIT_PULL_REQUEST_DRAFT_24",
-        icons::GIT_PULL_REQUEST_DRAFT_24,
-    )?;
-    m.add("SPLIT_VIEW_24", icons::SPLIT_VIEW_24)?;
     Ok(())
 }
