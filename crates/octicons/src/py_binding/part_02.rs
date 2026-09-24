@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
+    m.add("BROADCAST_24", icons::BROADCAST_24)?;
+    m.add("RUBY_24", icons::RUBY_24)?;
     m.add("REPO_FORKED_LOCKED_16", icons::REPO_FORKED_LOCKED_16)?;
     m.add("KEY_16", icons::KEY_16)?;
     m.add("TABLE_24", icons::TABLE_24)?;
@@ -98,6 +101,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("PROJECT_CHECK_24", icons::PROJECT_CHECK_24)?;
     m.add("ARROW_UP_24", icons::ARROW_UP_24)?;
     m.add("FEED_PLUS_16", icons::FEED_PLUS_16)?;
+    m.add("PERSON_CURSOR_24", icons::PERSON_CURSOR_24)?;
     m.add("UNLOCK_16", icons::UNLOCK_16)?;
     m.add("KEBAB_HORIZONTAL_16", icons::KEBAB_HORIZONTAL_16)?;
     m.add("ISSUE_RELATES_TO_24", icons::ISSUE_RELATES_TO_24)?;
@@ -217,9 +221,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
     m.add("SHIELD_X_16", icons::SHIELD_X_16)?;
     m.add("HORIZONTAL_RULE_24", icons::HORIZONTAL_RULE_24)?;
-    m.add("SPARKLE_16", icons::SPARKLE_16)?;
-    m.add("ELLIPSIS_16", icons::ELLIPSIS_16)?;
-    m.add("CLOCK_FILL_16", icons::CLOCK_FILL_16)?;
-    m.add("ITERATIONS_24", icons::ITERATIONS_24)?;
     Ok(())
 }

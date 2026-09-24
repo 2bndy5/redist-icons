@@ -3,6 +3,9 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        "chevron-right-16" => Some(icons::CHEVRON_RIGHT_16),
+        "broadcast-24" => Some(icons::BROADCAST_24),
+        "ruby-24" => Some(icons::RUBY_24),
         "repo-forked-locked-16" => Some(icons::REPO_FORKED_LOCKED_16),
         "key-16" => Some(icons::KEY_16),
         "table-24" => Some(icons::TABLE_24),
@@ -98,6 +101,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "project-check-24" => Some(icons::PROJECT_CHECK_24),
         "arrow-up-24" => Some(icons::ARROW_UP_24),
         "feed-plus-16" => Some(icons::FEED_PLUS_16),
+        "person-cursor-24" => Some(icons::PERSON_CURSOR_24),
         "unlock-16" => Some(icons::UNLOCK_16),
         "kebab-horizontal-16" => Some(icons::KEBAB_HORIZONTAL_16),
         "issue-relates-to-24" => Some(icons::ISSUE_RELATES_TO_24),
@@ -199,10 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "feed-issue-open-16" => Some(icons::FEED_ISSUE_OPEN_16),
         "shield-x-16" => Some(icons::SHIELD_X_16),
         "horizontal-rule-24" => Some(icons::HORIZONTAL_RULE_24),
-        "sparkle-16" => Some(icons::SPARKLE_16),
-        "ellipsis-16" => Some(icons::ELLIPSIS_16),
-        "clock-fill-16" => Some(icons::CLOCK_FILL_16),
-        "iterations-24" => Some(icons::ITERATIONS_24),
         _ => None,
     }
 }

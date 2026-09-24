@@ -63,6 +63,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "mark-github-16" => Some(icons::MARK_GITHUB_16),
         "moon-16" => Some(icons::MOON_16),
         "dependabot-16" => Some(icons::DEPENDABOT_16),
+        "cursor-24" => Some(icons::CURSOR_24),
         "bookmark-slash-fill-24" => Some(icons::BOOKMARK_SLASH_FILL_24),
         "milestone-16" => Some(icons::MILESTONE_16),
         "loop-24" => Some(icons::LOOP_24),
@@ -127,6 +128,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "sponsor-tiers-24" => Some(icons::SPONSOR_TIERS_24),
         "file-directory-symlink-24" => Some(icons::FILE_DIRECTORY_SYMLINK_24),
         "copilot-warning-16" => Some(icons::COPILOT_WARNING_16),
+        "cursor-16" => Some(icons::CURSOR_16),
         "pause-16" => Some(icons::PAUSE_16),
         "read-16" => Some(icons::READ_16),
         "logo-github-16" => Some(icons::LOGO_GITHUB_16),
@@ -201,8 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "device-camera-video-16" => Some(icons::DEVICE_CAMERA_VIDEO_16),
         "loop-16" => Some(icons::LOOP_16),
         "upload-24" => Some(icons::UPLOAD_24),
-        "container-24" => Some(icons::CONTAINER_24),
-        "git-pull-request-draft-24" => Some(icons::GIT_PULL_REQUEST_DRAFT_24),
         _ => None,
     }
 }

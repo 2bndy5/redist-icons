@@ -63,6 +63,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("MARK_GITHUB_16", icons::MARK_GITHUB_16)?;
     m.add("MOON_16", icons::MOON_16)?;
     m.add("DEPENDABOT_16", icons::DEPENDABOT_16)?;
+    m.add("CURSOR_24", icons::CURSOR_24)?;
     m.add("BOOKMARK_SLASH_FILL_24", icons::BOOKMARK_SLASH_FILL_24)?;
     m.add("MILESTONE_16", icons::MILESTONE_16)?;
     m.add("LOOP_24", icons::LOOP_24)?;
@@ -133,6 +134,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
         icons::FILE_DIRECTORY_SYMLINK_24,
     )?;
     m.add("COPILOT_WARNING_16", icons::COPILOT_WARNING_16)?;
+    m.add("CURSOR_16", icons::CURSOR_16)?;
     m.add("PAUSE_16", icons::PAUSE_16)?;
     m.add("READ_16", icons::READ_16)?;
     m.add("LOGO_GITHUB_16", icons::LOGO_GITHUB_16)?;
@@ -207,10 +209,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DEVICE_CAMERA_VIDEO_16", icons::DEVICE_CAMERA_VIDEO_16)?;
     m.add("LOOP_16", icons::LOOP_16)?;
     m.add("UPLOAD_24", icons::UPLOAD_24)?;
-    m.add("CONTAINER_24", icons::CONTAINER_24)?;
-    m.add(
-        "GIT_PULL_REQUEST_DRAFT_24",
-        icons::GIT_PULL_REQUEST_DRAFT_24,
-    )?;
     Ok(())
 }
