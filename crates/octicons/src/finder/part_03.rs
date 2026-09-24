@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "sparkle-16" => Some(icons::SPARKLE_16),
+        "ellipsis-16" => Some(icons::ELLIPSIS_16),
+        "clock-fill-16" => Some(icons::CLOCK_FILL_16),
+        "iterations-24" => Some(icons::ITERATIONS_24),
         "chat-add-16" => Some(icons::CHAT_ADD_16),
         "sparkle-24" => Some(icons::SPARKLE_24),
         "shield-lock-24" => Some(icons::SHIELD_LOCK_24),

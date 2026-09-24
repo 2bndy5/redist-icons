@@ -3,6 +3,11 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("CONTAINER_24", icons::CONTAINER_24)?;
+    m.add(
+        "GIT_PULL_REQUEST_DRAFT_24",
+        icons::GIT_PULL_REQUEST_DRAFT_24,
+    )?;
     m.add("FEED_TROPHY_16", icons::FEED_TROPHY_16)?;
     m.add("X_CIRCLE_FILL_24", icons::X_CIRCLE_FILL_24)?;
     m.add("SUN_24", icons::SUN_24)?;
@@ -155,6 +160,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("NOTE_16", icons::NOTE_16)?;
     m.add("PENCIL_24", icons::PENCIL_24)?;
     m.add("UNREAD_24", icons::UNREAD_24)?;
+    m.add("PERSON_CURSOR_16", icons::PERSON_CURSOR_16)?;
     m.add("CIRCLE_16", icons::CIRCLE_16)?;
     m.add("GIFT_24", icons::GIFT_24)?;
     m.add("DEVICES_24", icons::DEVICES_24)?;
@@ -212,8 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("TRASH_16", icons::TRASH_16)?;
     m.add("SCREEN_FULL_24", icons::SCREEN_FULL_24)?;
     m.add("INBOX_FILL_24", icons::INBOX_FILL_24)?;
-    m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
-    m.add("BROADCAST_24", icons::BROADCAST_24)?;
-    m.add("RUBY_24", icons::RUBY_24)?;
     Ok(())
 }
