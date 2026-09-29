@@ -19,6 +19,7 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "blazor" => Some(icons::SI_BLAZOR),
         "ea" => Some(icons::SI_EA),
         "fluke" => Some(icons::SI_FLUKE),
+        "hypit" => Some(icons::SI_HYPIT),
         "zingat" => Some(icons::SI_ZINGAT),
         "gerrit" => Some(icons::SI_GERRIT),
         "commerzbank" => Some(icons::SI_COMMERZBANK),
@@ -202,7 +203,6 @@ pub(super) fn find_part_5(slug: &str) -> Option<Icon> {
         "eleventy" => Some(icons::SI_ELEVENTY),
         "ovh" => Some(icons::SI_OVH),
         "element" => Some(icons::SI_ELEMENT),
-        "leica" => Some(icons::SI_LEICA),
         _ => None,
     }
 }
