@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WEZTERM", icons::SI_WEZTERM)?;
+    m.add("SI_INFLUXDB", icons::SI_INFLUXDB)?;
     m.add("SI_SUZUKI", icons::SI_SUZUKI)?;
     m.add("SI_BITCOIN", icons::SI_BITCOIN)?;
     m.add("SI_INFUSE", icons::SI_INFUSE)?;

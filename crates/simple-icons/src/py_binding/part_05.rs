@@ -19,6 +19,7 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_BLAZOR", icons::SI_BLAZOR)?;
     m.add("SI_EA", icons::SI_EA)?;
     m.add("SI_FLUKE", icons::SI_FLUKE)?;
+    m.add("SI_HYPIT", icons::SI_HYPIT)?;
     m.add("SI_ZINGAT", icons::SI_ZINGAT)?;
     m.add("SI_GERRIT", icons::SI_GERRIT)?;
     m.add("SI_COMMERZBANK", icons::SI_COMMERZBANK)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_5(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ELEVENTY", icons::SI_ELEVENTY)?;
     m.add("SI_OVH", icons::SI_OVH)?;
     m.add("SI_ELEMENT", icons::SI_ELEMENT)?;
-    m.add("SI_LEICA", icons::SI_LEICA)?;
     Ok(())
 }

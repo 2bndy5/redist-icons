@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_DEEPMIND", icons::SI_DEEPMIND)?;
     m.add("SI_NANO", icons::SI_NANO)?;
     m.add("SI_NODEDOTJS", icons::SI_NODEDOTJS)?;
     m.add("SI_DOLPHIN", icons::SI_DOLPHIN)?;
@@ -74,6 +75,7 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PIPECAT", icons::SI_PIPECAT)?;
     m.add("SI_PHOENIXFRAMEWORK", icons::SI_PHOENIXFRAMEWORK)?;
     m.add("SI_LUOGU", icons::SI_LUOGU)?;
+    m.add("SI_NOTESNOOK", icons::SI_NOTESNOOK)?;
     m.add("SI_G2A", icons::SI_G2A)?;
     m.add("SI_ANTHROPIC", icons::SI_ANTHROPIC)?;
     m.add("SI_QUALCOMM", icons::SI_QUALCOMM)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_7(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_STMICROELECTRONICS", icons::SI_STMICROELECTRONICS)?;
     m.add("SI_ANDROIDAUTO", icons::SI_ANDROIDAUTO)?;
     m.add("SI_TOKYOMETRO", icons::SI_TOKYOMETRO)?;
-    m.add("SI_SHAZAM", icons::SI_SHAZAM)?;
-    m.add("SI_OPPO", icons::SI_OPPO)?;
     Ok(())
 }

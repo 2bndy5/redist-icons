@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_TYPST", icons::SI_TYPST)?;
+    m.add("SI_DRAUGIEMDOTLV", icons::SI_DRAUGIEMDOTLV)?;
     m.add("SI_POSTMAN", icons::SI_POSTMAN)?;
     m.add("SI_FUJIFILM", icons::SI_FUJIFILM)?;
     m.add("SI_RESHARPER", icons::SI_RESHARPER)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GUILDED", icons::SI_GUILDED)?;
     m.add("SI_CORELDRAW", icons::SI_CORELDRAW)?;
     m.add("SI_PWA", icons::SI_PWA)?;
-    m.add("SI_AUTODESKREVIT", icons::SI_AUTODESKREVIT)?;
-    m.add("SI_SESSIONIZE", icons::SI_SESSIONIZE)?;
     Ok(())
 }
