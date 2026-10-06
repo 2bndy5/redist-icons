@@ -58,6 +58,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_PIONEERDJ", icons::SI_PIONEERDJ)?;
     m.add("SI_QNAP", icons::SI_QNAP)?;
     m.add("SI_HUMBLEBUNDLE", icons::SI_HUMBLEBUNDLE)?;
+    m.add("SI_SUMUP", icons::SI_SUMUP)?;
     m.add("SI_KUBUNTU", icons::SI_KUBUNTU)?;
     m.add("SI_APACHEANT", icons::SI_APACHEANT)?;
     m.add("SI_CINNY", icons::SI_CINNY)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SVGTRACE", icons::SI_SVGTRACE)?;
     m.add("SI_WEBTOON", icons::SI_WEBTOON)?;
     m.add("SI_FLOOD", icons::SI_FLOOD)?;
-    m.add("SI_RISCV", icons::SI_RISCV)?;
     Ok(())
 }
