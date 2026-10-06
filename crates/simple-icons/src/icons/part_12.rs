@@ -1,6 +1,17 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
+/// pydantic
+pub const SI_PYDANTIC: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Pydantic</title><path d="m23.826 17.316-4.23-5.866-6.847-9.496c-.348-.48-1.151-.48-1.497 0l-6.845 9.494-4.233 5.868a.925.925 0 0 0 .46 1.417l11.078 3.626h.002a.92.92 0 0 0 .572 0h.002l11.077-3.626c.28-.092.5-.31.59-.592a.916.916 0 0 0-.13-.825h.002ZM12.001 4.07l4.44 6.158-4.152-1.36c-.032-.01-.066-.008-.098-.016a.8.8 0 0 0-.096-.016c-.032-.004-.062-.016-.094-.016s-.062.012-.094.016a.74.74 0 0 0-.096.016c-.032.006-.066.006-.096.016L7.59 10.221l-.026.008 4.44-6.158h-.002Zm-6.273 8.7 4.834-1.583.516-.168v9.19L2.41 17.372l3.317-4.6Zm7.197 7.437V11.02l5.35 1.752 3.316 4.598-8.666 2.838Z"/></svg>"##,
+    slug: "pydantic",
+    title: "Pydantic",
+    hex: "E92063",
+    source: "https://github.com/pydantic/pydantic/blob/94c748001a32992a587694b999fb1f3d2f1fc1fe/docs/logo-white.svg",
+    guidelines: None,
+    license: None,
+};
+
 /// qualys
 pub const SI_QUALYS: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Qualys</title><path d="M11.9986 0C5.4353 0 2.1382 3.5117 2.1382 3.5117s-.3775 2.5993-.1366 7.8332C2.3654 19.2513 11.999 24.0005 11.9999 24c.001-.0005 9.6347-4.7488 9.9985-12.6551.2408-5.2339-.1364-7.8332-.1364-7.8332S18.562 0 11.9986 0zm-.6782 2.9194a7.3657 7.3657 0 0 1 8.0454 7.3343 7.1158 7.1158 0 0 1-2.7712 5.6342c-1.1788-.108-2.4098-.4423-2.9676-.7605 1.4379-.9177 3.3036-2.7033 3.3036-4.8737a4.9361 4.9361 0 0 0-4.9305-4.9305c-2.7165 0-4.9266 2.2743-4.9266 5.0698 0 2.332 1.2355 4.1624 3.6718 5.4404 1.5943.8363 3.9724 1.449 6.4852 1.7723-.418.6225-1.533 1.686-2.1847 2.0462-3.0087-.4934-5.6513-1.5354-7.4578-3.0964-1.9323-1.6699-2.9536-3.8488-2.9536-6.3018a7.3657 7.3657 0 0 1 6.686-7.3343Z"/></svg>"##,
@@ -2193,16 +2204,5 @@ pub const SI_SOLANA: Icon = Icon {
     hex: "9945FF",
     source: "https://solana.com/branding",
     guidelines: Some("https://solana.com/branding"),
-    license: None,
-};
-
-/// opencollective
-pub const SI_OPENCOLLECTIVE: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Open Collective</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c2.54 0 4.894-.79 6.834-2.135l-3.107-3.109a7.715 7.715 0 1 1 0-13.512l3.107-3.109A11.943 11.943 0 0 0 12 0zm9.865 5.166l-3.109 3.107A7.67 7.67 0 0 1 19.715 12a7.682 7.682 0 0 1-.959 3.727l3.109 3.107A11.943 11.943 0 0 0 24 12c0-2.54-.79-4.894-2.135-6.834z"/></svg>"##,
-    slug: "opencollective",
-    title: "Open Collective",
-    hex: "7FADF2",
-    source: "https://docs.opencollective.com/help/about#media-logo",
-    guidelines: None,
     license: None,
 };

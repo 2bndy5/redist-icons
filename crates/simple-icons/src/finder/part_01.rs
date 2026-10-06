@@ -58,6 +58,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "pioneerdj" => Some(icons::SI_PIONEERDJ),
         "qnap" => Some(icons::SI_QNAP),
         "humblebundle" => Some(icons::SI_HUMBLEBUNDLE),
+        "sumup" => Some(icons::SI_SUMUP),
         "kubuntu" => Some(icons::SI_KUBUNTU),
         "apacheant" => Some(icons::SI_APACHEANT),
         "cinny" => Some(icons::SI_CINNY),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "svgtrace" => Some(icons::SI_SVGTRACE),
         "webtoon" => Some(icons::SI_WEBTOON),
         "flood" => Some(icons::SI_FLOOD),
-        "riscv" => Some(icons::SI_RISCV),
         _ => None,
     }
 }

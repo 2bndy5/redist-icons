@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_CENTOS", icons::SI_CENTOS)?;
     m.add("SI_CONDAFORGE", icons::SI_CONDAFORGE)?;
     m.add("SI_PAPERSWITHCODE", icons::SI_PAPERSWITHCODE)?;
     m.add("SI_MAPILLARY", icons::SI_MAPILLARY)?;
@@ -202,6 +203,5 @@ pub(super) fn bind_part_11(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CODEFORCES", icons::SI_CODEFORCES)?;
     m.add("SI_HUGGINGFACE", icons::SI_HUGGINGFACE)?;
     m.add("SI_VEGA", icons::SI_VEGA)?;
-    m.add("SI_PYDANTIC", icons::SI_PYDANTIC)?;
     Ok(())
 }
