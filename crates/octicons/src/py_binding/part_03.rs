@@ -3,6 +3,9 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
+    m.add("SHIELD_X_16", icons::SHIELD_X_16)?;
+    m.add("HORIZONTAL_RULE_24", icons::HORIZONTAL_RULE_24)?;
     m.add("SPARKLE_16", icons::SPARKLE_16)?;
     m.add("ELLIPSIS_16", icons::ELLIPSIS_16)?;
     m.add("CLOCK_FILL_16", icons::CLOCK_FILL_16)?;
@@ -55,6 +58,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("TROPHY_24", icons::TROPHY_24)?;
     m.add("MAIL_16", icons::MAIL_16)?;
     m.add("GLOBE_24", icons::GLOBE_24)?;
+    m.add("RELEASE_16", icons::RELEASE_16)?;
     m.add("UNMUTE_24", icons::UNMUTE_24)?;
     m.add("CHECK_CIRCLE_FILL_24", icons::CHECK_CIRCLE_FILL_24)?;
     m.add("FLAG_16", icons::FLAG_16)?;

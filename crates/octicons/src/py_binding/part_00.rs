@@ -75,6 +75,7 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("COPY_24", icons::COPY_24)?;
     m.add("CHEVRON_DOWN_12", icons::CHEVRON_DOWN_12)?;
     m.add("WORKFLOW_24", icons::WORKFLOW_24)?;
+    m.add("WALL_24", icons::WALL_24)?;
     m.add("HEADING_24", icons::HEADING_24)?;
     m.add("VIDEO_24", icons::VIDEO_24)?;
     m.add("REPO_PUSH_24", icons::REPO_PUSH_24)?;
@@ -208,6 +209,5 @@ pub(super) fn bind_part_0(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("IMAGE_16", icons::IMAGE_16)?;
     m.add("DEVICE_CAMERA_VIDEO_16", icons::DEVICE_CAMERA_VIDEO_16)?;
     m.add("LOOP_16", icons::LOOP_16)?;
-    m.add("UPLOAD_24", icons::UPLOAD_24)?;
     Ok(())
 }
