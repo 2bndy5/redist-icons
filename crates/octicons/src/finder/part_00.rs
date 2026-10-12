@@ -75,6 +75,7 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "copy-24" => Some(icons::COPY_24),
         "chevron-down-12" => Some(icons::CHEVRON_DOWN_12),
         "workflow-24" => Some(icons::WORKFLOW_24),
+        "wall-24" => Some(icons::WALL_24),
         "heading-24" => Some(icons::HEADING_24),
         "video-24" => Some(icons::VIDEO_24),
         "repo-push-24" => Some(icons::REPO_PUSH_24),
@@ -202,7 +203,6 @@ pub(super) fn find_part_0(slug: &str) -> Option<Icon> {
         "image-16" => Some(icons::IMAGE_16),
         "device-camera-video-16" => Some(icons::DEVICE_CAMERA_VIDEO_16),
         "loop-16" => Some(icons::LOOP_16),
-        "upload-24" => Some(icons::UPLOAD_24),
         _ => None,
     }
 }

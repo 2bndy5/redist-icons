@@ -116,6 +116,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_SIMPLEANALYTICS", icons::SI_SIMPLEANALYTICS)?;
     m.add("SI_PLATFORMDOTSH", icons::SI_PLATFORMDOTSH)?;
     m.add("SI_FREEBSD", icons::SI_FREEBSD)?;
+    m.add("SI_ASPIRE", icons::SI_ASPIRE)?;
     m.add("SI_PRDOTCO", icons::SI_PRDOTCO)?;
     m.add("SI_LINUXMINT", icons::SI_LINUXMINT)?;
     m.add("SI_RUBYGEMS", icons::SI_RUBYGEMS)?;
@@ -196,12 +197,11 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_OPSGENIE", icons::SI_OPSGENIE)?;
     m.add("SI_UPLABS", icons::SI_UPLABS)?;
     m.add("SI_CHARTDOTJS", icons::SI_CHARTDOTJS)?;
+    m.add("SI_ZENSICAL", icons::SI_ZENSICAL)?;
     m.add("SI_FIAT", icons::SI_FIAT)?;
     m.add("SI_SITEPOINT", icons::SI_SITEPOINT)?;
     m.add("SI_TENSORFLOW", icons::SI_TENSORFLOW)?;
     m.add("SI_SNYK", icons::SI_SNYK)?;
     m.add("SI_RATATUI", icons::SI_RATATUI)?;
-    m.add("SI_NEWEGG", icons::SI_NEWEGG)?;
-    m.add("SI_AUDIOBOOKSHELF", icons::SI_AUDIOBOOKSHELF)?;
     Ok(())
 }
