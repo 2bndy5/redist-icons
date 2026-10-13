@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("UPLOAD_24", icons::UPLOAD_24)?;
     m.add("CONTAINER_24", icons::CONTAINER_24)?;
     m.add(
         "GIT_PULL_REQUEST_DRAFT_24",
@@ -129,6 +130,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("AI_MODEL_16", icons::AI_MODEL_16)?;
     m.add("SERVER_24", icons::SERVER_24)?;
     m.add("BELL_16", icons::BELL_16)?;
+    m.add("WALL_16", icons::WALL_16)?;
     m.add("BELL_SLASH_16", icons::BELL_SLASH_16)?;
     m.add("REPO_DELETED_16", icons::REPO_DELETED_16)?;
     m.add("ARROW_UP_RIGHT_16", icons::ARROW_UP_RIGHT_16)?;
@@ -216,7 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SIGN_IN_24", icons::SIGN_IN_24)?;
     m.add("FILE_ADDED_16", icons::FILE_ADDED_16)?;
     m.add("CLOUD_16", icons::CLOUD_16)?;
-    m.add("TRASH_16", icons::TRASH_16)?;
-    m.add("SCREEN_FULL_24", icons::SCREEN_FULL_24)?;
     Ok(())
 }
