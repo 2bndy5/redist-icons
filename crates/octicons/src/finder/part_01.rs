@@ -166,6 +166,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "repo-forked-16" => Some(icons::REPO_FORKED_16),
         "kebab-horizontal-24" => Some(icons::KEBAB_HORIZONTAL_24),
         "tracked-by-closed-completed-24" => Some(icons::TRACKED_BY_CLOSED_COMPLETED_24),
+        "release-24" => Some(icons::RELEASE_24),
         "hourglass-24" => Some(icons::HOURGLASS_24),
         "dice-16" => Some(icons::DICE_16),
         "paper-airplane-16" => Some(icons::PAPER_AIRPLANE_16),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "cloud-16" => Some(icons::CLOUD_16),
         "trash-16" => Some(icons::TRASH_16),
         "screen-full-24" => Some(icons::SCREEN_FULL_24),
-        "inbox-fill-24" => Some(icons::INBOX_FILL_24),
         _ => None,
     }
 }

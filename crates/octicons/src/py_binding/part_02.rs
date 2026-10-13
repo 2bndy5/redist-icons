@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("INBOX_FILL_24", icons::INBOX_FILL_24)?;
     m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
     m.add("BROADCAST_24", icons::BROADCAST_24)?;
     m.add("RUBY_24", icons::RUBY_24)?;
@@ -220,6 +221,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("KEY_24", icons::KEY_24)?;
     m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
     m.add("SHIELD_X_16", icons::SHIELD_X_16)?;
-    m.add("HORIZONTAL_RULE_24", icons::HORIZONTAL_RULE_24)?;
     Ok(())
 }
