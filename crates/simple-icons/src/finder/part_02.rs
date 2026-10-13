@@ -116,6 +116,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "simpleanalytics" => Some(icons::SI_SIMPLEANALYTICS),
         "platformdotsh" => Some(icons::SI_PLATFORMDOTSH),
         "freebsd" => Some(icons::SI_FREEBSD),
+        "aspire" => Some(icons::SI_ASPIRE),
         "prdotco" => Some(icons::SI_PRDOTCO),
         "linuxmint" => Some(icons::SI_LINUXMINT),
         "rubygems" => Some(icons::SI_RUBYGEMS),
@@ -196,13 +197,12 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "opsgenie" => Some(icons::SI_OPSGENIE),
         "uplabs" => Some(icons::SI_UPLABS),
         "chartdotjs" => Some(icons::SI_CHARTDOTJS),
+        "zensical" => Some(icons::SI_ZENSICAL),
         "fiat" => Some(icons::SI_FIAT),
         "sitepoint" => Some(icons::SI_SITEPOINT),
         "tensorflow" => Some(icons::SI_TENSORFLOW),
         "snyk" => Some(icons::SI_SNYK),
         "ratatui" => Some(icons::SI_RATATUI),
-        "newegg" => Some(icons::SI_NEWEGG),
-        "audiobookshelf" => Some(icons::SI_AUDIOBOOKSHELF),
         _ => None,
     }
 }

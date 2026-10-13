@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_GUILDED", icons::SI_GUILDED)?;
+    m.add("SI_CORELDRAW", icons::SI_CORELDRAW)?;
     m.add("SI_PWA", icons::SI_PWA)?;
     m.add("SI_AUTODESKREVIT", icons::SI_AUTODESKREVIT)?;
     m.add("SI_SESSIONIZE", icons::SI_SESSIONIZE)?;
@@ -210,7 +212,5 @@ pub(super) fn bind_part_15(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_APACHEHIVE", icons::SI_APACHEHIVE)?;
     m.add("SI_CHECKMK", icons::SI_CHECKMK)?;
     m.add("SI_TILE", icons::SI_TILE)?;
-    m.add("SI_MALT", icons::SI_MALT)?;
-    m.add("SI_RCLONE", icons::SI_RCLONE)?;
     Ok(())
 }

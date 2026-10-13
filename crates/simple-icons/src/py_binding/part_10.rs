@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_ALCHEMY", icons::SI_ALCHEMY)?;
+    m.add("SI_MAGASINSU", icons::SI_MAGASINSU)?;
     m.add("SI_FIZZ", icons::SI_FIZZ)?;
     m.add("SI_POSTGRESQL", icons::SI_POSTGRESQL)?;
     m.add("SI_OPENROUTER", icons::SI_OPENROUTER)?;
@@ -201,7 +203,5 @@ pub(super) fn bind_part_10(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_ZENN", icons::SI_ZENN)?;
     m.add("SI_READDOTCV", icons::SI_READDOTCV)?;
     m.add("SI_ELECTRONFIDDLE", icons::SI_ELECTRONFIDDLE)?;
-    m.add("SI_GITCONNECTED", icons::SI_GITCONNECTED)?;
-    m.add("SI_PROTOOLS", icons::SI_PROTOOLS)?;
     Ok(())
 }

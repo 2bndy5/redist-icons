@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("TRASH_16", icons::TRASH_16)?;
+    m.add("SCREEN_FULL_24", icons::SCREEN_FULL_24)?;
     m.add("INBOX_FILL_24", icons::INBOX_FILL_24)?;
     m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
     m.add("BROADCAST_24", icons::BROADCAST_24)?;
@@ -219,7 +221,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SERVER_16", icons::SERVER_16)?;
     m.add("SIGN_IN_16", icons::SIGN_IN_16)?;
     m.add("KEY_24", icons::KEY_24)?;
-    m.add("FEED_ISSUE_OPEN_16", icons::FEED_ISSUE_OPEN_16)?;
-    m.add("SHIELD_X_16", icons::SHIELD_X_16)?;
     Ok(())
 }
