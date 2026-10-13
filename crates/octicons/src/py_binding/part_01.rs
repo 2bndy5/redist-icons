@@ -181,6 +181,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
         "TRACKED_BY_CLOSED_COMPLETED_24",
         icons::TRACKED_BY_CLOSED_COMPLETED_24,
     )?;
+    m.add("RELEASE_24", icons::RELEASE_24)?;
     m.add("HOURGLASS_24", icons::HOURGLASS_24)?;
     m.add("DICE_16", icons::DICE_16)?;
     m.add("PAPER_AIRPLANE_16", icons::PAPER_AIRPLANE_16)?;
@@ -217,6 +218,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CLOUD_16", icons::CLOUD_16)?;
     m.add("TRASH_16", icons::TRASH_16)?;
     m.add("SCREEN_FULL_24", icons::SCREEN_FULL_24)?;
-    m.add("INBOX_FILL_24", icons::INBOX_FILL_24)?;
     Ok(())
 }
