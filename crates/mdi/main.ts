@@ -1,4 +1,5 @@
-import { walk } from "@std/fs";
+import * as path from "node:path";
+import * as fs from "node:fs/promises";
 import { loadConfig, optimize } from "svgo";
 import {
   copyPkgMeta,
@@ -6,7 +7,9 @@ import {
   type GeneratedFinder,
   type GeneratedIcons,
   type GeneratedStubs,
+  getPkgDir,
   rustFmtSrc,
+  walk,
   writeConstIcons,
   writeFinder,
   writePyBinding,
@@ -23,18 +26,14 @@ const rsLibIcons: Record<Families, GeneratedIcons> = {
   all: { mod: "icons/all", src: [] },
 };
 
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
   console.log("Generating crate from", npmPkg, "source.");
   const crateInfo = await copyPkgMeta(npmPkg, npmPkgInfo, "LICENSE");
-  const svgFiles = await Array.fromAsync(
-    walk(`../../node_modules/${npmPkg}/svg`),
-  );
+  const pkgDir = getPkgDir(npmPkg);
+  const svgFiles = await Array.fromAsync(walk(path.join(pkgDir, "svg")));
   let deprecatedTotal = 0;
 
   const svgoConfig = await loadConfig("../../svgo.config.mjs");
-
-  const textEncoder = new TextEncoder();
 
   const rsLibFinder: GeneratedFinder = {
     mod: "finder",
@@ -75,7 +74,7 @@ def get_icon(slug: str) -> Icon | None: ...
 
     const constName = slug.toUpperCase().replaceAll("-", "_");
 
-    const svgData = await Deno.readTextFile(`${entry[1].path}`);
+    const svgData = await fs.readFile(entry[1].path, "utf-8");
     const optimized = optimize(svgData, svgoConfig);
 
     const docComment = `\n/// ${slug}`;
@@ -119,17 +118,17 @@ def get_icon(slug: str) -> Icon | None: ...
     rsBinding.src.push(srcBinding);
     pyStub.src += srcPyi;
 
-    if (Deno.stdin.isTerminal()) {
+    if (process.stdin.isTTY) {
       // only write progress indicator if in interactive terminal
-      const percent = Math.round(Number(entry[0] / metadata.length * 100))
-        .toString().padStart(3);
-      await Deno.stdout.write(
-        textEncoder.encode(`Generating... ${percent}%\r`),
-      );
+      const percent = Math.round(Number((entry[0] / metadata.length) * 100))
+        .toString()
+        .padStart(3);
+      process.stdout.write(`Generating... ${percent}%\r`);
     }
   }
 
-  console.log("\nGenerated", metadata.length, "icons");
+  if (process.stdin.isTTY) console.log();
+  console.log("Generated", metadata.length, "icons");
   console.log("Encountered", deprecatedTotal, "deprecated icons");
 
   await writeConstIcons(Object.values(rsLibIcons));

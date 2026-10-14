@@ -1,0 +1,12 @@
+{
+  "name": "@redist-icons/octicons",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "bun run main.ts"
+  },
+  "dependencies": {
+    "@primer/octicons": "19.40.0",
+    "common": "workspace:*"
+  }
+}

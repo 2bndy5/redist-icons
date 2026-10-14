@@ -1,17 +1,25 @@
-import { red, yellow } from "@std/fmt/colors";
-import { parse, stringify } from "@std/toml";
-import * as path from "@std/path";
+import { styleText } from "node:util";
+import { createRequire } from "node:module";
+import * as path from "node:path";
+import * as fs from "node:fs/promises";
+import { parse, stringify } from "smol-toml";
 import which from "which";
+
+const red = (str: string) => styleText("red", str);
+const yellow = (str: string) => styleText("yellow", str);
 
 type CrateToml = {
   package: {
     license: string;
     version: string;
     name: string;
+    [key: string]: unknown;
   };
   lib: {
     name: string;
+    [key: string]: unknown;
   };
+  [key: string]: unknown;
 };
 
 type NpmPkgJson = {
@@ -20,6 +28,15 @@ type NpmPkgJson = {
 };
 
 export type CrateInfo = { lib: string; crate: string };
+
+/**
+ * Get the filesystem directory for an installed npm package, resolved relative to cwd.
+ */
+export function getPkgDir(npmPkg: string): string {
+  const req = createRequire(path.join(process.cwd(), "package.json"));
+  const pkgJsonPath = req.resolve(`${npmPkg}/package.json`);
+  return path.dirname(pkgJsonPath);
+}
 
 /**
  * Copy the license and version info
@@ -37,21 +54,15 @@ export async function copyPkgMeta(
   npmPkgInfo: NpmPkgJson,
   licenseFile: string,
 ): Promise<CrateInfo> {
-  const thisDir = Deno.cwd();
-  const licensePath = path.join(
-    thisDir,
-    "..",
-    "..",
-    "node_modules",
-    npmPkg,
-    licenseFile,
-  );
-  await Deno.copyFile(licensePath, path.join(thisDir, "LICENSE"));
+  const thisDir = process.cwd();
+  const pkgDir = getPkgDir(npmPkg);
+  const licensePath = path.join(pkgDir, licenseFile);
+  await fs.copyFile(licensePath, path.join(thisDir, "LICENSE"));
   console.log(`Copied ${licenseFile} from ${npmPkg} dist`);
 
   const cargoPath = path.join(thisDir, "Cargo.toml");
-  const crateMeta = await Deno.readTextFile(cargoPath);
-  const parsedCrateMeta = <CrateToml> parse(crateMeta);
+  const crateMeta = await fs.readFile(cargoPath, "utf-8");
+  const parsedCrateMeta = parse(crateMeta) as unknown as CrateToml;
   const libName = parsedCrateMeta.lib.name;
   const oldVersion = parsedCrateMeta.package.version;
   const oldLicense = parsedCrateMeta.package.license;
@@ -66,11 +77,7 @@ export async function copyPkgMeta(
       oldLicense,
     );
   } else {
-    console.log(
-      "Crate license is already up-to-date with",
-      npmPkg,
-      "info.",
-    );
+    console.log("Crate license is already up-to-date with", npmPkg, "info.");
   }
   if (oldVersion != npmPkgInfo.version) {
     parsedCrateMeta.package.version = npmPkgInfo.version;
@@ -91,9 +98,10 @@ export async function copyPkgMeta(
     );
   }
   if (modCrateMeta) {
-    await Deno.writeTextFile(
+    await fs.writeFile(
       cargoPath,
       stringify(parsedCrateMeta).trimStart(),
+      "utf-8",
     );
   }
   return { lib: libName, crate: parsedCrateMeta.package.name };
@@ -106,12 +114,10 @@ export async function copyPkgMeta(
  */
 export async function rustFmtSrc(crateName: string) {
   const cargo = await which("cargo");
-  const cmd = new Deno.Command(cargo, { args: ["fmt", "-p", crateName] });
-  const result = await cmd.output();
-  const decoder = new TextDecoder("utf-8");
-  const stderr = decoder.decode(result.stderr).trim();
-  const stdout = decoder.decode(result.stdout).trim();
-  if (result.code > 0) {
+  const result = Bun.spawnSync([cargo, "fmt", "-p", crateName]);
+  const stderr = result.stderr.toString().trim();
+  const stdout = result.stdout.toString().trim();
+  if (result.exitCode > 0) {
     throw new Error(`Failed to format ${crateName};\n${stderr}`);
   } else {
     if (stdout) console.log(crateName, red(stdout));

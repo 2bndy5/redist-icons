@@ -1,4 +1,4 @@
-name: Check deno updates
+name: Check updates and regenerate sources
 
 on:
   workflow_dispatch:
@@ -6,8 +6,6 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-  schedule:
-    - cron: "0 0 * * 0,2,4"
 
 permissions: {}
 
@@ -32,11 +30,10 @@ jobs:
         with:
           version: ${{ vars.NU_SHELL_VERSION || '*' }}
 
-      - uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
-        with:
-          cache: true
-      - name: Install Deno deps
-        run: deno install
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2.2.0
+
+      - name: Install Bun deps
+        run: bun install --frozen-lockfile
 
       - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
       - name: Install Python deps
@@ -48,10 +45,11 @@ jobs:
           path: "~/.cache/pre-commit"
           key: pre-commit-${{ hashFiles('.pre-commit-config.yaml') }}
 
-      - name: Check for updates
-        run: nu .github/workflows/check-deno-updates.nu
+      - name: Check for updates and regenerate sources
+        run: nu .github/workflows/check-updates.nu
         env:
           REF_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
           REF_BASE: ${{ github.event.pull_request.base.sha || 'HEAD~1' }}
-          # used by gh-cli to create a PR
+          # used by gh-cli to push / create commits
           GH_TOKEN: ${{ secrets.REDIST_ICONS_UPDATE }}
+

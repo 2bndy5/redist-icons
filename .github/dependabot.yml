@@ -36,20 +36,13 @@ updates:
       uv-pip:
         patterns:
           - "*"
-  ## Deno support in beta did not pan out. We'll try again when it goes stable.
-  # - package-ecosystem: deno
-  #   directories:
-  #     - /
-  #     - /common
-  #     - /crates/fontawesome
-  #     - /crates/mdi
-  #     - /crates/octicons
-  #     - /crates/simple-icons
-  #   schedule:
-  #     interval: "daily"
-  #     # run sunday, tuesday, and thursday
-  #     # cronjob: 0 0 * * 0,2,4
-  #   groups:
-  #     deno:
-  #       patterns:
-  #         - "*"
+  - package-ecosystem: bun
+    directory: /
+    schedule:
+      interval: "daily"
+    cooldown:
+      default-days: 7
+    groups:
+      bun:
+        patterns:
+          - "*"

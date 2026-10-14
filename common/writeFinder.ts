@@ -1,5 +1,6 @@
-import * as path from "@std/path";
-import { generatedCommentMarker, maxItems } from "common";
+import * as path from "node:path";
+import * as fs from "node:fs/promises";
+import { generatedCommentMarker, maxItems } from "./mod";
 
 export type GeneratedFinder = {
   mod: string;
@@ -33,10 +34,10 @@ export async function writeFinder(rsSrc: GeneratedFinder) {
   pub fn get_icon(${rsSrc.sig ?? "slug: &str"}) -> Option<Icon> {
   `;
   const mods = [];
-  const thisDir = Deno.cwd();
+  const thisDir = process.cwd();
   const rootDir = path.join(thisDir, "src", rsSrc.mod);
-  await Deno.remove(rootDir, { recursive: true });
-  await Deno.mkdir(rootDir, { recursive: true });
+  await fs.rm(rootDir, { recursive: true, force: true });
+  await fs.mkdir(rootDir, { recursive: true });
 
   const rootMod = path.join(rootDir, "mod.rs");
   const rootModImpl = [];
@@ -50,10 +51,9 @@ export async function writeFinder(rsSrc: GeneratedFinder) {
     const modPart = path.join(rootDir, `${modName}.rs`);
     mods.push(modPart);
     const funcName = `find_part_${i}`;
-    const partition = rsSrc.src.slice(
-      i * maxItems,
-      Math.min(rsSrc.src.length, i * maxItems + maxItems),
-    ).join("");
+    const partition = rsSrc.src
+      .slice(i * maxItems, Math.min(rsSrc.src.length, i * maxItems + maxItems))
+      .join("");
     let sig = rsSrc.sig ?? "slug: &str";
     if (sig.includes("py: ") && !partition.includes(".print(py)")) {
       sig = sig.replace("py: ", "_py: ");
@@ -68,9 +68,10 @@ use pyo3::exceptions::PyDeprecationWarning;
 ${rsSrc.sig?.includes("Python") ? usePyo3 : ""}
 pub(super) fn ${funcName}(${sig}) -> Option<Icon> {
     match slug {\n`;
-    await Deno.writeTextFile(
+    await fs.writeFile(
       modPart,
       generatedCommentMarker + beginPart + partition + finderEndPart,
+      "utf-8",
     );
 
     rootModSrc.push(`mod ${modName};\n`);
@@ -85,11 +86,14 @@ pub(super) fn ${funcName}(${sig}) -> Option<Icon> {
         result = ${modName}::${funcName}(${rsSrc.invoke ?? "slug"});\n    }\n`);
     }
   }
-  Deno.writeTextFile(
+  await fs.writeFile(
     rootMod,
-    generatedCommentMarker + rootModSrc.join("") + finderStart +
+    generatedCommentMarker +
+      rootModSrc.join("") +
+      finderStart +
       rootModImpl.join("") +
       finderEnd,
+    "utf-8",
   );
   console.log("Generated finder API via", mods.length, "modules");
 }

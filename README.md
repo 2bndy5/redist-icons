@@ -5,7 +5,7 @@
 
 <!-- markdownlint-disable MD033 -->
 
-This repository contains (deno-flavored) TS scripts that generate Rust and
+This repository contains TS scripts (executed with [Bun](https://bun.sh)) that generate Rust and
 Python (via FFI bindings) packages from the following npm packages:
 
 | npm package | Generated source | Rust package | Python package |

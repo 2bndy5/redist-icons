@@ -1,0 +1,12 @@
+{
+  "name": "@redist-icons/fontawesome",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "bun run main.ts"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "common": "workspace:*"
+  }
+}
