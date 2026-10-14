@@ -52,4 +52,3 @@ jobs:
           REF_BASE: ${{ github.event.pull_request.base.sha || 'HEAD~1' }}
           # used by gh-cli to push / create commits
           GH_TOKEN: ${{ secrets.REDIST_ICONS_UPDATE }}
-

@@ -83,4 +83,3 @@ def main [] {
     regenerate-source $updated_crates
     push-regenerated-sources
 }
-
