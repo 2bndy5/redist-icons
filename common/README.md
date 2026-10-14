@@ -1,3 +1,3 @@
 # Common mods
 
-These are helper modules used by all deno tasks in the workspace.
+These are helper modules used by all generation scripts in the workspace.

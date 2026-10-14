@@ -20,6 +20,6 @@ source = "https://github.com/2bndy5/redist-icons"
 [tool.maturin]
 features = ["pyo3"]
 exclude = [
-  { path = "deno.json", format = "sdist" },
+  { path = "package.json", format = "sdist" },
   { path = "main.ts", format = "sdist" },
 ]

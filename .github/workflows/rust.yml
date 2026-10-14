@@ -11,7 +11,7 @@ on:
     paths:
       - crates/**
       - .github/workflows/rust.yml
-      - "!crates/*/deno.json"
+      - "!crates/*/package.json"
       - "!crates/*/main.ts"
       - "!crates/*/pyproject.toml"
       - Cargo.toml
@@ -20,7 +20,7 @@ on:
     paths:
       - crates/**
       - .github/workflows/rust.yml
-      - "!crates/*/deno.json"
+      - "!crates/*/package.json"
       - "!crates/*/main.ts"
       - "!crates/*/pyproject.toml"
       - Cargo.toml

@@ -1,0 +1,12 @@
+{
+  "name": "@redist-icons/mdi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "bun run main.ts"
+  },
+  "dependencies": {
+    "@mdi/svg": "7.4.47",
+    "common": "workspace:*"
+  }
+}

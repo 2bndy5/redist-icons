@@ -14,7 +14,7 @@ const PY_PKG_MAP = {
 #     or HEAD~1 (for push events).
 export def list-changed-files [
     is_for_python: bool = false, # whether to consider changes to root Cargo.toml (affects all python bindings)
-    is_for_deno: bool = false, # whether to consider changes to deno workspace (affects all crates and bindings)
+    is_for_bun: bool = false, # whether to consider changes to bun workspace (affects all crates and bindings)
 ] {
     mut result = []
     let changed_files = (
@@ -34,11 +34,11 @@ export def list-changed-files [
             $result = $result | append [$crate]
         } else if (
             (($changed_file == "Cargo.toml") and ($is_for_python))
-            or ($is_for_deno
+            or ($is_for_bun
                 and (
-                    # Ignore deno.lock as it would cause any deno update to trigger all crates.
-                    # The relevant deps in deno.json files are pinned to exact versions anyway.
-                    ($changed_file == "deno.json")
+                    # Ignore bun.lock as it would cause any bun update to trigger all crates.
+                    # The relevant deps in package.json files are pinned to exact versions anyway.
+                    ($changed_file == "package.json")
                     or (($changed_file | path expand) in (glob "common/*.{ts,json}"))
                 )
             )

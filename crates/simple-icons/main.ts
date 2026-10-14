@@ -1,4 +1,5 @@
-import { walk } from "@std/fs";
+import * as path from "node:path";
+import * as fs from "node:fs/promises";
 import { loadConfig, optimize } from "svgo";
 import {
   copyPkgMeta,
@@ -6,28 +7,26 @@ import {
   type GeneratedFinder,
   type GeneratedIcons,
   type GeneratedStubs,
+  getPkgDir,
   rustFmtSrc,
+  walk,
   writeConstIcons,
   writeFinder,
   writePyBinding,
   writeStubs,
 } from "common";
-import metadata from "si-data" with { type: "json" };
-import npmPkgInfo from "si-pkg-meta" with { type: "json" };
+import metadata from "simple-icons/icons.json" with { type: "json" };
+import npmPkgInfo from "simple-icons/package.json" with { type: "json" };
 
 const npmPkg = "simple-icons";
 
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
   console.log("Generating crate from", npmPkg, "source.");
   const crateInfo = await copyPkgMeta(npmPkg, npmPkgInfo, "LICENSE.md");
-  const svgFiles = await Array.fromAsync(
-    walk(`../../node_modules/${npmPkg}/icons`),
-  );
+  const pkgDir = getPkgDir(npmPkg);
+  const svgFiles = await Array.fromAsync(walk(path.join(pkgDir, "icons")));
 
   const svgoConfig = await loadConfig("../../svgo.config.mjs");
-
-  const textEncoder = new TextEncoder();
 
   const rsLibIcons: GeneratedIcons = {
     mod: "icons",
@@ -70,7 +69,7 @@ def get_icon(slug: str) -> Icon | None: ...
 
     const constName = "SI_" + slug.toUpperCase().replaceAll("-", "_");
 
-    const svgData = await Deno.readTextFile(`${entry[1].path}`);
+    const svgData = await fs.readFile(entry[1].path, "utf-8");
     const optimized = optimize(svgData, svgoConfig);
 
     const iconGuidelines = iconMeta.guidelines
@@ -101,17 +100,17 @@ pub const ${constName}: Icon = Icon {
     rsBinding.src.push(`    m.add("${constName}", icons::${constName})?;\n`);
     pyStub.src += `${constName}: Final[Icon] = ...\n`;
 
-    if (Deno.stdin.isTerminal()) {
+    if (process.stdin.isTTY) {
       // only write progress indicator if in interactive terminal
-      const percent = Math.round(Number(entry[0] / metadata.length * 100))
-        .toString().padStart(3);
-      await Deno.stdout.write(
-        textEncoder.encode(`Generating... ${percent}%\r`),
-      );
+      const percent = Math.round(Number((entry[0] / metadata.length) * 100))
+        .toString()
+        .padStart(3);
+      process.stdout.write(`Generating... ${percent}%\r`);
     }
   }
 
-  console.log("\nGenerated", metadata.length, "icons");
+  if (process.stdin.isTTY) console.log();
+  console.log("Generated", metadata.length, "icons");
 
   await writeConstIcons([rsLibIcons]);
   await writeFinder(rsLibFinder);

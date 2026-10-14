@@ -1,5 +1,6 @@
-import * as path from "@std/path";
-import { generatedCommentMarker, maxItems } from "common";
+import * as path from "node:path";
+import * as fs from "node:fs/promises";
+import { generatedCommentMarker, maxItems } from "./mod.ts";
 
 export type GeneratedIcons = {
   mod: string;
@@ -24,7 +25,7 @@ type PartitionedSource = {
  */
 export async function writeConstIcons(rsSrc: Array<GeneratedIcons>) {
   const mods: Array<PartitionedSource> = [];
-  const thisDir = Deno.cwd();
+  const thisDir = process.cwd();
   for (const rs of rsSrc) {
     if (rs.src.length > maxItems) {
       const partitions = Math.ceil(rs.src.length / maxItems);
@@ -39,8 +40,8 @@ export async function writeConstIcons(rsSrc: Array<GeneratedIcons>) {
         rootMod.header += `mod ${mod};\npub use ${mod}::*;\n`;
 
         const modDir = path.join(thisDir, "src", ...modRelPath);
-        await Deno.remove(modDir, { recursive: true });
-        await Deno.mkdir(modDir, { recursive: true });
+        await fs.rm(modDir, { recursive: true, force: true });
+        await fs.mkdir(modDir, { recursive: true });
 
         const fileName = path.join(modDir, `${mod}.rs`);
         mods.push({
@@ -59,9 +60,10 @@ export async function writeConstIcons(rsSrc: Array<GeneratedIcons>) {
     }
 
     for (const m of mods) {
-      await Deno.writeTextFile(
+      await fs.writeFile(
         m.modPath,
         generatedCommentMarker + m.header + m.src.join(""),
+        "utf-8",
       );
     }
   }

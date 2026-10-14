@@ -1,6 +1,7 @@
-import * as path from "@std/path";
+import * as path from "node:path";
+import * as fs from "node:fs/promises";
 import which from "which";
-import { generatedCommentMarker, maxItems } from "common";
+import { generatedCommentMarker, maxItems } from "./mod";
 
 const endBindPart = "    Ok(())\n}\n";
 
@@ -19,8 +20,8 @@ export type GeneratedBinding = {
  */
 export async function writePyBinding(rsSrc: GeneratedBinding) {
   const rootDir = path.join("src", "py_binding");
-  await Deno.remove(rootDir, { recursive: true });
-  await Deno.mkdir(rootDir, { recursive: true });
+  await fs.rm(rootDir, { recursive: true, force: true });
+  await fs.mkdir(rootDir, { recursive: true });
 
   const rootMod = path.join(rootDir, "mod.rs");
   const rootModImpl = [];
@@ -50,23 +51,26 @@ use crate::icons;
 
 pub(super) fn ${funcName}(m: &Bound<PyModule>) -> PyResult<()> {
 `;
-    const partition = rsSrc.src.slice(
-      i * maxItems,
-      Math.min(rsSrc.src.length, i * maxItems + maxItems),
-    ).join("");
-    await Deno.writeTextFile(
+    const partition = rsSrc.src
+      .slice(i * maxItems, Math.min(rsSrc.src.length, i * maxItems + maxItems))
+      .join("");
+    await fs.writeFile(
       modPart,
       generatedCommentMarker + beginPart + partition + endBindPart,
+      "utf-8",
     );
 
     rootModSrc.push(`mod ${modName};\n`);
     rootModImpl.push(`    ${modName}::${funcName}(m)?;\n`);
   }
-  Deno.writeTextFile(
+  await fs.writeFile(
     rootMod,
-    generatedCommentMarker + rootModSrc.join("") + rootBegin +
+    generatedCommentMarker +
+      rootModSrc.join("") +
+      rootBegin +
       rootModImpl.join("") +
       endBindPart,
+    "utf-8",
   );
   console.debug("Generated Python binding API via", mods.length, "modules");
 }
@@ -82,17 +86,21 @@ export type GeneratedStubs = { lib: string; src: string };
  */
 export async function writeStubs(stubs: GeneratedStubs) {
   const marker = generatedCommentMarker.replace("// ", "# ");
-  const thisDir = Deno.cwd();
+  const thisDir = process.cwd();
   const typeStubPath = path.join(thisDir, stubs.lib + ".pyi");
-  await Deno.writeTextFile(typeStubPath, marker + stubs.src);
+  await fs.writeFile(typeStubPath, marker + stubs.src, "utf-8");
   const uv = await which("uv");
-  const ruff = new Deno.Command(uv, {
-    args: ["run", "--no-sync", "ruff", "format", "-q", typeStubPath],
-  });
-  const result = await ruff.output();
-  const decoder = new TextDecoder("utf-8");
-  const stdout = decoder.decode(result.stdout).trim();
-  const stderr = decoder.decode(result.stderr).trim();
+  const result = Bun.spawnSync([
+    uv,
+    "run",
+    "--no-sync",
+    "ruff",
+    "format",
+    "-q",
+    typeStubPath,
+  ]);
+  const stdout = result.stdout.toString().trim();
+  const stderr = result.stderr.toString().trim();
   if (stdout.length) {
     console.log(stdout);
   }

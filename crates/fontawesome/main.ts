@@ -39,7 +39,6 @@ const rsLibFinder: GeneratedFinder = {
   src: [],
 };
 
-// Learn more at https://docs.deno.com/runtime/manual/examples/module_metadata#concepts
 if (import.meta.main) {
   console.log("Generating crate from", npmPkg, "source.");
   const crateInfo = await copyPkgMeta(npmPkg, npmPkgInfo, "LICENSE.txt");
@@ -52,8 +51,6 @@ if (import.meta.main) {
   let progress = 0;
 
   const svgoConfig = await loadConfig("../../svgo.config.mjs");
-
-  const textEncoder = new TextEncoder();
 
   const rsBinding: GeneratedBinding = {
     lib: crateInfo.lib,
@@ -85,24 +82,22 @@ def get_icon(slug: str) -> Icon | None: ...
       for (const style of Object.entries(svgs)) {
         progress += 1;
 
-        if (Deno.stdin.isTerminal()) {
+        if (process.stdin.isTTY) {
           // only write progress indicator if in interactive terminal
-          const percent = Math.round(Number(progress / total * 100))
-            .toString().padStart(3);
-          await Deno.stdout.write(
-            textEncoder.encode(`Generating... ${percent}%\r`),
-          );
+          const percent = Math.round(Number((progress / total) * 100))
+            .toString()
+            .padStart(3);
+          process.stdout.write(`Generating... ${percent}%\r`);
         }
 
-        const data = <IconData> style[1];
+        const data = <IconData>style[1];
         const svgData = data.raw;
-        const family = <string> style[0];
+        const family = <string>style[0];
         const optimized = optimize(svgData, svgoConfig);
 
-        const constName = (`${family}-${slug}`).toUpperCase().replaceAll(
-          "-",
-          "_",
-        );
+        const constName = `${family}-${slug}`
+          .toUpperCase()
+          .replaceAll("-", "_");
 
         rsLibFinder.src.push(`        #[cfg(feature = "${family}")]
         "${family}/${slug}" => Some(icons::${constName}),\n`);
@@ -110,7 +105,7 @@ def get_icon(slug: str) -> Icon | None: ...
     m.add("${constName}", icons::${constName})?;\n`);
         pyStub.src += `${constName}: Final[Icon] = ...\n`;
 
-        const key = <faFamilies> family;
+        const key = <faFamilies>family;
         rsIcons[key].src.push(`
 /// ${family}/${slug}
 pub const ${constName}: Icon = Icon {
@@ -126,7 +121,7 @@ pub const ${constName}: Icon = Icon {
     }
   }
 
-  if (Deno.stdin.isTerminal()) console.log();
+  if (process.stdin.isTTY) console.log();
   for (const entry of Object.entries(rsIcons)) {
     console.log("Encountered", entry[1].src.length, entry[0], "icons");
   }
