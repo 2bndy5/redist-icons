@@ -3,6 +3,10 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "package-dependencies-24" => Some(icons::PACKAGE_DEPENDENCIES_24),
+        "logo-github-16" => Some(icons::LOGO_GITHUB_16),
+        "no-entry-16" => Some(icons::NO_ENTRY_16),
+        "boolean-off-24" => Some(icons::BOOLEAN_OFF_24),
         "issue-draft-24" => Some(icons::ISSUE_DRAFT_24),
         "view-files-24" => Some(icons::VIEW_FILES_24),
         "x-circle-24" => Some(icons::X_CIRCLE_24),
@@ -145,6 +149,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "command-palette-24" => Some(icons::COMMAND_PALETTE_24),
         "clock-fill-24" => Some(icons::CLOCK_FILL_24),
         "file-16" => Some(icons::FILE_16),
+        "stack-slash-16" => Some(icons::STACK_SLASH_16),
         "clock-fill-16" => Some(icons::CLOCK_FILL_16),
         "telescope-16" => Some(icons::TELESCOPE_16),
         "arrow-down-left-24" => Some(icons::ARROW_DOWN_LEFT_24),

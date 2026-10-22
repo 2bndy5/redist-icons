@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
     match slug {
+        "git-merge-queue-24" => Some(icons::GIT_MERGE_QUEUE_24),
         "hubot-16" => Some(icons::HUBOT_16),
         "file-diff-16" => Some(icons::FILE_DIFF_16),
         "info-16" => Some(icons::INFO_16),
@@ -11,6 +12,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "check-circle-24" => Some(icons::CHECK_CIRCLE_24),
         "arrow-switch-24" => Some(icons::ARROW_SWITCH_24),
         "diff-ignored-16" => Some(icons::DIFF_IGNORED_16),
+        "code-badge-24" => Some(icons::CODE_BADGE_24),
         "unwrap-16" => Some(icons::UNWRAP_16),
         "comment-24" => Some(icons::COMMENT_24),
         "pin-slash-24" => Some(icons::PIN_SLASH_24),
@@ -192,17 +194,15 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "heart-16" => Some(icons::HEART_16),
         "database-16" => Some(icons::DATABASE_16),
         "x-circle-fill-24" => Some(icons::X_CIRCLE_FILL_24),
+        "code-badge-16" => Some(icons::CODE_BADGE_16),
         "minimize-16" => Some(icons::MINIMIZE_16),
         "focus-center-24" => Some(icons::FOCUS_CENTER_24),
         "versions-16" => Some(icons::VERSIONS_16),
         "boolean-off-16" => Some(icons::BOOLEAN_OFF_16),
         "flag-24" => Some(icons::FLAG_24),
+        "dashboard-16" => Some(icons::DASHBOARD_16),
         "calendar-24" => Some(icons::CALENDAR_24),
         "bell-24" => Some(icons::BELL_24),
-        "package-dependencies-24" => Some(icons::PACKAGE_DEPENDENCIES_24),
-        "logo-github-16" => Some(icons::LOGO_GITHUB_16),
-        "no-entry-16" => Some(icons::NO_ENTRY_16),
-        "boolean-off-24" => Some(icons::BOOLEAN_OFF_24),
         _ => None,
     }
 }

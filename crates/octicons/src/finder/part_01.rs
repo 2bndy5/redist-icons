@@ -43,6 +43,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "code-review-16" => Some(icons::CODE_REVIEW_16),
         "tracked-by-closed-completed-24" => Some(icons::TRACKED_BY_CLOSED_COMPLETED_24),
         "diff-modified-24" => Some(icons::DIFF_MODIFIED_24),
+        "dashboard-24" => Some(icons::DASHBOARD_24),
         "x-circle-fill-16" => Some(icons::X_CIRCLE_FILL_16),
         "git-pull-request-locked-16" => Some(icons::GIT_PULL_REQUEST_LOCKED_16),
         "quote-24" => Some(icons::QUOTE_24),
@@ -202,7 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "diff-removed-24" => Some(icons::DIFF_REMOVED_24),
         "x-24" => Some(icons::X_24),
         "chat-question-24" => Some(icons::CHAT_QUESTION_24),
-        "git-merge-queue-24" => Some(icons::GIT_MERGE_QUEUE_24),
         _ => None,
     }
 }

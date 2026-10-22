@@ -52,6 +52,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
         icons::TRACKED_BY_CLOSED_COMPLETED_24,
     )?;
     m.add("DIFF_MODIFIED_24", icons::DIFF_MODIFIED_24)?;
+    m.add("DASHBOARD_24", icons::DASHBOARD_24)?;
     m.add("X_CIRCLE_FILL_16", icons::X_CIRCLE_FILL_16)?;
     m.add(
         "GIT_PULL_REQUEST_LOCKED_16",
@@ -220,6 +221,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("DIFF_REMOVED_24", icons::DIFF_REMOVED_24)?;
     m.add("X_24", icons::X_24)?;
     m.add("CHAT_QUESTION_24", icons::CHAT_QUESTION_24)?;
-    m.add("GIT_MERGE_QUEUE_24", icons::GIT_MERGE_QUEUE_24)?;
     Ok(())
 }
