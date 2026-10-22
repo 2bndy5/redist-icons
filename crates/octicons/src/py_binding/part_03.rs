@@ -3,6 +3,10 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("PACKAGE_DEPENDENCIES_24", icons::PACKAGE_DEPENDENCIES_24)?;
+    m.add("LOGO_GITHUB_16", icons::LOGO_GITHUB_16)?;
+    m.add("NO_ENTRY_16", icons::NO_ENTRY_16)?;
+    m.add("BOOLEAN_OFF_24", icons::BOOLEAN_OFF_24)?;
     m.add("ISSUE_DRAFT_24", icons::ISSUE_DRAFT_24)?;
     m.add("VIEW_FILES_24", icons::VIEW_FILES_24)?;
     m.add("X_CIRCLE_24", icons::X_CIRCLE_24)?;
@@ -151,6 +155,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("COMMAND_PALETTE_24", icons::COMMAND_PALETTE_24)?;
     m.add("CLOCK_FILL_24", icons::CLOCK_FILL_24)?;
     m.add("FILE_16", icons::FILE_16)?;
+    m.add("STACK_SLASH_16", icons::STACK_SLASH_16)?;
     m.add("CLOCK_FILL_16", icons::CLOCK_FILL_16)?;
     m.add("TELESCOPE_16", icons::TELESCOPE_16)?;
     m.add("ARROW_DOWN_LEFT_24", icons::ARROW_DOWN_LEFT_24)?;

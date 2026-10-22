@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("GIT_MERGE_QUEUE_24", icons::GIT_MERGE_QUEUE_24)?;
     m.add("HUBOT_16", icons::HUBOT_16)?;
     m.add("FILE_DIFF_16", icons::FILE_DIFF_16)?;
     m.add("INFO_16", icons::INFO_16)?;
@@ -11,6 +12,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHECK_CIRCLE_24", icons::CHECK_CIRCLE_24)?;
     m.add("ARROW_SWITCH_24", icons::ARROW_SWITCH_24)?;
     m.add("DIFF_IGNORED_16", icons::DIFF_IGNORED_16)?;
+    m.add("CODE_BADGE_24", icons::CODE_BADGE_24)?;
     m.add("UNWRAP_16", icons::UNWRAP_16)?;
     m.add("COMMENT_24", icons::COMMENT_24)?;
     m.add("PIN_SLASH_24", icons::PIN_SLASH_24)?;
@@ -204,16 +206,14 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("HEART_16", icons::HEART_16)?;
     m.add("DATABASE_16", icons::DATABASE_16)?;
     m.add("X_CIRCLE_FILL_24", icons::X_CIRCLE_FILL_24)?;
+    m.add("CODE_BADGE_16", icons::CODE_BADGE_16)?;
     m.add("MINIMIZE_16", icons::MINIMIZE_16)?;
     m.add("FOCUS_CENTER_24", icons::FOCUS_CENTER_24)?;
     m.add("VERSIONS_16", icons::VERSIONS_16)?;
     m.add("BOOLEAN_OFF_16", icons::BOOLEAN_OFF_16)?;
     m.add("FLAG_24", icons::FLAG_24)?;
+    m.add("DASHBOARD_16", icons::DASHBOARD_16)?;
     m.add("CALENDAR_24", icons::CALENDAR_24)?;
     m.add("BELL_24", icons::BELL_24)?;
-    m.add("PACKAGE_DEPENDENCIES_24", icons::PACKAGE_DEPENDENCIES_24)?;
-    m.add("LOGO_GITHUB_16", icons::LOGO_GITHUB_16)?;
-    m.add("NO_ENTRY_16", icons::NO_ENTRY_16)?;
-    m.add("BOOLEAN_OFF_24", icons::BOOLEAN_OFF_24)?;
     Ok(())
 }
