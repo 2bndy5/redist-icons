@@ -40,6 +40,12 @@ updates:
     directory: /
     schedule:
       interval: "daily"
+    cooldown:
+      exclude:
+        - "@primer/octicons"
+        - "@fortawesome/fontawesome-free"
+        - "simple-icons"
+        - "@mdi/svg"
     groups:
       bun:
         patterns:
