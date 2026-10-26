@@ -16,7 +16,7 @@
     "format:check": "biome format ."
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.2",
+    "@biomejs/biome": "^2.6.3",
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.5",
     "svgo": "4.1.0"
