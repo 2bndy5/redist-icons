@@ -6,7 +6,7 @@
     "gen": "bun run main.ts"
   },
   "dependencies": {
-    "simple-icons": "16.35.0",
+    "simple-icons": "16.36.0",
     "common": "workspace:*"
   }
 }

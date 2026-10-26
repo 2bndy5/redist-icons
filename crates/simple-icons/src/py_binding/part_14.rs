@@ -105,6 +105,7 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_CONTABO", icons::SI_CONTABO)?;
     m.add("SI_I18NEXT", icons::SI_I18NEXT)?;
     m.add("SI_NOBARALINUX", icons::SI_NOBARALINUX)?;
+    m.add("SI_HAPROXY", icons::SI_HAPROXY)?;
     m.add(
         "SI_TAKETWOINTERACTIVESOFTWARE",
         icons::SI_TAKETWOINTERACTIVESOFTWARE,
@@ -205,6 +206,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_TANGLED", icons::SI_TANGLED)?;
     m.add("SI_TIDDLYWIKI", icons::SI_TIDDLYWIKI)?;
     m.add("SI_ASEPRITE", icons::SI_ASEPRITE)?;
-    m.add("SI_CALIBREWEB", icons::SI_CALIBREWEB)?;
     Ok(())
 }

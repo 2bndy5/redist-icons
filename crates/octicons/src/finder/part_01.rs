@@ -25,6 +25,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "stopwatch-16" => Some(icons::STOPWATCH_16),
         "chat-locked-16" => Some(icons::CHAT_LOCKED_16),
         "info-16" => Some(icons::INFO_16),
+        "git-pull-request-agent-16" => Some(icons::GIT_PULL_REQUEST_AGENT_16),
         "rocket-24" => Some(icons::ROCKET_24),
         "info-24" => Some(icons::INFO_24),
         "move-to-top-24" => Some(icons::MOVE_TO_TOP_24),
@@ -173,6 +174,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "release-24" => Some(icons::RELEASE_24),
         "hourglass-24" => Some(icons::HOURGLASS_24),
         "dice-16" => Some(icons::DICE_16),
+        "check-agent-16" => Some(icons::CHECK_AGENT_16),
         "paper-airplane-16" => Some(icons::PAPER_AIRPLANE_16),
         "star-16" => Some(icons::STAR_16),
         "sort-asc-24" => Some(icons::SORT_ASC_24),
@@ -201,8 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "arrow-down-right-16" => Some(icons::ARROW_DOWN_RIGHT_16),
         "terminal-16" => Some(icons::TERMINAL_16),
         "spacing-small-16" => Some(icons::SPACING_SMALL_16),
-        "discussion-outdated-16" => Some(icons::DISCUSSION_OUTDATED_16),
-        "sign-in-24" => Some(icons::SIGN_IN_24),
         _ => None,
     }
 }
