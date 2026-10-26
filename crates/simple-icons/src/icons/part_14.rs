@@ -864,7 +864,7 @@ pub const SI_AWAIT: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Await</title><path d="M12 0c5.523 0 10 4.477 10 10v9a3.125 3.125 0 0 1-4.694 2.703A3.126 3.126 0 0 1 12 23a3.126 3.126 0 0 1-5.306-1.297A3.125 3.125 0 0 1 2 19v-9C2 4.477 6.477 0 12 0m-1.25 10.625a.625.625 0 0 0-.625.625 1.875 1.875 0 0 0 3.75 0 .625.625 0 0 0-.625-.625zm-1.875-5c-.69 0-1.25.56-1.25 1.25v1.25a1.25 1.25 0 0 0 2.5 0v-1.25c0-.69-.56-1.25-1.25-1.25m6.25 0c-.69 0-1.25.56-1.25 1.25v1.25a1.25 1.25 0 0 0 2.5 0v-1.25c0-.69-.56-1.25-1.25-1.25"/></svg>"##,
     slug: "await",
     title: "Await",
-    hex: "7858F5",
+    hex: "9973FF",
     source: "https://awaitwidget.com",
     guidelines: None,
     license: None,
@@ -974,9 +974,9 @@ pub const SI_ELIXIR: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Elixir</title><path d="M19.793 16.575c0 3.752-2.927 7.426-7.743 7.426-5.249 0-7.843-3.71-7.843-8.29 0-5.21 3.892-12.952 8-15.647a.397.397 0 0 1 .61.371 9.716 9.716 0 0 0 1.694 6.518c.522.795 1.092 1.478 1.763 2.352.94 1.227 1.637 1.906 2.644 3.842l.015.028a7.107 7.107 0 0 1 .86 3.4z"/></svg>"##,
     slug: "elixir",
     title: "Elixir",
-    hex: "4B275F",
+    hex: "8847B9",
     source: "https://github.com/elixir-lang/elixir-lang.github.com/tree/031746384ee23b9be19298c92a9699c56cc05845/images/logo",
-    guidelines: None,
+    guidelines: Some("https://elixir-lang.org/trademarks/"),
     license: None,
 };
 
@@ -1119,6 +1119,17 @@ pub const SI_NOBARALINUX: Icon = Icon {
     title: "Nobara Linux",
     hex: "000000",
     source: "https://wiki.nobaraproject.org",
+    guidelines: None,
+    license: None,
+};
+
+/// haproxy
+pub const SI_HAPROXY: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HAProxy</title><path d="M9.75 13.75h-3.5v-3.5h3.5zm4-4h-3.5v-3.5h3.5zm0 8h-3.5v-3.5h3.5zm4-4h-3.5v-3.5h3.5zm-1-8h-2.5v-2.5h2.5zm-7 0h-2.5v-2.5h2.5zm-4 4h-2.5v-2.5h2.5zm0 7h-2.5v-2.5h2.5zm15 0h-2.5v-2.5h2.5zm0-7h-2.5v-2.5h2.5zM3 6.5H1.5V5H3ZM6.5 3H5V1.5h1.5zm4-1.5H9V0h1.5zm-9 9H0V9h1.5Zm19.5-4V5h1.5v1.5ZM17.5 3V1.5H19V3Zm-4-1.5V0H15v1.5zm9 9V9H24v1.5zM9.75 20.75h-2.5v-2.5h2.5zm7 0h-2.5v-2.5h2.5zM22.5 19H21v-1.5h1.5zM19 22.5h-1.5V21H19ZM15 24h-1.5v-1.5H15Zm9-9h-1.5v-1.5H24ZM1.5 19v-1.5H3V19ZM5 22.5V21h1.5v1.5zM9 24v-1.5h1.5V24Zm-9-9v-1.5h1.5V15Z"/></svg>"##,
+    slug: "haproxy",
+    title: "HAProxy",
+    hex: "169BD6",
+    source: "https://github.com/simple-icons/simple-icons/pull/15025#issuecomment-5835041111",
     guidelines: None,
     license: None,
 };
@@ -2186,17 +2197,6 @@ pub const SI_ASEPRITE: Icon = Icon {
     title: "Aseprite",
     hex: "7D929E",
     source: "https://www.aseprite.org",
-    guidelines: None,
-    license: None,
-};
-
-/// calibreweb
-pub const SI_CALIBREWEB: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Calibre-Web</title><path d="M13.736.083q4.9353-.6785 5.5252 4.1915-1.104 5.4862-6.4778 7.1446-1.3131.3981-2.6673.1905-.409-.133-.6668-.4763a3.91 3.91 0 0 1 0-1.7147q4.0727.4425 6.4778-3.0484.8668-1.3161.5715-2.8578-.5576-1.2044-1.9052-1.1432-2.7075.4504-4.382 2.6674-3.9135 5.7548-2.4768 12.5745 1.59 5.4391 6.954 3.5246 1.458-.7474 2.6674-1.81 1.627.6834.8573 2.2864-4.452 3.9011-9.8119 1.4289-3.1384-2.512-3.5247-6.573-.858-7.33 3.62-13.1462Q10.673.9268 13.736.083"/></svg>"##,
-    slug: "calibreweb",
-    title: "Calibre-Web",
-    hex: "45B29D",
-    source: "https://github.com/janeczku/calibre-web/blob/ab11919c0bff5ddea1eed2bfd80fd7ea26f05710/cps/static/icon.svg",
     guidelines: None,
     license: None,
 };

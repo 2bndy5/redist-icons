@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "circle-24" => Some(icons::CIRCLE_24),
+        "file-removed-16" => Some(icons::FILE_REMOVED_16),
         "clock-fill-24" => Some(icons::CLOCK_FILL_24),
         "passkey-fill-24" => Some(icons::PASSKEY_FILL_24),
         "server-16" => Some(icons::SERVER_16),
@@ -57,9 +59,11 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "codescan-24" => Some(icons::CODESCAN_24),
         "hash-24" => Some(icons::HASH_24),
         "location-24" => Some(icons::LOCATION_24),
+        "git-que-merge-agent-16" => Some(icons::GIT_QUE_MERGE_AGENT_16),
         "plus-circle-24" => Some(icons::PLUS_CIRCLE_24),
         "play-16" => Some(icons::PLAY_16),
         "file-zip-16" => Some(icons::FILE_ZIP_16),
+        "git-closed-agent-16" => Some(icons::GIT_CLOSED_AGENT_16),
         "trophy-24" => Some(icons::TROPHY_24),
         "mail-16" => Some(icons::MAIL_16),
         "globe-24" => Some(icons::GLOBE_24),
@@ -75,6 +79,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "infinity-16" => Some(icons::INFINITY_16),
         "move-to-start-16" => Some(icons::MOVE_TO_START_16),
         "thumbsup-24" => Some(icons::THUMBSUP_24),
+        "git-merge-agent-16" => Some(icons::GIT_MERGE_AGENT_16),
         "sandbox-16" => Some(icons::SANDBOX_16),
         "repo-push-16" => Some(icons::REPO_PUSH_16),
         "sign-out-24" => Some(icons::SIGN_OUT_24),
@@ -174,6 +179,7 @@ pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
         "issue-closed-16" => Some(icons::ISSUE_CLOSED_16),
         "law-24" => Some(icons::LAW_24),
         "repo-delete-24" => Some(icons::REPO_DELETE_24),
+        "git-draft-agent-16" => Some(icons::GIT_DRAFT_AGENT_16),
         "file-check-16" => Some(icons::FILE_CHECK_16),
         "gift-16" => Some(icons::GIFT_16),
         "repo-clone-24" => Some(icons::REPO_CLONE_24),

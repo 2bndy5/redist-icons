@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_17(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_WIKIDOTGG", icons::SI_WIKIDOTGG)?;
     m.add("SI_WISE", icons::SI_WISE)?;
     m.add("SI_HYPERX", icons::SI_HYPERX)?;
     m.add("SI_OPTUNA", icons::SI_OPTUNA)?;

@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("CIRCLE_24", icons::CIRCLE_24)?;
+    m.add("FILE_REMOVED_16", icons::FILE_REMOVED_16)?;
     m.add("CLOCK_FILL_24", icons::CLOCK_FILL_24)?;
     m.add("PASSKEY_FILL_24", icons::PASSKEY_FILL_24)?;
     m.add("SERVER_16", icons::SERVER_16)?;
@@ -57,9 +59,11 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CODESCAN_24", icons::CODESCAN_24)?;
     m.add("HASH_24", icons::HASH_24)?;
     m.add("LOCATION_24", icons::LOCATION_24)?;
+    m.add("GIT_QUE_MERGE_AGENT_16", icons::GIT_QUE_MERGE_AGENT_16)?;
     m.add("PLUS_CIRCLE_24", icons::PLUS_CIRCLE_24)?;
     m.add("PLAY_16", icons::PLAY_16)?;
     m.add("FILE_ZIP_16", icons::FILE_ZIP_16)?;
+    m.add("GIT_CLOSED_AGENT_16", icons::GIT_CLOSED_AGENT_16)?;
     m.add("TROPHY_24", icons::TROPHY_24)?;
     m.add("MAIL_16", icons::MAIL_16)?;
     m.add("GLOBE_24", icons::GLOBE_24)?;
@@ -78,6 +82,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("INFINITY_16", icons::INFINITY_16)?;
     m.add("MOVE_TO_START_16", icons::MOVE_TO_START_16)?;
     m.add("THUMBSUP_24", icons::THUMBSUP_24)?;
+    m.add("GIT_MERGE_AGENT_16", icons::GIT_MERGE_AGENT_16)?;
     m.add("SANDBOX_16", icons::SANDBOX_16)?;
     m.add("REPO_PUSH_16", icons::REPO_PUSH_16)?;
     m.add("SIGN_OUT_24", icons::SIGN_OUT_24)?;
@@ -186,6 +191,7 @@ pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ISSUE_CLOSED_16", icons::ISSUE_CLOSED_16)?;
     m.add("LAW_24", icons::LAW_24)?;
     m.add("REPO_DELETE_24", icons::REPO_DELETE_24)?;
+    m.add("GIT_DRAFT_AGENT_16", icons::GIT_DRAFT_AGENT_16)?;
     m.add("FILE_CHECK_16", icons::FILE_CHECK_16)?;
     m.add("GIFT_16", icons::GIFT_16)?;
     m.add("REPO_CLONE_24", icons::REPO_CLONE_24)?;

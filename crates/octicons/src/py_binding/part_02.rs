@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("DISCUSSION_OUTDATED_16", icons::DISCUSSION_OUTDATED_16)?;
+    m.add("SIGN_IN_24", icons::SIGN_IN_24)?;
     m.add("FILE_ADDED_16", icons::FILE_ADDED_16)?;
     m.add("CLOUD_16", icons::CLOUD_16)?;
     m.add("TRASH_16", icons::TRASH_16)?;
@@ -219,7 +221,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("FILE_MEDIA_16", icons::FILE_MEDIA_16)?;
     m.add("PEOPLE_16", icons::PEOPLE_16)?;
     m.add("BELL_FILL_24", icons::BELL_FILL_24)?;
-    m.add("CIRCLE_24", icons::CIRCLE_24)?;
-    m.add("FILE_REMOVED_16", icons::FILE_REMOVED_16)?;
     Ok(())
 }

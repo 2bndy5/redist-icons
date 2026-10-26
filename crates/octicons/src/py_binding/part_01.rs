@@ -28,6 +28,10 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("STOPWATCH_16", icons::STOPWATCH_16)?;
     m.add("CHAT_LOCKED_16", icons::CHAT_LOCKED_16)?;
     m.add("INFO_16", icons::INFO_16)?;
+    m.add(
+        "GIT_PULL_REQUEST_AGENT_16",
+        icons::GIT_PULL_REQUEST_AGENT_16,
+    )?;
     m.add("ROCKET_24", icons::ROCKET_24)?;
     m.add("INFO_24", icons::INFO_24)?;
     m.add("MOVE_TO_TOP_24", icons::MOVE_TO_TOP_24)?;
@@ -188,6 +192,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("RELEASE_24", icons::RELEASE_24)?;
     m.add("HOURGLASS_24", icons::HOURGLASS_24)?;
     m.add("DICE_16", icons::DICE_16)?;
+    m.add("CHECK_AGENT_16", icons::CHECK_AGENT_16)?;
     m.add("PAPER_AIRPLANE_16", icons::PAPER_AIRPLANE_16)?;
     m.add("STAR_16", icons::STAR_16)?;
     m.add("SORT_ASC_24", icons::SORT_ASC_24)?;
@@ -216,7 +221,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("ARROW_DOWN_RIGHT_16", icons::ARROW_DOWN_RIGHT_16)?;
     m.add("TERMINAL_16", icons::TERMINAL_16)?;
     m.add("SPACING_SMALL_16", icons::SPACING_SMALL_16)?;
-    m.add("DISCUSSION_OUTDATED_16", icons::DISCUSSION_OUTDATED_16)?;
-    m.add("SIGN_IN_24", icons::SIGN_IN_24)?;
     Ok(())
 }

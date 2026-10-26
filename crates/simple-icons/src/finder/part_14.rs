@@ -105,6 +105,7 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "contabo" => Some(icons::SI_CONTABO),
         "i18next" => Some(icons::SI_I18NEXT),
         "nobaralinux" => Some(icons::SI_NOBARALINUX),
+        "haproxy" => Some(icons::SI_HAPROXY),
         "taketwointeractivesoftware" => Some(icons::SI_TAKETWOINTERACTIVESOFTWARE),
         "construct3" => Some(icons::SI_CONSTRUCT3),
         "hackclub" => Some(icons::SI_HACKCLUB),
@@ -202,7 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "tangled" => Some(icons::SI_TANGLED),
         "tiddlywiki" => Some(icons::SI_TIDDLYWIKI),
         "aseprite" => Some(icons::SI_ASEPRITE),
-        "calibreweb" => Some(icons::SI_CALIBREWEB),
         _ => None,
     }
 }

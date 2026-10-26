@@ -1,9 +1,9 @@
 [package]
 name = "simple-icons-pack"
 description = "A redistribution of simple-icons npm package's SVG and metadata."
-version = "16.35.0"
+version = "16.36.0"
 license = "CC0-1.0"
-exclude = ["package.json","main.ts","pyproject.toml","tests/*"]
+exclude = [ "package.json", "main.ts", "pyproject.toml", "tests/*" ]
 
 [package.repository]
 workspace = true
@@ -13,11 +13,11 @@ workspace = true
 
 [lib]
 name = "simple_icons_pack"
-crate-type = ["cdylib","lib"]
+crate-type = [ "cdylib", "lib" ]
 
 [dependencies.pyo3]
 workspace = true
 optional = true
 
 [features]
-pyo3 = ["dep:pyo3"]
+pyo3 = [ "dep:pyo3" ]
