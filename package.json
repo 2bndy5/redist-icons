@@ -12,11 +12,10 @@
     "gen:fa": "bun run --cwd crates/fontawesome gen",
     "gen:si": "bun run --cwd crates/simple-icons gen",
     "gen": "bun run gen:mdi && bun run gen:oct && bun run gen:fa && bun run gen:si",
-    "format": "biome format --write .",
-    "format:check": "biome format ."
+    "format": "bun fmt",
+    "format:check": "bun fmt --check"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.6.3",
     "@types/bun": "^1.4.4",
     "@types/node": "^26.6.5",
     "svgo": "4.1.0"

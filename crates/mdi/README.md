@@ -53,6 +53,5 @@ families. Note, in the python binding, a deprecation warning is emitted from
 [mdi-cargo-link]: https://crates.io/crates/material-design-icons-pack
 [mdi-pip-badge]: https://img.shields.io/pypi/v/material-design-icons-pack
 [mdi-pip-link]: https://pypi.org/project/material-design-icons-pack/
-
 [msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
 [min-py]: https://img.shields.io/badge/Python-v3.9+-blue
