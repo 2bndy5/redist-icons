@@ -9,7 +9,6 @@ github: 2bndy5
 # liberapay: # Replace with a single Liberapay username
 # issuehunt: # Replace with a single IssueHunt username
 # otechie: # Replace with a single Otechie username
-custom: [
+custom:
   # Add up to 4 custom sponsorship URLs
-  "https://www.paypal.me/Brendan884",
-]
+  - "https://www.paypal.me/Brendan884"

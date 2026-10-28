@@ -58,6 +58,5 @@ families.
 [fa-cargo-link]: https://crates.io/crates/fontawesome-free-pack
 [fa-pip-badge]: https://img.shields.io/pypi/v/fontawesome-free-pack
 [fa-pip-link]: https://pypi.org/project/fontawesome-free-pack/
-
 [msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
 [min-py]: https://img.shields.io/badge/Python-v3.9+-blue

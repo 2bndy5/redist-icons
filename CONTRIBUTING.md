@@ -2,7 +2,7 @@
 
 This is a bun-first project. Most of the rust source code is generated from metadata and SVG assets in the npm packages that this project uses (see [README](./README.md)).
 
-The code that generates the sources is kept in the "common/*.ts" and "crates/*/main.ts" files.
+The code that generates the sources is kept in the `common/*.ts` and `crates/*/main.ts` files.
 
 To regenerate most Rust sources, there is a bun script declared for convenience:
 
@@ -44,7 +44,7 @@ Instead, changes should be made to the typescript source that does the actual ge
 Each rust source is formatted (using `cargo fmt`) when package generation is completed.
 Afterward, `cargo clippy` can be used to lint all rust sources.
 
-Biome (`bun run format` or `bun run format:check`) is used to format JSON and TS/JS files.
+Bun (`bun run format` or `bun run format:check`) is used to format YAML, JSON, TOML, Markdown, and TS/JS files.
 
 For Python sources (including type stubs), `ruff` and `mypy` are used. These tools can be invoked using `uv run`. Use `uv sync` to ensure these tools are installed.
 

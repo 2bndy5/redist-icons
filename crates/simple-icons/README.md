@@ -42,6 +42,5 @@ assert_eq!(SI_GITHUB.svg, get_icon("github").unwrap().svg);
 [si-cargo-link]: https://crates.io/crates/simple-icons-pack
 [si-pip-badge]: https://img.shields.io/pypi/v/simple-icons-pack
 [si-pip-link]: https://pypi.org/project/simple-icons-pack/
-
 [msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
 [min-py]: https://img.shields.io/badge/Python-v3.9+-blue
