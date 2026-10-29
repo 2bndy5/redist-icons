@@ -3,252 +3,263 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_21(m: &Bound<PyModule>) -> PyResult<()> {
-    m.add("CROWN_CIRCLE", icons::CROWN_CIRCLE)?;
-    m.add("FORMAT_LIST_CHECKBOX", icons::FORMAT_LIST_CHECKBOX)?;
-    m.add("INBOX_MULTIPLE_OUTLINE", icons::INBOX_MULTIPLE_OUTLINE)?;
-    m.add("FOUNTAIN_PEN_TIP", icons::FOUNTAIN_PEN_TIP)?;
-    m.add(
-        "ARROW_BOTTOM_RIGHT_BOLD_OUTLINE",
-        icons::ARROW_BOTTOM_RIGHT_BOLD_OUTLINE,
-    )?;
-    m.add("BRIEFCASE_DOWNLOAD", icons::BRIEFCASE_DOWNLOAD)?;
-    m.add("SNOWFLAKE_MELT", icons::SNOWFLAKE_MELT)?;
-    m.add("CALENDAR_QUESTION", icons::CALENDAR_QUESTION)?;
-    m.add("COFFEE_TO_GO_OUTLINE", icons::COFFEE_TO_GO_OUTLINE)?;
-    m.add("SET_RIGHT", icons::SET_RIGHT)?;
-    m.add("BATTERY_LOCK_OPEN", icons::BATTERY_LOCK_OPEN)?;
-    m.add("BOOK_COG", icons::BOOK_COG)?;
-    m.add("FILE_STAR", icons::FILE_STAR)?;
-    m.add("EXPANSION_CARD_VARIANT", icons::EXPANSION_CARD_VARIANT)?;
-    m.add("MAP_MARKER_QUESTION", icons::MAP_MARKER_QUESTION)?;
-    m.add("MICROPHONE_MESSAGE", icons::MICROPHONE_MESSAGE)?;
-    m.add("BOOK", icons::BOOK)?;
     #[allow(deprecated)]
-    m.add("SALESFORCE", icons::SALESFORCE)?;
-    m.add("FILE_MARKER_OUTLINE", icons::FILE_MARKER_OUTLINE)?;
-    m.add("TABLE_CLOCK", icons::TABLE_CLOCK)?;
-    m.add("FORMAT_WRAP_TIGHT", icons::FORMAT_WRAP_TIGHT)?;
-    m.add("FAN", icons::FAN)?;
-    m.add("MAP_MARKER_OFF", icons::MAP_MARKER_OFF)?;
-    m.add("TRUCK_REMOVE_OUTLINE", icons::TRUCK_REMOVE_OUTLINE)?;
-    m.add("VIEW_PARALLEL", icons::VIEW_PARALLEL)?;
-    m.add("ROMAN_NUMERAL_8", icons::ROMAN_NUMERAL_8)?;
+    m.add("NINTENDO_SWITCH", icons::NINTENDO_SWITCH)?;
+    m.add("WATER_POLO", icons::WATER_POLO)?;
+    m.add("DATABASE_SEARCH_OUTLINE", icons::DATABASE_SEARCH_OUTLINE)?;
+    m.add("MOUSE_OFF", icons::MOUSE_OFF)?;
+    m.add("SCREW_ROUND_TOP", icons::SCREW_ROUND_TOP)?;
+    m.add("STICKER_CHECK", icons::STICKER_CHECK)?;
+    m.add("BOOKMARK_PLUS_OUTLINE", icons::BOOKMARK_PLUS_OUTLINE)?;
+    m.add("HOME_OFF", icons::HOME_OFF)?;
+    m.add("INVOICE_TEXT_CLOCK", icons::INVOICE_TEXT_CLOCK)?;
+    m.add("CAR_BRAKE_TEMPERATURE", icons::CAR_BRAKE_TEMPERATURE)?;
+    m.add("FILE_LOCK_OPEN_OUTLINE", icons::FILE_LOCK_OPEN_OUTLINE)?;
     m.add(
-        "FLOOR_LAMP_TORCHIERE_VARIANT",
-        icons::FLOOR_LAMP_TORCHIERE_VARIANT,
+        "CARDS_PLAYING_HEART_OUTLINE",
+        icons::CARDS_PLAYING_HEART_OUTLINE,
     )?;
+    m.add("FILE_EXCEL_OUTLINE", icons::FILE_EXCEL_OUTLINE)?;
+    m.add("SOURCE_FORK", icons::SOURCE_FORK)?;
+    m.add("SPEAKER", icons::SPEAKER)?;
+    m.add("BOOM_GATE_ARROW_DOWN", icons::BOOM_GATE_ARROW_DOWN)?;
+    m.add("ACCESS_POINT_CHECK", icons::ACCESS_POINT_CHECK)?;
+    m.add("CAMERA_ACCOUNT", icons::CAMERA_ACCOUNT)?;
+    m.add("DECAGRAM", icons::DECAGRAM)?;
+    m.add("HEART_BOX_OUTLINE", icons::HEART_BOX_OUTLINE)?;
+    m.add("CAR_DOOR_LOCK_OPEN", icons::CAR_DOOR_LOCK_OPEN)?;
+    m.add("ACCOUNT_MUSIC_OUTLINE", icons::ACCOUNT_MUSIC_OUTLINE)?;
+    m.add("VECTOR_CIRCLE_VARIANT", icons::VECTOR_CIRCLE_VARIANT)?;
+    m.add("LIGHTBULB_ALERT", icons::LIGHTBULB_ALERT)?;
+    m.add("CAR_WINDSHIELD", icons::CAR_WINDSHIELD)?;
+    m.add("SKIP_NEXT_CIRCLE", icons::SKIP_NEXT_CIRCLE)?;
+    m.add("HOME_SOUND_IN_OUTLINE", icons::HOME_SOUND_IN_OUTLINE)?;
+    m.add("HAND_CYCLE", icons::HAND_CYCLE)?;
+    m.add("STAR_THREE_POINTS", icons::STAR_THREE_POINTS)?;
+    m.add("CREDIT_CARD_WIRELESS_OFF", icons::CREDIT_CARD_WIRELESS_OFF)?;
+    m.add("MAP_MARKER_UP", icons::MAP_MARKER_UP)?;
+    m.add("IDEOGRAM_CJK", icons::IDEOGRAM_CJK)?;
+    m.add("BACKSPACE_OUTLINE", icons::BACKSPACE_OUTLINE)?;
+    m.add("COMMENT_CHECK", icons::COMMENT_CHECK)?;
+    m.add("NUMERIC_1_BOX_OUTLINE", icons::NUMERIC_1_BOX_OUTLINE)?;
+    m.add("INVOICE_ARROW_RIGHT", icons::INVOICE_ARROW_RIGHT)?;
+    m.add("FACE_MASK", icons::FACE_MASK)?;
+    m.add("MOTION_OUTLINE", icons::MOTION_OUTLINE)?;
+    m.add("HOME_LIGHTBULB_OUTLINE", icons::HOME_LIGHTBULB_OUTLINE)?;
+    m.add("DELETE_CIRCLE_OUTLINE", icons::DELETE_CIRCLE_OUTLINE)?;
+    m.add("GOLF_CART", icons::GOLF_CART)?;
+    m.add("TIMER_STOP", icons::TIMER_STOP)?;
+    m.add("PRINTER_OUTLINE", icons::PRINTER_OUTLINE)?;
+    m.add("CART_ARROW_DOWN", icons::CART_ARROW_DOWN)?;
+    m.add("EMOTICON_KISS", icons::EMOTICON_KISS)?;
+    m.add("PILL", icons::PILL)?;
+    m.add("PAIL_PLUS_OUTLINE", icons::PAIL_PLUS_OUTLINE)?;
+    m.add("BATTERY_80", icons::BATTERY_80)?;
+    m.add("PENTAGON", icons::PENTAGON)?;
+    m.add("GAMEPAD_VARIANT", icons::GAMEPAD_VARIANT)?;
+    m.add("VIEW_LIST", icons::VIEW_LIST)?;
+    m.add("BLUETOOTH_OFF", icons::BLUETOOTH_OFF)?;
+    m.add("DATABASE_ARROW_LEFT", icons::DATABASE_ARROW_LEFT)?;
+    m.add("TAB_PLUS", icons::TAB_PLUS)?;
+    m.add("WINDOW_SHUTTER_SETTINGS", icons::WINDOW_SHUTTER_SETTINGS)?;
+    m.add("FILE_PDF_BOX", icons::FILE_PDF_BOX)?;
+    m.add("AXIS_X_ARROW", icons::AXIS_X_ARROW)?;
+    m.add("WATER_CIRCLE", icons::WATER_CIRCLE)?;
+    m.add("CERTIFICATE_OUTLINE", icons::CERTIFICATE_OUTLINE)?;
     m.add(
-        "FORMAT_LETTER_SPACING_VARIANT",
-        icons::FORMAT_LETTER_SPACING_VARIANT,
+        "INVOICE_TEXT_SEND_OUTLINE",
+        icons::INVOICE_TEXT_SEND_OUTLINE,
     )?;
-    m.add("FILTER_CHECK", icons::FILTER_CHECK)?;
-    m.add("CAMERA_METERING_MATRIX", icons::CAMERA_METERING_MATRIX)?;
-    m.add("TIMER_SAND_FULL", icons::TIMER_SAND_FULL)?;
-    m.add("SIGNAL_3G", icons::SIGNAL_3G)?;
-    m.add("DATABASE_EYE", icons::DATABASE_EYE)?;
-    m.add("BOOK_OFF", icons::BOOK_OFF)?;
-    m.add("FUSE_BLADE", icons::FUSE_BLADE)?;
-    m.add("TENNIS", icons::TENNIS)?;
-    m.add("STORAGE_TANK", icons::STORAGE_TANK)?;
+    m.add("LED_STRIP_VARIANT_OFF", icons::LED_STRIP_VARIANT_OFF)?;
+    m.add("BOOM_GATE", icons::BOOM_GATE)?;
+    m.add(
+        "SORT_BOOL_ASCENDING_VARIANT",
+        icons::SORT_BOOL_ASCENDING_VARIANT,
+    )?;
+    m.add("CURRENCY_EUR_OFF", icons::CURRENCY_EUR_OFF)?;
+    m.add(
+        "FORMAT_HORIZONTAL_ALIGN_LEFT",
+        icons::FORMAT_HORIZONTAL_ALIGN_LEFT,
+    )?;
+    m.add("BOTTLE_WINE_OUTLINE", icons::BOTTLE_WINE_OUTLINE)?;
+    m.add("TIMELINE_MINUS_OUTLINE", icons::TIMELINE_MINUS_OUTLINE)?;
+    m.add("PRESENTATION_PLAY", icons::PRESENTATION_PLAY)?;
+    m.add("MAGNIFY_CLOSE", icons::MAGNIFY_CLOSE)?;
+    m.add(
+        "ARROW_BOTTOM_LEFT_BOLD_BOX_OUTLINE",
+        icons::ARROW_BOTTOM_LEFT_BOLD_BOX_OUTLINE,
+    )?;
+    m.add("GESTURE_TAP_BOX", icons::GESTURE_TAP_BOX)?;
+    m.add(
+        "BOOK_PLUS_MULTIPLE_OUTLINE",
+        icons::BOOK_PLUS_MULTIPLE_OUTLINE,
+    )?;
+    m.add("DATABASE_CHECK_OUTLINE", icons::DATABASE_CHECK_OUTLINE)?;
+    m.add("EMAIL_FAST_OUTLINE", icons::EMAIL_FAST_OUTLINE)?;
+    m.add("DNA", icons::DNA)?;
+    m.add("TABLE_ROW", icons::TABLE_ROW)?;
+    m.add("WEATHER_PARTLY_CLOUDY", icons::WEATHER_PARTLY_CLOUDY)?;
+    m.add("TOOTH", icons::TOOTH)?;
+    m.add("VIDEO_MARKER_OUTLINE", icons::VIDEO_MARKER_OUTLINE)?;
+    m.add("PUZZLE_HEART_OUTLINE", icons::PUZZLE_HEART_OUTLINE)?;
+    m.add(
+        "GENDER_MALE_FEMALE_VARIANT",
+        icons::GENDER_MALE_FEMALE_VARIANT,
+    )?;
+    m.add("PAGE_LAYOUT_FOOTER", icons::PAGE_LAYOUT_FOOTER)?;
+    m.add("TIMELINE_REMOVE", icons::TIMELINE_REMOVE)?;
+    m.add("BOOKMARK_MUSIC", icons::BOOKMARK_MUSIC)?;
+    m.add("BALLOT_RECOUNT_OUTLINE", icons::BALLOT_RECOUNT_OUTLINE)?;
+    m.add("HEXAGON_SLICE_2", icons::HEXAGON_SLICE_2)?;
+    m.add("BATTERY_CHARGING_30", icons::BATTERY_CHARGING_30)?;
+    m.add("CHEVRON_TRIPLE_UP", icons::CHEVRON_TRIPLE_UP)?;
     #[allow(deprecated)]
-    m.add("JSFIDDLE", icons::JSFIDDLE)?;
-    m.add("FILE_TABLE_OUTLINE", icons::FILE_TABLE_OUTLINE)?;
-    m.add("NUMERIC_2_CIRCLE", icons::NUMERIC_2_CIRCLE)?;
-    m.add("CHART_BUBBLE", icons::CHART_BUBBLE)?;
-    m.add("HELP_CIRCLE_OUTLINE", icons::HELP_CIRCLE_OUTLINE)?;
-    m.add("CARDS_PLAYING_HEART", icons::CARDS_PLAYING_HEART)?;
-    m.add("WIFI_STRENGTH_2_ALERT", icons::WIFI_STRENGTH_2_ALERT)?;
-    m.add("CLOSE_NETWORK_OUTLINE", icons::CLOSE_NETWORK_OUTLINE)?;
-    #[allow(deprecated)]
-    m.add(
-        "MICROSOFT_WINDOWS_CLASSIC",
-        icons::MICROSOFT_WINDOWS_CLASSIC,
-    )?;
-    m.add("EMAIL_OUTLINE", icons::EMAIL_OUTLINE)?;
-    m.add("LABEL_OFF_OUTLINE", icons::LABEL_OFF_OUTLINE)?;
-    m.add("VOLCANO_OUTLINE", icons::VOLCANO_OUTLINE)?;
-    m.add("BELL_CHECK_OUTLINE", icons::BELL_CHECK_OUTLINE)?;
-    m.add("TSHIRT_CREW", icons::TSHIRT_CREW)?;
-    m.add("CACHED", icons::CACHED)?;
-    m.add(
-        "FRIDGE_VARIANT_ALERT_OUTLINE",
-        icons::FRIDGE_VARIANT_ALERT_OUTLINE,
-    )?;
-    m.add("TRADEMARK", icons::TRADEMARK)?;
-    m.add("EYE_REFRESH", icons::EYE_REFRESH)?;
+    m.add("FACEBOOK", icons::FACEBOOK)?;
+    m.add("DOORBELL_VIDEO", icons::DOORBELL_VIDEO)?;
+    m.add("FORMAT_UNDERLINE_WAVY", icons::FORMAT_UNDERLINE_WAVY)?;
+    m.add("CLOUD_OFF_OUTLINE", icons::CLOUD_OFF_OUTLINE)?;
+    m.add("EARTH_BOX_OFF", icons::EARTH_BOX_OFF)?;
+    m.add("SET_CENTER_RIGHT", icons::SET_CENTER_RIGHT)?;
     #[allow(deprecated)]
     m.add("DRUPAL", icons::DRUPAL)?;
-    m.add("CREDIT_CARD_FAST", icons::CREDIT_CARD_FAST)?;
-    m.add("SIM_ALERT", icons::SIM_ALERT)?;
-    m.add("HOME_CIRCLE_OUTLINE", icons::HOME_CIRCLE_OUTLINE)?;
-    m.add("FORMAT_LETTER_CASE", icons::FORMAT_LETTER_CASE)?;
-    m.add("CELLPHONE_CHARGING", icons::CELLPHONE_CHARGING)?;
-    #[allow(deprecated)]
-    m.add("YOUTUBE_STUDIO", icons::YOUTUBE_STUDIO)?;
-    m.add("STORE_PLUS_OUTLINE", icons::STORE_PLUS_OUTLINE)?;
-    m.add("COFFIN", icons::COFFIN)?;
-    m.add("NUMERIC_2_BOX_MULTIPLE", icons::NUMERIC_2_BOX_MULTIPLE)?;
-    m.add("ALPHA_X_CIRCLE", icons::ALPHA_X_CIRCLE)?;
-    m.add("MESSAGE_PROCESSING", icons::MESSAGE_PROCESSING)?;
-    m.add("ARCHIVE_EYE", icons::ARCHIVE_EYE)?;
-    m.add("LIGHTBULB_ON_90", icons::LIGHTBULB_ON_90)?;
-    m.add("CALENDAR_CLOCK_OUTLINE", icons::CALENDAR_CLOCK_OUTLINE)?;
-    m.add("BORDER_RADIUS", icons::BORDER_RADIUS)?;
+    m.add("MOVIE_EDIT_OUTLINE", icons::MOVIE_EDIT_OUTLINE)?;
+    m.add("CREDIT_CARD_MARKER", icons::CREDIT_CARD_MARKER)?;
+    m.add("CHAT_REMOVE_OUTLINE", icons::CHAT_REMOVE_OUTLINE)?;
+    m.add("UNICORN", icons::UNICORN)?;
+    m.add("FOLDER_KEY_NETWORK", icons::FOLDER_KEY_NETWORK)?;
     m.add("FILTER_OFF_OUTLINE", icons::FILTER_OFF_OUTLINE)?;
-    m.add("HOME_SOUND_IN", icons::HOME_SOUND_IN)?;
-    m.add("BOMB_OFF", icons::BOMB_OFF)?;
-    m.add("PALETTE_OUTLINE", icons::PALETTE_OUTLINE)?;
-    m.add("ACCOUNT_LOCK_OUTLINE", icons::ACCOUNT_LOCK_OUTLINE)?;
-    m.add("MESSAGE_STAR", icons::MESSAGE_STAR)?;
-    m.add("COMMENT_PLUS", icons::COMMENT_PLUS)?;
-    m.add("WATER_REMOVE_OUTLINE", icons::WATER_REMOVE_OUTLINE)?;
-    m.add("CLOUD_ARROW_UP", icons::CLOUD_ARROW_UP)?;
-    m.add("PACKAGE_CHECK", icons::PACKAGE_CHECK)?;
-    m.add("HAMBURGER_OFF", icons::HAMBURGER_OFF)?;
-    m.add("DICE_D8_OUTLINE", icons::DICE_D8_OUTLINE)?;
-    m.add("PAPER_CUT_VERTICAL", icons::PAPER_CUT_VERTICAL)?;
-    m.add("SELECT_DRAG", icons::SELECT_DRAG)?;
-    m.add("TIMER_MINUS", icons::TIMER_MINUS)?;
-    m.add("MOTHER_NURSE", icons::MOTHER_NURSE)?;
     m.add(
-        "BRIEFCASE_ARROW_LEFT_RIGHT_OUTLINE",
-        icons::BRIEFCASE_ARROW_LEFT_RIGHT_OUTLINE,
+        "MESSAGE_ARROW_RIGHT_OUTLINE",
+        icons::MESSAGE_ARROW_RIGHT_OUTLINE,
     )?;
     m.add(
-        "BATTERY_CHARGING_WIRELESS_60",
-        icons::BATTERY_CHARGING_WIRELESS_60,
+        "FORMAT_VERTICAL_ALIGN_TOP",
+        icons::FORMAT_VERTICAL_ALIGN_TOP,
     )?;
-    m.add("INBOX_ARROW_UP_OUTLINE", icons::INBOX_ARROW_UP_OUTLINE)?;
-    m.add("BUG_PLAY_OUTLINE", icons::BUG_PLAY_OUTLINE)?;
-    m.add("TABLE_BORDER", icons::TABLE_BORDER)?;
-    m.add("MULTIMEDIA", icons::MULTIMEDIA)?;
-    m.add("POWER_SOCKET", icons::POWER_SOCKET)?;
-    m.add("REITERATE", icons::REITERATE)?;
-    m.add("FIT_TO_SCREEN", icons::FIT_TO_SCREEN)?;
-    m.add("BADGE_ACCOUNT", icons::BADGE_ACCOUNT)?;
-    m.add("BLUETOOTH_AUDIO", icons::BLUETOOTH_AUDIO)?;
-    m.add("INFORMATION_BOX", icons::INFORMATION_BOX)?;
-    m.add("CHAT_ALERT", icons::CHAT_ALERT)?;
-    m.add("HUMAN_GREETING_VARIANT", icons::HUMAN_GREETING_VARIANT)?;
-    m.add("KEY_PLUS", icons::KEY_PLUS)?;
-    m.add("FOLDER_REFRESH", icons::FOLDER_REFRESH)?;
-    m.add("CONTENT_PASTE", icons::CONTENT_PASTE)?;
-    m.add("ACCOUNT_COG", icons::ACCOUNT_COG)?;
-    m.add("CALENDAR_MULTIPLE_CHECK", icons::CALENDAR_MULTIPLE_CHECK)?;
-    m.add("ACCOUNT_CHILD", icons::ACCOUNT_CHILD)?;
-    m.add("SET_SPLIT", icons::SET_SPLIT)?;
-    m.add("POWER", icons::POWER)?;
-    m.add("ALPHA_U", icons::ALPHA_U)?;
-    m.add("CAR_3_PLUS", icons::CAR_3_PLUS)?;
-    m.add("GAMEPAD_VARIANT_OUTLINE", icons::GAMEPAD_VARIANT_OUTLINE)?;
-    m.add("VECTOR_POLYGON", icons::VECTOR_POLYGON)?;
-    m.add("CUP", icons::CUP)?;
-    m.add(
-        "ARROW_RIGHT_DROP_CIRCLE_OUTLINE",
-        icons::ARROW_RIGHT_DROP_CIRCLE_OUTLINE,
-    )?;
-    m.add("DOWNLOAD_LOCK", icons::DOWNLOAD_LOCK)?;
-    m.add("MESSAGE_BOOKMARK", icons::MESSAGE_BOOKMARK)?;
-    m.add("BOOM_GATE_UP_OUTLINE", icons::BOOM_GATE_UP_OUTLINE)?;
-    m.add("PRINTER_POS_STOP", icons::PRINTER_POS_STOP)?;
-    m.add("CASH_PLUS", icons::CASH_PLUS)?;
-    m.add(
-        "TOGGLE_SWITCH_OFF_OUTLINE",
-        icons::TOGGLE_SWITCH_OFF_OUTLINE,
-    )?;
-    m.add(
-        "HELP_BOX_MULTIPLE_OUTLINE",
-        icons::HELP_BOX_MULTIPLE_OUTLINE,
-    )?;
-    m.add("AXIS_Z_ARROW_LOCK", icons::AXIS_Z_ARROW_LOCK)?;
-    m.add("VOLUME_HIGH", icons::VOLUME_HIGH)?;
-    m.add("CYLINDER_OFF", icons::CYLINDER_OFF)?;
+    m.add("RECEIPT_OUTLINE", icons::RECEIPT_OUTLINE)?;
+    m.add("MAP_CHECK", icons::MAP_CHECK)?;
+    m.add("CANDYCANE", icons::CANDYCANE)?;
+    m.add("POUND_BOX", icons::POUND_BOX)?;
+    m.add("DELETE_RESTORE", icons::DELETE_RESTORE)?;
+    m.add("BEEKEEPER", icons::BEEKEEPER)?;
     #[allow(deprecated)]
-    m.add("GOOGLE_ANALYTICS", icons::GOOGLE_ANALYTICS)?;
-    m.add("ACCOUNT_WRENCH_OUTLINE", icons::ACCOUNT_WRENCH_OUTLINE)?;
-    m.add("COMMENT_EYE", icons::COMMENT_EYE)?;
-    m.add("CIRCLE_EXPAND", icons::CIRCLE_EXPAND)?;
+    m.add("REDDIT", icons::REDDIT)?;
+    m.add("FLAG_VARIANT_OFF_OUTLINE", icons::FLAG_VARIANT_OFF_OUTLINE)?;
+    m.add("PHONE_RING", icons::PHONE_RING)?;
+    m.add("WEATHER_WINDY_VARIANT", icons::WEATHER_WINDY_VARIANT)?;
+    m.add("SKATE_OFF", icons::SKATE_OFF)?;
+    m.add(
+        "ARROW_TOP_LEFT_BOTTOM_RIGHT_BOLD",
+        icons::ARROW_TOP_LEFT_BOTTOM_RIGHT_BOLD,
+    )?;
+    m.add("RADIATOR_OFF", icons::RADIATOR_OFF)?;
+    m.add("CAST_CONNECTED", icons::CAST_CONNECTED)?;
+    m.add("STEERING_OFF", icons::STEERING_OFF)?;
+    m.add("CURRENCY_MNT", icons::CURRENCY_MNT)?;
+    m.add("KEYBOARD_F8", icons::KEYBOARD_F8)?;
+    m.add("BED_OUTLINE", icons::BED_OUTLINE)?;
+    m.add("MESSAGE_CHECK_OUTLINE", icons::MESSAGE_CHECK_OUTLINE)?;
+    m.add("CHEESE_OFF", icons::CHEESE_OFF)?;
+    m.add("LAYERS", icons::LAYERS)?;
+    m.add(
+        "FORMAT_TEXT_WRAPPING_WRAP",
+        icons::FORMAT_TEXT_WRAPPING_WRAP,
+    )?;
+    m.add("BRAILLE", icons::BRAILLE)?;
+    m.add("FORMAT_LIST_GROUP_PLUS", icons::FORMAT_LIST_GROUP_PLUS)?;
+    m.add("AIRPLANE_MINUS", icons::AIRPLANE_MINUS)?;
+    m.add(
+        "FORMAT_TEXT_WRAPPING_CLIP",
+        icons::FORMAT_TEXT_WRAPPING_CLIP,
+    )?;
+    m.add("EMOTICON_DEAD", icons::EMOTICON_DEAD)?;
+    m.add("NUKE", icons::NUKE)?;
+    m.add("CAR_COOLANT_LEVEL", icons::CAR_COOLANT_LEVEL)?;
+    m.add("SYLLABARY_HIRAGANA", icons::SYLLABARY_HIRAGANA)?;
+    m.add("EMAIL_OPEN_MULTIPLE", icons::EMAIL_OPEN_MULTIPLE)?;
+    m.add("PAGE_LAYOUT_HEADER", icons::PAGE_LAYOUT_HEADER)?;
+    m.add(
+        "SOLAR_POWER_VARIANT_OUTLINE",
+        icons::SOLAR_POWER_VARIANT_OUTLINE,
+    )?;
+    m.add("OCTAGRAM_EDIT_OUTLINE", icons::OCTAGRAM_EDIT_OUTLINE)?;
+    m.add("FORMAT_ALIGN_LEFT", icons::FORMAT_ALIGN_LEFT)?;
+    m.add("FOOD_HALAL", icons::FOOD_HALAL)?;
+    m.add("COMMENT_ARROW_LEFT", icons::COMMENT_ARROW_LEFT)?;
+    m.add(
+        "OFFICE_BUILDING_MINUS_OUTLINE",
+        icons::OFFICE_BUILDING_MINUS_OUTLINE,
+    )?;
+    m.add("DUCK", icons::DUCK)?;
+    m.add("COUNTERTOP_OUTLINE", icons::COUNTERTOP_OUTLINE)?;
+    m.add("COMMA_CIRCLE", icons::COMMA_CIRCLE)?;
+    m.add("DOG_SIDE", icons::DOG_SIDE)?;
+    m.add("NOTE_ALERT_OUTLINE", icons::NOTE_ALERT_OUTLINE)?;
+    m.add("BASKETBALL_HOOP", icons::BASKETBALL_HOOP)?;
+    m.add(
+        "ARROW_TOP_RIGHT_THIN_CIRCLE_OUTLINE",
+        icons::ARROW_TOP_RIGHT_THIN_CIRCLE_OUTLINE,
+    )?;
     #[allow(deprecated)]
-    m.add("KUBERNETES", icons::KUBERNETES)?;
-    m.add("MAP_MARKER_STAR_OUTLINE", icons::MAP_MARKER_STAR_OUTLINE)?;
-    m.add("HAND_BACK_RIGHT", icons::HAND_BACK_RIGHT)?;
-    m.add("ALPHA_D_CIRCLE", icons::ALPHA_D_CIRCLE)?;
-    m.add("SOLAR_POWER", icons::SOLAR_POWER)?;
+    m.add("MICROSOFT_DYNAMICS_365", icons::MICROSOFT_DYNAMICS_365)?;
+    m.add("EMOTICON_LOL_OUTLINE", icons::EMOTICON_LOL_OUTLINE)?;
+    m.add("FLOOR_PLAN", icons::FLOOR_PLAN)?;
+    m.add("NAVIGATION_VARIANT", icons::NAVIGATION_VARIANT)?;
+    m.add("IMAGE_FRAME", icons::IMAGE_FRAME)?;
+    m.add(
+        "CALENDAR_EXPAND_HORIZONTAL",
+        icons::CALENDAR_EXPAND_HORIZONTAL,
+    )?;
+    m.add("IMAGE_SIZE_SELECT_SMALL", icons::IMAGE_SIZE_SELECT_SMALL)?;
+    m.add("FILE_GIF_BOX", icons::FILE_GIF_BOX)?;
+    m.add("TABLE_ARROW_LEFT", icons::TABLE_ARROW_LEFT)?;
+    m.add("HELP_CIRCLE", icons::HELP_CIRCLE)?;
+    m.add("CABIN_A_FRAME", icons::CABIN_A_FRAME)?;
+    m.add("ACCOUNT_COWBOY_HAT", icons::ACCOUNT_COWBOY_HAT)?;
+    m.add("ARROW_RIGHT", icons::ARROW_RIGHT)?;
+    m.add("SELECT_ALL", icons::SELECT_ALL)?;
+    m.add("EARTH_MINUS", icons::EARTH_MINUS)?;
+    m.add("HEAD_ALERT", icons::HEAD_ALERT)?;
+    m.add("MICROPHONE_VARIANT_OFF", icons::MICROPHONE_VARIANT_OFF)?;
+    m.add("FOLDER_OFF", icons::FOLDER_OFF)?;
+    m.add("PANORAMA_VERTICAL", icons::PANORAMA_VERTICAL)?;
+    m.add("SEND_LOCK_OUTLINE", icons::SEND_LOCK_OUTLINE)?;
+    m.add("ACCOUNT_QUESTION_OUTLINE", icons::ACCOUNT_QUESTION_OUTLINE)?;
+    m.add("VACUUM", icons::VACUUM)?;
+    m.add("SPACE_STATION", icons::SPACE_STATION)?;
     #[allow(deprecated)]
-    m.add("CORDOVA", icons::CORDOVA)?;
-    m.add("ARCHIVE_ALERT_OUTLINE", icons::ARCHIVE_ALERT_OUTLINE)?;
-    m.add("BOX_CUTTER", icons::BOX_CUTTER)?;
-    m.add("CALL_MERGE", icons::CALL_MERGE)?;
-    m.add("TEA_OUTLINE", icons::TEA_OUTLINE)?;
-    m.add("MESSAGE_IMAGE_OUTLINE", icons::MESSAGE_IMAGE_OUTLINE)?;
-    m.add("DRAWING", icons::DRAWING)?;
-    m.add("SQUARE_ROOT", icons::SQUARE_ROOT)?;
-    m.add("STORE_ALERT", icons::STORE_ALERT)?;
-    m.add("PAUSE_CIRCLE_OUTLINE", icons::PAUSE_CIRCLE_OUTLINE)?;
-    m.add("RECEIPT_TEXT_MINUS", icons::RECEIPT_TEXT_MINUS)?;
-    m.add("FILTER_MINUS_OUTLINE", icons::FILTER_MINUS_OUTLINE)?;
-    m.add("BRUSH_VARIANT", icons::BRUSH_VARIANT)?;
-    m.add("VECTOR_CIRCLE_VARIANT", icons::VECTOR_CIRCLE_VARIANT)?;
-    m.add("IMAGE_SIZE_SELECT_ACTUAL", icons::IMAGE_SIZE_SELECT_ACTUAL)?;
-    m.add("PAIL_MINUS", icons::PAIL_MINUS)?;
-    m.add("AUGMENTED_REALITY", icons::AUGMENTED_REALITY)?;
-    m.add("MENORAH_FIRE", icons::MENORAH_FIRE)?;
-    m.add("SHIELD_AIRPLANE", icons::SHIELD_AIRPLANE)?;
-    m.add("TRANSFER", icons::TRANSFER)?;
-    m.add("ETHERNET_CABLE_OFF", icons::ETHERNET_CABLE_OFF)?;
-    m.add("HAND_BACK_LEFT", icons::HAND_BACK_LEFT)?;
-    m.add("REWIND_15", icons::REWIND_15)?;
-    m.add("TIMELINE_CLOCK_OUTLINE", icons::TIMELINE_CLOCK_OUTLINE)?;
-    m.add("PENCIL_RULER", icons::PENCIL_RULER)?;
-    m.add("INFORMATION_BOX_OUTLINE", icons::INFORMATION_BOX_OUTLINE)?;
-    m.add("STAR_PLUS_OUTLINE", icons::STAR_PLUS_OUTLINE)?;
+    m.add("TWITCH", icons::TWITCH)?;
+    m.add("CHECKBOX_MARKED_OUTLINE", icons::CHECKBOX_MARKED_OUTLINE)?;
+    m.add("FILE_EDIT", icons::FILE_EDIT)?;
+    m.add("SELECT_REMOVE", icons::SELECT_REMOVE)?;
+    m.add("ACCOUNT_SCHOOL", icons::ACCOUNT_SCHOOL)?;
+    m.add("ARCHIVE_COG", icons::ARCHIVE_COG)?;
+    m.add("ACCOUNT_CREDIT_CARD", icons::ACCOUNT_CREDIT_CARD)?;
     m.add(
-        "PINE_TREE_VARIANT_OUTLINE",
-        icons::PINE_TREE_VARIANT_OUTLINE,
+        "FORMAT_TEXT_ROTATION_VERTICAL",
+        icons::FORMAT_TEXT_ROTATION_VERTICAL,
     )?;
-    m.add("ALPHA_Y", icons::ALPHA_Y)?;
-    m.add("COOKIE_OFF_OUTLINE", icons::COOKIE_OFF_OUTLINE)?;
-    m.add("FAST_FORWARD_5", icons::FAST_FORWARD_5)?;
-    m.add("MONITOR_SHIMMER", icons::MONITOR_SHIMMER)?;
-    m.add("HUMAN_FEMALE_DANCE", icons::HUMAN_FEMALE_DANCE)?;
-    m.add("BATTERY_80", icons::BATTERY_80)?;
-    m.add("FLASK", icons::FLASK)?;
-    m.add("EGG_OUTLINE", icons::EGG_OUTLINE)?;
-    m.add("TRASH_CAN_OUTLINE", icons::TRASH_CAN_OUTLINE)?;
-    m.add("RAY_START_ARROW", icons::RAY_START_ARROW)?;
-    m.add("CALENDAR_EDIT", icons::CALENDAR_EDIT)?;
-    m.add("FILE_ROTATE_LEFT", icons::FILE_ROTATE_LEFT)?;
-    m.add(
-        "CLIPBOARD_MULTIPLE_OUTLINE",
-        icons::CLIPBOARD_MULTIPLE_OUTLINE,
-    )?;
-    m.add(
-        "ARROW_TOP_RIGHT_BOTTOM_LEFT",
-        icons::ARROW_TOP_RIGHT_BOTTOM_LEFT,
-    )?;
-    m.add("LOGOUT_VARIANT", icons::LOGOUT_VARIANT)?;
-    m.add("ACCOUNT_BOX_EDIT_OUTLINE", icons::ACCOUNT_BOX_EDIT_OUTLINE)?;
-    m.add("CAR_INFO", icons::CAR_INFO)?;
-    m.add("SHIELD_ALERT", icons::SHIELD_ALERT)?;
-    m.add("HUMAN_SCOOTER", icons::HUMAN_SCOOTER)?;
-    m.add("SIGNAL_CELLULAR_2", icons::SIGNAL_CELLULAR_2)?;
-    m.add("SIGNAL_DISTANCE_VARIANT", icons::SIGNAL_DISTANCE_VARIANT)?;
-    m.add("QUALITY_LOW", icons::QUALITY_LOW)?;
-    m.add("SKIP_NEXT_CIRCLE_OUTLINE", icons::SKIP_NEXT_CIRCLE_OUTLINE)?;
-    m.add("BATTERY_OUTLINE", icons::BATTERY_OUTLINE)?;
-    m.add("TROPHY", icons::TROPHY)?;
-    m.add("THEME_LIGHT_DARK", icons::THEME_LIGHT_DARK)?;
-    m.add("ROUTER_WIRELESS", icons::ROUTER_WIRELESS)?;
-    m.add("MOTORBIKE", icons::MOTORBIKE)?;
-    m.add("MIXED_REALITY", icons::MIXED_REALITY)?;
-    m.add("CASH", icons::CASH)?;
-    m.add("KEYBOARD_F10", icons::KEYBOARD_F10)?;
-    m.add("BELL_CANCEL_OUTLINE", icons::BELL_CANCEL_OUTLINE)?;
-    m.add("ALERT_PLUS_OUTLINE", icons::ALERT_PLUS_OUTLINE)?;
-    m.add("TSHIRT_V_OUTLINE", icons::TSHIRT_V_OUTLINE)?;
-    m.add("ARROW_U_DOWN_RIGHT_BOLD", icons::ARROW_U_DOWN_RIGHT_BOLD)?;
-    m.add("TRAY_PLUS", icons::TRAY_PLUS)?;
-    m.add("SIGN_CAUTION", icons::SIGN_CAUTION)?;
-    m.add("WATERMARK", icons::WATERMARK)?;
+    m.add("MOVIE_OPEN_MINUS", icons::MOVIE_OPEN_MINUS)?;
+    m.add("KEY_CHAIN_VARIANT", icons::KEY_CHAIN_VARIANT)?;
+    m.add("HEXAGRAM", icons::HEXAGRAM)?;
+    m.add("FLAG_REMOVE_OUTLINE", icons::FLAG_REMOVE_OUTLINE)?;
+    m.add("MAILBOX_OPEN_OUTLINE", icons::MAILBOX_OPEN_OUTLINE)?;
+    m.add("DIVING_HELMET", icons::DIVING_HELMET)?;
+    m.add("CUP_OFF_OUTLINE", icons::CUP_OFF_OUTLINE)?;
+    m.add("GARAGE_ALERT", icons::GARAGE_ALERT)?;
+    m.add("PHONE_DIAL_OUTLINE", icons::PHONE_DIAL_OUTLINE)?;
+    #[allow(deprecated)]
+    m.add("ANSIBLE", icons::ANSIBLE)?;
+    m.add("POWER_PLUG_OUTLINE", icons::POWER_PLUG_OUTLINE)?;
+    m.add("SACK", icons::SACK)?;
+    m.add("FILE_FIND", icons::FILE_FIND)?;
+    m.add("FORMAT_HEADER_5", icons::FORMAT_HEADER_5)?;
+    m.add("BATTERY_CHECK", icons::BATTERY_CHECK)?;
+    m.add("CAR_BRAKE_ALERT", icons::CAR_BRAKE_ALERT)?;
+    m.add("FRIDGE_OFF_OUTLINE", icons::FRIDGE_OFF_OUTLINE)?;
+    m.add("CHART_TIMELINE", icons::CHART_TIMELINE)?;
+    m.add("FILTER_CHECK_OUTLINE", icons::FILTER_CHECK_OUTLINE)?;
+    m.add("LIGHTBULB_QUESTION", icons::LIGHTBULB_QUESTION)?;
+    m.add("HOME_FLOOR_G", icons::HOME_FLOOR_G)?;
     Ok(())
 }

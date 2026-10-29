@@ -9,60 +9,77 @@ use pyo3::prelude::*;
 
 pub(super) fn find_part_37(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "source-commit-start" => Some(icons::SOURCE_COMMIT_START),
-        "book-remove" => Some(icons::BOOK_REMOVE),
-        "timer-check-outline" => Some(icons::TIMER_CHECK_OUTLINE),
-        "database-arrow-up" => Some(icons::DATABASE_ARROW_UP),
-        "arrow-top-left-bottom-right-bold" => Some(icons::ARROW_TOP_LEFT_BOTTOM_RIGHT_BOLD),
-        "movie-remove-outline" => Some(icons::MOVIE_REMOVE_OUTLINE),
-        "rv-truck" => Some(icons::RV_TRUCK),
-        "om" => Some(icons::OM),
-        "directions-fork" => Some(icons::DIRECTIONS_FORK),
-        "store-check" => Some(icons::STORE_CHECK),
-        "bicycle-penny-farthing" => Some(icons::BICYCLE_PENNY_FARTHING),
-        "car-shift-pattern" => Some(icons::CAR_SHIFT_PATTERN),
-        "delete-forever-outline" => Some(icons::DELETE_FOREVER_OUTLINE),
-        "shield-off" => Some(icons::SHIELD_OFF),
-        "tanker-truck" => Some(icons::TANKER_TRUCK),
-        "cloud-arrow-left-outline" => Some(icons::CLOUD_ARROW_LEFT_OUTLINE),
-        "close-box" => Some(icons::CLOSE_BOX),
-        "cookie-off" => Some(icons::COOKIE_OFF),
-        "paperclip" => Some(icons::PAPERCLIP),
-        "car-coolant-level" => Some(icons::CAR_COOLANT_LEVEL),
-        "numeric-3-box-multiple-outline" => Some(icons::NUMERIC_3_BOX_MULTIPLE_OUTLINE),
-        "star-david" => Some(icons::STAR_DAVID),
-        "human-greeting-proximity" => Some(icons::HUMAN_GREETING_PROXIMITY),
-        "book-marker" => Some(icons::BOOK_MARKER),
-        "tab-unselected" => Some(icons::TAB_UNSELECTED),
-        "camera-front" => Some(icons::CAMERA_FRONT),
-        "mail" => Some(icons::MAIL),
-        "phone-sync" => Some(icons::PHONE_SYNC),
+        "roman-numeral-7" => Some(icons::ROMAN_NUMERAL_7),
         #[allow(deprecated)]
-        "vlc" => {
+        "webpack" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'vlc' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'webpack' is deprecated.").print(py);
             }
-            Some(icons::VLC)
+            Some(icons::WEBPACK)
         }
-        "dump-truck" => Some(icons::DUMP_TRUCK),
-        "equalizer-outline" => Some(icons::EQUALIZER_OUTLINE),
-        "volume-mute" => Some(icons::VOLUME_MUTE),
-        "numeric-7-circle-outline" => Some(icons::NUMERIC_7_CIRCLE_OUTLINE),
-        "boom-gate-arrow-down" => Some(icons::BOOM_GATE_ARROW_DOWN),
-        "dice-d12" => Some(icons::DICE_D12),
-        "bunk-bed" => Some(icons::BUNK_BED),
-        "cloud-off" => Some(icons::CLOUD_OFF),
-        "owl" => Some(icons::OWL),
-        "sticker-plus" => Some(icons::STICKER_PLUS),
-        "alarm-panel-outline" => Some(icons::ALARM_PANEL_OUTLINE),
-        "bus-side" => Some(icons::BUS_SIDE),
-        "hanger" => Some(icons::HANGER),
-        "moped" => Some(icons::MOPED),
-        "currency-eur" => Some(icons::CURRENCY_EUR),
+        "battery-charging-80" => Some(icons::BATTERY_CHARGING_80),
+        "pencil-lock" => Some(icons::PENCIL_LOCK),
+        "file-swap-outline" => Some(icons::FILE_SWAP_OUTLINE),
         "note-multiple" => Some(icons::NOTE_MULTIPLE),
-        "format-paragraph-spacing" => Some(icons::FORMAT_PARAGRAPH_SPACING),
-        "network-strength-4" => Some(icons::NETWORK_STRENGTH_4),
+        "arrow-right-circle-outline" => Some(icons::ARROW_RIGHT_CIRCLE_OUTLINE),
+        "alpha-d-circle" => Some(icons::ALPHA_D_CIRCLE),
+        "contrast" => Some(icons::CONTRAST),
+        "plus-minus-variant" => Some(icons::PLUS_MINUS_VARIANT),
+        "cake-variant-outline" => Some(icons::CAKE_VARIANT_OUTLINE),
+        "faucet" => Some(icons::FAUCET),
+        #[allow(deprecated)]
+        "microsoft-visual-studio-code" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err(
+                    "The icon 'microsoft-visual-studio-code' is deprecated.",
+                )
+                .print(py);
+            }
+            Some(icons::MICROSOFT_VISUAL_STUDIO_CODE)
+        }
+        "message-fast-outline" => Some(icons::MESSAGE_FAST_OUTLINE),
+        "calendar-cursor-outline" => Some(icons::CALENDAR_CURSOR_OUTLINE),
+        "clock-remove" => Some(icons::CLOCK_REMOVE),
+        "message-image" => Some(icons::MESSAGE_IMAGE),
+        "video-input-scart" => Some(icons::VIDEO_INPUT_SCART),
+        "truck-delivery" => Some(icons::TRUCK_DELIVERY),
+        "view-day-outline" => Some(icons::VIEW_DAY_OUTLINE),
+        "radio-off" => Some(icons::RADIO_OFF),
+        "hand-okay" => Some(icons::HAND_OKAY),
+        "barrel" => Some(icons::BARREL),
+        "window-open-variant" => Some(icons::WINDOW_OPEN_VARIANT),
+        "video-3d-off" => Some(icons::VIDEO_3D_OFF),
+        "image-filter-vintage" => Some(icons::IMAGE_FILTER_VINTAGE),
+        "hoop-house" => Some(icons::HOOP_HOUSE),
+        "chart-waterfall" => Some(icons::CHART_WATERFALL),
+        "numeric-0" => Some(icons::NUMERIC_0),
+        "video-4k-box" => Some(icons::VIDEO_4K_BOX),
+        "weather-night-partly-cloudy" => Some(icons::WEATHER_NIGHT_PARTLY_CLOUDY),
+        "book-multiple-outline" => Some(icons::BOOK_MULTIPLE_OUTLINE),
+        "engine" => Some(icons::ENGINE),
+        "account-group" => Some(icons::ACCOUNT_GROUP),
+        "spider" => Some(icons::SPIDER),
+        "electric-switch-closed" => Some(icons::ELECTRIC_SWITCH_CLOSED),
+        "av-timer" => Some(icons::AV_TIMER),
+        "rickshaw-electric" => Some(icons::RICKSHAW_ELECTRIC),
+        #[allow(deprecated)]
+        "jsfiddle" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'jsfiddle' is deprecated.").print(py);
+            }
+            Some(icons::JSFIDDLE)
+        }
+        "note-minus-outline" => Some(icons::NOTE_MINUS_OUTLINE),
+        "pencil-minus-outline" => Some(icons::PENCIL_MINUS_OUTLINE),
+        "battery-charging" => Some(icons::BATTERY_CHARGING),
+        "chat-question" => Some(icons::CHAT_QUESTION),
+        "comment-edit-outline" => Some(icons::COMMENT_EDIT_OUTLINE),
+        "link-variant-remove" => Some(icons::LINK_VARIANT_REMOVE),
+        "note-check-outline" => Some(icons::NOTE_CHECK_OUTLINE),
+        "pin-off-outline" => Some(icons::PIN_OFF_OUTLINE),
         _ => None,
     }
 }
