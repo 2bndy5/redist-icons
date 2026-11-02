@@ -9,260 +9,250 @@ use pyo3::prelude::*;
 
 pub(super) fn find_part_9(#[cfg(feature = "pyo3")] py: Python, slug: &str) -> Option<Icon> {
     match slug {
-        "table-settings" => Some(icons::TABLE_SETTINGS),
-        "barcode" => Some(icons::BARCODE),
-        "bus-articulated-front" => Some(icons::BUS_ARTICULATED_FRONT),
-        "calendar-export-outline" => Some(icons::CALENDAR_EXPORT_OUTLINE),
-        "keyboard-return" => Some(icons::KEYBOARD_RETURN),
-        "hand-back-left-off-outline" => Some(icons::HAND_BACK_LEFT_OFF_OUTLINE),
-        "head-heart-outline" => Some(icons::HEAD_HEART_OUTLINE),
-        "dns" => Some(icons::DNS),
-        "lightbulb-on-outline" => Some(icons::LIGHTBULB_ON_OUTLINE),
-        "domain-plus" => Some(icons::DOMAIN_PLUS),
-        "application-settings-outline" => Some(icons::APPLICATION_SETTINGS_OUTLINE),
-        "format-letter-case-lower" => Some(icons::FORMAT_LETTER_CASE_LOWER),
-        "gas-station" => Some(icons::GAS_STATION),
-        "account-circle-outline" => Some(icons::ACCOUNT_CIRCLE_OUTLINE),
-        "contactless-payment-circle" => Some(icons::CONTACTLESS_PAYMENT_CIRCLE),
-        "video-high-definition" => Some(icons::VIDEO_HIGH_DEFINITION),
-        "account-arrow-left-outline" => Some(icons::ACCOUNT_ARROW_LEFT_OUTLINE),
-        "arrow-expand-down" => Some(icons::ARROW_EXPAND_DOWN),
-        "car-pickup" => Some(icons::CAR_PICKUP),
-        #[allow(deprecated)]
-        "skype-business" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'skype-business' is deprecated.").print(py);
-            }
-            Some(icons::SKYPE_BUSINESS)
-        }
-        "file-video-outline" => Some(icons::FILE_VIDEO_OUTLINE),
-        "view-carousel" => Some(icons::VIEW_CAROUSEL),
-        "weather-partly-cloudy" => Some(icons::WEATHER_PARTLY_CLOUDY),
-        "invoice-arrow-left" => Some(icons::INVOICE_ARROW_LEFT),
-        "calendar-search" => Some(icons::CALENDAR_SEARCH),
-        "bag-personal-off-outline" => Some(icons::BAG_PERSONAL_OFF_OUTLINE),
-        "alpha-m-box" => Some(icons::ALPHA_M_BOX),
-        "bookmark-box-multiple-outline" => Some(icons::BOOKMARK_BOX_MULTIPLE_OUTLINE),
-        "monitor-small" => Some(icons::MONITOR_SMALL),
-        "credit-card-off-outline" => Some(icons::CREDIT_CARD_OFF_OUTLINE),
-        "medical-cotton-swab" => Some(icons::MEDICAL_COTTON_SWAB),
-        "exponent-box" => Some(icons::EXPONENT_BOX),
-        "elevator-passenger-outline" => Some(icons::ELEVATOR_PASSENGER_OUTLINE),
-        "thumb-up-outline" => Some(icons::THUMB_UP_OUTLINE),
-        "diabetes" => Some(icons::DIABETES),
-        "firework" => Some(icons::FIREWORK),
-        "book-play-outline" => Some(icons::BOOK_PLAY_OUTLINE),
-        "share-variant" => Some(icons::SHARE_VARIANT),
-        "watch-variant" => Some(icons::WATCH_VARIANT),
-        "image-off" => Some(icons::IMAGE_OFF),
-        "attachment-plus" => Some(icons::ATTACHMENT_PLUS),
-        "information-variant" => Some(icons::INFORMATION_VARIANT),
-        "battery-90" => Some(icons::BATTERY_90),
-        "image-remove" => Some(icons::IMAGE_REMOVE),
-        "code-not-equal-variant" => Some(icons::CODE_NOT_EQUAL_VARIANT),
-        "calendar-expand-horizontal" => Some(icons::CALENDAR_EXPAND_HORIZONTAL),
-        "toilet" => Some(icons::TOILET),
-        "animation" => Some(icons::ANIMATION),
-        "medal" => Some(icons::MEDAL),
-        "refresh-circle" => Some(icons::REFRESH_CIRCLE),
-        "forum-outline" => Some(icons::FORUM_OUTLINE),
-        "tooltip-text-outline" => Some(icons::TOOLTIP_TEXT_OUTLINE),
-        "checkbox-multiple-marked" => Some(icons::CHECKBOX_MULTIPLE_MARKED),
-        "fruit-grapes-outline" => Some(icons::FRUIT_GRAPES_OUTLINE),
-        "printer-pos-plus" => Some(icons::PRINTER_POS_PLUS),
-        "file-cancel" => Some(icons::FILE_CANCEL),
-        "router-network" => Some(icons::ROUTER_NETWORK),
-        "alpha-v-box" => Some(icons::ALPHA_V_BOX),
-        "upload-network" => Some(icons::UPLOAD_NETWORK),
-        "hammer-wrench" => Some(icons::HAMMER_WRENCH),
-        "playlist-check" => Some(icons::PLAYLIST_CHECK),
-        "speaker-multiple" => Some(icons::SPEAKER_MULTIPLE),
-        "airport" => Some(icons::AIRPORT),
-        "police-badge-outline" => Some(icons::POLICE_BADGE_OUTLINE),
-        "select-group" => Some(icons::SELECT_GROUP),
-        "cart-arrow-down" => Some(icons::CART_ARROW_DOWN),
-        "account-badge-outline" => Some(icons::ACCOUNT_BADGE_OUTLINE),
-        "chart-box-outline" => Some(icons::CHART_BOX_OUTLINE),
-        "map-minus" => Some(icons::MAP_MINUS),
-        "chevron-right-circle-outline" => Some(icons::CHEVRON_RIGHT_CIRCLE_OUTLINE),
-        "projector-screen-variant-off" => Some(icons::PROJECTOR_SCREEN_VARIANT_OFF),
-        "timeline-minus" => Some(icons::TIMELINE_MINUS),
-        "skip-next-outline" => Some(icons::SKIP_NEXT_OUTLINE),
-        "numeric-8-circle-outline" => Some(icons::NUMERIC_8_CIRCLE_OUTLINE),
-        "arrow-left-bold-box" => Some(icons::ARROW_LEFT_BOLD_BOX),
-        "cookie-clock" => Some(icons::COOKIE_CLOCK),
-        "timeline-alert" => Some(icons::TIMELINE_ALERT),
-        "location-exit" => Some(icons::LOCATION_EXIT),
-        "numeric-9-plus-circle" => Some(icons::NUMERIC_9_PLUS_CIRCLE),
-        "flower-tulip" => Some(icons::FLOWER_TULIP),
-        "eye" => Some(icons::EYE),
-        "badge-account-outline" => Some(icons::BADGE_ACCOUNT_OUTLINE),
-        "folder-edit-outline" => Some(icons::FOLDER_EDIT_OUTLINE),
+        "file-png-box" => Some(icons::FILE_PNG_BOX),
+        "file-image-remove-outline" => Some(icons::FILE_IMAGE_REMOVE_OUTLINE),
+        "pan-top-left" => Some(icons::PAN_TOP_LEFT),
+        "numeric-1-box" => Some(icons::NUMERIC_1_BOX),
+        "invoice-text-multiple-outline" => Some(icons::INVOICE_TEXT_MULTIPLE_OUTLINE),
+        "hospital-building" => Some(icons::HOSPITAL_BUILDING),
+        "printer-3d-nozzle" => Some(icons::PRINTER_3D_NOZZLE),
+        "telescope" => Some(icons::TELESCOPE),
+        "account-arrow-left" => Some(icons::ACCOUNT_ARROW_LEFT),
+        "meditation" => Some(icons::MEDITATION),
+        "raw" => Some(icons::RAW),
+        "turkey" => Some(icons::TURKEY),
+        "globe-light" => Some(icons::GLOBE_LIGHT),
+        "wifi-lock" => Some(icons::WIFI_LOCK),
+        "sim-alert" => Some(icons::SIM_ALERT),
+        "email-search-outline" => Some(icons::EMAIL_SEARCH_OUTLINE),
+        "cash" => Some(icons::CASH),
+        "play-network-outline" => Some(icons::PLAY_NETWORK_OUTLINE),
+        "flask-round-bottom" => Some(icons::FLASK_ROUND_BOTTOM),
+        "car-light-dimmed" => Some(icons::CAR_LIGHT_DIMMED),
+        "two-factor-authentication" => Some(icons::TWO_FACTOR_AUTHENTICATION),
+        "sort-alphabetical-descending" => Some(icons::SORT_ALPHABETICAL_DESCENDING),
+        "timer-cog" => Some(icons::TIMER_COG),
+        "resistor-nodes" => Some(icons::RESISTOR_NODES),
+        "storefront" => Some(icons::STOREFRONT),
+        "sort" => Some(icons::SORT),
+        "book-account-outline" => Some(icons::BOOK_ACCOUNT_OUTLINE),
+        "lightbulb-outline" => Some(icons::LIGHTBULB_OUTLINE),
+        "archive-eye-outline" => Some(icons::ARCHIVE_EYE_OUTLINE),
+        "tag-hidden" => Some(icons::TAG_HIDDEN),
+        "clock-time-ten-outline" => Some(icons::CLOCK_TIME_TEN_OUTLINE),
+        "sword" => Some(icons::SWORD),
+        "rewind-30" => Some(icons::REWIND_30),
+        "mouse-left-click-outline" => Some(icons::MOUSE_LEFT_CLICK_OUTLINE),
+        "gate-or" => Some(icons::GATE_OR),
+        "format-letter-starts-with" => Some(icons::FORMAT_LETTER_STARTS_WITH),
         "hand-clap" => Some(icons::HAND_CLAP),
-        "package-up" => Some(icons::PACKAGE_UP),
-        "storefront-check" => Some(icons::STOREFRONT_CHECK),
-        "nail" => Some(icons::NAIL),
-        "arrow-right-drop-circle" => Some(icons::ARROW_RIGHT_DROP_CIRCLE),
-        "email-open-multiple" => Some(icons::EMAIL_OPEN_MULTIPLE),
-        "scent" => Some(icons::SCENT),
-        "usb-port" => Some(icons::USB_PORT),
-        "comment-flash-outline" => Some(icons::COMMENT_FLASH_OUTLINE),
-        "virus-off" => Some(icons::VIRUS_OFF),
-        "sort-numeric-variant" => Some(icons::SORT_NUMERIC_VARIANT),
-        "relation-zero-or-many-to-one-or-many" => Some(icons::RELATION_ZERO_OR_MANY_TO_ONE_OR_MANY),
-        "currency-ils" => Some(icons::CURRENCY_ILS),
-        "face-man-shimmer" => Some(icons::FACE_MAN_SHIMMER),
-        #[allow(deprecated)]
-        "microsoft-dynamics-365" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'microsoft-dynamics-365' is deprecated.")
-                    .print(py);
-            }
-            Some(icons::MICROSOFT_DYNAMICS_365)
-        }
-        "clipboard-text-clock" => Some(icons::CLIPBOARD_TEXT_CLOCK),
-        "elevator-passenger-off" => Some(icons::ELEVATOR_PASSENGER_OFF),
-        "invoice-text-plus" => Some(icons::INVOICE_TEXT_PLUS),
-        "fridge-off-outline" => Some(icons::FRIDGE_OFF_OUTLINE),
-        "cow" => Some(icons::COW),
-        "cancel" => Some(icons::CANCEL),
-        "phone-outgoing-outline" => Some(icons::PHONE_OUTGOING_OUTLINE),
-        "check-decagram-outline" => Some(icons::CHECK_DECAGRAM_OUTLINE),
-        "table-headers-eye-off" => Some(icons::TABLE_HEADERS_EYE_OFF),
-        "car-multiple" => Some(icons::CAR_MULTIPLE),
-        "zodiac-pisces" => Some(icons::ZODIAC_PISCES),
-        "cash-multiple" => Some(icons::CASH_MULTIPLE),
-        "battery-30-bluetooth" => Some(icons::BATTERY_30_BLUETOOTH),
-        "lightbulb-multiple-outline" => Some(icons::LIGHTBULB_MULTIPLE_OUTLINE),
-        "size-xs" => Some(icons::SIZE_XS),
-        "format-text-wrapping-overflow" => Some(icons::FORMAT_TEXT_WRAPPING_OVERFLOW),
-        "nature" => Some(icons::NATURE),
-        "arrow-expand-up" => Some(icons::ARROW_EXPAND_UP),
-        "toy-brick-search-outline" => Some(icons::TOY_BRICK_SEARCH_OUTLINE),
-        "puzzle-check" => Some(icons::PUZZLE_CHECK),
-        "wallet-membership" => Some(icons::WALLET_MEMBERSHIP),
-        "monitor-dashboard" => Some(icons::MONITOR_DASHBOARD),
-        "stairs-up" => Some(icons::STAIRS_UP),
-        "briefcase-remove" => Some(icons::BRIEFCASE_REMOVE),
-        "checkbox-multiple-blank-circle-outline" => {
-            Some(icons::CHECKBOX_MULTIPLE_BLANK_CIRCLE_OUTLINE)
-        }
-        "file-cabinet" => Some(icons::FILE_CABINET),
-        "pause-octagon" => Some(icons::PAUSE_OCTAGON),
-        "human-male-girl" => Some(icons::HUMAN_MALE_GIRL),
-        "stop" => Some(icons::STOP),
-        "paragliding" => Some(icons::PARAGLIDING),
-        "hand-coin-outline" => Some(icons::HAND_COIN_OUTLINE),
-        "battery-charging-wireless-40" => Some(icons::BATTERY_CHARGING_WIRELESS_40),
-        "fruit-citrus" => Some(icons::FRUIT_CITRUS),
-        "ticket-account" => Some(icons::TICKET_ACCOUNT),
-        "clipboard-clock-outline" => Some(icons::CLIPBOARD_CLOCK_OUTLINE),
-        "chili-medium" => Some(icons::CHILI_MEDIUM),
-        "chat-plus-outline" => Some(icons::CHAT_PLUS_OUTLINE),
-        "sticker" => Some(icons::STICKER),
-        "coffee-to-go" => Some(icons::COFFEE_TO_GO),
-        "alpha-r-circle" => Some(icons::ALPHA_R_CIRCLE),
-        "koala" => Some(icons::KOALA),
-        "content-save-all-outline" => Some(icons::CONTENT_SAVE_ALL_OUTLINE),
-        "hub-outline" => Some(icons::HUB_OUTLINE),
-        #[allow(deprecated)]
-        "language-php" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'language-php' is deprecated.").print(py);
-            }
-            Some(icons::LANGUAGE_PHP)
-        }
-        "arm-flex" => Some(icons::ARM_FLEX),
-        "lightbulb-on-10" => Some(icons::LIGHTBULB_ON_10),
-        "tower-beach" => Some(icons::TOWER_BEACH),
-        "battery-off-outline" => Some(icons::BATTERY_OFF_OUTLINE),
-        "pickaxe" => Some(icons::PICKAXE),
-        "map-marker-minus-outline" => Some(icons::MAP_MARKER_MINUS_OUTLINE),
-        "account-tie-voice-off-outline" => Some(icons::ACCOUNT_TIE_VOICE_OFF_OUTLINE),
+        "image-sync" => Some(icons::IMAGE_SYNC),
+        "archive-clock-outline" => Some(icons::ARCHIVE_CLOCK_OUTLINE),
+        "tally-mark-5" => Some(icons::TALLY_MARK_5),
+        "account-multiple-remove" => Some(icons::ACCOUNT_MULTIPLE_REMOVE),
+        "cellphone-screenshot" => Some(icons::CELLPHONE_SCREENSHOT),
+        "train-car-gondola-full" => Some(icons::TRAIN_CAR_GONDOLA_FULL),
+        "bank-circle" => Some(icons::BANK_CIRCLE),
+        "gesture-double-tap" => Some(icons::GESTURE_DOUBLE_TAP),
+        "fridge-variant-off-outline" => Some(icons::FRIDGE_VARIANT_OFF_OUTLINE),
+        "numeric-1-circle-outline" => Some(icons::NUMERIC_1_CIRCLE_OUTLINE),
+        "shaker" => Some(icons::SHAKER),
+        "cash-marker" => Some(icons::CASH_MARKER),
+        "clock-time-two" => Some(icons::CLOCK_TIME_TWO),
+        "lightbulb-group-off-outline" => Some(icons::LIGHTBULB_GROUP_OFF_OUTLINE),
         "iv-bag" => Some(icons::IV_BAG),
-        "scent-off" => Some(icons::SCENT_OFF),
-        "weather-dust" => Some(icons::WEATHER_DUST),
-        "close-outline" => Some(icons::CLOSE_OUTLINE),
-        "file-hidden" => Some(icons::FILE_HIDDEN),
-        "attachment-minus" => Some(icons::ATTACHMENT_MINUS),
-        "account-lock" => Some(icons::ACCOUNT_LOCK),
-        "credit-card-settings-outline" => Some(icons::CREDIT_CARD_SETTINGS_OUTLINE),
-        "track-light" => Some(icons::TRACK_LIGHT),
-        "power-socket-de" => Some(icons::POWER_SOCKET_DE),
-        "flask-empty" => Some(icons::FLASK_EMPTY),
-        "train-car-tank" => Some(icons::TRAIN_CAR_TANK),
+        "fish-off" => Some(icons::FISH_OFF),
+        "flag-variant-plus-outline" => Some(icons::FLAG_VARIANT_PLUS_OUTLINE),
+        "account-box-multiple-outline" => Some(icons::ACCOUNT_BOX_MULTIPLE_OUTLINE),
+        "account-settings" => Some(icons::ACCOUNT_SETTINGS),
+        "keyboard-tab-reverse" => Some(icons::KEYBOARD_TAB_REVERSE),
+        "key-arrow-right" => Some(icons::KEY_ARROW_RIGHT),
+        "clock-time-eight-outline" => Some(icons::CLOCK_TIME_EIGHT_OUTLINE),
+        "truck-remove-outline" => Some(icons::TRUCK_REMOVE_OUTLINE),
+        "panorama-horizontal" => Some(icons::PANORAMA_HORIZONTAL),
+        "invoice-minus-outline" => Some(icons::INVOICE_MINUS_OUTLINE),
+        "shield-refresh" => Some(icons::SHIELD_REFRESH),
+        "earbuds-off-outline" => Some(icons::EARBUDS_OFF_OUTLINE),
+        "car-side" => Some(icons::CAR_SIDE),
         #[allow(deprecated)]
-        "iobroker" => {
+        "language-c" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'iobroker' is deprecated.").print(py);
+                PyDeprecationWarning::new_err("The icon 'language-c' is deprecated.").print(py);
             }
-            Some(icons::IOBROKER)
+            Some(icons::LANGUAGE_C)
         }
+        "motorbike" => Some(icons::MOTORBIKE),
+        "sync-circle" => Some(icons::SYNC_CIRCLE),
+        "layers-minus" => Some(icons::LAYERS_MINUS),
+        "star-four-points" => Some(icons::STAR_FOUR_POINTS),
+        "tag-minus-outline" => Some(icons::TAG_MINUS_OUTLINE),
+        "folder-download" => Some(icons::FOLDER_DOWNLOAD),
+        "web-check" => Some(icons::WEB_CHECK),
+        "ceiling-fan-light" => Some(icons::CEILING_FAN_LIGHT),
+        "camcorder" => Some(icons::CAMCORDER),
+        "numeric-2" => Some(icons::NUMERIC_2),
+        "video-3d" => Some(icons::VIDEO_3D),
+        "calendar-cursor" => Some(icons::CALENDAR_CURSOR),
+        "phone-sync-outline" => Some(icons::PHONE_SYNC_OUTLINE),
+        "basket-remove" => Some(icons::BASKET_REMOVE),
+        "network-off" => Some(icons::NETWORK_OFF),
+        "earth-box-minus" => Some(icons::EARTH_BOX_MINUS),
+        "car-2-plus" => Some(icons::CAR_2_PLUS),
+        "tray-arrow-down" => Some(icons::TRAY_ARROW_DOWN),
+        "pan-right" => Some(icons::PAN_RIGHT),
+        "pot-mix" => Some(icons::POT_MIX),
+        "battery-minus" => Some(icons::BATTERY_MINUS),
+        "location-exit" => Some(icons::LOCATION_EXIT),
         #[allow(deprecated)]
-        "nfc" => {
+        "microsoft-office" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'nfc' is deprecated.").print(py);
-            }
-            Some(icons::NFC)
-        }
-        "lightbulb-off-outline" => Some(icons::LIGHTBULB_OFF_OUTLINE),
-        "format-subscript" => Some(icons::FORMAT_SUBSCRIPT),
-        "surround-sound-2-0" => Some(icons::SURROUND_SOUND_2_0),
-        "abugida-devanagari" => Some(icons::ABUGIDA_DEVANAGARI),
-        #[allow(deprecated)]
-        "microsoft-access" => {
-            #[cfg(feature = "pyo3")]
-            {
-                PyDeprecationWarning::new_err("The icon 'microsoft-access' is deprecated.")
+                PyDeprecationWarning::new_err("The icon 'microsoft-office' is deprecated.")
                     .print(py);
             }
-            Some(icons::MICROSOFT_ACCESS)
+            Some(icons::MICROSOFT_OFFICE)
         }
-        "newspaper-variant" => Some(icons::NEWSPAPER_VARIANT),
-        "integrated-circuit-chip" => Some(icons::INTEGRATED_CIRCUIT_CHIP),
-        "book-marker-outline" => Some(icons::BOOK_MARKER_OUTLINE),
-        "head-lightbulb" => Some(icons::HEAD_LIGHTBULB),
-        "history" => Some(icons::HISTORY),
-        "filter-menu" => Some(icons::FILTER_MENU),
-        "microphone-variant" => Some(icons::MICROPHONE_VARIANT),
-        "link-circle" => Some(icons::LINK_CIRCLE),
-        "format-quote-close" => Some(icons::FORMAT_QUOTE_CLOSE),
-        "valve-closed" => Some(icons::VALVE_CLOSED),
-        "video-switch" => Some(icons::VIDEO_SWITCH),
-        "receipt-text-check-outline" => Some(icons::RECEIPT_TEXT_CHECK_OUTLINE),
-        "smoking-off" => Some(icons::SMOKING_OFF),
-        "wifi-remove" => Some(icons::WIFI_REMOVE),
-        "script-text-outline" => Some(icons::SCRIPT_TEXT_OUTLINE),
-        "chevron-up-box-outline" => Some(icons::CHEVRON_UP_BOX_OUTLINE),
-        "rename-box" => Some(icons::RENAME_BOX),
-        "folder-plus-outline" => Some(icons::FOLDER_PLUS_OUTLINE),
-        "radio-tower" => Some(icons::RADIO_TOWER),
-        "dock-left" => Some(icons::DOCK_LEFT),
-        "phone-missed" => Some(icons::PHONE_MISSED),
-        "card-plus-outline" => Some(icons::CARD_PLUS_OUTLINE),
-        "propane-tank" => Some(icons::PROPANE_TANK),
-        "content-save-cog" => Some(icons::CONTENT_SAVE_COG),
-        "alpha-x-box-outline" => Some(icons::ALPHA_X_BOX_OUTLINE),
-        "calendar-month-outline" => Some(icons::CALENDAR_MONTH_OUTLINE),
-        "chat-sleep-outline" => Some(icons::CHAT_SLEEP_OUTLINE),
-        "comment-edit" => Some(icons::COMMENT_EDIT),
-        "floppy-variant" => Some(icons::FLOPPY_VARIANT),
-        "clock-time-eight" => Some(icons::CLOCK_TIME_EIGHT),
-        "chemical-weapon" => Some(icons::CHEMICAL_WEAPON),
+        "invoice-import" => Some(icons::INVOICE_IMPORT),
+        "distribute-vertical-bottom" => Some(icons::DISTRIBUTE_VERTICAL_BOTTOM),
+        "fridge-alert-outline" => Some(icons::FRIDGE_ALERT_OUTLINE),
+        "shovel-off" => Some(icons::SHOVEL_OFF),
+        "screw-machine-flat-top" => Some(icons::SCREW_MACHINE_FLAT_TOP),
+        "axis-y-arrow" => Some(icons::AXIS_Y_ARROW),
+        "printer-alert" => Some(icons::PRINTER_ALERT),
+        "bunk-bed-outline" => Some(icons::BUNK_BED_OUTLINE),
+        "train-bus" => Some(icons::TRAIN_BUS),
         #[allow(deprecated)]
-        "language-markdown" => {
+        "unreal" => {
             #[cfg(feature = "pyo3")]
             {
-                PyDeprecationWarning::new_err("The icon 'language-markdown' is deprecated.")
+                PyDeprecationWarning::new_err("The icon 'unreal' is deprecated.").print(py);
+            }
+            Some(icons::UNREAL)
+        }
+        "tooltip-question" => Some(icons::TOOLTIP_QUESTION),
+        "scoreboard-outline" => Some(icons::SCOREBOARD_OUTLINE),
+        "console-network-outline" => Some(icons::CONSOLE_NETWORK_OUTLINE),
+        "hand-back-left" => Some(icons::HAND_BACK_LEFT),
+        "weather-rainy" => Some(icons::WEATHER_RAINY),
+        "cards-playing-outline" => Some(icons::CARDS_PLAYING_OUTLINE),
+        "cross-outline" => Some(icons::CROSS_OUTLINE),
+        "book-heart" => Some(icons::BOOK_HEART),
+        "propane-tank-outline" => Some(icons::PROPANE_TANK_OUTLINE),
+        "stadium-variant" => Some(icons::STADIUM_VARIANT),
+        "tab-unselected" => Some(icons::TAB_UNSELECTED),
+        #[allow(deprecated)]
+        "microsoft-word" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'microsoft-word' is deprecated.").print(py);
+            }
+            Some(icons::MICROSOFT_WORD)
+        }
+        #[allow(deprecated)]
+        "open-source-initiative" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'open-source-initiative' is deprecated.")
                     .print(py);
             }
-            Some(icons::LANGUAGE_MARKDOWN)
+            Some(icons::OPEN_SOURCE_INITIATIVE)
         }
+        "emoticon-dead-outline" => Some(icons::EMOTICON_DEAD_OUTLINE),
+        "bugle" => Some(icons::BUGLE),
+        "medical-bag" => Some(icons::MEDICAL_BAG),
+        "airplane-edit" => Some(icons::AIRPLANE_EDIT),
+        "book-music-outline" => Some(icons::BOOK_MUSIC_OUTLINE),
+        "light-flood-up" => Some(icons::LIGHT_FLOOD_UP),
+        "menu-up-outline" => Some(icons::MENU_UP_OUTLINE),
+        "numeric-6-box-multiple-outline" => Some(icons::NUMERIC_6_BOX_MULTIPLE_OUTLINE),
+        "invoice-arrow-right-outline" => Some(icons::INVOICE_ARROW_RIGHT_OUTLINE),
+        "mouse-move-vertical" => Some(icons::MOUSE_MOVE_VERTICAL),
+        "van-passenger" => Some(icons::VAN_PASSENGER),
+        "badge-account-horizontal" => Some(icons::BADGE_ACCOUNT_HORIZONTAL),
+        "skateboarding" => Some(icons::SKATEBOARDING),
+        "access-point-plus" => Some(icons::ACCESS_POINT_PLUS),
+        "shield-plus-outline" => Some(icons::SHIELD_PLUS_OUTLINE),
+        "sort-clock-ascending-outline" => Some(icons::SORT_CLOCK_ASCENDING_OUTLINE),
+        "flash-triangle-outline" => Some(icons::FLASH_TRIANGLE_OUTLINE),
+        "flask-round-bottom-outline" => Some(icons::FLASK_ROUND_BOTTOM_OUTLINE),
+        "web-plus" => Some(icons::WEB_PLUS),
+        "notebook" => Some(icons::NOTEBOOK),
+        "sun-snowflake" => Some(icons::SUN_SNOWFLAKE),
+        "human-male-female-child" => Some(icons::HUMAN_MALE_FEMALE_CHILD),
+        "arrow-down-left" => Some(icons::ARROW_DOWN_LEFT),
+        "message-alert-outline" => Some(icons::MESSAGE_ALERT_OUTLINE),
+        "lock-off-outline" => Some(icons::LOCK_OFF_OUTLINE),
+        "city-variant-outline" => Some(icons::CITY_VARIANT_OUTLINE),
+        "flag-variant" => Some(icons::FLAG_VARIANT),
+        "lock-percent-open-variant-outline" => Some(icons::LOCK_PERCENT_OPEN_VARIANT_OUTLINE),
+        "relation-zero-or-many-to-only-one" => Some(icons::RELATION_ZERO_OR_MANY_TO_ONLY_ONE),
+        "monitor-cellphone" => Some(icons::MONITOR_CELLPHONE),
+        "robot-dead-outline" => Some(icons::ROBOT_DEAD_OUTLINE),
+        "contactless-payment-circle-outline" => Some(icons::CONTACTLESS_PAYMENT_CIRCLE_OUTLINE),
+        "cellphone-marker" => Some(icons::CELLPHONE_MARKER),
+        "keyboard-space" => Some(icons::KEYBOARD_SPACE),
+        "minus" => Some(icons::MINUS),
+        "message-processing-outline" => Some(icons::MESSAGE_PROCESSING_OUTLINE),
+        "license" => Some(icons::LICENSE),
+        "forum-remove" => Some(icons::FORUM_REMOVE),
+        "thermometer-bluetooth" => Some(icons::THERMOMETER_BLUETOOTH),
+        "movie-open-remove" => Some(icons::MOVIE_OPEN_REMOVE),
+        "image-off-outline" => Some(icons::IMAGE_OFF_OUTLINE),
+        "white-balance-sunny" => Some(icons::WHITE_BALANCE_SUNNY),
+        "head-minus-outline" => Some(icons::HEAD_MINUS_OUTLINE),
+        "cloud-percent-outline" => Some(icons::CLOUD_PERCENT_OUTLINE),
+        "file-document-arrow-right-outline" => Some(icons::FILE_DOCUMENT_ARROW_RIGHT_OUTLINE),
+        "numeric-negative-1" => Some(icons::NUMERIC_NEGATIVE_1),
+        "gradient-horizontal" => Some(icons::GRADIENT_HORIZONTAL),
+        "human-greeting" => Some(icons::HUMAN_GREETING),
+        "spray" => Some(icons::SPRAY),
+        "umbrella-beach-outline" => Some(icons::UMBRELLA_BEACH_OUTLINE),
+        "dice-2" => Some(icons::DICE_2),
+        "snowshoeing" => Some(icons::SNOWSHOEING),
+        "mailbox-open-up" => Some(icons::MAILBOX_OPEN_UP),
+        "umbrella-closed-outline" => Some(icons::UMBRELLA_CLOSED_OUTLINE),
+        "book-arrow-right-outline" => Some(icons::BOOK_ARROW_RIGHT_OUTLINE),
+        "alarm-note-off" => Some(icons::ALARM_NOTE_OFF),
+        "select" => Some(icons::SELECT),
+        "domino-mask" => Some(icons::DOMINO_MASK),
+        "heart-circle" => Some(icons::HEART_CIRCLE),
+        "molecule-co2" => Some(icons::MOLECULE_CO2),
+        "head-outline" => Some(icons::HEAD_OUTLINE),
+        "network-strength-off" => Some(icons::NETWORK_STRENGTH_OFF),
+        "ethernet-cable" => Some(icons::ETHERNET_CABLE),
+        "hammer-screwdriver" => Some(icons::HAMMER_SCREWDRIVER),
+        "format-horizontal-align-right" => Some(icons::FORMAT_HORIZONTAL_ALIGN_RIGHT),
+        "longitude" => Some(icons::LONGITUDE),
+        "alpha-s-circle-outline" => Some(icons::ALPHA_S_CIRCLE_OUTLINE),
+        "ferris-wheel" => Some(icons::FERRIS_WHEEL),
+        "clock-minus" => Some(icons::CLOCK_MINUS),
+        "arrow-down-bold" => Some(icons::ARROW_DOWN_BOLD),
+        "gradient-vertical" => Some(icons::GRADIENT_VERTICAL),
+        "power-socket-au" => Some(icons::POWER_SOCKET_AU),
+        "alphabet-greek" => Some(icons::ALPHABET_GREEK),
+        "brush-off" => Some(icons::BRUSH_OFF),
+        #[allow(deprecated)]
+        "google-earth" => {
+            #[cfg(feature = "pyo3")]
+            {
+                PyDeprecationWarning::new_err("The icon 'google-earth' is deprecated.").print(py);
+            }
+            Some(icons::GOOGLE_EARTH)
+        }
+        "lungs" => Some(icons::LUNGS),
+        "layers-triple" => Some(icons::LAYERS_TRIPLE),
+        "bookmark-remove" => Some(icons::BOOKMARK_REMOVE),
+        "disc" => Some(icons::DISC),
+        "label-variant-outline" => Some(icons::LABEL_VARIANT_OUTLINE),
+        "calendar-alert" => Some(icons::CALENDAR_ALERT),
+        "pistol" => Some(icons::PISTOL),
+        "emoticon-poop-outline" => Some(icons::EMOTICON_POOP_OUTLINE),
+        "train-car-passenger-variant" => Some(icons::TRAIN_CAR_PASSENGER_VARIANT),
+        "rounded-corner" => Some(icons::ROUNDED_CORNER),
+        "database-plus" => Some(icons::DATABASE_PLUS),
+        "hdr" => Some(icons::HDR),
+        "dice-d8" => Some(icons::DICE_D8),
         _ => None,
     }
 }
