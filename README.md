@@ -48,4 +48,4 @@ sources.
 [si-pip-link]: https://pypi.org/project/simple-icons-pack/
 
 [msrv-badge]: https://img.shields.io/badge/MSRV-1.85.0-blue
-[min-py]: https://img.shields.io/badge/Python-v3.9+-blue
+[min-py]: https://img.shields.io/badge/Python-v3.10+-blue
