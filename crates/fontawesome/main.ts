@@ -11,12 +11,8 @@ import {
   writePyBinding,
   writeStubs,
 } from "common";
-import metadata from "@fortawesome/fontawesome-free/metadata/icon-families.json" with {
-  type: "json",
-};
-import npmPkgInfo from "@fortawesome/fontawesome-free/package.json" with {
-  type: "json",
-};
+import metadata from "@fortawesome/fontawesome-free/metadata/icon-families.json" with { type: "json" };
+import npmPkgInfo from "@fortawesome/fontawesome-free/package.json" with { type: "json" };
 
 const npmPkg = "@fortawesome/fontawesome-free";
 
