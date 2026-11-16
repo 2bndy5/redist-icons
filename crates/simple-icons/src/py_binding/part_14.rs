@@ -3,6 +3,7 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("SI_KEEPASSXC", icons::SI_KEEPASSXC)?;
     m.add("SI_HONOR", icons::SI_HONOR)?;
     m.add("SI_KODI", icons::SI_KODI)?;
     m.add("SI_PICSART", icons::SI_PICSART)?;
@@ -77,6 +78,7 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_GOOGLESHEETS", icons::SI_GOOGLESHEETS)?;
     m.add("SI_PLAYSTATION5", icons::SI_PLAYSTATION5)?;
     m.add("SI_TSNODE", icons::SI_TSNODE)?;
+    m.add("SI_KITTY", icons::SI_KITTY)?;
     m.add("SI_ANILIST", icons::SI_ANILIST)?;
     m.add("SI_MONSTER", icons::SI_MONSTER)?;
     m.add("SI_COOLERMASTER", icons::SI_COOLERMASTER)?;
@@ -204,7 +206,5 @@ pub(super) fn bind_part_14(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_UNDERSCOREDOTJS", icons::SI_UNDERSCOREDOTJS)?;
     m.add("SI_WISH", icons::SI_WISH)?;
     m.add("SI_TERMIUS", icons::SI_TERMIUS)?;
-    m.add("SI_LOCAL", icons::SI_LOCAL)?;
-    m.add("SI_FORTNITE", icons::SI_FORTNITE)?;
     Ok(())
 }
