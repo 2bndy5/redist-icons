@@ -408,6 +408,17 @@ pub const SI_TIDB: Icon = Icon {
     license: None,
 };
 
+/// trafficdotcv
+pub const SI_TRAFFICDOTCV: Icon = Icon {
+    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Traffic.cv</title><path d="M3.136 0A3.115 3.115 0 0 0 0 3.136v17.728A3.114 3.114 0 0 0 3.136 24h17.728A3.115 3.115 0 0 0 24 20.864V3.136A3.115 3.115 0 0 0 20.864 0Zm11.947 7.147 3.861.213a1.067 1.067 0 0 1 1.045 1.024l.214 3.861a1.067 1.067 0 0 1-1.067 1.152 1.067 1.067 0 0 1-1.11-1.024l-.106-1.322-3.67 3.882a1.067 1.067 0 0 1-1.493.107l-2.346-1.963-3.52 3.67v.042a1.557 1.557 0 0 1-1.579 1.579 1.557 1.557 0 0 1-1.557-1.579 1.557 1.557 0 0 1 1.578-1.557l4.203-4.416a1.067 1.067 0 0 1 1.493-.085l2.347 1.962 3.05-3.306-1.471-.043a1.067 1.067 0 0 1-1.003-1.152 1.067 1.067 0 0 1 1.13-1.045"/></svg>"##,
+    slug: "trafficdotcv",
+    title: "Traffic.cv",
+    hex: "635BFF",
+    source: "https://traffic.cv/logo.svg",
+    guidelines: Some("https://traffic.cv/terms-of-service"),
+    license: None,
+};
+
 /// yoast
 pub const SI_YOAST: Icon = Icon {
     svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Yoast</title><path d="M16.61 0 11.4 14.477 8.806 6.36H5.941l3.804 9.77a4.017 4.017 0 0 1 0 2.925c-.387.993-1.073 2.158-2.96 2.505V24c1.512-.06 2.692-.562 3.694-1.57 1.032-1.036 1.919-2.655 2.79-5.091L19.739 0ZM5.357 3.274a3.706 3.706 0 0 0-3.695 3.695v10.358a3.706 3.706 0 0 0 3.695 3.694h.817l.26-.034c1.76-.237 2.37-1.224 2.733-2.158a3.4 3.4 0 0 0 0-2.475L5.035 5.738H9.26l2.174 6.81 3.339-9.274Zm13.792.08L13.853 17.55c-.502 1.403-1.015 2.54-1.559 3.47h10.044V6.97a3.706 3.706 0 0 0-3.19-3.616Z"/></svg>"##,
@@ -2192,15 +2203,4 @@ pub const SI_BIT: Icon = Icon {
     source: "https://bit.dev",
     guidelines: None,
     license: None,
-};
-
-/// monero
-pub const SI_MONERO: Icon = Icon {
-    svg: r##"<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Monero</title><path d="M12 0C5.365 0 0 5.373 0 12.015c0 1.335.228 2.607.618 3.81h3.577V5.729L12 13.545l7.805-7.815v10.095h3.577c.389-1.203.618-2.475.618-3.81C24 5.375 18.635 0 12 0zm-1.788 15.307l-3.417-3.421v6.351H1.758C3.87 21.689 7.678 24 12 24s8.162-2.311 10.245-5.764h-5.04v-6.351l-3.386 3.421-1.788 1.79-1.814-1.79h-.005z"/></svg>"##,
-    slug: "monero",
-    title: "Monero",
-    hex: "FF6600",
-    source: "https://www.getmonero.org/press-kit",
-    guidelines: None,
-    license: Some("CC-BY-SA-4.0"),
 };

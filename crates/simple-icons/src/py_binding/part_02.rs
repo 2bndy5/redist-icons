@@ -40,6 +40,7 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_LEICA", icons::SI_LEICA)?;
     m.add("SI_RUFF", icons::SI_RUFF)?;
     m.add("SI_TIDB", icons::SI_TIDB)?;
+    m.add("SI_TRAFFICDOTCV", icons::SI_TRAFFICDOTCV)?;
     m.add("SI_YOAST", icons::SI_YOAST)?;
     m.add("SI_HEDERA", icons::SI_HEDERA)?;
     m.add("SI_GOOGLESCHOLAR", icons::SI_GOOGLESCHOLAR)?;
@@ -205,6 +206,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SI_FISHSHELL", icons::SI_FISHSHELL)?;
     m.add("SI_REACTROUTER", icons::SI_REACTROUTER)?;
     m.add("SI_BIT", icons::SI_BIT)?;
-    m.add("SI_MONERO", icons::SI_MONERO)?;
     Ok(())
 }

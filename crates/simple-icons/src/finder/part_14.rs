@@ -3,6 +3,7 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
     match slug {
+        "keepassxc" => Some(icons::SI_KEEPASSXC),
         "honor" => Some(icons::SI_HONOR),
         "kodi" => Some(icons::SI_KODI),
         "picsart" => Some(icons::SI_PICSART),
@@ -77,6 +78,7 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "googlesheets" => Some(icons::SI_GOOGLESHEETS),
         "playstation5" => Some(icons::SI_PLAYSTATION5),
         "tsnode" => Some(icons::SI_TSNODE),
+        "kitty" => Some(icons::SI_KITTY),
         "anilist" => Some(icons::SI_ANILIST),
         "monster" => Some(icons::SI_MONSTER),
         "coolermaster" => Some(icons::SI_COOLERMASTER),
@@ -201,8 +203,6 @@ pub(super) fn find_part_14(slug: &str) -> Option<Icon> {
         "underscoredotjs" => Some(icons::SI_UNDERSCOREDOTJS),
         "wish" => Some(icons::SI_WISH),
         "termius" => Some(icons::SI_TERMIUS),
-        "local" => Some(icons::SI_LOCAL),
-        "fortnite" => Some(icons::SI_FORTNITE),
         _ => None,
     }
 }

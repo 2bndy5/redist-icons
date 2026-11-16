@@ -40,6 +40,7 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "leica" => Some(icons::SI_LEICA),
         "ruff" => Some(icons::SI_RUFF),
         "tidb" => Some(icons::SI_TIDB),
+        "trafficdotcv" => Some(icons::SI_TRAFFICDOTCV),
         "yoast" => Some(icons::SI_YOAST),
         "hedera" => Some(icons::SI_HEDERA),
         "googlescholar" => Some(icons::SI_GOOGLESCHOLAR),
@@ -202,7 +203,6 @@ pub(super) fn find_part_2(slug: &str) -> Option<Icon> {
         "fishshell" => Some(icons::SI_FISHSHELL),
         "reactrouter" => Some(icons::SI_REACTROUTER),
         "bit" => Some(icons::SI_BIT),
-        "monero" => Some(icons::SI_MONERO),
         _ => None,
     }
 }
