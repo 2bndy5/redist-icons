@@ -16,7 +16,7 @@
     "format:check": "bun fmt --check"
   },
   "devDependencies": {
-    "@types/bun": "^1.4.4",
+    "@types/bun": "^1.4.5",
     "@types/node": "^26.6.6",
     "svgo": "4.1.0"
   }
