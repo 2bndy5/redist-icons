@@ -1,1669 +1,274 @@
 // This file was generated. DO NOT EDIT.
 use crate::Icon;
 
-/// file-alert-outline
-pub const FILE_ALERT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-alert-outline" viewBox="0 0 24 24"><path d="M20 17H22V15H20V17M20 7V13H22V7M4 2C2.89 2 2 2.89 2 4V20C2 21.11 2.89 22 4 22H16C17.11 22 18 21.11 18 20V8L12 2M4 4H11V9H16V20H4Z"/></svg>"##,
-    slug: "file-alert-outline",
-    version: "2.6.95",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// play-network
-pub const PLAY_NETWORK: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-network" viewBox="0 0 24 24"><path d="M15,20A1,1 0 0,0 14,19H13V17H17A2,2 0 0,0 19,15V5A2,2 0 0,0 17,3H7A2,2 0 0,0 5,5V15A2,2 0 0,0 7,17H11V19H10A1,1 0 0,0 9,20H2V22H9A1,1 0 0,0 10,23H14A1,1 0 0,0 15,22H22V20H15M10,14V6L15,10L10,14Z"/></svg>"##,
-    slug: "play-network",
-    version: "2.1.99",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// stadium-outline
-pub const STADIUM_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-stadium-outline" viewBox="0 0 24 24"><path d="M7 5L3 7V3L7 5M18 3V7L22 5L18 3M11 2V6L15 4L11 2M13 18H11V22C5.9 21.9 2 20.6 2 19V10C2 8.3 6.5 7 12 7S22 8.3 22 10V19C22 20.6 18 21.9 13 22V18M5 10C6.4 10.5 8.8 11 12 11S17.6 10.5 19 10C19 9.8 16.2 9 12 9S5 9.9 5 10M20 11.8C18.2 12.5 15.3 13 12 13S5.8 12.5 4 11.8V18.6C4.6 19 6.4 19.6 9 19.9V16H15V19.9C17.6 19.6 19.4 19 20 18.6V11.8Z"/></svg>"##,
-    slug: "stadium-outline",
-    version: "6.9.96",
-    deprecated: false,
-    author: "Google",
-};
-
-/// fit-to-screen-outline
-pub const FIT_TO_SCREEN_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-fit-to-screen-outline" viewBox="0 0 24 24"><path d="M17 4H20C21.1 4 22 4.9 22 6V8H20V6H17V4M4 8V6H7V4H4C2.9 4 2 4.9 2 6V8H4M20 16V18H17V20H20C21.1 20 22 19.1 22 18V16H20M7 18H4V16H2V18C2 19.1 2.9 20 4 20H7V18M16 10V14H8V10H16M18 8H6V16H18V8Z"/></svg>"##,
-    slug: "fit-to-screen-outline",
-    version: "6.3.95",
-    deprecated: false,
-    author: "Google",
-};
-
-/// database-clock-outline
-pub const DATABASE_CLOCK_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-database-clock-outline" viewBox="0 0 24 24"><path d="M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25M23 16C23 19.87 19.87 23 16 23C13.61 23 11.5 21.8 10.25 20C6.19 19.79 3 18.08 3 16V6C3 3.79 6.58 2 11 2S19 3.79 19 6V9.68C21.36 10.81 23 13.21 23 16M17 9.08V8.64C16.77 8.77 16.5 8.9 16.24 9C16.5 9 16.75 9.04 17 9.08M5 6C5 6.5 7.13 8 11 8S17 6.5 17 6 14.87 4 11 4 5 5.5 5 6M5 11.45C6.07 12.23 7.8 12.76 9.72 12.93C10.33 11.67 11.32 10.62 12.54 9.92C12.04 9.97 11.53 10 11 10C8.61 10 6.47 9.47 5 8.64V11.45M9.26 17.87C9.1 17.27 9 16.65 9 16C9 15.61 9.04 15.23 9.1 14.86C7.56 14.69 6.15 14.33 5 13.77V16C5 16.42 6.5 17.5 9.26 17.87M21 16C21 13.24 18.76 11 16 11S11 13.24 11 16 13.24 21 16 21 21 18.76 21 16Z"/></svg>"##,
-    slug: "database-clock-outline",
-    version: "5.7.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// code-braces-box
-pub const CODE_BRACES_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-code-braces-box" viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M11 8H9V10C9 11.1 8.1 12 7 12C8.1 12 9 12.9 9 14V16H11V18H9C7.9 18 7 17.1 7 16V15C7 13.9 6.1 13 5 13V11C6.1 11 7 10.1 7 9V8C7 6.9 7.9 6 9 6H11V8M19 13C17.9 13 17 13.9 17 15V16C17 17.1 16.1 18 15 18H13V16H15V14C15 12.9 15.9 12 17 12C15.9 12 15 11.1 15 10V8H13V6H15C16.1 6 17 6.9 17 8V9C17 10.1 17.9 11 19 11V13Z"/></svg>"##,
-    slug: "code-braces-box",
-    version: "4.3.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// focus-field-horizontal
-pub const FOCUS_FIELD_HORIZONTAL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-focus-field-horizontal" viewBox="0 0 24 24"><path d="M19 19H15V21H19C20.1 21 21 20.1 21 19V15H19M19 3H15V5H19V9H21V5C21 3.9 20.1 3 19 3M5 5H9V3H5C3.9 3 3 3.9 3 5V9H5M5 15H3V19C3 20.1 3.9 21 5 21H9V19H5V15M7 11H9V13H7V11M11 11H13V13H11V11M15 11H17V13H15V11Z"/></svg>"##,
-    slug: "focus-field-horizontal",
-    version: "3.9.97",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// page-layout-sidebar-left
-pub const PAGE_LAYOUT_SIDEBAR_LEFT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-page-layout-sidebar-left" viewBox="0 0 24 24"><path d="M6,2H18A2,2 0 0,1 20,4V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2M6,8V16H10V8H6Z"/></svg>"##,
-    slug: "page-layout-sidebar-left",
-    version: "1.8.36",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// smart-card-off
-pub const SMART_CARD_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-smart-card-off" viewBox="0 0 24 24"><path d="M2.39 1.73L1.11 3L1.27 3.16C.545 3.47 .028 4.17 0 5V19C.036 20.09 .911 20.96 2 21H19.11L20.84 22.73L22.11 21.46L2.39 1.73M14 18H2V17C2 15 6 13.91 8 13.91S14 15 14 17V18M8 12C6.34 12 5 10.66 5 9C5 8.4 5.18 7.84 5.5 7.38L9.62 11.5C9.16 11.82 8.6 12 8 12M22 3H6.2L9.88 6.68C10.04 6.81 10.19 6.96 10.32 7.12L23.5 20.29C23.79 19.94 24 19.5 24 19V5C23.96 3.91 23.09 3.04 22 3M21 13H17V10H21V13Z"/></svg>"##,
-    slug: "smart-card-off",
-    version: "6.3.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// virus
-pub const VIRUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-virus" viewBox="0 0 24 24"><path d="M19.82 14C20.13 14.45 20.66 14.75 21.25 14.75C22.22 14.75 23 13.97 23 13S22.22 11.25 21.25 11.25C20.66 11.25 20.13 11.55 19.82 12H19C19 10.43 18.5 9 17.6 7.81L18.94 6.47C19.5 6.57 20.07 6.41 20.5 6C21.17 5.31 21.17 4.2 20.5 3.5C19.81 2.83 18.7 2.83 18 3.5C17.59 3.93 17.43 4.5 17.53 5.06L16.19 6.4C15.27 5.71 14.19 5.25 13 5.08V3.68C13.45 3.37 13.75 2.84 13.75 2.25C13.75 1.28 12.97 .5 12 .5S10.25 1.28 10.25 2.25C10.25 2.84 10.55 3.37 11 3.68V5.08C10.1 5.21 9.26 5.5 8.5 5.94L7.39 4.35C7.58 3.83 7.53 3.23 7.19 2.75C6.63 1.96 5.54 1.76 4.75 2.32C3.96 2.87 3.76 3.96 4.32 4.75C4.66 5.24 5.2 5.5 5.75 5.5L6.93 7.18C6.5 7.61 6.16 8.09 5.87 8.62C5.25 8.38 4.5 8.5 4 9C3.33 9.7 3.33 10.8 4 11.5C4.29 11.77 4.64 11.93 5 12L5 12C5 12.54 5.07 13.06 5.18 13.56L3.87 13.91C3.45 13.56 2.87 13.41 2.29 13.56C1.36 13.81 .808 14.77 1.06 15.71C1.31 16.64 2.28 17.19 3.21 16.94C3.78 16.78 4.21 16.36 4.39 15.84L5.9 15.43C6.35 16.22 6.95 16.92 7.65 17.5L6.55 19.5C6 19.58 5.5 19.89 5.21 20.42C4.75 21.27 5.07 22.33 5.92 22.79C6.77 23.25 7.83 22.93 8.29 22.08C8.57 21.56 8.56 20.96 8.31 20.47L9.38 18.5C10.19 18.82 11.07 19 12 19C12.06 19 12.12 19 12.18 19C12.05 19.26 12 19.56 12 19.88C12.08 20.85 12.92 21.57 13.88 21.5S15.57 20.58 15.5 19.62C15.46 19.12 15.21 18.68 14.85 18.39C15.32 18.18 15.77 17.91 16.19 17.6L18.53 19.94C18.43 20.5 18.59 21.07 19 21.5C19.7 22.17 20.8 22.17 21.5 21.5S22.17 19.7 21.5 19C21.07 18.59 20.5 18.43 19.94 18.53L17.6 16.19C18.09 15.54 18.47 14.8 18.71 14H19.82M10.5 12C9.67 12 9 11.33 9 10.5S9.67 9 10.5 9 12 9.67 12 10.5 11.33 12 10.5 12M14 15C13.45 15 13 14.55 13 14C13 13.45 13.45 13 14 13S15 13.45 15 14C15 14.55 14.55 15 14 15Z"/></svg>"##,
-    slug: "virus",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// close-circle-multiple
-pub const CLOSE_CIRCLE_MULTIPLE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-close-circle-multiple" viewBox="0 0 24 24"><path d="M2 12C2 9.21 3.64 6.8 6 5.68V3.5C2.5 4.76 0 8.09 0 12S2.5 19.24 6 20.5V18.32C3.64 17.2 2 14.79 2 12M15 3C10.04 3 6 7.04 6 12S10.04 21 15 21 24 16.96 24 12 19.96 3 15 3M20 15.59L18.59 17L15 13.41L11.41 17L10 15.59L13.59 12L10 8.41L11.41 7L15 10.59L18.59 7L20 8.41L16.41 12L20 15.59Z"/></svg>"##,
-    slug: "close-circle-multiple",
-    version: "1.6.50",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// keyboard-f3
-pub const KEYBOARD_F3: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-f3" viewBox="0 0 24 24"><path d="M5 7H11V9H7V11H10V13H7V17H5V7M19 15C19 16.11 18.11 17 17 17H13V15H17V13H15V11H17V9H13V7H17C18.1 7 19 7.89 19 9V10.5C19 11.33 18.33 12 17.5 12C18.33 12 19 12.67 19 13.5V15Z"/></svg>"##,
-    slug: "keyboard-f3",
-    version: "4.7.95",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// printer-pos-outline
-pub const PRINTER_POS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-printer-pos-outline" viewBox="0 0 24 24"><path d="M18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H20V12C20 10.9 19.11 10 18 10M9 6H15V10H9V6M18 17H6V12H18V17M17 15H13V13H17V15Z"/></svg>"##,
-    slug: "printer-pos-outline",
-    version: "7.1.96",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// bookmark-plus
-pub const BOOKMARK_PLUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bookmark-plus" viewBox="0 0 24 24"><path d="M17,3A2,2 0 0,1 19,5V21L12,18L5,21V5C5,3.89 5.9,3 7,3H17M11,7V9H9V11H11V13H13V11H15V9H13V7H11Z"/></svg>"##,
-    slug: "bookmark-plus",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// book-alphabet
-pub const BOOK_ALPHABET: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-alphabet" viewBox="0 0 24 24"><path d="M5.81,2C4.83,2.09 4,3 4,4V20C4,21.05 4.95,22 6,22H18C19.05,22 20,21.05 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6C5.94,2 5.87,2 5.81,2M12,13H13A1,1 0 0,1 14,14V18H13V16H12V18H11V14A1,1 0 0,1 12,13M12,14V15H13V14H12M15,15H18V16L16,19H18V20H15V19L17,16H15V15Z"/></svg>"##,
-    slug: "book-alphabet",
-    version: "1.6.50",
-    deprecated: false,
-    author: "Christopher Schreiner",
-};
-
-/// filmstrip-box
-pub const FILMSTRIP_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-filmstrip-box" viewBox="0 0 24 24"><path d="M19 3C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H19M7 18V16H5V18H7M7 13V11H5V13H7M7 8V6H5V8H7M19 18V16H17V18H19M19 13V11H17V13H19M19 8V6H17V8H19Z"/></svg>"##,
-    slug: "filmstrip-box",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// axis-y-rotate-clockwise
-pub const AXIS_Y_ROTATE_CLOCKWISE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-axis-y-rotate-clockwise" viewBox="0 0 24 24"><path d="M12,10L16,14L20,10H16.9C16.44,5.44 14.42,2 12,2C10.12,2 8.47,4.08 7.62,7.16L9.37,8.17C9.87,5.69 10.86,4 12,4C13.4,4 14.57,6.55 14.91,10H12M1.11,6.87L13.89,14.25L13.96,13.46L10.5,10H10.54L2.11,5.13L1.11,6.87M21.89,18.87L22.89,17.13L17.88,14.24C17.79,14.97 17.67,15.67 17.5,16.34L21.89,18.87M12,22C14.3,22 16.23,18.9 16.82,14.68L16,15.5L14.87,14.37C14.5,17.63 13.35,20 12,20C10.42,20 9.12,16.73 9,12.58L7,11.43V12C7,17.5 9.24,22 12,22Z"/></svg>"##,
-    slug: "axis-y-rotate-clockwise",
-    version: "3.4.93",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// elephant
-pub const ELEPHANT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-elephant" viewBox="0 0 24 24"><path d="M19.5,15.5A0.5,0.5 0 0,1 19,16A0.5,0.5 0 0,1 18.5,15.5V8.5C18.5,6.57 16.43,5 14.5,5H6A4,4 0 0,0 2,9V19H6V15H11V19H15V14.5A0.5,0.5 0 0,1 15.5,14A0.5,0.5 0 0,1 16,14.5V16A3,3 0 0,0 19,19A3,3 0 0,0 22,16V14H19.5V15.5Z"/></svg>"##,
-    slug: "elephant",
-    version: "2.0.46",
-    deprecated: false,
-    author: "Contributors",
-};
-
-/// vote
-pub const VOTE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-vote" viewBox="0 0 24 24"><path d="M18,13H17.32L15.32,15H17.23L19,17H5L6.78,15H8.83L6.83,13H6L3,16V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V16L18,13M17,7.95L12.05,12.9L8.5,9.36L13.46,4.41L17,7.95M12.76,2.29L6.39,8.66C6,9.05 6,9.68 6.39,10.07L11.34,15C11.73,15.41 12.36,15.41 12.75,15L19.11,8.66C19.5,8.27 19.5,7.64 19.11,7.25L14.16,2.3C13.78,1.9 13.15,1.9 12.76,2.29Z"/></svg>"##,
-    slug: "vote",
-    version: "2.5.94",
-    deprecated: false,
-    author: "Google",
-};
-
-/// bell
-pub const BELL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bell" viewBox="0 0 24 24"><path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21"/></svg>"##,
-    slug: "bell",
+/// volume-high
+pub const VOLUME_HIGH: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-high" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"/></svg>"##,
+    slug: "volume-high",
     version: "1.5.54",
     deprecated: false,
     author: "Google",
 };
 
-/// format-letter-case-upper
-pub const FORMAT_LETTER_CASE_UPPER: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-letter-case-upper" viewBox="0 0 24 24"><path d="M20.06,18C20,17.83 19.91,17.54 19.86,17.11C19.19,17.81 18.38,18.16 17.45,18.16C16.62,18.16 15.93,17.92 15.4,17.45C14.87,17 14.6,16.39 14.6,15.66C14.6,14.78 14.93,14.1 15.6,13.61C16.27,13.12 17.21,12.88 18.43,12.88H19.83V12.24C19.83,11.75 19.68,11.36 19.38,11.07C19.08,10.78 18.63,10.64 18.05,10.64C17.53,10.64 17.1,10.76 16.75,11C16.4,11.25 16.23,11.54 16.23,11.89H14.77C14.77,11.46 14.92,11.05 15.22,10.65C15.5,10.25 15.93,9.94 16.44,9.71C16.95,9.5 17.5,9.36 18.13,9.36C19.11,9.36 19.87,9.6 20.42,10.09C20.97,10.58 21.26,11.25 21.28,12.11V16C21.28,16.8 21.38,17.42 21.58,17.88V18H20.06M17.66,16.88C18.11,16.88 18.54,16.77 18.95,16.56C19.35,16.35 19.65,16.07 19.83,15.73V14.16H18.7C16.93,14.16 16.04,14.63 16.04,15.57C16.04,16 16.19,16.3 16.5,16.53C16.8,16.76 17.18,16.88 17.66,16.88M5.46,13.71H9.53L7.5,8.29L5.46,13.71M6.64,6H8.36L13.07,18H11.14L10.17,15.43H4.82L3.86,18H1.93L6.64,6M2,20H13V22H2V20Z"/></svg>"##,
-    slug: "format-letter-case-upper",
-    version: "2.8.94",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// target
-pub const TARGET: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-target" viewBox="0 0 24 24"><path d="M11,2V4.07C7.38,4.53 4.53,7.38 4.07,11H2V13H4.07C4.53,16.62 7.38,19.47 11,19.93V22H13V19.93C16.62,19.47 19.47,16.62 19.93,13H22V11H19.93C19.47,7.38 16.62,4.53 13,4.07V2M11,6.08V8H13V6.09C15.5,6.5 17.5,8.5 17.92,11H16V13H17.91C17.5,15.5 15.5,17.5 13,17.92V16H11V17.91C8.5,17.5 6.5,15.5 6.08,13H8V11H6.09C6.5,8.5 8.5,6.5 11,6.08M12,11A1,1 0 0,0 11,12A1,1 0 0,0 12,13A1,1 0 0,0 13,12A1,1 0 0,0 12,11Z"/></svg>"##,
-    slug: "target",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Doug C. Hardester",
-};
-
-/// head-cog
-pub const HEAD_COG: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-head-cog" viewBox="0 0 24 24"><path d="M13 8.58C13.78 8.58 14.44 9.19 14.44 10S13.78 11.44 13 11.44 11.58 10.78 11.58 10 12.19 8.58 13 8.58M13 3C16.88 3 20 6.14 20 10C20 12.8 18.37 15.19 16 16.31V21H9V18H8C6.89 18 6 17.11 6 16V13H4.5C4.08 13 3.84 12.5 4.08 12.19L6 9.66C6.19 5.95 9.23 3 13 3M16 10C16 9.84 16 9.75 15.94 9.61L16.83 8.95C16.88 8.91 16.92 8.77 16.88 8.67L16.08 7.31C16.03 7.22 15.89 7.17 15.8 7.22L14.81 7.64C14.63 7.45 14.39 7.31 14.16 7.22L14 6.19C13.97 6.05 13.92 6 13.78 6H12.19C12.09 6 12 6.05 12 6.19L11.86 7.22C11.63 7.31 11.39 7.45 11.2 7.64L10.17 7.22C10.08 7.17 10 7.22 9.94 7.31L9.14 8.67C9.09 8.81 9.09 8.91 9.19 8.95L10.03 9.61C10.03 9.75 10 9.89 10 10C10 10.13 10.03 10.27 10.03 10.41L9.19 11.06C9.09 11.11 9.09 11.2 9.14 11.3L9.94 12.7C10 12.8 10.08 12.8 10.17 12.8L11.16 12.37C11.39 12.56 11.58 12.66 11.86 12.75L12 13.83C12 13.92 12.09 14 12.19 14H13.78C13.92 14 13.97 13.92 14 13.83L14.16 12.75C14.39 12.66 14.63 12.56 14.81 12.38L15.8 12.8C15.89 12.8 16.03 12.8 16.08 12.7L16.88 11.3C16.92 11.2 16.88 11.11 16.83 11.06L16 10.41V10Z"/></svg>"##,
-    slug: "head-cog",
-    version: "4.9.95",
-    deprecated: false,
-    author: "Google",
-};
-
-/// arrow-down-drop-circle
-pub const ARROW_DOWN_DROP_CIRCLE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-drop-circle" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M7,10L12,15L17,10H7Z"/></svg>"##,
-    slug: "arrow-down-drop-circle",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// battery-charging-low
-pub const BATTERY_CHARGING_LOW: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-battery-charging-low" viewBox="0 0 24 24"><path d="M12 20H4V6H12M12.67 4H11V2H5V4H3.33C2.6 4 2 4.6 2 5.33V20.67C2 21.4 2.6 22 3.33 22H12.67C13.41 22 14 21.41 14 20.67V5.33C14 4.6 13.4 4 12.67 4M11 16H5V19H11V16M23 10H20V3L15 13H18V21"/></svg>"##,
-    slug: "battery-charging-low",
-    version: "4.7.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// menu-right-outline
-pub const MENU_RIGHT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu-right-outline" viewBox="0 0 24 24"><path d="M9,6H10.5L16.5,12L10.5,18H9V6M13.67,12L11,9.33V14.67L13.67,12Z"/></svg>"##,
-    slug: "menu-right-outline",
-    version: "2.5.94",
-    deprecated: false,
-    author: "Peter Noble",
-};
-
-/// snail
-pub const SNAIL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-snail" viewBox="0 0 24 24"><path d="M20.31 8.03L21.24 4.95C21.67 4.85 22 4.47 22 4C22 3.45 21.55 3 21 3S20 3.45 20 4C20 4.26 20.11 4.5 20.27 4.68L19.5 7.26L18.73 4.68C18.89 4.5 19 4.26 19 4C19 3.45 18.55 3 18 3S17 3.45 17 4C17 4.47 17.33 4.85 17.76 4.95L18.69 8.03C17.73 8.18 17 9 17 10V12.25C15.65 9.16 12.63 7 9.11 7C5.19 7 2 10.26 2 14.26C2 16.1 2.82 17.75 4.1 18.85L2.88 19C2.38 19.06 2 19.5 2 20C2 20.55 2.45 21 3 21L19.12 21C20.16 21 21 20.16 21 19.12V11.72C21.6 11.38 22 10.74 22 10C22 9 21.27 8.18 20.31 8.03M15.6 17.41L12.07 17.86C12.5 17.1 12.8 16.21 12.8 15.26C12.8 12.94 10.95 11.06 8.67 11.06C8.14 11.06 7.62 11.18 7.14 11.41C6.65 11.66 6.44 12.26 6.69 12.75C6.93 13.25 7.53 13.45 8.03 13.21C8.23 13.11 8.45 13.06 8.67 13.06C9.85 13.06 10.8 14.04 10.8 15.26C10.8 16.92 9.5 18.27 7.89 18.27C5.75 18.27 4 16.47 4 14.26C4 11.36 6.29 9 9.11 9C12.77 9 15.75 12.06 15.75 15.82C15.75 16.36 15.69 16.89 15.6 17.41Z"/></svg>"##,
-    slug: "snail",
-    version: "5.7.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// firewire
-pub const FIREWIRE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-firewire" viewBox="0 0 24 24"><path d="M12 10C13.1 10 14 10.9 14 12S13.1 14 12 14 10 13.1 10 12 10.9 10 12 10M12 8C9.8 8 8 9.8 8 12S9.8 16 12 16 16 14.2 16 12 14.2 8 12 8M15 17H9V19H15V17M15 20H9V22H15V20M6.3 10.6L10.5 6.4L9.2 4.9L4.9 9.2L6.3 10.6M4.2 8.5L8.4 4.3L7.1 2.8L2.8 7.1L4.2 8.5M15 17H9V19H15V17M13.4 6.3L17.6 10.5L21.1 7L16.9 2.8L13.4 6.3Z"/></svg>"##,
-    slug: "firewire",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Contributors",
-};
-
-/// link-variant
-pub const LINK_VARIANT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-link-variant" viewBox="0 0 24 24"><path d="M10.59,13.41C11,13.8 11,14.44 10.59,14.83C10.2,15.22 9.56,15.22 9.17,14.83C7.22,12.88 7.22,9.71 9.17,7.76V7.76L12.71,4.22C14.66,2.27 17.83,2.27 19.78,4.22C21.73,6.17 21.73,9.34 19.78,11.29L18.29,12.78C18.3,11.96 18.17,11.14 17.89,10.36L18.36,9.88C19.54,8.71 19.54,6.81 18.36,5.64C17.19,4.46 15.29,4.46 14.12,5.64L10.59,9.17C9.41,10.34 9.41,12.24 10.59,13.41M13.41,9.17C13.8,8.78 14.44,8.78 14.83,9.17C16.78,11.12 16.78,14.29 14.83,16.24V16.24L11.29,19.78C9.34,21.73 6.17,21.73 4.22,19.78C2.27,17.83 2.27,14.66 4.22,12.71L5.71,11.22C5.7,12.04 5.83,12.86 6.11,13.65L5.64,14.12C4.46,15.29 4.46,17.19 5.64,18.36C6.81,19.54 8.71,19.54 9.88,18.36L13.41,14.83C14.59,13.66 14.59,11.76 13.41,10.59C13,10.2 13,9.56 13.41,9.17Z"/></svg>"##,
-    slug: "link-variant",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// table-filter
-pub const TABLE_FILTER: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-filter" viewBox="0 0 24 24"><path d="M17 21L18.8 22.77C19.3 23.27 20 22.87 20 22.28V18L22.8 14.6C23.3 13.9 22.8 13 22 13H15C14.2 13 13.7 14 14.2 14.6L17 18V21M12 11H20V3C20 1.9 19.11 1 18 1H4C2.9 1 2 1.9 2 3V15C2 16.11 2.9 17 4 17H13.42L12 15V11M12 5H18V9H12V5M10 15H4V11H10V15M10 9H4V5H10V9Z"/></svg>"##,
-    slug: "table-filter",
-    version: "7.0.96",
-    deprecated: false,
-    author: "Andrej Sharapov",
-};
-
-/// flag
-pub const FLAG: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-flag" viewBox="0 0 24 24"><path d="M14.4,6L14,4H5V21H7V14H12.6L13,16H20V6H14.4Z"/></svg>"##,
-    slug: "flag",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// rug
-pub const RUG: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-rug" viewBox="0 0 24 24"><path d="M12 14C10.9 14 10 13.11 10 12S10.9 10 12 10 14 10.9 14 12 13.11 14 12 14M23 19H1V17H4V15H1V13H4V11H1V9H4V7H1V5H23V7H20V9H23V11H20V13H23V15H20V17H23V19M12 15.92C12.62 16.62 13.66 16.81 14.5 16.33C15.34 15.85 15.69 14.84 15.4 13.96C16.31 13.78 17 12.97 17 12S16.31 10.22 15.4 10.04C15.69 9.16 15.34 8.15 14.5 7.67C13.66 7.19 12.62 7.38 12 8.08C11.38 7.38 10.34 7.19 9.5 7.67C8.66 8.15 8.31 9.16 8.61 10.04C7.69 10.22 7 11.03 7 12S7.69 13.78 8.61 13.96C8.31 14.84 8.66 15.85 9.5 16.33C10.34 16.82 11.38 16.62 12 15.92Z"/></svg>"##,
-    slug: "rug",
-    version: "5.2.45",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// movie-open-off
-pub const MOVIE_OPEN_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-movie-open-off" viewBox="0 0 24 24"><path d="M13.2 10H22V18.8L13.2 10M21.6 6.1L20.8 2.2L16.9 3L19.6 6.5L21.6 6.1M11.8 8L9.1 4.5L7.9 4.7L11.3 8.1L11.8 8M2.4 1.7L1.1 3L3.7 5.6L3.2 5.7C2.1 5.9 1.4 7 1.6 8L2 10L7.1 9L8.1 10H2V20C2 21.1 2.9 22 4 22H20.1L20.8 22.7L22.1 21.4L2.4 1.7M16.7 7.1L14 3.5L12 3.9L14.8 7.4L16.7 7.1Z"/></svg>"##,
-    slug: "movie-open-off",
-    version: "5.9.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// email-plus-outline
-pub const EMAIL_PLUS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-email-plus-outline" viewBox="0 0 24 24"><path d="M13 19C13 18.66 13.04 18.33 13.09 18H4V8L12 13L20 8V13.09C20.72 13.21 21.39 13.46 22 13.81V6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M20 6L12 11L4 6H20M20 15V18H23V20H20V23H18V20H15V18H18V15H20Z"/></svg>"##,
-    slug: "email-plus-outline",
-    version: "2.5.94",
-    deprecated: false,
-    author: "GreenTurtwig",
-};
-
-/// wifi-strength-lock-open-outline
-pub const WIFI_STRENGTH_LOCK_OPEN_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-wifi-strength-lock-open-outline" viewBox="0 0 24 24"><path d="M23.65 7H23.64C22.92 7.9 22.2 8.79 21.5 9.69C20.87 9.33 20.17 9.11 19.43 9.04L20.71 7.45C18.09 5.86 15.07 5 12 5C8.91 5 5.9 5.85 3.27 7.44L12 18.3L13 17C13 17.08 13 17.14 13 17.2V20.25L12 21.5C8.13 16.66 4.24 11.83 .355 7H.375C3.7 4.41 7.79 3 12 3C16.22 3 20.32 4.41 23.65 7M21.8 16H17.5V13.5C17.5 12.7 18.2 12.2 19 12.2S20.5 12.7 20.5 13.5V14H21.8V13.5C21.8 12.1 20.4 11 19 11S16.2 12.1 16.2 13.5V16C15.6 16 15 16.6 15 17.2V20.7C15 21.4 15.6 22 16.2 22H21.7C22.4 22 23 21.4 23 20.8V17.3C23 16.6 22.4 16 21.8 16Z"/></svg>"##,
-    slug: "wifi-strength-lock-open-outline",
-    version: "5.8.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// emoticon-sick-outline
-pub const EMOTICON_SICK_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-emoticon-sick-outline" viewBox="0 0 24 24"><path d="M7.32 10.56L8.38 9.5L7.32 8.44L8.38 7.38L10.5 9.5L8.38 11.62L7.32 10.56M4.5 9C4.53 9 4.55 9 4.58 9C5.77 6.07 8.64 4 12 4C14.19 4 16.16 4.88 17.61 6.3C17.76 5.7 18.06 5 18.42 4.34C16.68 2.88 14.44 2 12 2C7.11 2 3.05 5.5 2.18 10.14C2.74 9.44 3.59 9 4.5 9M21 10.5C20.58 10.5 20.18 10.41 19.81 10.28C19.93 10.83 20 11.41 20 12C20 16.42 16.42 20 12 20C8.64 20 5.77 17.93 4.58 15C4.55 15 4.53 15 4.5 15C4 15 3.46 14.86 3 14.6C2.68 14.42 2.41 14.18 2.18 13.9C3.07 18.5 7.11 22 12 22C17.5 22 22 17.5 22 12C22 11.45 21.94 10.91 21.86 10.38C21.58 10.45 21.3 10.5 21 10.5M21 3C21 3 19 5.9 19 7S19.9 9 21 9 23 8.1 23 7 21 3 21 3M15.62 7.38L13.5 9.5L15.62 11.62L16.68 10.56L15.62 9.5L16.68 8.44L15.62 7.38M8.56 17C9.25 15.81 10.53 15 12 15S14.75 15.81 15.44 17H17.12C16.32 14.95 14.33 13.5 12 13.5C11.13 13.5 10.3 13.7 9.57 14.07L6 12C6 11.5 5.73 11 5.25 10.71C4.53 10.3 3.62 10.54 3.2 11.26C2.79 12 3.03 12.89 3.75 13.31C4.23 13.59 4.8 13.56 5.24 13.31L8.21 15.03C7.64 15.56 7.18 16.24 6.88 17H8.56Z"/></svg>"##,
-    slug: "emoticon-sick-outline",
+/// dance-pole
+pub const DANCE_POLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-dance-pole" viewBox="0 0 24 24"><path d="M12 1V2L11.23 1.36L7.76 5.5L11 7.5V5.16L10.78 5L12 3.56V23H14V13.24L15.93 11.31C18.5 11.71 21.13 10.36 22.66 8.83L21.24 7.41C20.1 8.56 17.7 9.61 16 9.26L14 7.24V1M17 4A2 2 0 0 0 15 6A2 2 0 0 0 17 8A2 2 0 0 0 19 6A2 2 0 0 0 17 4M11 7.76L7.1 11.66C5.25 13.5 4.31 14.85 3.06 18.16L4.94 18.86C5.94 16.2 6.66 15.14 7.87 13.84L9.22 15.19L4.27 20.14L5.69 21.56L11 16.24Z"/></svg>"##,
+    slug: "dance-pole",
     version: "5.5.55",
     deprecated: false,
-    author: "Google",
+    author: "Haley Halcyon",
 };
 
-/// nfc-variant
-pub const NFC_VARIANT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-nfc-variant" viewBox="0 0 24 24"><path d="M18,6H13A2,2 0 0,0 11,8V10.28C10.41,10.62 10,11.26 10,12A2,2 0 0,0 12,14C13.11,14 14,13.1 14,12C14,11.26 13.6,10.62 13,10.28V8H16V16H8V8H10V6H8L6,6V18H18M20,20H4V4H20M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20C21.11,22 22,21.1 22,20V4C22,2.89 21.11,2 20,2Z"/></svg>"##,
-    slug: "nfc-variant",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// text-box-remove
-pub const TEXT_BOX_REMOVE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-text-box-remove" viewBox="0 0 24 24"><path d="M14.46,15.88L15.88,14.46L18,16.59L20.12,14.46L21.54,15.88L19.41,18L21.54,20.12L20.12,21.54L18,19.41L15.88,21.54L14.46,20.12L16.59,18L14.46,15.88M12,17V15H7V17H12M17,11H7V13H14.69C13.07,14.07 12,15.91 12,18C12,19.09 12.29,20.12 12.8,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19A2,2 0 0,1 21,5V12.8C20.12,12.29 19.09,12 18,12L17,12.08V11M17,9V7H7V9H17Z"/></svg>"##,
-    slug: "text-box-remove",
-    version: "3.7.94",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// umbrella-closed-outline
-pub const UMBRELLA_CLOSED_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-umbrella-closed-outline" viewBox="0 0 24 24"><path d="M12 2C12.4 2 12.8 2.2 12.9 2.6L17.5 15H13V19C13 20.7 11.7 22 10 22S7 20.7 7 19V18H9V19C9 19.6 9.4 20 10 20C10.6 20 11 19.6 11 19V15H6.5L11.1 2.6C11.2 2.2 11.6 2 12 2M12 5.9L9.4 13H14.7L12 5.9Z"/></svg>"##,
-    slug: "umbrella-closed-outline",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// format-letter-case-lower
-pub const FORMAT_LETTER_CASE_LOWER: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-letter-case-lower" viewBox="0 0 24 24"><path d="M20.06,18C20,17.83 19.91,17.54 19.86,17.11C19.19,17.81 18.38,18.16 17.45,18.16C16.62,18.16 15.93,17.92 15.4,17.45C14.87,17 14.6,16.39 14.6,15.66C14.6,14.78 14.93,14.1 15.6,13.61C16.27,13.12 17.21,12.88 18.43,12.88H19.83V12.24C19.83,11.75 19.68,11.36 19.38,11.07C19.08,10.78 18.63,10.64 18.05,10.64C17.53,10.64 17.1,10.76 16.75,11C16.4,11.25 16.23,11.54 16.23,11.89H14.77C14.77,11.46 14.92,11.05 15.22,10.65C15.5,10.25 15.93,9.94 16.44,9.71C16.95,9.5 17.5,9.36 18.13,9.36C19.11,9.36 19.87,9.6 20.42,10.09C20.97,10.58 21.26,11.25 21.28,12.11V16C21.28,16.8 21.38,17.42 21.58,17.88V18H20.06M17.66,16.88C18.11,16.88 18.54,16.77 18.95,16.56C19.35,16.35 19.65,16.07 19.83,15.73V14.16H18.7C16.93,14.16 16.04,14.63 16.04,15.57C16.04,16 16.19,16.3 16.5,16.53C16.8,16.76 17.18,16.88 17.66,16.88M5.46,13.71H9.53L7.5,8.29L5.46,13.71M6.64,6H8.36L13.07,18H11.14L10.17,15.43H4.82L3.86,18H1.93L6.64,6M22,20V22H14.5V20H22Z"/></svg>"##,
-    slug: "format-letter-case-lower",
-    version: "2.8.94",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// head-flash
-pub const HEAD_FLASH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-head-flash" viewBox="0 0 24 24"><path d="M13 3C9.2 3 6.2 6 6 9.7L4.1 12.2C3.9 12.5 4.1 13 4.5 13H6V16C6 17.1 6.9 18 8 18H9V21H16V16.3C18.4 15.2 20 12.8 20 10C20 6.1 16.9 3 13 3M15 9L11.9 15L12.5 11H10.5L12.5 6H15L13.5 9H15Z"/></svg>"##,
-    slug: "head-flash",
-    version: "4.9.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// paw
-pub const PAW: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-paw" viewBox="0 0 24 24"><path d="M8.35,3C9.53,2.83 10.78,4.12 11.14,5.9C11.5,7.67 10.85,9.25 9.67,9.43C8.5,9.61 7.24,8.32 6.87,6.54C6.5,4.77 7.17,3.19 8.35,3M15.5,3C16.69,3.19 17.35,4.77 17,6.54C16.62,8.32 15.37,9.61 14.19,9.43C13,9.25 12.35,7.67 12.72,5.9C13.08,4.12 14.33,2.83 15.5,3M3,7.6C4.14,7.11 5.69,8 6.5,9.55C7.26,11.13 7,12.79 5.87,13.28C4.74,13.77 3.2,12.89 2.41,11.32C1.62,9.75 1.9,8.08 3,7.6M21,7.6C22.1,8.08 22.38,9.75 21.59,11.32C20.8,12.89 19.26,13.77 18.13,13.28C17,12.79 16.74,11.13 17.5,9.55C18.31,8 19.86,7.11 21,7.6M19.33,18.38C19.37,19.32 18.65,20.36 17.79,20.75C16,21.57 13.88,19.87 11.89,19.87C9.9,19.87 7.76,21.64 6,20.75C5,20.26 4.31,18.96 4.44,17.88C4.62,16.39 6.41,15.59 7.47,14.5C8.88,13.09 9.88,10.44 11.89,10.44C13.89,10.44 14.95,13.05 16.3,14.5C17.41,15.72 19.26,16.75 19.33,18.38Z"/></svg>"##,
-    slug: "paw",
+/// cloud-print
+pub const CLOUD_PRINT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cloud-print" viewBox="0 0 24 24"><path d="M21.86 10.5C21.1 9.63 20.15 9.13 19 9C19 7.05 18.32 5.4 16.96 4.04C15.6 2.68 13.95 2 12 2C10.42 2 9 2.5 7.75 3.43S5.67 5.62 5.25 7.15C4 7.43 2.96 8.08 2.17 9.1S1 11.28 1 12.58C1 14.09 1.54 15.38 2.61 16.43C3.57 17.36 4.7 17.85 6 17.95V22H18V18H18.5C19.75 18 20.81 17.56 21.69 16.69C22.56 15.81 23 14.75 23 13.5C23 12.35 22.62 11.35 21.86 10.5M16 20H8V13H16V20M15 15H9V14H15V15M15 17H9V16H15V17M15 19H9V18H15V19Z"/></svg>"##,
+    slug: "cloud-print",
     version: "1.5.54",
     deprecated: false,
     author: "Simran",
 };
 
-/// lightbulb-question-outline
-pub const LIGHTBULB_QUESTION_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-lightbulb-question-outline" viewBox="0 0 24 24"><path d="M8 2C11.9 2 15 5.1 15 9C15 11.4 13.8 13.5 12 14.7V17C12 17.6 11.6 18 11 18H5C4.4 18 4 17.6 4 17V14.7C2.2 13.5 1 11.4 1 9C1 5.1 4.1 2 8 2M5 21V20H11V21C11 21.6 10.6 22 10 22H6C5.4 22 5 21.6 5 21M8 4C5.2 4 3 6.2 3 9C3 11.1 4.2 12.8 6 13.6V16H10V13.6C11.8 12.8 13 11.1 13 9C13 6.2 10.8 4 8 4M20.5 14.5V16H19V14.5H20.5M18.5 9.5H17V9C17 7.3 18.3 6 20 6S23 7.3 23 9C23 10 22.5 10.9 21.7 11.4L21.4 11.6C20.8 12 20.5 12.6 20.5 13.3V13.5H19V13.3C19 12.1 19.6 11 20.6 10.4L20.9 10.2C21.3 9.9 21.5 9.5 21.5 9C21.5 8.2 20.8 7.5 20 7.5S18.5 8.2 18.5 9V9.5Z"/></svg>"##,
-    slug: "lightbulb-question-outline",
+/// stool
+pub const STOOL: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-stool" viewBox="0 0 24 24"><path d="M20 6C20 3.79 18.21 2 16 2H8C5.78 2 4 3.79 4 6V8H7L4 22H6L7.5 15H11V22H13V15H16.5L18 22H20L17 8H20V6M7.93 13L9 8H11V13H7.93M16.07 13H13V8H15L16.07 13Z"/></svg>"##,
+    slug: "stool",
+    version: "6.4.95",
+    deprecated: false,
+    author: "Teodor Sandu",
+};
+
+/// alpha-k-box-outline
+pub const ALPHA_K_BOX_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-k-box-outline" viewBox="0 0 24 24"><path d="M9,7H11V10.33L13,7H15L12,12L15,17H13L11,13.67V17H9V7M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M5,5V19H19V5H5Z"/></svg>"##,
+    slug: "alpha-k-box-outline",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Contributors",
+};
+
+/// video-standard-definition
+pub const VIDEO_STANDARD_DEFINITION: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-video-standard-definition" viewBox="0 0 24 24"><path d="M14 14V10C14 9.7 13.8 9.5 13.5 9.5H12.5V14.5H13.5C13.8 14.5 14 14.3 14 14M17 7V10.5L21 6.5V17.5L17 13.5V17C17 17.6 16.6 18 16 18H4C3.4 18 3 17.6 3 17V7C3 6.4 3.4 6 4 6H16C16.6 6 17 6.4 17 7M14 16C14.8 16 15.5 15.3 15.5 14.5V9.5C15.5 8.7 14.8 8 14 8H11V16H14M9 8H5.5C4.67 8 4 8.67 4 9.5V11C4 11.83 4.67 12.5 5.5 12.5H7.5V14.5H4V16H7.5C8.33 16 9 15.33 9 14.5V12.5C9 11.67 8.33 11 7.5 11H5.5V9.5H9V8Z"/></svg>"##,
+    slug: "video-standard-definition",
+    version: "7.3.67",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// receipt-text-outline
+pub const RECEIPT_TEXT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-receipt-text-outline" viewBox="0 0 24 24"><path d="M19.5 3.5L18 2L16.5 3.5L15 2L13.5 3.5L12 2L10.5 3.5L9 2L7.5 3.5L6 2L4.5 3.5L3 2V22L4.5 20.5L6 22L7.5 20.5L9 22L10.5 20.5L12 22L13.5 20.5L15 22L16.5 20.5L18 22L19.5 20.5L21 22V2L19.5 3.5M19 19H5V5H19V19M6 15H18V17H6M6 11H18V13H6M6 7H18V9H6V7Z"/></svg>"##,
+    slug: "receipt-text-outline",
     version: "6.6.96",
     deprecated: false,
+    author: "Google",
+};
+
+/// collapse-all
+pub const COLLAPSE_ALL: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-collapse-all" viewBox="0 0 24 24"><path d="M14,4H4V14H2V4A2,2 0 0,1 4,2H14V4M18,6H8A2,2 0 0,0 6,8V18H8V8H18V6M22,12V20A2,2 0 0,1 20,22H12A2,2 0 0,1 10,20V12A2,2 0 0,1 12,10H20A2,2 0 0,1 22,12M20,15H12V17H20V15Z"/></svg>"##,
+    slug: "collapse-all",
+    version: "2.7.94",
+    deprecated: false,
     author: "Michael Irigoyen",
 };
 
-/// stethoscope
-pub const STETHOSCOPE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-stethoscope" viewBox="0 0 24 24"><path d="M19,8C19.56,8 20,8.43 20,9A1,1 0 0,1 19,10C18.43,10 18,9.55 18,9C18,8.43 18.43,8 19,8M2,2V11C2,13.96 4.19,16.5 7.14,16.91C7.76,19.92 10.42,22 13.5,22A6.5,6.5 0 0,0 20,15.5V11.81C21.16,11.39 22,10.29 22,9A3,3 0 0,0 19,6A3,3 0 0,0 16,9C16,10.29 16.84,11.4 18,11.81V15.41C18,17.91 16,19.91 13.5,19.91C11.5,19.91 9.82,18.7 9.22,16.9C12,16.3 14,13.8 14,11V2H10V5H12V11A4,4 0 0,1 8,15A4,4 0 0,1 4,11V5H6V2H2Z"/></svg>"##,
-    slug: "stethoscope",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// note-minus-outline
-pub const NOTE_MINUS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-note-minus-outline" viewBox="0 0 24 24"><path d="M23 18V20H15V18H23M13 19C13 19.7 13.13 20.37 13.35 21H5C3.89 21 3 20.1 3 19V5C3 3.89 3.89 3 5 3H15L21 9V13.35C20.37 13.13 19.7 13 19 13V12H12V5H5V19H13M14 10H19.5L14 4.5V10Z"/></svg>"##,
-    slug: "note-minus-outline",
-    version: "5.7.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// routes
-pub const ROUTES: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-routes" viewBox="0 0 24 24"><path d="M11,10H5L3,8L5,6H11V3L12,2L13,3V4H19L21,6L19,8H13V10H19L21,12L19,14H13V20A2,2 0 0,1 15,22H9A2,2 0 0,1 11,20V10Z"/></svg>"##,
-    slug: "routes",
-    version: "1.5.54",
+/// bank-remove
+pub const BANK_REMOVE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bank-remove" viewBox="0 0 24 24"><path d="M14.46,15.88L15.88,14.46L18,16.59L20.12,14.46L21.54,15.88L19.41,18L21.54,20.12L20.12,21.54L18,19.41L15.88,21.54L14.46,20.12L16.59,18L14.46,15.88M11.5,1L21,6V8H2V6L11.5,1M16,10H19V12.08L18,12C17.3,12 16.63,12.12 16,12.34V10M2,22V19H12.08C12.27,20.14 12.79,21.17 13.53,22H2M10,10H13V14.68C12.54,15.37 12.22,16.15 12.08,17H10V10M4,10H7V17H4V10Z"/></svg>"##,
+    slug: "bank-remove",
+    version: "3.5.94",
     deprecated: false,
     author: "Austin Andrews",
 };
 
-/// slash-forward-box
-pub const SLASH_FORWARD_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-slash-forward-box" viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M9.3 19H7L14.7 5H17L9.3 19Z"/></svg>"##,
-    slug: "slash-forward-box",
-    version: "4.0.96",
+/// star-three-points-outline
+pub const STAR_THREE_POINTS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-three-points-outline" viewBox="0 0 24 24"><path d="M12,9.5L13.2,13.5L16,16.5L12,15.6L7.9,16.5L10.7,13.5L12,9.5M12,2.6L9,12.4L2,19.9L12,17.6L22,20L15,12.5L12,2.6Z"/></svg>"##,
+    slug: "star-three-points-outline",
+    version: "2.7.94",
     deprecated: false,
     author: "Michael Irigoyen",
 };
 
-/// chat-remove-outline
-pub const CHAT_REMOVE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chat-remove-outline" viewBox="0 0 24 24"><path d="M15.46 15.88L16.88 14.46L19 16.59L21.12 14.47L22.54 15.88L20.41 18L22.54 20.12L21.12 21.54L19 19.41L16.88 21.54L15.46 20.12L17.59 18L15.47 15.88M12 3C17.5 3 22 6.58 22 11C22 11.58 21.92 12.14 21.78 12.68C21.19 12.38 20.55 12.16 19.88 12.06C19.96 11.72 20 11.36 20 11C20 7.69 16.42 5 12 5C7.58 5 4 7.69 4 11C4 14.31 7.58 17 12 17L13.09 16.95L13 18L13.08 18.95L12 19C10.81 19 9.62 18.83 8.47 18.5C6.64 20 4.37 20.89 2 21C4.33 18.67 4.75 17.1 4.75 16.5C3.06 15.17 2.05 13.15 2 11C2 6.58 6.5 3 12 3Z"/></svg>"##,
-    slug: "chat-remove-outline",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// wifi-strength-2-lock-open
-pub const WIFI_STRENGTH_2_LOCK_OPEN: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-wifi-strength-2-lock-open" viewBox="0 0 24 24"><path d="M15.44 10.55C14.68 11.35 14.2 12.38 14.2 13.5V14.74C13.5 15.34 13 16.24 13 17.2V20.24L12 21.5C7.88 16.37 4.39 12.06 .365 7C3.69 4.41 7.78 3 12 3C16.2 3 20.31 4.41 23.64 7L21.5 9.69C20.86 9.33 20.16 9.1 19.41 9.04L20.7 7.45C18.08 5.86 15.06 5 12 5S5.9 5.85 3.26 7.44L6.5 11.43C7.73 10.75 9.61 10 12 10C13.29 10 14.45 10.23 15.44 10.55M21.8 16H17.5V13.5C17.5 12.7 18.2 12.2 19 12.2S20.5 12.7 20.5 13.5V14H21.8V13.5C21.8 12.1 20.4 11 19 11S16.2 12.1 16.2 13.5V16C15.6 16 15 16.6 15 17.2V20.7C15 21.4 15.6 22 16.2 22H21.7C22.4 22 23 21.4 23 20.8V17.3C23 16.6 22.4 16 21.8 16Z"/></svg>"##,
-    slug: "wifi-strength-2-lock-open",
-    version: "5.8.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// home-minus-outline
-pub const HOME_MINUS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-home-minus-outline" viewBox="0 0 24 24"><path d="M14 17H22V19H14V17M5 20V12H2L12 3L22 12H17V10.19L12 5.69L7 10.19V18H12C12 18.7 12.12 19.37 12.34 20H5Z"/></svg>"##,
-    slug: "home-minus-outline",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// transit-connection
-pub const TRANSIT_CONNECTION: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-transit-connection" viewBox="0 0 24 24"><path d="M15,12C15,10.7 14.16,9.6 13,9.18V6.82C14.16,6.4 15,5.3 15,4A3,3 0 0,0 12,1A3,3 0 0,0 9,4C9,5.3 9.84,6.4 11,6.82V9.19C9.84,9.6 9,10.7 9,12C9,13.3 9.84,14.4 11,14.82V17.18C9.84,17.6 9,18.7 9,20A3,3 0 0,0 12,23A3,3 0 0,0 15,20C15,18.7 14.16,17.6 13,17.18V14.82C14.16,14.4 15,13.3 15,12M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M12,21A1,1 0 0,1 11,20A1,1 0 0,1 12,19A1,1 0 0,1 13,20A1,1 0 0,1 12,21Z"/></svg>"##,
-    slug: "transit-connection",
-    version: "3.3.92",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// ear-hearing-off
-pub const EAR_HEARING_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-ear-hearing-off" viewBox="0 0 24 24"><path d="M1,4.27L2.28,3L20,20.72L18.73,22L12.91,16.18C12.19,16.74 11.67,17.19 11.37,18.1C10.77,19.92 10,20.94 8.64,21.65C8.13,21.88 7.57,22 7,22A4,4 0 0,1 3,18H5A2,2 0 0,0 7,20C7.29,20 7.56,19.94 7.76,19.85C8.47,19.5 8.97,18.97 9.47,17.47C9.91,16.12 10.69,15.39 11.5,14.76L5.04,8.31C5,8.54 5,8.77 5,9H3C3,8.17 3.14,7.39 3.39,6.66L1,4.27M14.18,11.94C14.71,11 15,9.93 15,9C15,6.2 12.8,4 10,4C8.81,4 7.74,4.39 6.89,5.06L5.46,3.63C6.67,2.61 8.25,2 10,2C13.93,2 17,5.07 17,9C17,10.26 16.62,11.65 15.93,12.9L15.47,13.65L14.03,12.2L14.18,11.94M16.36,2.64L17.78,1.22C19.77,3.21 21,5.96 21,9C21,11.83 19.93,14.41 18.18,16.36L16.77,14.94C18.15,13.36 19,11.28 19,9C19,6.5 18,4.26 16.36,2.64M12.5,9C12.5,9.5 12.36,9.93 12.13,10.31L8.69,6.87C9.07,6.64 9.5,6.5 10,6.5A2.5,2.5 0 0,1 12.5,9Z"/></svg>"##,
-    slug: "ear-hearing-off",
-    version: "2.6.95",
-    deprecated: false,
-    author: "Henrique César Madeira",
-};
-
-/// share-variant
-pub const SHARE_VARIANT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-share-variant" viewBox="0 0 24 24"><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z"/></svg>"##,
-    slug: "share-variant",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// arrow-top-right-thin-circle-outline
-pub const ARROW_TOP_RIGHT_THIN_CIRCLE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-top-right-thin-circle-outline" viewBox="0 0 24 24"><path d="M12 3.97C7.59 3.97 3.97 7.59 3.97 12C3.97 16.41 7.59 20.03 12 20.03C16.41 20.03 20.03 16.41 20.03 12C20.03 7.59 16.41 3.97 12 3.97M12 2C17.54 2 22 6.46 22 12C22 17.54 17.54 22 12 22C6.46 22 2 17.54 2 12C2 6.46 6.46 2 12 2M13.88 11.53L16 13.64V8H10.36L12.47 10.12L7.5 15.1L8.9 16.5"/></svg>"##,
-    slug: "arrow-top-right-thin-circle-outline",
-    version: "5.5.55",
-    deprecated: false,
-    author: "Google",
-};
-
-/// credit-card-fast
-pub const CREDIT_CARD_FAST: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-credit-card-fast" viewBox="0 0 24 24"><path d="M3 8C2.45 8 2 7.55 2 7S2.45 6 3 6H5.54C5.19 6.6 5 7.29 5 8H3M5 13H2C1.45 13 1 12.55 1 12S1.45 11 2 11H5V13M1 18C.448 18 0 17.55 0 17S.448 16 1 16H5C5 16.71 5.19 17.4 5.54 18H1M21 6H9C7.89 6 7 6.89 7 8V16C7 17.11 7.89 18 9 18H21C22.11 18 23 17.11 23 16V8C23 6.89 22.11 6 21 6M21 12H9V9H21V12Z"/></svg>"##,
-    slug: "credit-card-fast",
-    version: "6.4.95",
+/// aurora
+pub const AURORA: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-aurora" viewBox="0 0 24 24"><path d="M2 3C2.55 3 3 3.45 3 4V13H5V5C5 4.45 5.45 4 6 4C6.55 4 7 4.45 7 5V13H9V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V13H12.5C12.67 13 12.84 13 13 13.05V7C13 6.45 13.45 6 14 6C14.55 6 15 6.45 15 7V15.5C15 16.88 13.88 18 12.5 18H11.5C11.22 18 11 18.22 11 18.5C11 18.78 11.22 19 11.5 19H17V8C17 7.45 17.45 7 18 7C18.55 7 19 7.45 19 8V19H21V9C21 8.45 21.45 8 22 8C22.55 8 23 8.45 23 9V20C23 20.55 22.55 21 22 21H11.5C10.12 21 9 19.88 9 18.5C9 17.12 10.12 16 11.5 16H12.5C12.78 16 13 15.78 13 15.5C13 15.22 12.78 15 12.5 15H2C1.45 15 1 14.55 1 14V4C1 3.45 1.45 3 2 3Z"/></svg>"##,
+    slug: "aurora",
+    version: "7.1.96",
     deprecated: false,
     author: "Jeff Anders",
 };
 
-/// dock-left
-pub const DOCK_LEFT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-dock-left" viewBox="0 0 24 24"><path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 18H9V6H20Z"/></svg>"##,
-    slug: "dock-left",
-    version: "4.2.95",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// engine-off
-pub const ENGINE_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-engine-off" viewBox="0 0 24 24"><path d="M3.78,2.5L21.5,20.22L20.23,21.5L18,19.27V20H10L8,18H5V15H3V18H1V10H3V13H5V10L6.87,8.14L2.5,3.77L3.78,2.5M20,9V12H18V8H12V6H15V4H7.82L22.82,19H23V9H20Z"/></svg>"##,
-    slug: "engine-off",
-    version: "2.6.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// clock-star-four-points-outline
-pub const CLOCK_STAR_FOUR_POINTS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clock-star-four-points-outline" viewBox="0 0 24 24"><path d="M12 20C12.4 20 12.7 20 13.1 19.9C13.2 20.6 13.4 21.3 13.7 21.8C13.2 21.9 12.6 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12C22 12.5 21.92 12.97 21.84 13.5L21.8 13.7C21.2 13.4 20.6 13.2 19.9 13.1C20 12.7 20 12.4 20 12C20 7.6 16.4 4 12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20M12.5 12.3L15.6 14.1C15.2 14.4 14.8 14.7 14.5 15.1L11 13V7H12.5V12.3M17.74 17.75L19 15L20.25 17.75L23 19L20.25 20.26L19 23L17.74 20.26L15 19L17.74 17.75Z"/></svg>"##,
-    slug: "clock-star-four-points-outline",
-    version: "7.2.96",
-    deprecated: false,
-    author: "Jeff Anders",
-};
-
-/// shield-refresh
-pub const SHIELD_REFRESH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-shield-refresh" viewBox="0 0 24 24"><path d="M18 12C19 12 20 12.2 20.9 12.7C21 12.1 21 11.6 21 11V5L12 1L3 5V11C3 16.5 6.8 21.7 12 23C12.4 22.9 12.7 22.8 13 22.7C12 21.5 11.5 20 11.5 18.5C11.5 14.9 14.4 12 18 12M18 14.5C19.1 14.5 20.1 14.9 20.8 15.7L22 14.5V18.5H18L19.8 16.7C19.3 16.3 18.7 16 18 16C16.6 16 15.5 17.1 15.5 18.5S16.6 21 18 21C18.8 21 19.5 20.6 20 20H21.7C21.1 21.5 19.7 22.5 18 22.5C15.8 22.5 14 20.7 14 18.5S15.8 14.5 18 14.5Z"/></svg>"##,
-    slug: "shield-refresh",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// tooltip-image
-pub const TOOLTIP_IMAGE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tooltip-image" viewBox="0 0 24 24"><path d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M19,15V7L15,11L13,9L7,15H19M7,5A2,2 0 0,0 5,7A2,2 0 0,0 7,9A2,2 0 0,0 9,7A2,2 0 0,0 7,5Z"/></svg>"##,
-    slug: "tooltip-image",
+/// temperature-kelvin
+pub const TEMPERATURE_KELVIN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-temperature-kelvin" viewBox="0 0 24 24"><path d="M7,5H10V11L15,5H19L13.88,10.78L19,20H15.38L11.76,13.17L10,15.15V20H7V5Z"/></svg>"##,
+    slug: "temperature-kelvin",
     version: "1.5.54",
     deprecated: false,
     author: "Austin Andrews",
 };
 
-/// email-minus
-pub const EMAIL_MINUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-email-minus" viewBox="0 0 24 24"><path d="M13 19C13 15.69 15.69 13 19 13C20.1 13 21.12 13.3 22 13.81V6C22 4.89 21.1 4 20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M4 8V6L12 11L20 6V8L12 13L4 8M23 18V20H15V18H23Z"/></svg>"##,
-    slug: "email-minus",
-    version: "3.8.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// bug-check
-pub const BUG_CHECK: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bug-check" viewBox="0 0 24 24"><path d="M19 7H16.19C15.74 6.2 15.12 5.5 14.37 5L16 3.41L14.59 2L12.42 4.17C11.96 4.06 11.5 4 11 4S10.05 4.06 9.59 4.17L7.41 2L6 3.41L7.62 5C6.87 5.5 6.26 6.21 5.81 7H3V9H5.09C5.03 9.33 5 9.66 5 10V11H3V13H5V14C5 14.34 5.03 14.67 5.09 15H3V17H5.81C7.26 19.5 10.28 20.61 13 19.65V19C13 16.46 14.61 14.2 17 13.35V13H19V11H17V10C17 9.66 16.97 9.33 16.91 9H19V7M13 15H9V13H13V15M13 11H9V9H13V11M17.75 22.16L15 19.16L16.16 18L17.75 19.59L21.34 16L22.5 17.41L17.75 22.16Z"/></svg>"##,
-    slug: "bug-check",
-    version: "2.6.95",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// receipt-text-check
-pub const RECEIPT_TEXT_CHECK: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-receipt-text-check" viewBox="0 0 24 24"><path d="M18.25 22L15.5 19L16.66 17.82L18.25 19.41L21.84 15.82L23 17.23M19.5 3.5L18 2L16.5 3.5L15 2L13.5 3.5L12 2L10.5 3.5L9 2L7.5 3.5L6 2L4.5 3.5L3 2V22L4.5 20.5L6 22L7.5 20.5L9 22L10.5 20.5L12 22L13.26 20.74C13.09 20.18 13 19.59 13 19C13 18.32 13.12 17.64 13.34 17H6V15H14.53C15.67 13.73 17.29 13 19 13C19.68 13 20.36 13.12 21 13.34V2L19.5 3.5M18 13H6V11H18V13M18 9H6V7H18V9Z"/></svg>"##,
-    slug: "receipt-text-check",
-    version: "6.7.96",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// animation-play
-pub const ANIMATION_PLAY: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-animation-play" viewBox="0 0 24 24"><path d="M4,2H14V4H4V14H2V4C2,2.89 2.89,2 4,2M8,6H18V8H8V18H6V8C6,6.89 6.89,6 8,6M12,10H20C21.11,10 22,10.89 22,12V20C22,21.11 21.11,22 20,22H12C10.89,22 10,21.11 10,20V12C10,10.89 10.89,10 12,10M14,12V20L20,16L14,12Z"/></svg>"##,
-    slug: "animation-play",
-    version: "2.4.85",
-    deprecated: false,
-    author: "Google",
-};
-
-/// weather-sunset-up
-pub const WEATHER_SUNSET_UP: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-weather-sunset-up" viewBox="0 0 24 24"><path d="M3,12H7A5,5 0 0,1 12,7A5,5 0 0,1 17,12H21A1,1 0 0,1 22,13A1,1 0 0,1 21,14H3A1,1 0 0,1 2,13A1,1 0 0,1 3,12M15,12A3,3 0 0,0 12,9A3,3 0 0,0 9,12H15M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64L20.65,7M12.71,16.3L15.82,19.41C16.21,19.8 16.21,20.43 15.82,20.82C15.43,21.21 14.8,21.21 14.41,20.82L12,18.41L9.59,20.82C9.2,21.21 8.57,21.21 8.18,20.82C7.79,20.43 7.79,19.8 8.18,19.41L11.29,16.3C11.5,16.1 11.74,16 12,16C12.26,16 12.5,16.1 12.71,16.3Z"/></svg>"##,
-    slug: "weather-sunset-up",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// currency-btc
-pub const CURRENCY_BTC: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-currency-btc" viewBox="0 0 24 24"><path d="M17.06 11.57C17.65 10.88 18 10 18 9C18 7.14 16.73 5.57 15 5.13V3H13V5H11V3H9V5H6V7H8V17H6V19H9V21H11V19H13V21H15V19C17.21 19 19 17.21 19 15C19 13.55 18.22 12.27 17.06 11.57M10 7H14C15.1 7 16 7.9 16 9S15.1 11 14 11H10V7M15 17H10V13H15C16.1 13 17 13.9 17 15S16.1 17 15 17Z"/></svg>"##,
-    slug: "currency-btc",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// account-minus-outline
-pub const ACCOUNT_MINUS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-minus-outline" viewBox="0 0 24 24"><path d="M15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4M15,5.9C16.16,5.9 17.1,6.84 17.1,8C17.1,9.16 16.16,10.1 15,10.1A2.1,2.1 0 0,1 12.9,8A2.1,2.1 0 0,1 15,5.9M1,10V12H9V10H1M15,13C12.33,13 7,14.33 7,17V20H23V17C23,14.33 17.67,13 15,13M15,14.9C17.97,14.9 21.1,16.36 21.1,17V18.1H8.9V17C8.9,16.36 12,14.9 15,14.9Z"/></svg>"##,
-    slug: "account-minus-outline",
+/// alpha-v-box
+pub const ALPHA_V_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-v-box" viewBox="0 0 24 24"><path d="M9,7L11,17H13L15,7H13L12,12L11,7H9M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z"/></svg>"##,
+    slug: "alpha-v-box",
     version: "2.8.94",
-    deprecated: false,
-    author: "Peter Noble",
-};
-
-/// star-off
-pub const STAR_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-off" viewBox="0 0 24 24"><path d="M20.8 22.7L17.9 19.8L18.2 21L12 17.3L5.8 21L7.4 14L2 9.2L6.9 8.8L1.1 3L2.4 1.7L22.1 21.4L20.8 22.7M22 9.2L14.8 8.6L12 2L10 6.8L16.9 13.7L22 9.2Z"/></svg>"##,
-    slug: "star-off",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// numeric-9-circle-outline
-pub const NUMERIC_9_CIRCLE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-9-circle-outline" viewBox="0 0 24 24"><path d="M13,17H9V15H13V13H11A2,2 0 0,1 9,11V9A2,2 0 0,1 11,7H13A2,2 0 0,1 15,9V15A2,2 0 0,1 13,17M13,11V9H11V11H13M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/></svg>"##,
-    slug: "numeric-9-circle-outline",
-    version: "3.2.89",
-    deprecated: false,
-    author: "Contributors",
-};
-
-/// package-up
-pub const PACKAGE_UP: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-package-up" viewBox="0 0 24 24"><path d="M20.54,5.23C20.83,5.57 21,6 21,6.5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V6.5C3,6 3.17,5.57 3.46,5.23L4.84,3.55C5.12,3.21 5.53,3 6,3H18C18.47,3 18.88,3.21 19.15,3.55L20.54,5.23M5.12,5H18.87L17.93,4H5.93L5.12,5M12,9.5L6.5,15H10V17H14V15H17.5L12,9.5Z"/></svg>"##,
-    slug: "package-up",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// movie-filter-outline
-pub const MOVIE_FILTER_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-movie-filter-outline" viewBox="0 0 24 24"><path d="M10 11L9.06 13.06L7 14L9.06 14.94L10 17L10.94 14.94L13 14L10.94 13.06M18 4L20 8H17L15 4H13L15 8H12L10 4H8L10 8H7L5 4H4C2.91 4 2 4.9 2 6L2 18C2 19.1 2.91 20 4 20H20C21.11 20 22 19.1 22 18V4H18M20 18H4V6.47L5.77 10H16L15.37 11.37L14 12L15.37 12.63L16 14L16.63 12.63L18 12L16.63 11.37L16 10H20V18Z"/></svg>"##,
-    slug: "movie-filter-outline",
-    version: "4.3.95",
-    deprecated: false,
-    author: "Google",
-};
-
-/// folder-star-multiple
-pub const FOLDER_STAR_MULTIPLE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-folder-star-multiple" viewBox="0 0 24 24"><path d="M2 6H0V20C0 21.11 .895 22 2 22H20V20H2V6M22 4H14L12 2H6C4.89 2 4 2.89 4 4V16C4 17.1 4.89 18 6 18H22C23.11 18 24 17.1 24 16V6C24 4.89 23.11 4 22 4M19.94 15L17 13.27L14.06 15L14.84 11.66L12.25 9.42L15.66 9.13L17 6L18.34 9.13L21.75 9.42L19.16 11.66L19.94 15Z"/></svg>"##,
-    slug: "folder-star-multiple",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// book-search-outline
-pub const BOOK_SEARCH_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-search-outline" viewBox="0 0 24 24"><path d="M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.21 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14M13,4V12L10.5,9.75L8,12V4H6V20H10C10.54,20.81 11.23,21.5 12.03,22H6A2,2 0 0,1 4,20V4A2,2 0 0,1 6,2H18A2,2 0 0,1 20,4V11.81C19.42,11.26 18.75,10.81 18,10.5V4H13Z"/></svg>"##,
-    slug: "book-search-outline",
-    version: "3.7.94",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// hand-front-right
-pub const HAND_FRONT_RIGHT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-hand-front-right" viewBox="0 0 24 24"><path d="M19.75 8C19.06 8 18.5 8.56 18.5 9.25V15H18C16.35 15 15 16.35 15 18H14C14 15.96 15.53 14.28 17.5 14.03V3.25C17.5 2.56 16.94 2 16.25 2C15.56 2 15 2.56 15 3.25V11H14V1.25C14 .56 13.44 0 12.75 0S11.5 .56 11.5 1.25V11H10.5V2.75C10.5 2.06 9.94 1.5 9.25 1.5S8 2.06 8 2.75V12H7V5.75C7 5.06 6.44 4.5 5.75 4.5S4.5 5.06 4.5 5.75V15.75C4.5 20.31 8.19 24 12.75 24S21 20.31 21 15.75V9.25C21 8.56 20.44 8 19.75 8Z"/></svg>"##,
-    slug: "hand-front-right",
-    version: "2.6.95",
-    deprecated: false,
-    author: "Google",
-};
-
-/// faucet
-pub const FAUCET: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-faucet" viewBox="0 0 24 24"><path d="M19 14V16H16V14.28L19 14M19 13C19 11.9 18 11 16.8 11H10V10H5V21H10V13.91L19 13M5 9H10V7L15.36 5.21C15.74 5.09 16 4.73 16 4.33C16 3.68 15.36 3.23 14.75 3.45L5 7V9Z"/></svg>"##,
-    slug: "faucet",
-    version: "6.9.96",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// laptop-account
-pub const LAPTOP_ACCOUNT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-laptop-account" viewBox="0 0 24 24"><path d="M20 4C21.1 4 22 4.89 22 6V16C22 17.11 21.11 18 20 18H24V20H0V18H4C2.9 18 2 17.11 2 16V6C2 4.89 2.89 4 4 4H20M20 6H4V16H20V6M12 12C14.21 12 16 12.9 16 14V15H8V14C8 12.9 9.79 12 12 12M12 7C13.11 7 14 7.9 14 9S13.11 11 12 11 10 10.11 10 9 10.9 7 12 7Z"/></svg>"##,
-    slug: "laptop-account",
-    version: "6.7.96",
-    deprecated: false,
-    author: "John Brissette",
-};
-
-/// briefcase-upload-outline
-pub const BRIEFCASE_UPLOAD_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-briefcase-upload-outline" viewBox="0 0 24 24"><path d="M12,9L17,14H14V18H10V14H7L12,9M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14M4,8V19H20V8H4Z"/></svg>"##,
-    slug: "briefcase-upload-outline",
-    version: "3.2.89",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// restart
-pub const RESTART: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-restart" viewBox="0 0 24 24"><path d="M12,4C14.1,4 16.1,4.8 17.6,6.3C20.7,9.4 20.7,14.5 17.6,17.6C15.8,19.5 13.3,20.2 10.9,19.9L11.4,17.9C13.1,18.1 14.9,17.5 16.2,16.2C18.5,13.9 18.5,10.1 16.2,7.7C15.1,6.6 13.5,6 12,6V10.6L7,5.6L12,0.6V4M6.3,17.6C3.7,15 3.3,11 5.1,7.9L6.6,9.4C5.5,11.6 5.9,14.4 7.8,16.2C8.3,16.7 8.9,17.1 9.6,17.4L9,19.4C8,19 7.1,18.4 6.3,17.6Z"/></svg>"##,
-    slug: "restart",
-    version: "1.8.36",
-    deprecated: false,
-    author: "Google",
-};
-
-/// email-box
-pub const EMAIL_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-email-box" viewBox="0 0 24 24"><path d="M5,3A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5M6.4,6.5H17.6C18.37,6.5 19,7.12 19,7.9V16.1A1.4,1.4 0 0,1 17.6,17.5H6.4C5.63,17.5 5,16.87 5,16.1V7.9C5,7.12 5.62,6.5 6.4,6.5M6,8V10L12,14L18,10V8L12,12L6,8Z"/></svg>"##,
-    slug: "email-box",
-    version: "3.3.92",
     deprecated: false,
     author: "GreenTurtwig",
 };
 
-/// medical-cotton-swab
-pub const MEDICAL_COTTON_SWAB: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-medical-cotton-swab" viewBox="0 0 24 24"><path d="M3 3H15V5H3V3M2 21H16V6H2V21M5 12H7.5V9.5H10.5V12H13V15H10.5V17.5H7.5V15H5V12M20 6C18.3 6 17 7.8 17 10C17 11.8 17.8 13.2 19 13.8V21H21V13.8C22.2 13.3 23 11.8 23 10C23 7.8 21.7 6 20 6Z"/></svg>"##,
-    slug: "medical-cotton-swab",
-    version: "6.8.96",
-    deprecated: false,
-    author: "Google",
-};
-
-/// leak-off
-pub const LEAK_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-leak-off" viewBox="0 0 24 24"><path d="M10,3H8C8,3.37 7.96,3.72 7.88,4.06L9.47,5.65C9.81,4.84 10,3.94 10,3M3,4.27L5.84,7.11C5.03,7.67 4.06,8 3,8V10C4.61,10 6.09,9.45 7.27,8.54L8.7,9.97C7.14,11.24 5.16,12 3,12V14C5.71,14 8.19,13 10.11,11.38L12.61,13.88C11,15.81 10,18.29 10,21H12C12,18.84 12.76,16.86 14.03,15.31L15.46,16.74C14.55,17.91 14,19.39 14,21H16C16,19.94 16.33,18.97 16.89,18.16L19.73,21L21,19.73L4.27,3L3,4.27M14,3H12C12,4.5 11.63,5.91 11,7.16L12.44,8.62C13.42,7 14,5.06 14,3M19.94,16.12C20.28,16.04 20.63,16 21,16V14C20.06,14 19.16,14.19 18.34,14.5L19.94,16.12M15.38,11.56L16.84,13C18.09,12.37 19.5,12 21,12V10C18.94,10 17,10.58 15.38,11.56Z"/></svg>"##,
-    slug: "leak-off",
-    version: "3.5.94",
-    deprecated: false,
-    author: "Google",
-};
-
-/// phone-return
-pub const PHONE_RETURN: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-phone-return" viewBox="0 0 24 24"><path d="M21,6V11H19.5V7.5H13.87L16.3,9.93L15.24,11L11,6.75L15.24,2.5L16.3,3.57L13.87,6H21M8.82,8.58C9.08,8.32 9.17,7.93 9.06,7.58C8.69,6.42 8.5,5.22 8.5,4A1,1 0 0,0 7.5,3H4A1,1 0 0,0 3,4A17,17 0 0,0 20,21A1,1 0 0,0 21,20V16.5A1,1 0 0,0 20,15.5C18.79,15.5 17.58,15.31 16.43,14.93C16.08,14.82 15.69,14.91 15.43,15.17L13.23,17.37C10.39,15.92 8.09,13.62 6.64,10.78L8.82,8.58Z"/></svg>"##,
-    slug: "phone-return",
-    version: "2.1.19",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// waves
-pub const WAVES: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-waves" viewBox="0 0 24 24"><path d="M20,12H22V14H20C18.62,14 17.26,13.65 16,13C13.5,14.3 10.5,14.3 8,13C6.74,13.65 5.37,14 4,14H2V12H4C5.39,12 6.78,11.53 8,10.67C10.44,12.38 13.56,12.38 16,10.67C17.22,11.53 18.61,12 20,12M20,6H22V8H20C18.62,8 17.26,7.65 16,7C13.5,8.3 10.5,8.3 8,7C6.74,7.65 5.37,8 4,8H2V6H4C5.39,6 6.78,5.53 8,4.67C10.44,6.38 13.56,6.38 16,4.67C17.22,5.53 18.61,6 20,6M20,18H22V20H20C18.62,20 17.26,19.65 16,19C13.5,20.3 10.5,20.3 8,19C6.74,19.65 5.37,20 4,20H2V18H4C5.39,18 6.78,17.53 8,16.67C10.44,18.38 13.56,18.38 16,16.67C17.22,17.53 18.61,18 20,18Z"/></svg>"##,
-    slug: "waves",
-    version: "1.9.32",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// briefcase-remove-outline
-pub const BRIEFCASE_REMOVE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-briefcase-remove-outline" viewBox="0 0 24 24"><path d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V13.53C21.42,13 20.75,12.6 20,12.34V8H4V19H12.08C12.2,19.72 12.45,20.39 12.8,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14M14.46,15.88L15.88,14.46L18,16.59L20.12,14.46L21.54,15.88L19.41,18L21.54,20.12L20.12,21.54L18,19.41L15.88,21.54L14.46,20.12L16.59,18L14.46,15.88Z"/></svg>"##,
-    slug: "briefcase-remove-outline",
-    version: "3.2.89",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// wifi-arrow-up
-pub const WIFI_ARROW_UP: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-wifi-arrow-up" viewBox="0 0 24 24"><path d="M12 12C9.97 12 8.1 12.67 6.6 13.8L4.8 11.4C6.81 9.89 9.3 9 12 9S17.19 9.89 19.2 11.4L17.92 13.1C17.55 13.17 17.18 13.27 16.84 13.41C15.44 12.5 13.78 12 12 12M21 9L22.8 6.6C19.79 4.34 16.05 3 12 3S4.21 4.34 1.2 6.6L3 9C5.5 7.12 8.62 6 12 6S18.5 7.12 21 9M12 15C10.65 15 9.4 15.45 8.4 16.2L12 21L13.04 19.61C13 19.41 13 19.21 13 19C13 17.66 13.44 16.43 14.19 15.43C13.5 15.16 12.77 15 12 15M16 18H18V22H20V18H22L19 15L16 18Z"/></svg>"##,
-    slug: "wifi-arrow-up",
-    version: "5.8.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// account-tie-voice-off-outline
-pub const ACCOUNT_TIE_VOICE_OFF_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-tie-voice-off-outline" viewBox="0 0 24 24"><path d="M9.22 6L7.5 4.3C7.96 4.11 8.47 4 9 4C11.21 4 13 5.79 13 8C13 8.53 12.89 9.04 12.7 9.5L11 7.78C10.87 6.86 10.14 6.13 9.22 6M20.06 15C23.96 11.11 24 5.05 20.06 1L18.43 2.63C21.2 5.65 21.2 10.19 18.43 13.37L20.06 15M16.75 11.63C18.77 9.61 18.77 6.56 16.75 4.36L15.07 6.05C15.91 7.23 15.91 8.76 15.07 9.94L16.75 11.63M2.39 1.73L1.11 3L5.14 7.03C5.06 7.34 5 7.66 5 8C5 10.21 6.79 12 9 12C9.34 12 9.66 11.94 9.97 11.86L12.86 14.75L12.73 15L12.5 15.5C13.3 15.74 13.97 16.05 14.44 16.33L15.1 17V20.1H10.88L10 15.03L10.94 13.15C10.32 13.08 9.67 13.03 9 13.03S7.68 13.08 7.06 13.15L8 15.03L7.12 20.1H2.9V17C2.9 16.62 4 15.96 5.5 15.5L5.27 15L4.65 13.76C2.69 14.42 1 15.5 1 17V22H17V18.89L20.84 22.73L22.11 21.46L2.39 1.73Z"/></svg>"##,
-    slug: "account-tie-voice-off-outline",
-    version: "4.8.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// account-convert-outline
-pub const ACCOUNT_CONVERT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-convert-outline" viewBox="0 0 24 24"><path d="M12 0L11.34 .03L15.15 3.84L16.5 2.5C19.75 4.07 22.09 7.24 22.45 11H23.95C23.44 4.84 18.29 0 12 0M12 4C10.07 4 8.5 5.57 8.5 7.5C8.5 9.43 10.07 11 12 11C13.93 11 15.5 9.43 15.5 7.5C15.5 5.57 13.93 4 12 4M12 6C12.83 6 13.5 6.67 13.5 7.5C13.5 8.33 12.83 9 12 9C11.17 9 10.5 8.33 10.5 7.5C10.5 6.67 11.17 6 12 6M.05 13C.56 19.16 5.71 24 12 24L12.66 23.97L8.85 20.16L7.5 21.5C4.25 19.94 1.91 16.76 1.55 13H.05M12 13C8.13 13 5 14.57 5 16.5V18H19V16.5C19 14.57 15.87 13 12 13M12 15C14.11 15 15.61 15.53 16.39 16H7.61C8.39 15.53 9.89 15 12 15Z"/></svg>"##,
-    slug: "account-convert-outline",
-    version: "4.8.95",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// arrow-u-down-left
-pub const ARROW_U_DOWN_LEFT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-u-down-left" viewBox="0 0 24 24"><path d="M20 10.5V18H18V10.5C18 8 16 6 13.5 6S9 8 9 10.5V16.17L12.09 13.09L13.5 14.5L8 20L2.5 14.5L3.91 13.08L7 16.17V10.5C7 6.91 9.91 4 13.5 4S20 6.91 20 10.5Z"/></svg>"##,
-    slug: "arrow-u-down-left",
+/// arrow-right-top
+pub const ARROW_RIGHT_TOP: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-top" viewBox="0 0 24 24"><path d="M20 8L14.5 13.5L13.09 12.09L16.17 9H10.5C8 9 6 11 6 13.5V20H4V13.5C4 9.91 6.91 7 10.5 7H16.17L13.08 3.91L14.5 2.5L20 8Z"/></svg>"##,
+    slug: "arrow-right-top",
     version: "6.1.95",
     deprecated: false,
     author: "Colton Wiscombe",
 };
 
-/// cellphone-cog
-pub const CELLPHONE_COG: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cellphone-cog" viewBox="0 0 24 24"><path d="M9.82,12.5C9.84,12.33 9.86,12.17 9.86,12C9.86,11.83 9.84,11.67 9.82,11.5L10.9,10.69C11,10.62 11,10.5 10.96,10.37L9.93,8.64C9.87,8.53 9.73,8.5 9.62,8.53L8.34,9.03C8.07,8.83 7.78,8.67 7.47,8.54L7.27,7.21C7.27,7.09 7.16,7 7.03,7H5C4.85,7 4.74,7.09 4.72,7.21L4.5,8.53C4.21,8.65 3.92,8.83 3.65,9L2.37,8.5C2.25,8.47 2.12,8.5 2.06,8.63L1.03,10.36C0.97,10.5 1,10.61 1.1,10.69L2.18,11.5C2.16,11.67 2.15,11.84 2.15,12C2.15,12.17 2.17,12.33 2.19,12.5L1.1,13.32C1,13.39 1,13.53 1.04,13.64L2.07,15.37C2.13,15.5 2.27,15.5 2.38,15.5L3.66,15C3.93,15.18 4.22,15.34 4.53,15.47L4.73,16.79C4.74,16.91 4.85,17 5,17H7.04C7.17,17 7.28,16.91 7.29,16.79L7.5,15.47C7.8,15.35 8.09,15.17 8.36,15L9.64,15.5C9.76,15.53 9.89,15.5 9.95,15.37L11,13.64C11.04,13.53 11,13.4 10.92,13.32L9.82,12.5M6,13.75C5,13.75 4.2,12.97 4.2,12C4.2,11.03 5,10.25 6,10.25C7,10.25 7.8,11.03 7.8,12C7.8,12.97 7,13.75 6,13.75M17,1H7A2,2 0 0,0 5,3V6H7V4H17V20H7V18H5V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3A2,2 0 0,0 17,1Z"/></svg>"##,
-    slug: "cellphone-cog",
-    version: "2.4.85",
-    deprecated: false,
-    author: "Google",
-};
-
-/// alert-octagram-outline
-pub const ALERT_OCTAGRAM_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alert-octagram-outline" viewBox="0 0 24 24"><path d="M2.2,16.06L3.88,12L2.2,7.94L6.26,6.26L7.94,2.2L12,3.88L16.06,2.2L17.74,6.26L21.8,7.94L20.12,12L21.8,16.06L17.74,17.74L16.06,21.8L12,20.12L7.94,21.8L6.26,17.74L2.2,16.06M4.81,9L6.05,12L4.81,15L7.79,16.21L9,19.19L12,17.95L15,19.19L16.21,16.21L19.19,15L17.95,12L19.19,9L16.21,7.79L15,4.81L12,6.05L9,4.81L7.79,7.79L4.81,9M11,15H13V17H11V15M11,7H13V13H11V7"/></svg>"##,
-    slug: "alert-octagram-outline",
-    version: "3.3.92",
-    deprecated: false,
-    author: "Peter Noble",
-};
-
-/// sync-circle
-pub const SYNC_CIRCLE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-sync-circle" viewBox="0 0 24 24"><path d="M2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12M15.6 13.72A4 4 0 0 0 16 12A4 4 0 0 0 12 8V10L8.88 7L12 4V6A6 6 0 0 1 18 12A5.9 5.9 0 0 1 17.07 15.19M6 12A5.9 5.9 0 0 1 6.93 8.81L8.4 10.28A4 4 0 0 0 8 12A4 4 0 0 0 12 16V14L15 17L12 20V18A6 6 0 0 1 6 12Z"/></svg>"##,
-    slug: "sync-circle",
-    version: "4.9.95",
-    deprecated: false,
-    author: "François Risoud",
-};
-
-/// eject-outline
-pub const EJECT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-eject-outline" viewBox="0 0 24 24"><path d="M5,17H19V19H5V17M12,5L5.33,15H18.67L12,5M12,8.6L14.93,13H9.07L12,8.6Z"/></svg>"##,
-    slug: "eject-outline",
-    version: "3.0.39",
-    deprecated: false,
-    author: "Google",
-};
-
-/// plus-circle-outline
-pub const PLUS_CIRCLE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-plus-circle-outline" viewBox="0 0 24 24"><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>"##,
-    slug: "plus-circle-outline",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// switch
-pub const SWITCH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-switch" viewBox="0 0 24 24"><path d="M13,18H14A1,1 0 0,1 15,19H22V21H15A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21H2V19H9A1,1 0 0,1 10,18H11V16H8A1,1 0 0,1 7,15V3A1,1 0 0,1 8,2H16A1,1 0 0,1 17,3V15A1,1 0 0,1 16,16H13V18M13,6H14V4H13V6M9,4V6H11V4H9M9,8V10H11V8H9M9,12V14H11V12H9Z"/></svg>"##,
-    slug: "switch",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// page-previous-outline
-pub const PAGE_PREVIOUS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-page-previous-outline" viewBox="0 0 24 24"><path d="M2,3H19A2,2 0 0,1 21,5V9H19V5H2V19H19V15H21V19A2,2 0 0,1 19,21H2A2,2 0 0,1 0,19V5A2,2 0 0,1 2,3M17,15V13H24V11H17V9L13,12L17,15M4,13H11V11H4V13M4,9H11V7H4V9M4,17H8V15H4V17Z"/></svg>"##,
-    slug: "page-previous-outline",
-    version: "3.0.39",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// tooltip
-pub const TOOLTIP: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tooltip" viewBox="0 0 24 24"><path d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2Z"/></svg>"##,
-    slug: "tooltip",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// numeric-8-box
-pub const NUMERIC_8_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-8-box" viewBox="0 0 24 24"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M11,17H13A2,2 0 0,0 15,15V13.5A1.5,1.5 0 0,0 13.5,12A1.5,1.5 0 0,0 15,10.5V9C15,7.89 14.1,7 13,7H11A2,2 0 0,0 9,9V10.5A1.5,1.5 0 0,0 10.5,12A1.5,1.5 0 0,0 9,13.5V15C9,16.11 9.9,17 11,17M11,13H13V15H11V13M11,9H13V11H11V9Z"/></svg>"##,
-    slug: "numeric-8-box",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// subdirectory-arrow-left
-pub const SUBDIRECTORY_ARROW_LEFT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-subdirectory-arrow-left" viewBox="0 0 24 24"><path d="M11,9L12.42,10.42L8.83,14H18V4H20V16H8.83L12.42,19.58L11,21L5,15L11,9Z"/></svg>"##,
-    slug: "subdirectory-arrow-left",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// gas-station-off-outline
-pub const GAS_STATION_OFF_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-gas-station-off-outline" viewBox="0 0 24 24"><path d="M1 4.27L2.28 3L6 6.72L21 21.72L19.73 23L17.72 21C16.56 20.85 15.65 19.94 15.5 18.78L14 17.27V21H4V7.27L1 4.27M19.77 7.23C20.22 7.68 20.5 8.31 20.5 9L20.5 18.67L19 17.18V11.29C18.69 11.42 18.36 11.5 18 11.5C16.62 11.5 15.5 10.38 15.5 9C15.5 7.93 16.17 7.03 17.11 6.67L15 4.56L16.06 3.5L19.78 7.22L19.77 7.23M11.82 10H12V5H6.82L5.06 3.24C5.34 3.09 5.66 3 6 3H12C13.1 3 14 3.9 14 5V12H15C16.1 12 17 12.9 17 14V15.18L11.82 10M6 10H6.73L6 9.27V10M6 12V19H12V15.27L8.73 12H6M18 10C18.55 10 19 9.55 19 9C19 8.45 18.55 8 18 8C17.45 8 17 8.45 17 9C17 9.55 17.45 10 18 10Z"/></svg>"##,
-    slug: "gas-station-off-outline",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// download-lock-outline
-pub const DOWNLOAD_LOCK_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-download-lock-outline" viewBox="0 0 24 24"><path d="M22 16A1.08 1.08 0 0 1 23 17V21A1.08 1.08 0 0 1 22 22H17A1.08 1.08 0 0 1 16 21V17A1.08 1.08 0 0 1 17 16V14.5A2.5 2.5 0 0 1 22 14.5V16M21 16V14.5A1.5 1.5 0 0 0 18 14.5V16H21M13 5V11H14.17L12 13.17L9.83 11H11V5H13M15 3H9V9H5L12 16L19 9H15V3M14 18H5V20H14Z"/></svg>"##,
-    slug: "download-lock-outline",
-    version: "4.9.95",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// tag-search
-pub const TAG_SEARCH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag-search" viewBox="0 0 24 24"><path d="M21.41 11.58L12.41 2.58C12.05 2.22 11.55 2 11 2H4C2.89 2 2 2.89 2 4V11C2 11.55 2.22 12.05 2.59 12.41L11.58 21.41C11.95 21.77 12.45 22 13 22S14.05 21.77 14.41 21.41L14.83 21C11.6 20.9 9 18.26 9 15C9 11.69 11.69 9 15 9C18.26 9 20.9 11.6 21 14.83L21.41 14.41C21.78 14.05 22 13.55 22 13C22 12.44 21.77 11.94 21.41 11.58M5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7M15.11 10.61C17.61 10.61 19.61 12.61 19.61 15.11C19.61 16 19.36 16.82 18.92 17.5L22 20.61L20.61 22L17.5 18.93C16.8 19.36 16 19.61 15.11 19.61C12.61 19.61 10.61 17.61 10.61 15.11S12.61 10.61 15.11 10.61M15.11 12.61C13.73 12.61 12.61 13.73 12.61 15.11S13.73 17.61 15.11 17.61 17.61 16.5 17.61 15.11 16.5 12.61 15.11 12.61"/></svg>"##,
-    slug: "tag-search",
-    version: "6.4.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// message-arrow-left
-pub const MESSAGE_ARROW_LEFT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-message-arrow-left" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M16 11H11.5L13.3 12.8L12 14L8 10L12 6L13.2 7.2L11.5 9H16V11Z"/></svg>"##,
-    slug: "message-arrow-left",
-    version: "4.8.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// emoticon-frown-outline
-pub const EMOTICON_FROWN_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-emoticon-frown-outline" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.5 2 12S6.47 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M12 20C7.58 20 4 16.42 4 12S7.58 4 12 4 20 7.58 20 12 16.42 20 12 20M15.5 11C16.33 11 17 10.33 17 9.5S16.33 8 15.5 8 14 8.67 14 9.5 14.67 11 15.5 11M8.5 11C9.33 11 10 10.33 10 9.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11M12 13.5C9.67 13.5 7.69 14.96 6.89 17H17.11C16.31 14.96 14.33 13.5 12 13.5Z"/></svg>"##,
-    slug: "emoticon-frown-outline",
-    version: "3.9.97",
-    deprecated: false,
-    author: "Google",
-};
-
-/// shield-moon
-pub const SHIELD_MOON: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-shield-moon" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1M15.97 14.41C14.13 16.58 10.76 16.5 9 14.34C6.82 11.62 8.36 7.62 11.7 7C12.04 6.95 12.33 7.28 12.21 7.61C11.75 8.84 11.82 10.25 12.53 11.47C13.24 12.69 14.42 13.46 15.71 13.67C16.05 13.72 16.2 14.14 15.97 14.41Z"/></svg>"##,
-    slug: "shield-moon",
-    version: "6.1.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// lightbulb-cfl
-pub const LIGHTBULB_CFL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-lightbulb-cfl" viewBox="0 0 24 24"><path d="M10.5 2C11.88 2 13 3.12 13 4.5V14H14V4.47C14 3.56 13.63 2.7 13 2.05C13.17 2 13.33 2 13.5 2C14.88 2 16 3.12 16 4.5V14H17V17C17 17.55 16.55 18 16 18H8C7.45 18 7 17.55 7 17V14H8V4.5C8 3.12 9.12 2 10.5 2M10.5 4C10.22 4 10 4.22 10 4.5V14H11V4.5C11 4.22 10.78 4 10.5 4M9 20H15V21C15 21.55 14.55 22 14 22H10C9.45 22 9 21.55 9 21V20Z"/></svg>"##,
-    slug: "lightbulb-cfl",
+/// table-headers-eye-off
+pub const TABLE_HEADERS_EYE_OFF: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-headers-eye-off" viewBox="0 0 24 24"><path d="M2.38 1.73L1.11 3L2.26 4.15A2 2 0 0 0 1 6V19A2 2 0 0 0 3 21H9V11H9.11L12.72 14.61A6.21 6.21 0 0 0 11 17A6.45 6.45 0 0 0 17 21A6.55 6.55 0 0 0 18.84 20.73L20.84 22.73L22.11 21.46L20.58 19.93M7 19H3V16H7M7 14H3V11H7M7 9H3V6H4.11L7 8.89M17 19.5A2.5 2.5 0 0 1 14.56 16.45L17.56 19.45A2.5 2.5 0 0 1 17 19.5M16.24 13L17.85 14.61A2.5 2.5 0 0 1 19.35 16.11L21.94 18.7A6.44 6.44 0 0 0 23 17A6.45 6.45 0 0 0 17 13H16.24M13 6V9H12.2L14.2 11H21V6A2 2 0 0 0 19 4H7.2L9.2 6M15 6H19V9H15Z"/></svg>"##,
+    slug: "table-headers-eye-off",
     version: "4.6.95",
     deprecated: false,
-    author: "GreenTurtwig",
-};
-
-/// email-alert-outline
-pub const EMAIL_ALERT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-email-alert-outline" viewBox="0 0 24 24"><path d="M24 7H22V13H24V7M24 15H22V17H24V15M20 6C20 4.9 19.1 4 18 4H2C.9 4 0 4.9 0 6V18C0 19.1 .9 20 2 20H18C19.1 20 20 19.1 20 18V6M18 6L10 11L2 6H18M18 18H2V8L10 13L18 8V18Z"/></svg>"##,
-    slug: "email-alert-outline",
-    version: "3.4.93",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// basket-check
-pub const BASKET_CHECK: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-basket-check" viewBox="0 0 24 24"><path d="M21.63 16.27L17.76 20.17L16.41 18.8L15 20.22L17.75 23L23.03 17.68L21.63 16.27M13 20C13 16.69 15.69 14 19 14C20 14 20.92 14.24 21.74 14.67L22.96 10.29L23 10C23 9.45 22.55 9 22 9H17.42L12.83 2.44C12.65 2.17 12.34 2 12 2S11.36 2.17 11.18 2.43L6.58 9H2C1.45 9 1 9.45 1 10L1.1 10.44L3.71 19.9C4.04 20.55 4.72 21 5.5 21H13.09C13.04 20.67 13 20.34 13 20M12 4.74L15 9H9L12 4.74M10 15C10 13.9 10.9 13 12 13S14 13.9 14 15 13.11 17 12 17 10 16.11 10 15Z"/></svg>"##,
-    slug: "basket-check",
-    version: "6.3.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// image-minus
-pub const IMAGE_MINUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-image-minus" viewBox="0 0 24 24"><path d="M15 18V20H23V18H15M13.3 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H19C20.1 3 21 3.9 21 5V13.3C20.4 13.1 19.7 13 19 13C17.9 13 16.8 13.3 15.9 13.9L14.5 12L11 16.5L8.5 13.5L5 18H13.1C13 18.3 13 18.7 13 19C13 19.7 13.1 20.4 13.3 21Z"/></svg>"##,
-    slug: "image-minus",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// star-face
-pub const STAR_FACE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-face" viewBox="0 0 24 24"><path d="M12,2.5L8.42,8.06L2,9.74L6.2,14.88L5.82,21.5L12,19.09L18.18,21.5L17.8,14.88L22,9.74L15.58,8.06L12,2.5M9.38,10.5C10,10.5 10.5,11 10.5,11.63A1.12,1.12 0 0,1 9.38,12.75C8.75,12.75 8.25,12.25 8.25,11.63C8.25,11 8.75,10.5 9.38,10.5M14.63,10.5C15.25,10.5 15.75,11 15.75,11.63A1.12,1.12 0 0,1 14.63,12.75C14,12.75 13.5,12.25 13.5,11.63C13.5,11 14,10.5 14.63,10.5M9,15H15C14.5,16.21 13.31,17 12,17C10.69,17 9.5,16.21 9,15Z"/></svg>"##,
-    slug: "star-face",
-    version: "2.4.85",
-    deprecated: false,
-    author: "Google",
-};
-
-/// camera-metering-matrix
-pub const CAMERA_METERING_MATRIX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-camera-metering-matrix" viewBox="0 0 24 24"><path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M4,6V18H20V6H4M5.5,7.5H11V9.17C10.15,9.47 9.47,10.15 9.17,11H5.5V7.5M18.5,7.5V11H14.83C14.53,10.15 13.85,9.47 13,9.17V7.5H18.5M18.5,16.5H13V14.83C13.85,14.53 14.53,13.85 14.83,13H18.5V16.5M5.5,16.5V13H9.17C9.47,13.85 10.15,14.53 11,14.83V16.5H5.5M12,10.5A1.5,1.5 0 0,1 13.5,12A1.5,1.5 0 0,1 12,13.5A1.5,1.5 0 0,1 10.5,12A1.5,1.5 0 0,1 12,10.5Z"/></svg>"##,
-    slug: "camera-metering-matrix",
-    version: "2.0.46",
-    deprecated: false,
-    author: "Andy Martinez",
-};
-
-/// heart-cog
-pub const HEART_COG: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-heart-cog" viewBox="0 0 24 24"><path d="M12 19C12 19.71 12.12 20.4 12.32 21.06L12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 9.8 21.59 11 20.84 12.25C20.25 12.09 19.63 12 19 12C15.14 12 12 15.14 12 19M23.83 20.64L22.83 22.37C22.76 22.5 22.63 22.5 22.5 22.5L21.27 22C21 22.18 20.73 22.34 20.43 22.47L20.24 23.79C20.22 23.91 20.11 24 20 24H18C17.86 24 17.76 23.91 17.74 23.79L17.55 22.47C17.24 22.35 16.96 22.18 16.7 22L15.46 22.5C15.34 22.5 15.21 22.5 15.15 22.37L14.15 20.64C14.09 20.53 14.12 20.4 14.21 20.32L15.27 19.5C15.25 19.33 15.24 19.17 15.24 19S15.25 18.67 15.27 18.5L14.21 17.68C14.11 17.6 14.09 17.47 14.15 17.36L15.15 15.63C15.22 15.5 15.35 15.5 15.46 15.5L16.7 16C16.96 15.82 17.25 15.66 17.55 15.53L17.74 14.21C17.76 14.09 17.87 14 18 14H20C20.11 14 20.22 14.09 20.23 14.21L20.42 15.53C20.73 15.65 21 15.82 21.27 16L22.5 15.5C22.63 15.5 22.76 15.5 22.82 15.63L23.82 17.36C23.88 17.47 23.85 17.6 23.76 17.68L22.7 18.5C22.73 18.67 22.74 18.83 22.74 19S22.72 19.33 22.7 19.5L23.77 20.32C23.86 20.4 23.89 20.53 23.83 20.64M20.5 19C20.5 18.17 19.83 17.5 19 17.5S17.5 18.17 17.5 19 18.16 20.5 19 20.5C19.83 20.5 20.5 19.83 20.5 19Z"/></svg>"##,
-    slug: "heart-cog",
-    version: "5.7.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// blinds-horizontal
-pub const BLINDS_HORIZONTAL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-blinds-horizontal" viewBox="0 0 24 24"><path d="M20 19V3H4V19H2V21H22V19H20M16 9H18V11H16V9M14 11H6V9H14V11M18 7H16V5H18V7M14 5V7H6V5H14M6 19V13H14V14.82C13.55 15.14 13.25 15.66 13.25 16.25C13.25 17.22 14.03 18 15 18S16.75 17.22 16.75 16.25C16.75 15.66 16.45 15.13 16 14.82V13H18V19H6Z"/></svg>"##,
-    slug: "blinds-horizontal",
-    version: "6.7.96",
-    deprecated: false,
-    author: "Google",
-};
-
-/// numeric-negative-1
-pub const NUMERIC_NEGATIVE_1: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-negative-1" viewBox="0 0 24 24"><path d="M13 7V9H15V17H17V7H13M11 13H5V11H11V13Z"/></svg>"##,
-    slug: "numeric-negative-1",
-    version: "4.1.95",
-    deprecated: false,
-    author: "Contributors",
-};
-
-/// recycle
-pub const RECYCLE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-recycle" viewBox="0 0 24 24"><path d="M21.82,15.42L19.32,19.75C18.83,20.61 17.92,21.06 17,21H15V23L12.5,18.5L15,14V16H17.82L15.6,12.15L19.93,9.65L21.73,12.77C22.25,13.54 22.32,14.57 21.82,15.42M9.21,3.06H14.21C15.19,3.06 16.04,3.63 16.45,4.45L17.45,6.19L19.18,5.19L16.54,9.6L11.39,9.69L13.12,8.69L11.71,6.24L9.5,10.09L5.16,7.59L6.96,4.47C7.37,3.64 8.22,3.06 9.21,3.06M5.05,19.76L2.55,15.43C2.06,14.58 2.13,13.56 2.64,12.79L3.64,11.06L1.91,10.06L7.05,10.14L9.7,14.56L7.97,13.56L6.56,16H11V21H7.4C6.47,21.07 5.55,20.61 5.05,19.76Z"/></svg>"##,
-    slug: "recycle",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// crop-square
-pub const CROP_SQUARE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-crop-square" viewBox="0 0 24 24"><path d="M18,18H6V6H18M18,4H6A2,2 0 0,0 4,6V18A2,2 0 0,0 6,20H18A2,2 0 0,0 20,18V6C20,4.89 19.1,4 18,4Z"/></svg>"##,
-    slug: "crop-square",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// nail
-pub const NAIL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-nail" viewBox="0 0 24 24"><path d="M13.5,5V16L12,22L10.5,16V5H13.5M17,2H7V4H17V2Z"/></svg>"##,
-    slug: "nail",
-    version: "3.5.94",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// cheese-off
-pub const CHEESE_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cheese-off" viewBox="0 0 24 24"><path d="M3.5 1.7L2.2 3L6.1 6.9V9C7.2 9.2 8.1 10.2 8.1 11.5S7.2 13.7 6.1 14V21L12.1 17.5C12.1 16.7 12.8 16 13.6 16C13.9 16 14.2 16.1 14.4 16.2L15.1 15.8L20.3 21L21.6 19.7L3.5 1.7M10.1 16C9.6 16 9.1 15.5 9.1 15S9.6 14 10.1 14 11.1 14.5 11.1 15 10.6 16 10.1 16M13.8 9.5L9.9 5.6C10.2 5.9 10.6 6 11.1 6C12.1 6 12.9 5.2 13.1 4.2C15.4 5.2 17.6 6.6 19.3 8.4C19.2 8.6 19.1 8.7 19.1 8.9C19.1 9.4 19.6 9.9 20.1 9.9C20.3 9.9 20.4 9.9 20.5 9.8C21 10.4 21.4 11.1 21.8 11.8L18.3 13.8L16.6 12.1C16.9 11.8 17.1 11.3 17.1 10.8C17.1 9.7 16.2 8.8 15.1 8.8C14.6 9 14.1 9.2 13.8 9.5M9.5 5.2L7.3 3C8 3 8.6 3.1 9.2 3.2C9.1 3.5 9.1 3.7 9.1 4C9.1 4.4 9.2 4.9 9.5 5.2Z"/></svg>"##,
-    slug: "cheese-off",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// temple-buddhist
-pub const TEMPLE_BUDDHIST: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-temple-buddhist" viewBox="0 0 24 24"><path d="M21 9C21 10.1 20.1 11 19 11H5C3.9 11 3 10.1 3 9H1C1 10.9 2.3 12.4 4 12.8V22H10V19C10 17.9 10.9 17 12 17S14 17.9 14 19V22H20V12.9C20.5 12.8 23 11.9 23 9H21M6 8.9V10H18V8.9C18.5 8.8 21 7.9 21 5H19C19 6.1 18.1 7 17 7H7C5.9 7 5 6.1 5 5H3C3 6.9 4.3 8.4 6 8.9M12 1L8.2 6H15.7L12 1Z"/></svg>"##,
-    slug: "temple-buddhist",
-    version: "6.9.96",
-    deprecated: false,
-    author: "Google",
-};
-
-/// timer-sand-complete
-pub const TIMER_SAND_COMPLETE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-timer-sand-complete" viewBox="0 0 24 24"><path d="M18 22H6V16L10 12L6 8V2H18V8L14 12L18 16M8 7.5L12 11.5L16 7.5V4H8M12 12.5L8 16.5V20H16V16.5M14 18H10V17.2L12 15.2L14 17.2Z"/></svg>"##,
-    slug: "timer-sand-complete",
-    version: "6.5.95",
-    deprecated: false,
-    author: "Jeff Anders",
-};
-
-/// glass-mug-variant-off
-pub const GLASS_MUG_VARIANT_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-glass-mug-variant-off" viewBox="0 0 24 24"><path d="M8.44 5.24L7 3.79C7.71 3.29 8.57 3 9.5 3C10.53 3 11.5 3.35 12.32 4H14C16.21 4 18 5.79 18 8V10H20C20.55 10 21 10.45 21 11V17.8L19 15.8V12H17V13.8L11.26 8.06C11.5 8 11.73 8 12 8H16C16 6.9 15.11 6 14 6H11.5C11.03 5.37 10.29 5 9.5 5C9.12 5 8.76 5.09 8.44 5.24M22.11 21.46L20.84 22.73L18.11 20H17V22H6V14C3.79 14 2 12.21 2 10C2 8.37 3 6.94 4.44 6.33L1.11 3L2.39 1.73L7.19 6.54L9.61 8.96L17 16.34V16.35L18.65 18H18.66L20.5 19.84V19.85L22.11 21.46M8.59 10.5L6.11 8H6C4.89 8 4 8.9 4 10C4 11.11 4.89 12 6 12C6 12 7.68 12.13 8.5 10.63L8.59 10.5Z"/></svg>"##,
-    slug: "glass-mug-variant-off",
-    version: "5.6.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// map-marker-account-outline
-pub const MAP_MARKER_ACCOUNT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-map-marker-account-outline" viewBox="0 0 24 24"><path d="M12 4C14.8 4 17 6.2 17 9C17 11.9 14.1 16.2 12 18.9C9.9 16.2 7 11.9 7 9C7 6.2 9.2 4 12 4M12 2C8.1 2 5 5.1 5 9C5 14.2 12 22 12 22S19 14.2 19 9C19 5.1 15.9 2 12 2M12 10C13.33 10 16 10.67 16 12V12.16C15.03 13.28 13.6 14 12 14S8.97 13.28 8 12.16V12C8 10.67 10.67 10 12 10M12 9C10.9 9 10 8.1 10 7S10.9 5 12 5 14 5.9 14 7 13.1 9 12 9Z"/></svg>"##,
-    slug: "map-marker-account-outline",
-    version: "6.3.95",
-    deprecated: false,
-    author: "Google",
-};
-
-/// web-refresh
-pub const WEB_REFRESH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-web-refresh" viewBox="0 0 24 24"><path d="M13.82 14H9.66C9.56 13.34 9.5 12.68 9.5 12S9.56 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.5 14.46 13 14.4 13.46C15 12.96 15.72 12.57 16.5 12.32C16.5 12.21 16.5 12.11 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.06 20 12.12 20 12.18C20.7 12.35 21.35 12.63 21.95 13C22 12.68 22 12.34 22 12C22 6.5 17.5 2 12 2C6.47 2 2 6.5 2 12C2 17.5 6.5 22 12 22C12.34 22 12.68 22 13 21.95C12.59 21.29 12.29 20.55 12.13 19.75C12.09 19.82 12.05 19.89 12 19.96C11.17 18.76 10.5 17.43 10.09 16H12.5C12.81 15.25 13.26 14.58 13.82 14M18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.34 18.92 8M12 4.03C12.83 5.23 13.5 6.57 13.91 8H10.09C10.5 6.57 11.17 5.23 12 4.03M4.26 14C4.1 13.36 4 12.69 4 12S4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12S7.56 13.34 7.64 14H4.26M5.08 16H8C8.35 17.25 8.8 18.45 9.4 19.56C7.57 18.93 6.03 17.65 5.08 16M8 8H5.08C6.03 6.34 7.57 5.06 9.4 4.44C8.8 5.55 8.35 6.75 8 8M20.83 15.67L22 14.5V18.5H18L19.77 16.73C19.32 16.28 18.69 16 18 16C16.62 16 15.5 17.12 15.5 18.5S16.62 21 18 21C18.82 21 19.54 20.61 20 20H21.71C21.12 21.47 19.68 22.5 18 22.5C15.79 22.5 14 20.71 14 18.5S15.79 14.5 18 14.5C19.11 14.5 20.11 14.95 20.83 15.67Z"/></svg>"##,
-    slug: "web-refresh",
-    version: "6.1.95",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// cupcake
-pub const CUPCAKE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cupcake" viewBox="0 0 24 24"><path d="M12,1.5A2.5,2.5 0 0,1 14.5,4A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 9.5,4A2.5,2.5 0 0,1 12,1.5M15.87,5C18,5 20,7 20,9C22.7,9 22.7,13 20,13H4C1.3,13 1.3,9 4,9C4,7 6,5 8.13,5C8.57,6.73 10.14,8 12,8C13.86,8 15.43,6.73 15.87,5M5,15H8L9,22H7L5,15M10,15H14L13,22H11L10,15M16,15H19L17,22H15L16,15Z"/></svg>"##,
-    slug: "cupcake",
-    version: "2.4.85",
-    deprecated: false,
-    author: "Nick",
-};
-
-/// toy-brick-minus
-pub const TOY_BRICK_MINUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-toy-brick-minus" viewBox="0 0 24 24"><path d="M23 20H15V18H23V20M13 19C13 15.69 15.69 13 19 13C19.7 13 20.37 13.13 21 13.35V6H19V5C19 3.9 18.11 3 17 3H15C13.9 3 13 3.9 13 5V6H11V5C11 3.9 10.11 3 9 3H7C5.9 3 5 3.9 5 5V6H3V20H13.09C13.04 19.67 13 19.34 13 19Z"/></svg>"##,
-    slug: "toy-brick-minus",
-    version: "4.7.95",
-    deprecated: false,
     author: "Michael Richins",
 };
 
-/// battery-clock-outline
-pub const BATTERY_CLOCK_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-battery-clock-outline" viewBox="0 0 24 24"><path d="M18 9.29V5.33C18 4.6 17.4 4 16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H12.41C13.46 22.63 14.69 23 16 23C19.87 23 23 19.87 23 16C23 12.83 20.89 10.15 18 9.29M8 6H16V9C12.13 9 9 12.13 9 16C9 17.5 9.47 18.87 10.26 20H8V6M16 21C13.24 21 11 18.76 11 16S13.24 11 16 11 21 13.24 21 16 18.76 21 16 21M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25Z"/></svg>"##,
-    slug: "battery-clock-outline",
-    version: "6.6.96",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// table-account
-pub const TABLE_ACCOUNT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-account" viewBox="0 0 24 24"><path d="M4 3H18C19.11 3 20 3.9 20 5V12.08C18.45 11.82 16.92 12.18 15.68 13H12V17H13.08C12.97 17.68 12.97 18.35 13.08 19H4C2.9 19 2 18.11 2 17V5C2 3.9 2.9 3 4 3M4 7V11H10V7H4M12 7V11H18V7H12M4 13V17H10V13H4M23 22V21C23 19.67 20.33 19 19 19S15 19.67 15 21V22H23M19 14C17.9 14 17 14.9 17 16S17.9 18 19 18 21 17.11 21 16 20.11 14 19 14Z"/></svg>"##,
-    slug: "table-account",
-    version: "5.1.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// file-code
-pub const FILE_CODE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-code" viewBox="0 0 24 24"><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6.12,15.5L9.86,19.24L11.28,17.83L8.95,15.5L11.28,13.17L9.86,11.76L6.12,15.5M17.28,15.5L13.54,11.76L12.12,13.17L14.45,15.5L12.12,17.83L13.54,19.24L17.28,15.5Z"/></svg>"##,
-    slug: "file-code",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// clock-time-seven-outline
-pub const CLOCK_TIME_SEVEN_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clock-time-seven-outline" viewBox="0 0 24 24"><path d="M12 20C16.4 20 20 16.4 20 12S16.4 4 12 4 4 7.6 4 12 7.6 20 12 20M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2M12.5 7V12.2L9.8 17L8.5 16.2L11 11.8V7H12.5Z"/></svg>"##,
-    slug: "clock-time-seven-outline",
-    version: "5.2.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// movie-search
-pub const MOVIE_SEARCH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-movie-search" viewBox="0 0 24 24"><path d="M11.03 20H4C2.9 20 2 19.1 2 18L2 6C2 4.9 2.9 4 4 4H5L7 8H10L8 4H10L12 8H15L13 4H15L17 8H20L18 4H22V13.05C20.85 11.22 18.82 10 16.5 10C12.92 10 10 12.92 10 16.5C10 17.79 10.38 19 11.03 20M23.39 22L22 23.39L18.88 20.32C18.19 20.75 17.37 21 16.5 21C14 21 12 19 12 16.5S14 12 16.5 12 21 14 21 16.5C21 17.38 20.75 18.21 20.31 18.9L23.39 22M19 16.5C19 15.12 17.88 14 16.5 14S14 15.12 14 16.5 15.12 19 16.5 19 19 17.88 19 16.5Z"/></svg>"##,
-    slug: "movie-search",
-    version: "4.5.95",
-    deprecated: false,
-    author: "frankgrinaert",
-};
-
-/// printer-pos-pause-outline
-pub const PRINTER_POS_PAUSE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-printer-pos-pause-outline" viewBox="0 0 24 24"><path d="M20 12C20 10.9 19.11 10 18 10H17V4H7V10H6C4.89 10 4 10.9 4 12V19H13C13 18.3 13.13 17.63 13.35 17H6V12H18V13.09C18.33 13.04 18.66 13 19 13C19.34 13 19.67 13.04 20 13.09V12M15 10H9V6H15V10M7 15V13H11V15H7M16 16H18V22H16V16M22 16V22H20V16H22Z"/></svg>"##,
-    slug: "printer-pos-pause-outline",
-    version: "7.1.96",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// cog-sync-outline
-pub const COG_SYNC_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cog-sync-outline" viewBox="0 0 24 24"><path d="M11.7 20H11.3L10.9 17.4C9.7 17.2 8.7 16.5 7.9 15.6L5.5 16.6L4.7 15.3L6.8 13.7C6.4 12.5 6.4 11.3 6.8 10.1L4.7 8.7L5.5 7.4L7.9 8.4C8.7 7.5 9.7 6.9 10.9 6.6L11.2 4H12.7L13.1 6.6C14.3 6.8 15.4 7.5 16.1 8.4L18.5 7.4L19.3 8.7L17.2 10.2C17.4 10.8 17.5 11.4 17.5 12H18C18.5 12 19 12.1 19.5 12.2V12L19.4 11L21.5 9.4C21.7 9.2 21.7 9 21.6 8.8L19.6 5.3C19.5 5 19.3 5 19 5L16.5 6C16 5.6 15.4 5.3 14.8 5L14.4 2.3C14.5 2.2 14.2 2 14 2H10C9.8 2 9.5 2.2 9.5 2.4L9.1 5.1C8.5 5.3 8 5.7 7.4 6L5 5C4.7 5 4.5 5 4.3 5.3L2.3 8.8C2.2 9 2.3 9.2 2.5 9.4L4.6 11L4.5 12L4.6 13L2.5 14.7C2.3 14.9 2.3 15.1 2.4 15.3L4.4 18.8C4.5 19 4.7 19 5 19L7.5 18C8 18.4 8.6 18.7 9.2 19L9.6 21.7C9.6 21.9 9.8 22.1 10.1 22.1H12.6C12.1 21.4 11.9 20.7 11.7 20M16 12.3V12C16 9.8 14.2 8 12 8S8 9.8 8 12C8 14.2 9.8 16 12 16C12.7 14.3 14.2 12.9 16 12.3M10 12C10 10.9 10.9 10 12 10S14 10.9 14 12 13.1 14 12 14 10 13.1 10 12M18 14.5V13L15.8 15.2L18 17.4V16C19.4 16 20.5 17.1 20.5 18.5C20.5 18.9 20.4 19.3 20.2 19.6L21.3 20.7C22.5 18.9 22 16.4 20.2 15.2C19.6 14.7 18.8 14.5 18 14.5M18 21C16.6 21 15.5 19.9 15.5 18.5C15.5 18.1 15.6 17.7 15.8 17.4L14.7 16.3C13.5 18.1 14 20.6 15.8 21.8C16.5 22.2 17.2 22.5 18 22.5V24L20.2 21.8L18 19.5V21Z"/></svg>"##,
-    slug: "cog-sync-outline",
-    version: "5.2.45",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// file-word-outline
-pub const FILE_WORD_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-word-outline" viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M17.35 10L15.25 19H13.85L12.05 12.21L10.25 19H8.85L6.65 10H8.15L9.55 16.81L11.35 10H12.65L14.45 16.81L15.85 10H17.35Z"/></svg>"##,
-    slug: "file-word-outline",
-    version: "4.1.95",
-    deprecated: false,
-    author: "Terren",
-};
-
-/// delete-circle-outline
-pub const DELETE_CIRCLE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-delete-circle-outline" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M16,10V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V10H16M13.5,6L14.5,7H17V9H7V7H9.5L10.5,6H13.5Z"/></svg>"##,
-    slug: "delete-circle-outline",
-    version: "3.0.39",
-    deprecated: false,
-    author: "TheChilliPL",
-};
-
-/// head-flash-outline
-pub const HEAD_FLASH_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-head-flash-outline" viewBox="0 0 24 24"><path d="M13 3C16.9 3 20 6.1 20 10C20 12.8 18.4 15.2 16 16.3V21H9V18H8C6.9 18 6 17.1 6 16V13H4.5C4.1 13 3.8 12.5 4.1 12.2L6 9.7C6.2 5.9 9.2 3 13 3M13 1C8.4 1 4.6 4.4 4.1 8.9L2.5 11C1.9 11.8 1.9 12.8 2.3 13.6C2.7 14.3 3.3 14.8 4 14.9V16C4 17.9 5.3 19.4 7 19.9V23H18V17.5C20.5 15.8 22 13.1 22 10C22 5 18 1 13 1M15 9L11.9 15L12.5 11H10.4L12.5 6H15L13.5 9H15Z"/></svg>"##,
-    slug: "head-flash-outline",
-    version: "4.9.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// shield-sword-outline
-pub const SHIELD_SWORD_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-shield-sword-outline" viewBox="0 0 24 24"><path d="M12 1L21 5V11C21 16.5 17.2 21.7 12 23C6.8 21.7 3 16.5 3 11V5L12 1M12 3.2L5 6.3V11.2C5 15.5 8.2 20 12 21C15.8 20 19 15.5 19 11.2V6.3L12 3.2M12 5.5L14 7.1L13 13H15V15H13V18H11V15H9V13H11L10 7.1L12 5.5Z"/></svg>"##,
-    slug: "shield-sword-outline",
+/// shield-crown
+pub const SHIELD_CROWN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-shield-crown" viewBox="0 0 24 24"><path d="M12 1L21 5V11C21 16.55 17.16 21.74 12 23C6.84 21.74 3 16.55 3 11V5L12 1M16 14H8V15.5C8 15.77 8.19 15.96 8.47 16L8.57 16H15.43C15.74 16 15.95 15.84 16 15.59L16 15.5V14M17 8L17 8L14.33 10.67L12 8.34L9.67 10.67L7 8L7 8L8 13H16L17 8Z"/></svg>"##,
+    slug: "shield-crown",
     version: "6.3.95",
     deprecated: false,
     author: "Michael Miday",
 };
 
-/// iron-board
-pub const IRON_BOARD: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-iron-board" viewBox="0 0 24 24"><path d="M19 6H16V4.8C16 3.68 16.56 2.63 17.5 2C18.44 2.63 19 3.68 19 4.8V6M15.28 13.63L19.59 19C20.38 19.06 21 19.7 21 20.5C21 21.33 20.33 22 19.5 22S18 21.33 18 20.5C18 20.42 18 20.34 18 20.26L14 15.23L10 20.26C10 20.34 10 20.42 10 20.5C10 21.33 9.33 22 8.5 22S7 21.33 7 20.5C7 19.7 7.63 19.06 8.41 19L12.72 13.63L9 9H3V7H21V9H19L15.28 13.63M14 12L16.42 9H11.58L14 12Z"/></svg>"##,
-    slug: "iron-board",
-    version: "6.2.95",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// delete-circle
-pub const DELETE_CIRCLE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-delete-circle" viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M17,7H14.5L13.5,6H10.5L9.5,7H7V9H17V7M9,18H15A1,1 0 0,0 16,17V10H8V17A1,1 0 0,0 9,18Z"/></svg>"##,
-    slug: "delete-circle",
-    version: "1.7.12",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// archive-plus
-pub const ARCHIVE_PLUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-archive-plus" viewBox="0 0 24 24"><path d="M21 7H3V3H21V7M13 19C13 19.7 13.13 20.37 13.35 21H4V8H20V13.09C19.67 13.04 19.34 13 19 13C15.69 13 13 15.69 13 19M15 13V11.5C15 11.22 14.78 11 14.5 11H9.5C9.22 11 9 11.22 9 11.5V13H15M20 18V15H18V18H15V20H18V23H20V20H23V18H20Z"/></svg>"##,
-    slug: "archive-plus",
-    version: "6.1.95",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// shark-fin-outline
-pub const SHARK_FIN_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-shark-fin-outline" viewBox="0 0 24 24"><path d="M22 16V18H20C18.6 18 17.2 17.6 16 17C13.5 18.3 10.5 18.3 8 17C6.8 17.6 5.4 18 4 18H2V16H4C5.4 16 6.8 15.5 8 14.7C10.4 16.4 13.6 16.4 16 14.7C17.2 15.5 18.6 16 20 16H22M5.28 13.79C5.82 13.63 6.37 13.38 6.89 13.04L8 12.28C8.69 10 8.78 7.27 7.59 4.14C11.95 4.89 15.89 8.65 17.37 13.19C18.12 13.64 18.91 13.91 19.66 13.97C18.24 7.4 12.37 2 6 2C5.65 2 5.33 2.18 5.15 2.47C4.97 2.77 4.95 3.14 5.11 3.45C7.28 7.79 6.61 11.29 5.28 13.79M16 18.7C13.6 20.4 10.4 20.4 8 18.7C6.8 19.5 5.4 20 4 20H2V22H4C5.4 22 6.8 21.6 8 21C10.5 22.3 13.5 22.3 16 21C17.2 21.6 18.6 22 20 22H22V20H20C18.6 20 17.2 19.5 16 18.7Z"/></svg>"##,
-    slug: "shark-fin-outline",
-    version: "5.7.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// format-header-1
-pub const FORMAT_HEADER_1: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-header-1" viewBox="0 0 24 24"><path d="M3,4H5V10H9V4H11V18H9V12H5V18H3V4M14,18V16H16V6.31L13.5,7.75V5.44L16,4H18V16H20V18H14Z"/></svg>"##,
-    slug: "format-header-1",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// looks
-pub const LOOKS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-looks" viewBox="0 0 24 24"><path d="M12,6A11,11 0 0,0 1,17H3C3,12.04 7.04,8 12,8C16.96,8 21,12.04 21,17H23A11,11 0 0,0 12,6M12,10C8.14,10 5,13.14 5,17H7A5,5 0 0,1 12,12A5,5 0 0,1 17,17H19C19,13.14 15.86,10 12,10Z"/></svg>"##,
-    slug: "looks",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// wall-sconce-round-outline
-pub const WALL_SCONCE_ROUND_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-wall-sconce-round-outline" viewBox="0 0 24 24"><path d="M13 19V16H11V19H13M19.09 16.5L20.5 15.09L18.73 13.32L17.32 14.73L19.09 16.5M4.91 16.5L6.68 14.73L5.27 13.32L3.5 15.09L4.91 16.5M12 6C13.04 6 14.08 6.28 15 6.81C16.26 7.5 17.19 8.67 17.66 10H6.34C6.81 8.67 7.74 7.5 9 6.81C9.92 6.28 10.96 6 12 6M12 4C10.63 4 9.25 4.36 8 5.07C5.5 6.5 4 9.14 4 12H20C20 9.14 18.5 6.5 16 5.07C14.75 4.36 13.38 4 12 4Z"/></svg>"##,
-    slug: "wall-sconce-round-outline",
-    version: "6.1.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// tray-minus
-pub const TRAY_MINUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tray-minus" viewBox="0 0 24 24"><path d="M16 10H8V8H16M2 17A2 2 0 0 0 4 19H20A2 2 0 0 0 22 17V12H20V17H4V12H2Z"/></svg>"##,
-    slug: "tray-minus",
-    version: "4.7.95",
+/// arrow-expand-up
+pub const ARROW_EXPAND_UP: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-expand-up" viewBox="0 0 24 24"><path d="M2,20V22H22V20H13V5.83L18.5,11.33L19.92,9.92L12,2L4.08,9.92L5.5,11.33L11,5.83V20H2Z"/></svg>"##,
+    slug: "arrow-expand-up",
+    version: "2.0.46",
     deprecated: false,
     author: "Michael Richins",
 };
 
-/// star-crescent
-pub const STAR_CRESCENT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-star-crescent" viewBox="0 0 24 24"><path d="M12.3,2C12.2,2 12.1,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22C15,22 16.7,21 18.5,19.5C13,21 8,17 8,12C8,7 13,3 18.5,4.5C16.86,2.86 14.62,1.96 12.3,2M16.8,6.2L15.3,9.7L11.6,10L14.5,12.5L13.6,16L16.8,14L20,16L19,12.5L22,10L18.3,9.7L16.8,6.2Z"/></svg>"##,
-    slug: "star-crescent",
-    version: "2.4.85",
+/// web-box
+pub const WEB_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-web-box" viewBox="0 0 24 24"><path d="M8.95 13.4H6.58A5.5 5.5 0 0 1 6.58 10.6H8.95A11.56 11.56 0 0 0 8.85 12A11.56 11.56 0 0 0 8.95 13.4M7.16 9.2H9.2A12.06 12.06 0 0 1 10.18 6.71A5.55 5.55 0 0 0 7.16 9.2M16.84 9.2A5.59 5.59 0 0 0 13.81 6.71A10.95 10.95 0 0 1 14.78 9.2M12 17.57A9.5 9.5 0 0 0 13.34 14.8H10.66A9.5 9.5 0 0 0 12 17.57M12 6.42A9.53 9.53 0 0 0 10.66 9.2H13.34A9.53 9.53 0 0 0 12 6.42M7.16 14.8A5.61 5.61 0 0 0 10.18 17.29A12.06 12.06 0 0 1 9.2 14.8M21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19A2 2 0 0 1 21 5M19 12A7 7 0 1 0 12 19A7 7 0 0 0 19 12M15.15 12A11.56 11.56 0 0 1 15.05 13.4H17.42A5.5 5.5 0 0 0 17.42 10.6H15.05A11.56 11.56 0 0 1 15.15 12M13.81 17.29A5.62 5.62 0 0 0 16.84 14.8H14.78A10.95 10.95 0 0 1 13.81 17.29M10.36 10.6A8.81 8.81 0 0 0 10.36 13.4H13.64A10.3 10.3 0 0 0 13.75 12A10.21 10.21 0 0 0 13.64 10.6Z"/></svg>"##,
+    slug: "web-box",
+    version: "3.9.97",
     deprecated: false,
-    author: "Nick",
+    author: "Samuel Jones",
 };
 
-/// vector-polyline-plus
-pub const VECTOR_POLYLINE_PLUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-vector-polyline-plus" viewBox="0 0 24 24"><path d="M2 3V9H4.95L6.95 15H6V21H12V16.41L17.41 11H22V5H16V9.57L10.59 15H9.06L7.06 9H8V3H2M4 5H6V7H4V5M18 7H20V9H18V7M18 15V18H15V20H18V23H20V20H23V18H20V15H18M8 17H10V19H8V17Z"/></svg>"##,
-    slug: "vector-polyline-plus",
-    version: "4.6.95",
-    deprecated: false,
-    author: "Andrea Antonello",
-};
-
-/// menu-up
-pub const MENU_UP: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-menu-up" viewBox="0 0 24 24"><path d="M7,15L12,10L17,15H7Z"/></svg>"##,
-    slug: "menu-up",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// arrow-right-bold-box-outline
-pub const ARROW_RIGHT_BOLD_BOX_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold-box-outline" viewBox="0 0 24 24"><path d="M17,12L12,17V14H8V10H12V7L17,12M3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19M5,19H19V5H5V19Z"/></svg>"##,
-    slug: "arrow-right-bold-box-outline",
-    version: "1.9.32",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// credit-card-wireless-off
-pub const CREDIT_CARD_WIRELESS_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-credit-card-wireless-off" viewBox="0 0 24 24"><path d="M12 2C9.85 2 7.7 2.69 5.9 4.08L7.32 5.5C10.45 3.24 14.84 3.5 17.66 6.33L19.07 4.92C17.12 2.96 14.56 2 12 2M3.28 4L2 5.27L7.73 11H6C4.89 11 4 11.9 4 13V21C4 22.11 4.89 23 6 23H18C18.5 23 18.92 22.82 19.27 22.54L19.73 23L21 21.72M12 6C10.87 6 9.75 6.31 8.77 6.94L10.24 8.41C11.73 7.68 13.58 7.92 14.83 9.16L16.24 7.75C15.07 6.58 13.54 6 12 6M12.82 11L15.82 14H18V16.18L20 18.18V13C20 11.9 19.11 11 18 11M6 14H10.73L13.73 17H6Z"/></svg>"##,
-    slug: "credit-card-wireless-off",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// key-chain-variant
-pub const KEY_CHAIN_VARIANT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-key-chain-variant" viewBox="0 0 24 24"><path d="M12.66 13.67C12.32 14 11.93 14.29 11.5 14.5V21L9.5 23L7.5 21L9.5 19.29L8 18L9.5 16.71L7.5 15V14.5C6 13.77 5 12.26 5 10.5C5 8 7 6 9.5 6C9.54 6 9.58 6 9.61 6C9.59 6.07 9.54 6.12 9.5 6.18C9.23 6.79 9.08 7.43 9.03 8.08C8.43 8.28 8 8.84 8 9.5C8 10.33 8.67 11 9.5 11C9.53 11 9.57 11 9.6 11C10.24 12.25 11.34 13.2 12.66 13.67M16 6C16 5.37 15.9 4.75 15.72 4.18C17.06 4.56 18.21 5.55 18.73 6.96C19.33 8.62 18.89 10.39 17.75 11.59L20 17.68L18.78 20.25L16.22 19.05L17.5 16.76L15.66 16.06L16.63 14.34L14.16 13.41L14 12.95C12.36 12.77 10.88 11.7 10.27 10.04C9.42 7.71 10.63 5.12 12.96 4.27C13.14 4.21 13.33 4.17 13.5 4.13C12.84 2.87 11.53 2 10 2C7.79 2 6 3.79 6 6C6 6.09 6 6.17 6.03 6.26C5.7 6.53 5.4 6.82 5.15 7.15C5.06 6.78 5 6.4 5 6C5 3.24 7.24 1 10 1S15 3.24 15 6C15 7.16 14.6 8.21 13.94 9.06C16.08 8.88 16 6 16 6M12.81 8.1C12.87 8.27 12.96 8.41 13.06 8.54C13.62 7.88 13.97 7.04 14 6.11C13.89 6.13 13.8 6.15 13.7 6.18C12.92 6.47 12.5 7.33 12.81 8.1Z"/></svg>"##,
-    slug: "key-chain-variant",
-    version: "5.5.55",
-    deprecated: false,
-    author: "Mateo Silguero",
-};
-
-/// clock-time-eleven
-pub const CLOCK_TIME_ELEVEN: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clock-time-eleven" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M12.5 13H11L8.5 8.6L9.8 7.8L11 10V7H12.5V13Z"/></svg>"##,
-    slug: "clock-time-eleven",
-    version: "5.2.45",
+/// eject-circle-outline
+pub const EJECT_CIRCLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-eject-circle-outline" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.5 12L12 6L7.5 12H16.5M16.5 16H7.5V14H16.5V16Z"/></svg>"##,
+    slug: "eject-circle-outline",
+    version: "6.9.96",
     deprecated: false,
     author: "Michael Irigoyen",
 };
 
-/// store-cog
-pub const STORE_COG: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-store-cog" viewBox="0 0 24 24"><path d="M20 6H4V4H20V6M19 12C17.09 12 15.37 12.76 14.11 14H14V14.11C12.76 15.37 12 17.09 12 19C12 19.34 12.03 19.67 12.08 20H4V14H3V12L4 7H20L21 12V12.3C20.37 12.11 19.7 12 19 12M12 14H6V18H12V14M23.8 20.4C23.9 20.4 23.9 20.5 23.8 20.6L22.8 22.3C22.7 22.4 22.6 22.4 22.5 22.4L21.3 22C21 22.2 20.8 22.3 20.5 22.5L20.3 23.8C20.3 23.9 20.2 24 20.1 24H18.1C18 24 17.9 23.9 17.8 23.8L17.6 22.5C17.3 22.4 17 22.2 16.8 22L15.6 22.5C15.5 22.5 15.4 22.5 15.3 22.4L14.3 20.7C14.2 20.6 14.3 20.5 14.4 20.4L15.5 19.6V18.6L14.4 17.8C14.3 17.7 14.3 17.6 14.3 17.5L15.3 15.8C15.4 15.7 15.5 15.7 15.6 15.7L16.8 16.2C17.1 16 17.3 15.9 17.6 15.7L17.8 14.4C17.8 14.3 17.9 14.2 18.1 14.2H20.1C20.2 14.2 20.3 14.3 20.3 14.4L20.5 15.7C20.8 15.8 21.1 16 21.4 16.2L22.6 15.7C22.7 15.7 22.9 15.7 22.9 15.8L23.9 17.5C24 17.6 23.9 17.7 23.8 17.8L22.7 18.6V19.6L23.8 20.4M20.5 19C20.5 18.2 19.8 17.5 19 17.5S17.5 18.2 17.5 19 18.2 20.5 19 20.5 20.5 19.8 20.5 19Z"/></svg>"##,
-    slug: "store-cog",
-    version: "6.3.95",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// gesture-pinch
-pub const GESTURE_PINCH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-gesture-pinch" viewBox="0 0 24 24"><path d="M13,9A1,1 0 0,1 14,8A1,1 0 0,1 15,9V13.47L16.21,13.6L21.15,15.8C21.67,16.04 22,16.56 22,17.14V21.5C21.97,22.32 21.32,22.97 20.5,23H14C13.62,23 13.26,22.85 13,22.57L8.1,18.37L8.84,17.6C9.03,17.39 9.3,17.28 9.58,17.28H9.8L13,19V9M14,5C15.42,5 16.74,5.76 17.45,7C18.56,8.9 17.91,11.35 16,12.46V11.23C16.64,10.67 17,9.85 17,9A3,3 0 0,0 14,6A3,3 0 0,0 11,9C11,9.85 11.36,10.67 12,11.23V12.46C10.77,11.75 10,10.43 10,9A4,4 0 0,1 14,5M4,9L7,12H5V15H3V12H1L4,9M4,7L1,4H3V1H5V4H7L4,7M9,14C9.73,14 10.41,14.19 11,14.54V15.76C10.47,15.29 9.77,15 9,15A3,3 0 0,0 6,18C6,19 6.5,19.87 7.22,20.42L9.31,22H9A4,4 0 0,1 5,18A4,4 0 0,1 9,14Z"/></svg>"##,
-    slug: "gesture-pinch",
-    version: "2.7.94",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// file-image-marker-outline
-pub const FILE_IMAGE_MARKER_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-image-marker-outline" viewBox="0 0 24 24"><path d="M8.5 12C7.67 12 7 11.33 7 10.5S7.67 9 8.5 9 10 9.67 10 10.5 9.33 12 8.5 12M14 19C13.43 17.86 13 16.64 13 15.5C13 15.34 13 15.18 13.03 15.03L12 14L7 19H14M6 20V4H13V9H18V10.03C18.17 10 18.33 10 18.5 10C19 10 19.5 10.08 20 10.22V8L14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H15.91C15.5 21.44 15 20.76 14.55 20H6M22 15.5C22 18.1 18.5 22 18.5 22S15 18.1 15 15.5C15 13.6 16.6 12 18.5 12S22 13.6 22 15.5M19.7 15.6C19.7 15 19.1 14.4 18.5 14.4S17.3 14.9 17.3 15.6C17.3 16.2 17.8 16.8 18.5 16.8S19.8 16.2 19.7 15.6Z"/></svg>"##,
-    slug: "file-image-marker-outline",
-    version: "6.1.95",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// cards-spade-outline
-pub const CARDS_SPADE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cards-spade-outline" viewBox="0 0 24 24"><path d="M11 17C11 17 11.3 19 9 22H15C12.7 19 13 17 13 17S14 18 16 18 20 16 20 14C20 9 15 7 12 2C9 7 4 9 4 14C4 16 6 18 8 18S11 17 11 17M13 14H11C11 14 10 16 8 16C7.1 16 6 14.9 6 14C5.8 11 9.9 8.2 12 5.4C14.1 8.1 18.2 10.9 18 14C18 14.9 16.9 16 16 16C14 16 13 14 13 14Z"/></svg>"##,
-    slug: "cards-spade-outline",
-    version: "6.3.95",
+/// upload-off-outline
+pub const UPLOAD_OFF_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-upload-off-outline" viewBox="0 0 24 24"><path d="M22.11 21.46L2.39 1.73L1.11 3L6.56 8.45L5 10H8.11L9 10.89V16H14.11L16.11 18H5V20H18.11L20.84 22.73L22.11 21.46M11 14V12.89L12.11 14H11M12 5.8L14.2 8H13V9.8L15 11.8V10H19L12 3L9.1 5.9L10.5 7.3L12 5.8Z"/></svg>"##,
+    slug: "upload-off-outline",
+    version: "4.2.95",
     deprecated: false,
     author: "Michael Irigoyen",
 };
 
-/// share
-pub const SHARE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-share" viewBox="0 0 24 24"><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z"/></svg>"##,
-    slug: "share",
+/// monitor-lock
+pub const MONITOR_LOCK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-monitor-lock" viewBox="0 0 24 24"><path d="M20.5,13A2.5,2.5 0 0,1 23,15.5V16A1,1 0 0,1 24,17V21A1,1 0 0,1 23,22H18A1,1 0 0,1 17,21V17A1,1 0 0,1 18,16V15.5A2.5,2.5 0 0,1 20.5,13M20.5,14A1.5,1.5 0 0,0 19,15.5V16H22V15.5A1.5,1.5 0 0,0 20.5,14M20,4H2V16H15V18H13V20H15V22H7V20H9V18H2C0.89,18 0,17.1 0,16V4C0,2.89 0.89,2 2,2H20A2,2 0 0,1 22,4V11.53C21.41,11.19 20.73,11 20,11V4Z"/></svg>"##,
+    slug: "monitor-lock",
+    version: "3.5.94",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// baby
+pub const BABY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-baby" viewBox="0 0 24 24"><path d="M18.5,4A2.5,2.5 0 0,1 21,6.5A2.5,2.5 0 0,1 18.5,9A2.5,2.5 0 0,1 16,6.5A2.5,2.5 0 0,1 18.5,4M4.5,20A1.5,1.5 0 0,1 3,18.5A1.5,1.5 0 0,1 4.5,17H11.5A1.5,1.5 0 0,1 13,18.5A1.5,1.5 0 0,1 11.5,20H4.5M16.09,19L14.69,15H11L6.75,10.75C6.75,10.75 9,8.25 12.5,8.25C15.5,8.25 15.85,9.25 16.06,9.87L18.92,18C19.2,18.78 18.78,19.64 18,19.92C17.22,20.19 16.36,19.78 16.09,19Z"/></svg>"##,
+    slug: "baby",
     version: "1.5.54",
     deprecated: false,
     author: "Google",
 };
 
-/// bio
-pub const BIO: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bio" viewBox="0 0 24 24"><path d="M17,12H20A2,2 0 0,1 22,14V17A2,2 0 0,1 20,19H17A2,2 0 0,1 15,17V14A2,2 0 0,1 17,12M17,14V17H20V14H17M2,7H7A2,2 0 0,1 9,9V11A2,2 0 0,1 7,13A2,2 0 0,1 9,15V17A2,2 0 0,1 7,19H2V13L2,7M4,9V12H7V9H4M4,17H7V14H4V17M11,13H13V19H11V13M11,9H13V11H11V9Z"/></svg>"##,
-    slug: "bio",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// rotate-right-variant
-pub const ROTATE_RIGHT_VARIANT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-rotate-right-variant" viewBox="0 0 24 24"><path d="M10,4V1L14,5L10,9V6A6,6 0 0,0 4,12L4.08,13H2.06L2,12A8,8 0 0,1 10,4M17,2H20A2,2 0 0,1 22,4V20A2,2 0 0,1 20,22H17A2,2 0 0,1 15,20V4A2,2 0 0,1 17,2M4,15H13V22H4A2,2 0 0,1 2,20V17A2,2 0 0,1 4,15Z"/></svg>"##,
-    slug: "rotate-right-variant",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// playlist-music-outline
-pub const PLAYLIST_MUSIC_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-playlist-music-outline" viewBox="0 0 24 24"><path d="M15,6V8H3V6H15M15,10V12H3V10H15M3,16V14H11V16H3M17,6H22V8H19V17A3,3 0 0,1 16,20A3,3 0 0,1 13,17A3,3 0 0,1 16,14C16.35,14 16.69,14.07 17,14.18V6M16,16A1,1 0 0,0 15,17A1,1 0 0,0 16,18A1,1 0 0,0 17,17A1,1 0 0,0 16,16Z"/></svg>"##,
-    slug: "playlist-music-outline",
-    version: "3.2.89",
-    deprecated: false,
-    author: "Google",
-};
-
-/// sort-clock-descending
-pub const SORT_CLOCK_DESCENDING: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-sort-clock-descending" viewBox="0 0 24 24"><path d="M18 7H15L19 3L23 7H20V21H18V7M8 5C4.14 5 1 8.13 1 12C1 15.87 4.13 19 8 19C11.86 19 15 15.87 15 12C15 8.13 11.87 5 8 5M10.19 14.53L7 12.69V9H8.5V11.82L10.94 13.23L10.19 14.53Z"/></svg>"##,
-    slug: "sort-clock-descending",
-    version: "5.4.55",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// movie-open-edit
-pub const MOVIE_OPEN_EDIT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-movie-open-edit" viewBox="0 0 24 24"><path d="M19.65 6.5L16.91 2.96L20.84 2.18L21.62 6.1L19.65 6.5M16.71 7.07L13.97 3.54L12 3.93L14.75 7.46L16.71 7.07M2 10V20C2 21.11 2.9 22 4 22H11V19.13L20.13 10H2M11.81 8.05L9.07 4.5L7.1 4.91L9.85 8.44L11.81 8.05M4.16 5.5L3.18 5.69C2.1 5.91 1.4 6.96 1.61 8.04L2 10L6.9 9.03L4.16 5.5M13 19.96V22H15.04L21.17 15.88L19.13 13.83L13 19.96M22.85 13.47L21.53 12.15C21.33 11.95 21 11.95 20.81 12.15L19.83 13.13L21.87 15.17L22.85 14.19C23.05 14 23.05 13.67 22.85 13.47Z"/></svg>"##,
-    slug: "movie-open-edit",
-    version: "5.9.55",
+/// folder-play
+pub const FOLDER_PLAY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-folder-play" viewBox="0 0 24 24"><path d="M22 8V13.81C21.12 13.3 20.1 13 19 13C15.69 13 13 15.69 13 19C13 19.34 13.04 19.67 13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.89 4 4 4H10L12 6H20C21.1 6 22 6.89 22 8M17 22L22 19L17 16V22Z"/></svg>"##,
+    slug: "folder-play",
+    version: "6.6.96",
     deprecated: false,
     author: "Colton Wiscombe",
 };
 
-/// beach
-pub const BEACH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-beach" viewBox="0 0 24 24"><path d="M15,18.54C17.13,18.21 19.5,18 22,18V22H5C5,21.35 8.2,19.86 13,18.9V12.4C12.16,12.65 11.45,13.21 11,13.95C10.39,12.93 9.27,12.25 8,12.25C6.73,12.25 5.61,12.93 5,13.95C5.03,10.37 8.5,7.43 13,7.04V7A1,1 0 0,1 14,6A1,1 0 0,1 15,7V7.04C19.5,7.43 22.96,10.37 23,13.95C22.39,12.93 21.27,12.25 20,12.25C18.73,12.25 17.61,12.93 17,13.95C16.55,13.21 15.84,12.65 15,12.39V18.54M7,2A5,5 0 0,1 2,7V2H7Z"/></svg>"##,
-    slug: "beach",
+/// airplane-landing
+pub const AIRPLANE_LANDING: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-airplane-landing" viewBox="0 0 24 24"><path d="M2.5,19H21.5V21H2.5V19M9.68,13.27L14.03,14.43L19.34,15.85C20.14,16.06 20.96,15.59 21.18,14.79C21.39,14 20.92,13.17 20.12,12.95L14.81,11.53L12.05,2.5L10.12,2V10.28L5.15,8.95L4.22,6.63L2.77,6.24V11.41L4.37,11.84L9.68,13.27Z"/></svg>"##,
+    slug: "airplane-landing",
     version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// nfc-tap
-pub const NFC_TAP: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-nfc-tap" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M4,4H11A2,2 0 0,1 13,6V9H11V6H4V11H6V9L9,12L6,15V13H4A2,2 0 0,1 2,11V6A2,2 0 0,1 4,4M20,20H13A2,2 0 0,1 11,18V15H13V18H20V13H18V15L15,12L18,9V11H20A2,2 0 0,1 22,13V18A2,2 0 0,1 20,20Z"/></svg>"##,
-    slug: "nfc-tap",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// plus-box-outline
-pub const PLUS_BOX_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-plus-box-outline" viewBox="0 0 24 24"><path d="M19,19V5H5V19H19M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5C3,3.89 3.9,3 5,3H19M11,7H13V11H17V13H13V17H11V13H7V11H11V7Z"/></svg>"##,
-    slug: "plus-box-outline",
-    version: "1.8.36",
     deprecated: false,
     author: "Google",
 };
 
-/// music-note-sixteenth
-pub const MUSIC_NOTE_SIXTEENTH: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-music-note-sixteenth" viewBox="0 0 24 24"><path d="M18 7V3H12V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V11H18V8H14V7H18Z"/></svg>"##,
-    slug: "music-note-sixteenth",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// storefront-edit-outline
-pub const STOREFRONT_EDIT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-storefront-edit-outline" viewBox="0 0 24 24"><path d="M5.06 3C4.63 3 4.22 3.14 3.84 3.42S3.24 4.06 3.14 4.5L2.11 8.91C1.86 10 2.06 10.95 2.72 11.77L3 12.05V19C3 19.5 3.2 20 3.61 20.39S4.5 21 5 21H11V19.11L11.11 19H5V13H5.25C6.16 13 6.89 12.67 7.45 12.05C8.08 12.67 8.86 13 9.8 13C10.64 13 11.38 12.67 12 12.05C12.69 12.67 13.45 13 14.3 13C15.17 13 15.92 12.67 16.55 12.05C16.8 12.33 17.09 12.54 17.41 12.7L19.06 11.05L19.07 11.06L19.2 10.92C19.06 10.97 18.91 11 18.75 11C18.44 11 18.17 10.9 17.95 10.66C17.73 10.43 17.61 10.16 17.58 9.84L16.97 5L18.89 4.97L19.97 9.38C20.06 9.79 20 10.16 19.73 10.5C20.4 10.1 21.23 10.03 21.95 10.31C22 9.87 22 9.41 21.89 8.91L20.86 4.5C20.73 4.06 20.5 3.7 20.13 3.42C19.77 3.14 19.38 3 18.94 3M5.06 5H7.03L6.42 9.84C6.3 10.63 5.91 11 5.25 11C4.84 11 4.53 10.86 4.31 10.55C4.03 10.2 3.94 9.81 4.03 9.38M9.05 5H11V9.7C11 10.05 10.89 10.35 10.64 10.62C10.39 10.88 10.08 11 9.7 11C9.36 11 9.07 10.88 8.84 10.59S8.5 10 8.5 9.66V9.5M13 5H14.95L15.5 9.5C15.58 9.92 15.5 10.27 15.21 10.57C14.95 10.87 14.61 11 14.2 11C13.89 11 13.61 10.88 13.36 10.62C13.11 10.35 13 10.05 13 9.7M15.06 22H13V19.94L19.06 13.88L21.11 15.93M20.65 12.3C20.75 12.2 20.87 12.15 21 12.14C21.15 12.14 21.31 12.19 21.42 12.3L22.7 13.58C22.91 13.79 22.91 14.14 22.7 14.35L21.7 15.35L19.65 13.3Z"/></svg>"##,
-    slug: "storefront-edit-outline",
-    version: "7.0.96",
-    deprecated: false,
-    author: "Jeff Anders",
-};
-
-/// chair-school
-pub const CHAIR_SCHOOL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chair-school" viewBox="0 0 24 24"><path d="M22,5V7H17L13.53,12H16V14H14.46L18.17,22H15.97L15.04,20H6.38L5.35,22H3.1L7.23,14H7C6.55,14 6.17,13.7 6.04,13.3L2.87,3.84L3.82,3.5C4.34,3.34 4.91,3.63 5.08,4.15L7.72,12H12.1L15.57,7H12V5H22M9.5,14L7.42,18H14.11L12.26,14H9.5Z"/></svg>"##,
-    slug: "chair-school",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// television-play
-pub const TELEVISION_PLAY: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-television-play" viewBox="0 0 24 24"><path d="M21,3H3C1.89,3 1,3.89 1,5V17A2,2 0 0,0 3,19H8V21H16V19H21A2,2 0 0,0 23,17V5C23,3.89 22.1,3 21,3M21,17H3V5H21M16,11L9,15V7"/></svg>"##,
-    slug: "television-play",
-    version: "3.7.94",
-    deprecated: false,
-    author: "Google",
-};
-
-/// alpha-l-box
-pub const ALPHA_L_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-l-box" viewBox="0 0 24 24"><path d="M9,7V17H15V15H11V7H9M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z"/></svg>"##,
-    slug: "alpha-l-box",
-    version: "2.8.94",
+/// water-boiler
+pub const WATER_BOILER: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-water-boiler" viewBox="0 0 24 24"><path d="M8 2C6.89 2 6 2.89 6 4V16C6 17.11 6.89 18 8 18H9V20H6V22H9C10.11 22 11 21.11 11 20V18H13V20C13 21.11 13.89 22 15 22H18V20H15V18H16C17.11 18 18 17.11 18 16V4C18 2.89 17.11 2 16 2H8M12 4.97A2 2 0 0 1 14 6.97A2 2 0 0 1 12 8.97A2 2 0 0 1 10 6.97A2 2 0 0 1 12 4.97M10 14.5H14V16H10V14.5Z"/></svg>"##,
+    slug: "water-boiler",
+    version: "3.9.97",
     deprecated: false,
     author: "GreenTurtwig",
 };
 
-/// music-note
-pub const MUSIC_NOTE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-music-note" viewBox="0 0 24 24"><path d="M12 3V13.55C11.41 13.21 10.73 13 10 13C7.79 13 6 14.79 6 17S7.79 21 10 21 14 19.21 14 17V7H18V3H12Z"/></svg>"##,
-    slug: "music-note",
-    version: "1.5.54",
+/// eye-plus-outline
+pub const EYE_PLUS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-eye-plus-outline" viewBox="0 0 24 24"><path d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z"/></svg>"##,
+    slug: "eye-plus-outline",
+    version: "2.1.99",
     deprecated: false,
-    author: "Austin Andrews",
+    author: "GreenTurtwig",
 };
 
-/// fruit-pear
-pub const FRUIT_PEAR: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-fruit-pear" viewBox="0 0 24 24"><path d="M18 16C18 19.31 15.31 22 12 22C8.69 22 6 19.31 6 16C6 13 8 13 8 10C8 8.56 8.75 7.22 10 6.5C10.4 6.27 10.82 6.12 11.25 6.04V5C11.25 4.63 11.17 4.42 11.03 4.28C10.9 4.14 10.63 4 10 4V2.5C10.88 2.5 11.6 2.73 12.09 3.22C12.58 3.71 12.75 4.38 12.75 5V6.04C13.18 6.12 13.61 6.27 14 6.5C15.25 7.22 16 8.56 16 10C16 13 18 13 18 16Z"/></svg>"##,
-    slug: "fruit-pear",
-    version: "6.6.96",
+/// surround-sound-5-1-2
+pub const SURROUND_SOUND_5_1_2: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-surround-sound-5-1-2" viewBox="0 0 24 24"><path d="M18 7V9H22V11H20C18.9 11 18 11.9 18 13V17H24V15H20V13H22C23.1 13 24 12.1 24 11V9C24 7.9 23.1 7 22 7H18M9 17H7V15H9V17M9 7V9H11V17H13V7H9M0 7V13H4V15H0V17H4C5.1 17 6 16.1 6 15V13C6 11.9 5.1 11 4 11H2V9H6V7H0M17 17H15V15H17V17"/></svg>"##,
+    slug: "surround-sound-5-1-2",
+    version: "5.9.55",
     deprecated: false,
-    author: "Contributors",
+    author: "GreenTurtwig",
 };
 
-/// signature-image
-pub const SIGNATURE_IMAGE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-signature-image" viewBox="0 0 24 24"><path d="M22,22H2V20H22V22M6.2,17.3L4.8,15.9L6.2,14.5L5.5,13.8L4.1,15.2L2.7,13.8L2,14.5L3.4,15.9L2,17.3L2.7,18L4.1,16.6L5.5,18L6.2,17.3M20,5H10A2,2 0 0,0 8,7V16A2,2 0 0,0 10,18H20A2,2 0 0,0 22,16V7A2,2 0 0,0 20,5M10,16L12.6,12.7L14.4,14.9L16.8,11.6L20,16H10Z"/></svg>"##,
-    slug: "signature-image",
-    version: "3.5.94",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// script-outline
-pub const SCRIPT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-script-outline" viewBox="0 0 24 24"><path d="M15,20A1,1 0 0,0 16,19V4H8A1,1 0 0,0 7,5V16H5V5A3,3 0 0,1 8,2H19A3,3 0 0,1 22,5V6H20V5A1,1 0 0,0 19,4A1,1 0 0,0 18,5V9L18,19A3,3 0 0,1 15,22H5A3,3 0 0,1 2,19V18H13A2,2 0 0,0 15,20Z"/></svg>"##,
-    slug: "script-outline",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// book-open-variant-outline
-pub const BOOK_OPEN_VARIANT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-open-variant-outline" viewBox="0 0 24 24"><path d="M12 21.5C10.65 20.65 8.2 20 6.5 20C4.85 20 3.15 20.3 1.75 21.05C1.65 21.1 1.6 21.1 1.5 21.1C1.25 21.1 1 20.85 1 20.6V6C1.6 5.55 2.25 5.25 3 5C4.11 4.65 5.33 4.5 6.5 4.5C8.45 4.5 10.55 4.9 12 6C13.45 4.9 15.55 4.5 17.5 4.5C18.67 4.5 19.89 4.65 21 5C21.75 5.25 22.4 5.55 23 6V20.6C23 20.85 22.75 21.1 22.5 21.1C22.4 21.1 22.35 21.1 22.25 21.05C20.85 20.3 19.15 20 17.5 20C15.8 20 13.35 20.65 12 21.5M11 7.5C9.64 6.9 7.84 6.5 6.5 6.5C5.3 6.5 4.1 6.65 3 7V18.5C4.1 18.15 5.3 18 6.5 18C7.84 18 9.64 18.4 11 19V7.5M13 19C14.36 18.4 16.16 18 17.5 18C18.7 18 19.9 18.15 21 18.5V7C19.9 6.65 18.7 6.5 17.5 6.5C16.16 6.5 14.36 6.9 13 7.5V19M14 16.35C14.96 16 16.12 15.83 17.5 15.83C18.54 15.83 19.38 15.91 20 16.07V14.57C19.13 14.41 18.29 14.33 17.5 14.33C16.16 14.33 15 14.5 14 14.76V16.35M14 13.69C14.96 13.34 16.12 13.16 17.5 13.16C18.54 13.16 19.38 13.24 20 13.4V11.9C19.13 11.74 18.29 11.67 17.5 11.67C16.22 11.67 15.05 11.82 14 12.12V13.69M14 11C14.96 10.67 16.12 10.5 17.5 10.5C18.41 10.5 19.26 10.59 20 10.78V9.23C19.13 9.08 18.29 9 17.5 9C16.18 9 15 9.15 14 9.46V11Z"/></svg>"##,
-    slug: "book-open-variant-outline",
-    version: "7.4.47",
-    deprecated: false,
-    author: "Jeff Anders",
-};
-
-/// note-search-outline
-pub const NOTE_SEARCH_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-note-search-outline" viewBox="0 0 24 24"><path d="M15 3H5C3.89 3 3 3.89 3 5V10.82C3.6 10.24 4.28 9.8 5 9.5V5H12V10.82C12.03 10.85 12.07 10.87 12.1 10.9C12.44 11.24 12.73 11.61 12.97 12H19V19H12.97C12.73 19.39 12.44 19.76 12.1 20.1C11.74 20.45 11.35 20.74 10.94 21H19C20.11 21 21 20.11 21 19V9L15 3M14 10V4.5L19.5 10H14M7.5 11C5 11 3 13 3 15.5C3 16.38 3.25 17.21 3.69 17.9L.61 21L2 22.39L5.12 19.32C5.81 19.75 6.63 20 7.5 20C10 20 12 18 12 15.5S10 11 7.5 11M7.5 18C6.12 18 5 16.88 5 15.5S6.12 13 7.5 13 10 14.12 10 15.5 8.88 18 7.5 18Z"/></svg>"##,
-    slug: "note-search-outline",
-    version: "5.7.55",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// battery-check
-pub const BATTERY_CHECK: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-battery-check" viewBox="0 0 24 24"><path d="M16.75 21.16L14 18.16L15.16 17L16.75 18.59L20.34 15L21.5 16.41L16.75 21.16M12 18C12 14.69 14.69 12 18 12V5.33C18 4.6 17.4 4 16.67 4H15V2H9V4H7.33C6.6 4 6 4.6 6 5.33V20.67C6 21.4 6.6 22 7.33 22H13.54C12.58 20.94 12 19.54 12 18Z"/></svg>"##,
-    slug: "battery-check",
-    version: "6.1.95",
-    deprecated: false,
-    author: "François Risoud",
-};
-
-/// file-settings
-pub const FILE_SETTINGS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-settings" viewBox="0 0 24 24"><path d="M6 0C4.89 0 4 .89 4 2V18A2 2 0 0 0 6 20H18A2 2 0 0 0 20 18V6L14 0H6M13 1.5L18.5 7H13V1.5M7 22V24H9V22H7M11 22V24H13V22H11M15 22V24H17V22H15Z"/></svg>"##,
-    slug: "file-settings",
-    version: "4.2.95",
-    deprecated: false,
-    author: "Simran",
-};
-
-/// store-alert
-pub const STORE_ALERT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-store-alert" viewBox="0 0 24 24"><path d="M2 7L1 12V14H2V20H12V14H16V20H18V14H19V12L18 7H2M10 18H4V14H10V18M18 6H2V4H18V6M23 7V13H21V7H23M21 15H23V17H21V15Z"/></svg>"##,
-    slug: "store-alert",
-    version: "6.3.95",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// baby-carriage-off
-pub const BABY_CARRIAGE_OFF: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-baby-carriage-off" viewBox="0 0 24 24"><path d="M22 10C22 5.6 18.4 2 14 2V10H22M14.2 11H22C22 12.8 21.4 14.5 20.3 15.9C21 16.5 21.4 17.4 21.5 18.3L14.2 11M20.8 22.7L22.1 21.4L2.4 1.7L1.1 3L9.1 11H7.4L6.5 9H3V11H5.2C5.2 11 7.1 15.1 7.3 15.4C6.3 15.9 5.6 16.9 5.5 18C5.2 19.9 6.6 21.7 8.5 22C10.4 22.3 12.2 20.9 12.5 19H14.6C14.7 19.4 14.8 19.8 15 20.2C15.9 21.9 18.1 22.5 19.7 21.6L20.8 22.7M10.5 18.5C10.5 19.3 9.8 20 9 20S7.5 19.3 7.5 18.5 8.2 17 9 17 10.5 17.7 10.5 18.5M18.1 20C17.2 20 16.5 19.3 16.5 18.5V18.4L18.1 20Z"/></svg>"##,
-    slug: "baby-carriage-off",
-    version: "4.0.96",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// layers-search-outline
-pub const LAYERS_SEARCH_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-layers-search-outline" viewBox="0 0 24 24"><path d="M19.31 18.9C19.75 18.21 20 17.38 20 16.5C20 14 18 12 15.5 12S11 14 11 16.5 13 21 15.5 21C16.37 21 17.19 20.75 17.88 20.32L21 23.39L22.39 22L19.31 18.9M15.5 19C14.12 19 13 17.88 13 16.5S14.12 14 15.5 14 18 15.12 18 16.5 16.88 19 15.5 19M9.59 19.2L3 14.07L4.62 12.81L9 16.22C9 16.32 9 16.41 9 16.5C9 17.46 9.22 18.38 9.59 19.2M9.5 14.04L3 9L12 2L21 9L18.66 10.82C17.96 10.44 17.19 10.18 16.37 10.07L17.74 9L12 4.53L6.26 9L10.53 12.32C10.1 12.84 9.74 13.42 9.5 14.04Z"/></svg>"##,
-    slug: "layers-search-outline",
-    version: "4.6.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// archive-alert
-pub const ARCHIVE_ALERT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-archive-alert" viewBox="0 0 24 24"><path d="M2 4H18V7H2V4M3 8H17V20H3V8M7.5 11C7.22 11 7 11.22 7 11.5V13H13V11.5C13 11.22 12.78 11 12.5 11H7.5M20 13V7H22V13H20M20 17V15H22V17H20Z"/></svg>"##,
-    slug: "archive-alert",
-    version: "5.4.55",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// chat-processing
-pub const CHAT_PROCESSING: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chat-processing" viewBox="0 0 24 24"><path d="M12,3C17.5,3 22,6.58 22,11C22,15.42 17.5,19 12,19C10.76,19 9.57,18.82 8.47,18.5C5.55,21 2,21 2,21C4.33,18.67 4.7,17.1 4.75,16.5C3.05,15.07 2,13.13 2,11C2,6.58 6.5,3 12,3M17,12V10H15V12H17M13,12V10H11V12H13M9,12V10H7V12H9Z"/></svg>"##,
-    slug: "chat-processing",
-    version: "3.0.39",
-    deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// numeric-5-box
-pub const NUMERIC_5_BOX: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-5-box" viewBox="0 0 24 24"><path d="M15,9H11V11H13A2,2 0 0,1 15,13V15C15,16.11 14.1,17 13,17H9V15H13V13H9V7H15M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z"/></svg>"##,
-    slug: "numeric-5-box",
-    version: "1.5.54",
+/// send-clock-outline
+pub const SEND_CLOCK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-send-clock-outline" viewBox="0 0 24 24"><path d="M2 3V10L11 12L2 14V21L9.27 17.89A7 7 0 0 0 16 23A7 7 0 0 0 23 16A7 7 0 0 0 16 9L2 3M4 6.03L12.78 9.8A7 7 0 0 0 12.1 10.2L4 8.4V6.03M16 11A5 5 0 0 1 21 16A5 5 0 0 1 16 21A5 5 0 0 1 11 16A5 5 0 0 1 16 11M15 12.5V16.5L18 18.5L18.75 17.25L16.5 15.75V12.5H15M9.18 14.45A7 7 0 0 0 9 15.82L4 17.97V15.6L9.18 14.45Z"/></svg>"##,
+    slug: "send-clock-outline",
+    version: "4.4.95",
     deprecated: false,
     author: "Google",
 };
 
-/// muffin
-pub const MUFFIN: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-muffin" viewBox="0 0 24 24"><path d="M16,5C16,5 15,2 12,2C9,2 8,5 8,5C6,5 4,7 4,9C1.3,9 1.3,13 4,13H20C22.7,13 22.7,9 20,9C20,7 18,5 16,5M5,15L7,22H9L8,15H5M10,15L11,22H13L14,15H10M16,15L15,22H17L19,15H16Z"/></svg>"##,
-    slug: "muffin",
-    version: "2.4.85",
+/// format-list-group-plus
+pub const FORMAT_LIST_GROUP_PLUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-list-group-plus" viewBox="0 0 24 24"><path d="M17 14V17H14V19H17V22H19V19H22V17H19V14M20 11V12.3C19.4 12.1 18.7 12 18 12C16.8 12 15.6 12.4 14.7 13H7V11H20M12.1 17H7V15H12.8C12.5 15.6 12.2 16.3 12.1 17M7 7H20V9H7V7M5 19H7V21H3V3H7V5H5V19Z"/></svg>"##,
+    slug: "format-list-group-plus",
+    version: "7.0.96",
     deprecated: false,
-    author: "Nick",
+    author: "Andy Giesen",
 };
 
-/// size-xl
-pub const SIZE_XL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-size-xl" viewBox="0 0 24 24"><path d="M6 7H8L9 9.5L10 7H12L10 12L12 17H10L9 14.5L8 17H6L8 12L6 7M13 7H15V15H19V17H13V7Z"/></svg>"##,
-    slug: "size-xl",
-    version: "5.0.45",
+/// select-color
+pub const SELECT_COLOR: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-select-color" viewBox="0 0 24 24"><path d="M3.88,3C3.38,3.06 3,3.5 3,4V4L3,5H4L5,5V4L5,3H4L3.88,3M7,3V5H9V3H7M11,3V5H13V3H11M15,3V5H17V3H15M19,3V4L19,5H20L21,5V4L21,3.88C20.94,3.38 20.5,3 20,3H19M3,7V9H5V7H3M19,7V9H21V7H19M3,11V13H5V11H3M19.31,12C19.18,12 19.05,12.05 18.95,12.14L17.39,13.71L16.43,12.75L15.72,13.46L16.43,14.17L11.97,18.63V21H14.35L18.8,16.54L19.5,17.25L20.22,16.54L19.26,15.58L20.82,14.03C21,13.83 21,13.5 20.82,13.31L19.65,12.14C19.56,12.05 19.44,12 19.31,12M3,15V17H5V15H3M17,15L17.97,15.97L13.93,20L12.97,19.04L17,15M3,19V20L3,20.12C3.06,20.62 3.5,21 4,21V21H5V20L5,19H4L3,19M7,19V21H9V19H7Z"/></svg>"##,
+    slug: "select-color",
+    version: "3.3.92",
     deprecated: false,
-    author: "Austin Andrews",
-};
-
-/// invoice-import-outline
-pub const INVOICE_IMPORT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-invoice-import-outline" viewBox="0 0 24 24"><path d="M18 20L21 22V3H3V9H5V5H19V18.26L18 17.6L15 19.6L12 17.6L9 19.6L6 17.6L5 18.26V15H3V22L6 20L9 22L12 20L15 22L18 20M11.5 17L10.08 15.58L12.67 13H3V11H12.67L10.08 8.41L11.5 7L16.5 12L11.5 17Z"/></svg>"##,
-    slug: "invoice-import-outline",
-    version: "7.4.47",
-    deprecated: false,
-    author: "Jeff Anders",
+    author: "Google",
 };
 
 /// format-list-checks
@@ -1675,31 +280,400 @@ pub const FORMAT_LIST_CHECKS: Icon = Icon {
     author: "Austin Andrews",
 };
 
-/// head-question-outline
-pub const HEAD_QUESTION_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-head-question-outline" viewBox="0 0 24 24"><path d="M13 3C16.88 3 20 6.14 20 10C20 12.8 18.37 15.19 16 16.31V21H9V18H8C6.89 18 6 17.11 6 16V13H4.5C4.08 13 3.84 12.5 4.08 12.19L6 9.66C6.19 5.95 9.23 3 13 3M10.32 7.39H12.25C12.26 7.09 12.35 6.86 12.53 6.7C12.71 6.55 12.93 6.47 13.19 6.47C13.5 6.47 13.76 6.57 13.94 6.75C14.12 6.94 14.2 7.2 14.2 7.5C14.2 7.82 14.13 8.09 13.97 8.32C13.83 8.55 13.62 8.75 13.36 8.91C12.85 9.25 12.5 9.55 12.31 9.82C12.11 10.08 12 10.5 12 11H14C14 10.69 14.04 10.44 14.13 10.26C14.22 10.07 14.39 9.9 14.64 9.74C15.09 9.5 15.46 9.21 15.75 8.81C16.04 8.41 16.19 8 16.19 7.5C16.19 6.74 15.92 6.13 15.38 5.68C14.85 5.23 14.12 5 13.19 5C12.32 5 11.62 5.2 11.08 5.59C10.56 6 10.3 6.57 10.31 7.36L10.32 7.39M12 14H14V12H12V14M13 1C8.41 1 4.61 4.42 4.06 8.9L2.5 11L2.47 11L2.45 11.03C1.9 11.79 1.83 12.79 2.26 13.62C2.62 14.31 3.26 14.79 4 14.94V16C4 17.85 5.28 19.42 7 19.87V23H18V17.5C20.5 15.83 22 13.06 22 10C22 5.03 17.96 1 13 1Z"/></svg>"##,
-    slug: "head-question-outline",
-    version: "4.9.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// map-marker-plus-outline
-pub const MAP_MARKER_PLUS_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-map-marker-plus-outline" viewBox="0 0 24 24"><path d="M15 17H18V14H20V17H23V19H20V22H18V19H15V17M9 6.5C10.4 6.5 11.5 7.6 11.5 9S10.4 11.5 9 11.5 6.5 10.4 6.5 9 7.6 6.5 9 6.5M9 2C12.9 2 16 5.1 16 9C16 14.2 9 22 9 22S2 14.2 2 9C2 5.1 5.1 2 9 2M9 4C6.2 4 4 6.2 4 9C4 10 4 12 9 18.7C14 12 14 10 14 9C14 6.2 11.8 4 9 4Z"/></svg>"##,
-    slug: "map-marker-plus-outline",
-    version: "4.8.95",
-    deprecated: false,
-    author: "Michael Irigoyen",
-};
-
-/// shield-plus
-pub const SHIELD_PLUS: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-shield-plus" viewBox="0 0 24 24"><path d="M19,20V22.97H17V20H14V18H17V15H19V18H22V20H19M12,1L21,5V11C21,11.9 20.9,12.78 20.71,13.65C19.9,13.23 19,13 18,13A6,6 0 0,0 12,19C12,20.36 12.45,21.62 13.22,22.62L12,23C6.84,21.74 3,16.55 3,11V5L12,1Z"/></svg>"##,
-    slug: "shield-plus",
-    version: "2.7.94",
+/// briefcase
+pub const BRIEFCASE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-briefcase" viewBox="0 0 24 24"><path d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z"/></svg>"##,
+    slug: "briefcase",
+    version: "1.5.54",
     deprecated: false,
     author: "Google",
+};
+
+/// land-rows-vertical
+pub const LAND_ROWS_VERTICAL: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-land-rows-vertical" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V4C22 2.9 21.1 2 20 2M6.5 20H4V4H6.5V20M11 20H8.5V4H11V20M15.5 20H13V4H15.5V20M20 20H17.5V4H20V20Z"/></svg>"##,
+    slug: "land-rows-vertical",
+    version: "6.8.96",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// plus-box-outline
+pub const PLUS_BOX_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-plus-box-outline" viewBox="0 0 24 24"><path d="M19,19V5H5V19H19M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5C3,3.89 3.9,3 5,3H19M11,7H13V11H17V13H13V17H11V13H7V11H11V7Z"/></svg>"##,
+    slug: "plus-box-outline",
+    version: "1.8.36",
+    deprecated: false,
+    author: "Google",
+};
+
+/// cube-unfolded
+pub const CUBE_UNFOLDED: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cube-unfolded" viewBox="0 0 24 24"><path d="M6,9V4H13V9H23V16H18V21H11V16H1V9H6M16,16H13V19H16V16M8,9H11V6H8V9M6,14V11H3V14H6M18,11V14H21V11H18M13,11V14H16V11H13M8,11V14H11V11H8Z"/></svg>"##,
+    slug: "cube-unfolded",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// dock-top
+pub const DOCK_TOP: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-dock-top" viewBox="0 0 24 24"><path d="M4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4H4C2.9 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20M4 11H20V18H4V11Z"/></svg>"##,
+    slug: "dock-top",
+    version: "5.4.55",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// cash-lock
+pub const CASH_LOCK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cash-lock" viewBox="0 0 24 24"><path d="M21.8 15C22.4 15 23 15.6 23 16.3V19.8C23 20.4 22.4 21 21.7 21H16.2C15.6 21 15 20.4 15 19.7V16.2C15 15.6 15.6 15 16.2 15V13.5C16.2 12.1 17.6 11 19 11C20.4 11 21.8 12.1 21.8 13.5V15M20.5 15V13.5C20.5 12.7 19.8 12.2 19 12.2C18.2 12.2 17.5 12.7 17.5 13.5V15H20.5M2 6H20V9.1L19 9C18.18 9 17.41 9.2 16.73 9.54C16.28 9.18 16 8.62 16 8H6C6 9.11 5.11 10 4 10V14C5.11 14 6 14.9 6 16H13.04L13 16.5V18H2V6M11 9C12.66 9 14 10.34 14 12C14 13.66 12.66 15 11 15C9.34 15 8 13.66 8 12C8 10.34 9.34 9 11 9Z"/></svg>"##,
+    slug: "cash-lock",
+    version: "5.4.55",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// hands-pray
+pub const HANDS_PRAY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-hands-pray" viewBox="0 0 24 24"><path d="M11.43 9.67C11.47 9.78 11.5 9.88 11.5 10V15.22C11.5 15.72 11.31 16.2 10.97 16.57L8.18 19.62L4.78 16.22L6 15L8.8 2.86C8.92 2.36 9.37 2 9.89 2C10.5 2 11 2.5 11 3.11V8.07C10.84 8.03 10.67 8 10.5 8C9.4 8 8.5 8.9 8.5 10V13C8.5 13.28 8.72 13.5 9 13.5S9.5 13.28 9.5 13V10C9.5 9.45 9.95 9 10.5 9C10.69 9 10.85 9.07 11 9.16C11.12 9.23 11.21 9.32 11.3 9.42C11.33 9.46 11.36 9.5 11.38 9.55C11.4 9.59 11.42 9.63 11.43 9.67M2 19L6 22L7.17 20.73L3.72 17.28L2 19M18 15L15.2 2.86C15.08 2.36 14.63 2 14.11 2C13.5 2 13 2.5 13 3.11V8.07C13.16 8.03 13.33 8 13.5 8C14.6 8 15.5 8.9 15.5 10V13C15.5 13.28 15.28 13.5 15 13.5S14.5 13.28 14.5 13V10C14.5 9.45 14.05 9 13.5 9C13.31 9 13.15 9.07 13 9.16C12.88 9.23 12.79 9.32 12.71 9.42C12.68 9.46 12.64 9.5 12.62 9.55C12.6 9.59 12.58 9.63 12.57 9.67C12.53 9.78 12.5 9.88 12.5 10V15.22C12.5 15.72 12.69 16.2 13.03 16.57L15.82 19.62L19.22 16.22L18 15M20.28 17.28L16.83 20.73L18 22L22 19L20.28 17.28Z"/></svg>"##,
+    slug: "hands-pray",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// octagon
+pub const OCTAGON: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-octagon" viewBox="0 0 24 24"><path d="M15.73,3H8.27L3,8.27V15.73L8.27,21H15.73L21,15.73V8.27"/></svg>"##,
+    slug: "octagon",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// table-row
+pub const TABLE_ROW: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-row" viewBox="0 0 24 24"><path d="M22,14A2,2 0 0,1 20,16H4A2,2 0 0,1 2,14V10A2,2 0 0,1 4,8H20A2,2 0 0,1 22,10V14M4,14H8V10H4V14M10,14H14V10H10V14M16,14H20V10H16V14Z"/></svg>"##,
+    slug: "table-row",
+    version: "2.1.19",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// car-door-lock-open
+pub const CAR_DOOR_LOCK_OPEN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-car-door-lock-open" viewBox="0 0 24 24"><path d="M22 21H11V16C11 15.26 10.6 14.61 10 14.26C10 14.18 10 14.09 10 14C10 12.87 9.63 11.84 9 11H20V5H11.83L7.28 9.55C6.6 9.2 5.82 9 5 9L11 3H21C21.27 3 21.5 3.11 21.71 3.29C21.9 3.5 22 3.74 22 4V21M19 14H16V16H19V14M7.8 16H3.5V13.5C3.5 12.7 4.2 12.2 5 12.2C5.8 12.2 6.5 12.7 6.5 13.5V14H7.8V13.5C7.8 12.1 6.4 11 5 11C3.6 11 2.2 12.1 2.2 13.5V16C1.6 16 1 16.6 1 17.2V20.7C1 21.4 1.6 22 2.2 22H7.7C8.4 22 9 21.4 9 20.8V17.3C9 16.6 8.4 16 7.8 16Z"/></svg>"##,
+    slug: "car-door-lock-open",
+    version: "7.3.67",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// comment-arrow-right-outline
+pub const COMMENT_ARROW_RIGHT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-comment-arrow-right-outline" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H8V21C8 21.6 8.4 22 9 22H9.5C9.7 22 10 21.9 10.2 21.7L13.9 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M20 16H13.1L10 19.1V16H4V4H20V16M8 9V11H12.5L10.7 12.8L12 14L16 10L12 6L10.8 7.2L12.5 9H8Z"/></svg>"##,
+    slug: "comment-arrow-right-outline",
+    version: "2.5.94",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// turbine
+pub const TURBINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-turbine" viewBox="0 0 24 24"><path d="M2 12C2 17.5 6.5 22 12 22S22 17.5 22 12 17.5 2 12 2 2 6.5 2 12M20 12C20 16.4 16.4 20 12 20S4 16.4 4 12 7.6 4 12 4 20 7.6 20 12M12.5 7L12.2 8.3L11.3 5C10.3 5.3 9.7 6.3 9.9 7.4L10.2 8.7L7.9 6.3C7.2 7 7.2 8.3 7.9 9L8.9 10L5.6 9.1C5.3 10.1 5.9 11.2 7 11.5L8.3 11.8L5 12.7C5.3 13.7 6.3 14.3 7.4 14.1L8.7 13.8L6.3 16.2C7.1 16.9 8.3 16.9 9 16.2L9.9 15.3L9 18.6C10 18.9 11.1 18.3 11.4 17.2L11.7 15.9L12.6 19.2C13.6 18.9 14.2 17.9 14 16.8L13.7 15.5L16.1 17.9C16.8 17.1 16.8 15.9 16.1 15.2L15.1 14L18.4 14.9C18.7 13.9 18.1 12.8 17 12.5L15.7 12.2L19 11.3C18.7 10.3 17.7 9.7 16.6 9.9L15.3 10.2L17.7 7.8C16.9 7.1 15.7 7.1 15 7.8L14.1 8.8L15 5.5C13.9 5.3 12.8 5.9 12.5 7M13.5 12C13.5 12.8 12.8 13.5 12 13.5S10.5 12.8 10.5 12 11.2 10.5 12 10.5 13.5 11.2 13.5 12Z"/></svg>"##,
+    slug: "turbine",
+    version: "6.7.96",
+    deprecated: false,
+    author: "Hans Böhm",
+};
+
+/// numeric-7-box-multiple
+pub const NUMERIC_7_BOX_MULTIPLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-7-box-multiple" viewBox="0 0 24 24"><path d="M3,5V21H19V23H3A2,2 0 0,1 1,21V5H3M13,15L17,7V5H11V7H15L11,15H13M21,1A2,2 0 0,1 23,3V17A2,2 0 0,1 21,19H7A2,2 0 0,1 5,17V3A2,2 0 0,1 7,1H21Z"/></svg>"##,
+    slug: "numeric-7-box-multiple",
+    version: "3.8.95",
+    deprecated: false,
+    author: "Contributors",
+};
+
+/// pause-box-outline
+pub const PAUSE_BOX_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pause-box-outline" viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M13 16V8H15V16H13M9 16V8H11V16H9"/></svg>"##,
+    slug: "pause-box-outline",
+    version: "7.0.96",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// vector-difference-ba
+pub const VECTOR_DIFFERENCE_BA: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-vector-difference-ba" viewBox="0 0 24 24"><path d="M20,22C21.11,22 22,21.11 22,20V18H20V20H18V22H20M16,22V20H13V22H16M11,22V20H9V18H7V20C7,21.11 7.89,22 9,22H11M22,16V13H20V16H22M9,16C9,16 9,11.33 9,9C11.33,9 16,9 16,9C16,9 16,5 16,3C16,1.89 15.11,1 14,1H3C1.89,1 1,1.89 1,3V14C1,15.11 1.89,16 3,16C5,16 9,16 9,16M7,14H3V3H14V7H9C7.89,7 7,7.89 7,9V14M22,11V9C22,7.89 21.11,7 20,7H18V9H20V11H22Z"/></svg>"##,
+    slug: "vector-difference-ba",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// book-open-outline
+pub const BOOK_OPEN_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-open-outline" viewBox="0 0 24 24"><path d="M21,4H3A2,2 0 0,0 1,6V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V6A2,2 0 0,0 21,4M3,19V6H11V19H3M21,19H13V6H21V19M14,9.5H20V11H14V9.5M14,12H20V13.5H14V12M14,14.5H20V16H14V14.5Z"/></svg>"##,
+    slug: "book-open-outline",
+    version: "3.0.39",
+    deprecated: false,
+    author: "Google",
+};
+
+/// bug-check-outline
+pub const BUG_CHECK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bug-check-outline" viewBox="0 0 24 24"><path d="M19 7H16.19C15.74 6.2 15.12 5.5 14.37 5L16 3.41L14.59 2L12.42 4.17C11.96 4.06 11.5 4 11 4S10.05 4.06 9.59 4.17L7.41 2L6 3.41L7.62 5C6.87 5.5 6.26 6.21 5.81 7H3V9H5.09C5.03 9.33 5 9.66 5 10V11H3V13H5V14C5 14.34 5.03 14.67 5.09 15H3V17H5.81C7.26 19.5 10.28 20.61 13 19.65V19C13 18.43 13.09 17.86 13.25 17.31C12.59 17.76 11.8 18 11 18C8.79 18 7 16.21 7 14V10C7 7.79 8.79 6 11 6S15 7.79 15 10V14C15 14.19 15 14.39 14.95 14.58C15.54 14.04 16.24 13.62 17 13.35V13H19V11H17V10C17 9.66 16.97 9.33 16.91 9H19V7M21.34 16L17.75 19.59L16.16 18L15 19.16L17.75 22.16L22.5 17.41L21.34 16M13 9V11H9V9H13M13 13V15H9V13H13Z"/></svg>"##,
+    slug: "bug-check-outline",
+    version: "2.6.95",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// clock-edit-outline
+pub const CLOCK_EDIT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clock-edit-outline" viewBox="0 0 24 24"><path d="M21 13.1C20.9 13.1 20.7 13.2 20.6 13.3L19.6 14.3L21.7 16.4L22.7 15.4C22.9 15.2 22.9 14.8 22.7 14.6L21.4 13.3C21.3 13.2 21.2 13.1 21 13.1M19.1 14.9L13 20.9V23H15.1L21.2 16.9L19.1 14.9M12.5 7V12.2L16.5 14.6L15.5 15.6L11 13V7H12.5M11 21.9C5.9 21.4 2 17.1 2 12C2 6.5 6.5 2 12 2C17.3 2 21.6 6.1 22 11.3C21.7 11.2 21.4 11.1 21 11.1C20.6 11.1 20.3 11.2 20 11.3C19.6 7.2 16.2 4 12 4C7.6 4 4 7.6 4 12C4 16.1 7.1 19.5 11.1 19.9L11 20.1V21.9Z"/></svg>"##,
+    slug: "clock-edit-outline",
+    version: "6.5.95",
+    deprecated: false,
+    author: "Sidney Alcantara",
+};
+
+/// truck-fast
+pub const TRUCK_FAST: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-truck-fast" viewBox="0 0 24 24"><path d="M3,13.5L2.25,12H7.5L6.9,10.5H2L1.25,9H9.05L8.45,7.5H1.11L0.25,6H4A2,2 0 0,1 6,4H18V8H21L24,12V17H22A3,3 0 0,1 19,20A3,3 0 0,1 16,17H12A3,3 0 0,1 9,20A3,3 0 0,1 6,17H4V13.5H3M19,18.5A1.5,1.5 0 0,0 20.5,17A1.5,1.5 0 0,0 19,15.5A1.5,1.5 0 0,0 17.5,17A1.5,1.5 0 0,0 19,18.5M20.5,9.5H18V12H22.46L20.5,9.5M9,18.5A1.5,1.5 0 0,0 10.5,17A1.5,1.5 0 0,0 9,15.5A1.5,1.5 0 0,0 7.5,17A1.5,1.5 0 0,0 9,18.5Z"/></svg>"##,
+    slug: "truck-fast",
+    version: "1.9.32",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// heart-remove-outline
+pub const HEART_REMOVE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-heart-remove-outline" viewBox="0 0 24 24"><path d="M12.67 20.74L12 21.35L10.55 20.03C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5C22 9.93 21.5 11.26 20.62 12.61C20 12.31 19.31 12.11 18.59 12.04C19.5 10.8 20 9.65 20 8.5C20 6.5 18.5 5 16.5 5C14.96 5 13.46 6 12.93 7.36H11.07C10.54 6 9.04 5 7.5 5C5.5 5 4 6.5 4 8.5C4 11.39 7.14 14.24 11.89 18.55L12 18.65L12.04 18.61C12.12 19.37 12.34 20.09 12.67 20.74M20.12 14.46L18 16.59L15.88 14.47L14.47 15.88L16.59 18L14.47 20.12L15.88 21.54L18 19.41L20.12 21.54L21.54 20.12L19.41 18L21.54 15.88L20.12 14.46Z"/></svg>"##,
+    slug: "heart-remove-outline",
+    version: "5.2.45",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// square
+pub const SQUARE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-square" viewBox="0 0 24 24"><path d="M3,3V21H21V3"/></svg>"##,
+    slug: "square",
+    version: "1.9.32",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// selection-remove
+pub const SELECTION_REMOVE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-selection-remove" viewBox="0 0 24 24"><path d="M20 20V17H22V20C22 21.11 21.1 22 20 22H17V20H20M2 20V17H4V20H7V22H4C2.9 22 2 21.1 2 20M10 20H14V22H10V20M14.59 8L12 10.59L9.41 8L8 9.41L10.59 12L8 14.59L9.41 16L12 13.41L14.59 16L16 14.59L13.41 12L16 9.41L14.59 8M20 10H22V14H20V10M2 10H4V14H2V10M2 4C2 2.89 2.9 2 4 2H7V4H4V7H2V4M22 4V7H20V4H17V2H20C21.1 2 22 2.9 22 4M10 2H14V4H10V2Z"/></svg>"##,
+    slug: "selection-remove",
+    version: "6.1.95",
+    deprecated: false,
+    author: "John Martini",
+};
+
+/// emoticon-tongue
+pub const EMOTICON_TONGUE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-emoticon-tongue" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.27,11C7.1,10.71 7,10.36 7,10C7,8.89 7.89,8 9,8A2,2 0 0,1 11,10C11,10.36 10.9,10.71 10.73,11C10.39,10.4 9.74,10 9,10C8.26,10 7.61,10.4 7.27,11M16,15H15C15,17 14.1,18 13,18C11.9,18 11,17 11,15H8V13H16V15M16.73,11C16.39,10.4 15.74,10 15,10C14.26,10 13.61,10.4 13.27,11C13.1,10.71 13,10.36 13,10C13,8.89 13.89,8 15,8A2,2 0 0,1 17,10C17,10.36 16.9,10.71 16.73,11Z"/></svg>"##,
+    slug: "emoticon-tongue",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// table-edit
+pub const TABLE_EDIT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-edit" viewBox="0 0 24 24"><path d="M21.7,13.35L20.7,14.35L18.65,12.3L19.65,11.3C19.86,11.08 20.21,11.08 20.42,11.3L21.7,12.58C21.92,12.79 21.92,13.14 21.7,13.35M12,18.94L18.07,12.88L20.12,14.93L14.06,21H12V18.94M4,2H18A2,2 0 0,1 20,4V8.17L16.17,12H12V16.17L10.17,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,6V10H10V6H4M12,6V10H18V6H12M4,12V16H10V12H4Z"/></svg>"##,
+    slug: "table-edit",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// account-cowboy-hat-outline
+pub const ACCOUNT_COWBOY_HAT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-cowboy-hat-outline" viewBox="0 0 24 24"><path d="M19 4C18.4 4 18 4.4 18 5V6H16.5L15.1 3C15 2.8 14.9 2.6 14.7 2.5C14.2 2 13.4 1.9 12.7 2.2L12 2.4L11.3 2.1C10.6 1.8 9.8 1.9 9.3 2.4C9.1 2.6 9 2.8 8.9 3L7.5 6H6V5C6 4.4 5.6 4 5 4S4 4.4 4 5V6C4 7.1 4.9 8 6 8H18C19.1 8 20 7.1 20 6V5C20 4.5 19.6 4 19 4M4 22V19C4 16.33 9.33 15 12 15S20 16.33 20 19V22H4M18.1 20.1V19C18.1 18.36 14.97 16.9 12 16.9S5.9 18.36 5.9 19V20.1H18.1M16 9V10C16 12.21 14.21 14 12 14S8 12.21 8 10V9H10V10C10 11.11 10.9 12 12 12S14 11.11 14 10V9H16Z"/></svg>"##,
+    slug: "account-cowboy-hat-outline",
+    version: "6.1.95",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// format-text-rotation-none
+pub const FORMAT_TEXT_ROTATION_NONE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-text-rotation-none" viewBox="0 0 24 24"><path d="M20.5,18L17.5,21V19H5V17H17.5V15L20.5,18M10.13,10H13.88L12,4.97L10.13,10M12.75,3L17.5,14H15.42L14.5,11.81H9.5L8.58,14H6.5L11.25,3H12.75Z"/></svg>"##,
+    slug: "format-text-rotation-none",
+    version: "3.4.93",
+    deprecated: false,
+    author: "Google",
+};
+
+/// alpha-w-box-outline
+pub const ALPHA_W_BOX_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-w-box-outline" viewBox="0 0 24 24"><path d="M9,17A2,2 0 0,1 7,15V7H9V15H11V8H13V15H15V7H17V15A2,2 0 0,1 15,17H9M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M5,5V19H19V5H5Z"/></svg>"##,
+    slug: "alpha-w-box-outline",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Contributors",
+};
+
+/// currency-sign
+pub const CURRENCY_SIGN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-currency-sign" viewBox="0 0 24 24"><path d="M4.41 3L3 4.41L5.69 7.1C4.63 8.46 4 10.15 4 12C4 13.85 4.63 15.55 5.69 16.9L3 19.59L4.41 21L7.1 18.31C8.46 19.37 10.15 20 12 20C13.85 20 15.55 19.37 16.9 18.31L19.59 21L21 19.59L18.31 16.9C19.37 15.54 20 13.85 20 12C20 10.15 19.37 8.45 18.31 7.1L21 4.41L19.59 3L16.9 5.69C15.54 4.63 13.85 4 12 4C10.15 4 8.45 4.63 7.1 5.69L4.41 3M12 6C15.31 6 18 8.69 18 12C18 15.31 15.31 18 12 18C8.69 18 6 15.31 6 12C6 8.69 8.69 6 12 6Z"/></svg>"##,
+    slug: "currency-sign",
+    version: "2.0.46",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// dock-right
+pub const DOCK_RIGHT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-dock-right" viewBox="0 0 24 24"><path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M15 18H4V6H15Z"/></svg>"##,
+    slug: "dock-right",
+    version: "4.2.95",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// fuse-blade
+pub const FUSE_BLADE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-fuse-blade" viewBox="0 0 24 24"><path d="M10,21H8L6,19V16H10V21M18,16H14V21H16L18,19V16M3,3V4A1,1 0 0,0 4,5V14A1,1 0 0,0 5,15H19A1,1 0 0,0 20,14V5H20A1,1 0 0,0 21,4V3H3M11.83,13V9.73H10L12.61,4.66V7.93H14.36L11.83,13Z"/></svg>"##,
+    slug: "fuse-blade",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// source-commit-start-next-local
+pub const SOURCE_COMMIT_START_NEXT_LOCAL: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-source-commit-start-next-local" viewBox="0 0 24 24"><path d="M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M11,21V19H13V21H11Z"/></svg>"##,
+    slug: "source-commit-start-next-local",
+    version: "1.8.36",
+    deprecated: false,
+    author: "Case Sandberg",
+};
+
+/// text-box-minus
+pub const TEXT_BOX_MINUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-text-box-minus" viewBox="0 0 24 24"><path d="M22,17V19H14V17H22M12,17V15H7V17H12M17,11H7V13H14.69C13.07,14.07 12,15.91 12,18C12,19.09 12.29,20.12 12.8,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H19A2,2 0 0,1 21,5V12.8C20.12,12.29 19.09,12 18,12L17,12.08V11M17,9V7H7V9H17Z"/></svg>"##,
+    slug: "text-box-minus",
+    version: "3.7.94",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// theme-light-dark
+pub const THEME_LIGHT_DARK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-theme-light-dark" viewBox="0 0 24 24"><path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z"/></svg>"##,
+    slug: "theme-light-dark",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// cloud-minus
+pub const CLOUD_MINUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cloud-minus" viewBox="0 0 24 24"><path d="M13 19C13 19.34 13.04 19.67 13.09 20H6.5C5 20 3.69 19.5 2.61 18.43C1.54 17.38 1 16.09 1 14.58C1 13.28 1.39 12.12 2.17 11.1S4 9.43 5.25 9.15C5.67 7.62 6.5 6.38 7.75 5.43S10.42 4 12 4C13.95 4 15.6 4.68 16.96 6.04C18.32 7.4 19 9.05 19 11C20.15 11.13 21.1 11.63 21.86 12.5C22.37 13.07 22.7 13.71 22.86 14.42C21.82 13.54 20.5 13 19 13C15.69 13 13 15.69 13 19M15 18V20H23V18H15Z"/></svg>"##,
+    slug: "cloud-minus",
+    version: "7.1.96",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// usb-flash-drive
+pub const USB_FLASH_DRIVE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-usb-flash-drive" viewBox="0 0 24 24"><path d="M8 15C8.55 15 9 15.45 9 16C9 16.55 8.55 17 8 17C7.45 17 7 16.55 7 16C7 15.45 7.45 15 8 15M15.07 4.69L16.5 6.1L15.07 7.5L13.66 6.1L15.07 4.69M17.9 7.5L19.31 8.93L17.9 10.34L16.5 8.93L17.9 7.5M8 13C6.34 13 5 14.34 5 16C5 17.66 6.34 19 8 19C9.66 19 11 17.66 11 16C11 14.34 9.66 13 8 13M9.77 4.33L10.5 5.08L14.29 1.29C14.47 1.11 14.72 1 15 1C15.28 1 15.53 1.11 15.71 1.29L22.78 8.36L22.78 8.37C22.92 8.54 23 8.76 23 9C23 9.3 22.87 9.57 22.66 9.76L22.66 9.76L18.93 13.5L19.67 14.23L12.95 20.95C11.68 22.22 9.93 23 8 23C4.13 23 1 19.87 1 16C1 14.07 1.78 12.32 3.05 11.05L9.77 4.33M20.59 9L15 3.41L11.93 6.5L17.5 12.08L20.59 9Z"/></svg>"##,
+    slug: "usb-flash-drive",
+    version: "4.7.95",
+    deprecated: false,
+    author: "Yaroslav Bandura",
+};
+
+/// eyedropper-variant
+pub const EYEDROPPER_VARIANT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-eyedropper-variant" viewBox="0 0 24 24"><path d="M6.92,19L5,17.08L13.06,9L15,10.94M20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L13.84,6.41L11.91,4.5L10.5,5.91L11.92,7.33L3,16.25V21H7.75L16.67,12.08L18.09,13.5L19.5,12.09L17.58,10.17L20.7,7.05C21.1,6.65 21.1,6 20.71,5.63Z"/></svg>"##,
+    slug: "eyedropper-variant",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// help-rhombus
+pub const HELP_RHOMBUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-help-rhombus" viewBox="0 0 24 24"><path d="M12 2C11.5 2 11 2.19 10.59 2.59L2.59 10.59C1.8 11.37 1.8 12.63 2.59 13.41L10.59 21.41C11.37 22.2 12.63 22.2 13.41 21.41L21.41 13.41C22.2 12.63 22.2 11.37 21.41 10.59L13.41 2.59C13 2.19 12.5 2 12 2M12 6.95C14.7 7.06 15.87 9.78 14.28 11.81C13.86 12.31 13.19 12.64 12.85 13.07C12.5 13.5 12.5 14 12.5 14.5H11C11 13.65 11 12.94 11.35 12.44C11.68 11.94 12.35 11.64 12.77 11.31C14 10.18 13.68 8.59 12 8.46C11.18 8.46 10.5 9.13 10.5 9.97H9C9 8.3 10.35 6.95 12 6.95M11 15.5H12.5V17H11V15.5Z"/></svg>"##,
+    slug: "help-rhombus",
+    version: "3.0.39",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// filter-cog-outline
+pub const FILTER_COG_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-filter-cog-outline" viewBox="0 0 24 24"><path d="M22.77 19.32L21.7 18.5C21.72 18.33 21.74 18.17 21.74 18S21.73 17.67 21.7 17.5L22.76 16.68C22.85 16.6 22.88 16.47 22.82 16.36L21.82 14.63C21.76 14.5 21.63 14.5 21.5 14.5L20.27 15C20 14.82 19.73 14.65 19.42 14.53L19.23 13.21C19.22 13.09 19.11 13 19 13H17C16.87 13 16.76 13.09 16.74 13.21L16.55 14.53C16.25 14.66 15.96 14.82 15.7 15L14.46 14.5C14.35 14.5 14.22 14.5 14.15 14.63L13.15 16.36C13.09 16.47 13.11 16.6 13.21 16.68L14.27 17.5C14.25 17.67 14.24 17.83 14.24 18S14.25 18.33 14.27 18.5L13.21 19.32C13.12 19.4 13.09 19.53 13.15 19.64L14.15 21.37C14.21 21.5 14.34 21.5 14.46 21.5L15.7 21C15.96 21.18 16.24 21.35 16.55 21.47L16.74 22.79C16.76 22.91 16.86 23 17 23H19C19.11 23 19.22 22.91 19.24 22.79L19.43 21.47C19.73 21.34 20 21.18 20.27 21L21.5 21.5C21.63 21.5 21.76 21.5 21.83 21.37L22.83 19.64C22.89 19.53 22.86 19.4 22.77 19.32M18 19.5C17.16 19.5 16.5 18.83 16.5 18S17.17 16.5 18 16.5 19.5 17.17 19.5 18 18.83 19.5 18 19.5M17.62 3.22C17.43 3.08 17.22 3 17 3H3C2.78 3 2.57 3.08 2.38 3.22C1.95 3.56 1.87 4.19 2.21 4.62L7 10.75V15.87C6.96 16.16 7.06 16.47 7.29 16.7L11.3 20.71C11.4 20.81 11.5 20.88 11.65 20.93C11.22 20 11 19 11 18C11 16.17 11.72 14.41 13 13.1V10.75L17.79 4.62C18.13 4.19 18.05 3.56 17.62 3.22M11 10.05V17.58L9 15.58V10.06L5.04 5H14.96L11 10.05Z"/></svg>"##,
+    slug: "filter-cog-outline",
+    version: "6.8.96",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// calendar-multiselect
+pub const CALENDAR_MULTISELECT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-calendar-multiselect" viewBox="0 0 24 24"><path d="M19,19V8H5V19H19M16,1H18V3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3H6V1H8V3H16V1M7,10H9V12H7V10M15,10H17V12H15V10M11,14H13V16H11V14M15,14H17V16H15V14Z"/></svg>"##,
+    slug: "calendar-multiselect",
+    version: "2.6.95",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// lock-percent
+pub const LOCK_PERCENT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-lock-percent" viewBox="0 0 24 24"><path d="M18 8H17V6C17 3.2 14.8 1 12 1S7 3.2 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8M9 6C9 4.3 10.3 3 12 3S15 4.3 15 6V8H9V6M9.5 11C10.3 11 11 11.7 11 12.5S10.3 14 9.5 14 8 13.3 8 12.5 8.7 11 9.5 11M14.5 19C13.7 19 13 18.3 13 17.5S13.7 16 14.5 16 16 16.7 16 17.5 15.3 19 14.5 19M9.2 19.2L7.8 17.8L14.9 10.7L16.3 12.1L9.2 19.2Z"/></svg>"##,
+    slug: "lock-percent",
+    version: "7.1.96",
+    deprecated: false,
+    author: "mocking-mike",
+};
+
+/// timer-music
+pub const TIMER_MUSIC: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-timer-music" viewBox="0 0 24 24"><path d="M16.5 16.11V11H20.77C20.46 9.66 19.86 8.43 19.03 7.39L20.45 5.97C20 5.46 19.55 5 19.04 4.56L17.62 6C16.07 4.74 14.12 4 12 4C7.03 4 3 8.03 3 13S7.03 22 12 22C12.42 22 12.83 21.96 13.24 21.91C13.09 21.46 13 21 13 20.5C13 18.36 14.5 16.57 16.5 16.11M13 14H11V7H13V14M15 3H9V1H15V3M22 13V15H20V20.5C20 21.88 18.88 23 17.5 23S15 21.88 15 20.5 16.12 18 17.5 18C17.86 18 18.19 18.07 18.5 18.21V13H22Z"/></svg>"##,
+    slug: "timer-music",
+    version: "6.8.96",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// car-brake-abs
+pub const CAR_BRAKE_ABS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-car-brake-abs" viewBox="0 0 24 24"><path d="M24,12C24,15.31 22.66,18.31 20.5,20.5L19.42,19.42C21.32,17.5 22.5,14.9 22.5,12C22.5,9.11 21.32,6.5 19.42,4.58L20.5,3.5C22.66,5.69 24,8.69 24,12M20,9.6V8H16.8C15.92,8 15.2,8.72 15.2,9.6V11.2A1.6,1.6 0 0,0 16.8,12.8H18.4V14.4H15.2V16H18.4C19.28,16 20,15.28 20,14.4V12.8A1.6,1.6 0 0,0 18.4,11.2H16.8V9.6H20M8.42,6C9.47,5.37 10.69,5 12,5C13.31,5 14.53,5.37 15.58,6H18.69C17.05,4.16 14.66,3 12,3C9.34,3 6.95,4.16 5.31,6H8.42M13.2,12C13.84,12 14.4,12.56 14.4,13.2V14.4A1.6,1.6 0 0,1 12.8,16H9.6V8H12.8A1.6,1.6 0 0,1 14.4,9.6V10.8C14.4,11.44 13.84,12 13.2,12M12.8,12.8H11.2V14.4H12.8V12.8M12.8,9.6H11.2V11.2H12.8V9.6M4.58,4.58L3.5,3.5C1.34,5.69 0,8.69 0,12C0,15.31 1.34,18.31 3.5,20.5L4.58,19.42C2.68,17.5 1.5,14.9 1.5,12C1.5,9.11 2.68,6.5 4.58,4.58M7.2,16V12.8H5.6V16H4V9.6A1.6,1.6 0 0,1 5.6,8H7.2C8.08,8 8.8,8.72 8.8,9.6V16H7.2M7.2,11.2V9.6H5.6V11.2H7.2M15.58,18C14.53,18.63 13.31,19 12,19C10.69,19 9.47,18.63 8.42,18H5.31C6.95,19.84 9.34,21 12,21C14.66,21 17.05,19.84 18.69,18H15.58Z"/></svg>"##,
+    slug: "car-brake-abs",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// arrow-right-bold
+pub const ARROW_RIGHT_BOLD: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold" viewBox="0 0 24 24"><path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z"/></svg>"##,
+    slug: "arrow-right-bold",
+    version: "1.9.32",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// egg-off-outline
+pub const EGG_OFF_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-egg-off-outline" viewBox="0 0 24 24"><path d="M22.11 21.46L2.39 1.73L1.11 3L6.1 8C5.1 10.28 4.5 12.76 4.5 14.5C4.5 18.64 7.86 22 12 22C14.23 22 16.22 21 17.59 19.5L20.84 22.73L22.11 21.46M12 20C8.97 20 6.5 17.53 6.5 14.5C6.5 13.08 6.95 11.25 7.63 9.5L16.17 18.06C15.16 19.24 13.67 20 12 20M9.36 6.16L7.92 4.72C9.1 3.11 10.5 2 12 2C16.14 2 19.5 10.36 19.5 14.5C19.5 15.06 19.43 15.6 19.32 16.12L17.5 14.29C17.38 10.46 14.28 4 12 4C11.17 4 10.22 4.87 9.36 6.16Z"/></svg>"##,
+    slug: "egg-off-outline",
+    version: "5.1.45",
+    deprecated: false,
+    author: "Michael Irigoyen",
 };
 
 /// invoice-check-outline
@@ -1711,92 +685,1118 @@ pub const INVOICE_CHECK_OUTLINE: Icon = Icon {
     author: "Jeff Anders",
 };
 
-/// silo-outline
-pub const SILO_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-silo-outline" viewBox="0 0 24 24"><path d="M8.5,2C11.85,2 14.6,4.53 14.96,7.78L22,12V14L20,12.8V22H18V11.6L15,9.8V22H13V9H4V22H2V8.5A6.5,6.5 0 0,1 8.5,2M8.5,4C6.54,4 4.87,5.25 4.26,7H12.74C12.13,5.25 10.46,4 8.5,4M6,11H11V13H6V11M6,15H11V17H6V15M6,19H11V21H6V19Z"/></svg>"##,
-    slug: "silo-outline",
-    version: "2.8.94",
+/// fan-clock
+pub const FAN_CLOCK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-fan-clock" viewBox="0 0 24 24"><path d="M16 14H17.5V16.8L19.9 18.2L19.1 19.5L16 17.7V14M21 11.3C20.8 7.9 17 7.2 13.3 9.2C13 8.8 12.6 8.5 12.1 8.3C12.3 7.4 12.7 6.3 13.7 5.8C16.1 4.6 16 1 11.5 1C7.9 1 7.2 5 9.1 8.7C8.7 9 8.4 9.4 8.2 9.9C7.3 9.7 6.2 9.3 5.7 8.3C4.6 5.9 1 6 1 10.5C1 14.1 5 14.8 8.7 12.9C9 13.3 9.5 13.6 9.9 13.8C9.7 14.7 9.3 15.8 8.3 16.3C5.9 17.4 6 21 10.5 21C10.8 21 11 21 11.2 20.9C12.5 22.8 14.6 24 17 24C20.9 24 24 20.9 24 17C24 14.6 22.8 12.5 21 11.3M11 10C11.6 10 12 10.4 12 11S11.6 12 11 12 10 11.6 10 11 10.4 10 11 10M17 22C14.2 22 12 19.8 12 17S14.2 12 17 12 22 14.2 22 17 19.8 22 17 22Z"/></svg>"##,
+    slug: "fan-clock",
+    version: "6.7.96",
     deprecated: false,
-    author: "Benjamin Watson",
+    author: "Michael Irigoyen",
 };
 
-/// file-question-outline
-pub const FILE_QUESTION_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-question-outline" viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M15 13C15 14.89 12.75 15.07 12.75 16.76H11.25C11.25 14.32 13.5 14.5 13.5 13C13.5 12.18 12.83 11.5 12 11.5S10.5 12.18 10.5 13H9C9 11.35 10.34 10 12 10S15 11.35 15 13M12.75 17.5V19H11.25V17.5H12.75Z"/></svg>"##,
-    slug: "file-question-outline",
-    version: "4.1.95",
+/// help-box
+pub const HELP_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-help-box" viewBox="0 0 24 24"><path d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z"/></svg>"##,
+    slug: "help-box",
+    version: "1.9.32",
     deprecated: false,
-    author: "Terren",
+    author: "Austin Andrews",
 };
 
-/// fridge-variant-outline
-pub const FRIDGE_VARIANT_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-fridge-variant-outline" viewBox="0 0 24 24"><path d="M17 2H7C5.9 2 5 2.9 5 4V19C5 20.11 5.9 21 7 21V22H9V21H15V22H17V21C18.11 21 19 20.11 19 19V4C19 2.9 18.11 2 17 2M7 19V14H10V10H7V4H11V19H7M17 19H13V4H17V19Z"/></svg>"##,
-    slug: "fridge-variant-outline",
-    version: "5.6.55",
+/// alert-remove-outline
+pub const ALERT_REMOVE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alert-remove-outline" viewBox="0 0 24 24"><path d="M11 15.5H13V17.5H11V15.5M14 19C14 18.86 14 18.73 14 18.6H5.4L12 7.3L16.11 14.44C16.62 14 17.2 13.65 17.84 13.41L12 3.3L2 20.6H14.22C14.08 20.09 14 19.56 14 19M13 10.5H11V14.5H13V10.5M22.12 15.46L20 17.59L17.88 15.46L16.47 16.88L18.59 19L16.47 21.12L17.88 22.54L20 20.41L22.12 22.54L23.54 21.12L21.41 19L23.54 16.88L22.12 15.46Z"/></svg>"##,
+    slug: "alert-remove-outline",
+    version: "5.3.45",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// comment-plus
+pub const COMMENT_PLUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-comment-plus" viewBox="0 0 24 24"><path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22H9M11,6V9H8V11H11V14H13V11H16V9H13V6H11Z"/></svg>"##,
+    slug: "comment-plus",
+    version: "2.5.94",
+    deprecated: false,
+    author: "Peter Noble",
+};
+
+/// oil-temperature
+pub const OIL_TEMPERATURE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-oil-temperature" viewBox="0 0 24 24"><path d="M10 5H13V3H10V2C10 1.4 9.6 1 9 1S8 1.4 8 2V15.3C7.4 15.6 7 16.3 7 17C7 18.1 7.9 19 9 19S11 18.1 11 17C11 16.3 10.6 15.6 10 15.3V13H13V11H10V9H13V7H10V5M22 17.5C22 17.5 24 19.7 24 21C24 22.1 23.1 23 22 23S20 22.1 20 21C20 19.7 22 17.5 22 17.5M22.9 15.5C22.6 16 22 16.1 21.5 15.9L19.4 14.7L15.8 21C15.5 21.6 14.8 22 14 22H5C3.9 22 3 21.1 3 20V17C3 15.9 3.9 15 5 15V20H14L16.1 16.4L13 18.2V15.8L19.2 12.2L22.5 14.1C23 14.4 23.1 15 22.9 15.5M3.5 13.9L1.8 15.6C1.4 16 .8 16 .4 15.6S0 14.6.4 14.2L2.1 12.5C2.5 12.1 3.1 12.1 3.5 12.5S3.9 13.5 3.5 13.9Z"/></svg>"##,
+    slug: "oil-temperature",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// wifi-strength-3-alert
+pub const WIFI_STRENGTH_3_ALERT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-wifi-strength-3-alert" viewBox="0 0 24 24"><path d="M12 3C7.8 3 3.7 4.4 .4 7C4.4 12.1 7.9 16.4 12 21.5C14.4 18.5 16.7 15.7 19 12.8V9.6L18.8 9.9C17.3 9 14.9 8 12 8C9 8 6.7 9 5.2 9.8L3.3 7.4C5.9 5.8 8.9 5 12 5S18.1 5.9 20.7 7.4L20.3 8H22.9C23.1 7.7 23.5 7.3 23.7 7C20.3 4.4 16.2 3 12 3M21 10V16H23V10M21 18V20H23V18"/></svg>"##,
+    slug: "wifi-strength-3-alert",
+    version: "2.3.50",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// cloud-key
+pub const CLOUD_KEY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cloud-key" viewBox="0 0 24 24"><path d="M9.41 20H6.5C5 20 3.68 19.5 2.61 18.43C1.54 17.38 1 16.09 1 14.58C1 13.28 1.39 12.12 2.17 11.1C2.96 10.08 4 9.43 5.25 9.15C5.67 7.62 6.5 6.38 7.75 5.43C9 4.5 10.42 4 12 4C13.95 4 15.61 4.68 16.96 6.04C18.32 7.39 19 9.05 19 11C20.15 11.13 21.11 11.63 21.86 12.5C22.5 13.23 22.86 14.06 22.96 15H18C17.07 13.77 15.61 13 14 13C11.2 13 9 15.2 9 18C9 18.72 9.15 19.39 9.41 20M23 17V19H21V21H19V19H16.8C16.4 20.2 15.3 21 14 21C12.3 21 11 19.7 11 18S12.3 15 14 15C15.3 15 16.4 15.8 16.8 17H23M15 18C15 17.5 14.6 17 14 17S13 17.5 13 18 13.4 19 14 19 15 18.5 15 18Z"/></svg>"##,
+    slug: "cloud-key",
+    version: "7.3.67",
+    deprecated: false,
+    author: "frankgrinaert",
+};
+
+/// flask-empty
+pub const FLASK_EMPTY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-flask-empty" viewBox="0 0 24 24"><path d="M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6Z"/></svg>"##,
+    slug: "flask-empty",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// chevron-double-right
+pub const CHEVRON_DOUBLE_RIGHT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chevron-double-right" viewBox="0 0 24 24"><path d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z"/></svg>"##,
+    slug: "chevron-double-right",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// table-key
+pub const TABLE_KEY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-key" viewBox="0 0 24 24"><path d="M16.8 17C16.4 15.8 15.3 15 14 15C12.3 15 11 16.3 11 18S12.3 21 14 21C15.3 21 16.4 20.2 16.8 19H19V21H21V19H23V17H16.8M14 19C13.4 19 13 18.5 13 18S13.4 17 14 17 15 17.5 15 18 14.6 19 14 19M9 18H4V14H10V15C10.9 13.8 12.4 13 14 13C15.1 13 16.1 13.4 17 14H18V15H20V6C20 4.9 19.1 4 18 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H9.4C9.1 19.4 9 18.7 9 18M12 8H18V12H12V8M4 8H10V12H4V8Z"/></svg>"##,
+    slug: "table-key",
+    version: "5.1.45",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// tooltip-remove
+pub const TOOLTIP_REMOVE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tooltip-remove" viewBox="0 0 24 24"><path d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.11 2.9 18 4 18H8L12 22L16 18H20C21.11 18 22 17.11 22 16V4C22 2.9 21.11 2 20 2M15.54 12.12L14.12 13.54L12 11.41L9.88 13.54L8.47 12.12L10.59 10L8.46 7.88L9.88 6.47L12 8.59L14.12 6.47L15.54 7.88L13.41 10L15.54 12.12Z"/></svg>"##,
+    slug: "tooltip-remove",
+    version: "5.5.55",
     deprecated: false,
     author: "Colton Wiscombe",
 };
 
-/// hand-front-left
-pub const HAND_FRONT_LEFT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-hand-front-left" viewBox="0 0 24 24"><path d="M3 9.25V15.75C3 20.31 6.69 24 11.25 24S19.5 20.31 19.5 15.75V5.75C19.5 5.06 18.94 4.5 18.25 4.5S17 5.06 17 5.75V12H16V2.75C16 2.06 15.44 1.5 14.75 1.5S13.5 2.06 13.5 2.75V11H12.5V1.25C12.5 .56 11.94 0 11.25 0S10 .56 10 1.25V11H9V3.25C9 2.56 8.44 2 7.75 2C7.06 2 6.5 2.56 6.5 3.25V14.03C8.47 14.28 10 15.96 10 18H9C9 16.35 7.65 15 6 15H5.5V9.25C5.5 8.56 4.94 8 4.25 8S3 8.56 3 9.25Z"/></svg>"##,
-    slug: "hand-front-left",
+/// bike-pedal-clipless
+pub const BIKE_PEDAL_CLIPLESS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bike-pedal-clipless" viewBox="0 0 24 24"><path d="M14.43 16.11L15.28 14H16V13H20V11H16V10H15.28L14.43 7.89C14 6.75 12.87 6 11.65 6H9.35C8.13 6 7 6.75 6.57 7.89L5.37 10.89C5.08 11.6 5.08 12.4 5.37 13.11L6.57 16.11C7 17.25 8.13 18 9.35 18H11.65C12.87 18 14 17.25 14.43 16.11M9.35 8H11.65C12.06 8 12.42 8.25 12.57 8.63L13.12 10H7.88L8.43 8.63C8.58 8.25 8.95 8 9.35 8M8.43 15.37L7.88 14H13.12L12.57 15.37C12.42 15.75 12.05 16 11.65 16H9.35C8.95 16 8.58 15.75 8.43 15.37Z"/></svg>"##,
+    slug: "bike-pedal-clipless",
+    version: "7.2.96",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// led-variant-on
+pub const LED_VARIANT_ON: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-led-variant-on" viewBox="0 0 24 24"><path d="M12,3A4,4 0 0,0 8,7V13H6V15H9V21H11V15H13V21H15V15H18V13H16V7A4,4 0 0,0 12,3Z"/></svg>"##,
+    slug: "led-variant-on",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// flash-outline
+pub const FLASH_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-flash-outline" viewBox="0 0 24 24"><path d="M7,2H17L13.5,9H17L10,22V14H7V2M9,4V12H12V14.66L14,11H10.24L13.76,4H9Z"/></svg>"##,
+    slug: "flash-outline",
+    version: "1.8.36",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// source-commit
+pub const SOURCE_COMMIT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-source-commit" viewBox="0 0 24 24"><path d="M17,12C17,14.42 15.28,16.44 13,16.9V21H11V16.9C8.72,16.44 7,14.42 7,12C7,9.58 8.72,7.56 11,7.1V3H13V7.1C15.28,7.56 17,9.58 17,12M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>"##,
+    slug: "source-commit",
+    version: "1.8.36",
+    deprecated: false,
+    author: "Case Sandberg",
+};
+
+/// clipboard-text-clock
+pub const CLIPBOARD_TEXT_CLOCK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clipboard-text-clock" viewBox="0 0 24 24"><path d="M21 11.11V5C21 3.9 20.11 3 19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.11 3.9 21 5 21H11.11C12.37 22.24 14.09 23 16 23C19.87 23 23 19.87 23 16C23 14.09 22.24 12.37 21 11.11M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M6 7H18V9H6V7M9.08 17H6V15H9.08C9.03 15.33 9 15.66 9 16S9.03 16.67 9.08 17M6 13V11H11.11C10.5 11.57 10.04 12.25 9.68 13H6M16 21C13.24 21 11 18.76 11 16S13.24 11 16 11 21 13.24 21 16 18.76 21 16 21M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25Z"/></svg>"##,
+    slug: "clipboard-text-clock",
+    version: "6.3.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// notebook-plus
+pub const NOTEBOOK_PLUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-notebook-plus" viewBox="0 0 24 24"><path d="M3 7V5H5V4C5 2.9 5.9 2 7 2H13V9L15.5 7.5L18 9V2H19C20 2 21 3 21 4V13.8C20.1 13.3 19.1 13 18 13C14.7 13 12 15.7 12 19C12 20.1 12.3 21.1 12.8 22H7C5.9 22 5 21 5 20V19H3V17H5V13H3V11H5V7H3M5 5V7H7V5H5M5 19H7V17H5V19M5 13H7V11H5V13M17 15V18H14V20H17V23H19V20H22V18H19V15H17Z"/></svg>"##,
+    slug: "notebook-plus",
+    version: "5.6.55",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// pan-top-right
+pub const PAN_TOP_RIGHT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-top-right" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M18.65,11L13,5.35L19,5L18.65,11Z"/></svg>"##,
+    slug: "pan-top-right",
+    version: "3.0.39",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// invoice-text-plus-outline
+pub const INVOICE_TEXT_PLUS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-invoice-text-plus-outline" viewBox="0 0 24 24"><path d="M21 13.34C20.37 13.12 19.7 13 19 13V5H5V18.26L6 17.6L9 19.6L12 17.6L13.04 18.29C13 18.5 13 18.76 13 19C13 19.65 13.1 20.28 13.3 20.86L12 20L9 22L6 20L3 22V3H21V13.34M17 9V7H7V9H17M15 13V11H7V13H15M18 15V18H15V20H18V23H20V20H23V18H20V15H18Z"/></svg>"##,
+    slug: "invoice-text-plus-outline",
+    version: "7.4.47",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// robot-off-outline
+pub const ROBOT_OFF_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-robot-off-outline" viewBox="0 0 24 24"><path d="M23 15V18C23 18.5 22.64 18.88 22.17 18.97L20.2 17H21V16H19.2L19 15.8V14C19 11.24 16.76 9 14 9H12.2L10.2 7H11V5.73C10.4 5.39 10 4.74 10 4C10 2.9 10.9 2 12 2S14 2.9 14 4C14 4.74 13.6 5.39 13 5.73V7H14C17.87 7 21 10.13 21 14H22C22.55 14 23 14.45 23 15M8.5 13.5C7.4 13.5 6.5 14.4 6.5 15.5S7.4 17.5 8.5 17.5 10.5 16.61 10.5 15.5 9.61 13.5 8.5 13.5M22.11 21.46L20.84 22.73L19.89 21.78C19.62 21.92 19.32 22 19 22H5C3.9 22 3 21.11 3 20V19H2C1.45 19 1 18.55 1 18V15C1 14.45 1.45 14 2 14H3C3 11.53 4.29 9.36 6.22 8.11L1.11 3L2.39 1.73L22.11 21.46M18.11 20L15.6 17.5C15.57 17.5 15.53 17.5 15.5 17.5C14.4 17.5 13.5 16.61 13.5 15.5C13.5 15.47 13.5 15.43 13.5 15.4L7.7 9.59C6.1 10.42 5 12.08 5 14V16H3V17H5V20H18.11Z"/></svg>"##,
+    slug: "robot-off-outline",
+    version: "5.7.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// alpha-c-circle-outline
+pub const ALPHA_C_CIRCLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-alpha-c-circle-outline" viewBox="0 0 24 24"><path d="M11,7H13A2,2 0 0,1 15,9V10H13V9H11V15H13V14H15V15A2,2 0 0,1 13,17H11A2,2 0 0,1 9,15V9A2,2 0 0,1 11,7M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/></svg>"##,
+    slug: "alpha-c-circle-outline",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Contributors",
+};
+
+/// format-letter-starts-with
+pub const FORMAT_LETTER_STARTS_WITH: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-format-letter-starts-with" viewBox="0 0 24 24"><path d="M11.14 4L6.43 16H8.36L9.32 13.43H14.67L15.64 16H17.57L12.86 4M12 6.29L14.03 11.71H9.96M4 18V15H2V20H22V18Z"/></svg>"##,
+    slug: "format-letter-starts-with",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// widgets-outline
+pub const WIDGETS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-widgets-outline" viewBox="0 0 24 24"><path d="M16.7 4.5L19.5 7.3L16.7 10.1L13.9 7.3L16.7 4.5M9 5V9H5V5H9M19 15V19H15V15H19M16.7 1.7L11 7.3L16.7 13H13V21H21V13H16.7L22.3 7.3L16.7 1.7M11 3H3V11H11V3M9 15V19H5V15H9M11 13H3V21H11V13Z"/></svg>"##,
+    slug: "widgets-outline",
+    version: "4.9.95",
+    deprecated: false,
+    author: "Google",
+};
+
+/// power-socket-eu
+pub const POWER_SOCKET_EU: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-power-socket-eu" viewBox="0 0 24 24"><path d="M7.5,10.5A1.5,1.5 0 0,1 9,12A1.5,1.5 0 0,1 7.5,13.5C6.66,13.5 6,12.83 6,12A1.5,1.5 0 0,1 7.5,10.5M16.5,10.5A1.5,1.5 0 0,1 18,12A1.5,1.5 0 0,1 16.5,13.5A1.5,1.5 0 0,1 15,12A1.5,1.5 0 0,1 16.5,10.5M4.22,2H19.78C21,2 22,3 22,4.22V19.78A2.22,2.22 0 0,1 19.78,22H4.22C3,22 2,21 2,19.78V4.22A2.22,2.22 0 0,1 4.22,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/></svg>"##,
+    slug: "power-socket-eu",
+    version: "2.0.46",
+    deprecated: false,
+    author: "GreenTurtwig",
+};
+
+/// forum-remove-outline
+pub const FORUM_REMOVE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-forum-remove-outline" viewBox="0 0 24 24"><path d="M21 6H19V12.1C20.2 12.3 21.2 12.8 22 13.5V7C22 6.5 21.5 6 21 6M6 17C6 17.5 6.5 18 7 18H12C12 16.9 12.3 15.9 12.8 15H6V17M16 2H3C2.5 2 2 2.5 2 3V17L6 13H14.7C15.4 12.5 16.2 12.2 17 12.1V3C17 2.5 16.5 2 16 2M15 11H5.2L4 12.2V4H15V11M20.12 14.46L21.54 15.88L19.41 18L21.54 20.12L20.12 21.54L18 19.41L15.88 21.54L14.47 20.12L16.59 18L14.47 15.88L15.88 14.47L18 16.59L20.12 14.46Z"/></svg>"##,
+    slug: "forum-remove-outline",
+    version: "6.8.96",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// bell-circle-outline
+pub const BELL_CIRCLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bell-circle-outline" viewBox="0 0 24 24"><path d="M17,16H7V15L8,14V11.39C8,10.3 8.27,9.34 8.79,8.53C9.3,7.72 10.04,7.21 11,7V6.5A1,1 0 0,1 12,5.5A1,1 0 0,1 13,6.5V7C13.96,7.21 14.7,7.72 15.21,8.53C15.73,9.34 16,10.3 16,11.39V14L17,15V16M13.5,17A1.5,1.5 0 0,1 12,18.5A1.5,1.5 0 0,1 10.5,17H13.5M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/></svg>"##,
+    slug: "bell-circle-outline",
+    version: "3.4.93",
+    deprecated: false,
+    author: "Google",
+};
+
+/// music-box-multiple
+pub const MUSIC_BOX_MULTIPLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-music-box-multiple" viewBox="0 0 24 24"><path d="M4,6H2V20A2,2 0 0,0 4,22H18V20H4M18,7H15V12.5A2.5,2.5 0 0,1 12.5,15A2.5,2.5 0 0,1 10,12.5A2.5,2.5 0 0,1 12.5,10C13.07,10 13.58,10.19 14,10.5V5H18M20,2H8A2,2 0 0,0 6,4V16A2,2 0 0,0 8,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2Z"/></svg>"##,
+    slug: "music-box-multiple",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// music-clef-treble
+pub const MUSIC_CLEF_TREBLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-music-clef-treble" viewBox="0 0 24 24"><path d="M13 11V7.5L15.2 5.29C16 4.5 16.15 3.24 15.59 2.26C15.14 1.47 14.32 1 13.45 1C13.24 1 13 1.03 12.81 1.09C11.73 1.38 11 2.38 11 3.5V6.74L7.86 9.91C6.2 11.6 5.7 14.13 6.61 16.34C7.38 18.24 9.06 19.55 11 19.89V20.5C11 20.76 10.77 21 10.5 21H9V23H10.5C11.85 23 13 21.89 13 20.5V20C15.03 20 17.16 18.08 17.16 15.25C17.16 12.95 15.24 11 13 11M13 3.5C13 3.27 13.11 3.09 13.32 3.03C13.54 2.97 13.77 3.06 13.88 3.26C14 3.46 13.96 3.71 13.8 3.87L13 4.73V3.5M11 11.5C10.03 12.14 9.3 13.24 9.04 14.26L11 14.78V17.83C9.87 17.53 8.9 16.71 8.43 15.57C7.84 14.11 8.16 12.45 9.26 11.33L11 9.5V11.5M13 18V12.94C14.17 12.94 15.18 14.04 15.18 15.25C15.18 17 13.91 18 13 18Z"/></svg>"##,
+    slug: "music-clef-treble",
+    version: "3.9.97",
+    deprecated: false,
+    author: "Haley Halcyon",
+};
+
+/// folder-arrow-up-down
+pub const FOLDER_ARROW_UP_DOWN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-folder-arrow-up-down" viewBox="0 0 24 24"><path d="M13 19C13 19.34 13.04 19.67 13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.89 4 4 4H10L12 6H20C21.1 6 22 6.89 22 8V13.81C21.12 13.3 20.1 13 19 13C15.69 13 13 15.69 13 19M17 15L14.5 18H16V22H18V18H19.5L17 15M22 20V16H20V20H18.5L21 23L23.5 20H22Z"/></svg>"##,
+    slug: "folder-arrow-up-down",
+    version: "6.6.96",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// gesture-swipe-down
+pub const GESTURE_SWIPE_DOWN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-gesture-swipe-down" viewBox="0 0 24 24"><path d="M10,9A1,1 0 0,1 11,8A1,1 0 0,1 12,9V13.47L13.21,13.6L18.15,15.79C18.68,16.03 19,16.56 19,17.14V21.5C18.97,22.32 18.32,22.97 17.5,23H11C10.62,23 10.26,22.85 10,22.57L5.1,18.37L5.84,17.6C6.03,17.39 6.3,17.28 6.58,17.28H6.8L10,19V9M1,9L4,12L7,9H5V3H3V9H1Z"/></svg>"##,
+    slug: "gesture-swipe-down",
+    version: "1.9.32",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// coffee-maker-check
+pub const COFFEE_MAKER_CHECK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-coffee-maker-check" viewBox="0 0 24 24"><path d="M17.75 21.16L15 18.16L16.16 17L17.75 18.59L21.34 15L22.5 16.41L17.75 21.16M13 18C13 15.78 14.21 13.85 16 12.81V11H6V16C6 17.64 6.81 19.09 8.03 20H4V4H6V6C6 6.55 6.45 7 7 7H15C15.55 7 16 6.55 16 6V4H18V2H4C2.9 2 2 2.9 2 4V20C2 21.1 2.9 22 4 22H14.54C13.58 20.94 13 19.54 13 18M10 9C10 9.55 10.45 10 11 10S12 9.55 12 9 11.55 8 11 8 10 8.45 10 9Z"/></svg>"##,
+    slug: "coffee-maker-check",
+    version: "6.4.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// information-slab-box
+pub const INFORMATION_SLAB_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-information-slab-box" viewBox="0 0 24 24"><path d="M5 3H19C20.1 3 21 3.89 21 5V19C21 19.53 20.79 20.04 20.41 20.41C20.04 20.79 19.53 21 19 21H5C4.47 21 3.96 20.79 3.59 20.41C3.21 20.04 3 19.53 3 19V5C3 3.89 3.89 3 5 3M11 9H13V7H11V9M14 17V15H13V11H10V13H11V15H10V17H14Z"/></svg>"##,
+    slug: "information-slab-box",
+    version: "7.2.96",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// folder-swap
+pub const FOLDER_SWAP: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-folder-swap" viewBox="0 0 24 24"><path d="M20 6H12L10 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V8A2 2 0 0 0 20 6M15 16V14H9V16L6 13L9 10V12H15V10L18 13Z"/></svg>"##,
+    slug: "folder-swap",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// chart-line-stacked
+pub const CHART_LINE_STACKED: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chart-line-stacked" viewBox="0 0 24 24"><path d="M17.45,15.18L22,6.81V19L22,21H2V3H4V15.54L4,19H4.31L6,19H6.57L10.96,11.44L17.45,15.18M22,3L21.97,3.45L17,11L10,6L6,12V3H22Z"/></svg>"##,
+    slug: "chart-line-stacked",
+    version: "1.9.32",
+    deprecated: false,
+    author: "Haley Halcyon",
+};
+
+/// upload-network-outline
+pub const UPLOAD_NETWORK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-upload-network-outline" viewBox="0 0 24 24"><path d="M15,20A1,1 0 0,0 14,19H13V17H17A2,2 0 0,0 19,15V5A2,2 0 0,0 17,3H7A2,2 0 0,0 5,5V15A2,2 0 0,0 7,17H11V19H10A1,1 0 0,0 9,20H2V22H9A1,1 0 0,0 10,23H14A1,1 0 0,0 15,22H22V20H15M7,15V5H17V15H7M12,6L8,10H11V14H13V10H16L12,6Z"/></svg>"##,
+    slug: "upload-network-outline",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// math-norm
+pub const MATH_NORM: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-math-norm" viewBox="0 0 24 24"><path d="M14 21V3H16V21H14M8 21V3H10V21H8Z"/></svg>"##,
+    slug: "math-norm",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// application-edit-outline
+pub const APPLICATION_EDIT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-application-edit-outline" viewBox="0 0 24 24"><path d="M11 20V22H3C1.9 22 1 21.1 1 20V4C1 2.9 1.9 2 3 2H21C22.1 2 23 2.9 23 4V12.1L22.8 11.9C22.3 11.4 21.7 11.1 21 11.1V6H3V20H11M21.4 13.3L22.7 14.6C22.9 14.8 22.9 15.2 22.7 15.4L21.7 16.4L19.6 14.3L20.6 13.3C20.7 13.2 20.8 13.1 21 13.1C21.2 13.1 21.3 13.2 21.4 13.3M21.1 16.9L15.1 23H13V20.9L19.1 14.8L21.1 16.9Z"/></svg>"##,
+    slug: "application-edit-outline",
+    version: "1.6.50",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// bread-slice
+pub const BREAD_SLICE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bread-slice" viewBox="0 0 24 24"><path d="M12,2C17.5,2 22,5.36 22,9.5C22,11.19 21.26,12.75 20,14V22H4V14C2.74,12.75 2,11.19 2,9.5C2,5.36 6.5,2 12,2M8,18H12V14H8V18Z"/></svg>"##,
+    slug: "bread-slice",
+    version: "3.3.92",
+    deprecated: false,
+    author: "Nick",
+};
+
+/// bed-outline
+pub const BED_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bed-outline" viewBox="0 0 24 24"><path d="M7 14C8.66 14 10 12.66 10 11C10 9.34 8.66 8 7 8C5.34 8 4 9.34 4 11C4 12.66 5.34 14 7 14M7 10C7.55 10 8 10.45 8 11C8 11.55 7.55 12 7 12C6.45 12 6 11.55 6 11C6 10.45 6.45 10 7 10M19 7H11V15H3V5H1V20H3V17H21V20H23V11C23 8.79 21.21 7 19 7M21 15H13V9H19C20.1 9 21 9.9 21 11Z"/></svg>"##,
+    slug: "bed-outline",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// link-circle
+pub const LINK_CIRCLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-link-circle" viewBox="0 0 24 24"><path d="M8.17 2.76C9.39 2.26 10.69 2 12 2C13.31 2 14.61 2.26 15.83 2.76C17.04 3.26 18.14 4 19.07 4.93C20 5.86 20.74 6.96 21.24 8.17C21.74 9.39 22 10.69 22 12C22 14.65 20.95 17.2 19.07 19.07C17.2 20.95 14.65 22 12 22C10.69 22 9.39 21.74 8.17 21.24C6.96 20.74 5.86 20 4.93 19.07C3.05 17.2 2 14.65 2 12C2 9.35 3.05 6.8 4.93 4.93C5.86 4 6.96 3.26 8.17 2.76M10 16H11V14H10C9.67 14 8 13.9 8 12C8 10.17 9.54 10 10 10H11V8H10C8.39 8 6 9.07 6 12C6 14.94 8.39 16 10 16M13 16H14C15.61 16 18 14.94 18 12C18 9.07 15.61 8 14 8H13V10H14C14.33 10 16 10.1 16 12C16 13.83 14.46 14 14 14H13V16M9 13H15V11H9V13Z"/></svg>"##,
+    slug: "link-circle",
+    version: "7.3.67",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// tournament
+pub const TOURNAMENT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tournament" viewBox="0 0 24 24"><path d="M2,2V4H7V8H2V10H7C8.11,10 9,9.11 9,8V7H14V17H9V16C9,14.89 8.11,14 7,14H2V16H7V20H2V22H7C8.11,22 9,21.11 9,20V19H14C15.11,19 16,18.11 16,17V13H22V11H16V7C16,5.89 15.11,5 14,5H9V4C9,2.89 8.11,2 7,2H2Z"/></svg>"##,
+    slug: "tournament",
+    version: "2.4.85",
+    deprecated: false,
+    author: "GreenTurtwig",
+};
+
+/// sale
+pub const SALE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-sale" viewBox="0 0 24 24"><path d="M18.65,2.85L19.26,6.71L22.77,8.5L21,12L22.78,15.5L19.24,17.29L18.63,21.15L14.74,20.54L11.97,23.3L9.19,20.5L5.33,21.14L4.71,17.25L1.22,15.47L3,11.97L1.23,8.5L4.74,6.69L5.35,2.86L9.22,3.5L12,0.69L14.77,3.46L18.65,2.85M9.5,7A1.5,1.5 0 0,0 8,8.5A1.5,1.5 0 0,0 9.5,10A1.5,1.5 0 0,0 11,8.5A1.5,1.5 0 0,0 9.5,7M14.5,14A1.5,1.5 0 0,0 13,15.5A1.5,1.5 0 0,0 14.5,17A1.5,1.5 0 0,0 16,15.5A1.5,1.5 0 0,0 14.5,14M8.41,17L17,8.41L15.59,7L7,15.59L8.41,17Z"/></svg>"##,
+    slug: "sale",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// watermark
+pub const WATERMARK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-watermark" viewBox="0 0 24 24"><path d="M21,3H3A2,2 0 0,0 1,5V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V5A2,2 0 0,0 21,3M21,19H12V13H21V19Z"/></svg>"##,
+    slug: "watermark",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// file-table-box-outline
+pub const FILE_TABLE_BOX_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-table-box-outline" viewBox="0 0 24 24"><path d="M19 3H5C3.89 3 3 3.89 3 5V19C3 20.11 3.89 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.89 20.11 3 19 3M19 19H5V5H19V19M9 18H6V16H9V18M13 18H10V16H13V18M9 15H6V13H9V15M13 15H10V13H13V15M9 12H6V10H9V12M13 12H10V10H13V12Z"/></svg>"##,
+    slug: "file-table-box-outline",
+    version: "4.3.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// battery-charging-low
+pub const BATTERY_CHARGING_LOW: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-battery-charging-low" viewBox="0 0 24 24"><path d="M12 20H4V6H12M12.67 4H11V2H5V4H3.33C2.6 4 2 4.6 2 5.33V20.67C2 21.4 2.6 22 3.33 22H12.67C13.41 22 14 21.41 14 20.67V5.33C14 4.6 13.4 4 12.67 4M11 16H5V19H11V16M23 10H20V3L15 13H18V21"/></svg>"##,
+    slug: "battery-charging-low",
+    version: "4.7.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// image-edit-outline
+pub const IMAGE_EDIT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-image-edit-outline" viewBox="0 0 24 24"><path d="M22.7 14.3L21.7 15.3L19.7 13.3L20.7 12.3C20.8 12.2 20.9 12.1 21.1 12.1C21.2 12.1 21.4 12.2 21.5 12.3L22.8 13.6C22.9 13.8 22.9 14.1 22.7 14.3M13 19.9V22H15.1L21.2 15.9L19.2 13.9L13 19.9M11.21 15.83L9.25 13.47L6.5 17H13.12L15.66 14.55L13.96 12.29L11.21 15.83M11 19.9V19.05L11.05 19H5V5H19V11.31L21 9.38V5C21 3.9 20.11 3 19 3H5C3.9 3 3 3.9 3 5V19C3 20.11 3.9 21 5 21H11V19.9Z"/></svg>"##,
+    slug: "image-edit-outline",
+    version: "4.5.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// clipboard-text-clock-outline
+pub const CLIPBOARD_TEXT_CLOCK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clipboard-text-clock-outline" viewBox="0 0 24 24"><path d="M21 11.11V5C21 3.9 20.11 3 19 3H14.82C14.4 1.84 13.3 1 12 1S9.6 1.84 9.18 3H5C3.9 3 3 3.9 3 5V19C3 20.11 3.9 21 5 21H11.11C12.37 22.24 14.09 23 16 23C19.87 23 23 19.87 23 16C23 14.09 22.24 12.37 21 11.11M12 3C12.55 3 13 3.45 13 4S12.55 5 12 5 11 4.55 11 4 11.45 3 12 3M5 19V5H7V7H17V5H19V9.68C18.09 9.25 17.08 9 16 9H7V11H11.1C10.5 11.57 10.04 12.25 9.68 13H7V15H9.08C9.03 15.33 9 15.66 9 16C9 17.08 9.25 18.09 9.68 19H5M16 21C13.24 21 11 18.76 11 16S13.24 11 16 11 21 13.24 21 16 18.76 21 16 21M16.5 16.25L19.36 17.94L18.61 19.16L15 17V12H16.5V16.25Z"/></svg>"##,
+    slug: "clipboard-text-clock-outline",
+    version: "6.3.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// database-alert
+pub const DATABASE_ALERT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-database-alert" viewBox="0 0 24 24"><path d="M18 7C18 9.21 14.42 11 10 11S2 9.21 2 7 5.58 3 10 3 18 4.79 18 7M10 18C5.58 18 2 16.21 2 14V17C2 19.21 5.58 21 10 21S18 19.21 18 17V14C18 16.21 14.42 18 10 18M10 13C5.58 13 2 11.21 2 9V12C2 14.21 5.58 16 10 16S18 14.21 18 12V9C18 11.21 14.42 13 10 13M20 17H22V15H20V17M20 7V13H22V7H20Z"/></svg>"##,
+    slug: "database-alert",
+    version: "5.7.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// pencil-circle-outline
+pub const PENCIL_CIRCLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pencil-circle-outline" viewBox="0 0 24 24"><path d="M7,14.94L13.06,8.88L15.12,10.94L9.06,17H7V14.94M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M16.7,9.35L15.7,10.35L13.65,8.3L14.65,7.3C14.86,7.08 15.21,7.08 15.42,7.3L16.7,8.58C16.92,8.79 16.92,9.14 16.7,9.35M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2"/></svg>"##,
+    slug: "pencil-circle-outline",
+    version: "1.9.32",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// invoice-text-clock
+pub const INVOICE_TEXT_CLOCK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-invoice-text-clock" viewBox="0 0 24 24"><path d="M15 16.69V13H16.5V15.82L18.94 17.23L18.19 18.53L15 16.69M3 22V3H21V11.1C22.24 12.36 23 14.09 23 16C23 19.87 19.87 23 16 23C13.97 23 12.14 22.14 10.87 20.76L9 22L6 20L3 22M9.67 13C10.03 12.25 10.5 11.57 11.1 11H7V13H9.67M17 9V7H7V9H17M16 21C18.76 21 21 18.76 21 16C21 13.24 18.76 11 16 11C13.24 11 11 13.24 11 16C11 18.76 13.24 21 16 21Z"/></svg>"##,
+    slug: "invoice-text-clock",
+    version: "7.4.47",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// cog-clockwise
+pub const COG_CLOCKWISE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cog-clockwise" viewBox="0 0 24 24"><path d="M12 3C7.03 3 3 7.03 3 12S7.03 21 12 21C14 21 15.92 20.34 17.5 19.14L16.06 17.7C14.87 18.54 13.45 19 12 19C8.13 19 5 15.87 5 12S8.13 5 12 5 19 8.13 19 12H16L20 16L24 12H21C21 7.03 16.97 3 12 3M7.71 13.16C7.62 13.23 7.59 13.35 7.64 13.45L8.54 15C8.6 15.12 8.72 15.12 8.82 15.12L9.95 14.67C10.19 14.83 10.44 14.97 10.7 15.09L10.88 16.28C10.9 16.39 11 16.47 11.1 16.47H12.9C13 16.5 13.11 16.41 13.13 16.3L13.31 15.12C13.58 15 13.84 14.85 14.07 14.67L15.19 15.12C15.3 15.16 15.42 15.11 15.47 15L16.37 13.5C16.42 13.38 16.39 13.26 16.31 13.19L15.31 12.45C15.34 12.15 15.34 11.85 15.31 11.55L16.31 10.79C16.4 10.72 16.42 10.61 16.37 10.5L15.47 8.95C15.41 8.85 15.3 8.81 15.19 8.85L14.07 9.3C13.83 9.13 13.57 9 13.3 8.88L13.13 7.69C13.11 7.58 13 7.5 12.9 7.5H11.14C11.04 7.5 10.95 7.57 10.93 7.67L10.76 8.85C10.5 8.97 10.23 9.12 10 9.3L8.85 8.88C8.74 8.84 8.61 8.89 8.56 9L7.65 10.5C7.6 10.62 7.63 10.74 7.71 10.81L8.71 11.55C8.69 11.7 8.69 11.85 8.71 12C8.7 12.15 8.7 12.3 8.71 12.45L7.71 13.19M12 13.5H12C11.16 13.5 10.5 12.82 10.5 12C10.5 11.17 11.17 10.5 12 10.5S13.5 11.17 13.5 12 12.83 13.5 12 13.5"/></svg>"##,
+    slug: "cog-clockwise",
+    version: "4.5.95",
+    deprecated: false,
+    author: "François Risoud",
+};
+
+/// ray-start-arrow
+pub const RAY_START_ARROW: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-ray-start-arrow" viewBox="0 0 24 24"><path d="M23,12L19,16V13H6.83C6.42,14.17 5.31,15 4,15A3,3 0 0,1 1,12A3,3 0 0,1 4,9C5.31,9 6.42,9.83 6.83,11H19V8L23,12Z"/></svg>"##,
+    slug: "ray-start-arrow",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// glass-flute
+pub const GLASS_FLUTE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-glass-flute" viewBox="0 0 24 24"><path d="M8,2H16C15.67,5 15.33,8 14.75,9.83C14.17,11.67 13.33,12.33 12.92,14.08C12.5,15.83 12.5,18.67 13.08,20C13.67,21.33 14.83,21.17 15.42,21.25C16,21.33 16,21.67 16,22H8C8,21.67 8,21.33 8.58,21.25C9.17,21.17 10.33,21.33 10.92,20C11.5,18.67 11.5,15.83 11.08,14.08C10.67,12.33 9.83,11.67 9.25,9.83C8.67,8 8.33,5 8,2M10,4C10.07,5.03 10.15,6.07 10.24,7H13.76C13.85,6.07 13.93,5.03 14,4H10Z"/></svg>"##,
+    slug: "glass-flute",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// emoticon-excited
+pub const EMOTICON_EXCITED: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-emoticon-excited" viewBox="0 0 24 24"><path d="M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2M8.88,7.82L11,9.94L9.94,11L8.88,9.94L7.82,11L6.76,9.94L8.88,7.82M12,17.5C9.67,17.5 7.69,16.04 6.89,14H17.11C16.31,16.04 14.33,17.5 12,17.5M16.18,11L15.12,9.94L14.06,11L13,9.94L15.12,7.82L17.24,9.94L16.18,11Z"/></svg>"##,
+    slug: "emoticon-excited",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Google",
+};
+
+/// fuse
+pub const FUSE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-fuse" viewBox="0 0 24 24"><path d="M8,7V17H15V7H8M11.16,16V12.87H9.41L11.91,8V11.14H13.59L11.16,16M16,2V6H7V2A1,1 0 0,1 8,1H15A1,1 0 0,1 16,2M16,18V22A1,1 0 0,1 15,23H8A1,1 0 0,1 7,22V18H16Z"/></svg>"##,
+    slug: "fuse",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// glasses
+pub const GLASSES: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-glasses" viewBox="0 0 24 24"><path d="M3,10C2.76,10 2.55,10.09 2.41,10.25C2.27,10.4 2.21,10.62 2.24,10.86L2.74,13.85C2.82,14.5 3.4,15 4,15H7C7.64,15 8.36,14.44 8.5,13.82L9.56,10.63C9.6,10.5 9.57,10.31 9.5,10.19C9.39,10.07 9.22,10 9,10H3M7,17H4C2.38,17 0.96,15.74 0.76,14.14L0.26,11.15C0.15,10.3 0.39,9.5 0.91,8.92C1.43,8.34 2.19,8 3,8H9C9.83,8 10.58,8.35 11.06,8.96C11.17,9.11 11.27,9.27 11.35,9.45C11.78,9.36 12.22,9.36 12.64,9.45C12.72,9.27 12.82,9.11 12.94,8.96C13.41,8.35 14.16,8 15,8H21C21.81,8 22.57,8.34 23.09,8.92C23.6,9.5 23.84,10.3 23.74,11.11L23.23,14.18C23.04,15.74 21.61,17 20,17H17C15.44,17 13.92,15.81 13.54,14.3L12.64,11.59C12.26,11.31 11.73,11.31 11.35,11.59L10.43,14.37C10.07,15.82 8.56,17 7,17M15,10C14.78,10 14.61,10.07 14.5,10.19C14.42,10.31 14.4,10.5 14.45,10.7L15.46,13.75C15.64,14.44 16.36,15 17,15H20C20.59,15 21.18,14.5 21.25,13.89L21.76,10.82C21.79,10.62 21.73,10.4 21.59,10.25C21.45,10.09 21.24,10 21,10H15Z"/></svg>"##,
+    slug: "glasses",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// brush-variant
+pub const BRUSH_VARIANT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brush-variant" viewBox="0 0 24 24"><path d="M8 3C5.79 3 4 4.79 4 7V14C4 15.1 4.9 16 6 16H9V20C9 21.1 9.9 22 11 22H13C14.1 22 15 21.1 15 20V16H18C19.1 16 20 15.1 20 14V3H8M8 5H12V7H14V5H15V9H17V5H18V10H6V7C6 5.9 6.9 5 8 5M6 14V12H18V14H6Z"/></svg>"##,
+    slug: "brush-variant",
     version: "6.1.95",
     deprecated: false,
     author: "Google",
 };
 
-/// relation-many-to-zero-or-one
-pub const RELATION_MANY_TO_ZERO_OR_ONE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-relation-many-to-zero-or-one" viewBox="0 0 24 24"><path d="M21 15V13H19V15H18.79A2.5 2.5 0 0 0 14.21 15H13V7H5L3 5H2V11H3L5 9H11V17H14.21A2.5 2.5 0 0 0 18.79 17H19V19H21V17H22V15M16.5 17A1 1 0 1 1 17.5 16A1 1 0 0 1 16.5 17Z"/></svg>"##,
-    slug: "relation-many-to-zero-or-one",
-    version: "5.3.45",
-    deprecated: false,
-    author: "Michael Richins",
-};
-
-/// view-split-horizontal
-pub const VIEW_SPLIT_HORIZONTAL: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-view-split-horizontal" viewBox="0 0 24 24"><path d="M3,5H21V7H3V5M3,11V9H21V11H3M3,19V13H21V19H3Z"/></svg>"##,
-    slug: "view-split-horizontal",
-    version: "3.0.39",
-    deprecated: false,
-    author: "Google",
-};
-
-/// numeric-9-box-multiple-outline
-pub const NUMERIC_9_BOX_MULTIPLE_OUTLINE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-9-box-multiple-outline" viewBox="0 0 24 24"><path d="M15,9H13V7H15M15,5H13A2,2 0 0,0 11,7V9C11,10.11 11.9,11 13,11H15V13H11V15H15A2,2 0 0,0 17,13V7C17,5.89 16.1,5 15,5M21,17H7V3H21M21,1H7A2,2 0 0,0 5,3V17A2,2 0 0,0 7,19H21A2,2 0 0,0 23,17V3A2,2 0 0,0 21,1M3,5H1V21A2,2 0 0,0 3,23H19V21H3V5Z"/></svg>"##,
-    slug: "numeric-9-box-multiple-outline",
-    version: "1.5.54",
-    deprecated: false,
-    author: "Google",
-};
-
-/// cloud-remove
-pub const CLOUD_REMOVE: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cloud-remove" viewBox="0 0 24 24"><path d="M13 19C13 19.34 13.04 19.67 13.09 20H6.5C5 20 3.69 19.5 2.61 18.43C1.54 17.38 1 16.09 1 14.58C1 13.28 1.39 12.12 2.17 11.1S4 9.43 5.25 9.15C5.67 7.62 6.5 6.38 7.75 5.43S10.42 4 12 4C13.95 4 15.6 4.68 16.96 6.04C18.32 7.4 19 9.05 19 11C20.15 11.13 21.1 11.63 21.86 12.5C22.37 13.07 22.7 13.71 22.86 14.42C21.82 13.54 20.5 13 19 13C15.69 13 13 15.69 13 19M21.12 15.46L19 17.59L16.88 15.47L15.47 16.88L17.59 19L15.47 21.12L16.88 22.54L19 20.41L21.12 22.54L22.54 21.12L20.41 19L22.54 16.88L21.12 15.46Z"/></svg>"##,
-    slug: "cloud-remove",
-    version: "7.1.96",
-    deprecated: false,
-    author: "Colton Wiscombe",
-};
-
-/// surround-sound-2-0
-pub const SURROUND_SOUND_2_0: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-surround-sound-2-0" viewBox="0 0 24 24"><path d="M3 7V9H7V11H5C3.9 11 3 11.9 3 13V17H9V15H5V13H7C8.1 13 9 12.1 9 11V9C9 7.9 8.1 7 7 7H3M13 17H11V15H13V17M17 7C15.9 7 15 7.9 15 9V15C15 16.1 15.9 17 17 17H19C20.1 17 21 16.1 21 15V9C21 7.9 20.1 7 19 7H17M17 9H19V15H17V9Z"/></svg>"##,
-    slug: "surround-sound-2-0",
+/// chart-donut-variant
+pub const CHART_DONUT_VARIANT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-chart-donut-variant" viewBox="0 0 24 24"><path d="M13,2.05C18.05,2.55 22,6.82 22,12C22,13.45 21.68,14.83 21.12,16.07L18.5,14.54C18.82,13.75 19,12.9 19,12C19,8.47 16.39,5.57 13,5.08V2.05M12,19C14.21,19 16.17,18 17.45,16.38L20.05,17.91C18.23,20.39 15.3,22 12,22C6.47,22 2,17.5 2,12C2,6.81 5.94,2.55 11,2.05V5.08C7.61,5.57 5,8.47 5,12A7,7 0 0,0 12,19M12,6A6,6 0 0,1 18,12C18,14.97 15.84,17.44 13,17.92V14.83C14.17,14.42 15,13.31 15,12A3,3 0 0,0 12,9L11.45,9.05L9.91,6.38C10.56,6.13 11.26,6 12,6M6,12C6,10.14 6.85,8.5 8.18,7.38L9.72,10.05C9.27,10.57 9,11.26 9,12C9,13.31 9.83,14.42 11,14.83V17.92C8.16,17.44 6,14.97 6,12Z"/></svg>"##,
+    slug: "chart-donut-variant",
     version: "2.0.46",
     deprecated: false,
     author: "Austin Andrews",
 };
 
-/// clock-out
-pub const CLOCK_OUT: Icon = Icon {
-    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-clock-out" viewBox="0 0 24 24"><path d="M18,1L19.8,2.79L15.79,6.79L17.21,8.21L21.21,4.21L23,6V1M12,8C8.14,8 5,11.13 5,15A7,7 0 0,0 12,22C15.86,22 19,18.87 19,15A7,7 0 0,0 12,8M12,10.15C14.67,10.15 16.85,12.32 16.85,15A4.85,4.85 0 0,1 12,19.85C9.32,19.85 7.15,17.68 7.15,15A4.85,4.85 0 0,1 12,10.15M11,12V15.69L14.19,17.53L14.94,16.23L12.5,14.82V12"/></svg>"##,
-    slug: "clock-out",
+/// arrow-left-bold-circle
+pub const ARROW_LEFT_BOLD_CIRCLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold-circle" viewBox="0 0 24 24"><path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M7,12L12,17V14H16V10H12V7L7,12Z"/></svg>"##,
+    slug: "arrow-left-bold-circle",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// thermometer-auto
+pub const THERMOMETER_AUTO: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-thermometer-auto" viewBox="0 0 24 24"><path d="M12 14C11.7 13.6 11.4 13.3 11 13V5C11 3.3 9.7 2 8 2S5 3.3 5 5V13C2.8 14.7 2.3 17.8 4 20S8.8 22.7 11 21 13.7 16.2 12 14M9 8H7V5C7 4.5 7.5 4 8 4S9 4.5 9 5V8M18 3H16L12.8 12H14.7L15.4 10H18.6L19.3 12H21.2L18 3M15.8 8.7L17 5L18.2 8.7H15.8Z"/></svg>"##,
+    slug: "thermometer-auto",
+    version: "6.9.96",
+    deprecated: false,
+    author: "Hans Böhm",
+};
+
+/// eye-outline
+pub const EYE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-eye-outline" viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z"/></svg>"##,
+    slug: "eye-outline",
+    version: "1.8.36",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// source-fork
+pub const SOURCE_FORK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-source-fork" viewBox="0 0 24 24"><path d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z"/></svg>"##,
+    slug: "source-fork",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// archive-music
+pub const ARCHIVE_MUSIC: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-archive-music" viewBox="0 0 24 24"><path d="M16.5 16.11V11H20V8H4V21H13.03C13 20.84 13 20.67 13 20.5C13 18.36 14.5 16.57 16.5 16.11M9 13V11.5C9 11.22 9.22 11 9.5 11H14.5C14.78 11 15 11.22 15 11.5V13H9M21 7H3V3H21V7M22 13V15H20V20.5C20 21.88 18.88 23 17.5 23S15 21.88 15 20.5 16.12 18 17.5 18C17.86 18 18.19 18.07 18.5 18.21V13H22Z"/></svg>"##,
+    slug: "archive-music",
+    version: "6.1.95",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// panorama
+pub const PANORAMA: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-panorama" viewBox="0 0 24 24"><path d="M8.5,12.5L11,15.5L14.5,11L19,17H5M23,18V6A2,2 0 0,0 21,4H3A2,2 0 0,0 1,6V18A2,2 0 0,0 3,20H21A2,2 0 0,0 23,18Z"/></svg>"##,
+    slug: "panorama",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// dome-light
+pub const DOME_LIGHT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-dome-light" viewBox="0 0 24 24"><path d="M21 10C21 14.97 16.97 19 12 19C7.03 19 3 14.97 3 10V9.03C3 8.76 3.11 8.5 3.3 8.3C3.5 8.11 3.76 8 4.03 8H20C20.25 8 20.5 8.11 20.7 8.3C20.89 8.5 21 8.75 21 9V10M5 10C5 13.86 8.14 17 12 17C15.86 17 19 13.86 19 10H5M20 6V7H4V6C4 5.73 4.1 5.5 4.29 5.29C4.5 5.1 4.73 5 5 5H10V3H14V5H19C19.25 5 19.5 5.11 19.7 5.3C19.89 5.5 20 5.75 20 6Z"/></svg>"##,
+    slug: "dome-light",
+    version: "5.2.45",
+    deprecated: false,
+    author: "Tim Grelka",
+};
+
+/// weather-hazy
+pub const WEATHER_HAZY: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-weather-hazy" viewBox="0 0 24 24"><path d="M12,2L14.39,5.42C13.65,5.15 12.84,5 12,5C11.16,5 10.35,5.15 9.61,5.42L12,2M3.34,7L7.5,6.65C6.9,7.16 6.36,7.78 5.94,8.5C5.5,9.24 5.25,10 5.11,10.79L3.34,7M20.65,7L18.88,10.79C18.74,10 18.47,9.23 18.05,8.5C17.63,7.78 17.1,7.15 16.5,6.64M14,15A1,1 0 0,0 13,14H3A1,1 0 0,0 2,15A1,1 0 0,0 3,16H13A1,1 0 0,0 14,15M22,15A1,1 0 0,0 21,14H17A1,1 0 0,0 16,15A1,1 0 0,0 17,16H21A1,1 0 0,0 22,15M10,19A1,1 0 0,0 11,20H20A1,1 0 0,0 21,19A1,1 0 0,0 20,18H11A1,1 0 0,0 10,19M3,19A1,1 0 0,0 4,20H7A1,1 0 0,0 8,19A1,1 0 0,0 7,18H4A1,1 0 0,0 3,19M12,9A3,3 0 0,1 15,12H17A5,5 0 0,0 12,7A5,5 0 0,0 7,12H9A3,3 0 0,1 12,9Z"/></svg>"##,
+    slug: "weather-hazy",
+    version: "3.8.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// dots-horizontal-circle-outline
+pub const DOTS_HORIZONTAL_CIRCLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-dots-horizontal-circle-outline" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M12,10.5A1.5,1.5 0 0,1 13.5,12A1.5,1.5 0 0,1 12,13.5A1.5,1.5 0 0,1 10.5,12A1.5,1.5 0 0,1 12,10.5M7.5,10.5A1.5,1.5 0 0,1 9,12A1.5,1.5 0 0,1 7.5,13.5A1.5,1.5 0 0,1 6,12A1.5,1.5 0 0,1 7.5,10.5M16.5,10.5A1.5,1.5 0 0,1 18,12A1.5,1.5 0 0,1 16.5,13.5A1.5,1.5 0 0,1 15,12A1.5,1.5 0 0,1 16.5,10.5Z"/></svg>"##,
+    slug: "dots-horizontal-circle-outline",
+    version: "3.0.39",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// image-auto-adjust
+pub const IMAGE_AUTO_ADJUST: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-image-auto-adjust" viewBox="0 0 24 24"><path d="M19 10V19H5V5H14V3H5C3.92 3 3 3.9 3 5V19C3 20.1 3.92 21 5 21H19C20.12 21 21 20.1 21 19V10H19M17 10L17.94 7.94L20 7L17.94 6.06L17 4L16.06 6.06L14 7L16.06 7.94L17 10M13.25 10.75L12 8L10.75 10.75L8 12L10.75 13.25L12 16L13.25 13.25L16 12L13.25 10.75Z"/></svg>"##,
+    slug: "image-auto-adjust",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Google",
+};
+
+/// reflect-vertical
+pub const REFLECT_VERTICAL: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-reflect-vertical" viewBox="0 0 24 24"><path d="M18,23H6C5.61,23 5.26,22.79 5.09,22.45C4.92,22.11 4.96,21.7 5.19,21.4L11.2,13.38C11.58,12.87 12.42,12.87 12.8,13.38L18.81,21.4C19.04,21.7 19.08,22.11 18.91,22.45C18.74,22.79 18.39,23 18,23M18,1C18.39,1 18.74,1.21 18.91,1.55C19.08,1.89 19.04,2.3 18.81,2.6L12.8,10.62C12.42,11.13 11.58,11.13 11.2,10.62L5.19,2.6C4.96,2.3 4.92,1.89 5.09,1.55C5.26,1.21 5.61,1 6,1H18M8,3L12,8.35L16,3H8Z"/></svg>"##,
+    slug: "reflect-vertical",
+    version: "2.5.94",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// border-bottom-variant
+pub const BORDER_BOTTOM_VARIANT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-border-bottom-variant" viewBox="0 0 24 24"><path d="M5,15H3V17H5M3,21H21V19H3M5,11H3V13H5M19,9H21V7H19M19,5H21V3H19M5,7H3V9H5M19,17H21V15H19M19,13H21V11H19M17,3H15V5H17M13,3H11V5H13M5,3H3V5H5M9,3H7V5H9"/></svg>"##,
+    slug: "border-bottom-variant",
+    version: "2.2.43",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// credit-card
+pub const CREDIT_CARD: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-credit-card" viewBox="0 0 24 24"><path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 11H4V8H20Z"/></svg>"##,
+    slug: "credit-card",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// tag-hidden
+pub const TAG_HIDDEN: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag-hidden" viewBox="0 0 24 24"><path d="M13.64 3.81L12.41 2.58C12.04 2.21 11.53 2 11 2H10V4H11L12.23 5.23L13.64 3.81M12.93 5.93L14.35 4.5L16.47 6.64L15.05 8.05L12.93 5.93M4 11L5.23 12.23L3.81 13.64L2.59 12.42C2.4 12.23 2.25 12 2.15 11.77C2.05 11.53 2 11.26 2 11V10H4V11M4.5 14.35L5.93 12.93L8.05 15.05L6.64 16.47L4.5 14.35M9.47 19.3L7.35 17.18L8.76 15.76L10.88 17.88L9.47 19.3M15.76 8.76L17.88 10.88L19.3 9.47L17.18 7.35L15.76 8.76M18.59 11.59L20 10.17L21.41 11.58C21.6 11.77 21.75 12 21.85 12.23C21.95 12.5 22 12.74 22 13C22 13.53 21.79 14.04 21.41 14.41L18.59 11.59M20.7 15.12L19.29 13.71L16.85 16.15L18.26 17.56L20.7 15.12M16.15 16.85L17.56 18.26L15.12 20.7L13.71 19.29L16.15 16.85M14.41 21.41L11.59 18.59L10.17 20L11.59 21.42C11.97 21.79 12.47 22 13 22C13.53 22 14.04 21.79 14.41 21.41M4 9H2V6H4V9M2 5H4V4H5V2H4C3.47 2 2.96 2.21 2.59 2.59C2.21 2.96 2 3.47 2 4V5M6 4V2H9V4H6M6.5 8C7.33 8 8 7.33 8 6.5C8 5.67 7.33 5 6.5 5C5.67 5 5 5.67 5 6.5C5 7.33 5.67 8 6.5 8Z"/></svg>"##,
+    slug: "tag-hidden",
+    version: "7.2.96",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// human-white-cane
+pub const HUMAN_WHITE_CANE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-human-white-cane" viewBox="0 0 24 24"><path d="M8 4C8 2.9 8.9 2 10 2C11.11 2 12 2.9 12 4C12 5.11 11.11 6 10 6C8.9 6 8 5.11 8 4M20.65 21.5L14.5 10.85L14.5 10.85V10.85C13.77 10.85 13.23 10.65 12.64 10.26C12.04 9.87 11.6 9.38 11.31 8.8L10.57 7.23C10.39 6.88 10.15 6.62 9.83 6.44C9.54 6.27 9.23 6.18 8.91 6.18C8.59 6.18 8.29 6.26 8 6.4L3 9.23V13.63H4.86V10.32L6.25 9.54L5.91 11.11C5.82 11.63 5.77 12.15 5.77 12.68V17.64L3.38 20.87L4.86 22L7.65 18.25L7.82 15L9.5 17.34V22H11.35V15.94L9.5 13.33V12.68C9.5 12.24 9.5 11.81 9.61 11.39L9.96 10.19C10.34 10.74 10.81 11.2 11.35 11.63C12.2 12.31 13 12.59 14.35 12.58L19.78 22L20.65 21.5Z"/></svg>"##,
+    slug: "human-white-cane",
+    version: "6.5.95",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// tag-edit
+pub const TAG_EDIT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-tag-edit" viewBox="0 0 24 24"><path d="M12.41 2.58L21.41 11.58C21.77 11.94 22 12.44 22 13C22 13.55 21.78 14.05 21.41 14.41L14.41 21.41C14.05 21.77 13.55 22 13 22C12.45 22 11.95 21.77 11.58 21.41L9.45 19.28L10.7 18.03L10.7 18.04L13.11 15.62C14.11 14.63 14.11 13 13.11 12L11.83 10.74C10.84 9.75 9.23 9.75 8.24 10.74L8.07 10.91L8.06 10.91L4.57 14.4L2.59 12.41C2.22 12.05 2 11.55 2 11V4C2 2.89 2.89 2 4 2H11C11.55 2 12.05 2.22 12.41 2.58M4.44 6.56C4.72 6.84 5.1 7 5.5 7C5.9 7 6.28 6.84 6.56 6.56C6.84 6.28 7 5.9 7 5.5C7 5.1 6.84 4.72 6.56 4.44C6.28 4.16 5.9 4 5.5 4C5.1 4 4.72 4.16 4.44 4.44C4.16 4.72 4 5.1 4 5.5C4 5.9 4.16 6.28 4.44 6.56M10.7 15.35L11.7 14.35C11.91 14.14 11.91 13.79 11.7 13.58L10.42 12.3C10.21 12.09 9.86 12.09 9.65 12.3L8.65 13.3L10.7 15.35M8.06 13.88L2 19.94V22H4.06L10.11 15.93L8.06 13.88Z"/></svg>"##,
+    slug: "tag-edit",
+    version: "7.3.67",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// book-lock-outline
+pub const BOOK_LOCK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-lock-outline" viewBox="0 0 24 24"><path d="M13 20.7C13 21.16 13.1 21.6 13.27 22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H18C19.11 2 20 2.9 20 4V10.11C19.68 10.04 19.34 10 19 10S18.32 10.04 18 10.11V4H13V12L10.5 9.75L8 12V4H6V20H13V20.7M23 17.3V20.8C23 21.4 22.4 22 21.7 22H16.2C15.6 22 15 21.4 15 20.7V17.2C15 16.6 15.6 16 16.2 16V14.5C16.2 13.1 17.6 12 19 12S21.8 13.1 21.8 14.5V16C22.4 16 23 16.6 23 17.3M20.5 14.5C20.5 13.7 19.8 13.2 19 13.2S17.5 13.7 17.5 14.5V16H20.5V14.5Z"/></svg>"##,
+    slug: "book-lock-outline",
+    version: "5.8.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// phone-bluetooth-outline
+pub const PHONE_BLUETOOTH_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-phone-bluetooth-outline" viewBox="0 0 24 24"><path d="M20 15.5C18.8 15.5 17.5 15.3 16.4 14.9H16.1C15.8 14.9 15.6 15 15.4 15.2L13.2 17.4C10.4 15.9 8 13.6 6.6 10.8L8.8 8.6C9.1 8.3 9.2 7.9 9 7.6C8.7 6.5 8.5 5.2 8.5 4C8.5 3.5 8 3 7.5 3H4C3.5 3 3 3.5 3 4C3 13.4 10.6 21 20 21C20.5 21 21 20.5 21 20V16.5C21 16 20.5 15.5 20 15.5M5 5H6.5C6.6 5.9 6.8 6.8 7 7.6L5.8 8.8C5.4 7.6 5.1 6.3 5 5M19 19C17.7 18.9 16.4 18.6 15.2 18.2L16.4 17C17.2 17.2 18.1 17.4 19 17.4V19M18 7.21L18.94 8.14L18 9.08M18 2.91L18.94 3.85L18 4.79M14.71 9.5L17 7.21V11H17.5L20.35 8.14L18.21 6L20.35 3.85L17.5 1H17V4.79L14.71 2.5L14 3.21L16.79 6L14 8.79L14.71 9.5Z"/></svg>"##,
+    slug: "phone-bluetooth-outline",
+    version: "4.5.95",
+    deprecated: false,
+    author: "Google",
+};
+
+/// credit-card-settings
+pub const CREDIT_CARD_SETTINGS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-credit-card-settings" viewBox="0 0 24 24"><path d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 11H4V8H20M7 22H9V24H7V22M11 22H13V24H11V22M15 22H17V24H15Z"/></svg>"##,
+    slug: "credit-card-settings",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// decimal-decrease
+pub const DECIMAL_DECREASE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-decimal-decrease" viewBox="0 0 24 24"><path d="M12,17L15,20V18H21V16H15V14L12,17M9,5A3,3 0 0,1 12,8V11A3,3 0 0,1 9,14A3,3 0 0,1 6,11V8A3,3 0 0,1 9,5M9,7A1,1 0 0,0 8,8V11A1,1 0 0,0 9,12A1,1 0 0,0 10,11V8A1,1 0 0,0 9,7M4,12A1,1 0 0,1 5,13A1,1 0 0,1 4,14A1,1 0 0,1 3,13A1,1 0 0,1 4,12Z"/></svg>"##,
+    slug: "decimal-decrease",
     version: "1.5.54",
     deprecated: false,
     author: "Simran",
+};
+
+/// relation-one-or-many-to-only-one
+pub const RELATION_ONE_OR_MANY_TO_ONLY_ONE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-relation-one-or-many-to-only-one" viewBox="0 0 24 24"><path d="M22 15V17H21V19H19V17H18V19H16V17H11V9H7V11H5V9L3 11H2V5H3L5 7V5H7V7H13V15H16V13H18V15H19V13H21V15Z"/></svg>"##,
+    slug: "relation-one-or-many-to-only-one",
+    version: "5.3.45",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// send-variant-clock
+pub const SEND_VARIANT_CLOCK: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-send-variant-clock" viewBox="0 0 24 24"><path d="M15 16.69V13H16.5V15.82L18.94 17.23L18.19 18.53L15 16.69M3 20V14L10.11 12.22C10.19 12.09 10.28 11.97 10.37 11.84L3 10V4L15.03 9.07C15.35 9 15.67 9 16 9C17.86 9 19.64 9.74 20.95 11.05C21.2 11.3 21.43 11.57 21.63 11.85L22 12L21.8 12.08C22.58 13.23 23 14.59 23 16C23 19.87 19.86 23 16 23C14.14 23 12.36 22.26 11.05 20.95C10.08 20 9.42 18.74 9.14 17.41L3 20M20.85 16C20.85 13.32 18.67 11.15 16 11.15C14.71 11.15 13.5 11.66 12.57 12.57C11.66 13.5 11.15 14.71 11.15 16C11.15 18.68 13.32 20.85 16 20.85C16.64 20.85 17.27 20.73 17.86 20.5C18.44 20.24 19 19.88 19.43 19.43C19.88 19 20.24 18.44 20.5 17.86C20.73 17.27 20.85 16.64 20.85 16Z"/></svg>"##,
+    slug: "send-variant-clock",
+    version: "7.2.96",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// numeric-7-circle-outline
+pub const NUMERIC_7_CIRCLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-7-circle-outline" viewBox="0 0 24 24"><path d="M11,17H9L13,9H9V7H15V9L11,17M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/></svg>"##,
+    slug: "numeric-7-circle-outline",
+    version: "3.2.89",
+    deprecated: false,
+    author: "Contributors",
+};
+
+/// cast
+pub const CAST: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-cast" viewBox="0 0 24 24"><path d="M1,10V12A9,9 0 0,1 10,21H12C12,14.92 7.07,10 1,10M1,14V16A5,5 0 0,1 6,21H8A7,7 0 0,0 1,14M1,18V21H4A3,3 0 0,0 1,18M21,3H3C1.89,3 1,3.89 1,5V8H3V5H21V19H14V21H21A2,2 0 0,0 23,19V5C23,3.89 22.1,3 21,3Z"/></svg>"##,
+    slug: "cast",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// console-line
+pub const CONSOLE_LINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-console-line" viewBox="0 0 24 24"><path d="M13,19V16H21V19H13M8.5,13L2.47,7H6.71L11.67,11.95C12.25,12.54 12.25,13.5 11.67,14.07L6.74,19H2.5L8.5,13Z"/></svg>"##,
+    slug: "console-line",
+    version: "2.0.46",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// unicycle
+pub const UNICYCLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-unicycle" viewBox="0 0 24 24"><path d="M13 9.09V5H14C14.55 5 15 4.55 15 4S14.55 3 14 3H10C9.45 3 9 3.45 9 4S9.45 5 10 5H11V9.09C8.16 9.57 6 12.03 6 15C6 18.31 8.69 21 12 21S18 18.31 18 15C18 12.03 15.84 9.57 13 9.09M12 19C9.79 19 8 17.21 8 15C8 13.14 9.28 11.59 11 11.14V16H13V11.14C14.72 11.59 16 13.14 16 15C16 17.21 14.21 19 12 19Z"/></svg>"##,
+    slug: "unicycle",
+    version: "5.6.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// atom-variant
+pub const ATOM_VARIANT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-atom-variant" viewBox="0 0 24 24"><path d="M18.36,2.64C20,2.64 21.36,4 21.36,5.64C21.36,7.29 20,8.64 18.36,8.64C16.71,8.64 15.36,7.29 15.36,5.64C15.36,5.34 15.41,5.06 15.5,4.8C14.43,4.29 13.25,4 12,4A8,8 0 0,0 4,12L4.04,12.84L2.05,13.05L2,12A10,10 0 0,1 12,2C13.69,2 15.28,2.42 16.67,3.16C17.16,2.83 17.74,2.64 18.36,2.64M18.36,4.64A1,1 0 0,0 17.36,5.64A1,1 0 0,0 18.36,6.64C18.92,6.64 19.36,6.19 19.36,5.64C19.36,5.08 18.92,4.64 18.36,4.64M5.64,15.36C7.29,15.36 8.64,16.71 8.64,18.36C8.64,18.66 8.59,18.94 8.5,19.2C9.57,19.71 10.75,20 12,20A8,8 0 0,0 20,12L19.96,11.16L21.95,10.95L22,12A10,10 0 0,1 12,22C10.31,22 8.72,21.58 7.33,20.84C6.84,21.17 6.26,21.36 5.64,21.36C4,21.36 2.64,20 2.64,18.36C2.64,16.71 4,15.36 5.64,15.36M5.64,17.36C5.08,17.36 4.64,17.81 4.64,18.36C4.64,18.92 5.08,19.36 5.64,19.36A1,1 0 0,0 6.64,18.36A1,1 0 0,0 5.64,17.36M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/></svg>"##,
+    slug: "atom-variant",
+    version: "3.7.94",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// database-plus
+pub const DATABASE_PLUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-database-plus" viewBox="0 0 24 24"><path d="M18,14H20V17H23V19H20V22H18V19H15V17H18V14M12,3C16.42,3 20,4.79 20,7C20,9.21 16.42,11 12,11C7.58,11 4,9.21 4,7C4,4.79 7.58,3 12,3M4,9C4,11.21 7.58,13 12,13C16.42,13 20,11.21 20,9V9L20,12.08L19,12C16.41,12 14.2,13.64 13.36,15.94L12,16C7.58,16 4,14.21 4,12V9M4,14C4,16.21 7.58,18 12,18H13C13,19.05 13.27,20.04 13.75,20.9L12,21C7.58,21 4,19.21 4,17V14Z"/></svg>"##,
+    slug: "database-plus",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// flash-auto
+pub const FLASH_AUTO: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-flash-auto" viewBox="0 0 24 24"><path d="M16.85,7.65L18,4L19.15,7.65M19,2H17L13.8,11H15.7L16.4,9H19.6L20.3,11H22.2M3,2V14H6V23L13,11H9L13,2H3Z"/></svg>"##,
+    slug: "flash-auto",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// arrow-up-left-bold
+pub const ARROW_UP_LEFT_BOLD: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-left-bold" viewBox="0 0 24 24"><path d="M13.5 21C9.36 21 6 17.64 6 13.5V11H2L8 4L14 11H10V13.5C10 15.43 11.57 17 13.5 17H21V21H13.5Z"/></svg>"##,
+    slug: "arrow-up-left-bold",
+    version: "6.1.95",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// credit-card-wireless
+pub const CREDIT_CARD_WIRELESS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-credit-card-wireless" viewBox="0 0 24 24"><path d="M4.93 4.92L6.34 6.33C9.46 3.2 14.53 3.2 17.66 6.33L19.07 4.92C15.17 1 8.84 1 4.93 4.92M7.76 7.75L9.17 9.16C10.73 7.6 13.26 7.6 14.83 9.16L16.24 7.75C13.9 5.41 10.1 5.41 7.76 7.75M18 11H6C4.89 11 4 11.9 4 13V21C4 22.11 4.89 23 6 23H18C19.11 23 20 22.11 20 21V13C20 11.9 19.11 11 18 11M18 17H6V14H18V17Z"/></svg>"##,
+    slug: "credit-card-wireless",
+    version: "2.1.19",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// file-check-outline
+pub const FILE_CHECK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-check-outline" viewBox="0 0 24 24"><path d="M23.5 17L18.5 22L15 18.5L16.5 17L18.5 19L22 15.5L23.5 17M13.09 20H6V4H13V9H18V13.09C18.33 13.04 18.66 13 19 13S19.67 13.04 20 13.09V8L14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H13.81C13.46 21.39 13.21 20.72 13.09 20Z"/></svg>"##,
+    slug: "file-check-outline",
+    version: "3.6.95",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// middleware-outline
+pub const MIDDLEWARE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-middleware-outline" viewBox="0 0 24 24"><path d="M23 12L19 8V11H15.86C15.41 9.28 13.86 8 12 8S8.59 9.28 8.14 11H5L2 8V16L5 13H8.14C8.59 14.72 10.14 16 12 16S15.41 14.72 15.86 13H19V16L23 12M12 14C10.9 14 10 13.1 10 12C10 10.9 10.9 10 12 10S14 10.9 14 12C14 13.1 13.1 14 12 14Z"/></svg>"##,
+    slug: "middleware-outline",
+    version: "3.9.97",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// folder-arrow-left-right-outline
+pub const FOLDER_ARROW_LEFT_RIGHT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-folder-arrow-left-right-outline" viewBox="0 0 24 24"><path d="M13 19C13 19.34 13.04 19.67 13.09 20H4C2.9 20 2 19.11 2 18V6C2 4.89 2.89 4 4 4H10L12 6H20C21.1 6 22 6.89 22 8V13.81C21.39 13.46 20.72 13.22 20 13.09V8H4V18H13.09C13.04 18.33 13 18.66 13 19M23 17L20 14.5V16H16V18H20V19.5L23 17M18 18.5L15 21L18 23.5V22H22V20H18V18.5Z"/></svg>"##,
+    slug: "folder-arrow-left-right-outline",
+    version: "6.6.96",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// invoice-multiple-outline
+pub const INVOICE_MULTIPLE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-invoice-multiple-outline" viewBox="0 0 24 24"><path d="M2 2V17H4V4H17V2H2M18.5 20.32L21 22V6H6V22L8.5 20.32L11 22L13.5 20.32L16 22L18.5 20.32M19 8V17.57L16 19.59L13.5 17.9L11 19.59L8 17.57V8H19Z"/></svg>"##,
+    slug: "invoice-multiple-outline",
+    version: "7.4.47",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// basket-plus-outline
+pub const BASKET_PLUS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-basket-plus-outline" viewBox="0 0 24 24"><path d="M20 15V18H23V20H20V23H18V20H15V18H18V15H20M12 13C10.9 13 10 13.9 10 15S10.9 17 12 17 14 16.1 14 15 13.1 13 12 13M13.35 21H5.5C4.58 21 3.81 20.38 3.58 19.54L1.04 10.27C1 10.18 1 10.09 1 10C1 9.45 1.45 9 2 9H6.79L11.17 2.45C11.36 2.16 11.68 2 12 2S12.64 2.16 12.83 2.44L17.21 9H22C22.55 9 23 9.45 23 10L22.97 10.27L22 13.81C21.43 13.5 20.79 13.24 20.12 13.11L20.7 11H3.31L5.5 19H13C13 19.7 13.13 20.37 13.35 21M9.2 9H14.8L12 4.8L9.2 9Z"/></svg>"##,
+    slug: "basket-plus-outline",
+    version: "5.4.55",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// book-minus-multiple
+pub const BOOK_MINUS_MULTIPLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-minus-multiple" viewBox="0 0 24 24"><path d="M13.09 20H5V6H3V20C3 21.11 3.9 22 5 22H13.81C13.44 21.39 13.2 20.71 13.09 20M19 2H14V7L12 5.5L10 7V2H9C7.9 2 7 2.9 7 4V16C7 17.11 7.9 18 9 18H13.09C13.64 14.73 16.74 12.53 20 13.08C20.34 13.14 20.68 13.23 21 13.34V4C21 2.9 20.11 2 19 2M23 18V20H15V18H23Z"/></svg>"##,
+    slug: "book-minus-multiple",
+    version: "2.7.94",
+    deprecated: false,
+    author: "Perth Totty",
+};
+
+/// calendar-text
+pub const CALENDAR_TEXT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-calendar-text" viewBox="0 0 24 24"><path d="M14,14H7V16H14M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M17,10H7V12H17V10Z"/></svg>"##,
+    slug: "calendar-text",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// filter-plus-outline
+pub const FILTER_PLUS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-filter-plus-outline" viewBox="0 0 24 24"><path d="M15 17H18V14H20V17H23V19H20V22H18V19H15V17M13 19.88C13.04 20.18 12.94 20.5 12.72 20.71C12.32 21.1 11.69 21.1 11.3 20.71L7.29 16.7C7.06 16.47 6.96 16.16 7 15.87V10.75L2.21 4.62C1.87 4.19 1.95 3.56 2.38 3.22C2.57 3.08 2.78 3 3 3V3H17V3C17.22 3 17.43 3.08 17.62 3.22C18.05 3.56 18.13 4.19 17.79 4.62L13 10.75V19.88M5.04 5L9 10.07V15.58L11 17.58V10.05L14.96 5H5.04Z"/></svg>"##,
+    slug: "filter-plus-outline",
+    version: "3.8.95",
+    deprecated: false,
+    author: "GreenTurtwig",
+};
+
+/// numeric-1-box
+pub const NUMERIC_1_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-1-box" viewBox="0 0 24 24"><path d="M14,17H12V9H10V7H14M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3Z"/></svg>"##,
+    slug: "numeric-1-box",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// robot-love
+pub const ROBOT_LOVE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-robot-love" viewBox="0 0 24 24"><path d="M22 14H21C21 10.13 17.87 7 14 7H13V5.73C13.6 5.39 14 4.74 14 4C14 2.9 13.11 2 12 2S10 2.9 10 4C10 4.74 10.4 5.39 11 5.73V7H10C6.13 7 3 10.13 3 14H2C1.45 14 1 14.45 1 15V18C1 18.55 1.45 19 2 19H3V20C3 21.11 3.9 22 5 22H19C20.11 22 21 21.11 21 20V19H22C22.55 19 23 18.55 23 18V15C23 14.45 22.55 14 22 14M9.7 15.45L8.97 16.18L7.5 17.65L5.3 15.45C4.9 15.05 4.9 14.39 5.3 14C5.71 13.58 6.36 13.58 6.77 14L7.5 14.72L8.23 14C8.64 13.58 9.29 13.58 9.7 14C10.1 14.39 10.1 15.05 9.7 15.45M18.7 15.45L17.97 16.18L16.5 17.65L14.3 15.45C13.9 15.05 13.9 14.39 14.3 14C14.71 13.58 15.36 13.58 15.77 14L16.5 14.72L17.23 14C17.64 13.58 18.29 13.58 18.7 14C19.1 14.39 19.1 15.05 18.7 15.45Z"/></svg>"##,
+    slug: "robot-love",
+    version: "5.8.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// table-large-plus
+pub const TABLE_LARGE_PLUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-table-large-plus" viewBox="0 0 24 24"><path d="M12.35 20H10V17H12.09C12.21 16.28 12.46 15.61 12.81 15H10V12H14V13.54C14.58 13 15.25 12.61 16 12.35V12H20V12.35C20.75 12.61 21.42 13 22 13.54V5C22 3.9 21.1 3 20 3H4C2.9 3 2 3.9 2 5V20C2 21.1 2.9 22 4 22H13.54C13 21.42 12.61 20.75 12.35 20M16 7H20V10H16V7M10 7H14V10H10V7M8 20H4V17H8V20M8 15H4V12H8V15M8 10H4V7H8V10M17 14H19V17H22V19H19V22H17V19H14V17H17V14"/></svg>"##,
+    slug: "table-large-plus",
+    version: "3.9.97",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// propane-tank-outline
+pub const PROPANE_TANK_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-propane-tank-outline" viewBox="0 0 24 24"><path d="M17 6.14V4C17 2.9 16.1 2 15 2H9C7.9 2 7 2.9 7 4V6.14C5.28 6.59 4 8.14 4 10V18C4 20.21 5.79 22 8 22H16C18.21 22 20 20.21 20 18V10C20 8.14 18.72 6.59 17 6.14M9 4H15V6H13C13 5.45 12.55 5 12 5S11 5.45 11 6H9V4M8 8H16C17.1 8 18 8.9 18 10V13H6V10C6 8.9 6.9 8 8 8M16 20H8C6.9 20 6 19.1 6 18V15H18V18C18 19.1 17.1 20 16 20Z"/></svg>"##,
+    slug: "propane-tank-outline",
+    version: "4.9.95",
+    deprecated: false,
+    author: "Google",
+};
+
+/// flag-minus-outline
+pub const FLAG_MINUS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-flag-minus-outline" viewBox="0 0 24 24"><path d="M12.36 6L12.76 8H18V14H14.64L14.24 12H7V6H12.36M14 4H5V21H7V14H12.6L13 16H20V6H14.4M23 18H15V20H23V18Z"/></svg>"##,
+    slug: "flag-minus-outline",
+    version: "4.2.95",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// motion-pause-outline
+pub const MOTION_PAUSE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-motion-pause-outline" viewBox="0 0 24 24"><path d="M22 12C22 6.46 17.54 2 12 2C10.83 2 9.7 2.19 8.62 2.56L9.32 4.5C10.17 4.16 11.06 3.97 12 3.97C16.41 3.97 20.03 7.59 20.03 12C20.03 16.41 16.41 20.03 12 20.03C7.59 20.03 3.97 16.41 3.97 12C3.97 11.06 4.16 10.12 4.5 9.28L2.56 8.62C2.19 9.7 2 10.83 2 12C2 17.54 6.46 22 12 22C17.54 22 22 17.54 22 12M5.47 7C4.68 7 3.97 6.32 3.97 5.47C3.97 4.68 4.68 3.97 5.47 3.97C6.32 3.97 7 4.68 7 5.47C7 6.32 6.32 7 5.47 7M9 9H11V15H9M13 9H15V15H13"/></svg>"##,
+    slug: "motion-pause-outline",
+    version: "5.5.55",
+    deprecated: false,
+    author: "Google",
+};
+
+/// truck-minus
+pub const TRUCK_MINUS: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-truck-minus" viewBox="0 0 24 24"><path d="M20 8H17V4H3C1.89 4 1 4.89 1 6V17H3C3 18.66 4.34 20 6 20S9 18.66 9 17H15C15 18.66 16.34 20 18 20S21 18.66 21 17H23V12L20 8M6 18.5C5.17 18.5 4.5 17.83 4.5 17S5.17 15.5 6 15.5 7.5 16.17 7.5 17 6.83 18.5 6 18.5M13 11H5V9H13V11M18 18.5C17.17 18.5 16.5 17.83 16.5 17S17.17 15.5 18 15.5 19.5 16.17 19.5 17 18.83 18.5 18 18.5M17 12V9.5H19.5L21.46 12H17"/></svg>"##,
+    slug: "truck-minus",
+    version: "6.5.95",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// crop-portrait
+pub const CROP_PORTRAIT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-crop-portrait" viewBox="0 0 24 24"><path d="M17,19H7V5H17M17,3H7A2,2 0 0,0 5,5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V5C19,3.89 18.1,3 17,3Z"/></svg>"##,
+    slug: "crop-portrait",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// message-reply-text
+pub const MESSAGE_REPLY_TEXT: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-message-reply-text" viewBox="0 0 24 24"><path d="M18,8H6V6H18V8M18,11H6V9H18V11M18,14H6V12H18V14M22,4A2,2 0 0,0 20,2H4A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H18L22,22V4Z"/></svg>"##,
+    slug: "message-reply-text",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// monitor
+pub const MONITOR: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-monitor" viewBox="0 0 24 24"><path d="M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z"/></svg>"##,
+    slug: "monitor",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// leaf-circle
+pub const LEAF_CIRCLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-leaf-circle" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M9.6 17.2C9.38 17.2 9.08 17.12 8.8 17L8.23 18.4L7.09 18L7.25 17.61C8.45 14.59 9.83 11.15 15 10C15 10 9 10 7.05 15.55C7.05 15.55 6 14.5 6 13.3S7.2 9.55 10.2 8.95C11.05 8.78 12 8.65 12.94 8.5C15.3 8.18 17.57 7.86 18 7C18 7 16.2 17.2 9.6 17.2Z"/></svg>"##,
+    slug: "leaf-circle",
+    version: "6.4.95",
+    deprecated: false,
+    author: "Jeff Anders",
+};
+
+/// network-strength-1
+pub const NETWORK_STRENGTH_1: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-network-strength-1" viewBox="0 0 24 24"><path d="M1,21H21V1M19,5.83V19H11V13.83"/></svg>"##,
+    slug: "network-strength-1",
+    version: "2.3.50",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// camera-metering-partial
+pub const CAMERA_METERING_PARTIAL: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-camera-metering-partial" viewBox="0 0 24 24"><path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M4,6V18H20V6H4M12,7.5C14.14,7.5 15.93,9 16.39,11H14.83C14.42,9.83 13.31,9 12,9C10.69,9 9.58,9.83 9.17,11H7.61C8.07,9 9.86,7.5 12,7.5M12,16.5C9.86,16.5 8.07,15 7.61,13H9.17C9.58,14.17 10.69,15 12,15C13.31,15 14.42,14.17 14.83,13H16.39C15.93,15 14.14,16.5 12,16.5Z"/></svg>"##,
+    slug: "camera-metering-partial",
+    version: "2.0.46",
+    deprecated: false,
+    author: "Andy Martinez",
+};
+
+/// layers-triple
+pub const LAYERS_TRIPLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-layers-triple" viewBox="0 0 24 24"><path d="M12 0L3 7L4.63 8.27L12 14L19.36 8.27L21 7L12 0M19.37 10.73L12 16.47L4.62 10.74L3 12L12 19L21 12L19.37 10.73M19.37 15.73L12 21.47L4.62 15.74L3 17L12 24L21 17L19.37 15.73Z"/></svg>"##,
+    slug: "layers-triple",
+    version: "3.9.97",
+    deprecated: false,
+    author: "GreenTurtwig",
+};
+
+/// account-details-outline
+pub const ACCOUNT_DETAILS_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-details-outline" viewBox="0 0 24 24"><path d="M11 9C11 10.66 9.66 12 8 12C6.34 12 5 10.66 5 9C5 7.34 6.34 6 8 6C9.66 6 11 7.34 11 9M14 20H2V18C2 15.79 4.69 14 8 14C11.31 14 14 15.79 14 18M7 9C7 9.55 7.45 10 8 10C8.55 10 9 9.55 9 9C9 8.45 8.55 8 8 8C7.45 8 7 8.45 7 9M4 18H12C12 16.9 10.21 16 8 16C5.79 16 4 16.9 4 18M22 12V14H13V12M22 8V10H13V8M22 4V6H13V4Z"/></svg>"##,
+    slug: "account-details-outline",
+    version: "4.9.95",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// book-alphabet
+pub const BOOK_ALPHABET: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-alphabet" viewBox="0 0 24 24"><path d="M5.81,2C4.83,2.09 4,3 4,4V20C4,21.05 4.95,22 6,22H18C19.05,22 20,21.05 20,20V4C20,2.89 19.1,2 18,2H12V9L9.5,7.5L7,9V2H6C5.94,2 5.87,2 5.81,2M12,13H13A1,1 0 0,1 14,14V18H13V16H12V18H11V14A1,1 0 0,1 12,13M12,14V15H13V14H12M15,15H18V16L16,19H18V20H15V19L17,16H15V15Z"/></svg>"##,
+    slug: "book-alphabet",
+    version: "1.6.50",
+    deprecated: false,
+    author: "Christopher Schreiner",
+};
+
+/// magnify-close
+pub const MAGNIFY_CLOSE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-magnify-close" viewBox="0 0 24 24"><path d="M9,2A7,7 0 0,1 16,9C16,10.5 15.5,12 14.61,13.19L15.41,14H16L22,20L20,22L14,16V15.41L13.19,14.61C12,15.5 10.5,16 9,16A7,7 0 0,1 2,9A7,7 0 0,1 9,2M11.12,5.46L9,7.59L6.88,5.46L5.46,6.88L7.59,9L5.46,11.12L6.88,12.54L9,10.41L11.12,12.54L12.54,11.12L10.41,9L12.54,6.88L11.12,5.46Z"/></svg>"##,
+    slug: "magnify-close",
+    version: "2.4.85",
+    deprecated: false,
+    author: "Michael Richins",
+};
+
+/// book-remove-outline
+pub const BOOK_REMOVE_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-remove-outline" viewBox="0 0 24 24"><path d="M13.09 20C13.21 20.72 13.46 21.39 13.81 22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H18C19.11 2 20 2.9 20 4V13.09C19.67 13.04 19.34 13 19 13C18.66 13 18.33 13.04 18 13.09V4H13V12L10.5 9.75L8 12V4H6V20H13.09M22.54 16.88L21.12 15.47L19 17.59L16.88 15.47L15.47 16.88L17.59 19L15.47 21.12L16.88 22.54L19 20.41L21.12 22.54L22.54 21.12L20.41 19L22.54 16.88Z"/></svg>"##,
+    slug: "book-remove-outline",
+    version: "5.8.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// book-education
+pub const BOOK_EDUCATION: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-book-education" viewBox="0 0 24 24"><path d="M8.82 17L13 19.28V22H6C4.89 22 4 21.11 4 20V4C4 2.9 4.89 2 6 2H7V9L9.5 7.5L12 9V2H18C19.1 2 20 2.89 20 4V12.54L18.5 11.72L8.82 17M24 17L18.5 14L13 17L18.5 20L24 17M15 19.09V21.09L18.5 23L22 21.09V19.09L18.5 21L15 19.09Z"/></svg>"##,
+    slug: "book-education",
+    version: "5.8.55",
+    deprecated: false,
+    author: "Colton Wiscombe",
+};
+
+/// rowing
+pub const ROWING: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-rowing" viewBox="0 0 24 24"><path d="M8.5,14.5L4,19L5.5,20.5L9,17H11L8.5,14.5M15,1A2,2 0 0,0 13,3A2,2 0 0,0 15,5A2,2 0 0,0 17,3A2,2 0 0,0 15,1M21,21L18,24L15,21V19.5L7.91,12.41C7.6,12.46 7.3,12.5 7,12.5V10.32C8.66,10.35 10.61,9.45 11.67,8.28L13.07,6.73C13.26,6.5 13.5,6.35 13.76,6.23C14.05,6.09 14.38,6 14.72,6H14.75C16,6 17,7 17,8.26V14C17,14.85 16.65,15.62 16.08,16.17L12.5,12.59V10.32C11.87,10.84 11.07,11.34 10.21,11.71L16.5,18H18L21,21Z"/></svg>"##,
+    slug: "rowing",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// human-capacity-increase
+pub const HUMAN_CAPACITY_INCREASE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-human-capacity-increase" viewBox="0 0 24 24"><path d="M16 4C16 2.9 16.9 2 18 2C19.1 2 20 2.9 20 4C20 5.1 19.1 6 18 6C16.9 6 16 5.1 16 4M20.78 7.58C19.93 7.21 19 7 18 7C17.33 7 16.69 7.1 16.08 7.28C16.66 7.83 17 8.6 17 9.43V10H22V9.43C22 8.62 21.5 7.9 20.78 7.58M6 6C7.1 6 8 5.1 8 4C8 2.9 7.1 2 6 2C4.9 2 4 2.9 4 4C4 5.1 4.9 6 6 6M7.92 7.28C7.31 7.1 6.67 7 6 7C5 7 4.07 7.21 3.22 7.58C2.5 7.9 2 8.62 2 9.43V10H7V9.43C7 8.6 7.34 7.83 7.92 7.28M10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4M16 10H8V9.43C8 8.62 8.5 7.9 9.22 7.58C10.07 7.21 11 7 12 7C13 7 13.93 7.21 14.78 7.58C15.5 7.9 16 8.62 16 9.43M15 16C15 14.9 15.9 14 17 14C18.1 14 19 14.9 19 16C19 17.1 18.1 18 17 18C15.9 18 15 17.1 15 16M21 22H13V21.43C13 20.62 13.5 19.9 14.22 19.58C15.07 19.21 16 19 17 19C18 19 18.93 19.21 19.78 19.58C20.5 19.9 21 20.62 21 21.43M5 16C5 14.9 5.9 14 7 14C8.1 14 9 14.9 9 16C9 17.1 8.1 18 7 18C5.9 18 5 17.1 5 16M11 22H3V21.43C3 20.62 3.5 19.9 4.22 19.58C5.07 19.21 6 19 7 19C8 19 8.93 19.21 9.78 19.58C10.5 19.9 11 20.62 11 21.43M12.75 14V16H11.25V14H9L12 11L15 14Z"/></svg>"##,
+    slug: "human-capacity-increase",
+    version: "5.5.55",
+    deprecated: false,
+    author: "Simran",
+};
+
+/// approximately-equal-box
+pub const APPROXIMATELY_EQUAL_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-approximately-equal-box" viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M9.3 8.2C10.6 8.2 11.4 8.7 12.1 9C12.7 9.3 13.4 9.7 14.5 9.7C15.5 9.7 16.5 9 17 8.5L17.8 9.8C17.1 10.6 15.8 11.4 14.4 11.4C13.1 11.4 12.3 10.9 11.7 10.6C11.1 10.3 10.3 9.9 9.2 9.9C8.2 9.9 7.2 10.6 6.7 11.1L6 9.8C6.7 9 8 8.2 9.3 8.2M14.6 15.8C13.3 15.8 12.5 15.3 11.8 15C11.2 14.7 10.4 14.3 9.3 14.3C8.3 14.3 7.3 15 6.8 15.5L6 14.1C6.7 13.3 8 12.5 9.3 12.5C10.6 12.5 11.4 13 12.1 13.3C12.7 13.6 13.4 14 14.6 14C15.6 14 16.6 13.3 17.1 12.8L17.9 14.1C17.3 15 16 15.8 14.6 15.8Z"/></svg>"##,
+    slug: "approximately-equal-box",
+    version: "4.0.96",
+    deprecated: false,
+    author: "Michael Irigoyen",
+};
+
+/// numeric-0-box
+pub const NUMERIC_0_BOX: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-numeric-0-box" viewBox="0 0 24 24"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M11,7A2,2 0 0,0 9,9V15A2,2 0 0,0 11,17H13A2,2 0 0,0 15,15V9A2,2 0 0,0 13,7H11M11,9H13V15H11V9Z"/></svg>"##,
+    slug: "numeric-0-box",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Google",
+};
+
+/// file-account-outline
+pub const FILE_ACCOUNT_OUTLINE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-file-account-outline" viewBox="0 0 24 24"><path d="M14 2H6C4.89 2 4 2.9 4 4V20C4 21.11 4.89 22 6 22H18C19.11 22 20 21.11 20 20V8L14 2M18 20H6V4H13V9H18V20M13 13C13 14.1 12.1 15 11 15S9 14.1 9 13 9.9 11 11 11 13 11.9 13 13M15 18V19H7V18C7 16.67 9.67 16 11 16S15 16.67 15 18Z"/></svg>"##,
+    slug: "file-account-outline",
+    version: "4.1.95",
+    deprecated: false,
+    author: "Terren",
+};
+
+/// calendar-multiple
+pub const CALENDAR_MULTIPLE: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-calendar-multiple" viewBox="0 0 24 24"><path d="M21,17V8H7V17H21M21,3A2,2 0 0,1 23,5V17A2,2 0 0,1 21,19H7C5.89,19 5,18.1 5,17V5A2,2 0 0,1 7,3H8V1H10V3H18V1H20V3H21M3,21H17V23H3C1.89,23 1,22.1 1,21V9H3V21M19,15H15V11H19V15Z"/></svg>"##,
+    slug: "calendar-multiple",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Austin Andrews",
+};
+
+/// bluetooth
+pub const BLUETOOTH: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-bluetooth" viewBox="0 0 24 24"><path d="M14.88,16.29L13,18.17V14.41M13,5.83L14.88,7.71L13,9.58M17.71,7.71L12,2H11V9.58L6.41,5L5,6.41L10.59,12L5,17.58L6.41,19L11,14.41V22H12L17.71,16.29L13.41,12L17.71,7.71Z"/></svg>"##,
+    slug: "bluetooth",
+    version: "1.5.54",
+    deprecated: false,
+    author: "Contributors",
+};
+
+/// receipt-text-send
+pub const RECEIPT_TEXT_SEND: Icon = Icon {
+    svg: r##"<svg xmlns="http://www.w3.org/2000/svg" id="mdi-receipt-text-send" viewBox="0 0 24 24"><path d="M4.5 20.5L3 22V2L4.5 3.5L6 2L7.5 3.5L9 2L10.5 3.5L12 2L13.5 3.5L15 2L16.5 3.5L18 2L19.5 3.5L21 2V14.26L18 12.76V11H6V13H12V15H6V17H12V22L10.5 20.5L9 22L7.5 20.5L6 22L4.5 20.5M6 7V9H18V7H6M14 13L24 18L14 23V19L18 18L14 17V13Z"/></svg>"##,
+    slug: "receipt-text-send",
+    version: "7.2.96",
+    deprecated: false,
+    author: "Jeff Anders",
 };
