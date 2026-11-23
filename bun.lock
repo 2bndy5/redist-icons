@@ -46,7 +46,7 @@
       "name": "@redist-icons/simple-icons",
       "dependencies": {
         "common": "workspace:*",
-        "simple-icons": "16.38.0",
+        "simple-icons": "16.38.1",
       },
     },
   },
@@ -109,7 +109,7 @@
 
     "sax": ["sax@1.6.1", "", {}, "sha512-42tBVwLWnaQvW5zc4HbZrTuWccECCZfBi92FDuwtqxasH+JbPB3/FOKb1m222K42R4WxuxzzMsTswfzgtSu64Q=="],
 
-    "simple-icons": ["simple-icons@16.38.0", "", {}, "sha512-B0Wws90eL0Fm65aH35CA8kM+7/Zzgsaytt0DndBx7VFm3+o9HurVIVRQZ1hvqqYYIyNJq7ycn3kQm2v2FhiWSQ=="],
+    "simple-icons": ["simple-icons@16.38.1", "", {}, "sha512-q4JnGp1cgeASp4jzEsmSh/7BD/e2y7aYO8XST+QBEvOJ5wzZ/9WRmKsI+QUwkfPUSiXC+sfh2+QetD38zl3N0g=="],
 
     "smol-toml": ["smol-toml@1.9.1", "", {}, "sha512-j7WyPdf0CJoutMzMoPLF/bVXHtKZIT9Rb4eGeEbWw8X2t5oirjPgpL+OpaENZrILYaXqYwnVH+qgUwVbl+pUJQ=="],
 
