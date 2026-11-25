@@ -80,6 +80,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("BLOCKED_24", icons::BLOCKED_24)?;
     m.add("TASKLIST_16", icons::TASKLIST_16)?;
     m.add("FEED_HEART_16", icons::FEED_HEART_16)?;
+    m.add("PIN_FILL_24", icons::PIN_FILL_24)?;
     m.add("TYPOGRAPHY_16", icons::TYPOGRAPHY_16)?;
     m.add("SHIELD_X_24", icons::SHIELD_X_24)?;
     m.add("PROJECT_SYMLINK_24", icons::PROJECT_SYMLINK_24)?;
@@ -137,6 +138,7 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("CHAT_ADD_24", icons::CHAT_ADD_24)?;
     m.add("MUTE_24", icons::MUTE_24)?;
     m.add("DIFF_24", icons::DIFF_24)?;
+    m.add("PIN_FILL_16", icons::PIN_FILL_16)?;
     m.add("DIFF_IGNORED_24", icons::DIFF_IGNORED_24)?;
     m.add("VERIFIED_16", icons::VERIFIED_16)?;
     m.add("PASTE_16", icons::PASTE_16)?;
@@ -207,7 +209,5 @@ pub(super) fn bind_part_1(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("SPARKLE_FILL_16", icons::SPARKLE_FILL_16)?;
     m.add("GRABBER_16", icons::GRABBER_16)?;
     m.add("SQUIRREL_16", icons::SQUIRREL_16)?;
-    m.add("FILE_ADDED_16", icons::FILE_ADDED_16)?;
-    m.add("COPY_24", icons::COPY_24)?;
     Ok(())
 }
