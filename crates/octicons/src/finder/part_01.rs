@@ -77,6 +77,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "blocked-24" => Some(icons::BLOCKED_24),
         "tasklist-16" => Some(icons::TASKLIST_16),
         "feed-heart-16" => Some(icons::FEED_HEART_16),
+        "pin-fill-24" => Some(icons::PIN_FILL_24),
         "typography-16" => Some(icons::TYPOGRAPHY_16),
         "shield-x-24" => Some(icons::SHIELD_X_24),
         "project-symlink-24" => Some(icons::PROJECT_SYMLINK_24),
@@ -134,6 +135,7 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "chat-add-24" => Some(icons::CHAT_ADD_24),
         "mute-24" => Some(icons::MUTE_24),
         "diff-24" => Some(icons::DIFF_24),
+        "pin-fill-16" => Some(icons::PIN_FILL_16),
         "diff-ignored-24" => Some(icons::DIFF_IGNORED_24),
         "verified-16" => Some(icons::VERIFIED_16),
         "paste-16" => Some(icons::PASTE_16),
@@ -201,8 +203,6 @@ pub(super) fn find_part_1(slug: &str) -> Option<Icon> {
         "sparkle-fill-16" => Some(icons::SPARKLE_FILL_16),
         "grabber-16" => Some(icons::GRABBER_16),
         "squirrel-16" => Some(icons::SQUIRREL_16),
-        "file-added-16" => Some(icons::FILE_ADDED_16),
-        "copy-24" => Some(icons::COPY_24),
         _ => None,
     }
 }

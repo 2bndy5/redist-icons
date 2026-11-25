@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_3(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("GIT_CLOSED_AGENT_16", icons::GIT_CLOSED_AGENT_16)?;
+    m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
     m.add("DIFF_16", icons::DIFF_16)?;
     m.add("GOAL_24", icons::GOAL_24)?;
     m.add(

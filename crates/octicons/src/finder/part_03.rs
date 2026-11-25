@@ -3,6 +3,8 @@ use crate::{Icon, icons};
 
 pub(super) fn find_part_3(slug: &str) -> Option<Icon> {
     match slug {
+        "git-closed-agent-16" => Some(icons::GIT_CLOSED_AGENT_16),
+        "chevron-right-16" => Some(icons::CHEVRON_RIGHT_16),
         "diff-16" => Some(icons::DIFF_16),
         "goal-24" => Some(icons::GOAL_24),
         "tracked-by-closed-completed-16" => Some(icons::TRACKED_BY_CLOSED_COMPLETED_16),

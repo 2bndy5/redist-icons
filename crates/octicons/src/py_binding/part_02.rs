@@ -3,6 +3,8 @@ use crate::icons;
 use pyo3::prelude::*;
 
 pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
+    m.add("FILE_ADDED_16", icons::FILE_ADDED_16)?;
+    m.add("COPY_24", icons::COPY_24)?;
     m.add("ITERATIONS_16", icons::ITERATIONS_16)?;
     m.add("SERVER_24", icons::SERVER_24)?;
     m.add("SPLIT_VIEW_16", icons::SPLIT_VIEW_16)?;
@@ -216,7 +218,5 @@ pub(super) fn bind_part_2(m: &Bound<PyModule>) -> PyResult<()> {
     m.add("LIGHT_BULB_16", icons::LIGHT_BULB_16)?;
     m.add("X_24", icons::X_24)?;
     m.add("GIT_BRANCH_CHECK_24", icons::GIT_BRANCH_CHECK_24)?;
-    m.add("GIT_CLOSED_AGENT_16", icons::GIT_CLOSED_AGENT_16)?;
-    m.add("CHEVRON_RIGHT_16", icons::CHEVRON_RIGHT_16)?;
     Ok(())
 }
